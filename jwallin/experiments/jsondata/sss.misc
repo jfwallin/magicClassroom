@@ -1,0 +1,28 @@
+https://nineplanets.org/data.html
+
+
+Key:
+Gravity     Equatorial surface gravity in g's (see also "Your Weight On Other Worlds")
+
+
+
+
+
+
+
+
+ 
+
+Esc vel     Escape velocity in kilometers per second
+M.O.V.      Mean Orbital Velocity in kilometers per second
+Axial incl  Inclination of the rotation axis in degrees (obliquity)
+Oblate      Oblateness
+Ascend      Longitude of the ascending node
+Perihelion  Longitude of perihelion
+Equilib     Equilibrium temperature in Kelvins
+Surface     Surface temperature in Kelvins
+Press       Surface pressure in atmospheres
+
+Notes:
+(x) for the jovian planets "surface" refers to the cloud tops or 1 bar level
+Much more accurate and detailed data is available from JPL's Horizons telnet interface

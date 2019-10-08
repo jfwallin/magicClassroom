@@ -1,0 +1,16 @@
+Key:
+Radius      Equatorial radius in km (highly uncertain for the small outer solar system moons)
+Mass        in kilograms including atmospheres but not satellites.
+Dens        Density in g/cm3.
+Abo         Object's geometric albedo.
+Vo          Object's magnitude in visible light at opposition.
+Rotate      Sidereal period of equatorial rotation in days (negative=retrograde; S=synchronous).
+Dimensions  Radii for non-spherical bodies.
+
+Notes:
+(y) Iapetus' magnitude varies from 10.2 to 11.9
+(z) the masses, radii and densities of Pluto and its satellites are still somewhat uncertain
+( ) Some of the data above is given to more decimal places than it should be.
+
+Much more accurate and detailed data is available from JPL's Horizons telnet interface
+and their web site.

@@ -1,0 +1,30 @@
+Key:
+Orbits     Sun or planet about which it orbits.
+Distance   Mean distance (semimajor axis) between centers x1000 km.
+Date       Year discovered.
+O_Period   Sidereal period of orbit in days (negative=retrograde).
+Incl       Orbital inclination.
+Eccen      Orbital eccentricity.
+A.K.A      Object's provisional name.
+
+Notes:
+(0) many other names in use
+(1) & Danielson
+(2) & Marius
+(3) & others
+(4) & Lecacheux
+(5) & Lassell
+(6) & Reitsema, Larson & Fountain
+(7) & Seidelmann, Baum & Currie
+(8) & Larson & Fountain
+(9) & Le Verrier & Galle & d'Arrest
+(c) & Nicholson, Burns, & Kavelaars
+(d) & Gladman, Holman, Petit, & Scholl
+(e) & Gladman, Burns, & Kavelaars
+(f) & Holman, Kavelaars, Petit, & Scholl
+(g) & Kavelaars, Gladman, Petit, & Scholl
+(h) & Hubbard, Tholen, & Lebofsky
+(i) & Jewitt, Fernandez, Magnier
+(j) & Weaver, et a
+
+l

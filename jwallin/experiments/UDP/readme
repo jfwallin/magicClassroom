@@ -1,0 +1,5 @@
+
+
+csc name.cs
+mono name.exe
+
