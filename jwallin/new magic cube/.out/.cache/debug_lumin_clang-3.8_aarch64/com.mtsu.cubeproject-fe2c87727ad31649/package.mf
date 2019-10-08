@@ -1,0 +1,311 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "c8bb561654f288e61f6171d1a52a6909b3122a23",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3547484,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "7a099fa0d93b5b534e7d7b8fd0f732ed10ffcd1b",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 57467512,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "b5043668e0a3655df188f529def7bc73d2e1fafd",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/libil2cpp.so-e4cdfde5e505de42",
+   "xfrm_size": 57468270
+  },
+  {
+   "compression": 8,
+   "hash": "fa2b8ff146caf64688e7aa835af0034ca81b5505",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 282448,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0f42b95a2971da7bca06b0255004f872234efd5a",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/AudioPluginMSASpatializer.so-394e75184288c089",
+   "xfrm_size": 283206
+  },
+  {
+   "compression": 8,
+   "hash": "d6f6308df54f9040dfa383e45fec4b37f1893433",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68096,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "34830a91b794e83699f490e1d37dd7afa8a74914",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 329216,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "b8ce049d2e85f27cc7346d7551d1853b20e78461",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22016,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "799976308c23a900bc8e07a3cc7948e89826225b",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077368,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "4b26b4766f9a17864991b9e900db434919ef4683",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/UnityMagicLeap.so-394e75184288c089",
+   "xfrm_size": 3078126
+  },
+  {
+   "compression": 8,
+   "hash": "fbfa4a6aa20b14e0f60550676e5d34bebb99d46d",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "dbc6e9fcb7d6055063a751d452f52298b368ef04",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/libml_camera_plugin.so-394e75184288c089",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "88ac1047e0ac5686d703471c3115f719ca66a4e8",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 67624,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "820528f87de978d94eeb193adbb8e74de975bf21",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/libml_mediaplayer_plugin.so-394e75184288c089",
+   "xfrm_size": 68382
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "08a17200ab5d82740743975cfce89ff17a6b95d8",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 770468,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "6faa434b3370536da02fa6f3936549cd764d8ba3",
+   "pkgpath": "Data/boot.config",
+   "size": 279,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "e0cead2bd8ed2170dc192d8bb6f12a2193fe468c",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 70288,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "d742f1dcb053a39a4ac75777ee31de3a0247a497",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 104308,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "3700df61af29e10a4de5406a516151eb7d09054f",
+   "pkgpath": "Data/level0",
+   "size": 7132,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "ab65805793388d15a2837e363df1ccb966517059",
+   "pkgpath": "Data/level0.resS",
+   "size": 131232,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/level0.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "c335cbac0f8569a4b13bc4ab34d5b89bd58b2e8d",
+   "pkgpath": "Data/level1",
+   "size": 5908,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/level1"
+  },
+  {
+   "compression": 8,
+   "hash": "8d2623538fb7e2cbfcb6de98fdac0a8aedd3a088",
+   "pkgpath": "Data/resources.assets",
+   "size": 696736,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1d5e5447a0f0b085b695376c9fdb7738e07e4f23",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "72df8187e8b57e64fb93926431a0053987da4917",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "fed3bb1c694dc6a396bd40a5a97757ceb80442e0",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 3662736,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "a97d7c742a2f3537050d77233a752db84bdfc204",
+   "pkgpath": "Data/sharedassets1.assets",
+   "size": 4241,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Data/sharedassets1.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "4804966b0a907205b62cfbe95298b373c836cdb3",
+   "pkgpath": "bin/Player.elf",
+   "size": 49488136,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "6871a95dffae537be82f7ba928fc7b36263a5f42",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/Player.elf-0bec8d77e03aad06",
+   "xfrm_size": 49488894
+  },
+  {
+   "compression": 8,
+   "hash": "021d9d2a5ab52d455695141556b97b311ddd7db8",
+   "pkgpath": "manifest.xml",
+   "size": 3514,
+   "src": "/Users/jwallin/Magic/new magic cube/Temp/StagingArea/manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "c4b089fd07b7e54bd094d942a00ac87076061c10",
+     "developer_id": "a4262c45-7458-4566-9748-d0001622749b"
+    }
+   },
+   "xfrm_hash": "51b913e3ead8f3e534d9bce17513e1e8ba9ca483",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/manifest.xml-0bec8d77e03aad06",
+   "xfrm_size": 1190
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "/Users/jwallin/MagicLeap/mlsdk/v0.22.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "7b8354f03f70fc8925cf75821f0e3f0bc70443eb",
+   "xfrm_path": "/Users/jwallin/Magic/new magic cube/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsu.cubeproject-fe2c87727ad31649/libc++_shared.so-a59554c25b0d598d",
+   "xfrm_size": 977590
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "/Users/jwallin/MagicLeap/certs/wallin-v0.19.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
