@@ -1,0 +1,140 @@
+{\"Items\": [{
+    \"rigidbody\": false, 
+    \"objectOrbiting\": \"None\", 
+    \"orbitalPhase\": 0.0, 
+    \"name\": \"Jupiter\", 
+    \"textureName\": \"Jupiter\", 
+    \"rotationRate\": 2.071129707112971, 
+    \"orbitalPeriod\": 1.0, 
+    \"rotationPhase\": 0.0, 
+    \"scale\": {
+        \"y\": 0.7846409532768894, 
+        \"x\": 0.7846409532768894, 
+        \"z\": 0.7846409532768894
+    }, 
+    \"position\": {
+        \"y\": 0.3, 
+        \"x\": 0.0, 
+        \"z\": 0.0
+    }, 
+    \"rotation\": {
+        \"y\": 0.0, 
+        \"x\": 0.0, 
+        \"z\": 0.0, 
+        \"w\": 0.0
+    }, 
+    \"objectShape\": \"Cube\", 
+    \"orbitalRadius\": 1.0
+}, 
+{
+    \"rigidbody\": false, 
+    \"objectOrbiting\": \"None\", 
+    \"orbitalPhase\": 0.0, 
+    \"name\": \"Io\", 
+    \"textureName\": \"Io\", 
+    \"rotationRate\": 0.37029288702928875, 
+    \"orbitalPeriod\": 1.0, 
+    \"rotationPhase\": 0.0, 
+    \"scale\": {
+        \"y\": 0.1599397930385701, 
+        \"x\": 0.1599397930385701, 
+        \"z\": 0.1599397930385701
+    }, 
+    \"position\": {
+        \"y\": 0.3, 
+        \"x\": 0.6616494198808404, 
+        \"z\": 0.0
+    }, 
+    \"rotation\": {
+        \"y\": 0.0, 
+        \"x\": 0.0, 
+        \"z\": 0.0, 
+        \"w\": 0.0
+    }, 
+    \"objectShape\": \"Cube\", 
+    \"orbitalRadius\": 1.0
+}, 
+{
+    \"rigidbody\": false, 
+    \"objectOrbiting\": \"None\", 
+    \"orbitalPhase\": 0.0, 
+    \"name\": \"Europa\", 
+    \"textureName\": \"Europa\", 
+    \"rotationRate\": 0.7426778242677825, 
+    \"orbitalPeriod\": 1.0, 
+    \"rotationPhase\": 0.0, 
+    \"scale\": {
+        \"y\": 0.13704107870805896, 
+        \"x\": 0.13704107870805896, 
+        \"z\": 0.13704107870805896
+    }, 
+    \"position\": {
+        \"y\": 0.3, 
+        \"x\": 1.0520539354029477, 
+        \"z\": 0.0
+    }, 
+    \"rotation\": {
+        \"y\": 0.0, 
+        \"x\": 0.0, 
+        \"z\": 0.0, 
+        \"w\": 0.0
+    }, 
+    \"objectShape\": \"Cube\", 
+    \"orbitalRadius\": 1.0
+}, 
+{
+    \"rigidbody\": false, 
+    \"objectOrbiting\": \"None\", 
+    \"orbitalPhase\": 0.0, 
+    \"name\": \"Callisto\", 
+    \"textureName\": \"Callisto\", 
+    \"rotationRate\": 3.4916317991631804, 
+    \"orbitalPeriod\": 1.0, 
+    \"rotationPhase\": 0.0, 
+    \"scale\": {
+        \"y\": 0.2116287237378489, 
+        \"x\": 0.2116287237378489, 
+        \"z\": 0.2116287237378489
+    }, 
+    \"position\": {
+        \"y\": 0.3, 
+        \"x\": 2.9523361555346503, 
+        \"z\": 0.0
+    }, 
+    \"rotation\": {
+        \"y\": 0.0, 
+        \"x\": 0.0, 
+        \"z\": 0.0, 
+        \"w\": 0.0
+    }, 
+    \"objectShape\": \"Cube\", 
+    \"orbitalRadius\": 1.0
+}, 
+{
+    \"rigidbody\": false, 
+    \"objectOrbiting\": \"None\", 
+    \"orbitalPhase\": 0.0, 
+    \"name\": \"Ganymede\", 
+    \"textureName\": \"Ganymede\", 
+    \"rotationRate\": 1.4958158995815902, 
+    \"orbitalPeriod\": 1.0, 
+    \"rotationPhase\": 0.0, 
+    \"scale\": {
+        \"y\": 0.23102414550015682, 
+        \"x\": 0.23102414550015682, 
+        \"z\": 0.23102414550015682
+    }, 
+    \"position\": {
+        \"y\": 0.3, 
+        \"x\": 1.6776418940106617, 
+        \"z\": 0.0
+    }, 
+    \"rotation\": {
+        \"y\": 0.0, 
+        \"x\": 0.0, 
+        \"z\": 0.0, 
+        \"w\": 0.0
+    }, 
+    \"objectShape\": \"Cube\", 
+    \"orbitalRadius\": 1.0
+}]}

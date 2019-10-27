@@ -1,0 +1,11 @@
+
+
+
+$sql = "SELECT * FROM mytable WHERE id = LAST_INSERT_ID()";
+
+SELECT MAX(id) FROM mytable
+SELECT * FROM mytable WHERE id = ???
+
+SELECT * FROM mytable ORDER BY id DESC LIMIT 1
+
+
