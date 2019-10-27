@@ -17,6 +17,16 @@ class dbmanage:
 
         self.table = [];
 
+        self.table.append( ["ActiveScene", [ 
+            ["scenesequence", "INT UNSIGNED AUTO_INCREMENT PRIMARY KEY", "I", "long"],
+            ["currentscene", "BIGINT UNSIGNED", "I", "long"]
+            ]])
+
+        self.table.append( ["Scene", [
+            ["sceneindex", "INT UNSIGNED AUTO_INCREMENT PRIMARY KEY", "I", "long"],
+            ["scenejson", "VARCHAR(32768) NOT NULL","name","string"],
+            ]])
+
         self.table.append( ["Log", [
                 ["id","INT UNSIGNED AUTO_INCREMENT PRIMARY KEY", "I","long"],
                 ["macid","VARCHAR(30) NOT NULL","macid","string"],
