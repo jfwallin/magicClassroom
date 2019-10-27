@@ -24,6 +24,7 @@ public class lockImages : MonoBehaviour
     public GameObject dataTarget;
     private int nTargets;
     public GameObject[] cubes = new GameObject[2];
+    private GameObject[] trackedCubes = new GameObject[2];
     private Vector3 myposition, myrotation;
 
     private Quaternion imageRotation = new Quaternion();
@@ -63,13 +64,12 @@ public class lockImages : MonoBehaviour
 
     void Update()
     {
-        myposition = transform.position;
+       /*  myposition = transform.position;
         dataTarget.GetComponent<datacontainer>().mylocation = myposition; 
         myrotation  = transform.rotation.eulerAngles;
         dataTarget.GetComponent<datacontainer>().myrotation= myrotation; 
-        //Debug.Log("head position = "+myrotation);
+        */        
 
-        //Debug.Log("positions = " + p1 + p2);
     }
 
 
@@ -77,7 +77,7 @@ public class lockImages : MonoBehaviour
     {
       //  MLImageTracker.RemoveTarget(_name1);
       //  MLImageTracker.RemoveTarget(_name2);
-        //MLImageTracker.Stop();
+       // MLImageTracker.Stop();
     }
 
 
@@ -98,37 +98,8 @@ public class lockImages : MonoBehaviour
 
                     imageRotation = imageTargetResult.Rotation;
                     imageRotation[0] = imageRotation[0] + 90.0f;
-
-
-
-                    Instantiate(cubes[j], imageTargetResult.Position, imageRotation );
-
-                    //cubes[j]= GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    //cubes[j].AddComponent<Rigidbody>();
-                    //cubes[j].GetComponent<Rigidbody>().useGravity = false;
-
-                    //cubes[j].transform.position = imageTargetResult.Position + Vector3.up * 0.05f; ;
-                    //cubes[j].transform.rotation = imageTargetResult.Rotation;
-                    //cubes[j].transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                    //Texture2D myPlanetTexture = Resources.Load("Jupiter") as Texture2D;
-                    //planet[j].GetComponent<Renderer>().material.mainTexture = myPlanetTexture;
-                    //planet[j].name = "Jupiter";
-
-
+                    trackedCubes[j] = (GameObject)Instantiate(cubes[j], imageTargetResult.Position, imageRotation );
                     imagePosition[itarget] = imageTargetResult.Position;
-
-                    /*
-                    Debug.Log("Targetfound!" + itarget.ToString());
-                    Debug.Log("Target Position: " + imageTargetResult.Position);
-                    Debug.Log("Target Rotation: " + imageTargetResult.Rotation);
-                    Debug.Log("Target status: " + imageTargetResult.Status);
-                    Debug.Log("Ntargets = " + nTargets.ToString());
-                    Debug.Log("imagesFound =" + imagesFound.ToString());
-                    */                   
-
-                   //source = GetComponent<AudioSource>();
-                    //source.pitch = 0.5f;
-
 
 
                     if (imagesFound == 1)  {
@@ -152,18 +123,25 @@ public class lockImages : MonoBehaviour
 
     private void trackingDone()
     {
-
-
-        //Debug.Log("about to end tracking ");
-
-        //yield WaitForSeconds(5);
-
         
         dataTarget.GetComponent<datacontainer>().imageLocation1 = imagePosition[0];
         dataTarget.GetComponent<datacontainer>().imageLocation2 = imagePosition[1]; 
+        dataTarget.GetComponent<datacontainer>().calculateWorld();
 
-         MLImageTracker.Stop();
-        SceneManager.LoadScene("LoadData");
+        myposition = transform.position;
+        myrotation  = transform.rotation.eulerAngles;
+        dataTarget.GetComponent<datacontainer>().myrotation= myrotation; 
+        dataTarget.GetComponent<datacontainer>().mylocation = myposition; 
+        imagesFound = 0;
+
+        /* 
+        for (int j = 0; j < nTargets; j++) {
+            Destroy(trackedCubes[j]);
+        }
+        */
+
+         //MLImageTracker.Stop();
+       SceneManager.LoadScene("LoadData2");
 
   
 

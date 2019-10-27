@@ -41,26 +41,21 @@ public class newsceneScript : MonoBehaviour
         //Debug.Log("new scene");
 
         dataTarget = GameObject.Find("dataObject");
-        //target = GameObject.FindObjectWithTag("simulationData");
-        //Debug.Log("location = " + dataTarget.GetComponent<datacontainer>().cat.ToString());
-
         p1 = dataTarget.GetComponent<datacontainer>().imageLocation1;
         p2 = dataTarget.GetComponent<datacontainer>().imageLocation2;
         pcenter =  0.5f * (p1 + p2);
-
         pdiff = p2 - p1;
-        transform.position = pcenter;
+        
 
         x = pdiff[0];
         y = pdiff[1]; 
         z = pdiff[2];
         theta = Mathf.Atan2(x, z) * Mathf.Rad2Deg + 90.0f;
-        //Debug.Log("theta" + theta.ToString());
-        transform.Rotate(0.0f, theta, 0.0f);
-
         dist = Mathf.Sqrt(x * x + y * y + z * z);
 
-        transform.localScale = new Vector3(dist, 0.3f, 0.3f);
+        transform.position = pcenter;
+        transform.Rotate(0.0f, theta, 0.0f);
+        transform.localScale = new Vector3(dist, 0.1f, 0.1f);
 
 
         myInterface[] ilist = new myInterface[10];
@@ -92,7 +87,8 @@ public class newsceneScript : MonoBehaviour
     IEnumerator PollText()
     {
 
-        string waddress = "https://www.cs.mtsu.edu/~jwallin/ML/timestamp.php";
+        string waddress = "http://52.202.177.208/magic/timestamp.php";
+        //string waddress = "http://localhost/timestamp.php";
         //long servertime;
 
         System.DateTime  dtDateTime ;
@@ -149,34 +145,6 @@ public class newsceneScript : MonoBehaviour
 
 
     }
-
-
-    IEnumerator GetText()
-    {
-        string waddress = "https://www.cs.mtsu.edu/~jwallin/ML/mltest.txt";
-
-
-
-
-        UnityWebRequest www = UnityWebRequest.Get(waddress);
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError || www.isHttpError)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            // Show results as text
-            tout = www.downloadHandler.text;
-            Debug.Log("output = "+tout);
-
-            // Or retrieve results as binary data
-            //byte[] results = www.downloadHandler.data;
-        }
-    }
-
-
 
 
     public static (int, myInterface[]) ShowNetworkInterfaces()
