@@ -5,30 +5,35 @@ using UnityEngine.XR.MagicLeap;
 
 namespace MtsuMLAR
 {   
+    /// <summary>
+    /// This Script is used on the ARButton prefab to work with the event system to replicate
+    /// Unity UI Button functionality.
+    /// </summary>
     public class ARButtonScript : MonoBehaviour, IMLPointerEnterHandler, IMLPointerExitHandler, IMLPointerDownHandler, IMLPointerUpHandler
     {
         #region Private Variables
-        //Colors for the button in different states
-        private Color idleColor = Color.white;
-        [SerializeField]
-        private Color highlightColor = Color.yellow;
-        [SerializeField]
-        private Color pressColor = Color.green;
-
         //button background reference
         [SerializeField]
         private Image buttonImage = null;
         [SerializeField]
         private Collider buttonCollider = null;
 
-        //Actions to be assigned to by the menu control script, allowing button customization
+        //Colors for the button in different states
+        [SerializeField]
+        private Color idleColor = Color.white;
+        [SerializeField]
+        private Color highlightColor = Color.yellow;
+        [SerializeField]
+        private Color pressColor = Color.green;
+
+        //This lets you set what the button does in the Editor
         public UnityEvent PointerDown;
-        
         #endregion
 
-        // Start is called before the first frame update
+        #region Unity Methods
         void Start()
         {
+            //Initialize idleColor and PointerDown event
             idleColor = buttonImage.color;
             if (PointerDown == null)
                 PointerDown = new UnityEvent();
@@ -45,7 +50,9 @@ namespace MtsuMLAR
             buttonImage.enabled = false;
             buttonCollider.enabled = false;
         }
+        #endregion
 
+        #region Event Handlers
         public void MLOnPointerEnter(MLEventData eventData)
         {
             buttonImage.color = highlightColor;
@@ -67,5 +74,6 @@ namespace MtsuMLAR
         {
             buttonImage.color = highlightColor;
         }
+        #endregion
     }
 }

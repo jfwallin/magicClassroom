@@ -39,6 +39,7 @@ namespace MtsuMLAR
         private List<GameObject> allHitObjects = null;    //Stores objects targetted by the input module
         private GameObject primaryHitObject;              //Object most likely to be interacted with, typically the closest
         private float primaryHitObjectDistance;           //Hit distance for a raycast, distance to transform of hit object for a proximity sphere
+        private RaycastHit curRayHit;                     //The Raycast hit, used for finding intersection of raycast
         #endregion
 
         #region Properties
@@ -77,6 +78,7 @@ namespace MtsuMLAR
         public List<GameObject> AllHitObjects { get => allHitObjects; }
         public GameObject PrimaryHitObject { get => primaryHitObject; }
         public float PrimaryHitObjectDistance { get => primaryHitObjectDistance; }
+        public RaycastHit CurRayHit { get => curRayHit; }
         #endregion
 
         #region Unity Methods
@@ -172,6 +174,7 @@ namespace MtsuMLAR
             //If we hit something, then add to our lists nd check for the closest one
             if (hits.Length > 0)
             {
+                RaycastHit testHit = hits[0];
                 GameObject closestObject = hits[0].transform.gameObject;
                 float closestDistance = hits[0].distance;
                 for (int i = 0; i < hits.Length; i++)
@@ -181,10 +184,12 @@ namespace MtsuMLAR
                     {
                         closestObject = hits[i].transform.gameObject;
                         closestDistance = hits[i].distance;
+                        testHit = hits[i];
                     }
                 }
                 primaryHitObject = closestObject;
                 primaryHitObjectDistance = closestDistance;
+                curRayHit = testHit;
                 currentHitState = HitState.ObjectHit;
                 return true;
             }

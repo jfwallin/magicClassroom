@@ -3,29 +3,33 @@ using UnityEngine.XR.MagicLeap;
 
 namespace MtsuMLAR
 {
+    /// <summary>
+    /// Controls the Line Renderer on the Controller Prefab to draw cursor based on what state
+    /// the event system is in. UI objects that don't want the bendy select cursor must have
+    /// the "ARUI" Tag
+    /// </summary>
     [RequireComponent(typeof(LineRenderer))]
     public class LineControl : MonoBehaviour
     {
         #region Private Variables
         //Line Drawing Variables
         [SerializeField]
-        private float cursorExtent = 10.0f;
+        private float cursorExtent = 10.0f;    //How far the cursor is drawn when not pointing at anything
         [SerializeField]
-        private int numSegments = 30;
+        private int numSegments = 30;          //Higher value means smoother line
         private Vector3[] pointPositions;
 
         private MLInputController controller;
 
         //Component Variables
-        //private Raycaster rayScript;
         private MLEventSystem eventSystem;
         private MLInputModuleV2 inputModule;
         private LineRenderer lRend;
         #endregion
 
+        #region Unity Methods
         private void Awake()
         {
-            //rayScript = GetComponent<Raycaster>();
             lRend = GetComponent<LineRenderer>();
             lRend.positionCount = numSegments + 1;
             pointPositions = new Vector3[numSegments + 1];
@@ -35,9 +39,28 @@ namespace MtsuMLAR
         {
             MLInput.Start();
             controller = MLInput.GetController(MLInput.Hand.Left);
+            if(controller == null)
+            {
+                controller = MLInput.GetController(MLInput.Hand.Right);
+                if(controller == null)
+                {
+                    Debug.LogWarning("LineControl.cs could not get a reference to the Magic Leap controller, diabling script");
+                    enabled = false;
+                }
+            }
 
             inputModule = GameObject.FindGameObjectWithTag("MLEventSystem").GetComponent<MLInputModuleV2>();
+            if(inputModule == null)
+            {
+                Debug.LogWarning("Could not Get a reference to the inputModule, disabling script");
+                enabled = false;
+            }
             eventSystem = GameObject.FindGameObjectWithTag("MLEventSystem").GetComponent<MLEventSystem>();
+            if(eventSystem == null)
+            {
+                Debug.LogWarning("Could not get a reference to the eventSystem, disabling script");
+                enabled = false;
+            }
         }
 
         private void OnDestroy()
@@ -51,8 +74,10 @@ namespace MtsuMLAR
             transform.rotation = controller.Orientation;
         }
 
-        /*This Code checks the raycaster state, and draws the cursor depending on
-         * whether it is dragging, interacting with an object, or a UI element*/
+         /// <summary>
+         /// This updates the pointer after everything else should have moved,
+         /// depending on if we are hitting an object or not
+         /// </summary>
         private void LateUpdate()
         {
             if (eventSystem.IsDragging)
@@ -63,25 +88,14 @@ namespace MtsuMLAR
                 DrawSelectLine(inputModule.PrimaryHitObject.transform);
             else
                 DrawStraightLine(cursorExtent);
-
-            //switch (rayScript.CurrentRaycasterState)
-            //{
-            //    case RaycasterState.IsDrag:
-            //    case RaycasterState.RayHit:
-            //        DrawSelectLine(rayScript.PrevHitObject.transform); //draw the cursor following the object
-            //        break;
-
-            //    case RaycasterState.UIHit:
-            //        DrawStraightLine(rayScript.Hit.distance);                //Draw a straight line that ends at the UI
-            //        break;
-
-            //    case RaycasterState.NoHit:                             //Draw a line of predetermined length
-            //        DrawStraightLine(cursorExtent);
-            //        break;
-            //}
         }
+        #endregion //Unity Methods
 
-        /*This function takes an input length and draws a straight line that long*/
+        #region Private Methods
+        /// <summary>
+        /// Draws a straight line from the front of the controller
+        /// </summary>
+        /// <param name="length">how long, in unity units, to make th line</param>
         private void DrawStraightLine(float length)
         {
             for (int j = 0; j <= numSegments; j++)
@@ -95,6 +109,10 @@ namespace MtsuMLAR
 
         /*This function draws a curved line to the target transform with a straight
          * beginning, giving it a flexible feeling*/
+         /// <summary>
+         /// Draws a line that curves to the target
+         /// </summary>
+         /// <param name="target">Transform of the target object</param>
         private void DrawSelectLine(Transform target)
         {
             lRend.sortingOrder = 4;
@@ -107,5 +125,6 @@ namespace MtsuMLAR
             }
             lRend.SetPositions(pointPositions);
         }
+        #endregion
     }
 }

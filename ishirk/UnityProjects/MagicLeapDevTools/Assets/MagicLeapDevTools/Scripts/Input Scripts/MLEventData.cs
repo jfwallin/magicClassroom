@@ -10,6 +10,7 @@ namespace MtsuMLAR
     /// </summary>
     public class MLEventData
     {
+        private RaycastHit curRayHit;
         private Transform pointerTransform;
         private GameObject currentSelectedObject;
         private GameObject currentHitObject;
@@ -17,6 +18,7 @@ namespace MtsuMLAR
         public Transform PointerTransform { get => pointerTransform; set => pointerTransform = value; }
         public GameObject CurrentSelectedObject { get => currentSelectedObject; set => currentSelectedObject = value; }
         public GameObject CurrentHitObject { get => currentHitObject; set => currentHitObject = value; }
+        public RaycastHit CurRayHit { get => curRayHit; set => curRayHit = value; }
     }
 
     /// <summary>

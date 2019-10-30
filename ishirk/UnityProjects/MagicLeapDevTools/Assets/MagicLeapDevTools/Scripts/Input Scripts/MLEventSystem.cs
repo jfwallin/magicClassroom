@@ -215,6 +215,7 @@ namespace MtsuMLAR
             eventData.CurrentSelectedObject = lastSelectedObject;
             eventData.PointerTransform = inputModule.PrimaryInputPointerObject.transform;
             eventData.CurrentHitObject = inputModule.PrimaryHitObject;
+            eventData.CurRayHit = inputModule.CurRayHit;
         }
 
         /// <summary>

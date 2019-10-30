@@ -1,24 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using System;
 using UnityEngine.XR.MagicLeap;
 
 namespace MtsuMLAR
 {
+    //This defines a bool Unity Event that allows for editing in the inspector
     [System.Serializable]
     public class ToggleEvent : UnityEvent<bool> { }
 
+    /// <summary>
+    /// This class is used on the ARToggle to mimic Unity UI toggle functionality.
+    /// </summary>
     public class ARToggleScript : MonoBehaviour, IMLPointerEnterHandler, IMLPointerExitHandler, IMLPointerDownHandler, IMLPointerUpHandler
     {
         #region Private Variables
-        //Colors for the button in different states
-        private Color idleColor = Color.white;
-        [SerializeField]
-        private Color highlightColor = Color.yellow;
-        [SerializeField]
-        private Color pressColor = Color.green;
-
         //button background reference
         [SerializeField]
         private Image togglebox = null;
@@ -27,17 +23,28 @@ namespace MtsuMLAR
         [SerializeField]
         private Collider toggleCollider = null;
 
-        //Actions to be assigned to by the menu control script, allowing button customization
-        public ToggleEvent ValueChanged;
+        //Colors for the button in different states
+        private Color idleColor = Color.white;
+        [SerializeField]
+        private Color highlightColor = Color.yellow;
+        [SerializeField]
+        private Color pressColor = Color.green;
 
+        //Set the state
+        [SerializeField]
+        private bool state = false;
+
+        //Actions to be assigned to by the menu control script, allowing button customization
+        public ToggleEvent Toggle;
         #endregion
 
-        // Start is called before the first frame update
+        #region Unity Methods
         void Start()
         {
             idleColor = togglebox.color;
-            if (ValueChanged == null)
-                ValueChanged = new ToggleEvent();
+            if (Toggle == null)
+                Toggle = new ToggleEvent();
+            checkmark.enabled = state;
         }
 
         void OnEnable()
@@ -51,7 +58,9 @@ namespace MtsuMLAR
             togglebox.enabled = false;
             toggleCollider.enabled = false;
         }
+        #endregion
 
+        #region Event Handlers
         public void MLOnPointerEnter(MLEventData eventData)
         {
             togglebox.color = highlightColor;
@@ -65,15 +74,16 @@ namespace MtsuMLAR
 
         public void MLOnPointerDown(MLEventData eventData)
         {
-            bool state = !checkmark.enabled;
+            state = !state;
             togglebox.color = pressColor;
             checkmark.enabled = state;
-            ValueChanged.Invoke(state);
+            Toggle.Invoke(state);
         }
 
         public void MLOnPointerUp(MLEventData eventData)
         {
             togglebox.color = highlightColor;
         }
+        #endregion
     }
 }
