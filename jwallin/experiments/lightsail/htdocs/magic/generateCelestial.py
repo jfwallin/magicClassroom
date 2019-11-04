@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 import json 
 import copy
 import re
@@ -277,15 +278,15 @@ moonScale = 4
 shape = "Cube"
 
 
-print jupiterParameters
-projectedEarthSize = jupiterParameters['projectedEarthSize'] 
-projectedEarthRotation = jupiterParameters['projectedEarthRotation'] 
-projectedDistanceScale = jupiterParameters['projectedDistanceScale'] 
-moonScale = jupiterParameters['moonScale'] 
+##print jupiterParameters
+projectedEarthSize = float( jupiterParameters['projectedEarthSize'] )
+projectedEarthRotation = float( jupiterParameters['projectedEarthRotation'] )
+projectedDistanceScale = float( jupiterParameters['projectedDistanceScale'] )
+moonScale = float( jupiterParameters['moonScale'] )
 shape = jupiterParameters['shape'] 
 
 sizeScale =  projectedEarthSize / actualEarthSize 
-rotationScale =  projectedEarthRotation / actualEarthRotation
+rotationScale = projectedEarthRotation / actualEarthRotation
 
 moonSizeScale = sizeScale * moonScale
 
@@ -294,9 +295,14 @@ moonSizeScale = sizeScale * moonScale
 s1 = gc.createJupiter(sizeScale, moonSizeScale,  rotationScale, orbitalScale, pheight, shape)
 scenes.append(s1)
 
-sss = str(s1).replace("\"","\\\"")
+sss = s1
+#sss = str(s1).replace("\"","\\\"")
 sss = sss.replace("\n","")
 sss = re.sub(",\s+",",",sss) 
+sss = re.sub("}\s+","}",sss) 
+sss = re.sub("{\s+","{",sss) 
+sss = re.sub(":\s+",":",sss) 
+#sss = re.sub("\\","",sss)
 #sss = re.sub("\{\s+","\{",sss) 
 #sss = re.sub("\}\s+","\}",sss) 
 #sss = re.sub("\s+\}","\}",sss) 
