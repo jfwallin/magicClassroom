@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+<link href="sliderstyle.css" rel="stylesheet" type="text/css">
+<body> 
+  
+<h1>Example of Range Slider Using Javascript</h1> 
+<p>Use the slider to increment or decrement value.</p> 
+
+<form action="./jc.php" method="post">
+  First name:<br>
+  <input type="text" name="firstname"><br>
+<p></p>
+
+
+<br><br>
+Moon Scale Factor  moonScale text float  0.0  4.0 0.1<br>
+Moon Scale Factor: <span id="slider33"></span>
+<div class="rangeslider"> 
+  <input type="range" min=" 0.0" max="4.0" step="0.1" value="2"
+  class="myslider" id="slideID3" name="moonScale1">
+ </div>
+
+ <script>
+ var rangeslider333 = document.getElementById("slideID3");
+ var output333 = document.getElementById("slider33"); 
+output333.innerHTML = rangeslider333.value; 
+rangeslider333.oninput = function() { 
+output333.innerHTML = this.value; 
+}
+</script>
+
+
+
+Value: <span id="demo"></span>
+<div class="rangeslider"> 
+  <input type="range" min="0" max="20" step="1" value="4"
+  class="myslider" id="jwslider" name="duck">
+ </div>
+
+ <script>
+ var rangeslider = document.getElementById("jwslider");
+ var output = document.getElementById("demo"); 
+output.innerHTML = rangeslider.value; 
+rangeslider.oninput = function() { 
+  output.innerHTML = this.value; 
+}
+</script>
+
+
+
+
+
+Value: <span id="demo"></span>
+<div class="rangeslider"> 
+  <input type="range" min="1" max="20" step="0.2" value="4"
+  class="myslider" id="sliderRange" name="projectedEarthSize"> 
+</div>
+  
+Value: <span id="demo2"></span>
+<div class="rangeslider"> 
+  <input type="range" min="1" max="20" step="0.5"  value="4"
+  class="myslider" id="sliderRange2" name="projectedEarthSize2"> 
+</div>
+
+<div class="rangeslider"> 
+ ProjectedEarth3: <span id="demo3"></span>
+  <input type="range" min="1" max="20" step="0.1"  value="4"
+  class="myslider" id="sliderRange3" name="projectedEarthSize3"> 
+</div>
+
+<div class="rangeslider"> 
+ Moonslide: <span id="demo4"></span>
+ <input type="range" min="1" max="20" value="4"
+  class="myslider" id="sliderRange4" name="moonSlide"> 
+</div>
+
+ <input type="submit" value="Submit"> 
+</form>
+  
+<script> 
+var rangeslider = document.getElementById("sliderRange"); 
+var output = document.getElementById("demo"); 
+output.innerHTML = rangeslider.value; 
+rangeslider.oninput = function() { 
+  output.innerHTML = this.value; 
+}
+
+  
+var rangeslider2 = document.getElementById("sliderRange2"); 
+var output2 = document.getElementById("demo2"); 
+output2.innerHTML = rangeslider2.value; 
+rangeslider2.oninput = function() { 
+  output2.innerHTML = this.value ; 
+}
+
+var rangeslider3 = document.getElementById("sliderRange3"); 
+var output3 = document.getElementById("demo3"); 
+output3.innerHTML = rangeslider3.value; 
+rangeslider3.oninput = function() { 
+  output3.innerHTML = this.value ; 
+}
+
+var rangeslider4 = document.getElementById("sliderRange4"); 
+var output4 = document.getElementById("demo4"); 
+output4.innerHTML = rangeslider4.value; 
+rangeslider4.oninput = function() { 
+  output4.innerHTML = this.value ; 
+} 
+</script> 
+  
+</body> 
+</html> 
