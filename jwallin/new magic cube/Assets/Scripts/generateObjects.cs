@@ -242,12 +242,12 @@ public static class JsonHelper
 IEnumerator grabScene()
     {
 
-        while(myupdate < 10) {
+        while(myupdate < 100) {
 
         
             // updates the scene every 10 seconds
             string sceneJson;
-            string waddress = "http://52.202.177.208/magic/scenetest.php";
+            string waddress = "http://52.202.177.208/magic/jj.php";
 
             yield return new WaitForSeconds(5); 
             UnityWebRequest www = UnityWebRequest.Get(waddress);

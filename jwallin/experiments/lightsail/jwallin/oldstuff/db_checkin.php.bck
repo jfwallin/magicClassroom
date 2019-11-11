@@ -1,0 +1,56 @@
+<?php 
+function db_checkin($servername, $username, $password, $mydb, $postedData) {
+
+
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password);
+
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  } 
+
+  $conn->select_db($mydb);
+  if (mysqli_connect_errno()) {
+    die("Connect failed: %s\n". mysqli_connect_error());
+  }
+
+  $tnow =  time() ;
+  $IP          = "192.168.1.73";
+  $MAC         = "88E9FE60D2F4";
+  $DEVICETIME = time();
+  $image1 = "i1";
+  $image1x = 2.3;
+  $image1y = 0.2;
+  $image1z = -0.3;
+  $image2 = "i2";
+  $image2x = -1.2;
+  $image2y = -0.3;
+  $image2z = 0.5;
+  $reg_date = $tnow + 32346;
+  $timestamp = date('Y-m-d G:i:s');
+
+
+  $val = implode(", ", ["\"" . $MAC . "\"", "\"" . $IP . "\"", $DEVICETIME, "\"". $image1 . "\"", strval($image1x), strval($image1y), strval($image1z), "\"" .$image2 . "\"", strval($image2x), strval($image2y), strval($image2z), "\"". $timestamp. "\""]);
+
+  echo "\n " . $val . "\n\n";
+  $query = "INSERT INTO log (macid, ipaddress, devicetime, image1, image1x, image1y, image1z, image2, image2x, image2y, image2z, reg_date ) VALUES ( " . $val . ")";
+
+  echo "\n";
+  echo $query;
+  echo "\n";
+
+
+  if ($conn->query($query) === TRUE) {
+    echo "Insert successful";
+  } else {
+    echo "Error on insert: " . $conn->error;
+  }
+  echo "\n";
+
+  $conn->close();
+
+}
+
+?>

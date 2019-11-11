@@ -1,0 +1,10 @@
+
+https://www.journaldev.com/1456/how-to-install-apache-php-and-mysql-on-mac-os-x
+
+https://serverfault.com/questions/385378/mysql-connect-the-server-requested-authentication-method-unknown-to-the-client
+
+
+
+
+
+

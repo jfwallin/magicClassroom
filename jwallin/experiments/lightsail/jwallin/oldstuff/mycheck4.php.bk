@@ -1,0 +1,138 @@
+<?php 
+include "validate.php";
+include "db_checkin.php";
+include "db_recent.php";
+
+function searchfor($array, $column, $target) {
+  $thelength = count($array);
+  $findex = -1;
+
+  for ($ii =0; $ii < $thelength; $ii++) {
+    if ($array[$ii][$column] == $target) {
+      $findex = $ii;
+    }
+  }
+  return $findex;
+}
+
+function formSql($tablename, $array) {
+
+  /**/
+
+  // we always ignore the id number since it is
+  // automatically generated, so we start with index 1
+  // We set up the first value, and then add other values 
+  // with the appropriate commas.
+  //
+
+  $firstvalue = 1;
+  $name = $array[$firstvalue][0];
+  $value = $array[$firstvalue][3];
+  $isstring = $array[$firstvalue][2];
+
+  $nstring = $name;
+  if ($isstring == "s") { 
+    $vstring = "\"" . $value . "\"" ;
+  } else {
+    $vstring = $value;
+  }
+
+  $ll = count($array);
+  for ($i = $firstvalue + 1; $i < $ll; $i++) {
+    $name = $array[$i][0];
+    $value = $array[$i][3];
+    $isstring = $array[$i][2];
+
+    if ($isstring == "s") { 
+      $vstring = $vstring . ", " . "\"" . $value . "\"";
+    } else {
+      $vstring = $vstring . ", " . $value;
+    }
+    $nstring = $nstring . ", " . $name;
+
+  }
+
+  $sql = "INSERT INTO ". $tablename .  " (" . $nstring . " ) VALUES (". $vstring . " );";
+  return $sql;
+}
+
+
+
+// ************************
+
+// define variables and set to empty values
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+  require "checkinData.php";
+
+  // process the posted data and put it into the array
+  // defined in the python program.  This should be associated
+  // with a database table generated in the python script.
+  $ll = count($postedData);
+  for ($i = 0; $i < $ll; $i++) {
+    $ignoreFlag = $postedData[$i][1];
+    if ($ignoreFlag <> "I") {
+      list($a, $b) = validateEntry($postedData[$i][0], $postedData[$i][1]);
+      $postedData[$i][3] = $a;
+      $postedData[$i][4] = $b;
+    }
+  }
+
+  // add the two additional fields we need to add:
+  // servertime
+  // timestamp
+  //
+  // These fields are filled in using data from the server rather
+  // than from the device.  We need to find their index in the
+  // database array, and then update them.
+  $rid =    searchfor($postedData, 0, "servertime") ;
+  $milliseconds = round(microtime(true) * 1000);
+  $postedData[$rid][3] = $milliseconds;
+
+  $rid =    searchfor($postedData, 0, "reg_date") ;
+  $timestamp = date('Y-m-d G:i:s');
+  $postedData[$rid][3] = $timestamp;
+
+  // Once we have all the data in an array that needs to be posted,
+  // we need to create an sql query to put the data into the table.
+  $sqlinsert = formSql($tablename, $postedData);
+
+  // with the sqlinsert query assembled, we can post
+  // the data into the server and check the device into the logfile
+  $servername = "localhost";
+  $username = "myuser";
+  $password = "mysqlUsernamePassword";
+  $mydb = "duckduck";
+  db_checkin($servername, $username, $password, $mydb, $sqlinsert);
+
+  // we now will return some time information to make sure everyone is on the same page
+  $millisecondsnow = round(microtime(true) * 1000);
+  $tdiff = $milliseconds - $postedData[2][3];
+  //echo "current time on the server = " . $millisecondsnow . "\n";
+  //echo "recorded time on the server = " . $milliseconds . "\n";
+  //echo "posted time        = " . $postedData[2][3] . "\n";
+  //echo $tdiff . "\n";
+
+  // we now will findout who has checked in the last
+  // $recentinterval millisecond and the MACID of the device is not 
+  // $mymac and the target images have the same name.
+  
+  $macid = "duck";  // testing only
+  $recentinterval = 1000 * 60;
+  $rid = searchfor($postedData, 0, "image1");
+  $i1 = $postedData[$rid][3];
+  $rid = searchfor($postedData, 0, "image2");
+  $i2 = $postedData[$rid][3];
+
+  // do the query based on these parameters
+  $neighbors = db_recent($servername, $username, $password, $mydb, $tablename, $recentinterval, $mymac, $i1, $i2);
+
+  // turn this into a json string
+  $json = json_encode($neighbors);
+  echo $json . "\n";
+
+
+  //echo phpinfo();
+}
+
+?>

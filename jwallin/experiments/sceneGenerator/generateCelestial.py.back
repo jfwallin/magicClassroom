@@ -213,22 +213,32 @@ class generateCelestial:
         # add the moons with a relative orbital offset
         orbitalScale = projectedDistanceScale / actualEarthSize
 
+        #p = self.sampleObject.copy()
         name = "Io"
         p1  = gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape)
         sceneObjects.append(copy.deepcopy(p1))
+        #sceneObjects.append(gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape))
 
         name = "Europa"
         p1  = gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape)
         sceneObjects.append(copy.deepcopy(p1))
+        #sceneObjects.append(gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape  ))
 
         name = "Callisto"
         p3  = gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape)
         sceneObjects.append(copy.deepcopy(p3))
+        #sceneObjects.append(gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape ))
+#        print "p3 = ",p3
 
         name = "Ganymede"
         p1  = gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape)
         sceneObjects.append(copy.deepcopy(p1))
+        #sceneObjects.append(gc.createMoon(name, position, moonSizeScale, rotationScale, orbitalScale, shape ))
 
+#        print "p3 = ",p3
+#        print "---------------------"
+#        print sceneObjects
+#        print "##"
 
         s1 = gc.createSceneJson(sceneObjects)
         return s1
@@ -263,33 +273,18 @@ scenes.append(s1)
 
 ################### Scene 1  - Jupiter
 
-
-with open("./jupiterParameters.json") as f:
-    jupiterParameters= json.load(f)
-
+projectedEarthSize = 0.07
 actualEarthSize = 12756.0
+
+projectedEarthRotation = 5.0
 actualEarthRotation = 23.9
 
-projectedEarthSize = 0.07
-projectedEarthRotation = 5.0
 projectedDistanceScale = 0.02
-moonScale = 4
-shape = "Cube"
-
-
-print jupiterParameters
-projectedEarthSize = jupiterParameters['projectedEarthSize'] 
-projectedEarthRotation = jupiterParameters['projectedEarthRotation'] 
-projectedDistanceScale = jupiterParameters['projectedDistanceScale'] 
-moonScale = jupiterParameters['moonScale'] 
-shape = jupiterParameters['shape'] 
 
 sizeScale =  projectedEarthSize / actualEarthSize 
 rotationScale =  projectedEarthRotation / actualEarthRotation
 
-moonSizeScale = sizeScale * moonScale
-
-
+moonSizeScale = sizeScale * 4
 
 s1 = gc.createJupiter(sizeScale, moonSizeScale,  rotationScale, orbitalScale, pheight, shape)
 scenes.append(s1)
@@ -304,3 +299,111 @@ sss = re.sub(",\s+",",",sss)
 print sss
 
 
+################### Scene 2  - Jupiter
+
+shape = "Cube"
+projectedEarthSize = 0.07
+actualEarthSize = 12756.0
+
+projectedEarthRotation = 5.0
+actualEarthRotation = 23.9
+
+projectedDistanceScale = 0.02
+
+sizeScale =  projectedEarthSize / actualEarthSize 
+rotationScale =  projectedEarthRotation / actualEarthRotation
+
+moonSizeScale = sizeScale *8
+
+s1 = gc.createJupiter(sizeScale, moonSizeScale,  rotationScale, orbitalScale, pheight, shape)
+scenes.append(s1)
+
+sss = str(s1).replace("\"","\\\"")
+sss = sss.replace("\n","")
+sss = re.sub(",\s+",",",sss) 
+sss = re.sub("\{\s+","\{",sss) 
+sss = re.sub("\}\s+","\}",sss) 
+sss = re.sub("\s+\}","\}",sss) 
+sss = re.sub("\:\s+","\:",sss) 
+#print sss
+
+
+
+################### Scene 3  - Jupiter
+
+shape = "Cylinder"
+projectedEarthSize = 0.07
+actualEarthSize = 12756.0
+
+projectedEarthRotation = 5.0
+actualEarthRotation = 23.9
+
+projectedDistanceScale = 0.02
+
+sizeScale =  projectedEarthSize / actualEarthSize 
+rotationScale =  projectedEarthRotation / actualEarthRotation
+
+
+moonSizeScale = sizeScale * 8
+
+s1 = gc.createJupiter(sizeScale, moonSizeScale, rotationScale, orbitalScale, pheight, shape)
+print "-------"
+print "-------"
+
+sss = str(s1).replace("\"","\\\"")
+sss = sss.replace("\n","")
+sss = re.sub(",\s+",",",sss) 
+sss = re.sub("\{\s+","\{",sss) 
+sss = re.sub("\}\s+","\}",sss) 
+sss = re.sub("\s+\}","\}",sss) 
+sss = re.sub("\:\s+","\:",sss) 
+#print sss
+#print sss
+
+
+exit()
+
+print scenes[0]
+exit()
+
+
+for s in scenes:
+    print s
+
+
+
+
+
+"""
+string fixJson(string value)
+{
+    value = "{\"Items\":" + value + "}";
+    return value;
+}
+
+"""
+
+"""
+    "id": 1,
+    "name": "Mercury",
+    "mass": 0.33,
+    "diameter": 4879.0,
+    "density": 5427.0,
+    "gravity": 3.7,
+    "escapeVelocity": 4.3,
+    "rotationPeriod": 1407.6,
+    "lengthOfDay": 4222.6,
+    "distanceFromSun": 57.9,
+    "perihelion": 46.0,
+    "aphelion": 69.8,
+    "orbitalPeriod": 88.0,
+    "orbitalVelocity": 47.4,
+    "orbitalInclination": 7.0,
+    "orbitalEccentricity": 0.205,
+    "obliquityToOrbit": 0.034,
+    "meanTemperature": 167.0,
+    "surfacePressure": 0.0,
+    "numberOfMoons": 0,
+    "hasRingSystem": false,
+    "hasGlobalMagneticField": false
+    """
