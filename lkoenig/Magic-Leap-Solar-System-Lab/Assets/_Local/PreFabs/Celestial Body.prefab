@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7661590216325788925}
   - component: {fileID: 3309379730611590129}
   - component: {fileID: 851753187246037197}
+  - component: {fileID: 2959716632733389640}
   m_Layer: 0
   m_Name: Celestial Body
   m_TagString: Untagged
@@ -109,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   center: {fileID: 0}
   rotateDegree: 0
-  timeMultiplier: 1
 --- !u!114 &3309379730611590129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAngle: {x: 0, y: 0, z: 0}
-  timeMultiplier: 1
 --- !u!54 &851753187246037197
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140,3 +139,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2959716632733389640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831188020831755062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4df325599c129541b666e09bde34c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motionSource: {fileID: 0}
+  smoothTime: 0.04
+  sendFrameRate: 24
+  remotePrefab: {fileID: 0}
+  ownershipLocked: 0
+  resourceFileName: 
+  creator: 
+  guid: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  targetScale: {x: 0, y: 0, z: 0}
