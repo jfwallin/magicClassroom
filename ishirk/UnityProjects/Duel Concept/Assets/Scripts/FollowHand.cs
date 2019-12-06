@@ -48,23 +48,22 @@ public class FollowHand : MonoBehaviour
         {
             rend.enabled = true;
             transform.position = hand.Center;
-            if (CalculateHandNormal(hand, ref handNormal))
-            {
-                Quaternion newRotation;
-                if (handType == MLHandType.Right)
-                {
-                    newRotation = Quaternion.LookRotation(handNormal, playerScript.rightHandForward);
-                    transform.rotation = newRotation;
-                    transform.Rotate(new Vector3(90, 0, 0), Space.Self);
-                }
-                else
-                {
-                    newRotation = Quaternion.LookRotation(-handNormal, playerScript.leftHandForward);
-                    transform.rotation = newRotation;
-                    transform.Rotate(new Vector3(-90, 0, 0), Space.Self);
-                }
-                
-            }
+            //if (CalculateHandNormal(hand, ref handNormal))
+            //{
+            //    Quaternion newRotation;
+            //    if (handType == MLHandType.Right)
+            //    {
+            //        newRotation = Quaternion.LookRotation(handNormal, playerScript.rightHandForward);
+            //        transform.rotation = newRotation;
+            //        transform.Rotate(new Vector3(90, 0, 0), Space.Self);
+            //    }
+            //    else
+            //    {
+            //        newRotation = Quaternion.LookRotation(-handNormal, playerScript.leftHandForward);
+            //        transform.rotation = newRotation;
+            //        transform.Rotate(new Vector3(-90, 0, 0), Space.Self);
+            //    }
+            //}
 
             //if (hand.KeyPose == MLHandKeyPose.OpenHand && hand.KeyPoseConfidence > 0.9f)
             //{

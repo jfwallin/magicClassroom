@@ -6,45 +6,52 @@ using UnityEngine.XR.MagicLeap;
 public class Player : MonoBehaviour
 {
     public enum MagicState {Idle, ChargingFireball, FiringFireball}
-    MagicState curMagicState = MagicState.Idle;
 
-    private bool shieldActive = false;
+    #region Public Variables
+    public AttackHand rightHand;
+    public ShieldHand leftHand;
+    #endregion
 
-    public FollowHand rightHand;
-    public FollowHand leftHand;
-
-    public Vector3 rightShoulderPosition;
-    public Vector3 leftShoulderPosition;
-
+    #region Private Variables
+    private MagicState curMagicState = MagicState.Idle;
+    [SerializeField]
+    private Vector3 rightShoulderPosition;
+    [SerializeField]
+    private Vector3 leftShoulderPosition;
     private MLKeyPoseManager poseManager;
+    private bool shieldActive = false;
+    #endregion
 
-    public Vector3 rightHandForward
+    #region Properties
+    public Vector3 RightShoulderPosition
     {
         get
         {
-            return (rightHand.transform.position - transform.TransformPoint(rightShoulderPosition)).normalized;
+            return transform.TransformPoint(rightShoulderPosition);
         }
+        set => rightShoulderPosition = value;
     }
 
-    public Vector3 leftHandForward
+    public Vector3 LeftShoulderPosition
     {
         get
         {
-            return (leftHand.transform.position - transform.TransformPoint(leftShoulderPosition)).normalized;
+            return transform.TransformPoint(leftShoulderPosition);
         }
+        set => leftShoulderPosition = value;
     }
+    #endregion
 
-    // Start is called before the first frame update
     void Start()
     {
+        if(rightHand == null | leftHand == null)
+        {
+            Debug.LogWarning("A hand is unassigned to the Player script, disabling");
+            enabled = false;
+        }
+
         MLHands.Start();
         poseManager = MLHands.KeyPoseManager;
-        //List<MLHandKeyPose> initialKeyPoses = new List<MLHandKeyPose>();
-        //initialKeyPoses.Add(MLHandKeyPose.NoPose);
-        //initialKeyPoses.Add(MLHandKeyPose.OpenHand);
-        //MLHandKeyPose[] temp_Poses = initialKeyPoses.ToArray();
-        //poseManager.EnableKeyPoses(temp_Poses, true, true);
-
         poseManager.OnHandKeyPoseBegin += OnHandKeyPoseBegin;
     }
 
@@ -54,19 +61,16 @@ public class Player : MonoBehaviour
         MLHands.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// Filters Keypose events into magic actions
+    /// </summary>
+    /// <param name="pose">recognized pose</param>
+    /// <param name="hand">handedness</param>
     public void OnHandKeyPoseBegin(MLHandKeyPose pose, MLHandType hand)
     {
-        FollowHand eventHand;
         Vector3 eventShoulderPosition;
         if(hand == MLHandType.Right)
         {
-            eventHand = rightHand;
             eventShoulderPosition = rightShoulderPosition;
 
             if (curMagicState == MagicState.Idle)
@@ -74,7 +78,7 @@ public class Player : MonoBehaviour
                 if (pose == MLHandKeyPose.OpenHand)
                 {
                     curMagicState = MagicState.ChargingFireball;
-                    eventHand.ChargeFireball();
+                    rightHand.ChargeFireball();
                 }
             }
             else if (curMagicState == MagicState.ChargingFireball)
@@ -82,33 +86,29 @@ public class Player : MonoBehaviour
                 if (pose == MLHandKeyPose.NoPose)
                 {
                     curMagicState = MagicState.Idle;
-                    eventHand.StopChargingFireball();
+                    rightHand.StopChargingFireball();
                 }
                 else if (pose == MLHandKeyPose.Finger)
                 {
                     curMagicState = MagicState.Idle;
-                    Vector3 direction = (eventHand.transform.position - transform.TransformPoint(eventShoulderPosition)).normalized;
-                    eventHand.FireFireball(direction);
+                    rightHand.FireFireball();
                 }
             }
         }
-        else
+        else //hand = left
         {
-            eventHand = leftHand;
             eventShoulderPosition = leftShoulderPosition;
 
             if(pose == MLHandKeyPose.Fist & shieldActive == false)
             {
-                eventHand.FormShield();
+                leftHand.FormShield();
                 shieldActive = true;
             }
             else if(pose != MLHandKeyPose.Fist & shieldActive == true)
             {
-                eventHand.DispellShield();
+                leftHand.DispellShield();
                 shieldActive = false;
             }
         }
-
-        
     }
 }

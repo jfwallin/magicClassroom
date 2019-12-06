@@ -11,20 +11,20 @@ public class PlayerEditor : Editor
         Player playerScript = (Player)target;
 
         EditorGUI.BeginChangeCheck();
-        Vector3 newRightShoulderPosition = Handles.PositionHandle(playerScript.transform.TransformPoint(playerScript.rightShoulderPosition), Quaternion.identity);
+        Vector3 newRightShoulderPosition = Handles.PositionHandle(playerScript.RightShoulderPosition, Quaternion.identity);
         if(EditorGUI.EndChangeCheck())
         {
             Undo.RecordObject(playerScript, "Change right shoulder position");
-            playerScript.rightShoulderPosition = newRightShoulderPosition;
+            playerScript.RightShoulderPosition = newRightShoulderPosition;
 
         }
 
         EditorGUI.BeginChangeCheck();
-        Vector3 newLeftShoulderPosition = Handles.PositionHandle(playerScript.transform.TransformPoint(playerScript.leftShoulderPosition), Quaternion.identity);
+        Vector3 newLeftShoulderPosition = Handles.PositionHandle(playerScript.LeftShoulderPosition, Quaternion.identity);
         if(EditorGUI.EndChangeCheck())
         {
             Undo.RecordObject(playerScript, "Changed left shoulder position");
-            playerScript.leftShoulderPosition = newLeftShoulderPosition;
+            playerScript.LeftShoulderPosition = newLeftShoulderPosition;
 
         }
     }
@@ -33,8 +33,8 @@ public class PlayerEditor : Editor
     static void DrawShoulderGizmos(Player playerObj, GizmoType type)
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(playerObj.transform.TransformPoint(playerObj.rightShoulderPosition), 0.05f);
+        Gizmos.DrawSphere(playerObj.RightShoulderPosition, 0.05f);
         Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(playerObj.transform.TransformPoint(playerObj.leftShoulderPosition), 0.05f);
+        Gizmos.DrawSphere(playerObj.LeftShoulderPosition, 0.05f);
     }
 }
