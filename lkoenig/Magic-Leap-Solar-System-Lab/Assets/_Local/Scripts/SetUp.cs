@@ -11,24 +11,13 @@ using UnityEngine.UI;
 public class SetUp : MonoBehaviour
 {
 
-    
+    public GameObject myPrefab;
 
     private void Awake()
     {
-        TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0,2,-2), Quaternion.Euler(0,0,0), new Vector3(0.25f, 0.25f, 0.25f));
-
+        //TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0,2,-2), Quaternion.Euler(0,0,0), new Vector3(0.25f, 0.25f, 0.25f));
+        Instantiate(myPrefab, new Vector3(0, 2, -2), Quaternion.identity);
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

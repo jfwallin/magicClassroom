@@ -55,7 +55,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317306276069269690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4df325599c129541b666e09bde34c30, type: 3}
   m_Name: 
@@ -292,21 +292,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6bc5005e8a6be79449494e8ba29e71c1, type: 2}
-    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: center
-      value: 
-      objectReference: {fileID: 125925424348021167}
-    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: rotateDegree
-      value: 0.1973
-      objectReference: {fileID: 0}
-    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: timeManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: rotationAngle.y
@@ -323,6 +308,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: timeManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 125925424348021167}
+    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: rotateDegree
+      value: 0.1973
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: timeManager
       value: 
@@ -428,6 +428,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b39c98e37b0cc0845825d5ff2e59b57c, type: 2}
+    - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: rotationAngle.y
+      value: 2.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: timeManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: center
@@ -439,16 +449,6 @@ PrefabInstance:
       value: 2.667
       objectReference: {fileID: 0}
     - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: timeManager
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: rotationAngle.y
-      value: 2.449
-      objectReference: {fileID: 0}
-    - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: timeManager
       value: 
@@ -527,11 +527,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f1a03ba1361cfed499da2f2c0159f5f0, type: 2}
-    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: timeManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3309379730611590129, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: rotationAngle.y
@@ -546,6 +541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: timeManager
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9bf9c9ad6107b240a643fc82303b98d, type: 3}

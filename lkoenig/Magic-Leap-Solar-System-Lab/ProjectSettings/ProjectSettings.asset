@@ -630,7 +630,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/lak3r/Downloads/Certificate folder/certificate.cert
+    m_CertPath: C:/Users/lak3r/Downloads/Certificate/othercomputer.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
