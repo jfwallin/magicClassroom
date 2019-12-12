@@ -59,7 +59,7 @@ MonoBehaviour:
   - name: WifiStatusRead
     enabled: 0
   - name: WorldReconstruction
-    enabled: 0
+    enabled: 1
   - name: AddressBookRead
     enabled: 0
   - name: AddressBookWrite

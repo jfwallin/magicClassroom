@@ -1,28 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.MagicLeap;
 
 public class Player : MonoBehaviour
 {
-    public enum MagicState {Idle, ChargingFireball, FiringFireball}
+    #region Events
+    public delegate void DeathAction();
+    public event DeathAction OnPlayerDeath;   //Called when player HP reaches 0
+    #endregion
 
     #region Public Variables
-    public AttackHand rightHand;
-    public ShieldHand leftHand;
+    public float maxHP = 100f;                //Set in the inspector, sets upper bound
+    public float maxMP = 100f;
+    public float mPRegenRate = 5f;            //Rate at which player gains MP when idle
+    [HideInInspector]
+    public bool magicBeingUsed;               //Flag set when spells are being cast, so MP doesnt Regen
     #endregion
 
     #region Private Variables
-    private MagicState curMagicState = MagicState.Idle;
     [SerializeField]
-    private Vector3 rightShoulderPosition;
+    private Vector3 rightShoulderPosition;    //position that determines hand forward direction
     [SerializeField]
     private Vector3 leftShoulderPosition;
-    private MLKeyPoseManager poseManager;
-    private bool shieldActive = false;
+    private float healthPoints;               //health and magic levels
+    private float magicPoints;
     #endregion
 
     #region Properties
+    //When another script gets a shoulder position, it gets transformed into world space first
     public Vector3 RightShoulderPosition
     {
         get
@@ -31,7 +36,6 @@ public class Player : MonoBehaviour
         }
         set => rightShoulderPosition = value;
     }
-
     public Vector3 LeftShoulderPosition
     {
         get
@@ -40,75 +44,64 @@ public class Player : MonoBehaviour
         }
         set => leftShoulderPosition = value;
     }
+    //Custom setters are defined later
+    public float HealthPoints { get => healthPoints; }
+    public float MagicPoints { get => magicPoints; }
     #endregion
 
     void Start()
     {
-        if(rightHand == null | leftHand == null)
-        {
-            Debug.LogWarning("A hand is unassigned to the Player script, disabling");
-            enabled = false;
-        }
-
-        MLHands.Start();
-        poseManager = MLHands.KeyPoseManager;
-        poseManager.OnHandKeyPoseBegin += OnHandKeyPoseBegin;
+        healthPoints = maxHP;
+        magicPoints = maxMP;
+        magicBeingUsed = false;
     }
 
-    private void OnDestroy()
+    private void Update()
     {
-        poseManager.OnHandKeyPoseBegin += OnHandKeyPoseBegin;
-        MLHands.Stop();
+        //Only regen MP if not using it for something
+        if(magicBeingUsed == false)
+        {
+            RestoreMagicPoints(mPRegenRate * Time.deltaTime);
+        }
     }
 
     /// <summary>
-    /// Filters Keypose events into magic actions
+    /// Deals damage to the player, checks if it kills
     /// </summary>
-    /// <param name="pose">recognized pose</param>
-    /// <param name="hand">handedness</param>
-    public void OnHandKeyPoseBegin(MLHandKeyPose pose, MLHandType hand)
+    /// <param name="amount">how much damage to deal</param>
+    public void ApplyDamage(float amount)
     {
-        Vector3 eventShoulderPosition;
-        if(hand == MLHandType.Right)
+        if (healthPoints > amount)
+            healthPoints -= amount;
+        else
         {
-            eventShoulderPosition = rightShoulderPosition;
-
-            if (curMagicState == MagicState.Idle)
-            {
-                if (pose == MLHandKeyPose.OpenHand)
-                {
-                    curMagicState = MagicState.ChargingFireball;
-                    rightHand.ChargeFireball();
-                }
-            }
-            else if (curMagicState == MagicState.ChargingFireball)
-            {
-                if (pose == MLHandKeyPose.NoPose)
-                {
-                    curMagicState = MagicState.Idle;
-                    rightHand.StopChargingFireball();
-                }
-                else if (pose == MLHandKeyPose.Finger)
-                {
-                    curMagicState = MagicState.Idle;
-                    rightHand.FireFireball();
-                }
-            }
+            healthPoints = 0;
+            OnPlayerDeath();
         }
-        else //hand = left
+    }
+
+    /// <summary>
+    /// subtracts from  player magicPoints
+    /// </summary>
+    /// <param name="amount">how many MPs to use</param>
+    /// <returns>true if succesful, false if not enough MP available</returns>
+    public bool UseMagicPoints(float amount)
+    {
+        if (magicPoints > amount)
         {
-            eventShoulderPosition = leftShoulderPosition;
-
-            if(pose == MLHandKeyPose.Fist & shieldActive == false)
-            {
-                leftHand.FormShield();
-                shieldActive = true;
-            }
-            else if(pose != MLHandKeyPose.Fist & shieldActive == true)
-            {
-                leftHand.DispellShield();
-                shieldActive = false;
-            }
+            magicPoints -= amount;
+            return true;
         }
+        else
+            return false;
+    }
+
+    /// <summary>
+    /// Adds MP to player magicPoints
+    /// </summary>
+    /// <param name="amount">how many MPs to add</param>
+    public void RestoreMagicPoints(float amount)
+    {
+        magicPoints = Mathf.Clamp(amount + magicPoints, 0f, maxMP);
     }
 }
