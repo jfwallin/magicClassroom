@@ -57,10 +57,12 @@ namespace MagicLeapTools
         private void Awake()
         {
             //only operate if not in editor:
+            /*
             if (Application.isEditor)
             {
                 gameObject.SetActive(false);
             }
+            */
 
             //only operate if debug build:
             if (debugBuildsOnly && !Debug.isDebugBuild)
