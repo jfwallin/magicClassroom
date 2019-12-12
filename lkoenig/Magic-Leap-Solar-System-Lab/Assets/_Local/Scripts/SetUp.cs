@@ -15,8 +15,9 @@ public class SetUp : MonoBehaviour
 
     private void Awake()
     {
-        //TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0,2,-2), Quaternion.Euler(0,0,0), new Vector3(0.25f, 0.25f, 0.25f));
-        Instantiate(myPrefab, new Vector3(0, 2, -2), Quaternion.identity);
+        Debug.Log("In Awake of Startup");
+        TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0,0,1), Quaternion.Euler(0,0,0), new Vector3(0.25f, 0.25f, 0.25f));
+        //Instantiate(myPrefab, new Vector3(0, 2, -2), Quaternion.identity);
     }
 
 
