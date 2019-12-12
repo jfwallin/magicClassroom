@@ -316,7 +316,7 @@ PrefabInstance:
         type: 3}
       propertyPath: logCanvas
       value: 
-      objectReference: {fileID: 1612432502}
+      objectReference: {fileID: 1187652946}
     - target: {fileID: 5619764785158044116, guid: 4b83d5952ef78964a987c932f7375418,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -357,6 +357,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5619764785063848688, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785063848688, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785063848688, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785063848689, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1269602466}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b83d5952ef78964a987c932f7375418, type: 3}
 --- !u!1 &573071387
@@ -666,6 +686,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 708563899}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1187652946 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5619764785063848689, guid: 4b83d5952ef78964a987c932f7375418,
+    type: 3}
+  m_PrefabInstance: {fileID: 424871638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1187652949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4214550324010282, guid: 24158fb1437dc8e418d893939758764d,
@@ -677,6 +703,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
     type: 3}
   m_PrefabInstance: {fileID: 424871638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1269602466 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20294507499185110, guid: 24158fb1437dc8e418d893939758764d,
+    type: 3}
+  m_PrefabInstance: {fileID: 708704093}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1612432498
 GameObject:
