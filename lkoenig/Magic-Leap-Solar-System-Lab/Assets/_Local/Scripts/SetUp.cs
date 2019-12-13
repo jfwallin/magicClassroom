@@ -11,13 +11,23 @@ using UnityEngine.UI;
 public class SetUp : MonoBehaviour
 {
 
-    public GameObject myPrefab;
-
     private void Awake()
     {
-        Debug.Log("In Awake of Startup");
-        TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0,0,1), Quaternion.Euler(0,0,0), new Vector3(0.25f, 0.25f, 0.25f));
-        //Instantiate(myPrefab, new Vector3(0, 2, -2), Quaternion.identity);
+        //I know this works
+        //Debug.Log("In Awake. Spawning system.");
+        //TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+
+        //trying to make this work
+         if (Transmission.Peers.Length >= 1)
+         {
+             Debug.Log("No Peer's found. Spawning system.");
+             TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+         }
+         else
+         {
+             Debug.Log("Peer's found. You should have a system already.");
+         }
+         
     }
 
 
