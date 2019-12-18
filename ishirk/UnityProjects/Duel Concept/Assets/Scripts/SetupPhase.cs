@@ -115,7 +115,7 @@ public class SetupPhase : MonoBehaviour
                             else if (transform.childCount == 1)
                             {
                                 Transform targetToPlace = transform.GetChild(0);
-                                targetToPlace.position = Hand.Index.KeyPoints[3].Position;
+                                targetToPlace.position = Hand.Index.KeyPoints[2].Position;
                                 targetToPlace.rotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(GameObject.Find("Player Body").transform.position - targetToPlace.position, Vector3.up)) * Quaternion.Euler(0f,-90f,0f);
                             }
                         }
@@ -123,7 +123,6 @@ public class SetupPhase : MonoBehaviour
                         else if(Hand.KeyPose == MLHandKeyPose.Ok && transform.childCount == 1)
                         {
                             StartCoroutine(LerpShieldSize(1.5f));
-                            transform.DetachChildren();
                         }
                         else if(Hand.KeyPose == MLHandKeyPose.Thumb) 
                         {
@@ -176,5 +175,6 @@ public class SetupPhase : MonoBehaviour
             percentComplete = (Time.time - startTime) / timeTocomplete;
             yield return null;
         }
+        transform.DetachChildren();
     }
 }
