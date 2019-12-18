@@ -35,7 +35,11 @@ public class LauncherScript : MonoBehaviour
 
     private IEnumerator LaunchPrefab()
     {
-        yield return null;
+        while(true)
+        {
+
+            yield return new WaitForSeconds(5f);
+        }
     }
 
 }

@@ -115,17 +115,14 @@ public class SetupPhase : MonoBehaviour
                             else if (transform.childCount == 1)
                             {
                                 Transform targetToPlace = transform.GetChild(0);
-                                targetToPlace.position = Hand.Index.KeyPoints[3].Position;
+                                targetToPlace.position = Hand.Index.KeyPoints[2].Position;
                                 targetToPlace.rotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(GameObject.Find("Player Body").transform.position - targetToPlace.position, Vector3.up)) * Quaternion.Euler(0f,-90f,0f);
                             }
                         }
                         //If a shield has been placed, lock it into position
                         else if(Hand.KeyPose == MLHandKeyPose.Ok && transform.childCount == 1)
                         {
-                            AsyncLerpUtility lerpUtil = new AsyncLerpUtility();
-                            lerpUtil.StartLerp(ref transform.GetChild(0).localScale, transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), 1f);
-                            //transform.GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
-                            transform.DetachChildren();
+                            StartCoroutine(LerpShieldSize(1.5f));
                         }
                         else if(Hand.KeyPose == MLHandKeyPose.Thumb) 
                         {
@@ -167,4 +164,17 @@ public class SetupPhase : MonoBehaviour
         }
     }
     #endregion
+
+    private IEnumerator LerpShieldSize(float timeTocomplete)
+    {
+        float startTime = Time.time;
+        float percentComplete = 0f;
+        while (percentComplete < 1)
+        {
+            transform.GetChild(0).localScale = Vector3.Lerp(transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), percentComplete);
+            percentComplete = (Time.time - startTime) / timeTocomplete;
+            yield return null;
+        }
+        transform.DetachChildren();
+    }
 }
