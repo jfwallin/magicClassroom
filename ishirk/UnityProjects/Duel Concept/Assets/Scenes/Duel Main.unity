@@ -365,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4214550324010282, guid: 24158fb1437dc8e418d893939758764d, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4214550324010282, guid: 24158fb1437dc8e418d893939758764d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -426,7 +426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &889680887 stripped
 Transform:
@@ -468,8 +468,9 @@ MonoBehaviour:
   handObjects:
   - {fileID: 8113615907772127767}
   - {fileID: 1001980483567689398}
-  visibleMeshMaterial: {fileID: 0}
-  occlusionMeshMaterial: {fileID: 0}
+  visibleMeshMaterial: {fileID: 2100000, guid: 1a55190557520d846be14a6080e78893, type: 2}
+  occlusionMeshMaterial: {fileID: 2100000, guid: 5f7a8f815117efc428db87c9080e7cd0,
+    type: 2}
   environmentMeshPrefabRenderer: {fileID: 1433006460}
   targetPrefab: {fileID: 1433863885048116066, guid: 52fa0ed1ef1b3ba4d8ccf942e0281ee4,
     type: 3}
