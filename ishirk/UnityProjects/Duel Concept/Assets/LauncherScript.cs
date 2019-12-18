@@ -20,16 +20,18 @@ public class LauncherScript : MonoBehaviour
     {
         if ((cameraObject.transform.position - transform.position).sqrMagnitude < (triggerDistance*triggerDistance))
         {
-            transform.LookAt(cameraObject.transform);
+            Vector3 lookDirection = (cameraObject.transform.position - new Vector3(0, 0.5f, 0)) - transform.position;
+            transform.rotation = Quaternion.LookRotation(lookDirection);
             if(triggered == false)
             {
                 triggered = true;
                 StartCoroutine(LaunchPrefab());
             }
         }
-        else
+        else if(triggered == true)
         {
             triggered = false;
+            StopAllCoroutines();
         }
     }
 
@@ -37,7 +39,10 @@ public class LauncherScript : MonoBehaviour
     {
         while(true)
         {
-
+            GameObject go = Instantiate(projectilePrefab, transform.TransformPoint(LaunchLocation), Quaternion.identity);
+            Rigidbody rb = go.GetComponent<Rigidbody>();
+            rb.velocity = transform.forward * go.GetComponent<FireBallScript>().velocity;
+            Destroy(go, 5f);
             yield return new WaitForSeconds(5f);
         }
     }

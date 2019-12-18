@@ -643,8 +643,8 @@ PlayerSettings:
     UNet: 1
   luminIcon:
     m_Name: 
-    m_ModelFolderPath: 
-    m_PortalFolderPath: 
+    m_ModelFolderPath: Assets/Imported Assets/Icon
+    m_PortalFolderPath: Assets/Imported Assets/Icon/Icon/Portal
   luminCert:
     m_CertPath: C:/Users/irs2e/Documents/Work/privatekey/testdevelop.cert
     m_SignPackage: 1

@@ -202,3 +202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaunchLocation: {x: 0, y: 0, z: 0.21}
+  projectilePrefab: {fileID: 5002883727549287139, guid: 49f78f58c05155f4d8a45114851c531e,
+    type: 3}
+  triggerDistance: 5

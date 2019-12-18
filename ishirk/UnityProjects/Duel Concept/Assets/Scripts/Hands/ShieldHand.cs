@@ -88,7 +88,6 @@ public class ShieldHand : HandScript
             shieldPrefab.SetActive(true);
             playerScript.magicBeingUsed = true;
             curState = ShieldHandState.ShieldActive;
-            playerScript.ApplyDamage(11); //Temporary, for testing purposes
         }
     }
 
