@@ -122,12 +122,12 @@ public class HandScript : MonoBehaviour
         //Define clipping plane based on camera settings
         clippingPlane.SetNormalAndPosition(mainCamera.transform.forward, mainCamera.transform.position + mainCamera.transform.forward * mainCamera.nearClipPlane);
 
+        float distanceFromShoulderToPlane;
         //If we move far enough or quickly enough, it will update the position
         if ((magicLeapHand.Center - transform.position).magnitude > totalPositionThreshold |
             (magicLeapHand.Center - previousHandPosition).magnitude > positionFrameDeltaThreshold)
         {
             Ray handRay = new Ray(shoulderPosition, magicLeapHand.Center - shoulderPosition);
-            float distanceFromShoulderToPlane;
             Vector3 targetPosition;
             //if the hand is within the clipping plane, move the target transform forward until it is not
             if (clippingPlane.Raycast(handRay, out distanceFromShoulderToPlane) && distanceFromShoulderToPlane + clippingPlaneOffset > (magicLeapHand.Center - shoulderPosition).magnitude)
@@ -140,7 +140,6 @@ public class HandScript : MonoBehaviour
         else //Not enough movement, but we still check for camera clipping
         {
             Ray handRay = new Ray(shoulderPosition, transform.position - shoulderPosition);
-            float distanceFromShoulderToPlane;
             if (clippingPlane.Raycast(handRay, out distanceFromShoulderToPlane) && distanceFromShoulderToPlane + clippingPlaneOffset > (transform.position - shoulderPosition).magnitude)
                 transform.position = handRay.GetPoint(distanceFromShoulderToPlane + clippingPlaneOffset);
         }
@@ -160,7 +159,7 @@ public class HandScript : MonoBehaviour
         newRotation = Quaternion.LookRotation(handNormal, -forwardDirection) * Quaternion.Euler(90f, 0f, 0f);
      
         //This softens the motion, making it look less jagged
-        newRotation = Quaternion.Lerp(transform.rotation, newRotation, rotationLerpAmount);
+        newRotation = Quaternion.Slerp(transform.rotation, newRotation, rotationLerpAmount);
         transform.rotation = newRotation;
     }
 
@@ -186,7 +185,7 @@ public class HandScript : MonoBehaviour
         //Searches through finger array, stopping if it finds a valid joint or all fail
         for (int i = 0; i < 4; i++)
         {
-            if (fingerArray[i].MCP.IsValid)
+            if (fingerArray[i].MCP.Position != magicLeapHand.Center) //When it fails to track the joint, it moves it to hand center
             {
                 point1 = fingerArray[i].MCP.Position;
                 lastFingerCheckedIndex = i;
@@ -197,7 +196,7 @@ public class HandScript : MonoBehaviour
         //If no valid joint was found, or if only one joint is valid out of all 4 fingers, the normal can't be found
         if (!foundValidPoint | lastFingerCheckedIndex == 3)
         {
-            Debug.LogWarningFormat("Could not complete finding the normal of the {0} hand", hand.HandType.ToString());
+            //Debug.LogWarningFormat("Could not complete finding the normal of the {0} hand, failed finding 1st finger", hand.HandType.ToString());
             return false;
         }
 
@@ -207,7 +206,7 @@ public class HandScript : MonoBehaviour
         //Starts cheacking from the opposite side to make sure the joints are as far apart as possible
         for (int j = 3; j > lastFingerCheckedIndex; j--)
         {
-            if (fingerArray[j].MCP.IsValid)
+            if (fingerArray[j].MCP.Position != magicLeapHand.Center)
             {
                 point2 = fingerArray[j].MCP.Position;
                 foundValidPoint = true;
@@ -217,7 +216,7 @@ public class HandScript : MonoBehaviour
         //No valid joints were found
         if (!foundValidPoint)
         {
-            Debug.LogWarningFormat("Could not complete finding the normal of the {0} hand", hand.HandType.ToString());
+            //Debug.LogWarningFormat("Could not complete finding the normal of the {0} hand, failed finding 2nd finger", hand.HandType.ToString());
             return false;
         }
 
@@ -225,7 +224,8 @@ public class HandScript : MonoBehaviour
         Vector3 point2RelToHand;
 
         //Using the wrist gets us longer vectors, minimizing noise in MLHand measurements
-        if (hand.Wrist.Center.IsValid)
+        //Assuming it resets to hand center if not tracked
+        if (hand.Wrist.Center.Position != magicLeapHand.Center)
         {
             point1RelToHand = point1 - hand.Wrist.Center.Position;
             point2RelToHand = point2 - hand.Wrist.Center.Position;
@@ -239,7 +239,7 @@ public class HandScript : MonoBehaviour
         Vector3 tempNormal = Vector3.Cross(point1RelToHand, point2RelToHand).normalized;
         if(tempNormal == Vector3.zero)
         {
-            Debug.Log(point1RelToHand.ToString() + point2RelToHand.ToString() + "tempNormal was zero after cross product");
+            //Debug.Log(point1RelToHand.ToString() + point2RelToHand.ToString() + "tempNormal was zero after cross product");
             return false;
         }
         else

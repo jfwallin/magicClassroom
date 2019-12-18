@@ -16,6 +16,7 @@ public class AttackHand : HandScript
     public GameObject fireballPrefab;               //Prefab to be instantiated and launched
     public ParticleSystem chargingAttackParticles;  //Particle system activated when preparing to fire
     public LineRenderer aimDirectionLine;           //Responsible for displaying aim direction
+    public GameObject aimLaserDot;
     public AudioSource chargingSoundSource;         //Toggled when in charging state
     #endregion
 
@@ -54,6 +55,7 @@ public class AttackHand : HandScript
         chargingAttackParticles.Stop();
         aimDirectionLine.positionCount = 2;
         aimDirectionLine.enabled = false;
+        aimLaserDot.SetActive(false);
     }
 
     protected override void OnDestroy()
@@ -63,6 +65,7 @@ public class AttackHand : HandScript
 
         //Clear visuals
         chargingAttackParticles.Stop();
+        aimLaserDot.SetActive(false);
         aimDirectionLine.enabled = false;
     }
 
@@ -95,11 +98,13 @@ public class AttackHand : HandScript
             }
 
             aimDirectionLine.enabled = true;
-            UpdateLineRenderer();
+            aimLaserDot.SetActive(true);
+            UpdateAimLine();
         }
         else //Hand is not visible
         {
             aimDirectionLine.enabled = false;
+            aimLaserDot.SetActive(false);
             if(curState == AttackHandState.ChargingAttack)
             {
                 StopChargingFireball();
@@ -112,12 +117,20 @@ public class AttackHand : HandScript
     /// <summary>
     /// Points aim indicator in current hand forwardDirection
     /// </summary>
-    private void UpdateLineRenderer()
+    private void UpdateAimLine()
     {
         Vector3[] setPoints = new Vector3[2];
         setPoints[0] = transform.position + forwardDirection * 0.1f;
         setPoints[1] = transform.position + forwardDirection * directionIndicatorLength;
         aimDirectionLine.SetPositions(setPoints);
+        RaycastHit hitInfo;
+        if(Physics.Raycast(transform.position, forwardDirection, out hitInfo))
+        {
+            aimLaserDot.transform.position = hitInfo.point + hitInfo.normal * 0.02f;
+            aimLaserDot.transform.rotation = Quaternion.LookRotation(hitInfo.normal);
+        }
+
+        
     }
 
     /// <summary>
