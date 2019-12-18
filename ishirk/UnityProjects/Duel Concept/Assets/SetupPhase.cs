@@ -122,9 +122,9 @@ public class SetupPhase : MonoBehaviour
                         //If a shield has been placed, lock it into position
                         else if(Hand.KeyPose == MLHandKeyPose.Ok && transform.childCount == 1)
                         {
-                            AsyncLerpUtility lerpUtil = new AsyncLerpUtility();
-                            lerpUtil.StartLerp(ref transform.GetChild(0).localScale, transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), 1f);
-                            //transform.GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                            //AsyncLerpUtility lerpUtil = new AsyncLerpUtility();
+                            //lerpUtil.StartLerp(ref transform.GetChild(0).localScale, transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), 1f);
+                            transform.GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
                             transform.DetachChildren();
                         }
                         else if(Hand.KeyPose == MLHandKeyPose.Thumb) 

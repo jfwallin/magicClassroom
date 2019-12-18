@@ -365,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4214550324010282, guid: 24158fb1437dc8e418d893939758764d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4214550324010282, guid: 24158fb1437dc8e418d893939758764d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -426,7 +426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &889680887 stripped
 Transform:
@@ -443,7 +443,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 947189151}
-  - component: {fileID: 947189150}
   - component: {fileID: 947189149}
   m_Layer: 0
   m_Name: LOGIC
@@ -469,27 +468,11 @@ MonoBehaviour:
   handObjects:
   - {fileID: 8113615907772127767}
   - {fileID: 1001980483567689398}
-  visibleMeshMaterial: {fileID: 2100000, guid: 1a55190557520d846be14a6080e78893, type: 2}
-  occlusionMeshMaterial: {fileID: 2100000, guid: 5f7a8f815117efc428db87c9080e7cd0,
-    type: 2}
+  visibleMeshMaterial: {fileID: 0}
+  occlusionMeshMaterial: {fileID: 0}
   environmentMeshPrefabRenderer: {fileID: 1433006460}
   targetPrefab: {fileID: 1433863885048116066, guid: 52fa0ed1ef1b3ba4d8ccf942e0281ee4,
     type: 3}
---- !u!114 &947189150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947189148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 530faf594e0304a51a14b4f11a3f6d33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _trackedKeyPoses: 291
-  _keyPointFilterLevel: 0
-  _PoseFilterLevel: 2
 --- !u!4 &947189151
 Transform:
   m_ObjectHideFlags: 0
