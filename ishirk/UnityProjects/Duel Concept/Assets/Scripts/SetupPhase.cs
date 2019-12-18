@@ -122,9 +122,7 @@ public class SetupPhase : MonoBehaviour
                         //If a shield has been placed, lock it into position
                         else if(Hand.KeyPose == MLHandKeyPose.Ok && transform.childCount == 1)
                         {
-                            AsyncLerpUtility lerpUtil = new AsyncLerpUtility();
-                            lerpUtil.StartLerp(ref transform.GetChild(0).localScale, transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), 1f);
-                            //transform.GetChild(0).localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                            StartCoroutine(LerpShieldSize(1.5f));
                             transform.DetachChildren();
                         }
                         else if(Hand.KeyPose == MLHandKeyPose.Thumb) 
@@ -167,4 +165,16 @@ public class SetupPhase : MonoBehaviour
         }
     }
     #endregion
+
+    private IEnumerator LerpShieldSize(float timeTocomplete)
+    {
+        float startTime = Time.time;
+        float percentComplete = 0f;
+        while(percentComplete < 1)
+        {
+            transform.GetChild(0).localScale = Vector3.Lerp(transform.GetChild(0).localScale, new Vector3(0.5f, 0.5f, 0.5f), percentComplete);
+            percentComplete = (Time.time - startTime) / timeTocomplete;
+            yield return null;
+        }
+    }
 }
