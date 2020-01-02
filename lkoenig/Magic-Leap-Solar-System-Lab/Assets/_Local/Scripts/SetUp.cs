@@ -33,6 +33,11 @@ public class SetUp : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+    public void LateUpdate()
+    {
+
         //trying to make this work
         if (Transmission.Peers.Length < 1 && !spawned)
         {
@@ -46,11 +51,6 @@ public class SetUp : MonoBehaviour
             Debug.Log("You should have a system already.");
         }
     }
-    public void Update()
-    {
-        
-        
-    }
 
 }
 
@@ -60,7 +60,7 @@ public class SetUp : MonoBehaviour
  * Phase one, instantiate the "celestial body" prefab at the right loccations/rotations/whatnot
  * Phase two, loop through and use a (JSON?) to set all the particulars like texture/orbit/whatnot
  * 
- * possibly hide this process with a "black curtain" by blocking this with a loading screen and that get's diabled at the end of phase two?
+ * possibly hide this process with a "black curtain" by blocking this with a loading screen and that get's disabled at the end of phase two?
  * 
  * I also want to make a place phase that will be unique to each private key
  */
