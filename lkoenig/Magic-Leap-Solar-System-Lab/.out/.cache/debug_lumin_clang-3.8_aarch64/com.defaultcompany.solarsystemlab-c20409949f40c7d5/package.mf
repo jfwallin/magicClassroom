@@ -9,7 +9,7 @@
   },
   {
    "compression": 8,
-   "hash": "fcd69bc162cd81645213526371bbd595eb7b9425",
+   "hash": "2d93dcaee1de7ad03ce9cdb80853ec562e46b213",
    "pkgpath": "bin/libil2cpp.so",
    "size": 57975536,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Native/libil2cpp.so",
@@ -23,7 +23,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "fe4911b7e59708c03def3e23abd740a5b2762979",
+   "xfrm_hash": "adfdf23e4c7af1f293d803863ff5f4c1759cef01",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libil2cpp.so-9a74dc99f4022685",
    "xfrm_size": 57976294
   },
@@ -179,9 +179,9 @@
   },
   {
    "compression": 8,
-   "hash": "28b763343fdaeba62bf47e5178b4cc3c43c6ce90",
+   "hash": "2ab53e809586aa6c9d7ee4dee51e5e44bdfe63b8",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 67856,
+   "size": 67760,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
@@ -193,9 +193,9 @@
   },
   {
    "compression": 8,
-   "hash": "53b3c6bb4be82a29f52a2c7ef43bbde479bdfcfe",
+   "hash": "ad0e5c846e323c5db5bf0cb125f76732676efb1b",
    "pkgpath": "Data/level0",
-   "size": 11364,
+   "size": 10956,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/level0"
   },
   {
