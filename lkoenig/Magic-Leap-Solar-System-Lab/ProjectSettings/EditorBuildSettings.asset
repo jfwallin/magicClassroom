@@ -18,7 +18,5 @@ EditorBuildSettings:
     path: Assets/MagicLeap-Tools/Examples/RuntimeConsole/Scenes/RuntimeConsole.unity
     guid: 209d87461eea45346b5b51b351bd3a4a
   m_configObjects:
-    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: a25e7c49e0399df47a4ff803cf230dfb,
-      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a7f79513037486e4982b5b4ac5909bad,
       type: 2}
