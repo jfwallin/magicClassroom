@@ -11,8 +11,12 @@ using UnityEngine.UI;
 public class SetUp : MonoBehaviour
 {
     private bool spawned = false;
+    public ControlInput control;
     private void Awake()
     {
+
+        control.OnTriggerDown.AddListener(HandleTriggerDown);
+
         //I know this works
         //Debug.Log("In Awake. Spawning system.");
         //TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
@@ -31,6 +35,7 @@ public class SetUp : MonoBehaviour
          */
     }
 
+    
     private void Start()
     {
         
@@ -38,21 +43,17 @@ public class SetUp : MonoBehaviour
     public void LateUpdate()
     {
 
-        //trying to make this work
-        if (Transmission.Peers.Length < 1 && !spawned)
-        {
-            Debug.Log("No Peer's found. Spawning system.");
-            TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-            system.motionSource = system.transform;
-            spawned = true;
-        }
-        else
-        {
-            Debug.Log("You should have a system already.");
-        }
+        
     }
 
+    private void HandleTriggerDown()
+    {
+        TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+        Debug.Log("System Spawned");
+        spawned = true;
+    }
 }
+
 
 /*Thinking longer term
  * 
