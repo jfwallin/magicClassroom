@@ -48,10 +48,13 @@ public class SetUp : MonoBehaviour
 
     private void HandleTriggerDown()
     {
-        TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-        Debug.Log("System Spawned");
-        spawned = true;
+        if (!spawned) {
+            TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", control.Position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+            Debug.Log("System Spawned");
+            spawned = true;
+        }
     }
+        
 }
 
 
