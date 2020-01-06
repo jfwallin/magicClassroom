@@ -1,0 +1,352 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "266627c0cab895064b116ed5beea153e68c760d9",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3544512,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "65a308eb215627029a7ba1807797778ceef8aa52",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 57711464,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "03d35a45af7720855930c0e56d702a4a9fba894a",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\libil2cpp.so-e6caaef3a2478926",
+   "xfrm_size": 57712229
+  },
+  {
+   "compression": 8,
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 286544,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0b380d0b7d794a6443655f967ef4e574fe716f54",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\AudioPluginMSASpatializer.so-828839acf99b8643",
+   "xfrm_size": 287309
+  },
+  {
+   "compression": 8,
+   "hash": "96b8d200662a90ea28e6409a6f7b417021f9b274",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68608,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "7780c938de851b288547e030b08696e5f9b9883e",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 327680,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22528,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "107bd38c2d5fcad16c555b20cdde608b67cc799b",
+   "pkgpath": "bin/TDx.TDxInput.dll",
+   "size": 15872,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/TDx.TDxInput.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a71acc50817a0929bccc93cbe7619d57d25d1b17",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077192,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "b1369a6d29faefc11c53ba294de6862737e7014b",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\UnityMagicLeap.so-828839acf99b8643",
+   "xfrm_size": 3077957
+  },
+  {
+   "compression": 8,
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "1343d3eeb3a8e60d353350e774650bdce7b6753e",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\libml_camera_plugin.so-828839acf99b8643",
+   "xfrm_size": 14949
+  },
+  {
+   "compression": 8,
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 72064,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0b1a766f7aa4eaaf7614facdfc2b66358466a64b",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\libml_mediaplayer_plugin.so-828839acf99b8643",
+   "xfrm_size": 72829
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "20157c4e72f5921019983a3d5541472730e748ed",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 942768,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "f226dfc0f1097b18c77eb2198b6257be5b02a613",
+   "pkgpath": "Data/boot.config",
+   "size": 123,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "6ed7e5cb39424c931751f7beaee42e55429f4d2b",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 65736,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "6b3e5b17f5079c236d8fe5a6be092f5fcd7d2a5c",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 98980,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "cf587708150fd1c049490ff347c1f1b065486af5",
+   "pkgpath": "Data/level0",
+   "size": 29992,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "9649f96a152ecdbf8f84f10319fec6261c7f8938",
+   "pkgpath": "Data/resources.assets",
+   "size": 87624,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1d5e5447a0f0b085b695376c9fdb7738e07e4f23",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "6cdc0e4cbe1201c4ca6f1a16e833814ac2bbc3a8",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "5a6b06709d5c8f7d3a971c88e06fa3b82fb6f436",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 1451616,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "c7c4b152775f5e84c45abc610ddcafca5478df83",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 2452480,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "c54115e807173c5386b058230cb7503a1dba2c56",
+   "pkgpath": "Data/sharedassets0.resource",
+   "size": 188352,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Data/sharedassets0.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "8b8f5b40b2640320f2cc4cfd65e12e2f9b8182a7",
+   "pkgpath": "Icon/Model/grid.png",
+   "size": 9224,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Model/grid.png"
+  },
+  {
+   "compression": 8,
+   "hash": "055ac9fa95c162f7a862e1d7343bee7220b90df5",
+   "pkgpath": "Icon/Model/model.fbx",
+   "size": 50832,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Model/model.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "4eae14c3429b0ade7083f015a4442157dee265df",
+   "pkgpath": "Icon/Model/model.kmat",
+   "size": 829,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Model/model.kmat"
+  },
+  {
+   "compression": 8,
+   "hash": "0c95c5d4f84e08e125d3431c7b32bfe47e426310",
+   "pkgpath": "Icon/Model/texture.png",
+   "size": 64417,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Model/texture.png"
+  },
+  {
+   "compression": 8,
+   "hash": "c96a2c4bab2a32ade656d2ed853c45adcbd6333b",
+   "pkgpath": "Icon/Portal/portal.fbx",
+   "size": 30448,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Portal/portal.fbx"
+  },
+  {
+   "compression": 8,
+   "hash": "2ebb66815cf386ff30d4470870d5d8f1917a6748",
+   "pkgpath": "Icon/Portal/portal.kmat",
+   "size": 338,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Portal/portal.kmat"
+  },
+  {
+   "compression": 8,
+   "hash": "1b487e44f48b9e80a5a40fa5d953681d85d0d4d9",
+   "pkgpath": "Icon/Portal/portal.png",
+   "size": 20520,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Icon/Portal/portal.png"
+  },
+  {
+   "compression": 8,
+   "hash": "3043bddc4840694bb1536cb906adcc0b6f57658a",
+   "pkgpath": "bin/Player.elf",
+   "size": 20743640,
+   "src": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "da522029830a04f486a8f496ef253d652a2de575",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\Player.elf-851672ee9a94e696",
+   "xfrm_size": 20744405
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/mru2b/MagicLeap/mlsdk/v0.23.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+    },
+    "taildata": {
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "669176a805f6a50db80f7a6ad5dd9ea5ad018087",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\libc++_shared.so-da0dd9375ffaf7d6",
+   "xfrm_size": 977597
+  },
+  {
+   "compression": 8,
+   "hash": "47375ef4d05a4fc1c9f1c798d817eaa8fb200088",
+   "pkgpath": "manifest.xml",
+   "size": 818,
+   "src": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "69ca9a390e350903c8c9e7169ea64e59b9f3911e",
+     "developer_id": "dfb9f2ce-3222-4463-9a1e-844046b55bf6.35c583c1-d0ca-4940-af3f-4e1bd0d9d165"
+    }
+   },
+   "xfrm_hash": "7f664fa75e5ee63480cdddd863919f150eaa4369",
+   "xfrm_path": "C:/Users/mru2b/Documents/GitHub/magicClassroom/ishirk/UnityProjects/Duel Concept/.out/.cache/release_lumin_clang-3.8_aarch64/com.middletennesseestateuniversity.handduel-a2a5750604956a48\\manifest.xml-851672ee9a94e696",
+   "xfrm_size": 867
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert"
+  },
+  "taildata": {
+   "devcert": "C:\\Users\\mru2b\\Documents\\GitHub\\magicClassroom\\ishirk\\UnityProjects\\Duel Concept\\Assets\\REleaseprivatekey\\hand-duel-35c583c1.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

@@ -1,0 +1,13 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="dfb9f2ce-3222-4463-9a1e-844046b55bf6.35c583c1-d0ca-4940-af3f-4e1bd0d9d165" ml:package="com.middletennesseestateuniversity.handduel" ml:version_code="1" ml:version_name="publish">
+  <application ml:min_api_level="6" ml:sdk_version="1.0" ml:visible_name="Hand Duel">
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Hand Duel">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <uses-privilege ml:name="GesturesConfig" />
+    <uses-privilege ml:name="GesturesSubscribe" />
+    <uses-privilege ml:name="WorldReconstruction" />
+    <uses-privilege ml:name="LocalAreaNetwork" />
+    <uses-privilege ml:name="CoarseLocation" />
+  </application>
+</manifest>
