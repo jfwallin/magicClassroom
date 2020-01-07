@@ -2,14 +2,14 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "1429eab4a1aefe004b6068fa80231276110402f8",
+   "hash": "11116f21cac3d5a13c9466af7b3d08239500861d",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3529548,
+   "size": 3529560,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "316fbb15bb9d1bae6215ec5815a50e158c2263bc",
+   "hash": "05b3f318d06d7aff890735494425a2ddc36b7abf",
    "pkgpath": "bin/libil2cpp.so",
    "size": 57980104,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Native/libil2cpp.so",
@@ -23,7 +23,7 @@
      "version": 3
     }
    },
-   "xfrm_hash": "58f44bf8c4fea8ca4801dba5434ef4555e794f9e",
+   "xfrm_hash": "d07add3825af2e12f6bf57c489204f96f9f40c0f",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libil2cpp.so-9a74dc99f4022685",
    "xfrm_size": 57980862
   },
@@ -179,23 +179,23 @@
   },
   {
    "compression": 8,
-   "hash": "82ecc13cf84aeb6a7e711c5f10e86c183e917743",
+   "hash": "75a730ca46743bb294d161f53896ae5870bab8dd",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 68016,
+   "size": 68080,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "8d94010f16e72a525a86745434e6dca1d752b1f9",
+   "hash": "9fa1e476962de5d358665501745b6641e273d083",
    "pkgpath": "Data/globalgamemanagers.assets",
    "size": 98232,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "27f432342e23552f821339ab2ff08c02ae73e816",
+   "hash": "70deab1dd8d2f1f17b63985da76f75676642372f",
    "pkgpath": "Data/level0",
-   "size": 10964,
+   "size": 10972,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/level0"
   },
   {

@@ -9,6 +9,8 @@ using UnityEngine.UI;
  * Just want to see if I can get something working
  * 
  * Might try and rewrite this to use the globabl variables more carefully. Later. 
+ * 
+ * Also in the long run I'll probably have a set up and a logic script.
 */
 public class SetUp : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class SetUp : MonoBehaviour
     private const string GlobalTimeKey = "timeMultiplier";
     private const string GlobalHoldKey = "holdMultiplier";
     public ControlInput control;
+    public GameObject endPoint; //will probably change out for a get component later
     private void Awake()
     {
 
@@ -35,6 +38,7 @@ public class SetUp : MonoBehaviour
             Transmission.SetGlobalBool(GlobalSpawnedKey, false);
         }
 
+        
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);
         Transmission.SetGlobalFloat(GlobalHoldKey, 1);
 
@@ -54,11 +58,10 @@ public class SetUp : MonoBehaviour
     private void HandleTriggerDown()
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey)) {
-            TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", control.Position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+            TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", endPoint.transform.position , Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
     
             Transmission.SetGlobalBool(GlobalSpawnedKey, true);
             Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
-            //spawned = true;
         }
         else
         {

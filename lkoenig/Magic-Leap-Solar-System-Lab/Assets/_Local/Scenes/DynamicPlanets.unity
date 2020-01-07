@@ -347,7 +347,7 @@ PrefabInstance:
     - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
         type: 3}
@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 2009816777}
+  endPoint: {fileID: 1837054840}
 --- !u!4 &1777051671
 Transform:
   m_ObjectHideFlags: 0
@@ -647,6 +648,12 @@ Transform:
   m_Father: {fileID: 2145691170}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1837054840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8215202950104563153, guid: 222bd9546a0294a4186782eaa063a280,
+    type: 3}
+  m_PrefabInstance: {fileID: 1209954417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1940593735
 GameObject:
   m_ObjectHideFlags: 0
