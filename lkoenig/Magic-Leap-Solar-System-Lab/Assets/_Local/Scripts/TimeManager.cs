@@ -17,6 +17,7 @@ public class TimeManager : MonoBehaviour
 
     private long frameCount; //used to universally keep track of time
     private float timeMultiplier; //used to speed up/slow down time
+    //private const string TimeMultiplierKey = "multiplier"; //used to synce the time mulitplier accross mulitple devices 
     private float holdMulitpier; //hold the last known value of the time mulitpier for pausing
 
 

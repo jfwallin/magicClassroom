@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317306276069269689}
-  - component: {fileID: 1317306276069269688}
   - component: {fileID: 4595602387764942763}
   m_Layer: 0
   m_Name: EarthMoonSun
@@ -35,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1317306276069269688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317306276069269690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2653b3fd68404f1488c8afe83b105c95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeManager: {fileID: 3061928355262073029}
 --- !u!114 &4595602387764942763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +41,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317306276069269690}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4df325599c129541b666e09bde34c30, type: 3}
   m_Name: 
@@ -212,11 +198,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1317306276069269689}
     m_Modifications:
-    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: m_Name
-      value: '"earth"'
-      objectReference: {fileID: 0}
     - target: {fileID: 1634972906890303905, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -312,6 +293,11 @@ PrefabInstance:
       propertyPath: timeManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: m_Name
+      value: '"earth"'
+      objectReference: {fileID: 0}
     - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: center
@@ -348,11 +334,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 358199061689494640}
     m_Modifications:
-    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
-        type: 3}
-      propertyPath: m_Name
-      value: '"moon"'
-      objectReference: {fileID: 0}
     - target: {fileID: 1634972906890303905, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -438,6 +419,11 @@ PrefabInstance:
       propertyPath: timeManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
+        type: 3}
+      propertyPath: m_Name
+      value: '"moon"'
+      objectReference: {fileID: 0}
     - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
       propertyPath: center
@@ -462,10 +448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1317306276069269689}
     m_Modifications:
-    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
+    - target: {fileID: 851753187246037197, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
-      propertyPath: m_Name
-      value: '"Sun"'
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1634972906890303905, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
@@ -537,10 +523,10 @@ PrefabInstance:
       propertyPath: timeManager
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 851753187246037197, guid: e9bf9c9ad6107b240a643fc82303b98d,
+    - target: {fileID: 3831188020831755062, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}
-      propertyPath: m_UseGravity
-      value: 0
+      propertyPath: m_Name
+      value: '"Sun"'
       objectReference: {fileID: 0}
     - target: {fileID: 7661590216325788925, guid: e9bf9c9ad6107b240a643fc82303b98d,
         type: 3}

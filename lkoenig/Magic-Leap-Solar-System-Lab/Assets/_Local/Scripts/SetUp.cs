@@ -7,67 +7,77 @@ using UnityEngine.UI;
 /* This is based on the SpactialAlinmentExample.cs 
  * This is a test
  * Just want to see if I can get something working
+ * 
+ * Might try and rewrite this to use the globabl variables more carefully. Later. 
 */
 public class SetUp : MonoBehaviour
 {
     //private bool spawned = false;
     private const string GlobalSpawnedKey = "spawned";
+    private const string GlobalTimeKey = "timeMultiplier";
+    private const string GlobalHoldKey = "holdMultiplier";
     public ControlInput control;
     private void Awake()
     {
 
         control.OnTriggerDown.AddListener(HandleTriggerDown);
+        control.OnBumperDown.AddListener(HandleBumperDown);
 
-        //I know this works
-        //Debug.Log("In Awake. Spawning system.");
-        //TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-
-        /*trying to make this work
-         if (Transmission.Peers.Length < 1)
-         {
-             Debug.Log("No Peer's found. Spawning system.");
-             TransmissionObject system = Transmission.Spawn("EarthMoonSun", new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-         }
-         else
-         {
-             Debug.Log("Peer's found. You should have a system already.");
-         }
-         //If that works the next thing I need to work on is transfering ownership when aomeone leaves. 
-         */
     }
 
     
     private void Start()
     {
-
+        
         //If the variable doesn't exist yet make it and set it to false
-        if (!Transmission.HasGlobalBool("spawned"))
+        if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
         {
-            Transmission.SetGlobalBool("spawned", false);
+            Transmission.SetGlobalBool(GlobalSpawnedKey, false);
         }
+
+        Transmission.SetGlobalFloat(GlobalTimeKey, 1);
+        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
+
+        /*if (!Transmission.HasGlobalFloat("timeMultiplier"))
+        {
+            Transmission.SetGlobalFloat("timeMultiplier", 1f);
+            Transmission.SetGlobalFloat("holdMultiplier", 1f);
+        }
+        */
+        Debug.Log("In the start. spawned is "+ Transmission.GetGlobalBool(GlobalSpawnedKey)+". timeMultiplier is " + Transmission.GetGlobalFloat(GlobalTimeKey));
     }
     public void Update()
     {
-        //if (spawned)
-        //{
-            //send something telling other things to change flag to true
-            //Transmission.SetGlobalBool()
-        //}
-        
+   
     }
 
     private void HandleTriggerDown()
     {
-        if (!Transmission.GetGlobalBool("spawned")) {
+        if (!Transmission.GetGlobalBool(GlobalSpawnedKey)) {
             TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", control.Position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
     
-            Transmission.SetGlobalBool("spawned", true);
-            Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool("spawned"));
+            Transmission.SetGlobalBool(GlobalSpawnedKey, true);
+            Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
             //spawned = true;
         }
         else
         {
-            Debug.Log("You should already have a system. spawned = " + Transmission.GetGlobalBool("spawned"));
+            Debug.Log("You should already have a system. spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
+        }
+    }
+
+    private void HandleBumperDown()
+    {
+        
+        if (Transmission.GetGlobalFloat(GlobalTimeKey) == 0)
+        {
+            Transmission.SetGlobalFloat(GlobalTimeKey, Transmission.GetGlobalFloat(GlobalHoldKey));
+            Debug.Log("The multiplier was already 0");
+        }
+        else
+        {
+            Transmission.SetGlobalFloat(GlobalHoldKey, Transmission.GetGlobalFloat(GlobalTimeKey));
+            Transmission.SetGlobalFloat(GlobalTimeKey, 0);
         }
     }
         

@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "200dccf269d9d626d1df440427a06f0949164aae",
+   "hash": "1429eab4a1aefe004b6068fa80231276110402f8",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3529184,
+   "size": 3529548,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "6592363464d9c2e9d9c8af003d1baad23aea0051",
+   "hash": "316fbb15bb9d1bae6215ec5815a50e158c2263bc",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 57975672,
+   "size": 57980104,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,9 +23,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "301dbec1737ad6f025f420e83957ac018a4d3064",
+   "xfrm_hash": "58f44bf8c4fea8ca4801dba5434ef4555e794f9e",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libil2cpp.so-9a74dc99f4022685",
-   "xfrm_size": 57976430
+   "xfrm_size": 57980862
   },
   {
    "compression": 8,
@@ -179,9 +179,9 @@
   },
   {
    "compression": 8,
-   "hash": "f5f8dc8ec1c961c13aee700c0af19751c3845fc4",
+   "hash": "82ecc13cf84aeb6a7e711c5f10e86c183e917743",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 67696,
+   "size": 68016,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
@@ -200,9 +200,9 @@
   },
   {
    "compression": 8,
-   "hash": "555dcef45d5537b4b5f8e3cfbb872d449deb30c7",
+   "hash": "033f26774eb221c2c876a6fd48d18d99058594d5",
    "pkgpath": "Data/resources.assets",
-   "size": 1527872,
+   "size": 1527752,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/resources.assets"
   },
   {
