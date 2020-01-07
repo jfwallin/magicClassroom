@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "5f1f8a4c688bb1b13df540772edddf4a7f2b404a",
+   "hash": "200dccf269d9d626d1df440427a06f0949164aae",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3529048,
+   "size": 3529184,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "2d93dcaee1de7ad03ce9cdb80853ec562e46b213",
+   "hash": "6592363464d9c2e9d9c8af003d1baad23aea0051",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 57975536,
+   "size": 57975672,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,9 +23,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "adfdf23e4c7af1f293d803863ff5f4c1759cef01",
+   "xfrm_hash": "301dbec1737ad6f025f420e83957ac018a4d3064",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libil2cpp.so-9a74dc99f4022685",
-   "xfrm_size": 57976294
+   "xfrm_size": 57976430
   },
   {
    "compression": 8,
@@ -179,9 +179,9 @@
   },
   {
    "compression": 8,
-   "hash": "2ab53e809586aa6c9d7ee4dee51e5e44bdfe63b8",
+   "hash": "f5f8dc8ec1c961c13aee700c0af19751c3845fc4",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 67760,
+   "size": 67696,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
@@ -193,9 +193,9 @@
   },
   {
    "compression": 8,
-   "hash": "ad0e5c846e323c5db5bf0cb125f76732676efb1b",
+   "hash": "27f432342e23552f821339ab2ff08c02ae73e816",
    "pkgpath": "Data/level0",
-   "size": 10956,
+   "size": 10964,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/level0"
   },
   {

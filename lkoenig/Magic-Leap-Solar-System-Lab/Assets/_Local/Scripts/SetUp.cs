@@ -10,7 +10,8 @@ using UnityEngine.UI;
 */
 public class SetUp : MonoBehaviour
 {
-    private bool spawned = false;
+    //private bool spawned = false;
+    private const string GlobalSpawnedKey = "spawned";
     public ControlInput control;
     private void Awake()
     {
@@ -38,20 +39,35 @@ public class SetUp : MonoBehaviour
     
     private void Start()
     {
-        
-    }
-    public void LateUpdate()
-    {
 
+        //If the variable doesn't exist yet make it and set it to false
+        if (!Transmission.HasGlobalBool("spawned"))
+        {
+            Transmission.SetGlobalBool("spawned", false);
+        }
+    }
+    public void Update()
+    {
+        //if (spawned)
+        //{
+            //send something telling other things to change flag to true
+            //Transmission.SetGlobalBool()
+        //}
         
     }
 
     private void HandleTriggerDown()
     {
-        if (!spawned) {
+        if (!Transmission.GetGlobalBool("spawned")) {
             TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", control.Position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-            Debug.Log("System Spawned");
-            spawned = true;
+    
+            Transmission.SetGlobalBool("spawned", true);
+            Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool("spawned"));
+            //spawned = true;
+        }
+        else
+        {
+            Debug.Log("You should already have a system. spawned = " + Transmission.GetGlobalBool("spawned"));
         }
     }
         
