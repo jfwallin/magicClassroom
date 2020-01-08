@@ -20,11 +20,14 @@ public class SetUp : MonoBehaviour
     private const string GlobalHoldKey = "holdMultiplier";
     public ControlInput control;
     public GameObject endPoint; //will probably change out for a get component later
+
+    private string systemName;
     private void Awake()
     {
 
         control.OnTriggerDown.AddListener(HandleTriggerDown);
         control.OnBumperDown.AddListener(HandleBumperDown);
+        Transmission.Instance.OnStringMessage.AddListener(HandleStringMessage);
 
     }
 
@@ -50,16 +53,25 @@ public class SetUp : MonoBehaviour
         */
         Debug.Log("In the start. spawned is "+ Transmission.GetGlobalBool(GlobalSpawnedKey)+". timeMultiplier is " + Transmission.GetGlobalFloat(GlobalTimeKey));
     }
-    public void Update()
+    private void Update()
     {
    
     }
+
+    
+    private void OnDestroy() //This might be futile
+    {
+        StringMessage msg = new StringMessage(systemName);
+        Transmission.Send(msg);
+    }
+
 
     private void HandleTriggerDown()
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey)) {
             TransmissionObject solarSystem = Transmission.Spawn("EarthMoonSun", endPoint.transform.position , Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
-    
+            systemName = solarSystem.name;
+
             Transmission.SetGlobalBool(GlobalSpawnedKey, true);
             Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
         }
@@ -82,6 +94,11 @@ public class SetUp : MonoBehaviour
             Transmission.SetGlobalFloat(GlobalHoldKey, Transmission.GetGlobalFloat(GlobalTimeKey));
             Transmission.SetGlobalFloat(GlobalTimeKey, 0);
         }
+    }
+
+    private void HandleStringMessage(StringMessage stringMessage)
+    {
+        //TransmissionObject transmissionObject = TransmissionObject.fi
     }
         
 }
