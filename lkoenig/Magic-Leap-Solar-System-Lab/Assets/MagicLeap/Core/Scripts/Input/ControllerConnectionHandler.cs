@@ -2,7 +2,7 @@
 // ---------------------------------------------------------------------
 // %COPYRIGHT_BEGIN%
 //
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
+// Copyright (c) 2018-present, Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
 // here: https://id.magicleap.com/creator-terms
 //
@@ -22,7 +22,7 @@ namespace UnityEngine.XR.MagicLeap
     /// This class keeps track of all connected devices matching allowed types. If more than one allowed
     /// device is connected, the first one connected is returned.
     /// </summary>
-    [AddComponentMenu("Magic Leap/Controller Connection Handler")]
+    [AddComponentMenu("XR/MagicLeap/Input/ControllerConnectionHandler")]
     public sealed class ControllerConnectionHandler : MonoBehaviour
     {
         #region Public Enum
@@ -100,9 +100,9 @@ namespace UnityEngine.XR.MagicLeap
 
             if (!MLInput.IsStarted)
             {
-                MLInputConfiguration config = new MLInputConfiguration(MLInputConfiguration.DEFAULT_TRIGGER_DOWN_THRESHOLD,
-                                                            MLInputConfiguration.DEFAULT_TRIGGER_UP_THRESHOLD,
-                                                            requestCFUID);
+                MLInputConfiguration config = new MLInputConfiguration(requestCFUID,
+                                                            MLInputConfiguration.DEFAULT_TRIGGER_DOWN_THRESHOLD,
+                                                            MLInputConfiguration.DEFAULT_TRIGGER_UP_THRESHOLD);
                 MLResult result = MLInput.Start(config);
                 if (!result.IsOk)
                 {
