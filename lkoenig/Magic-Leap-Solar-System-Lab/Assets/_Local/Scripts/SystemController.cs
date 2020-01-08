@@ -32,16 +32,19 @@ using UnityEngine.XR.MagicLeap;
      */
 public class SystemController : MonoBehaviour
 {
-
-    private TimeManager timeManager; //Allows access to the time multiplier
+    
+    public TimeManager timeManager; //Allows access to the time multiplier
 
     #region Unity Methods
     // Start is called before the first frame update
     void Start()
     {
         MLInput.Start(); //Start input
+
         
-        timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>(); //get s reference to the timeManager script
+        //timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>(); //get s reference to the timeManager script
+        //I temporarily made the timemanager public instead of privat for testing purposes
+
 
         //Add button callbacks
         MLInput.OnControllerButtonDown += HandleOnButtonDown; //Adds HandleOnButtonDown to the event
