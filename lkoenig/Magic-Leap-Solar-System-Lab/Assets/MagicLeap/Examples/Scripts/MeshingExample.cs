@@ -2,7 +2,7 @@
 // ---------------------------------------------------------------------
 // %COPYRIGHT_BEGIN%
 //
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
+// Copyright (c) 2018-present, Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
 // here: https://id.magicleap.com/creator-terms
 //
@@ -15,6 +15,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.MagicLeap;
+using System.Collections;
 
 namespace MagicLeap
 {
@@ -118,6 +119,7 @@ namespace MagicLeap
         /// </summary>
         void Start()
         {
+            StartCoroutine(LogWorldReconstructionMissingPrivilege());
             _meshingVisualizer.SetRenderers(_renderMode);
 
             _mlSpatialMapper.gameObject.transform.position = _camera.gameObject.transform.position;
@@ -125,6 +127,33 @@ namespace MagicLeap
             _visualBounds.SetActive(_bounded);
 
             UpdateStatusText();
+        }
+
+        /// <summary>
+        /// Assure that if the 'WorldReconstruction' privilege is missing, then it is logged for all users
+        /// </summary>
+        private IEnumerator LogWorldReconstructionMissingPrivilege()
+        {
+            yield return new WaitUntil(() => MagicLeapDevice.IsReady());
+
+            MLResult result = MLPrivileges.Start();
+            if (result.IsOk)
+            {
+                result = MLPrivileges.CheckPrivilege(MLPrivilegeId.WorldReconstruction);
+                if (result.Code != MLResultCode.PrivilegeGranted)
+                {
+                    Debug.LogErrorFormat("Error: Unable to create Mesh Subsystem due to missing 'WorldReconstruction' privilege. Please add to manifest. Disabling script.");
+                    enabled = false;
+                }
+                MLPrivileges.Stop();
+            }
+
+            else
+            {
+                Debug.LogErrorFormat("Error: MeshingExample failed starting MLPrivileges. Reason: {0}", result);
+            }
+
+            yield return null;
         }
 
         /// <summary>

@@ -109,7 +109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   center: {fileID: 0}
   rotateDegree: 0
-  timeMultiplier: 1
 --- !u!114 &3309379730611590129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAngle: {x: 0, y: 0, z: 0}
-  timeMultiplier: 1
 --- !u!54 &851753187246037197
 Rigidbody:
   m_ObjectHideFlags: 0
