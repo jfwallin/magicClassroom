@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "11116f21cac3d5a13c9466af7b3d08239500861d",
+   "hash": "cf9f1ee259a7c48b084a6550ba873327a3616c9f",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3529560,
+   "size": 3538096,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "05b3f318d06d7aff890735494425a2ddc36b7abf",
+   "hash": "187cb17db76f42d0212ed9efb4387134546930b8",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 57980104,
+   "size": 57615256,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,15 +23,15 @@
      "version": 3
     }
    },
-   "xfrm_hash": "d07add3825af2e12f6bf57c489204f96f9f40c0f",
+   "xfrm_hash": "5737a81a836f930a15129db058ac54a76ade8865",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libil2cpp.so-9a74dc99f4022685",
-   "xfrm_size": 57980862
+   "xfrm_size": 57616014
   },
   {
    "compression": 8,
-   "hash": "fa2b8ff146caf64688e7aa835af0034ca81b5505",
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
    "pkgpath": "bin/AudioPluginMSASpatializer.so",
-   "size": 282448,
+   "size": 286544,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
    "xfrm_flags": {
     "signed": {
@@ -43,29 +43,29 @@
      "version": 3
     }
    },
-   "xfrm_hash": "cc5fc1d294d59852940187b5e443a8e266669d81",
+   "xfrm_hash": "813e37648cae937d284faf784004cffda00b6077",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\AudioPluginMSASpatializer.so-86c2483191300cfb",
-   "xfrm_size": 283206
+   "xfrm_size": 287302
   },
   {
    "compression": 8,
-   "hash": "fc1610be296f0147362e517e03efb6f4a651c813",
+   "hash": "d0d11298c2fbbd0d0e0eac7fd359d9006a7eca35",
    "pkgpath": "bin/LuminMediaPlayer.dll",
-   "size": 68096,
+   "size": 68608,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
   },
   {
    "compression": 8,
-   "hash": "f83f996accf39c026375680083a0b404790d5f00",
+   "hash": "52ca0dffe4d696f53b9da78d813000706b1d356c",
    "pkgpath": "bin/LuminUnity.dll",
-   "size": 329216,
+   "size": 327680,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
   },
   {
    "compression": 8,
-   "hash": "b8ce049d2e85f27cc7346d7551d1853b20e78461",
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
    "pkgpath": "bin/MSA.Runtime.dll",
-   "size": 22016,
+   "size": 22528,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
   },
   {
@@ -97,7 +97,7 @@
   },
   {
    "compression": 8,
-   "hash": "fbfa4a6aa20b14e0f60550676e5d34bebb99d46d",
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
    "pkgpath": "bin/libml_camera_plugin.so",
    "size": 14184,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
@@ -111,15 +111,15 @@
      "version": 3
     }
    },
-   "xfrm_hash": "ae41f8db6edc922f5f4b6923e48db6403a5a8709",
+   "xfrm_hash": "1e4f86ffa34529b96a168a7b7c9644b23f59a8ea",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libml_camera_plugin.so-86c2483191300cfb",
    "xfrm_size": 14942
   },
   {
    "compression": 8,
-   "hash": "88ac1047e0ac5686d703471c3115f719ca66a4e8",
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
    "pkgpath": "bin/libml_mediaplayer_plugin.so",
-   "size": 67624,
+   "size": 72064,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
    "xfrm_flags": {
     "signed": {
@@ -131,9 +131,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "7b53e232475af2966a634f65ec3287313ad09446",
+   "xfrm_hash": "b71539b0a4edf0fe9af14ea6a1d9f67ba38ebf00",
    "xfrm_path": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/.out/.cache/debug_lumin_clang-3.8_aarch64/com.defaultcompany.solarsystemlab-c20409949f40c7d5\\libml_mediaplayer_plugin.so-86c2483191300cfb",
-   "xfrm_size": 68382
+   "xfrm_size": 72822
   },
   {
    "compression": 8,
@@ -179,28 +179,28 @@
   },
   {
    "compression": 8,
-   "hash": "75a730ca46743bb294d161f53896ae5870bab8dd",
+   "hash": "5648d1e1437e36305ce6d25fc5e654da2b526325",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 68080,
+   "size": 67904,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "9fa1e476962de5d358665501745b6641e273d083",
+   "hash": "2892bae704064f9b6972a2a4b2baf142544a02b1",
    "pkgpath": "Data/globalgamemanagers.assets",
-   "size": 98232,
+   "size": 98792,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "70deab1dd8d2f1f17b63985da76f75676642372f",
+   "hash": "c976bb627137c8cda5e08cdcef28a0980e881413",
    "pkgpath": "Data/level0",
-   "size": 10972,
+   "size": 10964,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/level0"
   },
   {
    "compression": 8,
-   "hash": "033f26774eb221c2c876a6fd48d18d99058594d5",
+   "hash": "9d6ee48cd4bdc69786862b38018b6da891394195",
    "pkgpath": "Data/resources.assets",
    "size": 1527752,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/resources.assets"
@@ -221,7 +221,7 @@
   },
   {
    "compression": 8,
-   "hash": "57437f7754338ad0090858020cbca36e9016d4eb",
+   "hash": "54352933b4e0855f860bf8249085f6b61dcb1197",
    "pkgpath": "Data/sharedassets0.assets",
    "size": 61370,
    "src": "C:/Users/lak3r/Documents/GitHub/magicClassroom/lkoenig/Magic-Leap-Solar-System-Lab/Temp/StagingArea/Data/sharedassets0.assets"
