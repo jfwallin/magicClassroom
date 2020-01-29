@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# -----------------------------------------------------------
+# Launches debug.py using the Python interpreter in the MLSDK
+# 
+# Run with --help to see usage and description
+# -----------------------------------------------------------
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   python='bin/python3.5'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   python='bin/python3.5'
+else
+   python='python'
+fi
+
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+if [ -z "$DEBUGPYTHON" ]; then
+   DEBUGPYTHON=$SCRIPT_DIR/tools/python3/$python
+fi
+
+"$DEBUGPYTHON" -E "$SCRIPT_DIR/tools/debug/debug.py" "$@"
+

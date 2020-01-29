@@ -1,0 +1,33 @@
+{
+  "ManifestType": "Configuration",
+  "DeviceName": "KeyboardMouse",
+  "DeviceLabel": "Peripheral - Key/Mouse",
+  "ConfigurationSettings": {
+    "BindingsVersion": 3,
+    "DeviceType": "keyboardMouse",
+    "OS": "Any",
+    "Action-MoveHeadposeNegZ": [{"Input":"Shift-KeyCode-Up", "Sensitivity":3},{"Input":"KeyCode-Up"},{"Input":"Shift-KeyCode-W", "Sensitivity":3},{"Input":"KeyCode-W"}],
+    "Action-MoveHeadposePosZ": [{"Input":"Shift-KeyCode-Down", "Sensitivity":3},{"Input":"KeyCode-Down"},{"Input":"Shift-KeyCode-S", "Sensitivity":3},{"Input":"KeyCode-S"}],
+    "Action-MoveHeadposeNegY": [{"Input":"Shift-KeyCode-Q", "Sensitivity":3},{"Input":"KeyCode-Q"}],
+    "Action-MoveHeadposePosY": [{"Input":"Shift-KeyCode-E", "Sensitivity":3},{"Input":"KeyCode-E"}],
+    "Action-MoveHeadposeNegX": [{"Input":"Shift-KeyCode-Left", "Sensitivity":3},{"Input":"KeyCode-Left"},{"Input":"Shift-KeyCode-A", "Sensitivity":3},{"Input":"KeyCode-A"}],
+    "Action-MoveHeadposePosX": [{"Input":"Shift-KeyCode-Right", "Sensitivity":3},{"Input":"KeyCode-Right"},{"Input":"Shift-KeyCode-D", "Sensitivity":3},{"Input":"KeyCode-D"}],
+    "Action-RotateHeadposeNegZ": [{"Input":"Alt-KeyCode-E"},{"Input":"Shift-Alt-KeyCode-E", "Sensitivity":3}],
+    "Action-RotateHeadposePosZ": [{"Input":"Alt-KeyCode-Q"},{"Input":"Shift-Alt-KeyCode-Q", "Sensitivity":3}],
+    "Action-RotateHeadposeNegY": [{"Input":"Alt-KeyCode-A"},{"Input":"Shift-Alt-KeyCode-A", "Sensitivity":3}],
+    "Action-RotateHeadposePosY": [{"Input":"Alt-KeyCode-D"},{"Input":"Shift-Alt-KeyCode-D", "Sensitivity":3}],
+    "Action-RotateHeadposeNegX": [{"Input":"Alt-KeyCode-W"},{"Input":"Shift-Alt-KeyCode-W", "Sensitivity":3}],
+    "Action-RotateHeadposePosX": [{"Input":"Alt-KeyCode-S"},{"Input":"Shift-Alt-KeyCode-S", "Sensitivity":3}],
+    "Action-RotateHeadposeY": [{"Input":"MouseMove-DeltaX"},{"Input":"Shift-MouseMove-DeltaX", "Sensitivity":3}],
+    "Action-RotateHeadposeX": [{"Input":"MouseMove-DeltaY"},{"Input":"Shift-MouseMove-DeltaY", "Sensitivity":3}],
+    "Action-MoveHeadposeZ": [{"Input":"MouseMove-ScrollWheelX", "Sensitivity":3},{"Input":"MouseMove-ScrollWheelY"},{"Input":"Shift-MouseMove-ScrollWheelY", "Sensitivity":-3}],
+    "ActionInputLabels": {
+		"MouseMove-ScrollWheelX": "Mouse Scroll X",
+		"MouseMove-ScrollWheelY": "Mouse Scroll Y",
+		"MouseMove-DeltaX": "Drag + Mouse Move X",
+		"MouseMove-DeltaY": "Drag + Mouse Move Y",
+		"MouseButton-1": "Mouse Button 1",
+		"MouseButton-2": "Mouse Button 2",
+    "MouseButton-3": "Mouse Button 3" }
+  }
+}

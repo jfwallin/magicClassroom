@@ -1,0 +1,446 @@
+{
+  "Constants": {
+    "MLTouchFinger_Count": 2
+  },
+
+  "EnumerationTypes": {
+    "InputControllerType": {
+      "Enums": [
+        { 
+          "Name": "MLInputControllerType_None",
+          "Label": "None"
+        },
+        { 
+          "Name": "MLInputControllerType_Device",
+          "Label": "Device"
+        },
+        { 
+          "Name": "MLInputControllerType_MobileApp",
+          "Label": "MobileApp"
+        }
+      ]
+    },
+
+    "InputControllerDof": {
+      "Enums": [
+        { 
+          "Name": "MLInputControllerDof_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLInputControllerDof_3",
+          "Label": "3"
+        },
+        {
+          "Name": "MLInputControllerDof_6",
+          "Label": "6"
+        }
+      ]
+    },
+    
+    "InputControllerTouchpadGestureDirection": {
+      "Enums": [
+        { 
+          "Name": "MLInputControllerTouchpadGestureDirection_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Up",
+          "Label": "Up"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Down",
+          "Label": "Down"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Left",
+          "Label": "Left"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Right",
+          "Label": "Right"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_In",
+          "Label": "In"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Out",
+          "Label": "Out"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_Clockwise",
+          "Label": "Clockwise"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureDirection_CounterClockwise",
+          "Label": "Counter Clockwise"
+        }
+      ]
+    },
+    
+    "InputControllerTouchpadGestureState": {
+      "Enums": [
+        { 
+          "Name": "MLInputControllerTouchpadGestureState_End",
+          "Label": "End"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureState_Continue",
+          "Label": "Continue"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureState_Start",
+          "Label": "Start"
+        }
+      ]
+    },
+    
+    "InputControllerTouchpadGestureType": {
+      "Enums": [
+        {
+          "Name": "MLInputControllerTouchpadGestureType_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_Tap",
+          "Label": "Tap"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_ForceTapDown",
+          "Label": "Force Tap Down"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_ForceTapUp",
+          "Label": "Force Tap Up"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_ForceDwell",
+          "Label": "Force Dwell"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_SecondForceDown",
+          "Label": "Second Force Down"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_LongHold",
+          "Label": "Long Hold"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_RadialScroll",
+          "Label": "Radial Scroll"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_Swipe",
+          "Label": "Swipe"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_Scroll",
+          "Label": "Scroll"
+        },
+        {
+          "Name": "MLInputControllerTouchpadGestureType_Pinch",
+          "Label": "Pinch"
+        }
+      ]
+    }
+  },
+
+  "PropertyCategories": [
+  ],
+
+ "ArrayTypes": [
+    { 
+      "Name": "TouchPosAndForceArray",
+      "ElementType": "Position",
+      "ElementCount": "MLTouchFinger_Count"
+    }
+  ], 
+   
+  "StructTypes": [
+    { 
+      "Name": "InputControllerTouchpadGesture",
+      "Label": "Touchpad Gesture",
+      "Description": "Info of gesture on touchpad of the input controller.",
+      "PropertySheetName": "MLInputControllerTouchpadGesture",
+
+      "Properties": {
+        "pos_and_force": {
+          "Label": "Position and Force",
+          "Description": "Gesture position (x,y) and force (z).",
+          "Priority": 1,
+          "Type": "Position"
+        },
+        "type": {
+          "Label": "Gesture Type",
+          "Description": "Type of gesture on touchpad of the controller",
+          "Priority": 2,
+          "Type": "InputControllerTouchpadGestureType"
+        },
+        "state": {
+          "Label": "Gesture State",
+          "Description": "State of touchpad gesture",
+          "Priority": 3,
+          "Type": "InputControllerTouchpadGestureState",
+          "PropertySheetName": "touchpad_gesture_state"
+        },
+        "direction": {
+          "Label": "Gesture Direction",
+          "Description": "Direction of gesture.",
+          "Priority": 4,
+          "Type": "InputControllerTouchpadGestureDirection"
+        },
+        "speed": {
+          "Label": "Speed",
+          "Description": "Speed of gesture (angular speed for radial gestures and touchpad distance per second for others).",
+          "Priority": 5,
+          "Type": "NormalizedFloat"
+        },
+        "distance": {
+          "Label": "Distance",
+          "Description": "Distance between the two fingers performing the gestures. The touchpad is defined as having extents of [-1.0,1.0] so this distance has a range of [0.0,2.0].",
+          "Priority": 6,
+          "Type": "NormalizedFloat"
+        },
+        "finger_gap": {
+          "Label": "Finger Gap",
+          "Description": "Distance between the two fingers performing the gestures. The touchpad is defined as having extents of [-1.0,1.0] so this distance has a range of [0.0,2.0]",
+          "Priority": 7,
+          "Type": "NormalizedFloat"
+        },
+        "radius": {
+          "Label": "Radius",
+          "Description": "For radial gestures, this is the radius of the gesture. The touchpad is defined as having extents of [-1.0,1.0] so this radius has a range of [0.0,2.0].",
+          "Priority": 8,
+          "Type": "NormalizedFloat"
+        },
+        "angle": {
+          "Label": "Angle",
+          "Description": "Angle from the center of the touchpad to the finger.",
+          "Priority": 9,
+          "Type": "float"
+        }
+      }
+    },
+
+    { 
+      "Name": "InputControllerState",
+      "Label": "Input Controller",
+      "Description": "State of one input controller.",
+      "PropertySheetName": "InputController",
+
+      "Properties": {
+        "position": {
+          "Label": "Position",
+          "Description": "Refers to the input controller position in world space",
+          "Priority": 1,
+          "Type": "Position",
+          // Position is readOnly in 3Dof mode.
+          "ReadOnlyMethod": "whenControllerNotConnected_OR_3Dof"
+        },
+        "rotation": {
+          "Label": "Rotation",
+          "Description": "Refers to the input controller rotation in world space",
+          "Priority": 2,
+          "Type": "Rotation",
+          "PropertySheetName": "orientation"
+        },
+        "connected": {
+          "Label": "Connected",
+          "Description": "Is the controller connected ?",
+          "Priority": 3,
+          "Type": "boolean"
+        },
+        "touch_pos_and_force": {
+          "Label": "Touch Position and Force",
+          "Description": "Current touch position (x,y) and force (z)",
+          "Priority": 4,
+          "Type": "Position",     // TODO: should be array: "TouchPosAndForceArray", but current UI only shows one.
+          "PropertySheetName": "touch_pos_and_force"
+        },
+        "trigger_normalized": {
+          "Label": "Trigger",
+          "Description": "Normalized trigger value", 
+          "Priority": 5,
+          "Type": "NormalizedFloat"
+        },
+        "type": {
+          "Label": "Controller Type",
+          "Description": "Type of the controller",
+          "Priority": 6,
+          "Type": "InputControllerType",
+          // type not changeable after connected.
+          "ReadOnlyMethod": "whenControllerConnected"
+        },
+        "dof": {
+          "Label": "Controller DoF",
+          "Description": "Number of degree of freedom the controller has",
+          "Priority": 7,
+          "Type": "InputControllerDof"
+        },
+        "button_state_bumper": {
+          "Label": "Bumper",
+          "Description": "Whether the Bumper button on the controller is pressed",
+          "Priority": 8,
+          "Type": "boolean"
+        },
+        "button_state_home_tap": {
+          "Label": "Home Tap",
+          "Description": "Whether the Home Tap button on the controller is pressed",
+          "Priority": 9,
+          "Type": "boolean",
+          "PropertySheetName": "button_state_hometap"
+        },
+        "touchpad_gesture": {
+          "Label": "Touchpad Gesture",
+          "Description": "Info of gesture on touchpad.",
+          "Priority": 11,
+          "Type": "InputControllerTouchpadGesture"
+        }
+      }
+    }
+  ],
+
+  "PropertyGroups": [
+    { 
+      "Name": "InputControllers",
+      "Label": "Input Controllers",
+      "Description": "Properties of input controllers",
+      "PropertySheetName": "InputControllers",
+
+      "Properties": {
+        "left_controller": {
+          "Label": "Left",
+          "Description": "State of the left controller",
+          "Priority": 1,
+          "Type": "InputControllerState",
+          "PropertySheetName": "left_controller",
+          "ReadOnlyMethod": "whenControllerNotConnected"
+        },
+        "right_controller": {
+          "Label": "Right",
+          "Description": "State of the right controller",
+          "Priority": 2,
+          "Type": "InputControllerState",
+          "PropertySheetName": "right_controller",
+          "ReadOnlyMethod": "whenControllerNotConnected"
+        }
+      },
+
+      "ChannelMessageMappings": [
+        {
+          "ChannelName": "Input Controller 1 Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "left_controller",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Input Controller 2 Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "right_controller",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Input Controller 1",
+          "ProtobufMessageType": "ml.ch.InputControllerDataEvent",
+          "MessagePropertyMapping": "inputControllerStateMapping",
+          "PropertySuffix": "left_controller",
+          "ProtobufField": "input_state.controller"
+        },
+        {
+          "ChannelName": "Input Controller 1",
+          "ProtobufMessageType": "ml.ch.InputControllerDataEvent",
+          "MessagePropertyMapping": "inputControllerTouchpadGestureMapping",
+          "PropertySuffix": "left_controller.touchpad_gesture",
+          "ProtobufField": "input_state.controller.touchpad_gesture"
+        },
+        {
+          "ChannelName": "Input Controller 2",
+          "ProtobufMessageType": "ml.ch.InputControllerDataEvent",
+          "MessagePropertyMapping": "inputControllerStateMapping",
+          "PropertySuffix": "right_controller",
+          "ProtobufField": "input_state.controller"
+        },
+        {
+          "ChannelName": "Input Controller 2",
+          "ProtobufMessageType": "ml.ch.InputControllerDataEvent",
+          "MessagePropertyMapping": "inputControllerTouchpadGestureMapping",
+          "PropertySuffix": "right_controller.touchpad_gesture",
+          "ProtobufField": "input_state.controller.touchpad_gesture"
+        }
+      ]
+
+    }
+  ],
+
+  "MessagePropertyMappings": {
+    
+    "inputControllerStateMapping": [
+      {
+        "PropertySuffix": "connected",
+        "ProtobufFieldSuffix": "is_connected"
+      },
+      {
+        "PropertySuffix": "touch_pos_and_force",
+        "ProtobufFieldSuffix": "touch_pos_and_force[0]"
+      },
+      {
+        "PropertySuffix": "trigger_normalized",
+        "ProtobufFieldSuffix": "trigger_normalized"
+      },
+      {
+        "PropertySuffix": "type",
+        "ProtobufFieldSuffix": "type"
+      },
+      {
+        "PropertySuffix": "dof",
+        "ProtobufFieldSuffix": "dof"
+      },
+      {
+        "PropertySuffix": "button_state_bumper",
+        "ProtobufFieldSuffix": "button_state_bumper"
+      },
+      {
+        "PropertySuffix": "button_state_home_tap",
+        "ProtobufFieldSuffix": "button_state_home_tap"
+      }
+    ],
+
+    "inputControllerTouchpadGestureMapping": [
+      {
+        "PropertySuffix": "pos_and_force",
+        "ProtobufFieldSuffix": "pos_and_force"
+      },
+      {
+        "PropertySuffix": "type",
+        "ProtobufFieldSuffix": "type"
+      },
+      {
+        "PropertySuffix": "direction",
+        "ProtobufFieldSuffix": "direction"
+      },
+      {
+        "PropertySuffix": "speed",
+        "ProtobufFieldSuffix": "speed"
+      },
+      {
+        "PropertySuffix": "distance",
+        "ProtobufFieldSuffix": "distance"
+      },
+      {
+        "PropertySuffix": "finger_gap",
+        "ProtobufFieldSuffix": "finger_gap"
+      },
+      {
+        "PropertySuffix": "radius",
+        "ProtobufFieldSuffix": "radius"
+      },
+      {
+        "PropertySuffix": "angle",
+        "ProtobufFieldSuffix": "angle"
+      }
+    ]
+  }
+}

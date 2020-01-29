@@ -1,0 +1,131 @@
+{
+  "Constants": {
+    "MLImageTargetArraySize": 5
+  },
+
+  "EnumerationTypes": {
+    "ImageTrackerTargetStatus": {
+      "Enums": [
+        { 
+          "Name": "MLImageTrackerTargetStatus_Tracked",
+          "Label": "Tracked"
+        },
+        { 
+          "Name": "MLImageTrackerTargetStatus_Unreliable",
+          "Label": "Unreliable"
+        },
+        { 
+          "Name": "MLImageTrackerTargetStatus_NotTracked",
+          "Label": "Not Tracked"
+        }
+      ]
+    }
+  },
+  
+  "StructTypes": [
+    { 
+      "Name": "ImageTarget",
+      "Label": "Target",
+      "Description": "An image target in the scene.",
+
+      "Properties" : {
+        "handle": {
+          "Label": "Handle",
+          "Description": "unique handle of the target",
+          "Priority": 1,
+          "Type": "string"
+        },
+        "position": {
+          "Label": "Position",
+          "Description": "Position of the image in world space",
+          "Priority": 2,
+          "Type": "Position"
+        },
+        "rotation": {
+          "Label": "Rotation",
+          "Description": "Rotation of the image in world space",
+          "Priority": 3,
+          "Type": "Rotation",
+          "PropertySheetName": "orientation"
+        },
+        "status": {
+          "Label": "Status",
+          "Description": "Whether the image is being tracked",
+          "Priority": 4,
+          "Type": "ImageTrackerTargetStatus",
+          "ReadOnlyMethod": "always"
+        }
+      }
+    }
+  ],
+
+ "ArrayTypes": [
+    { 
+      "Name": "ImageTargetArray",
+      "ElementType": "ImageTarget",
+      "ElementCount": "MLImageTargetArraySize"
+    }
+  ], 
+
+  "PropertyGroups": [
+    { 
+      "Name": "ImageTracking",
+      "Label": "Image Tracking",
+
+      "Properties": {
+        "targets": {
+          "Label": "Image Targets",
+          "Description": "Image targets created",
+          "Priority": 1,
+          "Type": "ImageTargetArray"
+        }
+       },
+
+      "ChannelMessageMappings": [
+        {
+          "ChannelName": "Image Target Transform",
+          "ProtobufMessageType": "ml.ch.IndexedTransformChannelDataEvent",
+          "MessagePropertyMapping": "imageTargetTransformMapping"
+          // The commented lines below work, but we don't want hardcoded indices
+          // "MessagePropertyMapping": "transformMapping",
+          // "PropertySuffix": "targets[0]",
+          // "ProtobufField": "transform_event.transform"
+        },
+        {
+          "ChannelName": "Image Target Result",
+          "ProtobufMessageType": "ml.ch.ImageTargetResultDataEvent",
+          "MessagePropertyMapping": "imageTargetResultMapping"
+        }
+      ]
+    }
+  ],
+  
+  "MessagePropertyMappings": {
+    "imageTargetTransformMapping": [
+      {
+        // temporary variable
+        "PropertySuffix": "@transformUid",
+        "ProtobufFieldSuffix": "transform_uid.data[1]"
+      },
+	  {
+	    "PropertySuffix": "targets[@transformUid].position",
+	    "ProtobufFieldSuffix": "transform_event.transform.position"
+	  },
+	  {
+	    "PropertySuffix": "targets[@transformUid].rotation",
+	    "ProtobufFieldSuffix": "transform_event.transform.rotation"
+	  }
+    ],
+    "imageTargetResultMapping": [
+      {
+        // temporary variable
+        "PropertySuffix": "@targetUid",
+        "ProtobufFieldSuffix": "target_uid.data[1]"
+      },
+      {
+	    "PropertySuffix": "targets[@targetUid].status",
+	    "ProtobufFieldSuffix": "result.status"
+	  }
+    ]
+   }
+}

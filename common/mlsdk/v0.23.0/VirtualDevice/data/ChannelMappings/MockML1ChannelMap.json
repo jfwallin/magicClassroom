@@ -1,0 +1,69 @@
+{
+   "ChannelMap" : [
+      {
+         "Channel" : "Eye Fixation Transform",
+         "Device" : "MockML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Left Center Transform",
+         "Device" : "MockML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Right Center Transform",
+         "Device" : "MockML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Tracking State",
+         "Device" : "MockML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Graphics Contract",
+         "Device" : "MockML1GraphicsViewSparseDevice"
+      },
+      {
+         "Channel" : "Hand Tracking Data",
+         "Device" : "MockML1HeadTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Head Transform",
+         "Device" : "MockML1HeadposeSparseDevice"
+      },
+      {
+         "Channel" : "Head Tracking State",
+         "Device" : "MockML1HeadposeSparseDevice"
+      },
+      {
+         "Channel" : "Left Hand Center Transform",
+         "Device" : "MockML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Left Hand Keypoints",
+         "Device" : "MockML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Mesh Data",
+         "Device" : "MockML1MeshingSparseDevice"
+      },
+      {
+         "Channel" : "Mesh Info Data",
+         "Device" : "MockML1MeshingSparseDevice"
+      },
+      {
+         "Channel" : "Planes Data",
+         "Device" : "MockML1PlanesSparseDevice"
+      },
+      {
+         "Channel" : "Raycast Results",
+         "Device" : "MockML1RaycastSparseDevice"
+      },
+      {
+         "Channel" : "Right Hand Center Transform",
+         "Device" : "MockML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Right Hand Keypoints",
+         "Device" : "MockML1HandTrackingSparseDevice"
+      }
+   ],
+   "ManifestType" : "ChannelMap"
+}

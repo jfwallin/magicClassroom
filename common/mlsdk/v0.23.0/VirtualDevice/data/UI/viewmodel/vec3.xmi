@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel platform:/resource/com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.vec3"
+    typeId="vec3">
+  <children
+      xsi:type="viewmodel:HorizontalLayout"
+      viewId="vdf.vec3.layout">
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.vec3.x"
+        id="x"
+        labelAlignment="Inline">
+      <style>x</style>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.vec3.y"
+        id="y"
+        labelAlignment="Inline">
+      <style>y</style>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.vec3.z"
+        id="z"
+        labelAlignment="Inline">
+      <style>z</style>
+    </children>
+  </children>
+</viewmodel:View>

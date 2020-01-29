@@ -1,0 +1,10 @@
+
+There is no longer a standalone ML Remote -- this support is moved into The Lab
+as the Zero Iteration installable module.  
+
+This directory continues to contain runtime support for Unity/UE4/LuminRT and C API 
+native programs running under Zero Iteration.
+
+=========
+
+This product incorporates changes to MoltenVk in macOS builds. See patches/MoltenVK.patch

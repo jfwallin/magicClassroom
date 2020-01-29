@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.hand"
+    typeId="Hand">
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.hand.recognizedkeyposes.keypose"
+      id="keypose"
+      labelAlignment="None"/>
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.keypose.keypose_confidence"
+      id="keypose_confidence"
+      labelOverride="Key Pose Confidence"/>
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.keypose.hand_confidence"
+      id="hand_confidence"
+      labelOverride="Hand Confidence"/>
+  <children
+      xsi:type="viewmodel:Group"
+      viewId="vdf.hand.transform"
+      label="Transform">
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.keypose.headpose_follow.left"
+        id="LeftHandGestureHeadposeFollow"
+        labelAlignment="None">
+      <style>follow-headpose</style>
+      <style>small</style>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.keypose.headpose_follow.right"
+        id="RightHandGestureHeadposeFollow"
+        labelAlignment="None"
+        labelOverride="Follow Head Pose">
+      <style>follow-headpose</style>
+      <style>small</style>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.hand.transform.position"
+        id="position"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.hand.transform.orientation"
+        id="orientation"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.keypose.hand_center_normalized"
+        id="hand_center_normalized"/>
+  </children>
+</viewmodel:View>

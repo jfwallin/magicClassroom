@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeTypes xmlns="http://www.magicleap.com/uidesigner/component/nodetypes"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.magicleap.com/uidesigner/component/nodetypes platform:/resource/com.magicleap.common.rcp.component.components/model/nodetypes.xsd">
+
+	<nodeType id="ControlPanel">
+		<!-- Placeholder root node -->
+		<properties>
+			<property typeId="string" id="name" />
+		</properties>
+	</nodeType>
+
+	<nodeType id="ImageTracking">
+		<properties>
+			<property id="targets" typeId="ImageTargets" label="Targets" />
+		</properties>
+	</nodeType>
+
+	<nodeType id="RecordingPlayback">
+		<properties>
+			<property id="recording" typeId="boolean" label="Record" />
+			<property id="recorderStarting" typeId="boolean" />
+			<property id="recordingStatus" typeId="string" label="Status" /> <!-- Not displayed directly; but used to derive information for the other properties -->
+			<property id="playing" typeId="boolean" label="Play" />
+			<property id="playbackStarting" typeId="boolean" />
+			<property id="playbackStatus" typeId="string" label="Status" /> <!-- Not displayed directly; but used to derive information for the other properties -->
+			<property id="playbackProgress" typeId="RecordingPlaybackProgress" label="Time" />
+			<property id="recordingPath" typeId="recordingPath" label="Path" />
+			<property id="playbackPath" typeId="playbackPath" label="Path" />
+			<property id="startRecording" label="Start" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.recording.start" />
+			<property id="stopRecording" label="Stop" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.recording.stop" />
+			<property id="startPlayback" label="Start" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.playback.start" />
+			<property id="stopPlayback" label="Stop" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.playback.stop" />
+		</properties>
+	</nodeType>
+
+	<nodeType id="SceneSelection">
+		<properties>
+		    <property id="transform_with_scale" typeId="transform_with_scale" label="Selection Transform" readOnly="false" />
+			<property id="selection" typeId="SceneSelectionNodes" label="Selection" />
+		</properties>
+	</nodeType>
+
+	<nodeType id="SceneViewCamera">
+		<properties>
+		    <property id="camera_transform" typeId="transform" label="Transform" readOnly="false" />
+		    <property id="align_camera" typeId="AlignCamera" label="Align Camera" />
+		</properties>
+	</nodeType>
+
+</nodeTypes>

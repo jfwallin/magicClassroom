@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modelInfo xmlns="http://www.magicleap.com/uidesigner/component/model"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="vdf"
+    version="1.0.0" rootNodeTypeId="ControlPanel"
+    xsi:schemaLocation="http://www.magicleap.com/uidesigner/component/model platform:/resource/com.magicleap.common.rcp.component.model/model/model.xsd">
+
+    <!-- Types of property values needed by VDF -->
+    <typeFileInfos>
+        <typeFileInfo typeId="booleanList" filePath="value.types" />
+        <typeFileInfo typeId="integerList" filePath="value.types" />
+        <typeFileInfo typeId="floatList" filePath="value.types" />
+        <typeFileInfo typeId="stringList" filePath="value.types" />
+        <typeFileInfo typeId="vec3" filePath="value.types" />
+        <typeFileInfo typeId="quat" filePath="value.types" />
+        <typeFileInfo typeId="rgb" filePath="value.types" />
+        <typeFileInfo typeId="rgba" filePath="value.types" />
+        <!-- Control Panel Types -->
+        <typeFileInfo typeId="MLHeadTrackingMode" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLHeadTrackingError" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLInputControllerType" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLInputControllerDof" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLInputControllerTouchpadGesture" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLInputControllerTouchpadGestureState" filePath="oldControl.types"/>
+        <typeFileInfo typeId="transform" filePath="oldControl.types"/>
+        <typeFileInfo typeId="transform_with_scale" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLEyeTrackingState" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLEyeTrackingError" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLEyeTrackingConfidence" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLEyeTrackingCalibrationStatus" filePath="oldControl.types"/>
+        <typeFileInfo typeId="Keypose" filePath="oldControl.types"/>
+        <typeFileInfo typeId="MLImageTrackerTargetStatus" filePath="oldControl.types"/>
+        <typeFileInfo typeId="InputController" filePath="oldControl.types"/>
+        <typeFileInfo typeId="HandTracking" filePath="oldControl.types"/>
+        <typeFileInfo typeId="ImageTarget" filePath="oldControl.types"/>
+        <typeFileInfo typeId="ImageTargets" filePath="oldControl.types"/>
+        <typeFileInfo typeId="SceneSelectionNodes" filePath="oldControl.types"/>
+        <typeFileInfo typeId="RecordingPlaybackProgress" filePath="oldControl.types"/>
+        <typeFileInfo typeId="AlignCamera" filePath="control.types"/>
+    </typeFileInfos>
+
+    <!-- This is not used, just to please property sheet framework. -->
+    <categoryInfos>
+        <categoryInfo id="none.category" label="No Category" />
+    </categoryInfos>
+
+    <nodeTypeInfos>
+        <!-- Control Panel Nodes -->
+        <nodeTypeInfo nodeTypeId="ControlPanel" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="Transform" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="HeadTracking" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="HandTracking" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="InputControllers" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="EyeTracking" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="ImageTracking" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="RecordingPlayback" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneSelection" filePath="oldControl.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneViewCamera" filePath="oldControl.nodetypes" />
+        
+        <!-- Other parts' nodes -->
+        <nodeTypeInfo nodeTypeId="Rendering" filePath="parts.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneNode" filePath="parts.nodetypes" label="Scene Node"/>
+    </nodeTypeInfos>
+</modelInfo>

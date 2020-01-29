@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modelInfo xmlns="http://www.magicleap.com/uidesigner/component/model"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="vdf"
+    version="1.0.0" rootNodeTypeId="ControlPanel"
+    xsi:schemaLocation="http://www.magicleap.com/uidesigner/component/model platform:/resource/com.magicleap.common.rcp.component.model/model/model.xsd">
+
+    <!-- Types of property values needed by VDF -->
+    <typeFileInfos>
+        <typeFileInfo typeId="booleanList" filePath="value.types" />
+        <typeFileInfo typeId="integerList" filePath="value.types" />
+        <typeFileInfo typeId="floatList" filePath="value.types" />
+        <typeFileInfo typeId="stringList" filePath="value.types" />
+        <typeFileInfo typeId="vec3" filePath="value.types" />
+        <typeFileInfo typeId="quat" filePath="value.types" />
+        <typeFileInfo typeId="rgb" filePath="value.types" />
+        <typeFileInfo typeId="rgba" filePath="value.types" />
+        <!-- Control Panel Types -->
+        <typeFileInfo typeId="transform" filePath="control.types"/>
+        <typeFileInfo typeId="transform_with_scale" filePath="control.types"/>
+        <typeFileInfo typeId="ImageTarget" filePath="control.types"/>
+        <typeFileInfo typeId="ImageTargets" filePath="control.types"/>
+        <typeFileInfo typeId="MLImageTrackerTargetStatus" filePath="control.types"/>
+        <typeFileInfo typeId="SceneSelectionNodes" filePath="control.types"/>
+        <typeFileInfo typeId="RecordingPlaybackProgress" filePath="control.types"/>
+        <typeFileInfo typeId="AlignCamera" filePath="control.types"/>
+    </typeFileInfos>
+
+    <!-- This is not used, just to please property sheet framework. -->
+    <categoryInfos>
+        <categoryInfo id="none.category" label="No Category" />
+    </categoryInfos>
+
+	<!-- Node types used for top-level Properties groups that aren't directly provided in data -->
+    <nodeTypeInfos>
+        <!-- Control Panel Nodes -->
+        <nodeTypeInfo nodeTypeId="ControlPanel" filePath="control.nodetypes" />
+        <nodeTypeInfo nodeTypeId="Transform" filePath="control.nodetypes" />
+        <nodeTypeInfo nodeTypeId="ImageTracking" filePath="control.nodetypes" />
+        <nodeTypeInfo nodeTypeId="RecordingPlayback" filePath="control.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneSelection" filePath="control.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneViewCamera" filePath="control.nodetypes" />
+        
+        <!-- Other parts' nodes -->
+        <nodeTypeInfo nodeTypeId="Rendering" filePath="parts.nodetypes" />
+        <nodeTypeInfo nodeTypeId="SceneNode" filePath="parts.nodetypes" label="Scene Node"/>
+    </nodeTypeInfos>
+</modelInfo>

@@ -1,0 +1,223 @@
+{
+  "EnumerationTypes": {
+    "EyeTrackingError": {
+      "Enums": [
+        {
+          "Name": "MLEyeTrackingError_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLEyeTrackingError_Generic",
+          "Label": "Generic"
+        }
+      ]
+    },
+    "EyeTrackingCalibrationStatus": {
+      "Enums": [
+        {
+          "Name": "MLEyeTrackingCalibrationStatus_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLEyeTrackingCalibrationStatus_Bad",
+          "Label": "Bad"
+        },
+        {
+          "Name": "MLEyeTrackingCalibrationStatus_Good",
+          "Label": "Good"
+        }
+      ]
+    }
+  },
+
+  "PropertyCategories": [
+    {
+      "Path": "eyes",
+      "Label": "Eyes"
+    },
+    {
+      "Path": "eye_state",
+      "Label": "State"
+    }
+  ],
+
+  "StructTypes": [
+    {
+      "Name": "EyeState",
+      "Label": "Eye State",
+      "Description": "This represents the state of eyes.",
+      "PropertySheetName": "MLEyeTrackingState",
+
+      "Properties" : {
+        "fixation_confidence": {
+          "Label": "Fixation",
+          "Description": "A quality metric confidence value to indicate accuracy of fixation.",
+          "Category": "eye_state",
+          "Priority": 1,
+          "Type": "NormalizedFloat",
+          "Default": 1.0
+        },
+        "left_center_confidence": {
+          "Label": "Left Eye",
+          "Description": "A quality metric confidence value to indicate accuracy of left eye center.",
+          "Category": "eye_state",
+          "Priority": 2,
+          "Type": "NormalizedFloat",
+          "Default": 1.0
+        },
+        "right_center_confidence": {
+          "Label": "Right Eye",
+          "Description": "A quality metric confidence value to indicate accuracy of right eye center.",
+          "Category": "eye_state",
+          "Priority": 3,
+          "Type": "NormalizedFloat",
+          "Default": 1.0
+        },
+        "left_blink": {
+          "Label": "Left Blink",
+          "Description": "True if left eye is inside a blink.",
+          "Category": "eye_state",
+          "Priority": 4,
+          "Type": "boolean",
+          "Default": "false"
+        },
+        "right_blink": {
+          "Label": "Right Blink",
+          "Description": "True if right eye is inside a blink.",
+          "Category": "eye_state",
+          "Priority": 5,
+          "Type": "boolean",
+          "Default": "false"
+        },
+        "error": {
+          "Label": "Error",
+          "Description": "Current detected eye tracking error.",
+          "Category": "eye_state",
+          "Priority": 6,
+          "Type": "EyeTrackingError"
+        },
+        "calibration_status": {
+          "Label": "Calibration Status",
+          "Description": "Calibration status",
+          "Category": "eye_state",
+          "Priority": 7,
+          "Type": "EyeTrackingCalibrationStatus"
+        }
+      }
+    }
+  ],
+
+  "PropertyGroups": [
+    {
+      "Name": "EyeTracking",
+      "Label": "Eye Tracking",
+      "Description": "These properties represent eye tracking",
+      "PropertySheetName": "EyeTracking",
+
+      // NOTE: priority is not (yet) used in the frontend, since the view model
+      // has its own notion of grouping and ordering (see viewmodel/*.xmi);
+      // but we may use this ordering for scripting source/docs generation
+      "Properties": {
+        "fixation_position": {
+          "Label": "Fixation",
+          "Description": "Detected position in world space where eyes are fixated (focused).",
+          "Category": "eyes",
+          "Priority": 1,
+          "Type": "Position",
+          "ResetMethod": "resetEyeFixationPosition",   // TODO: added to VirtualDeviceConstants.h later.
+          "PropertySheetName": "fixation"
+        },
+        "left_eye_transform": {
+          "Label": "Left Eye",
+          "Description": "Left eye transform in world space.",
+          "Category": "eyes",
+          "Priority": 2,
+          "Type": "PositionRotation",
+          "ReadOnlyMethod": "always",
+          "PropertySheetName": "left_eye"
+        },
+        "right_eye_transform": {
+          "Label": "Right Eye",
+          "Description": "Right eye transform in world space.",
+          "Category": "eyes",
+          "Priority": 3,
+          "Type": "PositionRotation",
+          "ReadOnlyMethod": "always",
+          "PropertySheetName": "right_eye"
+        },
+        "state" : {
+          "Label": "State",
+          "Description": "State of Eyes.",
+          "Category": "eyes",
+          "Priority": 4,
+          "Type": "EyeState",
+          "PropertySheetName": "state"
+        }
+      },
+
+      "ChannelMessageMappings": [
+        {
+          "ChannelName": "Eye Fixation Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "builtinMapping",
+          "PropertySuffix": "fixation_position",
+          "ProtobufField": "transform.position"
+        },
+        {
+          "ChannelName": "Eye Left Center Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "left_eye_transform",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Eye Right Center Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "right_eye_transform",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Eye Tracking State",
+          "ProtobufMessageType": "ml.ch.EyeTrackingStateDataEvent",
+          "MessagePropertyMapping": "eyeStateMapping",
+          "PropertySuffix": "state",
+          "ProtobufField": "eye_tracking_state"
+        }
+      ]
+    }
+  ],
+
+  "MessagePropertyMappings": {
+    "eyeStateMapping": [
+      {
+        "PropertySuffix": "fixation_confidence",
+        "ProtobufFieldSuffix": "fixation_confidence"
+      },
+      {
+        "PropertySuffix": "left_center_confidence",
+        "ProtobufFieldSuffix": "left_center_confidence"
+      },
+      {
+        "PropertySuffix": "right_center_confidence",
+        "ProtobufFieldSuffix": "right_center_confidence"
+      },
+      {
+        "PropertySuffix": "left_blink",
+        "ProtobufFieldSuffix": "left_blink"
+      },
+      {
+        "PropertySuffix": "right_blink",
+        "ProtobufFieldSuffix": "right_blink"
+      },
+      {
+        "PropertySuffix": "error",
+        "ProtobufFieldSuffix": "error"
+      },
+      {
+        "PropertySuffix": "calibration_status",
+        "ProtobufFieldSuffix": "calibration_status"
+      }
+    ]
+  }
+}

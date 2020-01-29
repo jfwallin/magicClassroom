@@ -1,0 +1,14 @@
+{
+  "ApplicationLabel": "Command Line - Playback",
+  "ManifestType": "SparseDevice",
+  "DeviceType": "Playback",
+  "DeviceName": "PlaybackSparseDevice",
+  "DeviceLabel": "Playback",
+  "ConfigurationProperties": {
+    "RecordingPath": {
+      "Type": "string",
+      "Default": "UnnamedRecording.recording",
+      "UserVisible": false
+    }
+  }
+}

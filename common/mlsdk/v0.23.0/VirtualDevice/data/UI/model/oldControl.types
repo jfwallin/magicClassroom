@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Node types used for the Control Panel.
+These types can correspond to various SparseDevice 
+(Whichever is connected for the appropriate channel; 
+the selected one if multiple are present) -->
+<types xmlns="http://www.magicleap.com/uidesigner/component/types"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<structType typeId="transform" flattenOnExport="false"> 
+		<member id="position" typeId="vec3" label="Position" />
+		<member id="orientation" typeId="vec3" label="Orientation"/>
+	</structType>
+
+	<structType typeId="transform_with_scale" flattenOnExport="false">
+		<member id="label" typeId="string" label="Label" />
+	    <member id="type" typeId="string" label="Type" /> 
+		<member id="position" typeId="vec3" label="Position" />
+		<member id="orientation" typeId="vec3" label="Orientation"/>
+		<member id="scale" typeId="vec3" label="Scale"/>
+	</structType>
+	
+	<structType typeId="transform_pos" flattenOnExport="false">
+		<member id="position" typeId="vec3" label="Fixation"/>
+	</structType>
+	
+	<structType typeId="ImageTarget">
+		<member id="handle" typeId="string" label="Handle" defaultValue="unhandled" />
+		<member id="transform" typeId="transform" label="Transform" />
+		<member id="status" typeId="MLImageTrackerTargetStatus" label="Status" />
+		<!-- Hidden for now, cf. Jira DTOOLS-630
+		<member id="select" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.imagetracker.select" label="Select"/>
+		-->
+	</structType>
+	
+	<listType typeId="ImageTargets" elementTypeId="ImageTarget" elementLabel="Target" />
+	
+	<listType typeId="SceneSelectionNodes" elementTypeId="transform_with_scale" elementLabel="Selection" />
+	
+	<structType typeId="MLEyeTrackingState" flattenOnExport="false"> 
+		<member id="fixation_confidence" typeId="float" label="Fixation" defaultValue="1.0" />
+		<member id="left_center_confidence" typeId="float" label="Left Eye" defaultValue="1.0" />
+		<member id="right_center_confidence" typeId="float" label="Right Eye" defaultValue="1.0" />
+		<member id="left_blink" typeId="boolean" label="Left Blink" />
+		<member id="right_blink" typeId="boolean" label="Right Blink" />
+		<member id="error" typeId="MLEyeTrackingError" label="Error" />
+		<member id="calibration_status" typeId="MLEyeTrackingCalibrationStatus" label="Calibration Status" />
+	</structType>
+	
+	<structType typeId="InputController">
+		<member id="transform" typeId="transform" label="Transform" />
+		<member id="connected" typeId="boolean" label="Connected" />
+		<member id="touch_pos_and_force" typeId="vec3" label="Touch Position and Force" /> 
+		<member id="trigger_normalized" typeId="float" label="Trigger" />
+		<member id="type" typeId="MLInputControllerType" label="Controller Type" />
+		<member id="dof" typeId="MLInputControllerDof" label="Controller DoF" />
+		<member id="button_state_bumper" typeId="boolean" label="Bumper" />
+		<member id="button_state_hometap" typeId="boolean" label="Home Tap" />
+		<member id="touchpad_gesture" typeId="MLInputControllerTouchpadGesture" label="Touchpad Gesture" />
+	</structType>
+	
+	<structType typeId="Hand">
+		<member id="transform" typeId="transform" label="Transform" />
+		<member id="hand_confidence" typeId="float" label="Hand Confidence" />
+		<member id="keypose" typeId="SharedKeypose" label="Key Pose"/>
+		<member id="keypose_confidence" typeId="float" label="Key Pose Confidence" />
+		<member id="hand_center_normalized" typeId="vec3" label="Norm. Hand Center"/>
+	</structType>
+	
+	<structType typeId="MLInputControllerTouchpadGesture">
+		<member id="pos_and_force" typeId="vec3" label="Position and Force" />
+		<member id="type" typeId="MLInputControllerTouchpadGestureType" label="Gesture Type" />
+		<member id="touchpad_gesture_state" typeId="MLInputControllerTouchpadGestureState" label="Gesture State" />
+		<member id="direction" typeId="MLInputControllerTouchpadGestureDirection" label="Gesture Direction" />
+		<member id="speed" typeId="float" label="Speed" />
+		<member id="distance" typeId="float" label="Distance" />
+		<member id="finger_gap" typeId="float" label="Finger Gap" />
+		<member id="radius" typeId="float" label="Radius" />
+		<member id="angle" typeId="float" label="Angle" />
+	</structType>
+	
+	<structType typeId="RecordingPlaybackProgress">
+		<member id="duration" typeId="float" label="Duration" />
+		<member id="timestamp" typeId="float" label="Progress" />
+	</structType>	
+	
+	<fileType typeId="recordingPath" fileDialogStyle="Save">
+		<filter filePattern="*.recording" filterLabel="Record (*.recording)"/>
+		<filter filePattern="*.*" filterLabel="Any (*.*)"/>
+	</fileType>
+	
+	<fileType typeId="playbackPath" fileDialogStyle="Open">
+		<filter filePattern="*.recording" filterLabel="Record (*.recording)"/>
+	</fileType>
+	
+	<structType typeId="AlignCamera" flattenOnExport="false"> 
+		<member id="align_scene_to_device_view" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.scene_view.align_scene_to_device_view" label="Align Scene to Device View"/>
+		<member id="align_device_to_scene_view" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.scene_view.align_device_to_scene_view" label="Align Device to Scene View"/>
+	</structType>
+	
+</types>

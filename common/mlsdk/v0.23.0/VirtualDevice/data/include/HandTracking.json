@@ -1,0 +1,294 @@
+{
+  "Constants": {
+    "MLHandTrackingKeyPose_Count": 10,
+    "MLHandTrackingStaticData_MaxKeyPoints": 24
+  },
+
+  "EnumerationTypes": {
+    "HandTrackingKeyPose": {
+      "Enums": [
+        { 
+          "Name": "KeyPose_NoHand",
+          "Label": "No Hand"
+        },
+        { 
+          "Name": "KeyPose_NoPose",
+          "Label": "No Detected Pose"
+        },
+        { 
+          "Name": "KeyPose_Finger",
+          "Label": "Finger"
+        },
+        { 
+          "Name": "KeyPose_Fist",
+          "Label": "Fist"
+        },
+        { 
+          "Name": "KeyPose_Pinch",
+          "Label": "Pinch"
+        },
+        { 
+          "Name": "KeyPose_Thumb",
+          "Label": "Thumb"
+        },
+        { 
+          "Name": "KeyPose_L",
+          "Label": "L"
+        },
+        { 
+          "Name": "KeyPose_OpenHand",
+          "Label": "Open Hand"
+        },
+        { 
+          "Name": "KeyPose_Ok",
+          "Label": "Ok"
+        },
+        { 
+          "Name": "KeyPose_C",
+          "Label": "C"
+        }
+      ]
+    }
+  },
+
+  "PropertyCategories": [
+  ],
+  
+  "ArrayTypes": [
+    { 
+      "Name": "KeyposeFloats",
+      "ElementType": "NormalizedFloat",
+      "ElementCount": "MLHandTrackingKeyPose_Count"
+    },
+    { 
+      "Name": "KeypointBools",
+      "ElementType": "boolean",
+      "ElementCount": "MLHandTrackingStaticData_MaxKeyPoints"
+    },
+    { 
+      "Name": "KeypointTransforms",
+      "ElementType": "PositionRotation",
+      "ElementCount": "MLHandTrackingStaticData_MaxKeyPoints"
+    }
+  ],
+
+  "StructTypes": [
+    { 
+      "Name": "HandState",
+      "Label": "Hand State",
+      "Description": "This represents the state of one hand.",
+      "PropertySheetName": "Hand",
+
+      // NOTE: priority is not (yet) used in the frontend, since the view model
+      // has its own notion of grouping and ordering (see viewmodel/*.xmi);
+      // but we may use this ordering for scripting source/docs generation
+      "Properties": {
+        "position": {
+          "Label": "Position",
+          "Description": "Refers to the hand position in world space",
+          "Category": "transform",
+          "Priority": 1,
+          "Type": "Position"
+        },
+        "rotation": {
+          "Label": "Rotation",
+          "Description": "Refers to the hand rotation in world space",
+          "Category": "transform",
+          "Priority": 2,
+          "Type": "Rotation",
+          "PropertySheetName": "orientation"
+        },
+        "hand_center_normalized": {
+          "Label": "Hand Center Normalized",
+          "Description": "Center of the hand within normalized -1.0...1.0 coordinates in body space",
+          "Priority": 10,
+          "Type": "Position"
+        },
+        "hand_confidence": {
+          "Label": "Hand Confidence",
+          "Description": "Confidence that a hand is detected",
+          "Priority": 4,
+          "Type": "NormalizedFloat"
+        },
+        "keypose": {
+          "Label": "Keypose",
+          "Description": "The static keypose currently being performed by the single hand",
+          "Priority": 5,
+          "Type": "HandTrackingKeyPose",
+          "Default": "KeyPose_NoHand"
+        },
+        "keypose_confidence": {
+          "Label": "Keypose Confidence",
+          "Description": "Confidence for each of the recognized keyposes",
+          "Priority": 6,
+          "Type": "KeyposeFloats",
+          "UserVisible": false,
+          "PropertySheetName": "keypose_confidences"
+        },
+        "keypose_confidence_filtered": {
+          "Label": "Keypose Confidence (Filtered)",
+          "Description": "Confidence for each of the recognized keyposes (filtered)",
+          "Priority": 7,
+          "UserVisible": false,
+          "Type": "KeyposeFloats"
+        },
+        "keypoints_mask": {
+          "Label": "Keypoints Mask",
+          "Description": "Tells which of the known keypoints is present",
+          "Priority": 8,
+          "UserVisible": false,
+          "Type": "KeypointBools"
+        },
+        "keypoints": {
+          "Label": "Keypoints",
+          "Description": "Provides the world-space transform of each keypoint",
+          "Priority": 11,
+          "UserVisible": false,
+          "Type": "KeypointTransforms"
+        },
+
+        // frontend special property
+        "current_keypose_confidence": {
+          "Label": "Keypose Confidence",
+          "Description": "Confidence for the current recognized keypose",
+          "Priority": 6,
+          "Type": "NormalizedFloat",
+          "PropertySheetName": "keypose_confidence"
+        }
+      }
+    }
+
+  ],
+
+  "PropertyGroups": [
+    { 
+      "Name": "HandTracking",
+      "Label": "Hand Tracking",
+      "Description": "These properties represent hand tracking",
+      "PropertySheetName": "Hands",
+
+      "Properties": {
+        "left": {
+          "Label": "Left",
+          "Description": "Refers to the state of the left hand",
+          "Priority": 1,
+          "Type": "HandState",
+          "PropertySheetName": "left_hand"
+        },
+        "right": {
+          "Label": "Right",
+          "Description": "Refers to the state of the right hand",
+          "Priority": 2,
+          "Type": "HandState",
+          "PropertySheetName": "right_hand"
+        }
+      },
+
+      "ChannelMessageMappings": [
+        {
+          "ChannelName": "Hand Tracking Data",
+          "ProtobufMessageType": "ml.ch.HandTrackingDataEvent",
+          "MessagePropertyMapping": "handStateMapping",
+          "PropertySuffix": "left",
+          "ProtobufField": "data.left_hand_state"
+        },
+        {
+          "ChannelName": "Hand Tracking Data",
+          "ProtobufMessageType": "ml.ch.HandTrackingDataEvent",
+          "MessagePropertyMapping": "handStateMapping",
+          "PropertySuffix": "right",
+          "ProtobufField": "data.right_hand_state"
+        },
+        {
+          "ChannelName": "Left Hand Center Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "left",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Right Hand Center Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "right",
+          "ProtobufField": "transform"
+        }
+        
+        // Turned off for now until I wire up more array stuff in the frontend (REM-3553)
+        // ,
+
+        // // map each keypoint 
+        // {
+        //   "ChannelName": "Left Hand Keypoints",
+        //   "ProtobufMessageType": "ml.ch.HandTrackingKeypointDataEvent",
+        //   "MessagePropertyMapping": "handKeypointsMapping",
+        //   "PropertySuffix": "left",
+        //   "ProtobufField": "keypoint[]"
+        // },
+        // {
+        //   "ChannelName": "Right Hand Keypoints",
+        //   "ProtobufMessageType": "ml.ch.HandTrackingKeypointDataEvent",
+        //   "MessagePropertyMapping": "handKeypointsMapping",
+        //   "PropertySuffix": "right",
+        //   "ProtobufField": "keypoint[]"
+        // }
+      ]
+
+    }
+  ],
+
+  "MessagePropertyMappings": {
+    "handStateMapping": [
+      {
+        "PropertySuffix": "keypose",
+        "ProtobufFieldSuffix": "keypose"
+      },
+      {
+        "PropertySuffix": "hand_confidence",
+        "ProtobufFieldSuffix": "hand_confidence"
+      },
+
+      // Same comment as above, REM-3553
+      // {
+      //   "PropertySuffix": "keypose_confidence[]",
+      //   "ProtobufFieldSuffix": "keypose_confidence[]"
+      // },
+      // {
+      //   "PropertySuffix": "keypose_confidence_filtered[]",
+      //   "ProtobufFieldSuffix": "keypose_confidence_filtered[]"
+      // },
+      // {
+      //   "PropertySuffix": "keypoints_mask[]",
+      //   "ProtobufFieldSuffix": "keypoints_mask[]"
+      // },
+      {
+        "PropertySuffix": "hand_center_normalized",
+        "ProtobufFieldSuffix": "hand_center_normalized"
+      },
+
+      // fetch current confidence
+      {
+        "PropertySuffix": "@keyposeIndex",
+        "ProtobufFieldSuffix": "keypose"
+      },
+      {
+        "PropertySuffix": "current_keypose_confidence",
+        "ProtobufFieldSuffix": "keypose_confidence[@keyposeIndex]"
+      }
+    ],
+
+    // This mapping is invoked once per element of keypoint[]
+    "handKeypointsMapping": [
+      {
+        // temporary variable
+        "PropertySuffix": "@keypointIndex",
+        "ProtobufFieldSuffix": "index"
+      },
+      {
+        "PropertySuffix": "keypoints[@keypointIndex]",
+        "ProtobufFieldSuffix": "transform"
+      }
+    ]
+  }
+
+}

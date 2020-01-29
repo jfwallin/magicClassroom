@@ -1,0 +1,3 @@
+# tells mabu not to validate the manifest.xml against the defined schema
+# (use for pre-0.15 images)
+PKGFLAGS = manifestValidation=false

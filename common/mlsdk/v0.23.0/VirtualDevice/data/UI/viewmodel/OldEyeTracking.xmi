@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.eyetracking"
+    typeId="EyeTracking"
+    inherit="false">
+  <generationAnnotation
+      generate="NONE"/>
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.eyetracking.container">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.eyegaze.position"
+        label="Position">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetracking.eyes.headpose_follow"
+          id="VirtualRoomServerSparseDevice.EyeFixationGizmoHeadposeFollow"
+          labelAlignment="None">
+        <style>right-aligned</style>
+      </children>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetracking.eyes.fixation"
+          id="fixation#position"
+          labelOverride="Fixation"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetracking.left.left_eye"
+          id="left_eye#position"
+          labelOverride="Left Eye"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetracking.right.right_eye"
+          id="right_eye#position"
+          labelOverride="Right Eye"/>
+      <children
+          xsi:type="viewmodel:LinkedPropertyContainer"
+          viewId="vdf.eyetrackingstate.eye_blink"
+          label="Eye Blink"
+          tooltip="Eye Blink">
+        <linkedChildren
+            viewId="vdf.eyegaze.left_blink"
+            id="state#left_blink"
+            linkedLabel="Blink"
+            holdLabelUnlinked="Hold L Wink"
+            unlinkedLabel="L Wink"
+            holdLabelLinked="Hold Blink"/>
+        <linkedChildren
+            viewId="vdf.eyegaze.right_blink"
+            id="state#right_blink"
+            linkedLabel="Blink"
+            holdLabelUnlinked="Hold R Wink"
+            unlinkedLabel="R Wink"
+            holdLabelLinked="Hold Blink"/>
+      </children>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetracking.ipd"
+          id="VirtualRoomServerSparseDevice.EyeFixationGizmoIPD">
+        <style>showMinMax</style>
+      </children>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.eyetracking.state.state"
+        id="state"
+        labelAlignment="None"/>
+  </children>
+</viewmodel:View>

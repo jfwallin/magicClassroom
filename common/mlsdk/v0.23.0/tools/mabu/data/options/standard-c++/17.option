@@ -1,0 +1,16 @@
+# pass the option to preprocessor and compiler, since some library headers check __cplusplus;
+# use the macro and not a -std... option since we don't want to trigger errors on C builds
+CPPFLAGS.win_gcc,win_clang=-D__cplusplus=201703L
+
+# These ports may use the MSVC libs, which checks this macro
+DEFS.clang_win,gcc_win=_HAS_CXX17
+
+CXXFLAGS.gcc-4.8,gcc-4.9,gcc-5=-std=c++1z
+CXXFLAGS.gcc-6,gcc-7,gcc-8,gcc-9=-std=c++17
+
+CXXFLAGS.clang-3.8,clang-3.9,clang-4=-std=c++1z
+CXXFLAGS.clang-5,clang-6,clang-7,clang-8=-std=c++17
+
+# no flag for MSVC 2015
+
+CXXFLAGS.msvc-2017,msvc-2019=-std:c++17

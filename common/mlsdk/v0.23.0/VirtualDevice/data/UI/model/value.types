@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<types xmlns="http://www.magicleap.com/uidesigner/component/types"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <structType typeId="point2" flattenOnExport="true" >
+        <member id="x" typeId="float" label="X"/>
+        <member id="y" typeId="float" label="Y"/>
+    </structType>
+
+    <structType typeId="point3" flattenOnExport="true">
+        <member id="x" typeId="float" label="X"/>
+        <member id="y" typeId="float" label="Y"/>
+        <member id="z" typeId="float" label="Z"/>
+    </structType>
+    
+   	<structType typeId="vec2" flattenOnExport="true">
+		<member id="x" typeId="float" label="X"/>
+		<member id="y" typeId="float" label="Y"/>
+	</structType>
+
+    <structType typeId="vec3" flattenOnExport="true">
+        <member id="x" typeId="float" label="X"/>
+        <member id="y" typeId="float" label="Y"/>
+        <member id="z" typeId="float" label="Z"/>
+    </structType>
+
+    <structType typeId="rgb" flattenOnExport="true">
+        <member id="r" typeId="float"/>
+        <member id="g" typeId="float"/>
+        <member id="b" typeId="float"/>
+    </structType>
+
+    <structType typeId="quat" flattenOnExport="true">
+        <member id="x" typeId="float" label="X"/>
+        <member id="y" typeId="float" label="Y"/>
+        <member id="z" typeId="float" label="Z"/>
+        <member id="w" typeId="float" label="W"/>
+    </structType>
+
+    <structType typeId="rgba" flattenOnExport="true">
+        <member id="r" typeId="float"/>
+        <member id="g" typeId="float"/>
+        <member id="b" typeId="float"/>
+        <member id="a" typeId="float"/>
+    </structType>
+
+    <structType typeId="namedMapEntry" flattenOnExport="true">
+    	<member id="key" typeId="string"/>
+    	<member id="value" typeId="string"/>  <!-- real type is "any", but we can parse this -->
+    </structType>
+    
+    <listType typeId="namedMap" elementTypeId="namedMapEntry" elementLabel="entry" />
+    
+    <listType typeId="booleanList" elementTypeId="boolean" elementLabel="value" />
+    <listType typeId="integerList" elementTypeId="integer" elementLabel="value" />
+    <listType typeId="floatList" elementTypeId="float" elementLabel="value" />
+    <listType typeId="stringList" elementTypeId="string" elementLabel="value" />
+    <listType typeId="namedMapList" elementTypeId="namedMapEntry" elementLabel="value" />
+
+	<!-- action binding aliases for namedMapList -->
+    <listType typeId="keyOrButton" elementTypeId="namedMapEntry" elementLabel="value" />
+    <listType typeId="analogInput" elementTypeId="namedMapEntry" elementLabel="value" />
+	    
+</types>

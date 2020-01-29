@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VDConfiguration xmlns="http://www.magicleap.org/VDConfiguration" Version="1.0">
+    <Device>
+        <ID>Peripheral</ID>
+        <PhysicalDevice>false</PhysicalDevice>
+        <Label>Peripheral</Label>
+    </Device>
+    <Device>
+        <ID>Simulator</ID>
+        <PhysicalDevice>false</PhysicalDevice>
+        <Label>Simulator</Label>
+    </Device>
+    <Device>
+        <ID>Virtual Room</ID>
+        <PhysicalDevice>false</PhysicalDevice>
+        <Label>Virtual Room</Label>
+    </Device>
+</VDConfiguration>

@@ -1,0 +1,48 @@
+# This file is used for automated discovery of runtime libraries
+# for use by Lumin SDK host applications when Zero Iteration is running. 
+#
+#################################################################################
+#
+# CLIENTS: you need not parse and expand this file.
+#
+# This file replaces $MLSDK/.metadata/sdk_shim_discovery.txt,
+# which is deprecated.
+#
+# Please do not rely on _this_ file, though!
+#
+# Instead, use "labdriver com.magicleap.zi:get-shim-search-paths" 
+# (or "labdriver com.magicleap.zi:get-shim-runtime-libraries")
+# from now on.  Those commands will parse this file and match up a given 
+# MLSDK and the corresponding Zero Iteration backend.
+#
+#################################################################################
+#
+# These variables are substituted:
+#  MLSDK:          full path to current Lumin SDK
+#  HOST:           win64, osx, linux64
+#  MLSDK_VERSION:  the "version" attribute from sdk.manifest
+
+# This is where stub shared libraries live (link-time).  All stub implementations
+# return MLResult_NotImplemented except for ml_privileges and ml_platform.
+#
+STUB_PATH=$(MLSDK)/lib/$(HOST)
+ZI_SHIM_PATH_win64=$(MLSDK)/VirtualDevice/lib;$(MLSDK)/VirtualDevice/bin;$(STUB_PATH)
+ZI_SHIM_PATH_osx=$(MLSDK)/VirtualDevice/lib;$(STUB_PATH)
+ZI_SHIM_PATH_linux64=$(MLSDK)/VirtualDevice/lib;$(STUB_PATH)
+
+# Semicolon-separated lists of shim libraries that are debug or release specific.
+# If a library does not match either list, it is used for both.
+#
+ZI_SHIM_DEBUG_ONLY_win64=ml_audioD
+ZI_SHIM_DEBUG_ONLY_osx=
+ZI_SHIM_DEBUG_ONLY_linux64=
+
+ZI_SHIM_RELEASE_ONLY_win64=ml_audio
+ZI_SHIM_RELEASE_ONLY_osx=
+ZI_SHIM_RELEASE_ONLY_linux64=
+
+# Semicolon-separated lists of dependent libraries.
+#
+BASE_LIBRARIES_win64=assimp-vc140-mt.dll;glfw3.dll;protobuf-cpp-full.dll;portaudio_x64.dll;z.dll;zmq.dll
+BASE_LIBRARIES_osx=libassimp.dylib;libglfw.3.dylib;libprotobuf-cpp-full.dylib;libz.dylib;libzmq.dylib
+BASE_LIBRARIES_linux64=libassimp.so.4;libglfw.so.3;libprotobuf-cpp-full.so;libz.so;libzmq.so

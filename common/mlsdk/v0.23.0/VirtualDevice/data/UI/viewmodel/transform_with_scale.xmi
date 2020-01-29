@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel platform:/resource/com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.selection.transform"
+    typeId="transform_with_scale"
+    inherit="false">
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.selection.transform.type"
+      id="type"/>
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.selection.transform.position"
+      id="position"/>
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.selection.transform.orientation"
+      id="orientation"/>
+  <children
+      xsi:type="viewmodel:Control"
+      viewId="vdf.selection.transform.scale"
+      id="scale"/>
+</viewmodel:View>

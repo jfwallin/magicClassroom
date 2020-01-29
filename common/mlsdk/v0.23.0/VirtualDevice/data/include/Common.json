@@ -1,0 +1,192 @@
+{
+  "SimpleTypes": [
+    { 
+      "Name": "NormalizedFloat",
+      "BaseType": "float",
+      "LowerLimit": 0.0,
+      "UpperLimit": 1.0,
+      "OutOfRangeHandling": "clamp"
+    },
+    { 
+      "Name": "EulerAngle",
+      "BaseType": "float",
+      "LowerLimit": -180.0,
+      "UpperLimit": 180.0,
+      "OutOfRangeHandling": "wrap"
+    },
+    { 
+      "Name": "Path",
+      "BaseType": "string"
+    }
+  ],
+
+  "EnumTypes": [
+    { 
+      "Name": "PathKind",
+      "Description": "What kind of path this is.",
+      "Default": "DontCare",
+      "Values": [
+        "DontCare",
+        "File",
+        "Folder"
+      ]
+    },
+    { 
+      "Name": "PathMode",
+      "Description": "How the path is intended to be browsed.",
+      "Default": "DontCare",
+      "Values": [
+        "DontCare",
+        "Load",
+        "Save"
+      ]
+    },
+    { 
+      "Name": "PathExistence",
+      "Description": "For file saving, how to handle existing/nonexisting file entries.",
+      "Default": "PromptOverwrite",
+      "Values": [
+        "PromptOverwrite",
+        "MustExist",
+        "MustNotExist"
+      ]
+    },
+    { 
+      "Name": "RelativePathRoot",
+      "Description": "How an incoming relative path will be expanded to a full path at runtime, or, how a user-provided full path may be relativized to save for portable configuration files.",
+      "Default": "NONE",
+      "Values": [
+        "NONE", // relative paths not allowed
+        "ML_VDS_DATA", // current VDS data root
+        "MLSDK",  // current MLSDK root
+        "USER_HOME", // e.g. /Users/me
+        "USER_TEMP" // e.g. $HOME/.config/mlvds
+      ]
+    }
+  ],
+
+  "StructTypes": [
+    { 
+      "Name": "Position",
+      "Label": "Position Vector",
+      "Description": "This represents the position of an object, with each component measured in meters.",
+      "PropertySheetName": "vec3",
+
+      "Properties": {
+        "x": {
+          "Label": "X",
+          "Description": "X coordinate (left/right)",
+          "Type": "float"
+        },
+        "y": {
+          "Label": "Y",
+          "Description": "Y coordinate (down/up)",
+          "Type": "float"
+        },
+        "z": {
+          "Label": "Z",
+          "Description": "Z coordinate (front/back)",
+          "Type": "float"
+        }
+      }
+    },
+
+    { 
+      "Name": "Rotation",
+      "Label": "Rotation Vector",
+      "Description": "This represents the rotation of an object in Euler angles, with each component measured in degrees.",
+      "PropertySheetName": "vec3",
+
+      "Properties": {
+        "x": {
+          "Label": "X",
+          "Description": "X rotation (pitch)",
+          "Type": "EulerAngle"
+        },
+        "y": {
+          "Label": "Y",
+          "Description": "Y rotation (yaw)",
+          "Type": "EulerAngle"
+        },
+        "z": {
+          "Label": "Z",
+          "Description": "Z rotation (roll)",
+          "Type": "EulerAngle"
+        }
+      }
+    },
+
+    { 
+      "Name": "Scale",
+      "Label": "Scale Vector",
+      "Description": "This represents the scaling of an object, with each component representing a multiplication factor (1.0 is normal size, 0.5 is half size, etc).",
+      "PropertySheetName": "vec3",
+
+      "Properties": {
+        "x": {
+          "Label": "X",
+          "Description": "X multiplier (width)",
+          "Type": "float",
+          "Default": 1.0
+        },
+        "y": {
+          "Label": "Y",
+          "Description": "Y multiplier (height)",
+          "Type": "float",
+          "Default": 1.0
+        },
+        "z": {
+          "Label": "Z",
+          "Description": "Z multiplier (depth)",
+          "Type": "float",
+          "Default": 1.0
+        }
+      }
+    },
+
+    { 
+      "Name": "PositionRotation",
+      "Label": "Transform",
+      "Description": "This represents the position and rotation of an object.",
+      "PropertySheetName": "transform",
+
+      "Properties": {
+        "position": {
+          "Label": "Position",
+          "Description": "Position",
+          "Type": "Position"
+        },
+        "rotation": {
+          "Label": "Rotation",
+          "Description": "Rotation",
+          "Type": "Rotation",
+          "PropertySheetName": "orientation"
+        }
+      }
+    }
+
+  ],
+
+  "MessagePropertyMappings": {
+    "transformMapping": [
+      {
+        "PropertySuffix": "position",
+        "ProtobufFieldSuffix": "position"
+      },
+      {
+        "PropertySuffix": "rotation",
+        "ProtobufFieldSuffix": "rotation"
+      }
+    ],
+
+    // when the property and protobuf field are both well-known
+    // types, use this mapping, e.g. for vec3
+    "builtinMapping": [
+      {
+        "PropertySuffix": "",
+        "ProtobufFieldSuffix": ""
+      }
+    ]
+  }
+
+}

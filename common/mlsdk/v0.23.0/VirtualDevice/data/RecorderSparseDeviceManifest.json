@@ -1,0 +1,14 @@
+{
+  "ApplicationLabel": "Command Line - Recorder",
+  "ManifestType": "SparseDevice",
+  "DeviceType": "Recorder",
+  "DeviceName": "RecorderSparseDevice",
+  "DeviceLabel": "Recorder",
+  "UpdateHertz": 30.0,
+  "ConfigurationProperties": {
+    "RecordingPath": {
+      "Type": "string",
+      "Default": "UnnamedRecording"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# These options are injected when building static libraries (targeted to be used in shared objects).
+
+CFLAGS.linux,osx,lumin=\
+        -fPIC
+CXXFLAGS.linux,osx,lumin=\
+        -fPIC
+
+

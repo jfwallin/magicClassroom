@@ -1,0 +1,85 @@
+
+# NOTE: this file is named *.mabu but the same principle applies
+# to *.comp, *.config, and *.option files.
+
+# Any variable (except KIND, REFS, USES) may be specialized
+# for the build target.  Specializing is essentially conditional building
+# based on attributes of the build target.
+#
+# Any build has a fully-defined build specification --
+# config, platform, toolchain, and architecture --
+# like debug_win_msvc-2015_x64 or release_lumin_clang-3.6_aarch64.
+# (Use 'mabu --print-spec -t ...' to see.)
+#
+# A specialized setting applies only for build targets that match
+# the target build.  Any number of elements from the fully-specified
+# build target specification may be used to select.
+#
+# Multiple selections may be supplied by separating them with
+# commas.
+
+# Simple examples are:
+
+SRCS = always.c
+
+SRCS.linux = linux_only.c other.c
+SRCS.lumin = target-like-only.c
+
+SRCS.msvc = msvc_only.c msvc2.cpp
+SRCS.gcc = gcc_only.c
+SRCS.gcc-4.9 = gcc_4.9_only.c
+
+# Slightly more complex: like "mabu -t ...", multiple segments of
+# the build target can be selected:
+
+SRCS.linux_x64 = linux_x64.s
+SRCS.debug_msvc-2015_win = debug_msvc.c debug_asserts.c
+
+SRCS.lumin_aarch64 = device-comms.c
+
+#
+###############################################
+#
+
+# For a particular build, mabu finds all the matching variables, and
+# merges the contents from the most specific specialization to the most
+# generic, removing duplicates along the way.
+#
+# These are the expected results:
+
+# mabu -t debug_gcc-4.9_linux_x64:
+#       SRCS = linux_only.c other.c gcc_only.c gcc_4.9_only.c linux_x64.s always.c
+#
+# mabu -t release_gcc-4.9_linux_x64:
+#       SRCS = linux_only.c other.c gcc_only.c gcc_4.9_only.c linux_x64.s always.c
+#
+# mabu -t debug_clang_linux_x64:
+#       SRCS = linux_only.c other.c linux_x64.s always.c
+#
+# mabu -t debug_msvc_win_x64:
+#       SRCS = debug_msvc.c debug_asserts.c msvc_only.c msvc2.cpp always.c
+#
+# mabu -t release_msvc_win_x64:
+#       SRCS = msvc_only.c msvc2.cpp always.c
+#
+# mabu -t debug_clang_lumin_aarch64:
+#       SRCS = target-like-only.c device-comms.c always.c
+#
+
+#
+###############################################
+#
+
+# Note that the content of a plain setting is always included, no matter
+# how many specialized versions match.  If you want to define a setting that
+# is used only if *no* specializations match,  use "default".
+#
+
+SHLIBS = common
+SHLIBS.gcc_x64,clang_x64 = mylib_x64
+SHLIBS.debug_aarch64 = mylib_aarch64
+SHLIBS.default = mylib
+
+# For this, "common" is always included.
+# "mylib" is used for things that aren't gcc + x64, clang + x64, debug for aarch64,
+# e.g. "-t win_msvc" or "-t release_clang_aarch64" or "-t release_gcc_aarch64".

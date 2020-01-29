@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.mixed"
+    typeId="Mixed">
+  <children
+      xsi:type="viewmodel:Group"
+      viewId="left"
+      label="Left">
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.left_hand_follow"
+        id="LeftHandGestureHeadposeFollow"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.left_hand"
+        id="left_hand#position"
+        labelAlignment="Inline"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.left_hand"
+        id="left_hand#transform#position"
+        labelAlignment="Inline"/>
+  </children>
+  <children
+      xsi:type="viewmodel:Group"
+      viewId="right"
+      label="Right">
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.right_hand_follow"
+        id="RightHandGestureHeadposeFollow"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.right_hand"
+        id="right_hand#position"
+        labelAlignment="Inline"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.right_hand"
+        id="right_hand#transform#position"
+        labelAlignment="Inline"/>
+  </children>
+</viewmodel:View>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.minimap"
+    typeId="Minimap"
+    inherit="false">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.minimap.group">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.minimap.camera_transform.group"
+        label="Transform">
+      <style>ml-group</style>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.selection.camera_transform"
+          id="camera_transform"
+          labelAlignment="None">
+        <style>ml-group</style>
+      </children>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.minimap.align_camera"
+        id="align_camera"
+        labelAlignment="None">
+      <style>ml-properties-align-right</style>
+    </children>
+  </children>
+</viewmodel:View>

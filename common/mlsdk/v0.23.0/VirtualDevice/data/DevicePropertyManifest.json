@@ -1,0 +1,14 @@
+{
+  "ManifestType":"VDSDeviceProperties",
+
+  "Includes": [
+    "include/Common.json",
+    "include/HeadTracking.json",
+    "include/HandTracking.json",
+    "include/EyeTracking.json",
+    // Disable this and use old ImageTracking code for now due to REM-3266...05/08/19
+    // "include/ImageTracking.json",
+    "include/InputController.json"
+  ]
+
+}

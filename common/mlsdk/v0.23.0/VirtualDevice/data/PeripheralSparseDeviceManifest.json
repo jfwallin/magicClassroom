@@ -1,0 +1,307 @@
+{
+  "ApplicationLabel": "Peripheral",
+  "Manifests": [
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Headpose",
+      "DeviceName": "PeripheralHeadposeSparseDevice",
+      "DeviceLabel": "Peripheral - Headpose",
+      "ConfigurationSettings": {
+        "HeadTransformChannel": "Head Transform",
+        "HeadTrackingStateChannel": "Head Tracking State"
+      },
+      "UpdateHertz": 240.0,
+      "ProducerChannels": [
+        "Head Transform",
+        "Head Tracking State"
+      ],
+      "ObserverChannels": [
+        "Head Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Input",
+      "DeviceName": "PeripheralInputSparseDevice",
+      "DeviceLabel": "Peripheral - Input",
+      "ConfigurationSettings": {
+        "InputController1StateChannel": "Input Controller 1",
+        "InputController1TransformChannel": "Input Controller 1 Transform",
+        "InputController2StateChannel": "Input Controller 2",
+        "InputController2TransformChannel": "Input Controller 2 Transform",
+        "InputControllerSystemStateChannel": "Input Controller System State",
+        "InputKeyboardDataChannel": "Input Keyboard Data"
+      },
+      "ProducerChannels": [
+        "Input Controller 1",
+        "Input Controller 1 Transform",
+        "Input Controller 2",
+        "Input Controller 2 Transform",
+        "Input Controller System State",
+        "Input Keyboard Data"
+      ],
+      "ObserverChannels": [
+        "Input Controller 1 Transform",
+        "Input Controller 2 Transform",
+        "Input Controller 1",
+        "Input Controller 2"
+      ]
+    },
+    {
+      "ManifestType":"SparseDevice",
+      "DeviceType":"HandTracking",
+      "DeviceName":"PeripheralHandTrackingSparseDevice",
+      "DeviceLabel":"Peripheral - Hand Tracking",
+      "ConfigurationSettings": {
+        "HandTrackingDataChannel": "Hand Tracking Data",
+        "LeftHandKeypointsChannel":"Left Hand Keypoints",
+        "RightHandKeypointsChannel":"Right Hand Keypoints",
+        "LeftHandCenterTransformChannel":"Left Hand Center Transform",
+        "RightHandCenterTransformChannel":"Right Hand Center Transform",
+        "EmitMockKeypoints": true,
+        "KeypointsFile": "HandTrackingKeypoints.json"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Hand Tracking Data",
+        "Left Hand Keypoints",
+        "Right Hand Keypoints",
+        "Left Hand Center Transform",
+        "Right Hand Center Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "EyeTracking",
+      "DeviceName": "PeripheralEyeTrackingSparseDevice",
+      "DeviceLabel": "Peripheral - Eye Tracking",
+      "ConfigurationSettings": {
+        "EyeFixationTransformChannel": "Eye Fixation Transform",
+        "EyeLeftCenterTransformChannel": "Eye Left Center Transform",
+        "EyeRightCenterTransformChannel": "Eye Right Center Transform",
+        "EyeTrackingStateChannel": "Eye Tracking State",
+        "HeadTransformChannel": "Head Transform"
+      },
+      "UpdateHertz": 120.0,
+      "ProducerChannels": [
+        "Eye Fixation Transform",
+        "Eye Left Center Transform",
+        "Eye Right Center Transform",
+        "Eye Tracking State"
+      ],
+      "ObserverChannels": [
+        "Eye Fixation Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Peripheral",
+      "DeviceName": "PeripheralKeyMouseSparseDevice",
+      "DeviceLabel": "Peripheral - Key/Mouse",
+
+      "EnumerationTypes": {
+        "PeripheralDeviceType": {
+          "Values": [
+            "keyboardMouse",
+            "keyboard",
+            "mouse",
+            "controller"
+          ]
+        },
+        "PeripheralOS": {
+          "Values": [
+            "Any",
+            "Windows",
+            "Mac",
+            "Linux"
+          ]
+        }
+      },
+      "PropertyCategories" : [
+        {"Path":"KeyMouse", "Label":"Keyboard/Mouse" },
+        {"Path":"Controller", "Label":"Controller" }
+      ],
+      "ConfigurationProperties": {
+        //
+        // Shared properties
+        //
+        "ControllerConfigurations": {
+          "Label":"Controller Configurations",
+          "Description": "Mapping of controller types by their manufacturer name to their default configuration manifests",
+          "Type": "stringList",
+          "UserVisible": false,
+          "Default": [
+            "Peripheral - Key/Mouse:DefaultKeyMouseMappings.json",
+            "Xbox 360 Controller:DefaultXbox360Mappings.json",
+            "Xbox 360 Wired Controller:DefaultXbox360Mappings.json",
+            "Wireless Xbox 360 Controller:DefaultXbox360Mappings.json",
+            "Microsoft X-Box 360 pad:DefaultXbox360Mappings.json"
+          ]
+        },
+
+        "DeviceType": {
+          "Label": "Device Type",
+          "Description": "Used to distinguish devices for the Action Bindings Editor",
+          "Type": "PeripheralDeviceType",
+          "UserVisible": false,
+          "Default": "keyboard"    // NOTE: this current impl covers the mouse too, but need to wait for DTOOLS-6374 (splitting this into two) to use "mouse"
+        },
+        "OS": {
+          "Label": "OS",
+          "Description": "Used to distinguish predefined or user-defined schemes by which OS produced them",
+          "Type": "PeripheralOS",
+          "UserVisible": false,
+          "Default": "Any"      // keyboard/mouse is universal
+        },
+
+        "HeadposeAbsoluteMovement": {
+          "Label": "Headpose Absolute Movement",
+          "Description": "Toggles the behavior of headpose movement actions to either move using the current rotation (false) or in world space (true)",
+          "Priority":1,
+          "Type": "boolean",
+          "Default": false
+        },
+        "HeadposeAcceleration": {
+          "Label": "Headpose Acceleration Rate",
+          "Description": "Percentage rate of acceleration of maximum configured speed (via combined Max Translation and binding sensitivity) for key/button headpose movement",
+          "Priority": 2,
+          "Type": "float",
+          "LowerLimit": 0.01,
+          "UpperLimit": 1.0,
+          "Default": 0.15
+        },
+        "InputControllerAbsoluteMovement": {
+          "Label": "Input Controller Absolute Movement",
+          "Description": "Toggles the behavior of input controller movement actions to either move using the current control rotation (false) or in world space (true)",
+          "Priority":3,
+          "Type": "boolean",
+          "Default": false
+        },
+        "SceneViewCameraAbsoluteMovement": {
+          "Label": "Scene View Camera Absolute Movement",
+          "Description": "Toggles the behavior of scene view camera movement actions to either move using the current rotation (false) or in world space (true)",
+          "Priority":4,
+          "Type": "boolean",
+          "Default": false
+        },
+
+        "Global-Axis-Sensitivity": {
+          "Label": "Global Axis Sensitivity",
+          "Description": "Multiplier for actions triggered by axes - negative values invert direction",
+          "Priority":10,
+          "Type": "float",
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": 1.0
+        },
+        "MaxTranslation": {
+          "Label": "Max Translation",
+          "Description": "Maximum translation value of a button press mapped to an axis",
+          "Priority":11,
+          "Type": "float",
+          "LowerLimit" : 0.01,
+          "UpperLimit" : 5.0,
+          "Default": 0.5
+        },
+        "MaxRotation": {
+          "Label": "Max Rotation",
+          "Description": "Maximum rotation value of a button press mapped to an axis",
+          "Priority":12,
+          "Type": "float",
+          "LowerLimit" : 0.01,
+          "UpperLimit" : 5.0,
+          "Default": 5.0
+        },
+        "TouchPressure0": {
+          "Label": "Touchpad Pressure 1",
+          "Description": "Default touch pressure applied for first touch when touchpad X/Y axes are modified",
+          "Priority": 15,
+          "Type": "float",
+          "LowerLimit": 0.0,
+          "UpperLimit": 1.0,
+          "Default": 1
+        },
+        "TouchPressure1": {
+          "Label": "Touchpad Pressure 2",
+          "Description": "Default touch pressure applied for second touch when touchpad X/Y axes are modified",
+          "Priority": 16,
+          "Type": "float",
+          "LowerLimit": 0.0,
+          "UpperLimit": 1.0,
+          "Default": 1
+        },
+
+        //
+        // Keyboard/mouse properties
+        //
+        "KeySensitivity": {
+          "Description": "Multiplier for actions triggered by keyboard buttons - negative values invert direction",
+          "Label": "Key Multiplier",
+          "Category":"KeyMouse",
+          "Type": "float",
+          "Priority":20,
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": 0.2
+        },
+        "MouseSensitivity-DeltaX": {
+          "Description": "Multiplier for actions triggered by mouse horizontal movement - negative values invert direction",
+          "Label": "Mouse X-Axis Multiplier",
+          "Category":"KeyMouse",
+          "Priority":21,
+          "Type": "float",
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": 0.1
+        },
+        "MouseSensitivity-DeltaY": {
+          "Description": "Multiplier for actions triggered by mouse vertical movement - negative values invert direction",
+          "Label": "Mouse Y-Axis Multiplier",
+          "Category":"KeyMouse",
+          "Priority":22,
+          "Type": "float",
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": 0.1
+        },
+        "MouseSensitivity-ScrollWheelX": {
+          "Description": "Multiplier for actions triggered by mouse wheel horizontal movement - negative values invert direction",
+          "Label": "Mouse Scroll X-Axis Multiplier",
+          "Category":"KeyMouse",
+          "Priority":23,
+          "Type": "float",
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": 0.1
+        },
+        "MouseSensitivity-ScrollWheelY": {
+          "Description": "Multiplier for actions triggered by mouse wheel vertical movement - negative values invert direction",
+          "Label": "Mouse Scroll Y-Axis Multiplier",
+          "Category":"KeyMouse",
+          "Priority":24,
+          "Type": "float",
+          "LowerLimit" : -5.0,
+          "UpperLimit" : 5.0,
+          "Default": -0.25 // match ScrollWheelY with RUB notion of zooming "in" moving in negative Z
+        },
+        "ActionInputLabels": {
+          "Type": "namedMap",
+          "Default": {
+            "MouseMove-ScrollWheelX": "Mouse Scroll X",
+            "MouseMove-ScrollWheelY": "Mouse Scroll Y",
+            "MouseMove-DeltaX": "Drag + Mouse Move X",
+            "MouseMove-DeltaY": "Drag + Mouse Move Y",
+            "MouseButton-1": "Mouse Button 1",
+            "MouseButton-2": "Mouse Button 2",
+            "MouseButton-3": "Mouse Button 3"
+          },
+          "UserVisible": false
+        }
+      },
+      "ConfigurationSettings": {
+      },
+      "UpdateHertz": 120.0,
+      "ProducerChannels": []
+    }
+  ]
+}

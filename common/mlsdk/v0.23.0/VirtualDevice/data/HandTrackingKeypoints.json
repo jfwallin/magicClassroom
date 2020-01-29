@@ -1,0 +1,88 @@
+{
+  "ManifestType":"HandTrackingKeypoints",
+  "HandTracking": [
+    {
+      "KeyPose": "Finger",
+      "Keypoints": [
+          { "Index": 4, "Position": [ 0, 1, 0 ] },
+          { "Index": 6, "Position": [ 0, 1.5, 0 ] },
+          { "Index": 7, "Position": [ 0, 2, 0 ] },
+          { "Index": 20, "Position": [ 0, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "Fist",
+      "Keypoints": [
+        { "Index": 0, "Position": [ -1, 0.5, 0 ] },
+        { "Index": 2, "Position": [ -0.5, 0.5, 0 ] },
+        { "Index": 4, "Position": [ 1, 0.5, 0 ] },
+        { "Index": 6, "Position": [ 1, 1, 0 ] },
+        { "Index": 11, "Position": [ 0, 1, 0 ] },
+        { "Index": 20, "Position": [ 0, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "Pinch",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 1, 0.5, 0 ] },
+        { "Index": 4, "Position": [ 1, 0.75, 0 ] },
+        { "Index": 7, "Position": [ 0.5, 1, 0 ] },
+        { "Index": 20, "Position": [ -0.5, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "Thumb",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 0, 2, 0 ] },
+        { "Index": 2, "Position": [ 0, 1, 0 ] },
+        { "Index": 7, "Position": [ 0, 0.5, 0 ] },
+        { "Index": 11, "Position": [ 0.25, 0, 0 ] },
+        { "Index": 20, "Position": [ 0, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "L",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 2, 0, 0 ] },
+        { "Index": 4, "Position": [ 0.5, 2, 0 ] },
+        { "Index": 8, "Position": [ 0.5, 0.25, 0 ] },
+        { "Index": 20, "Position": [ 0, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "OpenHand",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 2, 0, 0 ] },
+        { "Index": 4, "Position": [ 1, 1, 0 ] },
+        { "Index": 8, "Position": [ 0, 1.5, 0 ] },
+        { "Index": 12, "Position": [ -1, 1, 0 ] },
+        { "Index": 16, "Position": [ -2, 0.5, 0 ] },
+        { "Index": 20, "Position": [ 0.0, 0.0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "Ok",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 2, 1, 0 ] },
+        { "Index": 4, "Position": [ 2, 1.5, 0 ] },
+        { "Index": 8, "Position": [ 1, 1.5, 0 ] },
+        { "Index": 12, "Position": [ 0, 2, 0 ] },
+        { "Index": 16, "Position": [ -1, 1, 0 ] },
+        { "Index": 7, "Position": [ 1, 1, 0 ] },
+        { "Index": 20, "Position": [ -1, 0, 0 ] }
+      ]
+    },
+    {
+      "KeyPose": "C",
+      "Keypoints": [
+        { "Index": 0, "Position": [ 2, 0, 0 ] },
+        { "Index": 4, "Position": [ 2, 2, 0 ] },
+        { "Index": 8, "Position": [ 1.75, 2, -0.25 ] },
+        { "Index": 12, "Position": [ 1.5, 1.75, -0.5 ] },
+        { "Index": 16, "Position": [ 1.25, 1.5, -0.75 ] },
+        { "Index": 7, "Position": [ 1, 2, 0 ] },
+        { "Index": 20, "Position": [ -1, 0, 0 ] }
+      ]
+    }
+  ]
+}

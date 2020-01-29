@@ -1,0 +1,45 @@
+{
+  "ManifestType": "Configuration",
+  "DeviceName": "Xbox360Controller",
+  "DeviceLabel": "Xbox 360 Controller",
+  "ConfigurationSettings": {
+    "BindingsVersion": 3,
+    "DeviceType": "controller",
+    "OS": "Linux",
+    "ActionInputLabels" : {
+      "Axis-0": "Left thumbstick X-Axis",
+      "Axis-1": "Left thumbstick Y-Axis",
+      "Axis-2": "Left trigger",
+      "Axis-3": "Right thumbstick Y-Axis",
+      "Axis-4": "Right thumbstick X-Axis",
+      "Axis-5": "Right trigger",
+      "Axis-6": "D-pad X-Axis",
+      "Axis-7": "D-pad Y-Axis",
+      "Button-0": "'A' button",
+      "Button-1": "'B' button",
+      "Button-2": "'X' button",
+      "Button-3": "'Y' button",
+      "Button-4": "Left bumper",
+      "Button-5": "Right bumper",
+      "Button-6": "Back button",
+      "Button-7": "Start button",
+      "Button-8": "Xbox button",
+      "Button-9": "Left thumbstick click",
+      "Button-10": "Right thumbstick click",
+      "Button-13": "D-pad left",
+      "Button-11": "D-pad right"
+    },
+    "Action-MoveHeadposeX": [{"Input":"Axis-0", "Deadzone": 0.2}],
+    "Action-MoveHeadposeZ": [{"Input":"Axis-1", "Sensitivity": -1, "Deadzone": 0.2}],
+    "Action-RotateHeadposeX": [{"Input":"Axis-3", "Deadzone": 0.2}],
+    "Action-RotateHeadposeY": [{"Input":"Axis-2", "Deadzone": 0.2}],
+    "Action-ToggleAbsoluteHeadposeMovement": [{"Input":"Button-3"}], // Y-button on Xbox controller.
+    "Action-HandGestureThumbLeft": [{"Input":"Button-4"}], // Left bumper.
+    "Action-HandGestureThumbRight": [{"Input":"Button-5"}], // Right bumper.
+    "Action-ResetInputControllerTransform-0": [{"Input":"Button-1"}], // B-button.
+    "Action-RotateInputControllerX-0": [{"Input":"Axis-4", "Deadzone": 0.2}], // Left trigger.
+    "Action-InputControllerTrigger-0": [{"Input":"Axis-5", "Deadzone": 0.2}], // Right trigger.
+    "Action-InputControllerGestureTap-0": [{"Input":"Button-0"}], // A-button.
+    "Global-Axis-Sensitivity":0.25
+  }
+}

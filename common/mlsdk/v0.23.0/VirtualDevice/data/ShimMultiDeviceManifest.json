@@ -1,0 +1,148 @@
+{
+  "ApplicationLabel": "MLSDK Shim",
+  "ApplicationName": "MLSDK",
+  "Manifests": [
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Shim",
+      "DeviceName": "PerceptionShimSparseDevice",
+      "DeviceLabel": "Shim - Perception",
+      "UpdateHertz": 1001.0,
+      "ConfigurationSettings": {
+        "HeadTrackingStateChannel": "Head Tracking State",
+        "HeadTransformChannel":"Head Transform",
+
+        "EyeTrackingStateChannel": "Eye Tracking State",
+        "EyeFixationTransformChannel": "Eye Fixation Transform",
+        "EyeLeftCenterTransformChannel": "Eye Left Center Transform",
+        "EyeRightCenterTransformChannel": "Eye Right Center Transform",
+
+        "HandTrackingDataChannel": "Hand Tracking Data",
+        "LeftHandKeypointsChannel":"Left Hand Keypoints",
+        "RightHandKeypointsChannel":"Right Hand Keypoints",
+        "LeftHandCenterTransformChannel":"Left Hand Center Transform",
+        "RightHandCenterTransformChannel":"Right Hand Center Transform",
+
+        "MeshDataChannel" : "Mesh Data",
+        "MeshInfoDataChannel" : "Mesh Info Data",
+
+        "RaycastResultsChannel": "Raycast Results",
+
+        "PlanesDataChannel": "Planes Data",
+
+        "ImageTrackingFeatureChannel": "Image Tracking",
+        "ImageTargetTransformChannel": "Image Target Transform",
+        "ImageTargetResultChannel": "Image Target Result",
+
+        "PcfDataChannel": "Pcf Data",
+
+        "InputControllerSystemStateChannel": "Input Controller System State",
+        "InputController1StateChannel": "Input Controller 1",
+        "InputController1TransformChannel": "Input Controller 1 Transform",
+        "InputController2StateChannel": "Input Controller 2",
+        "InputController2TransformChannel": "Input Controller 2 Transform"
+      },
+      "ObserverChannels": [
+        "Head Tracking State",
+        "Head Transform",
+
+        "Eye Tracking State",
+        "Eye Fixation Transform",
+        "Eye Left Center Transform",
+        "Eye Right Center Transform",
+
+        "Hand Tracking Data",
+        "Left Hand Keypoints",
+        "Right Hand Keypoints",
+        "Left Hand Center Transform",
+        "Right Hand Center Transform",
+
+        "Mesh Data",
+        "Mesh Info Data",
+
+        "Raycast Results",
+
+        "Planes Data",
+
+        "Image Tracking",
+        "Image Target Transform",
+        "Image Target Result",
+
+        "Pcf Data",
+
+        "Input Controller System State",
+        "Input Controller 1 Transform",
+        "Input Controller 2 Transform"
+
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Shim",
+      "DeviceName": "AudioShimSparseDevice",
+      "DeviceLabel": "Shim - Audio",
+      "UpdateHertz": 120.0,
+      "ConfigurationSettings": {
+        "AudioDataChannel": "Audio Data",
+        "AudioOutputStatusChannel": "Audio Output Status",
+        "HeadTransformChannel":"Head Transform"
+      },
+      "ProducerChannels":[
+        "Audio Data"
+      ],
+      "ObserverChannels": [
+        "Audio Output Status",
+        "Head Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Shim",
+      "DeviceName": "IdentityShimSparseDevice",
+      "DeviceLabel": "Shim - Identity",
+      "UpdateHertz": 120.0,
+      "ConfigurationSettings": {
+        "IdentityFeatureChannel": "Identity"
+      },
+      "ObserverChannels": [
+        "Identity"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Shim",
+      "DeviceName": "LifecycleShimSparseDevice",
+      "DeviceLabel": "Shim - Lifecycle",
+      "UpdateHertz": 120.0,
+      "ConfigurationSettings": {
+        "LifecycleEventChannel": "Lifecycle Event"
+      },
+      "ProducerChannels": [
+        "Lifecycle Event"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Shim",
+      "DeviceName": "InputShimSparseDevice",
+      "DeviceLabel": "Shim - Input",
+      "UpdateHertz": 120.0,
+      "ConfigurationSettings": {
+        "InputController1StateChannel": "Input Controller 1",
+        "InputController1TransformChannel": "Input Controller 1 Transform",
+        "InputController2StateChannel": "Input Controller 2",
+        "InputController2TransformChannel": "Input Controller 2 Transform",
+        "InputControllerSystemStateChannel": "Input Controller System State",
+        "InputKeyboardDataChannel": "Input Keyboard Data"
+      },
+      "ObserverChannels": [
+        "Input Controller 1",
+        "Input Controller 1 Transform",
+        "Input Controller 2",
+        "Input Controller 2 Transform",
+        "Input Controller System State",
+        "Input Keyboard Data"
+      ]
+    }
+  ]
+}

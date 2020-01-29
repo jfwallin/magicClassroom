@@ -1,0 +1,217 @@
+{
+  "ApplicationLabel": "Virtual Room",
+  "Manifests": [
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "VirtualRoomServer",
+      "DeviceName": "VirtualRoomServerSparseDevice",
+      "DeviceLabel": "Virtual Room",
+      "Includes": [
+        "include/Common.json",
+        "include/VirtualRoom/ConfigProperties.json",
+        "include/VirtualRoom/GizmoModels.json"
+      ],
+      "ConfigurationSettings": {
+        "SplashModel": "splashModels/Leaper.fbx",
+        "PCFUpdateRateMs": 64,
+        "ImageTargetFrustumTestRateMs": 64,
+        "GeometryCacheBlockWorkerThreads": 0,
+        "GraphicsContractChannel": "Graphics Contract",
+        "SceneViewChannel": "Scene View",
+        "DeviceViewChannel": "Device View Room",
+        "FrameBufferChannel": "Frame Buffer",
+        "HandTrackingDataChannel": "Hand Tracking Data",
+        "EyeTrackingStateChannel": "Eye Tracking State",
+        "InputController1StateChannel": "Input Controller 1",
+        "InputController2StateChannel": "Input Controller 2"
+      },
+      "UpdateHertz": 120.0,
+      "ObserverChannels": [
+        "Graphics Contract",
+        "Hand Tracking Data",
+        "Eye Tracking State",
+        "Input Controller 1",
+        "Input Controller 2"
+      ],
+      "ProducerChannels": [
+        "Scene View",
+        "Device View Room"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Headpose",
+      "DeviceName": "VirtualRoomHeadposeSparseDevice",
+      "DeviceLabel": "Virtual Room - Headpose",
+      "ConfigurationSettings": {
+        "HeadTransformChannel": "Head Transform",
+        "HeadTrackingStateChannel": "Head Tracking State"
+      },
+      "UpdateHertz": 60.0,
+      "ProducerChannels": [
+        "Head Transform",
+        "Head Tracking State"
+      ],
+      "ObserverChannels": [
+        "Head Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Input",
+      "DeviceName": "VirtualRoomInputSparseDevice",
+      "DeviceLabel": "Virtual Room - Input",
+      "ConfigurationSettings": {
+        "InputController1StateChannel": "Input Controller 1",
+        "InputController1TransformChannel": "Input Controller 1 Transform",
+        "InputController2StateChannel": "Input Controller 2",
+        "InputController2TransformChannel": "Input Controller 2 Transform",
+        "InputControllerSystemStateChannel": "Input Controller System State",
+        "InputKeyboardDataChannel": "Input Keyboard Data"
+      },
+      "ProducerChannels": [
+        "Input Controller 1",
+        "Input Controller 1 Transform",
+        "Input Controller 2",
+        "Input Controller 2 Transform",
+        "Input Controller System State",
+        "Input Keyboard Data"
+      ],
+      "ObserverChannels": [
+        "Input Controller 1 Transform",
+        "Input Controller 2 Transform",
+        "Input Controller 1",
+        "Input Controller 2"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Meshing",
+      "DeviceName": "VirtualRoomMeshingSparseDevice",
+      "DeviceLabel": "Virtual Room - Meshing",
+      "ConfigurationSettings": {
+        "MeshDataChannel": "Mesh Data",
+        "MeshInfoDataChannel": "Mesh Info Data",
+        "MeshBufferCapacity": 100000000
+      },
+      "UpdateHertz": 10.0,
+      "ProducerChannels": [
+        "Mesh Data",
+        "Mesh Info Data"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Raycast",
+      "DeviceName": "VirtualRoomRaycastSparseDevice",
+      "DeviceLabel": "Virtual Room - Raycast",
+      "ConfigurationSettings": {
+        "RaycastResultsChannel": "Raycast Results"
+      },
+      "UpdateHertz": 10.0,
+      "ProducerChannels": [
+        "Raycast Results"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Planes",
+      "DeviceName": "VirtualRoomPlanesSparseDevice",
+      "DeviceLabel": "Virtual Room - Planes",
+      "ConfigurationSettings": {
+        "PlanesDataChannel": "Planes Data"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Planes Data"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "HandTracking",
+      "DeviceName": "VirtualRoomHandTrackingSparseDevice",
+      "DeviceLabel": "Virtual Room - Hand Tracking",
+      "ConfigurationSettings": {
+        "HandTrackingDataChannel": "Hand Tracking Data",
+        "LeftHandKeypointsChannel": "Left Hand Keypoints",
+        "RightHandKeypointsChannel": "Right Hand Keypoints",
+        "LeftHandCenterTransformChannel": "Left Hand Center Transform",
+        "RightHandCenterTransformChannel": "Right Hand Center Transform",
+        "EmitMockKeypoints": true,
+        "KeypointsFile": "HandTrackingKeypoints.json"
+      },
+      "ConfigurationProperties": {},
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Hand Tracking Data",
+        "Left Hand Keypoints",
+        "Right Hand Keypoints",
+        "Left Hand Center Transform",
+        "Right Hand Center Transform"
+      ],
+      "ObserverChannels": [
+        "Left Hand Center Transform",
+        "Right Hand Center Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "ImageTracking",
+      "DeviceName": "VirtualRoomImageTrackingSparseDevice",
+      "DeviceLabel": "Virtual Room - ImageTracking",
+      "ConfigurationSettings": {
+        "ImageTrackingFeatureChannel": "Image Tracking",
+        "ImageTargetTransformChannel": "Image Target Transform",
+        "ImageTargetResultChannel": "Image Target Result"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Image Tracking",
+        "Image Target Transform",
+        "Image Target Result"
+      ],
+      "ObserverChannels": [
+        "Image Tracking",
+        "Image Target Transform",
+        "Image Target Result"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "PersistentCoordFrame",
+      "DeviceName": "VirtualRoomPersistentCoordFrameSparseDevice",
+      "DeviceLabel": "Virtual Room - Persistent Coordinate Frames",
+      "ConfigurationSettings": {
+        "PcfDataChannel": "Pcf Data"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Pcf Data"
+      ],
+      "ObserverChannels": []
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "EyeTracking",
+      "DeviceName": "VirtualRoomEyeTrackingSparseDevice",
+      "DeviceLabel": "Virtual Room - Eye Tracking",
+      "ConfigurationSettings": {
+        "EyeFixationTransformChannel": "Eye Fixation Transform",
+        "EyeLeftCenterTransformChannel": "Eye Left Center Transform",
+        "EyeRightCenterTransformChannel": "Eye Right Center Transform",
+        "EyeTrackingStateChannel": "Eye Tracking State",
+        "HeadTransformChannel": "Head Transform"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Eye Fixation Transform",
+        "Eye Left Center Transform",
+        "Eye Right Center Transform",
+        "Eye Tracking State"
+      ],
+      "ObserverChannels": [
+        "Eye Fixation Transform"
+      ]
+    }
+  ]
+}

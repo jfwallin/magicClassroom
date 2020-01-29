@@ -1,0 +1,158 @@
+{
+  "ApplicationLabel": "Simulator",
+  "Manifests": [
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "EyeTracking",
+      "DeviceName": "MockML1EyeTrackingSparseDevice",
+      "DeviceLabel": "Simulator - Eye Tracking",
+      "ConfigurationSettings": {
+        "EyeFixationTransformChannel": "Eye Fixation Transform",
+        "EyeLeftCenterTransformChannel": "Eye Left Center Transform",
+        "EyeRightCenterTransformChannel": "Eye Right Center Transform",
+        "EyeTrackingStateChannel": "Eye Tracking State",
+        "HeadTransformChannel": "Head Transform"
+      },
+      "UpdateHertz": 30.0,
+      "ProducerChannels": [
+        "Eye Fixation Transform",
+        "Eye Left Center Transform",
+        "Eye Right Center Transform",
+        "Eye Tracking State"
+      ],
+      "ObserverChannels": [
+        "Eye Fixation Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "GraphicsView",
+      "DeviceName": "MockML1GraphicsViewSparseDevice",
+      "DeviceLabel": "Simulator - Graphics View",
+      "EnumerationTypes": {
+        "CodecType": {
+          "Values": [
+            "NONE",
+            "H264"
+          ]
+        }
+      },
+      "ConfigurationProperties": {
+        "GraphicsResolutionScale": {
+          "Description": "Allows downscaling the texture sent from the application to the ML1 in order to improve performance at the expense of lower quality.  NOTE: this only takes effect between app launches.",
+          "Type": "float",
+          "LowerLimit": 0.01,
+          "UpperLimit": 1.0,
+          "Default": 1.0
+        },
+        "GraphicsCodecType": {
+          "Description": "Selects the encoding of texture data sent between the app and the simulator.  NOTE: this only takes effect between app launches.",
+          "Type": "CodecType",
+          "Default": "NONE",
+          "UserVisible": false
+        },
+        "ContractFrameTimeoutMs": {
+          "Description": "Selects the maximum time allowed between MLGraphicsEndFrame calls before dropping frames",
+          "Label": "Contract frame timeout (ms)",
+          "Type": "integer",
+          "Default": 800
+        }
+      },
+      "ConfigurationSettings": {
+        "FrameBufferChannel": "Frame Buffer",
+        "GraphicsContractChannel": "Graphics Contract",
+        "HeadTransformChannel": "Head Transform"
+      },
+      "UpdateHertz": 240.0,
+      "ProducerChannels": [
+        "Graphics Contract"
+      ],
+      "ObserverChannels": [
+        "Frame Buffer",
+        "Head Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Headpose",
+      "DeviceName": "MockML1HeadposeSparseDevice",
+      "DeviceLabel": "Simulator - Headpose",
+      "ConfigurationSettings": {
+        "HeadTransformChannel": "Head Transform",
+        "HeadTrackingStateChannel": "Head Tracking State"
+      },
+      "UpdateHertz": 240.0,
+      "ProducerChannels": [
+        "Head Transform",
+        "Head Tracking State"
+      ],
+      "ObserverChannels": [
+        "Head Transform"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "LifecycleManager",
+      "DeviceName": "MockML1LifecycleManagerSparseDevice",
+      "DeviceLabel": "Simulator - Lifecycle Manager",
+      "ConfigurationProperties": {
+        "PackageName": {
+          "Label": "Package Name",
+          "Description": "The `ml:package` attribute from the package's manifest.xml",
+          "Default": ""
+        },
+        "VisibleName": {
+          "Label": "Visible Name",
+          "Description": "The `application>>ml:visible_name` attribute from the package's manifest.xml",
+          "Default": ""
+        },
+        "ComponentName": {
+          "Label": "Component Name",
+          "Description": "The `application>>component>>ml:name` attribute from the package's manifest.xml",
+          "Default": ""
+        }
+      },
+      "ConfigurationSettings": {
+        "LifecycleEventChannel": "Lifecycle Event"
+      },
+      "ObserverChannels": [
+        "Lifecycle Event"
+      ],
+      "ProducerChannels": [
+        "Lifecycle Event"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Identity",
+      "DeviceName": "MockML1IdentitySparseDevice",
+      "DeviceLabel": "Simulator - Identity",
+      "AutoLaunch": false,
+      "UpdateHertz": 10.0,
+      "ConfigurationSettings": {
+        "IdentityFeatureChannel": "Identity"
+      },
+      "ProducerChannels": [
+        "Identity"
+      ]
+    },
+    {
+      "ManifestType": "SparseDevice",
+      "DeviceType": "Audio",
+      "DeviceName": "MockML1AudioSparseDevice",
+      "DeviceLabel": "Simulator - Audio",
+      "AutoLaunch": false,
+      "UpdateHertz": 120.0,
+      "ConfigurationSettings": {
+        "AudioOutputStatusChannel": "Audio Output Status",
+        "AudioDataChannel": "Audio Data"
+      },
+      "ProducerChannels": [
+        "Audio Output Status"
+      ],
+      "ObserverChannels": [
+        "Audio Data"
+      ]
+    }
+  ]
+}

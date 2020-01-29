@@ -1,0 +1,53 @@
+{
+    "ManifestType":"VDSChannelMixer",
+    "Mixers":[
+        {"Name": "Passthrough", "SharedObject": "PassthroughMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "Position", "SharedObject": "PositionMixer",
+          "Settings": {
+            "Base": [0, 0, 0]
+          }
+        },
+        {"Name": "Orientation", "SharedObject": "OrientationMixer",
+          "Settings": {
+            "Base": [0, 0, 0, 1]
+          }
+        },
+        {"Name": "PositionDelta", "SharedObject": "PositionDeltaMixer",
+          "Settings": {
+            "Base": [0, 0, 0]
+          }
+        },
+        {"Name": "OrientationDelta", "SharedObject": "OrientationDeltaMixer",
+          "Settings": {
+            "Base": [0, 0, 0, 1]
+          }
+        },
+        {"Name": "TransformDelta", "SharedObject": "TransformDeltaMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "IndexedTransformDelta", "SharedObject": "IndexedTransformDeltaMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "InputController", "SharedObject": "InputControllerMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "HandTracking", "SharedObject": "HandTrackingMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "HeadState", "SharedObject": "HeadStateMixer",
+          "Settings": {
+          }
+        },
+        {"Name": "EyeTrackingState", "SharedObject": "EyeTrackingStateMixer",
+          "Settings": {
+          }
+        }
+    ]
+}

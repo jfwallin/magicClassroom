@@ -1,0 +1,69 @@
+{
+  "ManifestType":"VDSChannel",
+  "Channels":[
+      {"ChannelName":"Integer Channel 1", "ChannelType":"Integer", "DefaultProducer":"IntegerSparseDevice", "UserVisible":true},
+      {"ChannelName":"Integer Channel 2", "ChannelType":"Integer", "DefaultProducer":"IntegerSparseDevice", "UserVisible":true},
+      {"ChannelName":"Integer Stream", "ChannelType":"Integer", "DefaultProducer":"IntegerSparseDevice", "UserVisible":true,
+        "Mixer":"Passthrough"},
+
+      {"ChannelName":"Head Transform", "ChannelType":"Transform", "DefaultProducer":"ML1HeadposeSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Head Tracking State", "ChannelType":"Head Tracking State", "DefaultProducer":"ML1HeadposeSparseDevice","UserVisible":true,
+        "Mixer": "HeadState"},
+
+      {"ChannelName":"Eye Fixation Transform", "ChannelType":"Transform", "DefaultProducer":"ML1EyeTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Eye Left Center Transform", "ChannelType":"Transform", "DefaultProducer":"ML1EyeTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Eye Right Center Transform", "ChannelType":"Transform", "DefaultProducer":"ML1EyeTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+
+      {"ChannelName":"Eye Tracking State", "ChannelType":"Eye Tracking State", "DefaultProducer":"ML1EyeTrackingSparseDevice","UserVisible":true,
+        "Mixer": "EyeTrackingState"},
+
+      {"ChannelName":"Graphics Contract", "ChannelType":"Graphics Contract", "DefaultProducer":"MockML1GraphicsViewSparseDevice","UserVisible":true},
+
+
+      {"ChannelName":"Left Hand Center Transform", "ChannelType":"Transform", "DefaultProducer":"ML1HandTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Right Hand Center Transform", "ChannelType":"Transform", "DefaultProducer":"ML1HandTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+
+      {"ChannelName":"Hand Tracking Data", "ChannelType":"Hand Tracking Data", "DefaultProducer":"ML1HandTrackingSparseDevice","UserVisible":true,
+        "Mixer":"HandTracking"},
+
+      {"ChannelName":"Left Hand Keypoints", "ChannelType":"Hand Tracking Keypoint Data", "DefaultProducer":"ML1HandTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "Passthrough"},
+      {"ChannelName":"Right Hand Keypoints", "ChannelType":"Hand Tracking Keypoint Data", "DefaultProducer":"ML1HandTrackingSparseDevice", "UserVisible":true,
+        "Mixer": "Passthrough"},
+      {"ChannelName":"Mesh Data", "ChannelType":"Mesh", "DefaultProducer":"VirtualRoomMeshingSparseDevice", "UserVisible":true},
+      {"ChannelName":"Mesh Info Data", "ChannelType":"Mesh Info", "DefaultProducer":"VirtualRoomMeshingSparseDevice", "UserVisible":true},
+      {"ChannelName":"Raycast Results", "ChannelType":"Raycast Results", "DefaultProducer":"VirtualRoomRaycastSparseDevice", "UserVisible":true},
+
+      {"ChannelName":"Planes Data", "ChannelType":"Planes", "DefaultProducer":"MockML1PlanesSparseDevice", "UserVisible":true},
+      {"ChannelName":"Scene View", "ChannelType":"Shared Buffer Data", "DefaultProducer":"VirtualRoomServerSparseDevice","Resizable":true,"UserVisible":true },
+      {"ChannelName":"Device View Room", "ChannelType":"Shared Buffer Data", "DefaultProducer":"VirtualRoomServerSparseDevice","Resizable":true,"UserVisible":true },
+
+      {"ChannelName":"Input Controller 1", "ChannelType":"Input Controller", "DefaultProducer":"InputSparseDevice", "UserVisible":true,
+        "Mixer":"InputController"},
+      {"ChannelName":"Input Controller 1 Transform", "ChannelType":"Transform", "DefaultProducer":"ML1HeadposeSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Input Controller 2", "ChannelType":"Input Controller", "DefaultProducer":"InputSparseDevice", "UserVisible":true,
+        "Mixer":"InputController"},
+      {"ChannelName":"Input Controller 2 Transform", "ChannelType":"Transform", "DefaultProducer":"ML1HeadposeSparseDevice", "UserVisible":true,
+        "Mixer": "TransformDelta"},
+      {"ChannelName":"Input Keyboard Data", "ChannelType":"Keyboard Data", "DefaultProducer":"InputSparseDevice", "UserVisible":true},
+
+      {"ChannelName":"Lifecycle Event", "ChannelType":"Lifecycle Event", "DefaultProducer":"LifecycleSparseDevice", "UserVisible":true},
+      {"ChannelName":"Identity", "ChannelType":"Feature", "DefaultProducer":"MockML1IdentitySparseDevice", "UserVisible":true},
+      {"ChannelName":"Frame Buffer", "ChannelType":"Shared Buffer Data", "DefaultBufferSize":39321600, "DefaultProducer":"GraphicsSparseDevice", "UserVisible":true },
+      {"ChannelName":"Audio Data", "ChannelType":"Audio Buffer Data", "DefaultBufferSize":39321600, "DefaultProducer":"AudioSparseDevice","Resizable":true,"UserVisible":true},
+      {"ChannelName":"Audio Output Status", "ChannelType":"Audio Output Status", "DefaultProducer":"MockML1AudioSparseDevice","UserVisible":true, "Mixer": "Passthrough"},
+
+      {"ChannelName":"Image Tracking", "ChannelType":"Feature", "DefaultProducer":"VirtualRoomServerSparseDevice", "UserVisible":true},
+      {"ChannelName":"Image Target Transform", "ChannelType":"Indexed Transform", "DefaultProducer":"VirtualRoomImageTrackingSparseDevice", "UserVisible":true, "Mixer": "IndexedTransformDelta"},
+      {"ChannelName":"Image Target Result", "ChannelType":"Image Target Result", "DefaultProducer":"VirtualRoomImageTrackingSparseDevice", "UserVisible":true},
+      {"ChannelName":"Pcf Data", "ChannelType":"Pcf", "DefaultProducer":"VirtualRoomMeshingSparseDevice", "UserVisible":true},
+      {"ChannelName":"Input Controller System State", "ChannelType":"Controller System State", "DefaultProducer":"VirtualRoomInputSparseDevice", "UserVisible":true}
+  ]
+}

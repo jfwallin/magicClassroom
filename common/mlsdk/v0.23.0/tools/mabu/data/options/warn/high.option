@@ -1,0 +1,12 @@
+# "high" should include unused locals, unused expressions, unused arguments
+CFLAGS.gcc,clang=-Wall -Wunused-parameter
+CXXFLAGS.gcc,clang=-Wall -Wunused-parameter
+CFLAGS.msvc-2015=-W4
+CXXFLAGS.msvc-2015=-W4
+
+# disable warnings from standard C++ library
+CFLAGS.msvc-2017=-W4 -wd4820
+CXXFLAGS.msvc-2017=-W4 -wd4820
+
+CFLAGS.msvc-2019=-W4 -wd4820
+CXXFLAGS.msvc-2019=-W4 -wd4820

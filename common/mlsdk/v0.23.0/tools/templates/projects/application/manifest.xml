@@ -1,0 +1,17 @@
+<manifest
+	xmlns:ml="magicleap"
+	ml:package="com.company.${projectNameLower}"
+	ml:version_code="1"
+	ml:version_name="1.0">
+	<application
+		ml:visible_name="${projectName}"
+		ml:sdk_version="1.0"
+		ml:min_api_level="1">
+		<component
+			ml:name=".console"
+			ml:visible_name="${projectName}"
+			ml:binary_name="bin/${projectName}"
+			ml:type="Console">
+		</component>
+	</application>
+</manifest>

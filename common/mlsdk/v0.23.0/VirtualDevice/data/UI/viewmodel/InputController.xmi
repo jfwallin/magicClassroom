@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.inputcontroller"
+    typeId="InputController">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.inputcontroller.layout">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.inputcontroller.transform"
+        label="Transform">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.transform.headpose_follow.0"
+          id="VirtualRoomServerSparseDevice.InputController0HeadposeFollow"
+          labelAlignment="None">
+        <style>right-aligned</style>
+      </children>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.transform.headpose_follow.1"
+          id="VirtualRoomServerSparseDevice.InputController1HeadposeFollow"
+          labelAlignment="None">
+        <style>right-aligned</style>
+      </children>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.transform.position"
+          id="position"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.transform.orientation"
+          id="orientation"/>
+    </children>
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.inputcontroller.actions"
+        label="Actions">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.touch_pos_and_force"
+          id="touch_pos_and_force"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.trigger_normalized"
+          id="trigger_normalized"/>
+      <children
+          xsi:type="viewmodel:LinkedPropertyContainer"
+          viewId="vdf.inputcontroller.actions.buttons">
+        <linkedChildren
+            viewId="vdf.inputcontroller.states.button_state_bumper"
+            id="button_state_bumper"
+            linkedLabel="Bumper"
+            holdLabelUnlinked="Hold Bumper"
+            unlinkedLabel="Bumper"
+            holdLabelLinked="Hold Bumper"/>
+        <linkedChildren
+            viewId="vdf.inputcontroller.states.button_state_hometap"
+            id="button_state_hometap"
+            linkedLabel="Home"
+            holdLabelUnlinked="Hold Home"
+            unlinkedLabel="Home"
+            holdLabelLinked="Hold Home"/>
+        <linkedChildren
+            viewId="vdf.inputcontroller.trigger.button"
+            id="trigger_normalized"
+            linkedLabel="Trigger"
+            holdLabelUnlinked="Hold Trigger"
+            unlinkedLabel="Trigger"
+            holdLabelLinked="Hold Trigger"/>
+      </children>
+    </children>
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.inputcontroller.touchpad_gesture"
+        label="Touchpad Gesture"
+        collapsed="true">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.inputcontroller.touchpad_gesture.touchpad_gesture"
+          id="touchpad_gesture"
+          labelAlignment="None"/>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontroller.connected"
+        id="connected">
+      <style>right-aligned</style>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontroller.type"
+        id="type"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontroller.dof"
+        id="dof"/>
+  </children>
+</viewmodel:View>

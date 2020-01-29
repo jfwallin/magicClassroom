@@ -1,0 +1,3 @@
+# use the default for gcc and clang
+CFLAGS.msvc=-W2
+CXXFLAGS.msvc=-W2

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel platform:/resource/com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.inputcontrollertouchpadgesture"
+    typeId="MLInputControllerTouchpadGesture">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.inputcontrollertouchpadgesture.layout">
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.pos_and_force"
+        id="pos_and_force"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.type"
+        id="type"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.touchpad_gesture_state"
+        id="touchpad_gesture_state"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.direction"
+        id="direction"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.speed"
+        id="speed"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.distance"
+        id="distance"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.finger_gap"
+        id="finger_gap"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.radius"
+        id="radius"/>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.inputcontrollertouchpadgesture.angle"
+        id="angle"
+        labelAlignment="Inline"/>
+  </children>
+</viewmodel:View>

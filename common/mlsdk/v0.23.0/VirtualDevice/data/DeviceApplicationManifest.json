@@ -1,0 +1,13 @@
+{
+  "ManifestType":"VDSDeviceApplication",
+  "DeviceApplications":[
+    {"ApplicationName":"Simulator", "LaunchCommand":["MockML1SparseDevice"], "AutoLaunch":false, "SingleInstance":true},
+    {"ApplicationName":"Simulator GUI", "LaunchCommand":["MockML1SparseDevice", "-r"], "AutoLaunch":false, "UserVisible":false, "SingleInstance":true},
+    {"ApplicationName":"Simulator (Testing)", "LaunchCommand":["MockML1SparseDevice", "-x"], "AutoLaunch":false, "UserVisible":false, "SingleInstance":true},
+    {"ApplicationName":"Peripheral", "LaunchCommand":"PeripheralSparseDevice", "AutoLaunch":false, "SingleInstance":true},
+    {"ApplicationName":"Virtual Room", "LaunchCommand":["VirtualRoomServer"], "AutoLaunch":false, "SingleInstance":true},
+    {"ApplicationName":"Recorder", "LaunchCommand":"RecorderSparseDevice", "AutoLaunch":false, "UserVisible":false, "SingleInstance":true},
+    {"ApplicationName":"Playback", "LaunchCommand":"PlaybackSparseDevice", "AutoLaunch":false, "UserVisible":false, "SingleInstance":true},
+    {"ApplicationName":"Peripheral (Testing)", "LaunchCommand":["PeripheralSparseDevice", "--no-input"], "AutoLaunch":false, "UserVisible":false, "SingleInstance":true}
+  ]
+}

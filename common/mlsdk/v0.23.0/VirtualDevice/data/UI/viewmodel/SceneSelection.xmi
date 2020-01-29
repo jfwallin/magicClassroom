@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.selection"
+    typeId="SceneSelection"
+    inherit="false">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.selection.group">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.selection.group.transform"
+        label="Transform">
+      <style>ml-group</style>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.selection.transform_with_scale"
+          id="transform_with_scale"
+          labelAlignment="None"/>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.selection.list"
+        id="selection"
+        labelAlignment="None">
+      <style>ml-group</style>
+    </children>
+  </children>
+</viewmodel:View>

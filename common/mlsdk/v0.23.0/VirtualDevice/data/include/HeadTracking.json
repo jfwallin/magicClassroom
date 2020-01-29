@@ -1,0 +1,145 @@
+{
+  "EnumerationTypes": {
+    "HeadTrackingMode": {
+      "Enums": [
+        {
+          "Name": "MLHeadTrackingMode_Unavailable",
+          "Label": "Unavailable"
+        },
+        {
+          "Name": "MLHeadTrackingMode_SixDOF",
+          "Label": "Six DOF"
+        },
+        {
+          "Name": "MLHeadTrackingMode_ThreeDOF",
+          "Label": "Three DOF",
+          "UserVisible": false
+        }
+      ]
+    },
+    "HeadTrackingError": {
+      "Enums": [
+        {
+          "Name": "MLHeadTrackingError_None",
+          "Label": "None"
+        },
+        {
+          "Name": "MLHeadTrackingError_NotEnoughFeatures",
+          "Label": "Not Enough Features"
+        },
+        {
+          "Name": "MLHeadTrackingError_LowLight",
+          "Label": "Low Light"
+        },
+        {
+          "Name": "MLHeadTrackingError_Unknown",
+          "Label": "Unknown"
+        }
+      ]
+    }
+  },
+
+  "PropertyCategories": [
+    {
+      "Path": "transform",
+      "Label": "Transform"
+    },
+    {
+      "Path": "state",
+      "Label": "State"
+    }
+  ],
+
+  "StructTypes": [
+  ],
+
+  "PropertyGroups": [
+    {
+      "Name": "HeadTracking",
+      "Label": "Head Pose",
+      "Description": "These properties represent head tracking",
+      "PropertySheetName": "HeadTracking",
+
+      // NOTE: priority is not (yet) used in the frontend, since the view model
+      // has its own notion of grouping and ordering (see viewmodel/*.xmi);
+      // but we may use this ordering for scripting source/docs generation
+      "Properties": {
+        "position": {
+          "Label": "Position",
+          "Description": "Refers to the head position in world space (where 0, 0, 0 is device bootup position)",
+          "Category": "transform",
+          "Priority": 1,
+          "Type": "Position",
+          "ReadOnlyMethod": "deviceOnly",
+          "ResetMethod": "resetHeadpose"
+        },
+        "rotation": {
+          "Label": "Rotation",
+          "Description": "Refers to the head rotation in world space (where 0, 0, 0 is device bootup rotation)",
+          "Category": "transform",
+          "Priority": 2,
+          "Type": "Rotation",
+          "ReadOnlyMethod": "deviceOnly",
+          "ResetMethod": "resetHeadpose",
+          "PropertySheetName": "orientation"
+        },
+        "mode": {
+          "Label": "Mode",
+          "Description": "Current state of head tracking, based on detected features in the space",
+          "Category": "state",
+          "Priority": 3,
+          "Type": "HeadTrackingMode"
+        },
+        "error": {
+          "Label": "Error",
+          "Description": "Current detected head tracking error",
+          "Category": "state",
+          "Priority": 4,
+          "Type": "HeadTrackingError"
+        },
+        "confidence": {
+          "Label": "Confidence",
+          "Description": "Confidence in head tracking state",
+          "Category": "state",
+          "Priority": 5,
+          "Type": "NormalizedFloat",
+          "Default": 1.0
+        }
+      },
+
+      "ChannelMessageMappings": [
+        {
+          "ChannelName": "Head Transform",
+          "ProtobufMessageType": "ml.ch.TransformChannelDataEvent",
+          "MessagePropertyMapping": "transformMapping",
+          "PropertySuffix": "",
+          "ProtobufField": "transform"
+        },
+        {
+          "ChannelName": "Head Tracking State",
+          "ProtobufMessageType": "ml.ch.HeadTrackingStateDataEvent",
+          "MessagePropertyMapping": "headStateMapping",
+          "PropertySuffix": "",
+          "ProtobufField": ""
+        }
+      ]
+    }
+  ],
+
+  "MessagePropertyMappings": {
+    "headStateMapping": [
+      {
+        "PropertySuffix": "mode",
+        "ProtobufFieldSuffix": "mode"
+      },
+      {
+        "PropertySuffix": "confidence",
+        "ProtobufFieldSuffix": "confidence"
+      },
+      {
+        "PropertySuffix": "error",
+        "ProtobufFieldSuffix": "error"
+      }
+    ]
+  }
+}

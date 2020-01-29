@@ -1,0 +1,37 @@
+Only in make-4.2-new/: .remake.c.swp
+Binary files make-4.2/glob/libglob.a and make-4.2-new/glob/libglob.a differ
+Binary files make-4.2/make and make-4.2-new/make differ
+diff -x 'config*' -ur make-4.2/remake.c make-4.2-new/remake.c
+--- make-4.2/remake.c	2016-05-21 16:34:45.000000000 -0500
++++ make-4.2-new/remake.c	2016-11-01 09:15:15.000000000 -0500
+@@ -778,7 +778,6 @@
+             }
+           else if (ISDB (DB_VERBOSE))
+             fmt = _("Prerequisite '%s' is older than target '%s'.\n");
+-
+           if (fmt)
+             {
+               print_spaces (depth);
+@@ -1036,12 +1035,19 @@
+     {
+       /* If this is a non-intermediate file, update it and record whether it
+          is newer than THIS_MTIME.  */
+-      FILE_TIMESTAMP mtime;
++      FILE_TIMESTAMP orig_mtime, mtime;
++      orig_mtime = file_mtime (file);
+       dep_status = update_file (file, depth);
+       check_renamed (file);
+       mtime = file_mtime (file);
+       check_renamed (file);
+-      if (mtime == NONEXISTENT_MTIME || mtime > this_mtime)
++      // EJS: if the file *didn't* exist but now does, then clearly
++      // the target should be built!
++      if (mtime == NONEXISTENT_MTIME || orig_mtime == NONEXISTENT_MTIME || mtime > this_mtime)
++        *must_make_ptr = 1;
++
++      // EJS: and, yes, if we rebuilt, please build the dependency!  (this breaks in parallel builds)
++      else if (dep_status == us_success && file->mtime_before_update < mtime)
+         *must_make_ptr = 1;
+     }
+   else
+Binary files make-4.2/remake.o and make-4.2-new/remake.o differ

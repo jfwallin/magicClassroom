@@ -1,0 +1,81 @@
+{
+   "ChannelMap" : [
+      {
+         "Channel" : "Eye Fixation Transform",
+         "Device" : "ML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Left Center Transform",
+         "Device" : "ML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Right Center Transform",
+         "Device" : "ML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Eye Tracking State",
+         "Device" : "ML1EyeTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Graphics Contract",
+         "Device" : "ML1GraphicsViewSparseDevice"
+      },
+      {
+         "Channel" : "Hand Tracking Data",
+         "Device" : "ML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Head Transform",
+         "Device" : "ML1HeadposeSparseDevice"
+      },
+      {
+         "Channel" : "Head Tracking State",
+         "Device" : "ML1HeadposeSparseDevice"
+      },
+      {
+         "Channel" : "Left Hand Center Transform",
+         "Device" : "ML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Left Hand Keypoints",
+         "Device" : "ML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Raycast Results",
+         "Device" : "ML1RaycastSparseDevice"
+      },
+      {
+         "Channel" : "Right Hand Center Transform",
+         "Device" : "ML1HandTrackingSparseDevice"
+      },
+      {
+         "Channel" : "Right Hand Keypoints",
+         "Device" : "ML1HandTrackingSparseDevice"
+      },
+      {
+          "Channel":"Input Controller 1",
+          "Device":"ML1InputSparseDevice"
+      },
+      {
+          "Channel":"Input Controller 1 Transform",
+          "Device":"ML1InputSparseDevice"
+      },
+      {
+          "Channel":"Input Controller 2",
+          "Device":"ML1InputSparseDevice"
+      },
+      {
+          "Channel":"Input Controller 2 Transform",
+          "Device":"ML1InputSparseDevice"
+      },
+      {
+          "Channel":"Input Controller System State",
+          "Device":"ML1InputSparseDevice"
+      },
+      {
+          "Channel":"Input Keyboard Data",
+          "Device":"ML1InputSparseDevice"
+      }
+   ],
+   "ManifestType" : "ChannelMap"
+}

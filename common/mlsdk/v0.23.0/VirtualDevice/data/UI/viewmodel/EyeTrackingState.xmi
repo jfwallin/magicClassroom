@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.eyetrackingstate"
+    typeId="MLEyeTrackingState"
+    inherit="false">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.eyetrackingstate.layout">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.eyetrackingstate.confidence"
+        label="Confidence">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetrackingstate.fixation_confidence"
+          id="fixation_confidence"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetrackingstate.left_center_confidence"
+          id="left_center_confidence"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetrackingstate.right_center_confidence"
+          id="right_center_confidence"/>
+    </children>
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.eyetrackingstate.state"
+        label="State">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetrackingstate.error"
+          id="error"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.eyetrackingstate.calibration_status"
+          id="calibration_status"/>
+    </children>
+  </children>
+</viewmodel:View>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Node types used for the Control Panel.
+These types can correspond to various SparseDevice 
+(Whichever is connected for the appropriate channel; 
+the selected one if multiple are present) -->
+<types xmlns="http://www.magicleap.com/uidesigner/component/types"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<structType typeId="transform" flattenOnExport="false"> 
+		<member id="position" typeId="vec3" label="Position" />
+		<member id="orientation" typeId="vec3" label="Orientation"/>
+	</structType>
+
+	<structType typeId="transform_with_scale" flattenOnExport="false">
+		<member id="label" typeId="string" label="Label" />
+	    <member id="type" typeId="string" label="Type" /> 
+		<member id="position" typeId="vec3" label="Position" />
+		<member id="orientation" typeId="vec3" label="Orientation"/>
+		<member id="scale" typeId="vec3" label="Scale"/>
+	</structType>
+	
+	<structType typeId="transform_pos" flattenOnExport="false">
+		<member id="position" typeId="vec3" label="Fixation Position"/>
+	</structType>
+	
+	<structType typeId="ImageTarget">
+		<member id="handle" typeId="string" label="Handle" defaultValue="unhandled" />
+		<member id="transform" typeId="transform" label="Transform" />
+		<member id="status" typeId="MLImageTrackerTargetStatus" label="Status" />
+		<!-- Hidden for now, cf. Jira DTOOLS-630
+		<member id="select" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.imagetracker.select" label="Select"/>
+		-->
+	</structType>
+	
+	<listType typeId="ImageTargets" elementTypeId="ImageTarget" elementLabel="Target" />
+	
+	<listType typeId="SceneSelectionNodes" elementTypeId="transform_with_scale" elementLabel="Selection" />
+	
+	<structType typeId="RecordingPlaybackProgress">
+		<member id="duration" typeId="float" label="Duration" />
+		<member id="timestamp" typeId="float" label="Progress" />
+	</structType>	
+	
+	<fileType typeId="recordingPath" fileDialogStyle="Save">
+		<filter filePattern="*.recording" filterLabel="Record (*.recording)"/>
+		<filter filePattern="*.*" filterLabel="Any (*.*)"/>
+	</fileType>
+	
+	<fileType typeId="playbackPath" fileDialogStyle="Open">
+		<filter filePattern="*.recording" filterLabel="Record (*.recording)"/>
+	</fileType>
+	
+	<structType typeId="AlignCamera" flattenOnExport="false"> 
+		<member id="align_scene_to_device_view" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.scene_view.align_scene_to_device_view" label="Align Scene to Device View"/>
+		<member id="align_device_to_scene_view" typeId="command" defaultValue="com.magicleap.vdf.propertysheet.scene_view.align_device_to_scene_view" label="Align Device to Scene View"/>
+	</structType>
+	
+</types>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.common.properties.model/model/viewmodel.ecore"
+    viewId="vdf.hands"
+    typeId="Hands">
+  <children
+      xsi:type="viewmodel:Group"
+      viewId="vdf.hands.left"
+      label="Left">
+    <style>left-hand</style>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.hands.left.left_hand"
+        id="left_hand"
+        labelAlignment="None">
+      <style>left-hand</style>
+    </children>
+  </children>
+  <children
+      xsi:type="viewmodel:Group"
+      viewId="vdf.hands.right"
+      label="Right">
+    <style>right-hand</style>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="vdf.hands.right.right_hand"
+        id="right_hand"
+        labelAlignment="None">
+      <style>right-hand</style>
+    </children>
+  </children>
+</viewmodel:View>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <title>Lumin SDK Release Notes</title>
+
+<style>
+body {
+   font-family: Helvetica, arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.6;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #f0f0f0;
+   padding: 30px; }
+
+body > *:first-child {
+   margin-top: 0 !important; }
+body > *:last-child {
+   margin-bottom: 0 !important; }
+
+a {
+   color: #4183C4; }
+a.absent {
+   color: #cc0000; }
+a.anchor {
+   display: block;
+   padding-left: 30px;
+   margin-left: -30px;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 20px 0 10px;
+   padding: 0;
+   font-weight: bold;
+   -webkit-font-smoothing: antialiased;
+   cursor: text;
+   position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+   text-decoration: none; }
+
+h1 tt, h1 code {
+   font-size: inherit; }
+
+h2 tt, h2 code {
+   font-size: inherit; }
+
+h3 tt, h3 code {
+   font-size: inherit; }
+
+h4 tt, h4 code {
+   font-size: inherit; }
+
+h5 tt, h5 code {
+   font-size: inherit; }
+
+h6 tt, h6 code {
+   font-size: inherit; }
+
+h1 {
+   font-size: 32px;
+   color: #003399; }
+
+h2 {
+   font-size: 24px;
+   border-bottom: 1px solid #cccccc;
+   color: black; }
+
+h3 {
+   font-size: 18px; }
+
+h4 {
+   font-size: 16px; }
+
+h5 {
+   font-size: 14px; }
+
+h6 {
+   color: #777777;
+   font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+   margin: 15px 0; }
+
+hr {
+   border: 0 none;
+   color: #cccccc;
+   height: 4px;
+   padding: 0;
+}
+
+body > h2:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+body > h1:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+body > h1:first-child + h2 {
+   margin-top: 0;
+   padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+   margin-top: 0;
+   padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+   margin-top: 0; }
+
+li p.first {
+   display: inline-block; }
+li {
+   margin: 0; }
+ul, ol {
+   padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+   margin-top: 0; }
+
+dl {
+   padding: 0; }
+dl dt {
+   font-size: 14px;
+   font-weight: bold;
+   font-style: italic;
+   padding: 0;
+   margin: 15px 0 5px; }
+dl dt:first-child {
+   padding: 0; }
+dl dt > :first-child {
+   margin-top: 0; }
+dl dt > :last-child {
+   margin-bottom: 0; }
+dl dd {
+   margin: 0 0 15px;
+   padding: 0 15px; }
+dl dd > :first-child {
+   margin-top: 0; }
+dl dd > :last-child {
+   margin-bottom: 0; }
+
+blockquote {
+   border-left: 4px solid #dddddd;
+   padding: 0 15px;
+   color: #777777; }
+blockquote > :first-child {
+   margin-top: 0; }
+blockquote > :last-child {
+   margin-bottom: 0; }
+
+table {
+   padding: 0;border-collapse: collapse; }
+table tr {
+   border-top: 1px solid #cccccc;
+   background-color: white;
+   margin: 0;
+   padding: 0; }
+table tr:nth-child(2n) {
+   background-color: #f8f8f8; }
+table tr th {
+   font-weight: bold;
+   border: 1px solid #cccccc;
+   margin: 0;
+   padding: 6px 13px; }
+table tr td {
+   border: 1px solid #cccccc;
+   margin: 0;
+   padding: 6px 13px; }
+table tr th :first-child, table tr td :first-child {
+   margin-top: 0; }
+table tr th :last-child, table tr td :last-child {
+   margin-bottom: 0; }
+
+img {
+   max-width: 100%; }
+
+span.frame {
+   display: block;
+   overflow: hidden; }
+span.frame > span {
+   border: 1px solid #dddddd;
+   display: block;
+   float: left;
+   overflow: hidden;
+   margin: 13px 0 0;
+   padding: 7px;
+   width: auto; }
+span.frame span img {
+   display: block;
+   float: left; }
+span.frame span span {
+   clear: both;
+   color: #333333;
+   display: block;
+   padding: 5px 0 0; }
+span.align-center {
+   display: block;
+   overflow: hidden;
+   clear: both; }
+span.align-center > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px auto 0;
+   text-align: center; }
+span.align-center span img {
+   margin: 0 auto;
+   text-align: center; }
+span.align-right {
+   display: block;
+   overflow: hidden;
+   clear: both; }
+span.align-right > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px 0 0;
+   text-align: right; }
+span.align-right span img {
+   margin: 0;
+   text-align: right; }
+span.float-left {
+   display: block;
+   margin-right: 13px;
+   overflow: hidden;
+   float: left; }
+span.float-left span {
+   margin: 13px 0 0; }
+span.float-right {
+   display: block;
+   margin-left: 13px;
+   overflow: hidden;
+   float: right; }
+span.float-right > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px auto 0;
+   text-align: right; }
+
+code, tt {
+   margin: 0 2px;
+   padding: 0 5px;
+   white-space: nowrap;
+   border: 1px solid #eaeaea;
+   background-color: #f8f8f8;
+   border-radius: 3px; }
+
+pre code {
+   margin: 0;
+   padding: 0;
+   white-space: pre;
+   border: none;
+   background: transparent; }
+
+.highlight pre {
+   background-color: #f8f8f8;
+   border: 1px solid #cccccc;
+   font-size: 13px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px; }
+
+pre {
+   background-color: #f8f8f8;
+   border: 1px solid #cccccc;
+   font-size: 13px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px; }
+pre code, pre tt {
+   background-color: transparent;
+   border: none; }
+
+sup {
+   font-size: 0.83em;
+   vertical-align: super;
+   line-height: 0;
+}
+
+div.version {
+   padding: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: #EBF5FF;
+   font-style: italic;
+}
+
+div.version:first-of-type {
+   background-color: #f8f8f8;
+   font-style: normal;
+}
+
+* {
+     -webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+   body {
+      width: 854px;
+      margin:0 auto;
+   }
+}
+@media print {
+     table, pre {
+          page-break-inside: avoid;
+     }
+     pre {
+          word-wrap: break-word;
+     }
+}
+</style>
+</head>
+
+<body>
+  <h1>Lumin SDK Release Notes</h1>
+  <p>This document contains the Lumin SDK release notes including the notes for
+    the core SDK, Unity&reg; integration, and Unreal Engine integration.</p>
+<div class='version'>
+  <meta charset="UTF-8">
+  <h1><strong>Lumin SDK 0.23.0</strong></h1>
+
+  <ul>
+    <li>Lumin OS 0.98</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+
+<h2><strong>C API</strong></h2>
+
+<h3><strong>Features</strong></h3>
+
+  <ul>
+    <li>Introduces MLConnections APIs  to send and receive invites to the people following the user in the Social App.</li>
+    <li>Introduces MLContactsRequestSelection API to request a subset of contacts as manually selected by the user.</li>
+    <li>Introduces MLMovements APIs for spatial movement of objects to feel like they have mass and inertia by tilting and swaying during movement, but still respecting the user's desired placement. Use this to be consistent with the movements in the Universe.</li>
+    <li>Introduces MLPersistentCoordinateFramesGetFrameState to get additional state data that includes the confidence in the Persistent Coordinate Frame within the valid radius and the rotation and translation error.</li>
+    <li>Introduces new callback in the MLLifecycle to let the application know when it loses or regains focus. When focus is lost, the application will not receive input events.</li>
+    <li>Introduces MLLocationGetLastFineLocation to fetch the last known fine location. The API also provides the accuracy of the location.</li>
+    <li>MLEyeTrackingStaticData now provides the left and right eye gaze vector.</li>
+    <li>MLHandTrackingState now provides whether the hand is holding a Control or not. This feature will have more improvements in future releases, please refer to known issues section for the current limitations.</li>
+    <li>Introduces MLHandTrackingKeyPoint enum to provide the ordering of the keypoints.</li>
+    <li>MLGraphicsFrameInfo structure is updated to provide a handle to a synchronization object that must be cast to VkSemaphore and used during queue submission of a Vulkan app. GL apps can ignore this member.</li>
+    <li>Introduces new MLAudio APIs to get/set head relative sound and the memory footprint for the loaded audio source.</li>
+    <li>Three additional events added to MLMediaDRMEvenType: MLMediaDRMEvenType_SessionReclaimed, MLMediaDRMEvenType_ExpirationUpdate, MLMediaDRMEvenType_KeysChange.</li>
+    <li>Renamed the MLAudio "Input Stream" and "Output Stream" APIs to "Buffered Input" and "Buffered Output" APIs. The older Stream APIs are deprecated.</li>
+  </ul>
+
+  <h3><strong>Deprecation Notices</strong></h3>
+
+  <ul>
+    <li>The MLScreens API and its privilege ScreensProvider are deprecated.</li>
+    <li>The following MLAudio APIs are deprecated:</li>
+    <ul>
+       <li>MLAudioCreateSoundWithOutputStream</li>
+       <li>MLAudioGetOutputStreamDefaults</li>
+       <li>MLAudioGetOutputStreamLatency</li>
+       <li>MLAudioGetOutputStreamFramesPlayed</li>
+       <li>MLAudioGetOutputStreamBuffer</li>
+       <li>MLAudioReleaseOutputStreamBuffer</li>
+       <li>MLAudioGetInputStreamDefaults</li>
+       <li>MLAudioGetInputStreamLatency</li>
+       <li>MLAudioGetInputStreamBuffer</li>
+       <li>MLAudioReleaseInputStreamBuffer</li>
+    </ul>
+    <li>MLGraphicsVirtualCameraInfoArray is deprecated. This is included in the updated version of MLGraphicsFrameInfo.</li>
+    <li>MLHandTrackingHandState is deprecated and replaced by MLHandTrackingHandStateEx.</li>
+    <li>MLHandTrackingData is deprecated and replaced by MLHandTrackingEx.</li>
+    <li>MLHandTrackingGetData is deprecated and replaced by MLHandTrackingGetDataEx.</li>
+    <li>All Controller 6DOF data exposed by way of the MLInput APIs are deprecated. Use the MLController APIs instead.</li>
+  </ul>
+
+  <h3><strong>Known Issues</strong></h3>
+
+  <ul>
+    <li>MLHandTracking can now detect if a hand is holding the Control or not. But the current version can have some false positives. One way to address this issue would be to use the MLControl APIs to check the position of the Control to eliminate the false positives.</li>
+  </ul>
+
+  <h3><strong>Notes</strong></h3>
+
+  <ul>
+    <li>MLControllerButton_HomeTap cannot be polled, this button is only available via the callbacks.</li>
+  </ul>
+
+<h2><strong>Dev Tools</strong></h2>
+
+<h3><strong>Features</strong></h3>
+
+  <ul>
+    <li>Added experimental support for clang 8.0 and its associated libc++ when targeting Lumin. (See https://releases.llvm.org/8.0.0/tools/clang/docs/index.html.)
+      <br><br>
+      NOTE: clang 3.8 is still the default; use mabu -t lumin_clang-8 to select this version.</li>
+ </ul>
+
+<h3><strong>Changes</strong></h3>
+
+  <ul>
+    <li>The mabu: using build target '...' message is always printed, even when an explicit -t ...is passed, in order to clarify what the expanded build specification is. (Use -q to suppress this.).</li>
+    <li>Improved mabu error reporting when a user override of CC=... or CXX=...results in an error.</li>
+ </ul>
+
+ <h3><strong>Bug Fixes</strong></h3>
+
+  <ul>
+    <li>Fixed mabu bug where unknown *.config or *.option files next to the project would fail the load. If these are obviously not mabu files (XML, binary, etc.) they are silently ignored. Otherwise, such files only generate warnings rather than failing to build.</li>
+    <li>Fixed bug in mabu cmake toolchain generation in not passing --sysroot=... in CMAKE_C[XX]_FLAGS.</li>
+    <li>Fixed bug where in some environments, mabu would fail to sign .mpks when there are multiple Python installations on the path.</li>
+    <li>Fixed bug trying to detect toolchains with a plain --version request (this was causing problems in Win32 systems with no Visual Studio, and was also doing unnecessary work).</li>
+    <li>Fixed detection of Apple clang 11.0 and newer.</li>
+ </ul>
+
+ <h2><strong>mldb</strong></h2>
+
+<h3><strong>Features</strong></h3>
+
+  <ul>
+    <li>New command '<b>get-standby</b>' shows if device is in standby mode (Lightpack is awake, but Lightwear is asleep).</li>
+    <li>Lumin OS API level is now exposed by way of the property <b>ro.ml.shipping.api.level</b></li>
+ </ul>
+
+ <h3><strong>Changes</strong></h3>
+
+  <ul>
+    <li><b>mldb bugreport</b> now requires that you supply the device PIN (with -p) if the device is locked.</li>
+    <li><b>mldb df</b> now shows the amount of the userdata partition reserved for the OS.</li>
+    <li><b>mldb perf</b> no longer shows thermal metrics and shows a reduced set of power metrics.</li>
+    <li><b>mldb reverse</b> is no longer limited to debuggable apps and no longer limited to a range of ports.</li>
+    <li>symbolic links can no longer be pushed to the device.</li>
+ </ul>
+
+  <h3><strong>Bug Fixes</strong></h3>
+
+  <ul>
+    <li>improvement to <b>usbreg</b> command.</li>
+ </ul>
+</div>
+<div class='version'>
+
+    <h1><strong>Lumin Runtime SDK 0.23.0</strong></h1>
+
+    <ul>
+        <li>Lumin OS 0.98</li>
+    </ul>
+
+    <p>Lumin Runtime is a declarative application framework that enables you to author both Landscape and Immersive apps. Landscape apps can run and render simultaneously with other Landscape apps and are contained in a volume called a Prism. Immersive apps suspend all other apps and can utilize your entire space. Lumin Runtime relies on a client/server model to render multiple client applications within the real world. It facilitates application sharing out of the box, allowing application developers to collaborate with multiple users.</p>
+
+    <p>The Lumin Runtime SDK adds support for creating Lumin Runtime applications to the Magic Leap Lumin SDK, including APIs, examples and build support.</p>
+
+    <h2><strong>Features</strong></h2>
+
+      <ul>
+        <li>App - added functions to check Wifi / internet status.</li>
+        <li>App - added support for named actions.</li>
+        <li>App - added PCF data getters.</li>
+        <li>Events - added video subtitle events.</li>
+        <li>Consts - added new event source: tablet device.</li>
+        <li>Consts - some gesture flags deprecated.</li>
+        <li>Consts - some led patterns deprecated.</li>
+        <li>Prism - added option to create material resource from fd.</li>
+        <li>Prism - added option to create model with explicit material scope.</li>
+        <li>Prism - added option to create texture resource from image2d.</li>
+        <li>Prism - getPrismController works in js.</li>
+        <li>Prism - added function to create image2d.</li>
+        <li>Privileges - added pcf read, web view and hand mesh privileges.</li>
+        <li>Privileges - found object privilege deprecated.</li>
+        <li>EyeTrackingEventData - isFixationDepthUnconfortable function deprecated.</li>
+        <li>InputHelper - works in js now.</li>
+        <li>LightNode - head pose lighting deprecated.</li>
+        <li>ParticleNode - particle samplers work in js now.</li>
+        <li>VideoNode - added protected content flag setter/getter.</li>
+        <li>Notification - notification sound deprecated.</li>
+        <li>Resource - added protected content flag setter/getter.</li>
+        <li>TextureResource - added texture format getter.</li>
+        <li>KeyboardDefines - added enGb, de, fr language codes, added page codes.</li>
+        <li>UiKitConsts - added system icons for aspect ratio.</li>
+        <li>UiWebView - added functions to enable/disable/query virtual keyboard speech to text.</li>
+      </ul>
+</div>
+<div class='version'>
+
+    <h1><strong>Lumin Runtime Editor 0.23.0</strong></h1>
+
+    <p>The Lumin Runtime Editor tool provides you with comprehensive features for building scene graphs for your Lumin Runtime Landscape application. The editor  includes line, quad, text, model, and transform nodes with which you can arrange the graphical content of your app. All of the ready-made, animated, 3D UI elements from the Magic Leap UI Kit are also available as node types. These predefined UI nodes and properties enable you to rapidly design and develop apps that share the same design sense as other Lumin Runtime applications.</p>
+
+    <h2><strong>Features</strong></h2>
+
+    <ul>
+      <li>Added support for Sprite nodes.</li>
+      <li>Added additional preview support for dynamic content (blend setup, particles, sprites).</li>
+      <li>Added directories as assets support (particles, sprites).</li>
+      <li>Set better defaults for Audio node.</li>
+      <li>Added import for audio assets (.wav, .pcm, .ogg).</li>
+      <li>The Editor now prompts to restart after changing the MLSDK preference so changes will take effect.</li>
+      <li>The Editor validates MLSDK preference so mismatch is not possible.</li>
+      <li>Can add support for new asset types to old projects.</li>
+      <li>Animations now also play in the Zero Iteration previewer.</li>
+      <li>The Build Project command is easier to find in the Editor.</li>
+      <li>The Editor automatically selects the best graphics interface.</li>
+      <li>Old projects automatically update to get newly supported asset types.</li>
+    </ul>
+
+    <h2><strong>Bug Fixes</strong></h2>
+
+    <ul>
+      <li>Fixed potential memory leak in generated code.</li>
+      <li>Better undo support for UITextEdit Text Entry Mode.</li>
+      <li>Fixed playback speed in animation preview.</li>
+      <li>Fixed issues with insertion of nodes when nothing is selected.</li>
+      <li>Fixed potential spurious warnings for material names.</li>
+      <li>Fixed potential blank scene when first opening/resizing viewport.</li>
+      <li>Fixed some asset pipeline build issues.</li>
+      <li>Fixed edited UIPanel attributes not showing up on device.</li>
+      <li>Fixed Zero Iteration previewer menu label was sometimes incorrect.</li>
+      <li>Fixed UIDialog rendering on Mac.</li>
+      <li>Fixed node renaming was triggered when clicking on any part of scene hierarchy.</li>
+      <li>Fixed Use Frame checkbox unsetting UIImage resource.</li>
+      <li>Incompatible FBX files now report as a problem.</li>
+      <li>Fixed vertical compression artifact when resizing content viewport.</li>
+      <li>Fixed previewer bugs.</li>
+      <li>Fixed a bug when sprite textures sometimes only partially render.</li>
+    </ul>
+
+    <h2><strong>Known Issues</strong></h2>
+
+    <ul>
+      <li>AudioNode spatial sound properties require default values setting properly. Suggested values are:</li>
+      <ul>
+        <li>Distance Properties: Min Distance 1.0, Max Distance 10.0, Roll Off Factor 1.0</li>
+        <li>Radiation Properties: Inner Angle 50.0, Outer Angle 340.0, Outer Gain 1.0, Outer Gain High Frequency 0.08</li>
+        <li>Direct Send Levels: Gain 1.0, Gain Low Frequency 1.0, Gain Mid Frequency 1.0, Gain High Frequency 1.0</li>
+        <li>Room Send Levels: Gain 1.0, Gain Low Frequency 1.0, Gain Mid Frequency 1.0, Gain High Frequency 1.0</li>
+        </ul>
+      <li>AudioNode spatial sound properties: Radiation properties missing Outer Gain Mid Frequency and Outer Gain Low Frequency elements.</li>
+    </ul>
+
+</div>
+<div class='version'>
+  <h1><strong>Unity&reg; Package 0.23.0</strong></h1>
+
+  <ul>
+    <li>Lumin SDK Version 0.23.0</li>
+    <li>Unity&reg; Version: 2019.2</li>
+    <li>Lumin OS 0.98</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+  <h2><strong>Features</strong></h2>
+
+  <ul>
+    <li>Added new Multi-User Invite API, MLConnections.</li>
+    <li>Updated MLContacts API to allow searching and selecting filters.</li>
+    <li>Added new MLMovement API to allow spatial movement of objects to simulate mass and inertia.</li>
+    <li>Updated MLPCF API with additional state data that includes the confidence in the Persistent Coordinate Frame's transform while within a radius.</li>
+    <li>Core behavior components such as MLImageTrackingBehavior are now exposed to the user.</li>
+    <li>Cached PCFs are now cleared when a new headpose session is detected.</li>
+    <li>Updated the format of MLCoordinateFrameUIDs ToString() and ToGuid() so they match IDs from LuminOS. For example: old PCF CFUID 1760927639213764052-7564176028022492570 is now properly represented as: D4ED80AA-5B12-7018-9A4D-CE50055AF968.</li>
+  </ul>
+
+  <h2><strong>Deprecation Notices</strong></h2>
+
+  <ul>
+    <li>The MLScreens API and its privilege ScreensProvider have been deprecated.</li>
+    <li>MLInput.MLInputConfiguration has been deprecated and replaced with a new version.</li>
+    <li>MLPersistentCoordinateFrames.GetPCFPosition has been deprecated and replaced with GetPCFPose.</li>
+    <li>PwFoundObjRead privilege has been deprecated and replaced with PcfRead</li>
+    <li>MLKeyPoint.IsValid has been deprecated and replaced with MLKeyPoint.IsSupported</li>
+    <li>MLFinger.DIP is now obsolete and will return an error.</li>
+    <li>MLThumb.CMC is now obsolete and will return an error.</li>
+    <li>MLInputDevice.ChangedThisFrame is now obsolete and will return an error.</li>
+    <li>MLMusicService.GetMetadata is now obsolete and will return an error.</li>
+    <li>MLHandKeyPose.OpenHandBack is now obsolete and will return an error. It is replaced by MLHandKeyPose.OpenHand.</li>
+    <li>Items that have been fully removed or replaced:</li>
+    <ul>
+      <li>MLEyes.MLEye</li>
+      <li>MLFinger.MLFinger and MLFinger.Update</li>
+      <li>MLHands MLHand, Update, GetKeyPoseUp, and GetKeyPoseDown</li>
+      <li>MLKeyPoseManager.MLKeyPoseManager and MLKeyPoseManager.LastConfigurationApplied</li>
+      <li>MLThumb.MLThumb and MLThumb.Update</li>
+      <li>MLWrist.MLWrist and MLWrist.Update</li>
+      <li>MLInput's OnControllerTouchpadGestureNativeCallback, OnControllerButtonNativeCallback, OnControllerConnectNativeCallback, and OnControllerDisconnectNativeCallback</li>
+      <li>MLInputController's MLInputController, Update, UseCFUIDTransforms, and IsCFUIDTrackingEnabled</li>
+      <li>MLInputControllerTouchpadGesture.Update</li>
+      <li>MLLocation.GetLastCoarseLocation</li>
+      <li>ControllerNativeBindings' MLControllerCreateEx, MLControllerDestroy, MLControllerGetState, MLControllerStream, MLControllerState, and MLControllerSystemState</li>
+      <li>MusicServiceNativeBindings.MLMusicServiceGetMetadataEx</li>
+      <li>HandTrackingApiNativeBindings' MLHandTrackingCreate, MLHandTrackingDestroy, MLHandTrackingGetData, MLHandTrackingGetStaticData, MLKeyPointState, MLThumbState, MLFingerState, MLWristState, MLHandTrackingStaticHandState, MLHandTrackingHandState, MLHandTrackingData, and MLHandTrackingStaticData</li>
+      <li>EyeApiNativeBindings' MLEyeTrackingCreate, MLEyeTrackingDestroy, MLEyeTrackingGetStaticData, MLEyeTrackingGetState, MLEyeTrackingState, and MLEyeTrackingStaticData</li>
+      <li>MagicleapDevice.Register and MagicleapDevice.Unregister</li>
+      <li>InputNativeBindings' MLInputSetControllerCallbacks, MLInputSetControllerCallbacks, MLInputGetControllerState, MLInputStartControllerFeedbackPatternVibe, MLInputStartControllerFeedbackPatternLED, MLInputStartControllerFeedbackPatternEffectLED, MLInputControllerTouchpadGesture, MLInputControllerCallbacks, and MLInputControllerState</li>
+      <li>CameraApiNativeBindings.MLCameraSetCaptureCallbacks and CameraApiNativeBindings.MLCameraCaptureCallbacks</li>
+    </ul>
+  </ul>
+
+  <h2><strong>Bug Fixes</strong></h2>
+
+  <ul>
+    <li>Previous release issues with MLInputModule and MLInputRaycaster have been addressed.</li>
+    <li>Worldscale examples issues have been addressed.</li>
+  </ul>
+
+  <h2><strong>Known Issues</strong></h2>
+
+  <ul>
+    <li>Zero Iteration on Mac has issue where linear color space is dark on device or simulator.</li>
+    <li>Zero Iteration on Mac has issue where rendering is pixelated.</li>
+    <li>ZI Simulator performance degrades when Unity is a background app.</li>
+    <li>WorldScale Centimeters Example has issue with clip planes in simulator.</li>
+    <li>Crashes might occur if stopping the mesh subsystem after using the RGB camera.</li>
+    <li>Losing headpose might result in "PCF lost" event spam.</li>
+    <li>Calling MLPersistentCoordinateFrames.FindClosestPCF() will trigger the MLPCF.OnCreate callback for the same PCF unless that PCF is immediately bound with MLPersistentBehavior.BindToPCF() or is immediately queued for state updates with MLPersistentCoordinateFrames.QueueForUpdates().</li>
+    <li>Spurious error "Error: Could not load signature of UnityEngine.XR.MagicLeap.MLInputController:HandleOnTouchpadGestureChanged" after loading a project in Unity. Please ignore.</li>
+  </ul>
+
+  <hr>
+
+  <h1><strong>Unity&reg; SoundField Audio Plugin</strong></h1>
+
+  <h2><strong>Bug Fixes</strong></h2>
+
+  <ul>
+    <li>MSA Attenuation Checkbox registers on runtime.</li>
+    <li>MSA Reflections Delay slider UI fix.</li>
+    <li>MSA Distance properties can no longer be set to negative values.</li>
+    <li>MSA Omnidirectional checkbox registers on runtime.</li>
+    <li>Reducing LF Gain to 0 no longer raises overall gain.</li>
+  </ul>
+
+
+</div>
+<div class='version'>
+
+  <h1><strong>Unreal Package 0.23.0</strong></h1>
+
+  <ul>
+    <li>Lumin SDK Version 0.23.0</li>
+    <li>Unreal Version: Unreal Engine compatible with Lumin SDK 0.23.0</li>
+    <li>Lumin OS 0.98</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+  <h2><strong>Features</strong></h2>
+
+  <ul>
+    <li>0.23.0 release is based on Unreal Engine 4.23.0.</li>
+    <li>Added MagicLeapConnections plugin to send invitations to the user's Magic Leap connections to initiate a multi-user experience. Apps need to add the SocialConnectionsInvitesAccess privilege to manifest to use this API.</li>
+    <li>Added MagicLeapMovementComponent which makes moving objects feel as if they have mass and inertia by tilting and swaying during movement. The component being moved will respect all blocking collisions. Developers can also choose to have soft collisions (allowing a degree of penetration before hitting an impenetrable core) with overlapping objects.</li>
+    <li>Exposed MagicLeapNetworking plugin which provides functions to check internet connectivity status and wifi data (RSSI, link speed, frequency). Apps need to add the Internet privilege to manifest to use this API.</li>
+    <li>Exposed ARPin translation and rotational errors via FMagicLeapARPinState.</li>
+    <li>Added a boolean parameter (true by default) to SetStabilizationDepthActor() and SetFocusActor() which will set the both StabilizationDepthActor and FocusActor to the same input Actor.</li>
+    <li>Updated bRemoveDebugInfo option in the Magic Leap Project Settings to only affect symbol stripping. The sym file will be generated regardless of this option. Whether the symbols will be stripped from the executable is managed by this.</li>
+    <li>Enabled delayed library loading for the MLSDK libs on all platforms, including Lumin. Calling functions that were not located in the available libraries will return MLResult_NotImplemented instead of just crashing, making Unreal Engine usage more flexible across different MLSDK and LuminOS versions.</li>
+    <li>Added Blueprint function to query if a given ML controller is connected.</li>
+    <li>Added GPU crash marker support for Vulkan on Lumin. Set r.GPUCrashDebugging and r.gpucrash.collectionenable to 1 in the Lumin device profile or in ConsoleVariables.ini to enable GPU crash collection.</li>
+    <li>Exposed a timestamp with the FMLInputTabletDeviceState data.</li>
+    <li>Exposed state change callbacks for Music Service to Blueprints.</li>
+    <li>Unreal examples have been updated to calibrate the Pawn on map load so as to make the app launch position the origin instead of keeping the origin stuck to the device boot location. Check out the XRPawn blueprint for the calibration logic. The setup of MotionControllers, MRMesh, and so on have also been updated to respect the pawn calibration.</li>
+    <li>Reduced frequency of the expensive audio jack update check to free up the audio thread.</li>
+    <li>Updated time consuming UMagicLeapImageTrackerFunctionLibrary::EnableImageTracking() &amp; UMagicLeapImageTrackerFunctionLibrary::SetMaxSimultaneousTargets() functions to be asynchronous.</li>
+    <li>MagicLeapSecureStorage now supports int64, Blueprint Structs, TArrays and USaveGame objects. Functions for storing and retrieving explicit structs (FVector, FTransform etc) have been deprecated and should be replaced with Get/PutSecureArray.</li>
+    <li>MagicleapLocations API functions have a new parameter to choose between getting a fine location and a coarse location. The accuracy of the fine location radius is also provided. The locations integration can also be used by way of the "Mobile Location Services Blueprint Library" plugin interface.</li>
+    <li>Added support for localized app names. Add the language code and corresponding name for the app in the Advanced MPK Packaging section in the Magic Leap Project Settings in the Editor.</li>
+    <li>Added getters functions for hand keypoints to motion source names and vice-versa.</li>
+    <li>ImageTrackerComponent has been moved into it's own module named MagicLeapImageTracker. There is no change required for Blueprints as the appropriate redirectors have been put in place but C++ developers will now need to add this new module as a dependency in their game / plugin module's Build.cs file and include MagicLeapImageTrackerComponent.h header.</li>
+    <li>Added selection functionality to the MagicLeapContacts plugin.  Developers can now instigate a system ui popup that displays all of their contacts.  The user can then select which contacts they wish to retrieve data as well as filter the fields to be retrieved.</li>
+    <li>Added a template in the Editor which sets up an XRPawn and a "Hello Cube!" map to help jump start development for Magic Leap.</li>
+  </ul>
+
+  <h2><strong>Deprecation Notices</strong></h2>
+
+  <ul>
+    <li>To avoid naming conflicts with any other data types defined in the engine or the accompanying plugins, all public data types (enums, structs &amp; classes) in the Magic Leap plugins have been prefixed with 'MagicLeap'. For example, URaycastComponent is now UMagicLeapRaycastComponent, FRaycastHitResult is now FMagicLeapRaycastHitResult and so on. Note that this does not require any changes in any of the existing blueprints as appropriate redirectors have been put in place. C++ usage of these, however, would need to be updated. Please refer to the Unreal Engine API Reference on https://developer.magicleap.com/learn/reference/public/v0.23.0/UnrealAPI/index.html for the complete list of data types.</li>
+    <li>OpenHandBack gesture has been deprecated and its usage should be replaced with OpenHand.</li>
+    <li>PwFoundObjRead privilege has been deprecated and its usage should be replaced with PcfRead.</li>
+    <li>Deprecated SetBasePosition/Orientation/Rotation functions. The XRPawn setup should be used instead to manipulate.</li>
+    <li>The "additional contents" packaging option has been removed from the Magic Leap Project Settings. The regular options under the Engine's Packaging settings should be used.</li>
+    <li>The "additional content binary" packaging option has been removed from the Magic Leap Project Settings. Binaries to be packaged should be added as Runtime Dependencies or Unreal Plugin Language should be used to copy the files over to the bin folder of the staging directory.</li>
+    <li>MagicLeapScreensComponent which was deprecated in MLSDK 0.21.0 has now been deleted.</li>
+    <li>MagicLeapScreens API integration has been marked deprecated and will be removed in the next release.</li>
+  </ul>
+
+  <h2><strong>Bug Fixes</strong></h2>
+
+  <ul>
+    <li>Fixed tracking to world space transformation of point cloud vertices.</li>
+    <li>Fixed memory leak in point cloud mode of mesh tracker component.</li>
+    <li>Fixed format of the language and locale codes fed to the internationalization system.</li>
+    <li>Fixed bug where old meshes were not cleared when a new headpose session was started.</li>
+    <li>Fixed firing of lost and found events for ARPin when headpose sessions are lost and restored.</li>
+    <li>Fixed crash in MagicLeapARPinComponent caused due to the the save data being garbage collected before the lifetime of the component is over.</li>
+    <li>Fixed launching Unreal apps when device is in standby.</li>
+    <li>Fixed audio playback losing sync with gameplay when device goes into standby.</li>
+    <li>Fixed delete/backspace key handling for Bluetooth keyboard.</li>
+    <li>Fixed SeekTo() functionality for media playback on Lumin.</li>
+    <li>Fixed "Dll loaded" spam in logs when running with MLRemote.</li>
+    <li>Fixed bug where stabilization depth was clamped to 5m if focus actor is NOT set.</li>
+    <li>Fixed issues with broadcasting initialization arguments received from the platform when a paused app is resumed.</li>
+    <li>Fixed memory leak in Vulkan renderer.</li>
+    <li>Fixed bug where "Invalid" privileges were getting added to the app manifest, causing installation failures.</li>
+    <li>Fixed Vulkan validation layer usage for Lumin.</li>
+    <li>Fixed a 1 second zombie audio playback when terminating a paused app or when the device is put in reality mode.</li>
+    <li>Fixed camera not turning off even after MagicLeapCameraComponent is destroyed.</li>
+    <li>Fixed conversion of mesh and planes bounds extents to what the platform expects. The BoxComponent extents in Unreal, used as a search volume for planes and mesh, uses half-extents (center to max point) as opposed to full-extents (min to max point) expected by the platform.</li>
+    <li>Fixed video track format data provided by MagicLeapMediaPlayer.</li>
+    <li>Fixed supported extension types for MagicLeapMediaPlayer and MagicLeapMediaCodecPlayer.</li>
+    <li>Fixed pen/eraser switch latency for Wacom tablet.</li>
+    <li>Fixed audio cutting out when switching from VRPreview window to MLRemote.</li>
+    <li>Fixed camera not turning off even after MagicLeapImageTrackerComponent is destroyed.</li>
+    <li>Fixed VRPreview button being randomly disabled despite all settings in place for Zero Iteration.</li>
+    <li>Fixed a 2 second stall in the audio mixer when terminating an Unreal app.</li>
+    <li>Removed requirement for hand meshing material to be two-sided.</li>
+    <li>Improved frame synchronization for MLRemote on Mac.</li>
+  </ul>
+
+  <h2><strong>Known Issues / Disclaimers</strong></h2>
+
+  <ul>
+    <li>With every engine upgrade, many new features and tools are added by Epic Games. It is possible that the path for certain files in the engine gets too long for Windows. It is advised to keep the root folder path for the engine installation to the minimum possible to avoid "path too long" errors.</li>
+    <li>ML device does not appear in Session Frontend on Mac.</li>
+    <li>Symbol stripping on the final Lumin executable fails on Mac for Blueprint-only projects when using the Magic Leap UE4 Editor from Epic Games Store (issue not seen in source builds). This error does not fail the actual packaging process itself and can be ignored during development. If you still want the symbols to be stripped, delete the Intermediate/Lumin/Mabu/Binaries folder in your project before triggering the package build. A proper fix is planned in a future MLSDK release.</li>
+    <li>All UBT, UAT operations and anything else that requires Mono fails on Mac when using the Magic Leap UE4 Editor from Epic Games Store (issue not seen in source builds) <b>if MonoFramework is not already installed</b> on the host machine. You can install MonoFramework on your Mac either via MonoDevelop or via Visual Studio for Mac. A proper fix will be provided in the next MLSDK release.</li>
+    <li>Video capture sample fails if Bumper is pressed too frequently.</li>
+  </ul>
+</div>
+
+</body>
+</html>

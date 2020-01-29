@@ -1,0 +1,156 @@
+{
+  "ConfigurationSettings": {
+    "HeadposeGizmoWearableModel": "gizmoModels/wearable.fbx",
+    "HeadposeGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "HeadposeGizmoModelScale": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "HeadposeGizmoModelRotation": [
+      0.0,
+      180.0,
+      0.0
+    ],
+    "InputControllerGizmoControlModel": "gizmoModels/Controller.fbx",
+    "InputControllerGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "InputControllerGizmoModelScale": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "InputControllerGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "InputControllerGizmoPrimaryMaterialIndex": 3,
+    "EyeFixationGizmoEyeFixationModel": "gizmoModels/gizmoEye.fbx",
+    "EyeFixationGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "EyeFixationGizmoModelScale": [
+      0.012,
+      0.012,
+      0.012
+    ],
+    "EyeFixationGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "HandGestureGizmoLeftHandModel": "gizmoModels/gizmoHandLeft.fbx",
+    "HandGestureGizmoRightHandModel": "gizmoModels/gizmoHandRight.fbx",
+    "HandGestureGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "HandGestureGizmoModelScale": [
+      0.002,
+      0.002,
+      0.002
+    ],
+    "HandGestureGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "PCFTexture": "gizmoModels/pcf-icon.png",
+    "PivotPointTexture": "gizmoModels/pivot-point-icon.png",
+    "CompassGizmoModelScale": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "CompassGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "CompassGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "CompassGizmoXAxisModel": "gizmoModels/gizmoMoveX.fbx",
+    "CompassGizmoYAxisModel": "gizmoModels/gizmoMoveY.fbx",
+    "CompassGizmoZAxisModel": "gizmoModels/gizmoMoveZ.fbx",
+    "MoveGizmoModelScale": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "MoveGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "MoveGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "MoveGizmoXAxisModel": "gizmoModels/gizmoMoveX.fbx",
+    "MoveGizmoYAxisModel": "gizmoModels/gizmoMoveY.fbx",
+    "MoveGizmoZAxisModel": "gizmoModels/gizmoMoveZ.fbx",
+    "MoveGizmoXYPlaneModel": "gizmoModels/gizmoMoveXY.fbx",
+    "MoveGizmoXZPlaneModel": "gizmoModels/gizmoMoveXZ.fbx",
+    "MoveGizmoYZPlaneModel": "gizmoModels/gizmoMoveYZ.fbx",
+    "MoveGizmoScreenSpaceModel": "gizmoModels/gizmoMoveCenter.fbx",
+    "ScaleGizmoModelScale": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "ScaleGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ScaleGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ScaleGizmoXAxisModel": "gizmoModels/gizmoScaleX.fbx",
+    "ScaleGizmoYAxisModel": "gizmoModels/gizmoScaleY.fbx",
+    "ScaleGizmoZAxisModel": "gizmoModels/gizmoScaleZ.fbx",
+    "ScaleGizmoScreenSpaceModel": "gizmoModels/gizmoScaleCenter.fbx",
+    "RotationGizmoModelScale": [
+      0.005,
+      0.005,
+      0.005
+    ],
+    "RotationGizmoModelPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RotationGizmoModelRotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RotationGizmoScreenSpaceModelRotation":[
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RotationGizmoForwardArcCorrection":true,
+    "RotationGizmoXAxisModel": "gizmoModels/gizmoRotateX.fbx",
+    "RotationGizmoYAxisModel": "gizmoModels/gizmoRotateY.fbx",
+    "RotationGizmoZAxisModel": "gizmoModels/gizmoRotateZ.fbx",
+    "RotationGizmoScreenSpaceModel": "gizmoModels/gizmoRotateFacing.fbx"
+  }
+}

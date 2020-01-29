@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewmodel:View
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:viewmodel="com.magicleap.uidesigner.rcp.properties.viewmodel"
+    xsi:schemaLocation="com.magicleap.uidesigner.rcp.properties.viewmodel ../../com.magicleap.uidesigner.properties.model/model/viewmodel.ecore"
+    viewId="vdf.imageTarget"
+    typeId="ImageTarget">
+  <children
+      xsi:type="viewmodel:VerticalLayout"
+      viewId="vdf.imageTarget.group">
+    <children
+        xsi:type="viewmodel:Group"
+        viewId="vdf.imageTarget.transform"
+        label="Transform">
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.imageTarget.transform.position"
+          id="position"/>
+      <children
+          xsi:type="viewmodel:Control"
+          viewId="vdf.imageTarget.transform.orientation"
+          id="orientation"/>
+    </children>
+    <children
+        xsi:type="viewmodel:Control"
+        viewId="status"
+        id="status"/>
+  </children>
+</viewmodel:View>

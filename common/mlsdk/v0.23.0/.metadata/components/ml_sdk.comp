@@ -1,0 +1,9 @@
+USES = ml_sdk_common
+
+# SDK shared libraries
+SHLIBS = \
+	ml_graphics \
+	ml_perception_client \
+	ml_input \
+	ml_lifecycle \
+	ml_ext_logging \

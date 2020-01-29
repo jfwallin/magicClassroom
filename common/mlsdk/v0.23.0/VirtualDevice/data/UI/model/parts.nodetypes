@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeTypes xmlns="http://www.magicleap.com/uidesigner/component/nodetypes"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!--
+	This file contains various node types used by specialized parts, which don't
+	otherwise fall into device properties parts.
+	-->
+	
+	<nodeType id="SceneNode" nodeNamePrefix="sceneNode">
+		<properties>
+			<property id="name" label="Name" typeId="string" />
+			<property id="type" label="Type" typeId="string" />
+			<property id="label" label="label" typeId="string" />
+			<property id="transform_with_scale" typeId="transform_with_scale" label="Selection Transform"/>
+		</properties>
+	</nodeType>
+	
+    <!-- For all following:
+    The properties are fetched on demand from the virtual room server, 
+    see corresponding {id}.xmi, e.g. Rendering.xmi for more.
+    -->
+	<nodeType id="Rendering"/>
+
+</nodeTypes>
