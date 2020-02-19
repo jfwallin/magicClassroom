@@ -40,7 +40,14 @@ public class DevMenuTools
                 }
             }
             else
+            {
+                phase.gameObject.SetActive(true);
+                foreach (Transform page in phase)
+                {
+                    page.gameObject.SetActive(false);
+                }
                 phase.gameObject.SetActive(false);
+            }
         }
     }
 

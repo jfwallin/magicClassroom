@@ -62,6 +62,7 @@ public class ConnectingGUIManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         //Turn off. ADD CALLS TO SCENE MANAGER TO CHANGE STATE
+        transform.parent.GetChild(0).gameObject.SetActive(false);
         gameObject.SetActive(false);
         yield return null;
     }

@@ -3,7 +3,15 @@ guid: 8a0337c0a68a9384697ffc575206f05e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - placementArenaPrefab: {instanceID: 0}
+  - arenaPrefab: {fileID: 6583128525803305872, guid: e49181457a307284e95918337c1ea38d,
+      type: 3}
+  - ballPrefab: {fileID: 7493585751379889739, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9,
+      type: 3}
+  - transmissionComponent: {instanceID: 0}
+  - pointer: {instanceID: 0}
+  - headposeMenus: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
