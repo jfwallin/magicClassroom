@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.XR.MagicLeap;
 using MagicLeapTools;
 
 public class SceneControl : MonoBehaviour
@@ -41,6 +42,7 @@ public class SceneControl : MonoBehaviour
     //Reference checking
     private void Awake()
     {
+        Assert.IsNotNull(gameSettings, "gameSettings not assigned on SceneControl");
         Assert.IsNotNull(placementArenaPrefab, "placementArena is not set on SceneControl");
         Assert.IsNotNull(transmissionComponent, "transmissionComponent is not set on SceneControl");
         Assert.IsNotNull(pointer, "pointer is not set on SceneControl");
@@ -96,6 +98,7 @@ public class SceneControl : MonoBehaviour
         {
             placementArena = Instantiate(placementArenaPrefab);
             placementArena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
+            placementArena.GetComponent<Placement>().Place(pointer.transform, new Vector3(6f,2f,3f), true, false, OnPlacementConfirm);
         }
         else
         {
@@ -174,6 +177,11 @@ public class SceneControl : MonoBehaviour
         GameObject confirmPage = GameObject.Find("PlacementConfirmationPage");
         confirmPage.SetActive(true);
         pointer.GetComponent<ControlInput>().OnTriggerDown.RemoveListener(OnTriggerDown);
+    }
+
+    private void OnPlacementConfirm(Vector3 pos, Quaternion rot)
+    {
+        ;//Place actual arena at location
     }
 
     /// <summary>
