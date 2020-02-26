@@ -8,7 +8,7 @@ public class Goal : MonoBehaviour
     public enum GoalType {Red, Blue}
 
     [SerializeField]
-    private GoalType goalType;
+    private GoalType goalType = GoalType.Red;
     private string scoreKey
     {
         get

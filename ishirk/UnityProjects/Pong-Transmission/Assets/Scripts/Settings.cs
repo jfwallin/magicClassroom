@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+public enum Size { Small, Normal, Large };
+public enum Bounciness { NotVery, Normal, Very };
 
 [CreateAssetMenu(fileName = "SettingsData", menuName = "ScriptableObjects/Settings", order = 1)]
 public class Settings : ScriptableObject
 {
-    //Enums
-    private enum Size { Small, Normal, Large};
-    private enum Bounciness { NotVery, Normal, Very};
+    public event Action<string> OnSettingsChanged;
 
     [SerializeField]
     private int maxScore;
@@ -17,8 +19,8 @@ public class Settings : ScriptableObject
     private Bounciness ballBounciness;
     [SerializeField]
     private PhysicMaterial[] physicsMaterials = new PhysicMaterial[3];
-    
-    //Public Properties
+
+    #region Public Properties
     public int MaxScore { get => maxScore; }
     public Vector3 BallSize
     {
@@ -35,6 +37,7 @@ public class Settings : ScriptableObject
             }
         }
     }
+    public Size BallSizeEnum { get => ballSize; }
     public PhysicMaterial BallBounciness
     {
         get
@@ -50,62 +53,76 @@ public class Settings : ScriptableObject
             }
         }
     }
+    public Bounciness BallBouncinessEnum { get => ballBounciness; }
+    #endregion //Public Properties
 
     private void Awake()
     {
+        //Initializations
         maxScore = 10;
         ballSize = Size.Normal;
         ballBounciness = Bounciness.Normal;
     }
 
     #region Public Functions
+    //All of these functions are called from settings menu button events
+
     public void IncreaseBallSize()
     {
-        if (ballSize == Size.Small)
-            ballSize = Size.Normal;
-        else if (ballSize == Size.Normal)
-            ballSize = Size.Large;
+        //if (ballSize == Size.Small)
+        //    ballSize = Size.Normal;
+        //else if (ballSize == Size.Normal)
+        //    ballSize = Size.Large;
+        if (ballSize != Size.Large)
+            ballSize++;
+        OnSettingsChanged("BallSize");
     }
 
     public void DecreasBallSize()
     {
-        if (ballSize == Size.Large)
-            ballSize = Size.Normal;
-        else if (ballSize == Size.Normal)
-            ballSize = Size.Small;
+        //if (ballSize == Size.Large)
+        //    ballSize = Size.Normal;
+        //else if (ballSize == Size.Normal)
+        //    ballSize = Size.Small;
+        if (ballSize != Size.Small)
+            ballSize--;
+        OnSettingsChanged("BallSize");
     }
 
     public void IncreaseBallBounciness()
     {
-        if (ballBounciness == Bounciness.NotVery)
-            ballBounciness = Bounciness.Normal;
-        else if (ballBounciness == Bounciness.Normal)
-            ballBounciness = Bounciness.Very;
+        //if (ballBounciness == Bounciness.NotVery)
+        //    ballBounciness = Bounciness.Normal;
+        //else if (ballBounciness == Bounciness.Normal)
+        //    ballBounciness = Bounciness.Very;
+        if (ballBounciness != Bounciness.Very)
+            ballBounciness++;
+        OnSettingsChanged("BallBounciness");
     }
 
     public void DecreaseBallBounciness()
     {
-        if (ballBounciness == Bounciness.Very)
-            ballBounciness = Bounciness.Normal;
-        else if (ballBounciness == Bounciness.Normal)
-            ballBounciness = Bounciness.NotVery;
+        //if (ballBounciness == Bounciness.Very)
+        //    ballBounciness = Bounciness.Normal;
+        //else if (ballBounciness == Bounciness.Normal)
+        //    ballBounciness = Bounciness.NotVery;
+        if (ballBounciness != Bounciness.NotVery)
+            ballBounciness--;
+        OnSettingsChanged("BallBounciness");
     }
 
     public void IncreaseMaxScore()
     {
         if (maxScore < 30)
             maxScore++;
+        OnSettingsChanged("MaxScore");
     }
 
     public void DecreaseMaxScore()
     {
         if (maxScore > 5)
             maxScore--;
-    }
-
-    public void ApplySettings()
-    {
-        Debug.Log("ApplyingSettings");
+        OnSettingsChanged("MaxScore");
     }
     #endregion //Public Functions
 }

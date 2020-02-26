@@ -31,7 +31,7 @@ public class ArenaPlacer : MonoBehaviour
     {
         if(placeScript.IsRunning)
         {
-            transform.position = placeScript.AdjustedPosition;
+            transform.position = placeScript.Position;
             transform.rotation = placeScript.Rotation;
         }
     }

@@ -34,7 +34,7 @@ public class SceneControl : MonoBehaviour
     private TransmissionObject arena = null;
     private GameObject placementArena = null;
 
-    private bool gamePaused = false;
+    private bool gamePaused = true;
     private bool gameOwner = false;
     #endregion //Variables
 
@@ -98,7 +98,7 @@ public class SceneControl : MonoBehaviour
         {
             placementArena = Instantiate(placementArenaPrefab);
             placementArena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
-            placementArena.GetComponent<Placement>().Place(pointer.transform, new Vector3(6f,2f,3f), true, false, OnPlacementConfirm);
+            placementArena.GetComponent<Placement>().Place(pointer.transform, new Vector3(3f,2f,2f), true, false, OnPlacementConfirm);
         }
         else
         {
@@ -174,7 +174,16 @@ public class SceneControl : MonoBehaviour
     private void OnTriggerDown()
     {
         //freeze placementArena
-        GameObject confirmPage = GameObject.Find("PlacementConfirmationPage");
+        placementArena.GetComponent<Placement>().Cancel();
+        headposeMenus.SetActive(true);
+        GameObject confirmPage = null;
+        foreach (Transform t in headposeMenus.transform.GetChild(0))
+        {
+            if (t.name == "PlacementConfirmationPage")
+                confirmPage = t.gameObject;
+        }
+        if (!confirmPage)
+            Debug.LogWarning("Could not find placement confirmation page");
         confirmPage.SetActive(true);
         pointer.GetComponent<ControlInput>().OnTriggerDown.RemoveListener(OnTriggerDown);
     }
