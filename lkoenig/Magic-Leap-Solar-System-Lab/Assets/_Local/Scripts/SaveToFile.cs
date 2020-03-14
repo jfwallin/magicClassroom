@@ -22,7 +22,7 @@ public class SaveToFile : MonoBehaviour
     {
         FileStream file = File.Create("testFile.txt");
 
-        file.WriteLine(info);
+        //file.WriteLine(info);
  
         file.Close();
     }
