@@ -9,8 +9,7 @@ using UnityEngine.UI;
  * Just want to see if I can get something working
  * 
  * Might try and rewrite this to use the globabl variables more carefully. Later. 
- * 
- * Also in the long run I'll probably have a set up and a logic script.
+ *
 */
 public class SetUp : MonoBehaviour
 {
