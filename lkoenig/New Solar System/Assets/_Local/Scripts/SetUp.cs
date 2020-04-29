@@ -58,7 +58,7 @@ public class SetUp : MonoBehaviour
     private void HandleTriggerDown()
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey)) {
-            TransmissionObject solarSystem = Transmission.Spawn("Cube test object", endPoint.transform.position , Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
+            TransmissionObject solarSystem = Transmission.Spawn("Sun Earth Moon", endPoint.transform.position , Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
     
             Transmission.SetGlobalBool(GlobalSpawnedKey, true);
             Debug.Log("Spawning system... spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
