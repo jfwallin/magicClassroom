@@ -1,8 +1,0 @@
-<manifest xmlns:ml="magicleap" ml:developer_id="d148f67b-37ff-413a-8c58-46045b9364a5" ml:package="com.defaultcompany.solarsystemlab" ml:version_code="1" ml:version_name="">
-  <application ml:min_api_level="4" ml:sdk_version="1.0" ml:visible_name="Solar System Lab">
-    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Solar System Lab">
-      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
-    </component>
-    <uses-privilege ml:name="LowLatencyLightwear" />
-  </application>
-</manifest>
