@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-//using System.Diagnostics;
+//using System.Diagnostics; //This just confused the system
 using UnityEngine;
 
 public class JSONTest0Logic : MonoBehaviour
@@ -16,11 +16,15 @@ public class JSONTest0Logic : MonoBehaviour
         test.name = "Laurel Koenig";
 
         json = JsonUtility.ToJson(test);
+        Debug.Log(json+"In start");
     }
 
     // Update is called once per frame
     void Update()
     {
+        test.num++;
+        json = JsonUtility.ToJson(test);
+
         Debug.Log(json);
     }
 }
