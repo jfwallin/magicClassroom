@@ -51,7 +51,7 @@ public class JSONTest0Logic : MonoBehaviour
         {
             Debug.Log(line);
             //if ((line = reader.ReadLine()) == "{")
-            {
+            //{
                 jsonPlanetsString += "{";
                 Debug.Log("This should be a }: " + jsonPlanetsString);
                 while ((line = reader.ReadLine()) != "},")
@@ -59,7 +59,7 @@ public class JSONTest0Logic : MonoBehaviour
                     jsonPlanetsString += line;
                 }
                 jsonPlanetsString += "}";
-            }
+            //}
             Debug.Log(jsonPlanetsString);
         }
         Debug.Log("end of read function");
