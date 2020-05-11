@@ -10,7 +10,7 @@ public class JSONTest0Logic : MonoBehaviour
     private Planets planets = new Planets();
 
     private string json;
-    private string planet;
+    //private string planet;
     private static string path = "Assets/_Local/Scripts/test.json";
     private StreamWriter writer; 
 
@@ -47,19 +47,22 @@ public class JSONTest0Logic : MonoBehaviour
         string line;
         string jsonPlanetsString="";
 
+        reader.ReadLine();
         while ((line = reader.ReadLine()) != null)
         {
             Debug.Log(line);
-            //if ((line = reader.ReadLine()) == "{")
-            //{
-                jsonPlanetsString += "{";
-                Debug.Log("This should be a }: " + jsonPlanetsString);
-                while ((line = reader.ReadLine()) != "},")
-                {
-                    jsonPlanetsString += line;
-                }
+            if (line == "},")
+            {
                 jsonPlanetsString += "}";
-            //}
+                planets = JsonUtility.FromJson<Planets>(jsonPlanetsString);
+                Debug.Log("Json version: "+ jsonPlanetsString);
+                jsonPlanetsString = "";
+            }
+            else
+            {
+                jsonPlanetsString += line;
+            }
+           
             Debug.Log(jsonPlanetsString);
         }
         Debug.Log("end of read function");
