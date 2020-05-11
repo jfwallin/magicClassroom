@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-//using System.Diagnostics;
 using System.IO;
 using UnityEngine;
 
 public class JSONTest0Logic : MonoBehaviour
 {
     private JSONTest0 test = new JSONTest0();
+    private Planets planets = new Planets();
+
     private string json;
+    private string planet;
     private static string path = "Assets/_Local/Scripts/test.json";
     private StreamWriter writer; 
 
@@ -24,6 +26,7 @@ public class JSONTest0Logic : MonoBehaviour
         json = JsonUtility.ToJson(test);
         Debug.Log(json+"In start");
 
+        readFile();
         WriteString(json);
     }
 
@@ -34,11 +37,35 @@ public class JSONTest0Logic : MonoBehaviour
         json = JsonUtility.ToJson(test);
 
         WriteString(json);
-        Debug.Log(json);
+        //Debug.Log(json);
     }
 
 
-    /* Interesting things to noate about this meathod:
+    private void readFile()
+    {
+        StreamReader reader = new StreamReader("Assets/_Local/JSON files/planets.json");
+        string line;
+        string jsonPlanetsString="";
+
+        while ((line = reader.ReadLine()) != null)
+        {
+            Debug.Log(line);
+            //if ((line = reader.ReadLine()) == "{")
+            {
+                jsonPlanetsString += "{";
+                Debug.Log("This should be a }: " + jsonPlanetsString);
+                while ((line = reader.ReadLine()) != "},")
+                {
+                    jsonPlanetsString += line;
+                }
+                jsonPlanetsString += "}";
+            }
+            Debug.Log(jsonPlanetsString);
+        }
+        Debug.Log("end of read function");
+    }
+
+    /* Interesting things to note about this meathod:
      * input an seccond option "true" flag causes the file to not overwrite when you create a new instance.
      * example of above: writer = new StreamWriter(path, true);
      * It works.
@@ -47,7 +74,7 @@ public class JSONTest0Logic : MonoBehaviour
     {
         writer.WriteLine(toBeWritten);
 
-        Debug.Log("written string I hope");
+        //Debug.Log("written string I hope");
     }
 
     private void OnDestroy()
