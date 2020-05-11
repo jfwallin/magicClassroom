@@ -9,12 +9,17 @@ public class JSONTest0Logic : MonoBehaviour
 {
     private JSONTest0 test = new JSONTest0();
     private string json;
-    
+    private static string path = "Assets/_Local/Scripts/test.json";
+    private StreamWriter writer; 
+
+
     // Start is called before the first frame update
     void Start()
     {
         test.num = 13;
         test.name = "Laurel Koenig";
+
+        writer = new StreamWriter(path);
 
         json = JsonUtility.ToJson(test);
         Debug.Log(json+"In start");
@@ -28,21 +33,25 @@ public class JSONTest0Logic : MonoBehaviour
         test.num++;
         json = JsonUtility.ToJson(test);
 
+        WriteString(json);
         Debug.Log(json);
     }
 
 
     /* Interesting things to noate about this meathod:
-     * It doesn't overwrite the data already in the file.
+     * input an seccond option "true" flag causes the file to not overwrite when you create a new instance.
+     * example of above: writer = new StreamWriter(path, true);
      * It works.
      */
     private void WriteString(string toBeWritten)
     {
-        string path = "Assets/_Local/Scripts/test.json";
-
-        StreamWriter writer = new StreamWriter(path, true);
         writer.WriteLine(toBeWritten);
-        writer.Close();
+
         Debug.Log("written string I hope");
+    }
+
+    private void OnDestroy()
+    {
+        writer.Close();
     }
 }
