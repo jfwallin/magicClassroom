@@ -7,7 +7,7 @@ using UnityEngine;
 public class JSONTest0Logic : MonoBehaviour
 {
     private JSONTest0 test = new JSONTest0();
-    private Planets planets = new Planets();
+    private Planets planets;// = new Planets();
 
     private string json;
     //private string planet;
