@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
+using System.Runtime.Versioning;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
@@ -30,18 +31,45 @@ public class JSONTest1Logic : MonoBehaviour
 
         myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
         myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
+        myObject.name = info.id; //renames the gameobject in the hierarchy so it should be easier to find by other scripts
+
+        Renderer rend = myObject.GetComponent<Renderer>(); //This grabs the renderer to change the material
+        rend.material = Resources.Load<Material>(info.color); //This assigns the material
+
+        myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale);
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
      * It can't be in a subfolder of resources
-     * but the interwebs says you can have more than one resources files (untested)
+     * but you can have more than one resources file
      */
 
 
     // Update is called once per frame
     void Update()
     {
+        bool grow = true;
+        Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
+        Vector3 scaleDown = new Vector3(-0.1f, -0.1f, -0.1f);
 
+        if (grow == true)
+        {
+            myObject.transform.localScale += scaleChange;
+            if (myObject.transform.localScale.x >= 1f)
+            {
+                grow = false;
+                Debug.Log("Should be biiger than 1. Grow should be faulse.: " + grow);
+            }
+            Debug.Log(myObject.transform.localScale.x >= 1f);
+
+        }
+        else
+        {
+            Debug.Log("Do we ever even get here");
+            myObject.transform.localScale += scaleDown;
+            if (myObject.transform.localScale.x <= 0.1f) grow = true;
+        }
+        
     }
 
     private void getInfo()
