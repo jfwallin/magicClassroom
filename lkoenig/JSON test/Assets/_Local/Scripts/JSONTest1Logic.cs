@@ -16,8 +16,7 @@ using UnityEngine;
 public class JSONTest1Logic : MonoBehaviour
 {
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
-    //private GameObject gameObject;
-   // private GameObject dynamic;
+    //public GameObject myPrefab;
 
 
     // Start is called before the first frame update
@@ -25,11 +24,8 @@ public class JSONTest1Logic : MonoBehaviour
     {
         //makeJsonFile(); //comment in when you want to make a new json filec
         getInfo();
-        //dynamic = GameObject.Find("[_DYNAMIC]");
 
-        //gameObject = (GameObject)
         Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
-        //gameObject.transform.parent = dynamic.transform; 
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
