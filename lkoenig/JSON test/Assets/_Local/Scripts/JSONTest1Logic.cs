@@ -19,6 +19,7 @@ public class JSONTest1Logic : MonoBehaviour
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
     private GameObject myObject;
     private GameObject _dynamic;
+    private bool grow = true;
 
 
     // Start is called before the first frame update
@@ -48,7 +49,6 @@ public class JSONTest1Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool grow = true;
         Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
         Vector3 scaleDown = new Vector3(-0.1f, -0.1f, -0.1f);
 
