@@ -27,17 +27,10 @@ public class JSONTest1Logic : MonoBehaviour
     {
         _dynamic = GameObject.Find("[_DYNAMIC]");
 
+        MakeObject("Sphere");
+        MakeObject("Cube");
         //makeJsonFile(); //comment in when you want to make a new json filec
-        getInfo(); //serializes the json data and makes it an obect that I can access. 
-
-        myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
-        myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
-        myObject.name = info.id; //renames the gameobject in the hierarchy so it should be easier to find by other scripts
-
-        Renderer rend = myObject.GetComponent<Renderer>(); //This grabs the renderer to change the material
-        rend.material = Resources.Load<Material>(info.color); //This assigns the material
-
-        myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale);
+        
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
@@ -68,9 +61,9 @@ public class JSONTest1Logic : MonoBehaviour
         
     }
 
-    private void getInfo()
+    private void getInfo(string path)
     {
-        string path = "Assets/_Local/JSON files/SphereTest0.json"; //Again, this is hardcoded where it will be general later
+        //string path = "Assets/_Local/JSON files/SphereTest0.json"; //Again, this is hardcoded where it will be general later
         StreamReader reader = new StreamReader(path);
         string line;
 
@@ -79,6 +72,20 @@ public class JSONTest1Logic : MonoBehaviour
         info = JsonUtility.FromJson<JSONTest1>(line);
 
         Debug.Log("id: " + info.id);
+    }
+
+    private void MakeObject(string typeName)
+    {
+        getInfo("Assets/_Local/JSON files/" + typeName+"Test0.json"); //serializes the json data and makes it an obect that I can access. 
+
+        myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
+        myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
+        myObject.name = info.id; //renames the gameobject in the hierarchy so it should be easier to find by other scripts
+
+        Renderer rend = myObject.GetComponent<Renderer>(); //This grabs the renderer to change the material
+        rend.material = Resources.Load<Material>(info.color); //This assigns the material
+
+        myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale);
     }
 
     //This is hardcoded for this test but the idea should be able to be moved and made more general
