@@ -17,7 +17,6 @@ using UnityEngine;
 public class JSONTest1Logic : MonoBehaviour
 {
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
-    private GameObject myObject;
     private GameObject _dynamic;
     private bool grow = true;
 
@@ -43,11 +42,11 @@ public class JSONTest1Logic : MonoBehaviour
     void Update()
     {
         Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
-
+        
         if (grow == true)
         {
-            myObject.transform.localScale += scaleChange;
-            if (myObject.transform.localScale.x >= 1f)
+            _dynamic.transform.localScale += scaleChange;
+            if (_dynamic.transform.localScale.x >= 1f)
             {
                 grow = false;
             }
@@ -55,8 +54,8 @@ public class JSONTest1Logic : MonoBehaviour
         }
         else
         {
-            myObject.transform.localScale -= scaleChange;
-            if (myObject.transform.localScale.x <= 0.1f) grow = true;
+            _dynamic.transform.localScale -= scaleChange;
+            if (_dynamic.transform.localScale.x <= 0.1f) grow = true;
         }
         
     }
@@ -76,6 +75,7 @@ public class JSONTest1Logic : MonoBehaviour
 
     private void MakeObject(string typeName)
     {
+        GameObject myObject;
         getInfo("Assets/_Local/JSON files/" + typeName+"Test0.json"); //serializes the json data and makes it an obect that I can access. 
 
         myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
