@@ -70,7 +70,7 @@ public class JSONTest1Logic : MonoBehaviour
 
     private void getInfo()
     {
-        string path = "Assets/_Local/JSON files/CubeTest0.json"; //Again, this is hardcoded where it will be general later
+        string path = "Assets/_Local/JSON files/SphereTest0.json"; //Again, this is hardcoded where it will be general later
         StreamReader reader = new StreamReader(path);
         string line;
 
