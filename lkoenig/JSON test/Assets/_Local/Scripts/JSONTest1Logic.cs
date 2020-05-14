@@ -86,16 +86,16 @@ public class JSONTest1Logic : MonoBehaviour
     {
         JSONTest1 test = new JSONTest1();
         string json;
-        string path = "Assets/_Local/JSON files/CubeTest0.json";
+        string path = "Assets/_Local/JSON files/SphereTest0.json";
 
         StreamWriter writer = new StreamWriter(path);
 
-        test.id = "Cube";
-        test.xPosition = 1f;
+        test.id = "Sphere";
+        test.xPosition = 0f;
         test.yPosition = 1f;
-        test.zPosition = -1f;
-        test.color = "Blue";
-        test.scale = 0.25f;
+        test.zPosition = -2f;
+        test.color = "Red";
+        test.scale = 0.4f;
 
         json = JsonUtility.ToJson(test);
         Debug.Log("json file is: " + json);
