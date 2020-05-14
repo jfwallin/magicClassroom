@@ -16,16 +16,20 @@ using UnityEngine;
 public class JSONTest1Logic : MonoBehaviour
 {
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
-    //public GameObject myPrefab;
+    private GameObject myObject;
+    private GameObject _dynamic;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //makeJsonFile(); //comment in when you want to make a new json filec
-        getInfo();
+        _dynamic = GameObject.Find("[_DYNAMIC]");
 
-        Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
+        //makeJsonFile(); //comment in when you want to make a new json filec
+        getInfo(); //serializes the json data and makes it an obect that I can access. 
+
+        myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
+        myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
