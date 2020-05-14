@@ -55,13 +55,7 @@ public class DevMenuTools
     private static void OnHandlePeerFound()
     {
         Debug.Log("Faking finding a peer");
-        ConnectingGUIManager manager = GameObject.Find("ConnectingPage")?.GetComponent<ConnectingGUIManager>();
-        if (manager != null)
-        {
-            manager.handleOnPeerFound("somePeer");
+        GameObject.Find("SceneControl").GetComponent<SceneControl>().OnJoinGame("null");
             Debug.Log("Peer Faked");
-        }
-        else
-            Debug.LogWarning("Could not find ConnectingGUIManager");
     }
 }

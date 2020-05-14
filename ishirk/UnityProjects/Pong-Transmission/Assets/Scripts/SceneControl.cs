@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.XR.MagicLeap;
@@ -38,6 +39,9 @@ public class SceneControl : MonoBehaviour
     private bool gameOwner = false;
     #endregion //Variables
 
+    //Called when change in connection status occurs, passing current connection status
+    public event Action<bool> ConnectionEvent;
+
     #region Unity Methods
     //Reference checking
     private void Awake()
@@ -66,6 +70,7 @@ public class SceneControl : MonoBehaviour
     #endregion //Unity Methods
 
     #region Public Functions
+    //Move this to the ball script
     public void ApplySettings()
     {
         ball.transform.localScale = gameSettings.BallSize;
@@ -78,9 +83,7 @@ public class SceneControl : MonoBehaviour
     public void TryJoinGame()
     {
         transmissionComponent.gameObject.SetActive(true);
-        transmissionComponent.OnPeerFound.AddListener(OnJoinGame);
-        if (Transmission.Peers.Length > 0)
-            OnJoinGame(Transmission.Peers[0]);
+        Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
     }
 
     /// <summary>
@@ -88,37 +91,43 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void CancelJoinGame()
     {
-        transmissionComponent.OnPeerFound.RemoveListener(OnJoinGame);
         transmissionComponent.gameObject.SetActive(false);
+        Transmission.Instance.OnPeerFound.RemoveListener(OnJoinGame);
     }
 
+    /// <summary>
+    /// Spawns stand-in arena to place, manages confirmation and cancellation
+    /// </summary>
     public void StartPlacement()
     {
+        //If the placement arena hasn't already been created, set it up
         if(!placementArena)
         {
             placementArena = Instantiate(placementArenaPrefab);
             placementArena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
-            placementArena.GetComponent<Placement>().Place(pointer.transform, new Vector3(3f,2f,2f), true, false, OnPlacementConfirm);
         }
-        else
-        {
-            //check and unfreeze arena
-        }
-        pointer.GetComponent<ControlInput>().OnTriggerDown.AddListener(OnTriggerDown);
-    }
-
-    public void ConfirmPlacement()
-    {
-        Transform arenaTransform = placementArena.transform;
-        GameObject.Destroy(placementArena);
-        transmissionComponent.gameObject.SetActive(true);
-        arena = Transmission.Spawn(arenaPrefabPath, arenaTransform.position, arenaTransform.rotation, arenaTransform.localScale);
-    }
-
-    public void ReplaceArena()
-    {
-        arena.Despawn();
-        transmissionComponent.gameObject.SetActive(false);
+        //Cache references
+        Placement arenaPlc = placementArena.GetComponent<Placement>();
+        ControlInput cIScript = pointer.GetComponent<ControlInput>();
+        //Start the placement session
+        arenaPlc.Place(pointer.transform, new Vector3(3f, 2f, 2f), true, false, OnPlacementConfirm);
+        //When the user pulls the trigger, attempt placement confirmation.
+        cIScript.OnTriggerDown.AddListener(() => { 
+            arenaPlc.Confirm();
+            if(!arenaPlc.IsRunning)
+            {
+                cIScript.OnTriggerDown.RemoveAllListeners();
+                cIScript.OnHomeButtonTap.RemoveAllListeners();
+            }
+        });
+        //If home is pressed, remove arena and return to placement instructions
+        cIScript.OnHomeButtonTap.AddListener(() => {
+            GameObject.Destroy(placementArena);
+            headposeMenus.SetActive(true);
+            headposeMenus.transform.Find("PlacementInstructionsPage")?.gameObject.SetActive(true);
+            cIScript.OnTriggerDown.RemoveAllListeners();
+            cIScript.OnHomeButtonTap.RemoveAllListeners();
+        });
     }
 
     public void StartGame()
@@ -159,38 +168,32 @@ public class SceneControl : MonoBehaviour
     /// Called when a peer is succesfully found
     /// </summary>
     /// <param name="peerLabel"></param>
-    private void OnJoinGame(string peerLabel)
+    public void OnJoinGame(string peerLabel)
     {
-        //Enable InGameMenuse and register togglePauseMenu to HomeTap event
+        //Notify other scripts of connection
+        ConnectionEvent.Invoke(true);
+        //Disable start menus
+        headposeMenus.transform.GetChild(0).gameObject.SetActive(false);
+        //Enable in game menus, show confirmation screen
         headposeMenus.transform.GetChild(1).gameObject.SetActive(true);
-        pointer.GetComponent<ControlInput>().OnHomeButtonTap.AddListener(TogglePauseMenu);
-        //Spawn and initialize paddle
-        paddle = Transmission.Spawn(paddlePrefabPath, pointer.Origin, pointer.transform.rotation, Vector3.one);
-        paddle.ownershipLocked = true;
-        paddle.transform.SetParent(pointer.transform); //This is a non-physics way of achieveing movement. a physics joint may work better in the future
-        paddle.motionSource = pointer.transform;
-    }
 
-    private void OnTriggerDown()
-    {
-        //freeze placementArena
-        placementArena.GetComponent<Placement>().Cancel();
-        headposeMenus.SetActive(true);
-        GameObject confirmPage = null;
-        foreach (Transform t in headposeMenus.transform.GetChild(0))
-        {
-            if (t.name == "PlacementConfirmationPage")
-                confirmPage = t.gameObject;
-        }
-        if (!confirmPage)
-            Debug.LogWarning("Could not find placement confirmation page");
-        confirmPage.SetActive(true);
-        pointer.GetComponent<ControlInput>().OnTriggerDown.RemoveListener(OnTriggerDown);
+        ////Enable InGameMenuse and register togglePauseMenu to HomeTap event
+        //headposeMenus.transform.GetChild(1).gameObject.SetActive(true);
+        //pointer.GetComponent<ControlInput>().OnHomeButtonTap.AddListener(TogglePauseMenu);
+        ////Spawn and initialize paddle
+        //paddle = Transmission.Spawn(paddlePrefabPath, pointer.Origin, pointer.transform.rotation, Vector3.one);
+        //paddle.ownershipLocked = true;
+        //paddle.transform.SetParent(pointer.transform); //This is a non-physics way of achieveing movement. a physics joint may work better in the future
+        //paddle.motionSource = pointer.transform;
     }
 
     private void OnPlacementConfirm(Vector3 pos, Quaternion rot)
     {
-        ;//Place actual arena at location
+        headposeMenus.SetActive(true);
+        GameObject confirmPage = headposeMenus.transform.Find("PlacementConfirmationPage")?.gameObject;
+        if (!confirmPage)
+            Debug.LogWarning("Could not find placement confirmation page");
+        confirmPage.SetActive(true);
     }
 
     /// <summary>

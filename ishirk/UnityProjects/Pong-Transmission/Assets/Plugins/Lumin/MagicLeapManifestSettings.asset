@@ -25,7 +25,7 @@ MonoBehaviour:
   - name: ConnectBackgroundMusicService
     enabled: 0
   - name: ControllerPose
-    enabled: 0
+    enabled: 1
   - name: DrmCertificates
     enabled: 0
   - name: GesturesConfig
@@ -33,13 +33,13 @@ MonoBehaviour:
   - name: GesturesSubscribe
     enabled: 0
   - name: HandMesh
-    enabled: 1
+    enabled: 0
   - name: IdentityRead
     enabled: 0
   - name: InAppPurchase
     enabled: 0
   - name: Internet
-    enabled: 0
+    enabled: 1
   - name: MusicService
     enabled: 0
   - name: NormalNotificationsUsage
@@ -47,7 +47,7 @@ MonoBehaviour:
   - name: Occlusion
     enabled: 0
   - name: PcfRead
-    enabled: 0
+    enabled: 1
   - name: PowerInfo
     enabled: 0
   - name: RegisterBackgroundMusicService
@@ -59,7 +59,7 @@ MonoBehaviour:
   - name: WifiStatusRead
     enabled: 0
   - name: WorldReconstruction
-    enabled: 0
+    enabled: 1
   - name: AddressBookRead
     enabled: 0
   - name: AddressBookWrite
@@ -77,4 +77,30 @@ MonoBehaviour:
   - name: ComputerVision
     enabled: 0
   - name: VoiceInput
+    enabled: 0
+  - name: AddressBookBasicAccess
+    enabled: 0
+  - name: BluetoothAdapterExternalApp
+    enabled: 0
+  - name: BluetoothAdapterUser
+    enabled: 0
+  - name: BluetoothGattWrite
+    enabled: 0
+  - name: ConnectionAccess
+    enabled: 0
+  - name: DesktopCompanion
+    enabled: 0
+  - name: Expressions
+    enabled: 0
+  - name: ConnectionAudioCaptureStreaming
+    enabled: 0
+  - name: ConnectionVideoCaptureStreaming
+    enabled: 0
+  - name: SocialConnectionsInvitesAccess
+    enabled: 0
+  - name: SocialConnectionsSelectAccess
+    enabled: 0
+  - name: ObjectData
+    enabled: 0
+  - name: FineLocation
     enabled: 0

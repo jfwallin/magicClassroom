@@ -35,9 +35,9 @@ public class SettingsUIScript : MonoBehaviour
     private void Start()
     {
         //Initialization
-        scoreText.text = settingsObj.MaxScore.ToString();
-        bouncinessText.text = settingsObj.BallBouncinessEnum.ToString();
-        sizeText.text = settingsObj.BallSizeEnum.ToString();
+        scoreText.text = "10";
+        bouncinessText.text = "Normal";
+        sizeText.text = "Normal";
     }
 
     private void OnDisable()
@@ -50,18 +50,19 @@ public class SettingsUIScript : MonoBehaviour
     /// Reacts to settings having changed, updating menu text
     /// </summary>
     /// <param name="setting">name of setting changed</param>
-    private void handleSettingsChange(string setting)
+    /// <param name="value">new value of changed setting</param>
+    private void handleSettingsChange(string setting, string value)
     {
         switch(setting)
         {
             case "BallSize":
-                sizeText.text = settingsObj.BallSizeEnum.ToString();
+                sizeText.text = value;
                 break;
             case "BallBounciness":
-                bouncinessText.text = settingsObj.BallBouncinessEnum.ToString();
+                bouncinessText.text = value;
                 break;
             case "MaxScore":
-                scoreText.text = settingsObj.MaxScore.ToString();
+                scoreText.text = value;
                 break;
             default:
                 break;

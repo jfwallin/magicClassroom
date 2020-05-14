@@ -9,7 +9,7 @@ public enum Bounciness { NotVery, Normal, Very };
 [CreateAssetMenu(fileName = "SettingsData", menuName = "ScriptableObjects/Settings", order = 1)]
 public class Settings : ScriptableObject
 {
-    public event Action<string> OnSettingsChanged;
+    public event Action<string, string> OnSettingsChanged;
 
     [SerializeField]
     private int maxScore;
@@ -37,7 +37,6 @@ public class Settings : ScriptableObject
             }
         }
     }
-    public Size BallSizeEnum { get => ballSize; }
     public PhysicMaterial BallBounciness
     {
         get
@@ -45,15 +44,14 @@ public class Settings : ScriptableObject
             switch (ballBounciness)
             {
                 case Bounciness.NotVery:
-                    return physicsMaterials[1];
+                    return physicsMaterials[0];
                 case Bounciness.Very:
-                    return physicsMaterials[3];
-                default:
                     return physicsMaterials[2];
+                default:
+                    return physicsMaterials[1];
             }
         }
     }
-    public Bounciness BallBouncinessEnum { get => ballBounciness; }
     #endregion //Public Properties
 
     private void Awake()
@@ -75,7 +73,7 @@ public class Settings : ScriptableObject
         //    ballSize = Size.Large;
         if (ballSize != Size.Large)
             ballSize++;
-        OnSettingsChanged("BallSize");
+        OnSettingsChanged("BallSize", ballSize.ToString());
     }
 
     public void DecreasBallSize()
@@ -86,7 +84,7 @@ public class Settings : ScriptableObject
         //    ballSize = Size.Small;
         if (ballSize != Size.Small)
             ballSize--;
-        OnSettingsChanged("BallSize");
+        OnSettingsChanged("BallSize", ballSize.ToString());
     }
 
     public void IncreaseBallBounciness()
@@ -97,7 +95,7 @@ public class Settings : ScriptableObject
         //    ballBounciness = Bounciness.Very;
         if (ballBounciness != Bounciness.Very)
             ballBounciness++;
-        OnSettingsChanged("BallBounciness");
+        OnSettingsChanged("BallBounciness", ballBounciness.ToString());
     }
 
     public void DecreaseBallBounciness()
@@ -108,21 +106,21 @@ public class Settings : ScriptableObject
         //    ballBounciness = Bounciness.NotVery;
         if (ballBounciness != Bounciness.NotVery)
             ballBounciness--;
-        OnSettingsChanged("BallBounciness");
+        OnSettingsChanged("BallBounciness", ballBounciness.ToString());
     }
 
     public void IncreaseMaxScore()
     {
-        if (maxScore < 30)
+        if (maxScore < 20)
             maxScore++;
-        OnSettingsChanged("MaxScore");
+        OnSettingsChanged("MaxScore", maxScore.ToString());
     }
 
     public void DecreaseMaxScore()
     {
         if (maxScore > 5)
             maxScore--;
-        OnSettingsChanged("MaxScore");
+        OnSettingsChanged("MaxScore", maxScore.ToString());
     }
     #endregion //Public Functions
 }
