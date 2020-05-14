@@ -50,7 +50,6 @@ public class JSONTest1Logic : MonoBehaviour
     void Update()
     {
         Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
-        Vector3 scaleDown = new Vector3(-0.1f, -0.1f, -0.1f);
 
         if (grow == true)
         {
@@ -58,15 +57,12 @@ public class JSONTest1Logic : MonoBehaviour
             if (myObject.transform.localScale.x >= 1f)
             {
                 grow = false;
-                Debug.Log("Should be biiger than 1. Grow should be faulse.: " + grow);
             }
-            Debug.Log(myObject.transform.localScale.x >= 1f);
 
         }
         else
         {
-            Debug.Log("Do we ever even get here");
-            myObject.transform.localScale += scaleDown;
+            myObject.transform.localScale -= scaleChange;
             if (myObject.transform.localScale.x <= 0.1f) grow = true;
         }
         
