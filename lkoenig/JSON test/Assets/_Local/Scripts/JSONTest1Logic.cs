@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
@@ -17,8 +18,9 @@ using UnityEngine;
 public class JSONTest1Logic : MonoBehaviour
 {
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
-    private GameObject _dynamic;
-    private bool grow = true;
+    private GameObject _dynamic; //This is grabing this "folder" so I can place the objects after I make them
+    private GameObject gameObject0;
+    private GameObject gameObject1;
 
 
     // Start is called before the first frame update
@@ -26,10 +28,12 @@ public class JSONTest1Logic : MonoBehaviour
     {
         _dynamic = GameObject.Find("[_DYNAMIC]");
 
-        MakeObject("Sphere");
-        MakeObject("Cube");
+        gameObject0 = MakeObject("Sphere");
+        gameObject1 = MakeObject("Cube");
         //makeJsonFile(); //comment in when you want to make a new json filec
-        
+
+        pulse(gameObject0, 0.1f, 1f);
+        pulse(gameObject1, 0.1f, 1.5f);
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
@@ -41,22 +45,19 @@ public class JSONTest1Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
         
-        if (grow == true)
-        {
-            _dynamic.transform.localScale += scaleChange;
-            if (_dynamic.transform.localScale.x >= 1f)
-            {
-                grow = false;
-            }
+    }
 
-        }
-        else
-        {
-            _dynamic.transform.localScale -= scaleChange;
-            if (_dynamic.transform.localScale.x <= 0.1f) grow = true;
-        }
+    //This function is just for fun 
+    private void pulse(GameObject myObject, float min, float max)
+    {
+        Pulse pp;
+
+        myObject.AddComponent<Pulse>();
+        pp = myObject.GetComponent < Pulse>();
+
+        pp.min = min;
+        pp.max = max;
         
     }
 
@@ -73,7 +74,7 @@ public class JSONTest1Logic : MonoBehaviour
         Debug.Log("id: " + info.id);
     }
 
-    private void MakeObject(string typeName)
+    private GameObject MakeObject(string typeName)
     {
         GameObject myObject;
         getInfo("Assets/_Local/JSON files/" + typeName+"Test0.json"); //serializes the json data and makes it an obect that I can access. 
@@ -85,7 +86,9 @@ public class JSONTest1Logic : MonoBehaviour
         Renderer rend = myObject.GetComponent<Renderer>(); //This grabs the renderer to change the material
         rend.material = Resources.Load<Material>(info.color); //This assigns the material
 
-        myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale);
+        myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale); //Sets the scale based on in info given in the JSON
+
+        return (myObject);
     }
 
     //This is hardcoded for this test but the idea should be able to be moved and made more general
