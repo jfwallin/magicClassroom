@@ -30,10 +30,6 @@ public class JSONTest1Logic : MonoBehaviour
 
         gameObject0 = MakeObject("Sphere");
         gameObject1 = MakeObject("Cube");
-        //makeJsonFile(); //comment in when you want to make a new json filec
-
-        pulse(gameObject0, 0.1f, 1f);
-        pulse(gameObject1, 0.1f, 1.5f);
     }
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
@@ -48,35 +44,21 @@ public class JSONTest1Logic : MonoBehaviour
         
     }
 
-    //This function is just for fun 
-    private void pulse(GameObject myObject, float min, float max)
-    {
-        Pulse pp;
-
-        myObject.AddComponent<Pulse>();
-        pp = myObject.GetComponent < Pulse>();
-
-        pp.min = min;
-        pp.max = max;
-        
-    }
-
     private void getInfo(string path)
     {
-        //string path = "Assets/_Local/JSON files/SphereTest0.json"; //Again, this is hardcoded where it will be general later
-        StreamReader reader = new StreamReader(path);
-        string line;
+        StreamReader reader = new StreamReader(path);//Makes a reader for the file at path
+        string line; //makes a variable to hold the lines when we grab them
 
-        line = reader.ReadLine();
-        Debug.Log("In reader. Line reads as: " + line);
-        info = JsonUtility.FromJson<JSONTest1>(line);
+        line = reader.ReadLine(); //grabs line and puts it in line variable
+        info = JsonUtility.FromJson<JSONTest1>(line); //deserializes the line grabbed into a json file
 
-        Debug.Log("id: " + info.id);
+        //note that this will be more omplicated if the file has more than one json in it or more than one line in general.
     }
 
     private GameObject MakeObject(string typeName)
     {
         GameObject myObject;
+        Pulse pp; //variable for dealing with the pulse script that will be added
         getInfo("Assets/_Local/JSON files/" + typeName+"Test0.json"); //serializes the json data and makes it an obect that I can access. 
 
         myObject = (GameObject)Instantiate(Resources.Load(info.id), new Vector3(info.xPosition, info.yPosition, info.zPosition), Quaternion.identity);
@@ -88,31 +70,12 @@ public class JSONTest1Logic : MonoBehaviour
 
         myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale); //Sets the scale based on in info given in the JSON
 
+        myObject.AddComponent<Pulse>(); //Add the script to the object
+        pp = myObject.GetComponent<Pulse>(); //get the script so you can assign variables
+        pp.min = info.min; //assing the min
+        pp.max = info.max; //assign the max
+
         return (myObject);
     }
-
-    //This is hardcoded for this test but the idea should be able to be moved and made more general
-    private void makeJsonFile()
-    {
-        JSONTest1 test = new JSONTest1();
-        string json;
-        string path = "Assets/_Local/JSON files/SphereTest0.json";
-
-        StreamWriter writer = new StreamWriter(path);
-
-        test.id = "Sphere";
-        test.xPosition = 0f;
-        test.yPosition = 1f;
-        test.zPosition = -2f;
-        test.color = "Red";
-        test.scale = 0.4f;
-
-        json = JsonUtility.ToJson(test);
-        Debug.Log("json file is: " + json);
-        writer.WriteLine(json);
-
-        writer.Close();
-    }
-
 
 }

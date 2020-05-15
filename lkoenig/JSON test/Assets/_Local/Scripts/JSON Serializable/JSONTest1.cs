@@ -11,4 +11,7 @@ public class JSONTest1
     public float zPosition;
     public string color;
     public float scale;
+    public string script;
+    public float min;
+    public float max;
 }

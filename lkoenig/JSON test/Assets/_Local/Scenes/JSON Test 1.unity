@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429730899}
   - component: {fileID: 429730901}
+  - component: {fileID: 429730900}
   m_Layer: 0
   m_Name: Logic
   m_TagString: Untagged
@@ -215,6 +216,18 @@ Transform:
   m_Father: {fileID: 1687923660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429730900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429730898}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009293df8249b444abf7c317fe9ca138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &429730901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,8 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420a79fd5643d19408bd4b305157f16f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPrefab: {fileID: 9024848094166170850, guid: 9b7102bf081761443977af9c30af7ff4,
-    type: 3}
 --- !u!1 &1114127903
 GameObject:
   m_ObjectHideFlags: 0

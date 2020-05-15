@@ -1,1 +1,1 @@
-{"id":"Sphere","xPosition":-1.0,"yPosition":1.0,"zPosition":2.0,"color":"Red","scale":0.4000000059604645}
+{"id":"Sphere","xPosition":-1.0,"yPosition":1.0,"zPosition":2.0,"color":"Red","scale":0.5,"script":"Pulse","min":0.10000000149011612,"max":1.0}
