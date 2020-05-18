@@ -169,6 +169,7 @@ MonoBehaviour:
   transmissionComponent: {fileID: 1778463168}
   pointer: {fileID: 854123517}
   headposeMenus: {fileID: 1983722579}
+  pauseMenu: {fileID: 2063894311}
 --- !u!1 &88191374
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +392,7 @@ GameObject:
   - component: {fileID: 123010538}
   - component: {fileID: 123010537}
   m_Layer: 5
-  m_Name: CloseButton
+  m_Name: ReadyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,10 +413,10 @@ RectTransform:
   m_Father: {fileID: 1596787818}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 60, y: 60}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 45}
+  m_SizeDelta: {x: 258.75, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123010537
 MonoBehaviour:
@@ -460,7 +461,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2063894311}
+      - m_Target: {fileID: 53729707}
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1021725380}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -471,7 +483,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1596787817}
+      - m_Target: {fileID: 123010535}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -495,13 +507,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3dca1a94df19794583063269b6b30ce, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2967,8 +2979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 94.1}
-  m_SizeDelta: {x: 376.3, y: 159.32}
+  m_AnchoredPosition: {x: 0, y: 128}
+  m_SizeDelta: {x: 376.3, y: 78.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494273563
 MonoBehaviour:
@@ -2995,14 +3007,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 49
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Use your Paddles to hit the ball into your opponent's goal zone! First person
-    to the maximum score wins!
+  m_Text: Press Ready when the arena and ball are visible
 --- !u!222 &494273564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3913,6 +3924,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 53729707}
+        m_MethodName: CancelCreateGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1462724924}
         m_MethodName: SetActive
         m_Mode: 6
@@ -5272,10 +5294,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 53729707}
         m_MethodName: TryJoinGame
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 698896003}
-          m_ObjectArgumentAssemblyTypeName: ConnectingGUIManager, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5903,16 +5925,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9c9078c06443df049a2830962f9dd5ef, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -5921,7 +5943,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Ready
 --- !u!222 &874374066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6735,6 +6757,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009438804}
   m_CullTransparentMesh: 0
+--- !u!1 &1021725380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021725381}
+  - component: {fileID: 1021725383}
+  - component: {fileID: 1021725382}
+  m_Layer: 5
+  m_Name: WaitingText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1021725381
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021725380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1596787818}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 45}
+  m_SizeDelta: {x: 376.3, y: 78.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1021725382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021725380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: dd641686811944448900a6e8069055c5, type: 3}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 49
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.2
+  m_Text: 'Waiting for the other player to confirm...
+
+    \'
+--- !u!222 &1021725383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021725380}
+  m_CullTransparentMesh: 0
 --- !u!1 &1023902595
 GameObject:
   m_ObjectHideFlags: 0
@@ -6818,11 +6919,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 53729707}
-        m_MethodName: TryJoinGame
-        m_Mode: 2
+        m_MethodName: CreateGame
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1037283608}
-          m_ObjectArgumentAssemblyTypeName: ConnectingGUIManager, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6939,7 +7040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fc6bf109b834c40805e490648b92b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sCon: {fileID: 0}
+  sCon: {fileID: 53729707}
 --- !u!114 &1037283609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9648,7 +9749,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 300, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492014790
 MonoBehaviour:
@@ -9681,7 +9782,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: How to Play
+  m_Text: Are You Ready?
 --- !u!222 &1492014791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10313,6 +10414,7 @@ GameObject:
   - component: {fileID: 1596787818}
   - component: {fileID: 1596787820}
   - component: {fileID: 1596787819}
+  - component: {fileID: 1596787821}
   m_Layer: 5
   m_Name: StartConfirmationPage
   m_TagString: Untagged
@@ -10334,6 +10436,7 @@ RectTransform:
   - {fileID: 1492014789}
   - {fileID: 494273562}
   - {fileID: 123010536}
+  - {fileID: 1021725381}
   m_Father: {fileID: 594829347}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10378,6 +10481,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596787817}
   m_CullTransparentMesh: 0
+--- !u!114 &1596787821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596787817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6493c4b5ac7b1524786cc64f1225eb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confirmButton: {fileID: 123010535}
+  waitingText: {fileID: 1021725380}
 --- !u!1 &1597256170
 GameObject:
   m_ObjectHideFlags: 0
@@ -14103,7 +14220,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2074559378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1462724924}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 135318506}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2074559378
 MonoBehaviour:
   m_ObjectHideFlags: 0

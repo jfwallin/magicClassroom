@@ -110,8 +110,6 @@ GameObject:
   - component: {fileID: 7464882690069219891}
   - component: {fileID: 3782851458921798661}
   - component: {fileID: 2637879270483574730}
-  - component: {fileID: 2459199199347805905}
-  - component: {fileID: 7922934049811932538}
   m_Layer: 0
   m_Name: Goal2
   m_TagString: Untagged
@@ -179,32 +177,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2459199199347805905
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299186333004982265}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7922934049811932538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299186333004982265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef6f03631f3b524d856a9178c270a7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goalType: 1
 --- !u!1 &2920634265454193927
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,63 +254,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!1 &5080357084387914901
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6091041472523841443}
-  - component: {fileID: 5392745255836921722}
-  - component: {fileID: 2465212112986524890}
-  m_Layer: 0
-  m_Name: BallBounds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6091041472523841443
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080357084387914901}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9169953135576682320}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5392745255836921722
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080357084387914901}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7, y: 3, z: 5}
-  m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &2465212112986524890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5080357084387914901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91e18700202fb59458e3bae331c34e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5607059787451598245
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +420,7 @@ GameObject:
   - component: {fileID: 9169953135576682320}
   - component: {fileID: 1620173156886844765}
   m_Layer: 0
-  m_Name: Arena
+  m_Name: TransmittedArena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -526,7 +441,6 @@ Transform:
   - {fileID: 6354438270493087921}
   - {fileID: 7464882690069219891}
   - {fileID: 860472845282836363}
-  - {fileID: 6091041472523841443}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -545,8 +459,7 @@ MonoBehaviour:
   motionSource: {fileID: 0}
   smoothTime: 0.04
   sendFrameRate: 24
-  remotePrefab: {fileID: 1620173156886844765, guid: 460660db5b71f5b4eb610b10e2069139,
-    type: 3}
+  remotePrefab: {fileID: 0}
   ownershipLocked: 1
   resourceFileName: 
   creator: 
@@ -611,8 +524,6 @@ GameObject:
   - component: {fileID: 6354438270493087921}
   - component: {fileID: 7982343511507844113}
   - component: {fileID: 388021828365148417}
-  - component: {fileID: 6164174766569800670}
-  - component: {fileID: 3963742293503344292}
   m_Layer: 0
   m_Name: Goal1
   m_TagString: Untagged
@@ -680,32 +591,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6164174766569800670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6905216170190060861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3963742293503344292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6905216170190060861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef6f03631f3b524d856a9178c270a7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goalType: 0
 --- !u!1 &6945232023886629092
 GameObject:
   m_ObjectHideFlags: 0

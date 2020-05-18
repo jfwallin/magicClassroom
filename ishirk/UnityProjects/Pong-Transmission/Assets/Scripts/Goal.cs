@@ -5,28 +5,40 @@ using MagicLeapTools;
 
 public class Goal : MonoBehaviour
 {
-    public enum GoalType {Red, Blue}
+    //What color goal is this:
+    public enum GoalType {Red, Blue, Null}
 
     [SerializeField]
-    private GoalType goalType = GoalType.Red;
+    private GoalType goalType = GoalType.Null;
+
+    private void Awake()
+    {
+        if (goalType == GoalType.Null)
+            Debug.LogError("goal Type is not set");
+    }
+
+    //Easy way to get string key of global bool stored in Transmission
     private string scoreKey
     {
         get
         {
             if (goalType == GoalType.Red)
                 return "scoreRed";
-            else
+            else //goalType == GoalType.Blue
                 return "scoreBlue";
         }
     }
 
+    //Called when a collider hits the goal, if it is the ball it increments the score and resets the ball
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.name == "Ball")
         {
-            other.GetComponent<TransmissionObject>().Despawn();
-            if (Transmission.HasGlobalFloat(scoreKey))
-                Transmission.SetGlobalFloat(scoreKey, Transmission.GetGlobalFloat(scoreKey) + 1f);
+            if(scoreKey == "scoreRed")
+                other.GetComponent<Ball>().ResetBall(Ball.BallResetType.BlueSide);
+            else //scoreKey == "scoreBlue"
+                other.GetComponent<Ball>().ResetBall(Ball.BallResetType.RedSide);
+            Transmission.SetGlobalFloat(scoreKey, Transmission.GetGlobalFloat(scoreKey) + 1f);
         }
     }
 }
