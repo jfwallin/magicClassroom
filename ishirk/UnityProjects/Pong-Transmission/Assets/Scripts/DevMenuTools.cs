@@ -55,7 +55,7 @@ public class DevMenuTools
     private static void OnHandlePeerFound()
     {
         Debug.Log("Faking finding a peer");
-        GameObject.Find("SceneControl").GetComponent<SceneControl>().OnJoinGame("null");
+        GameObject.Find("SceneControl").GetComponent<SceneControl>().FakeConnection();
             Debug.Log("Peer Faked");
     }
 }
