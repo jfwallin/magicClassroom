@@ -20,8 +20,6 @@ public class SceneControl : MonoBehaviour
     private GameObject placementArenaPrefab = null;
     private const string arenaPrefabPath = "Prefabs/Arena";
     private const string ballPrefabPath = "Prefabs/Ball";
-    [SerializeField]
-    private GameObject ballPrefab = null;
     private const string paddlePrefabPath = "Prefabs/Paddle";
 
     //references to scene objects
@@ -42,6 +40,7 @@ public class SceneControl : MonoBehaviour
     private GameObject placementArena = null;
 
     //state variables
+    private bool gamePaused = true;
     private bool gameOwner = false;
     #endregion //Variables
 
@@ -56,7 +55,6 @@ public class SceneControl : MonoBehaviour
     {
         Assert.IsNotNull(gameSettings, "gameSettings not assigned on SceneControl");
         Assert.IsNotNull(placementArenaPrefab, "placementArena is not set on SceneControl");
-        Assert.IsNotNull(ballPrefab, "ballPrefab is not assigned on SceneControl");
         Assert.IsNotNull(transmissionComponent, "transmissionComponent is not set on SceneControl");
         Assert.IsNotNull(pointer, "pointer is not set on SceneControl");
         Assert.IsNotNull(headposeMenus, "headposeMenus is not set on SceneControl");
@@ -122,7 +120,6 @@ public class SceneControl : MonoBehaviour
         transmissionComponent.gameObject.SetActive(true);
         //Spawn Transmission Arena
         Transform arenaTransform = placementArena.transform;
-        GameObject.Destroy(placementArena);
         arena = Transmission.Spawn(arenaPrefabPath, arenaTransform.position, arenaTransform.rotation, arenaTransform.localScale);
         arena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
         //Spawn Transmission ball
@@ -214,6 +211,8 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
+        gamePaused = true;
+
         //Close the ConfirmReadinessPage
         headposeMenus.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
 
@@ -223,26 +222,12 @@ public class SceneControl : MonoBehaviour
         {
             Transmission.SetGlobalFloat("scoreRed", 0);
             Transmission.SetGlobalFloat("scoreBlue", 0);
-            Transmission.SetGlobalBool("gamePaused", false);
         }
-        Transmission.Instance.OnGlobalBoolChanged.AddListener(CheckPauseGame);
         Transmission.Instance.OnGlobalFloatChanged.AddListener(CheckScoreChange);
         Transmission.Instance.OnPeerLost.AddListener(HandlePeerLost);
 
         //Make the pause menu open on a home button press
-        pointer.GetComponent<ControlInput>().OnHomeButtonTap.AddListener(TogglePauseGame);
-    }
-
-    public void ResetBall()
-    {
-        ball.GetComponent<Ball>().ResetBall(Ball.BallResetType.Neutral);
-    }
-
-    //Adjust values on prefab so all instantiated instances match
-    public void ApplySettings()
-    {
-        ballPrefab.GetComponent<Collider>().material = gameSettings.BallBounciness;
-        ballPrefab.transform.localScale = gameSettings.BallSize;
+        pointer.GetComponent<ControlInput>().OnHomeButtonTap.AddListener(TogglePauseMenu);
     }
 
     /// <summary>
@@ -250,42 +235,38 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void ExitGame()
     {
+        gamePaused = true;
+
         //Remove Paddle
         paddle.Despawn();
 
         //remove transmission objects specific to the owner
         if (gameOwner)
         {
-            Transmission.SetGlobalBool("gamePaused", true);
             ball.Despawn();
             arena.Despawn();
             gameOwner = false;
         }
 
         //Remove event subscriptions and disable Transmission
-        Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckPauseGame);
         Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckScoreChange);
         Transmission.Instance.OnPeerLost.RemoveListener(HandlePeerLost);
         transmissionComponent.gameObject.SetActive(false);
 
         //Reset menus to welcome screen, unregister hometap event
-        headposeMenus.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
         headposeMenus.transform.GetChild(1).gameObject.SetActive(false);
         headposeMenus.transform.GetChild(0).gameObject.SetActive(true);
         headposeMenus.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
-        pointer.GetComponent<ControlInput>().OnHomeButtonTap.RemoveListener(TogglePauseGame);
+        pointer.GetComponent<ControlInput>().OnHomeButtonTap.RemoveListener(TogglePauseMenu);
     }
 
-#if UNITY_EDITOR
-    /// <summary>
-    /// Called but keyboard shortcut to fake connecting to a peer
-    /// </summary>
-    public void FakeConnection()
+    //Move this to the ball script
+    public void ApplySettings()
     {
-        OnJoinGame("null");
+        ball.transform.localScale = gameSettings.BallSize;
+        ball.GetComponent<SphereCollider>().material = gameSettings.BallBounciness;
     }
-#endif
-#endregion //Public Functions
+    #endregion //Public Functions
 
 
 
@@ -303,7 +284,7 @@ public class SceneControl : MonoBehaviour
     /// Called when a peer is found
     /// </summary>
     /// <param name="peerLabel"></param>
-    private void OnJoinGame(string peerLabel)
+    public void OnJoinGame(string peerLabel)
     {
         //Notify other scripts of connection
         ConnectionEvent.Invoke(true);
@@ -339,53 +320,31 @@ public class SceneControl : MonoBehaviour
         }
     }
 
-    public void TogglePauseGame()
-    {
-        if (Transmission.HasGlobalBool("gamePaused"))
-        {
-            Transmission.SetGlobalBool("gamePaused", !Transmission.GetGlobalBool("gamePaused"));
-        }
-    }
-
     /// <summary>
-    /// Called when global bool changes, updates objects if it was the gamePaused state
+    /// Called on home press, shows pause menu
     /// </summary>
-    private void CheckPauseGame(string key)
+    public void TogglePauseMenu()
     {
-        if(key == "gamePaused")
+        if (gamePaused)
         {
-            //If the game became paused:
-            if (Transmission.GetGlobalBool(key))
+            foreach (Transform t in pauseMenu.transform.parent)
             {
-                //Enable pause menus, freeze ball if the owner
-                pauseMenu.SetActive(true);
-                if (!gameOwner)
-                    pauseMenu.GetComponent<PauseUI>().DisableOwnerButtons();
-                else
-                {
-                    pauseMenu.GetComponent<PauseUI>().EnableOwnerButtons();
-                    ball.GetComponent<Ball>().Freeze();
-                }
-                //disable paddle
-                paddle.gameObject.SetActive(false);
+                t.gameObject.SetActive(false);
             }
-            //If game became unpaused
-            else if(!Transmission.GetGlobalBool(key))
-            {
-                //Disable menus
-                foreach (Transform t in pauseMenu.transform.parent)
-                {
-                    t.gameObject.SetActive(false);
-                }
-                //enable components
-                paddle.gameObject.SetActive(true);
-                if (gameOwner)
-                    ball.GetComponent<Ball>().Unfreeze();
-            }
+            gamePaused = false;
+        }
+        else
+        {
+            pauseMenu.SetActive(true);
+            if (!gameOwner)
+                pauseMenu.GetComponent<PauseUI>().DisableOwnerButtons();
+            else
+                pauseMenu.GetComponent<PauseUI>().EnableOwnerButtons();
+            gamePaused = true;
         }
     }
 
-    private void HandlePeerLost(string peerLabel)
+    public void HandlePeerLost(string peerLabel)
     {
         if (Transmission.Peers.Length == 0)
             ExitGame();
