@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a1008dfa814566a9f84c6d1a326c1b21e" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+<para>Camera width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="28" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1ab67f0c2657c0f8a14446412ed897b579" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+<para>Camera height. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="33" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a63ae3d9473431268506966d98cfe79a3" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.FocalLength</definition>
+        <argsstring></argsstring>
+        <name>FocalLength</name>
+        <briefdescription>
+<para>Camera focal length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="38" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a1b222bab2496d855418653a0eb98b5c5" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.PrincipalPoint</definition>
+        <argsstring></argsstring>
+        <name>PrincipalPoint</name>
+        <briefdescription>
+<para>Camera principle point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="43" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1adc951f3653ffeb1d3e0cc0df3d9147b1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.FOV</definition>
+        <argsstring></argsstring>
+        <name>FOV</name>
+        <briefdescription>
+<para>Field of view. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a0cfa2aac850f2cbe6a7dc278b009739c" prot="public" static="no" mutable="no">
+        <type>double []</type>
+        <definition>double [] UnityEngine.XR.MagicLeap.MLCVCameraIntrinsicCalibrationParameters.Distortion</definition>
+        <argsstring></argsstring>
+        <name>Distortion</name>
+        <briefdescription>
+<para>Distortion Coefficients. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains camera intrinsic parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="24" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="23" bodyend="54"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a0cfa2aac850f2cbe6a7dc278b009739c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>Distortion</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a63ae3d9473431268506966d98cfe79a3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>FocalLength</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1adc951f3653ffeb1d3e0cc0df3d9147b1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>FOV</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1ab67f0c2657c0f8a14446412ed897b579" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>Height</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a1b222bab2496d855418653a0eb98b5c5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>PrincipalPoint</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_c_v_camera_intrinsic_calibration_parameters_1a1008dfa814566a9f84c6d1a326c1b21e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCVCameraIntrinsicCalibrationParameters</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

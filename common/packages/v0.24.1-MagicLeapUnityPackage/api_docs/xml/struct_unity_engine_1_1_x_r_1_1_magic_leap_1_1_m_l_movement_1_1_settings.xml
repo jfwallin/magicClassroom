@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMovement::Settings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a525837f70ef159ef094240cfcba17255" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLMovement.Settings.SwayHistorySize</definition>
+        <argsstring></argsstring>
+        <name>SwayHistorySize</name>
+        <briefdescription>
+<para>Number of frames of sway history to track. Increase to improve smoothing. Minimum value of 3. MLMovement.GetDefaultSettings will set this value to 30. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="540" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a853de8b843d92caca5a61f034e1b8be7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaxDeltaAngle</definition>
+        <argsstring></argsstring>
+        <name>MaxDeltaAngle</name>
+        <briefdescription>
+<para>Maximum angle, in radians, between the oldest and newest head pose to object vector. Increasing this will increase the maximum speed of movement. Must be greater than zero. MLMovement.GetDefaultSettings will set this value to 0.5. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="548" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a2118cb0efee88f2e4c1337dd5bf88a91" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.ControlDampeningFactor</definition>
+        <argsstring></argsstring>
+        <name>ControlDampeningFactor</name>
+        <briefdescription>
+<para>A unit-less number that governs the smoothing of Control input. Larger values will make the movement more twitchy, smaller values will make it smoother by increasing latency between Control input and object movement response by averaging multiple frames of input values. Must be greater than zero. Typical values would be between 0.5 and 10. MLMovement.GetDefaultSettings will set this value to 3.5. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="558" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a8e43b71189f0b1bfefed85083537a22b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaxSwayAngle</definition>
+        <argsstring></argsstring>
+        <name>MaxSwayAngle</name>
+        <briefdescription>
+<para>The maximum angle, in radians, that the object will be tilted left/right and front/back. Cannot be a negative value, but may be zero. MLMovement.GetDefaultSettings will set this value to M_PI / 6.0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="565" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a225cc98caf70b8ea40585d47a5fe89aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaximumHeadposeRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>MaximumHeadposeRotationSpeed</name>
+        <briefdescription>
+<para>The speed of rotation that will stop implicit depth translation from happening. The speed of rotation about the head pose Y-axis, in radians per second, that if exceeded, stops implicit depth translation from happening. Must be greater than zero. MLMovement.GetDefaultSettings will set this value to M_PI * 5.0 / 3.0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="574" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1ab6e26875341d095f318ceb1f2cf58de7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaximumHeadposeMovementSpeed</definition>
+        <argsstring></argsstring>
+        <name>MaximumHeadposeMovementSpeed</name>
+        <briefdescription>
+<para>The maximum speed that head pose can move, in meters per second, that will stop implicit depth translation. If the head pose is moving faster than this speed (meters per second) implicit depth translation doesn&apos;t happen. Must be greater than zero. MLMovement.GetDefaultSettings will set this value to 0.75. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="582" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a5a3430c67396e9f26ddae34c0a062481" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaximumDepthDeltaForSway</definition>
+        <argsstring></argsstring>
+        <name>MaximumDepthDeltaForSway</name>
+        <briefdescription>
+<para>Distance in meters the object must move in depth since the last frame to cause maximum push/pull sway. Must be greater than zero. MLMovement.GetDefaultSettings will set this value to 0.1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="589" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a9dbed9573983b242444304ea94bd9ebb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MinimumDistance</definition>
+        <argsstring></argsstring>
+        <name>MinimumDistance</name>
+        <briefdescription>
+<para>The minimum distance in meters the object can be moved in depth relative to the head pose. Must be greater than zero and less than MaximumDistance. MLMovement.GetDefaultSettings will set this value to 0.5. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="596" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a3ff2871bc13d1157d828ec827e70cddb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaximumDistance</definition>
+        <argsstring></argsstring>
+        <name>MaximumDistance</name>
+        <briefdescription>
+<para>The maximum distance in meters the object can be moved in depth relative to the head pose. Must be greater than zero and MinimumDistance. MLMovement.GetDefaultSettings will set this value to 15.0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="603" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1aa02294a4638a37c86251c6dbe3ccb067" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.MaximumSwayTimeSeconds</definition>
+        <argsstring></argsstring>
+        <name>MaximumSwayTimeSeconds</name>
+        <briefdescription>
+<para>Maximum length of time, in seconds, that lateral sway should take to decay. Maximum length of time (in seconds) lateral sway should take to decay back to an upright orientation once lateral movement stops. Must be greater than zero. MLMovement.GetDefaultSettings will set this value to 0.4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="612" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a90c32b1f35f8b06f79a1f9c36d450694" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMovement.Settings.EndResolveTimeoutSeconds</definition>
+        <argsstring></argsstring>
+        <name>EndResolveTimeoutSeconds</name>
+        <briefdescription>
+<para>Maximum length of time, in seconds, to allow MLMovementEnd to resolve before forcefully aborting. This serves as a fail-safe for instances where the object is in a bad position and can&apos;t resolve to a safe position. Must be greater than or equal to zero. MLMovement.GetDefaultSettings will set this value to 10.0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="621" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1ad005ac908c4f3aeb273ffee1cb2ebd85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings" kindref="compound">Settings</ref></type>
+        <definition>static Settings UnityEngine.XR.MagicLeap.MLMovement.Settings.Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Creates a new <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings" kindref="compound">MLMovement.Settings</ref> struct with all of the current system movement settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The new <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings" kindref="compound">MLMovement.Settings</ref> struct.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="627" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="627" bodyend="634"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings" kindref="compound">Settings</ref> for the movement session. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" line="533" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLMovement.cs" bodystart="532" bodyend="635"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a2118cb0efee88f2e4c1337dd5bf88a91" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>ControlDampeningFactor</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1ad005ac908c4f3aeb273ffee1cb2ebd85" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>Create</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a90c32b1f35f8b06f79a1f9c36d450694" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>EndResolveTimeoutSeconds</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a853de8b843d92caca5a61f034e1b8be7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaxDeltaAngle</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a5a3430c67396e9f26ddae34c0a062481" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaximumDepthDeltaForSway</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a3ff2871bc13d1157d828ec827e70cddb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaximumDistance</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1ab6e26875341d095f318ceb1f2cf58de7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaximumHeadposeMovementSpeed</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a225cc98caf70b8ea40585d47a5fe89aa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaximumHeadposeRotationSpeed</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1aa02294a4638a37c86251c6dbe3ccb067" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaximumSwayTimeSeconds</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a8e43b71189f0b1bfefed85083537a22b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MaxSwayAngle</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a9dbed9573983b242444304ea94bd9ebb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>MinimumDistance</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1_1_settings_1a525837f70ef159ef094240cfcba17255" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement::Settings</scope><name>SwayHistorySize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

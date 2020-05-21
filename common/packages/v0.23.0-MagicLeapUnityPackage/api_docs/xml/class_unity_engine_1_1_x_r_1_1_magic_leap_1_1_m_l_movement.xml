@@ -1,0 +1,699 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMovement</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a2b82d45b49aa8b172645ff19f755a08b" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLMovement.errorMsg</definition>
+        <argsstring></argsstring>
+        <name>errorMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a4be1eac75ea9a0dbee0c93782abfc036" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.GetDefaultSettings</definition>
+        <argsstring>(out MLMovementSettings settings)</argsstring>
+        <name>GetDefaultSettings</name>
+        <param>
+          <type>out <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_settings" kindref="compound">MLMovementSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>This populates the provided <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_settings" kindref="compound">MLMovementSettings</ref> struct with all of the current system movement settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings struct to fill out.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameter is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="64" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a1bdbc42a627827de5955ae3abeb13d47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.Start3Dof</definition>
+        <argsstring>(in MLMovementSettings settings, in MLMovement3DofSettings dofSettings, in MLMovement3DofControls controls, in MLMovementObject obj, out ulong sessionHandle)</argsstring>
+        <name>Start3Dof</name>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_settings" kindref="compound">MLMovementSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement3_dof_settings" kindref="compound">MLMovement3DofSettings</ref></type>
+          <declname>dofSettings</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement3_dof_controls" kindref="compound">MLMovement3DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <briefdescription>
+<para>Starts a new 3dof movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para>A 3DoF movement session relies on the orientation of the user&apos;s pointing device, but ignores the position, when moving the target object. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings to use for new movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3dof settings for movement sessions.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3dof control settings for movement session .</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to fill in for new movement session.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameter is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="113" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a8f74eea1ed05e234efd436aaedcdf642" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.Start6Dof</definition>
+        <argsstring>(in MLMovementSettings settings, in MLMovement6DofSettings dofSettings, in MLMovement6DofControls controls, in MLMovementObject obj, out ulong sessionHandle)</argsstring>
+        <name>Start6Dof</name>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_settings" kindref="compound">MLMovementSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_settings" kindref="compound">MLMovement6DofSettings</ref></type>
+          <declname>dofSettings</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_controls" kindref="compound">MLMovement6DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>out ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <briefdescription>
+<para>Starts a new 6dof movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para>A 6DoF movement session relies on both the position and orientation of the user&apos;s pointing device when moving the target object. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Settings to use for new movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>6dof settings for movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>6dof control settings for movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to fill in for new movement session.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameter is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="166" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="166" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a3b892f3b9542765c63cc00bf308ef51a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.ChangeDepth</definition>
+        <argsstring>(ulong sessionHandle, float deltaDepth)</argsstring>
+        <name>ChangeDepth</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaDepth</declname>
+        </param>
+        <briefdescription>
+<para>Change the depth offset of the object from the user&apos;s headpose. (when using a 3DoF movement session) or from the pointing device (when using a 6DoF movement session). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaDepth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth delta change.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="212" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="212" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1af9c8539618d9865ad69de0f0fc22abe2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.ChangeRotation</definition>
+        <argsstring>(ulong sessionHandle, float deltaRadians)</argsstring>
+        <name>ChangeRotation</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaRadians</declname>
+        </param>
+        <briefdescription>
+<para>Change the rotation about the up-axis of the object being moved. </para>        </briefdescription>
+        <detaileddescription>
+<para>This rotation applies to the object in its local space, and not to the rotation relative to the user&apos;s headpose (when using a 3DoF movement session) or relative to the pointing device (when using a 6DoF movement session). </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaRadians</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation delta change.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="248" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="248" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a07cb738d95a199dd51ef9d1ccd2d0123" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.Update3Dof</definition>
+        <argsstring>(ulong sessionHandle, in MLMovement3DofControls controls, float deltaTime, ref MLMovementObject inOutObj)</argsstring>
+        <name>Update3Dof</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement3_dof_controls" kindref="compound">MLMovement3DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>inOutObj</declname>
+        </param>
+        <briefdescription>
+<para>Update 3dof movement with new data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is intended to be called once per frame per active 3Dof movement session. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New input data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time since last update.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inOutObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to update.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameters were invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="286" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="286" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1ab0c8099f6ddc2d449d5b5991d883352d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.Update6Dof</definition>
+        <argsstring>(ulong sessionHandle, in MLMovement6DofControls controls, float deltaTime, ref MLMovementObject inOutObj)</argsstring>
+        <name>Update6Dof</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_controls" kindref="compound">MLMovement6DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>inOutObj</declname>
+        </param>
+        <briefdescription>
+<para>Update 6dof movement with new data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is intended to be called once per frame per active 6Dof movement session. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New input data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time since last update.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inOutObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to update.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameters were invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="331" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="331" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1abc463272570b05b61de0d7d997abf680" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.End</definition>
+        <argsstring>(ulong sessionHandle, float deltaTime, out MLMovementObject obj)</argsstring>
+        <name>End</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type>out <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>End a movement session (either 3Dof or 6Dof). </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is intended to be called once per frame per active movement session while it returns MLResult_Pending. This will allow the session to resolve any remaining soft collisions. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time since last update.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to fill out with the final data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2d13df6f8b5e4c5af9f87e0dc39df69d" kindref="member">MLResultCode.Pending</ref> if the movement session is still resolving.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac85a251cc457840f1e032f1b733e9398" kindref="member">MLResultCode.Timeout</ref> if the movement session was unable to resolve and was forcefully ended..</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if input parameters were invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="380" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="380" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1ad8e1bdbe9e40936638c6d21a977b163d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.StartHardCollision</definition>
+        <argsstring>(ulong sessionHandle, in Vector3 contactNormal, out ulong collisionHandle)</argsstring>
+        <name>StartHardCollision</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>in Vector3</type>
+          <declname>contactNormal</declname>
+        </param>
+        <param>
+          <type>out ulong</type>
+          <declname>collisionHandle</declname>
+        </param>
+        <briefdescription>
+<para>Start tracking a new hard collision for a movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call this to inform the movement library that the moving object has collided with something impenetrable. The movement library will not allow the moving object to penetrate the other object in the direction opposite the contact normal. You can update the contact normal for the returned collision instance handle each frame by calling MLMovementUpdateHardCollision. This is useful if the moving object is colliding with a curved surface so the contact normal is changing as the moving object slides against the collision surface. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contactNormal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalized Vector3 surface normal of object that movement is colliding with.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the collision session.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if contactNormal was invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" kindref="member">MLResultCode.MovementInvalidCollisionHandle</ref> if collision handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="428" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="428" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a3dcb7c441d1a92cf54416555126442b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.StartSoftCollision</definition>
+        <argsstring>(ulong sessionHandle, in Vector3 otherPosition, float closestDistance, float maxDistance, out ulong collisionHandle)</argsstring>
+        <name>StartSoftCollision</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>in Vector3</type>
+          <declname>otherPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>closestDistance</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxDistance</declname>
+        </param>
+        <param>
+          <type>out ulong</type>
+          <declname>collisionHandle</declname>
+        </param>
+        <briefdescription>
+<para>Start tracking a new soft collision for a movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para>Soft collisions will allow a degree of interpenetration during movement. Collisions will resolve over time giving the colliding objects a softness to them. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>otherPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the center of the thing we are soft-colliding with, the source of the repulsion force.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>closestDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the the object being moved will never be closer to other_position than this distance.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The moving object will not be affected by this soft collision once its position is this distance from other_position.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the collision session.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if otherPosition was invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" kindref="member">MLResultCode.MovementInvalidCollisionHandle</ref> if collision handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="476" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="476" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1aaa887c672adfcb20be1e9fb44c854197" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.UpdateHardCollision</definition>
+        <argsstring>(ulong sessionHandle, ulong collisionHandle, in Vector3 contactNormal)</argsstring>
+        <name>UpdateHardCollision</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>collisionHandle</declname>
+        </param>
+        <param>
+          <type>in Vector3</type>
+          <declname>contactNormal</declname>
+        </param>
+        <briefdescription>
+<para>Update the collision normal for an existing hard collision session in an existing movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is intended to be called once per hard collision per movement session per frame. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the collision session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contactNormal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Normalized Vector3 surface normal of object that movement is colliding with.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if contactNormal was invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" kindref="member">MLResultCode.MovementInvalidCollisionHandle</ref> if collision handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="523" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="523" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a1fa7c99c3a63cb3933a39538ade3e72f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.EndCollision</definition>
+        <argsstring>(ulong sessionHandle, ulong collisionHandle)</argsstring>
+        <name>EndCollision</name>
+        <param>
+          <type>ulong</type>
+          <declname>sessionHandle</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>collisionHandle</declname>
+        </param>
+        <briefdescription>
+<para>End the tracking of a soft or hard collision session for a movement session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sessionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the movement session.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle for the collision session.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MLResultCode.MovementInvalidMovementHandle</ref> if session handle is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" kindref="member">MLResultCode.MovementInvalidCollisionHandle</ref> if collision handle is invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="559" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="559" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a2da5d12ede0ef009e6505f76de8ad803" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityEngine.XR.MagicLeap.MLMovement.GetResultString</definition>
+        <argsstring>(MLResultCode resultCode)</argsstring>
+        <name>GetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>resultCode</declname>
+        </param>
+        <briefdescription>
+<para>Gets a readable version of the result code as an ASCII string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resultCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref> that should be converted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing a readable version of the result code.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="584" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="584" bodyend="604"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a4568070f29dbca08c431c94bf347aafe" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMovement.TryExecute</definition>
+        <argsstring>(Func&lt; MLResult &gt; func)</argsstring>
+        <name>TryExecute</name>
+        <param>
+          <type>Func&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref> &gt;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="606" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="606" bodyend="628"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement" kindref="compound">MLMovement</ref> class is the entry point for the Movement API </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" line="49" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMovement.cs" bodystart="48" bodyend="629"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a3b892f3b9542765c63cc00bf308ef51a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>ChangeDepth</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1af9c8539618d9865ad69de0f0fc22abe2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>ChangeRotation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1abc463272570b05b61de0d7d997abf680" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>End</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a1fa7c99c3a63cb3933a39538ade3e72f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>EndCollision</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a2b82d45b49aa8b172645ff19f755a08b" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>errorMsg</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a4be1eac75ea9a0dbee0c93782abfc036" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>GetDefaultSettings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a2da5d12ede0ef009e6505f76de8ad803" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>GetResultString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a1bdbc42a627827de5955ae3abeb13d47" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>Start3Dof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a8f74eea1ed05e234efd436aaedcdf642" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>Start6Dof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1ad8e1bdbe9e40936638c6d21a977b163d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>StartHardCollision</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a3dcb7c441d1a92cf54416555126442b3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>StartSoftCollision</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a4568070f29dbca08c431c94bf347aafe" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>TryExecute</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1a07cb738d95a199dd51ef9d1ccd2d0123" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>Update3Dof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1ab0c8099f6ddc2d449d5b5991d883352d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>Update6Dof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_1aaa887c672adfcb20be1e9fb44c854197" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement</scope><name>UpdateHardCollision</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

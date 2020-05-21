@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aa4860c9e58c536de47f14b716368158e" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="478" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a9e80ae3d20f6e10ef6bf650b7d606dca" prot="public" static="no" mutable="no">
+        <type>MLVec3f</type>
+        <definition>MLVec3f MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.ObjectPosition</definition>
+        <argsstring></argsstring>
+        <name>ObjectPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="480" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a35a6dfdef3c7bc721dee893920c23a76" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>MLQuaternionf MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.ObjectRotation</definition>
+        <argsstring></argsstring>
+        <name>ObjectRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="482" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aeab91a52d71ac7dd836ac74547146ea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="485" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="485" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a0a658db34e160bf271a2675a234270e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.ToInternal</definition>
+        <argsstring>(in MLMovementObject obj)</argsstring>
+        <name>ToInternal</name>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="505" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="505" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aa4a239e5c5b8e8547b1204344b1f7caa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovementObjectInternal.ToExternal</definition>
+        <argsstring>(out MLMovementObject obj)</argsstring>
+        <name>ToExternal</name>
+        <param>
+          <type>out <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement_object" kindref="compound">MLMovementObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="512" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="512" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Links to MLMovementObject in ml_movement.h. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="476" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="475" bodyend="517"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aeab91a52d71ac7dd836ac74547146ea4" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a9e80ae3d20f6e10ef6bf650b7d606dca" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>ObjectPosition</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a35a6dfdef3c7bc721dee893920c23a76" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>ObjectRotation</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aa4a239e5c5b8e8547b1204344b1f7caa" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>ToExternal</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1a0a658db34e160bf271a2675a234270e3" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>ToInternal</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement_object_internal_1aa4860c9e58c536de47f14b716368158e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovementObjectInternal</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

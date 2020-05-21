@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a22e4ad4d18d8229896b42419626e862c" prot="public" static="no" mutable="no">
+        <type>OnDataCallback</type>
+        <definition>OnDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceAvailable</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="706" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a753b6eb35169bbd40b977c3c301ac5e2" prot="public" static="no" mutable="no">
+        <type>OnDataCallback</type>
+        <definition>OnDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceUnavailable</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceUnavailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="707" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a0b9578be62739d63e0ee219ab3849f3a" prot="public" static="no" mutable="no">
+        <type>OnDataCallback</type>
+        <definition>OnDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceOpened</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceOpened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="708" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1afb17271464161608e99838d2fc9fcb53" prot="public" static="no" mutable="no">
+        <type>OnDataCallback</type>
+        <definition>OnDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceClosed</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceClosed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="709" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1acce91a77eec254294800df0637997e2e" prot="public" static="no" mutable="no">
+        <type>OnDataCallback</type>
+        <definition>OnDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceDisconnected</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceDisconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="710" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1ac4836427c27d9da91376b248e7e7733d" prot="public" static="no" mutable="no">
+        <type>OnErrorDataCallback</type>
+        <definition>OnErrorDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnDeviceError</definition>
+        <argsstring></argsstring>
+        <name>OnDeviceError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="711" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a5ac0a316d00f2dd7d13feaf64a86e029" prot="public" static="no" mutable="no">
+        <type>OnHandleDataCallback</type>
+        <definition>OnHandleDataCallback MagicLeapInternal.CameraApiNativeBindings.MLCameraDeviceStatusCallbacks.OnPreviewBufferAvailable</definition>
+        <argsstring></argsstring>
+        <name>OnPreviewBufferAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="712" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="705" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="704" bodyend="713"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a22e4ad4d18d8229896b42419626e862c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceAvailable</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1afb17271464161608e99838d2fc9fcb53" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceClosed</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1acce91a77eec254294800df0637997e2e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceDisconnected</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1ac4836427c27d9da91376b248e7e7733d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceError</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a0b9578be62739d63e0ee219ab3849f3a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceOpened</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a753b6eb35169bbd40b977c3c301ac5e2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnDeviceUnavailable</name></member>
+      <member refid="struct_magic_leap_internal_1_1_camera_api_native_bindings_1_1_m_l_camera_device_status_callbacks_1a5ac0a316d00f2dd7d13feaf64a86e029" prot="public" virt="non-virtual"><scope>MagicLeapInternal::CameraApiNativeBindings::MLCameraDeviceStatusCallbacks</scope><name>OnPreviewBufferAvailable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

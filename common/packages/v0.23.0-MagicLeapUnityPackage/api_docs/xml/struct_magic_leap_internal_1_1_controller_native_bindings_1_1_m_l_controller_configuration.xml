@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::ControllerNativeBindings::MLControllerConfiguration</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1a3bc26b189b5b718cf61b9d0c88a684bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MagicLeapInternal.ControllerNativeBindings.MLControllerConfiguration.IMU3DOF</definition>
+        <argsstring></argsstring>
+        <name>IMU3DOF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" line="84" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1ab8b72a73d093aaf5360fdffe12031c78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MagicLeapInternal.ControllerNativeBindings.MLControllerConfiguration.EM6DOF</definition>
+        <argsstring></argsstring>
+        <name>EM6DOF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1a9c4aa9b52cc94cc7d0bd37cfeb07a86e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MagicLeapInternal.ControllerNativeBindings.MLControllerConfiguration.Fused6DOF</definition>
+        <argsstring></argsstring>
+        <name>Fused6DOF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" line="90" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ControllerNativeBindings.cs" bodystart="81" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1ab8b72a73d093aaf5360fdffe12031c78" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ControllerNativeBindings::MLControllerConfiguration</scope><name>EM6DOF</name></member>
+      <member refid="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1a9c4aa9b52cc94cc7d0bd37cfeb07a86e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ControllerNativeBindings::MLControllerConfiguration</scope><name>Fused6DOF</name></member>
+      <member refid="struct_magic_leap_internal_1_1_controller_native_bindings_1_1_m_l_controller_configuration_1a3bc26b189b5b718cf61b9d0c88a684bd" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ControllerNativeBindings::MLControllerConfiguration</scope><name>IMU3DOF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

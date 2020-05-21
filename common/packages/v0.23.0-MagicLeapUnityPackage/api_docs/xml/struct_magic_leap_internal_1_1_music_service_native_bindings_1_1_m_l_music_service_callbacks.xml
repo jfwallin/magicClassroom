@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1aa2eb98f8b878cfd9a594d48cb2e7e6d5" prot="public" static="no" mutable="no">
+        <type>OnPlaybackStateChangeCallback</type>
+        <definition>OnPlaybackStateChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnPlaybackStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnPlaybackStateChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="208" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a6a48629a1e8ccf27ea075ddef2e22218" prot="public" static="no" mutable="no">
+        <type>OnRepeatStateChangeCallback</type>
+        <definition>OnRepeatStateChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnRepeatStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnRepeatStateChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="209" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a90c436fc5127f60d6e02fd0e5494e2d1" prot="public" static="no" mutable="no">
+        <type>OnShuffleStateChangeCallback</type>
+        <definition>OnShuffleStateChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnShuffleStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnShuffleStateChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="210" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a7ebfebf41384fbe933bcad1005eeec13" prot="public" static="no" mutable="no">
+        <type>OnMetadataChangeCallback</type>
+        <definition>OnMetadataChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnMetadataChange</definition>
+        <argsstring></argsstring>
+        <name>OnMetadataChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="211" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1adc6098916a435ba7ca4d73acad63680e" prot="public" static="no" mutable="no">
+        <type>OnPositionChangeCallback</type>
+        <definition>OnPositionChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnPositionChange</definition>
+        <argsstring></argsstring>
+        <name>OnPositionChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="212" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1aa861ac4bc241c8c7f7d59c9eaa6a4ac1" prot="public" static="no" mutable="no">
+        <type>OnErrorCallback</type>
+        <definition>OnErrorCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnError</definition>
+        <argsstring></argsstring>
+        <name>OnError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="213" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1ac9af37b10cd9ffe72d3d8e8d4d9d8dd3" prot="public" static="no" mutable="no">
+        <type>OnStatusChangeCallback</type>
+        <definition>OnStatusChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnStatusChange</definition>
+        <argsstring></argsstring>
+        <name>OnStatusChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="214" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a3dec3ee5df52389c8d52fed5eb1d4edf" prot="public" static="no" mutable="no">
+        <type>OnVolumeChangeCallback</type>
+        <definition>OnVolumeChangeCallback MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceCallbacks.OnVolumeChange</definition>
+        <argsstring></argsstring>
+        <name>OnVolumeChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="215" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="207" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="206" bodyend="216"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1aa861ac4bc241c8c7f7d59c9eaa6a4ac1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnError</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a7ebfebf41384fbe933bcad1005eeec13" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnMetadataChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1aa2eb98f8b878cfd9a594d48cb2e7e6d5" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnPlaybackStateChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1adc6098916a435ba7ca4d73acad63680e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnPositionChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a6a48629a1e8ccf27ea075ddef2e22218" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnRepeatStateChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a90c436fc5127f60d6e02fd0e5494e2d1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnShuffleStateChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1ac9af37b10cd9ffe72d3d8e8d4d9d8dd3" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnStatusChange</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_callbacks_1a3dec3ee5df52389c8d52fed5eb1d4edf" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceCallbacks</scope><name>OnVolumeChange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

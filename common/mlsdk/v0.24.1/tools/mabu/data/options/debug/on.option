@@ -1,0 +1,10 @@
+CFLAGS.gcc=-g
+CXXFLAGS.gcc=-g
+CFLAGS.clang=-g -fno-limit-debug-info
+CXXFLAGS.clang=-g -fno-limit-debug-info
+#CFLAGS.msvc_x86=-hotpatch
+#CXXFLAGS.msvc_x86=-hotpatch
+CFLAGS.msvc=-ZI
+CXXFLAGS.msvc=-ZI
+LDFLAGS.gcc,clang=-g
+LDFLAGS.msvc=-debug

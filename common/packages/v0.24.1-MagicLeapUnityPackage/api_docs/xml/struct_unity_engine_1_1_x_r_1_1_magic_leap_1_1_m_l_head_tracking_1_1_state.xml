@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLHeadTracking::State</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1abb10b05def93fbbe8f3c0a8b39c96e14" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a451ebcbc4f81adfd9c1f843dac184f4a" kindref="member">TrackingMode</ref></type>
+        <definition>TrackingMode UnityEngine.XR.MagicLeap.MLHeadTracking.State.Mode</definition>
+        <argsstring></argsstring>
+        <name>Mode</name>
+        <briefdescription>
+<para>What tracking mode the Head Tracking system is currently in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" line="469" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a6fb9409087e1c0cbf0a651a70a237bdf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLHeadTracking.State.Confidence</definition>
+        <argsstring></argsstring>
+        <name>Confidence</name>
+        <briefdescription>
+<para>A confidence value (from 0..1) representing the confidence in the current pose estimation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" line="475" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a4ad60e453593812e2ff9f01ba9c360f3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a47a6ba084f34398c613bb6ddf324f919" kindref="member">TrackingError</ref></type>
+        <definition>TrackingError UnityEngine.XR.MagicLeap.MLHeadTracking.State.Error</definition>
+        <argsstring></argsstring>
+        <name>Error</name>
+        <briefdescription>
+<para>Represents what tracking error (if any) is present. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" line="480" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a58633d828452a21aa4e2885cb085631d" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLHeadTracking.State.Handle</definition>
+        <argsstring></argsstring>
+        <name>Handle</name>
+        <briefdescription>
+<para>The handle to the native head tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" line="485" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information on the current state of the Head Tracking system. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" line="465" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTracking.cs" bodystart="464" bodyend="486"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a6fb9409087e1c0cbf0a651a70a237bdf" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTracking::State</scope><name>Confidence</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a4ad60e453593812e2ff9f01ba9c360f3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTracking::State</scope><name>Error</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1a58633d828452a21aa4e2885cb085631d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTracking::State</scope><name>Handle</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1_1_state_1abb10b05def93fbbe8f3c0a8b39c96e14" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTracking::State</scope><name>Mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

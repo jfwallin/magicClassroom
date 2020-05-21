@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLConnections</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLConnections &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1accb9c5359b77b8ddb9c3221c7b1f4940" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLConnections._requestHandle</definition>
+        <argsstring></argsstring>
+        <name>_requestHandle</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+<para>The internal handle attached to this instance of <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> invite request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a031782fe68a3f39485a50ed646b33efd" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLConnections._registerHandle</definition>
+        <argsstring></argsstring>
+        <name>_registerHandle</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+<para>The internal handle attached to this instance of <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> invite receiving registration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a2894229c4437db125ce47547e568ba2b" prot="private" static="no" mutable="no">
+        <type>object</type>
+        <definition>object UnityEngine.XR.MagicLeap.MLConnections._eventQueueLockObject</definition>
+        <argsstring></argsstring>
+        <name>_eventQueueLockObject</name>
+        <initializer>= new object()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a7e434c9504362c6bcab8484ca68b1ad7" prot="private" static="no" mutable="no">
+        <type>Queue&lt; Action &gt;</type>
+        <definition>Queue&lt;Action&gt; UnityEngine.XR.MagicLeap.MLConnections._queuedActions</definition>
+        <argsstring></argsstring>
+        <name>_queuedActions</name>
+        <initializer>= new Queue&lt;Action&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="65" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa318756f86a4a11c06f7f57b466603f0" prot="private" static="no" mutable="no">
+        <type>Queue&lt; Action &gt;</type>
+        <definition>Queue&lt;Action&gt; UnityEngine.XR.MagicLeap.MLConnections._dispatchQueue</definition>
+        <argsstring></argsstring>
+        <name>_dispatchQueue</name>
+        <initializer>= new Queue&lt;Action&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1af50e9e301c2392b08176ed81d6e528d7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLConnections._sendInviteHasStarted</definition>
+        <argsstring></argsstring>
+        <name>_sendInviteHasStarted</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="79" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5b143ee283b17183359f642055dfcd65" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLConnections._activeInvite</definition>
+        <argsstring></argsstring>
+        <name>_activeInvite</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aafa3997fc3dcee0ddca5dac0f496b640" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLConnections._activeRequest</definition>
+        <argsstring></argsstring>
+        <name>_activeRequest</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="85" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a64b44c7212afd3be7cb7f775c6c3df6d" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1acb6c3befe6390c9bdc2ed4c75473035b" kindref="member">RegistrationCompleteDelegate</ref></type>
+        <definition>RegistrationCompleteDelegate UnityEngine.XR.MagicLeap.MLConnections.OnRegistrationComplete</definition>
+        <argsstring></argsstring>
+        <name>OnRegistrationComplete</name>
+        <initializer>= delegate{}</initializer>
+        <briefdescription>
+<para>This is the callback that will be called when Registration has completed, either successfully or not. Expect it to only be called once. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="141" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aadc28b25325017fc374fa0234d063b10" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afaf26f0ce28091d7e7c0a477a796adb0" kindref="member">InvitationDelegate</ref></type>
+        <definition>InvitationDelegate UnityEngine.XR.MagicLeap.MLConnections.OnInvitation</definition>
+        <argsstring></argsstring>
+        <name>OnInvitation</name>
+        <initializer>= delegate{}</initializer>
+        <briefdescription>
+<para>This is the callback that will be called every time an invitation comes in. If userConfirmation is true, this means the user was shown a notification and accepted the invitation to launch the application. If false, the applcation was running already when the request was received and the application is in charge of gaining user concent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5417776843d59666753923c3b3fd25a8" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a19d2e9a8616474c4376fffffb0d59a33" kindref="member">RequestStatusDelegate</ref></type>
+        <definition>RequestStatusDelegate UnityEngine.XR.MagicLeap.MLConnections.OnRequestComplete</definition>
+        <argsstring></argsstring>
+        <name>OnRequestComplete</name>
+        <initializer>= delegate{}</initializer>
+        <briefdescription>
+<para>This is the callback that will be called once <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1af3923e751b72adefae153857d76dda54" kindref="member">SendInvite()</ref> completes. The possible completedStatus are: Dispatched, DispatchFailed, Cancelled, or InvalidHandle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="164" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ae1c3fae345710e42e7b58cf80933fae6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLConnections.QueueCallback</definition>
+        <argsstring>(Action callback)</argsstring>
+        <name>QueueCallback</name>
+        <param>
+          <type>Action</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="70" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5439e98343a6ab3ee82b8bd17194d850" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLConnections.MLConnections</definition>
+        <argsstring>()</argsstring>
+        <name>MLConnections</name>
+        <briefdescription>
+<para>Initialize private containers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="128" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a07d14081ad24960ebf99376b499222d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void UnityEngine.XR.MagicLeap.MLConnections.OnRegistrationCompleteCallbackPrivate</definition>
+        <argsstring>(MLResultCode result, IntPtr data)</argsstring>
+        <name>OnRegistrationCompleteCallbackPrivate</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ab424e2ca83b883db7e8c615f0b660ecc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void UnityEngine.XR.MagicLeap.MLConnections.OnInvitationCallbackPrivate</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] bool userAccepted, IntPtr payload, IntPtr data)</argsstring>
+        <name>OnInvitationCallbackPrivate</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>userAccepted</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a51209a8d75a8bdeed298b28b1f12d318" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLConnections.CheckRequestStatus</definition>
+        <argsstring>()</argsstring>
+        <name>CheckRequestStatus</name>
+        <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> API users are responsible for calling MLConnectionsReleaseRequestResources to free any resources associated with a request handle once it is no longer needed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="418" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="418" bodyend="477"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a08ce9fb12865cd0354550315f5375c62" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLConnections.CreateInstance</definition>
+        <argsstring>()</argsstring>
+        <name>CreateInstance</name>
+        <briefdescription>
+<para>static instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="91" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa8e20e9177308e4ca17ff308fcb4e4d8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLConnections.OnRegistrationCompleteNative</definition>
+        <argsstring>(MLResultCode result, IntPtr data)</argsstring>
+        <name>OnRegistrationCompleteNative</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="169" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="169" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a330b3fe3b87bf29078c2ce2b11c73340" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLConnections.OnInvitationNative</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] bool userAccepted, IntPtr payload, IntPtr data)</argsstring>
+        <name>OnInvitationNative</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>userAccepted</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="183" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="183" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5a1b65967dfb44a0b8d3dc709ce27131" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLConnections.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> API. This will register and set callbacks for receiving an invite. Once this is called, the user can receive invites after closing the application. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error (no device, dll not found, no API symbols).</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af5576b457e6e3048732bc8bd5eba789b" kindref="member">MLResultCode.AllocFailed</ref> if the registration resource allocation failed.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if a given argument is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a27b8c6c842a3620aa54723b4f9a376e8" kindref="member">MLResultCode.ConnectionsAlreadyRegistered</ref> if there is a duplicate registration.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2a7d55271e387991e459070b66718a5a" kindref="member">MLResultCode.ConnectionsNetworkFailure</ref> if communication to the network failed.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aad96283ac5901f99718dc810616eeae0" kindref="member">MLResultCode.ConnectionsSystemFailure</ref> if there was a system failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1af3923e751b72adefae153857d76dda54" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLConnections.SendInvite</definition>
+        <argsstring>(uint inviteeCount, MLConnectionsInviteeFilter filterLevel, string textPrompt, string payload)</argsstring>
+        <name>SendInvite</name>
+        <param>
+          <type>uint</type>
+          <declname>inviteeCount</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad456b39aba3c845c6fc2f543e27ee3ac" kindref="member">MLConnectionsInviteeFilter</ref></type>
+          <declname>filterLevel</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>textPrompt</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Submit a request to start the invite sending process. Request an invite to be sent for other connections to join a multi-user experience. This call will trigger a connections invite dialog requesting the user to select up to the specified number of online users to be invited. The system will then initiate a push notification to other online devices, start a copy of the application requesting the invite and deliver the given payload. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only one invite can be processed at a time. Will return an error if the first invite request is incomplete/pending in the service when a second request is sent.</para><para>Will receive a DispatchFailed status if the invitee is not registered to receive invites for the specific application. If multiple invitees are selected, SendInvite will dispatch successfully if at least one of them is registered to receive invites for the specific application.</para><para>Note: You cannot invite users who are not following the Sender. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inviteeCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Max number of connections to be invited. Min limit is 1.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of filter applied by default to ML connections list in invitee selection dialog.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textPrompt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text prompt to be displayed to the user with invitee selection dialog.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Payload message to be delivered to remote copy of the application with invite.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> If successfully submitted to at least one follower.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> Indicates permissions haven&apos;t been granted to make this API call.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac85a251cc457840f1e032f1b733e9398" kindref="member">MLResultCode.Timeout</ref> Indicates the request to request sending an invite timed out.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error (no device, dll not found, no API symbols).</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a96d3611e5d7f56e434e666979af8cec9" kindref="member">MLResultCode.ConnectionsIllegalState</ref> Indicates an issue with the connections system, e.g. service is not available for any reason.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1ccf4e29dd1de41e7ad15fc61e2dbd60" kindref="member">MLResultCode.ConnectionsInvalidInviteeCount</ref> Indicates number of invitees is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> Indicates the given arguments are invalid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="345" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="345" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ae383dac5fe4871f50a9c67bd9905552e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLConnections.CancelSentInvite</definition>
+        <argsstring>()</argsstring>
+        <name>CancelSentInvite</name>
+        <briefdescription>
+<para>Attempts to cancel a previously requested invite sending process. If invite dialog has not yet been completed by the user, this request will dismiss the dialog and cancel the invite sending process. Otherwise this operation will return an error. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> If invite was successfully cancelled.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> Indicates an unexpected failure.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab94e685e18b89f6291212fe0c5222cf5" kindref="member">MLResultCode.ConnectionsInvalidHandle</ref> If connections handle is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9e48fb43b098b7fdc58ceaa9e35173e2" kindref="member">MLResultCode.ConnectionsCancellationPending</ref> Indicates invite request has been found and the system is attempting to cancel the process.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> Indicates permissions haven&apos;t been granted to make this API call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="391" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="391" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa3234816bcab96577fb5a56502077dfe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityEngine.XR.MagicLeap.MLConnections.GetResultString</definition>
+        <argsstring>(MLResultCode resultCode)</argsstring>
+        <name>GetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>resultCode</declname>
+        </param>
+        <briefdescription>
+<para>Gets a readable version of the result code as an string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resultCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref> that should be converted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String containing a readable version of the result code.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="409" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="409" bodyend="412"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1acb6c3befe6390c9bdc2ed4c75473035b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void UnityEngine.XR.MagicLeap.MLConnections.RegistrationCompleteDelegate</definition>
+        <argsstring>(MLResult result)</argsstring>
+        <name>RegistrationCompleteDelegate</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Callback which is fired when registration is complete. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the result of the Registration. It will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> in case of success, and an error otherwise.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afaf26f0ce28091d7e7c0a477a796adb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void UnityEngine.XR.MagicLeap.MLConnections.InvitationDelegate</definition>
+        <argsstring>(bool userConfirmation, string payload)</argsstring>
+        <name>InvitationDelegate</name>
+        <param>
+          <type>bool</type>
+          <declname>userConfirmation</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>Callback which is fired every time an invitation comes in. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userConfirmation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is a boolean value that informs you whether the user has confirmed the invite notification.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the data sent from the inviting application on another device.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a19d2e9a8616474c4376fffffb0d59a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void UnityEngine.XR.MagicLeap.MLConnections.RequestStatusDelegate</definition>
+        <argsstring>(MLConnectionsInviteStatus completedStatus)</argsstring>
+        <name>RequestStatusDelegate</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84e" kindref="member">MLConnectionsInviteStatus</ref></type>
+          <declname>completedStatus</declname>
+        </param>
+        <briefdescription>
+<para>Callback which is fired when a request sent is completed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>completedStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the status of the sending process once it has been completed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="160" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1abf2ccb0814fb64942b310dc42e80aaed" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLConnections.CleanupAPI</definition>
+        <argsstring>(bool isSafeToAccessManagedObjects)</argsstring>
+        <name>CleanupAPI</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d">CleanupAPI</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>isSafeToAccessManagedObjects</declname>
+        </param>
+        <briefdescription>
+<para>Called by <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" kindref="compound">MLAPISingleton</ref> on destruction </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isSafeToAccessManagedObjects</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="261" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="261" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac3df2700688e483d2901518216a97867" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLConnections.Update</definition>
+        <argsstring>(float timeDelta)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>timeDelta</declname>
+        </param>
+        <briefdescription>
+<para>Called every device frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeDelta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="293" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="293" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> class is the entry point for the Connections API </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="232">
+        <label>UnityEngine.XR.MagicLeap.MLConnections</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections"/>
+        <childnode refid="233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>MLAPISingleton&lt; MLConnections &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="234">
+        <label>UnityEngine.XR.MagicLeap.MLConnections</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections"/>
+        <childnode refid="235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>MLAPISingleton&lt; MLConnections &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLConnections.cs" bodystart="49" bodyend="478"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5b143ee283b17183359f642055dfcd65" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_activeInvite</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aafa3997fc3dcee0ddca5dac0f496b640" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_activeRequest</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa318756f86a4a11c06f7f57b466603f0" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_dispatchQueue</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a2894229c4437db125ce47547e568ba2b" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_eventQueueLockObject</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a7e434c9504362c6bcab8484ca68b1ad7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_queuedActions</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a031782fe68a3f39485a50ed646b33efd" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_registerHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1accb9c5359b77b8ddb9c3221c7b1f4940" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_requestHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1af50e9e301c2392b08176ed81d6e528d7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>_sendInviteHasStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>BaseStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ae383dac5fe4871f50a9c67bd9905552e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>CancelSentInvite</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a51209a8d75a8bdeed298b28b1f12d318" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>CheckRequestStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>CheckValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1abf2ccb0814fb64942b310dc42e80aaed" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>CleanupAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a08ce9fb12865cd0354550315f5375c62" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>CreateInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>DllNotFoundError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa3234816bcab96577fb5a56502077dfe" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>GetResultString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afaf26f0ce28091d7e7c0a477a796adb0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>InvitationDelegate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>IsStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>IsValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5439e98343a6ab3ee82b8bd17194d850" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>MLConnections</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aadc28b25325017fc374fa0234d063b10" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnInvitation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ab424e2ca83b883db7e8c615f0b660ecc" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnInvitationCallbackPrivate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a330b3fe3b87bf29078c2ce2b11c73340" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnInvitationNative</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a64b44c7212afd3be7cb7f775c6c3df6d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnRegistrationComplete</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a07d14081ad24960ebf99376b499222d4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnRegistrationCompleteCallbackPrivate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1aa8e20e9177308e4ca17ff308fcb4e4d8" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnRegistrationCompleteNative</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5417776843d59666753923c3b3fd25a8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>OnRequestComplete</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ae1c3fae345710e42e7b58cf80933fae6" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>QueueCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1acb6c3befe6390c9bdc2ed4c75473035b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>RegistrationCompleteDelegate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a19d2e9a8616474c4376fffffb0d59a33" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>RequestStatusDelegate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1af3923e751b72adefae153857d76dda54" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>SendInvite</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a5a1b65967dfb44a0b8d3dc709ce27131" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>Stop</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac3df2700688e483d2901518216a97867" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

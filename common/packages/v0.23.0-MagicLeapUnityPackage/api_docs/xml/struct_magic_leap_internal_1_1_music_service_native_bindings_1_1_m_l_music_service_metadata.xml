@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a8e9c4ee3523c40e28ae8990967adf063" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.TrackTitle</definition>
+        <argsstring></argsstring>
+        <name>TrackTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="221" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a0fb81c6156c457ead4e75cd602aad157" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.AlbumInfoName</definition>
+        <argsstring></argsstring>
+        <name>AlbumInfoName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="222" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1af317e4a30e3edda2d6ee62b734ba8a15" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.AlbumInfoUrl</definition>
+        <argsstring></argsstring>
+        <name>AlbumInfoUrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="223" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a3f9085f4c41b4ee67784be12c37c3ed5" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.AlbumInfoCoverUrl</definition>
+        <argsstring></argsstring>
+        <name>AlbumInfoCoverUrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="224" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a142126f831df6bd896cb51e25a6b362f" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.ArtistInfoName</definition>
+        <argsstring></argsstring>
+        <name>ArtistInfoName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="225" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1aed728117c26e38aecbd7fd3d7ad3ed12" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.ArtistInfoUrl</definition>
+        <argsstring></argsstring>
+        <name>ArtistInfoUrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="226" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a31f0ce6f578a6e11c7f29d57f3ebb289" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="227" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1ad71182d977fe0273326afadac8293842" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.MusicServiceNativeBindings.MLMusicServiceMetadata.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="228" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="220" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="219" bodyend="229"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a3f9085f4c41b4ee67784be12c37c3ed5" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>AlbumInfoCoverUrl</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a0fb81c6156c457ead4e75cd602aad157" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>AlbumInfoName</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1af317e4a30e3edda2d6ee62b734ba8a15" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>AlbumInfoUrl</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a142126f831df6bd896cb51e25a6b362f" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>ArtistInfoName</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1aed728117c26e38aecbd7fd3d7ad3ed12" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>ArtistInfoUrl</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a31f0ce6f578a6e11c7f29d57f3ebb289" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>Length</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1ad71182d977fe0273326afadac8293842" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>Position</name></member>
+      <member refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata_1a8e9c4ee3523c40e28ae8990967adf063" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MusicServiceNativeBindings::MLMusicServiceMetadata</scope><name>TrackTitle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

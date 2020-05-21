@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa03ad791dabd0911d7e60f9a9af51719" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._x0</definition>
+        <argsstring></argsstring>
+        <name>_x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="452" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a9734b3673319d1adad32c4c9c92adab9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._x1</definition>
+        <argsstring></argsstring>
+        <name>_x1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="460" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a64a089d91b3a8f602d2e22e46900fc19" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._x2</definition>
+        <argsstring></argsstring>
+        <name>_x2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="468" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a91fe689c373d19a48b51b85612a25bae" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._y0</definition>
+        <argsstring></argsstring>
+        <name>_y0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="476" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a687de0eb26d1fc9af935499260d8a925" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._y1</definition>
+        <argsstring></argsstring>
+        <name>_y1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="484" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a8ea476e01fcfaf350969bd1514988dca" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._y2</definition>
+        <argsstring></argsstring>
+        <name>_y2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="492" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a345e0a1740bd7c17d788d0bf5b3fe780" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._z0</definition>
+        <argsstring></argsstring>
+        <name>_z0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="500" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a63e89b218334479a278ffa89aedab55d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._z1</definition>
+        <argsstring></argsstring>
+        <name>_z1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="508" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a03988b95180ef36291f9578b654db467" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform._z2</definition>
+        <argsstring></argsstring>
+        <name>_z2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="516" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1adc85bbacec757a8fedcd778efbd32d55" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.X0</definition>
+        <argsstring></argsstring>
+        <name>X0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="454" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a71fad6f34ff1429a7d225ff4270a891a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.X1</definition>
+        <argsstring></argsstring>
+        <name>X1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="462" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa28e8154703b209657fa57fbeb550120" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.X2</definition>
+        <argsstring></argsstring>
+        <name>X2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="470" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aeee6b01986b5ab965debfef5ff750c5d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Y0</definition>
+        <argsstring></argsstring>
+        <name>Y0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="478" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a5e54f2706cc90f42fdc42ef1bfdc6941" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Y1</definition>
+        <argsstring></argsstring>
+        <name>Y1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="486" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a297f5c2fbf544efb2aaff2362ef5b169" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Y2</definition>
+        <argsstring></argsstring>
+        <name>Y2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="494" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3ccc7a460f4dc7a587e4364bec11b795" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Z0</definition>
+        <argsstring></argsstring>
+        <name>Z0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="502" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3a3a2b3c83b972aa4e9231a0b9f2e933" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Z1</definition>
+        <argsstring></argsstring>
+        <name>Z1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="510" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a8b82a7ce0dc897f5bb3665e39b2d4f84" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.Z2</definition>
+        <argsstring></argsstring>
+        <name>Z2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="518" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3e3cee877e1375a139fdded0a8d09f56" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.isDirty</definition>
+        <argsstring></argsstring>
+        <name>isDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="524" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa00f5dbd4e4ad5d6ab636fe93efef789" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLCameraColorCorrectionTransform.MLCameraColorCorrectionTransform</definition>
+        <argsstring>(float x0, float x1, float x2, float y0, float y1, float y2, float z0, float z1, float z2)</argsstring>
+        <name>MLCameraColorCorrectionTransform</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="527" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="527" bodyend="542"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="451" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="450" bodyend="543"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa03ad791dabd0911d7e60f9a9af51719" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_x0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a9734b3673319d1adad32c4c9c92adab9" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_x1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a64a089d91b3a8f602d2e22e46900fc19" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_x2</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a91fe689c373d19a48b51b85612a25bae" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_y0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a687de0eb26d1fc9af935499260d8a925" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_y1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a8ea476e01fcfaf350969bd1514988dca" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_y2</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a345e0a1740bd7c17d788d0bf5b3fe780" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_z0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a63e89b218334479a278ffa89aedab55d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_z1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a03988b95180ef36291f9578b654db467" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>_z2</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3e3cee877e1375a139fdded0a8d09f56" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>isDirty</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa00f5dbd4e4ad5d6ab636fe93efef789" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>MLCameraColorCorrectionTransform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1adc85bbacec757a8fedcd778efbd32d55" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>X0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a71fad6f34ff1429a7d225ff4270a891a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>X1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aa28e8154703b209657fa57fbeb550120" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>X2</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1aeee6b01986b5ab965debfef5ff750c5d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Y0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a5e54f2706cc90f42fdc42ef1bfdc6941" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Y1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a297f5c2fbf544efb2aaff2362ef5b169" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Y2</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3ccc7a460f4dc7a587e4364bec11b795" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Z0</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a3a3a2b3c83b972aa4e9231a0b9f2e933" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Z1</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform_1a8b82a7ce0dc897f5bb3665e39b2d4f84" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraColorCorrectionTransform</scope><name>Z2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

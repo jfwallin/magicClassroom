@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_location_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::LocationApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_location_api_native_bindings_1_1_m_l_location_data" prot="public">MagicLeapInternal::LocationApiNativeBindings::MLLocationData</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_location_api_native_bindings_1a95fb3b8ce8c75ed1f858d78dfd30fd44" prot="public" static="no">
+        <name>MLLocationDataMask</name>
+        <enumvalue id="class_magic_leap_internal_1_1_location_api_native_bindings_1a95fb3b8ce8c75ed1f858d78dfd30fd44a7530c3fc8e1bca38f3e684dc1c44ac5b" prot="public">
+          <name>HasPostalCode</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_location_api_native_bindings_1a95fb3b8ce8c75ed1f858d78dfd30fd44a99414c3edf64c4536453d19d40ba58e3" prot="public">
+          <name>HasAccuracy</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Mask value to determine the validity of #MLLocation data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" bodystart="62" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_location_api_native_bindings_1a42905b4b4a99cbd22ece38f8618bff4c" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MagicLeapInternal.LocationApiNativeBindings.MaxPostalCodeSize</definition>
+        <argsstring></argsstring>
+        <name>MaxPostalCodeSize</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_location_api_native_bindings_1a6bcbf426178a8fc2c9677727060b1c19" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.LocationApiNativeBindings.MLLocationDLL</definition>
+        <argsstring></argsstring>
+        <name>MLLocationDLL</name>
+        <initializer>= &quot;ml_location&quot;</initializer>
+        <briefdescription>
+<para>MLLocation library name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="56" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_location_api_native_bindings_1ae7fbc536b0912a230ce5713d0b37a1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.LocationApiNativeBindings.MLLocationGetLastCoarseLocation</definition>
+        <argsstring>(IntPtr outLocation)</argsstring>
+        <name>MLLocationGetLastCoarseLocation</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>outLocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_location_api_native_bindings_1a6a446598501daa276f3ff858566c6661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPtr</type>
+        <definition>static IntPtr MagicLeapInternal.LocationApiNativeBindings.MLLocationGetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>MLLocationGetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_location_api_native_bindings_1a685702e3d86f149a9392cd6cf6301885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.LocationApiNativeBindings.MLLocationGetLastFineLocation</definition>
+        <argsstring>(IntPtr outLocation)</argsstring>
+        <name>MLLocationGetLastFineLocation</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>outLocation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_location.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="101">
+        <label>MagicLeapInternal.LocationApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_location_api_native_bindings"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>MagicLeapInternal.LocationApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_location_api_native_bindings"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LocationApiNativeBindings.cs" bodystart="49" bodyend="133"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1a42905b4b4a99cbd22ece38f8618bff4c" prot="private" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MaxPostalCodeSize</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1a95fb3b8ce8c75ed1f858d78dfd30fd44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLLocationDataMask</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1a6bcbf426178a8fc2c9677727060b1c19" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLLocationDLL</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1ae7fbc536b0912a230ce5713d0b37a1f7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLLocationGetLastCoarseLocation</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1a685702e3d86f149a9392cd6cf6301885" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLLocationGetLastFineLocation</name></member>
+      <member refid="class_magic_leap_internal_1_1_location_api_native_bindings_1a6a446598501daa276f3ff858566c6661" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLLocationGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LocationApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

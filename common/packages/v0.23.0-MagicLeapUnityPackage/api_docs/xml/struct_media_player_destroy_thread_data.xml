@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_media_player_destroy_thread_data" kind="struct" language="C++" prot="public">
+    <compoundname>MediaPlayerDestroyThreadData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_media_player_destroy_thread_data_1a4d1c5f980352757cbe2ca48e73f2e0ea" prot="public" static="no" mutable="no">
+        <type>MLHandle</type>
+        <definition>MLHandle MediaPlayerDestroyThreadData::mediaplayer_handle</definition>
+        <argsstring></argsstring>
+        <name>mediaplayer_handle</name>
+        <initializer>= ML_INVALID_HANDLE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="152" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_media_player_destroy_thread_data_1a939d0af8d8c8ac80f58fb6f67ca585cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MediaPlayerDestroyThreadData::media_player_id</definition>
+        <argsstring></argsstring>
+        <name>media_player_id</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="153" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="151" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="150" bodyend="154"/>
+    <listofallmembers>
+      <member refid="struct_media_player_destroy_thread_data_1a939d0af8d8c8ac80f58fb6f67ca585cc" prot="public" virt="non-virtual"><scope>MediaPlayerDestroyThreadData</scope><name>media_player_id</name></member>
+      <member refid="struct_media_player_destroy_thread_data_1a4d1c5f980352757cbe2ca48e73f2e0ea" prot="public" virt="non-virtual"><scope>MediaPlayerDestroyThreadData</scope><name>mediaplayer_handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

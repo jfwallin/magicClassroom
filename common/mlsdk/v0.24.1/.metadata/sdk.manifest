@@ -1,0 +1,11 @@
+{
+	"schemaVersion": "1.0",
+	"label": "Lumin SDK",
+	"version": "0.24.0",
+	"mldb": "../tools/mldb/",
+	"templateDirs": [ "../tools/templates/projects" ],
+	"sampleDirs": [ "../samples" ],
+	"sourceFileExtensions" : ["cpp", "c", "cc", "cxx", "def", "s", "asm", "asmx"],
+	"headerFileExtensions" : ["h", "hh", "hpp", "hxx", "hm", "inl", "inc"],
+	"resourceFileExtensions" : ["bmp", "gif", "jpg", "jpeg", "png", "wav", "mp4"]
+}

@@ -1,0 +1,3 @@
+KIND=static_shared
+SRCS=empty.c empty.cpp
+USES=base

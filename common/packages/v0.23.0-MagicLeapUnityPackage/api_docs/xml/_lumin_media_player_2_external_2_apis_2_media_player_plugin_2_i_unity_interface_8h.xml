@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h" kind="file" language="C++">
+    <compoundname>IUnityInterface.h</compoundname>
+    <includedby refid="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_graphics_8h" local="yes">/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityGraphics.h</includedby>
+    <invincdepgraph>
+      <node id="244">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_tracks.h</label>
+        <link refid="ml__mediaplayer__plugin__tracks_8h_source"/>
+      </node>
+      <node id="243">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_gfx.h</label>
+        <link refid="ml__mediaplayer__plugin__gfx_8h_source"/>
+      </node>
+      <node id="240">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h</label>
+        <link refid="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h"/>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_drm.h</label>
+        <link refid="ml__mediaplayer__plugin__drm_8h_source"/>
+      </node>
+      <node id="241">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityGraphics.h</label>
+        <link refid="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_graphics_8h_source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h</label>
+        <link refid="ml__mediaplayer__plugin__common_8h_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_unity_interface_g_u_i_d" prot="public">UnityInterfaceGUID</innerclass>
+    <innerclass refid="struct_i_unity_interfaces" prot="public">IUnityInterfaces</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1a0b0210e40f0632d70b2abc6032162445" prot="public" static="no">
+        <name>UNITY_INTERFACE_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="16" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1a5f8982d070e7eadb80325aa4ad902788" prot="public" static="no">
+        <name>UNITY_INTERFACE_EXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="17" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1ad42ed84358c51da6fcef35ebff6e8493" prot="public" static="no">
+        <name>UNITY_GET_INTERFACE_GUID</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>TYPE##_GUID</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="71" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1a5d01b6bb0f2dd694ca5643c494cdfa73" prot="public" static="no">
+        <name>UNITY_GET_INTERFACE</name>
+        <param><defname>INTERFACES</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer>(TYPE*)INTERFACES-&gt;GetInterface(UNITY_GET_INTERFACE_GUID(TYPE));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="72" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1a2e54adb8d5e285def60b4d70969ddf25" prot="public" static="no">
+        <name>UNITY_DECLARE_INTERFACE</name>
+        <param><defname>NAME</defname></param>
+        <initializer>typedef struct NAME NAME;             \
+    struct NAME</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="89" column="10" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1aa51ba01bf53490c33a94599a57010105" prot="public" static="no">
+        <name>UNITY_REGISTER_INTERFACE_GUID</name>
+        <param><defname>HASHH</defname></param>
+        <param><defname>HASHL</defname></param>
+        <param><defname>TYPE</defname></param>
+        <initializer>const <ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref> TYPE##_GUID = {HASHH, HASHL};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="93" column="9" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1aa48789e303b2ab635499d4fbb54dc4d7" prot="public" static="no">
+        <type>struct <ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref></type>
+        <definition>typedef struct UnityInterfaceGUID UnityInterfaceGUID</definition>
+        <argsstring></argsstring>
+        <name>UnityInterfaceGUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="21" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1a9316e66505cb79cba7caeb34a8a8aa92" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void IUnityInterface</definition>
+        <argsstring></argsstring>
+        <name>IUnityInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="104" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1aef41c727e1ee389d4024953e0de11a0d" prot="public" static="no">
+        <type>struct <ref refid="struct_i_unity_interfaces" kindref="compound">IUnityInterfaces</ref></type>
+        <definition>typedef struct IUnityInterfaces  IUnityInterfaces</definition>
+        <argsstring></argsstring>
+        <name>IUnityInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1aac529db76046d6294ae55299431b76e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityPluginLoad</definition>
+        <argsstring>(IUnityInterfaces *unityInterfaces)</argsstring>
+        <name>UnityPluginLoad</name>
+        <param>
+          <type><ref refid="struct_i_unity_interfaces" kindref="compound">IUnityInterfaces</ref> *</type>
+          <declname>unityInterfaces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="142" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="472" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_1ab1b09e3fd0b9e47c23fae655087ead99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityPluginUnload</definition>
+        <argsstring>()</argsstring>
+        <name>UnityPluginUnload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="488" bodyend="499"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unity<sp/>native<sp/>plugin<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Compatible<sp/>with<sp/>C99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__CYGWIN32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_API<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_EXPORT<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(WIN32)<sp/>||<sp/>defined(_WIN32)<sp/>||<sp/>defined(__WIN32__)<sp/>||<sp/>defined(_WIN64)<sp/>||<sp/>defined(WINAPI_FAMILY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_API<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_EXPORT<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__MACH__)<sp/>||<sp/>defined(__ANDROID__)<sp/>||<sp/>defined(__linux__)<sp/>||<sp/>defined(__QNX__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_INTERFACE_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unity<sp/>Interface<sp/>GUID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ensures<sp/>cross<sp/>plugin<sp/>uniqueness.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Template<sp/>specialization<sp/>is<sp/>used<sp/>to<sp/>produce<sp/>a<sp/>means<sp/>of<sp/>looking<sp/>up<sp/>a<sp/>GUID<sp/>from<sp/>it&apos;s<sp/>payload<sp/>type<sp/>at<sp/>compile<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>net<sp/>result<sp/>should<sp/>compile<sp/>down<sp/>to<sp/>passing<sp/>around<sp/>the<sp/>GUID.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UNITY_REGISTER_INTERFACE_GUID<sp/>should<sp/>be<sp/>placed<sp/>in<sp/>the<sp/>header<sp/>file<sp/>of<sp/>any<sp/>payload<sp/>definition<sp/>outside<sp/>of<sp/>all<sp/>namespaces.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>payload<sp/>structure<sp/>and<sp/>the<sp/>registration<sp/>GUID<sp/>are<sp/>all<sp/>that<sp/>is<sp/>required<sp/>to<sp/>expose<sp/>the<sp/>interface<sp/>to<sp/>other<sp/>systems.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>high,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>low)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_GUIDHigh(high)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_GUIDLow(low)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_GUIDHigh<sp/>=<sp/>other.m_GUIDHigh;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_GUIDLow<sp/>=<sp/>other.m_GUIDLow;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_GUIDHigh<sp/>=<sp/>other.m_GUIDHigh;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_GUIDLow<sp/>=<sp/>other.m_GUIDLow;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equals(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/><sp/><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_GUIDHigh<sp/>==<sp/>other.m_GUIDHigh<sp/>&amp;&amp;<sp/>m_GUIDLow<sp/>==<sp/>other.m_GUIDLow;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LessThan(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_GUIDHigh<sp/>&lt;<sp/>other.m_GUIDHigh<sp/>||<sp/>(m_GUIDHigh<sp/>==<sp/>other.m_GUIDHigh<sp/>&amp;&amp;<sp/>m_GUIDLow<sp/>&lt;<sp/>other.m_GUIDLow);<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>m_GUIDHigh;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>m_GUIDLow;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left.Equals(right);<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!left.Equals(right);<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left.LessThan(right);<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>right.LessThan(left);<sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&gt;=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!operator&lt;<sp/>(left,<sp/>right);<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>left,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>&amp;<sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!operator&gt;<sp/>(left,<sp/>right);<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_GET_INTERFACE_GUID(TYPE)<sp/>TYPE##_GUID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_GET_INTERFACE(INTERFACES,<sp/>TYPE)<sp/>(TYPE*)INTERFACES-&gt;GetInterface(UNITY_GET_INTERFACE_GUID(TYPE));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_DECLARE_INTERFACE(NAME)<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>struct<sp/>NAME<sp/>:<sp/>IUnityInterface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TYPE&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">inline<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref><sp/>GetUnityInterfaceGUID();<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_REGISTER_INTERFACE_GUID(HASHH,<sp/>HASHL,<sp/>TYPE)<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>UnityInterfaceGUID<sp/>TYPE##_GUID(HASHH,<sp/>HASHL);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>template&lt;&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>inline<sp/>const<sp/>UnityInterfaceGUID<sp/>GetUnityInterfaceGUID&lt;TYPE&gt;()<sp/><sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>UNITY_GET_INTERFACE_GUID(TYPE);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_DECLARE_INTERFACE(NAME)<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>NAME<sp/>NAME;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>struct<sp/>NAME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNITY_REGISTER_INTERFACE_GUID(HASHH,<sp/>HASHL,<sp/>TYPE)<sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>UnityInterfaceGUID<sp/>TYPE##_GUID<sp/>=<sp/>{HASHH,<sp/>HASHL};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">IUnityInterface</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IUnityInterface;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i_unity_interfaces" kindref="compound">IUnityInterfaces</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>an<sp/>interface<sp/>matching<sp/>the<sp/>guid.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>nullptr<sp/>if<sp/>the<sp/>given<sp/>interface<sp/>is<sp/>unavailable<sp/>in<sp/>the<sp/>active<sp/>Unity<sp/>runtime.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>IUnityInterface*<sp/>(UNITY_INTERFACE_API<sp/>*<sp/>GetInterface)(<ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref><sp/>guid);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Registers<sp/>a<sp/>new<sp/>interface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(UNITY_INTERFACE_API<sp/>*<sp/>RegisterInterface)(<ref refid="struct_unity_interface_g_u_i_d" kindref="compound">UnityInterfaceGUID</ref><sp/>guid,<sp/>IUnityInterface*<sp/>ptr);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>for<sp/>GetInterface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>INTERFACE&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>INTERFACE*<sp/>Get()</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">INTERFACE*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(GetInterface(GetUnityInterfaceGUID&lt;INTERFACE&gt;()));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>for<sp/>RegisterInterface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>INTERFACE&gt;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Register(IUnityInterface*<sp/>ptr)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RegisterInterface(GetUnityInterfaceGUID&lt;INTERFACE&gt;(),<sp/>ptr);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/><ref refid="struct_i_unity_interfaces" kindref="compound">IUnityInterfaces</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>exported<sp/>by<sp/>a<sp/>plugin,<sp/>this<sp/>function<sp/>will<sp/>be<sp/>called<sp/>when<sp/>the<sp/>plugin<sp/>is<sp/>loaded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UNITY_INTERFACE_EXPORT<sp/>UNITY_INTERFACE_API<sp/>UnityPluginLoad(<ref refid="struct_i_unity_interfaces" kindref="compound">IUnityInterfaces</ref>*<sp/>unityInterfaces);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>exported<sp/>by<sp/>a<sp/>plugin,<sp/>this<sp/>function<sp/>will<sp/>be<sp/>called<sp/>when<sp/>the<sp/>plugin<sp/>is<sp/>about<sp/>to<sp/>be<sp/>unloaded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UNITY_INTERFACE_EXPORT<sp/>UNITY_INTERFACE_API<sp/>UnityPluginUnload();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/IUnityInterface.h"/>
+  </compounddef>
+</doxygen>

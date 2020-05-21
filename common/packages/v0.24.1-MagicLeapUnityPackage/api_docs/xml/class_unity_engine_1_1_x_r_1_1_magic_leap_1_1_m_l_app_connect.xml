@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLAppConnect</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLAppConnect &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a328273ba44f629398a86562af61a41a6" prot="public" static="no">
+        <name>ConnectionType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a328273ba44f629398a86562af61a41a6a581497d0094fbaab2fedad1029cbb4da" prot="public">
+          <name>UnknownConnectionType</name>
+          <briefdescription>
+<para>Unknown connection type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a328273ba44f629398a86562af61a41a6a5fe85aee0186c2f1199f028218fb670a" prot="public">
+          <name>Loopback</name>
+          <briefdescription>
+<para>Loopback Connection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a328273ba44f629398a86562af61a41a6a7a1920d61156abc05a60135aefe8bc67" prot="public">
+          <name>Default</name>
+          <briefdescription>
+<para>Connection with default WebRTC. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the C# representation of MLAppConnectConnectionType from #ml_app_connect.h. Type of connection to be created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="297" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="296" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239" prot="public" static="no">
+        <name>PipeType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239a3163c473251520b3fbfef57f9c434f8d" prot="public">
+          <name>UnknownPipeType</name>
+          <briefdescription>
+<para>Unknown Pipe type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239a63bee870560e262b57ad85faeb05fa8a" prot="public">
+          <name>AudioPipe</name>
+          <briefdescription>
+<para>Pipe type for Audio transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239a1d2d5a70f8291c5ba75a972bb2bd463c" prot="public">
+          <name>DataPipe</name>
+          <briefdescription>
+<para>Pipe type for Data transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239a1c349b530402ee98021b0a46dcbf06d7" prot="public">
+          <name>VideoPipe</name>
+          <briefdescription>
+<para>Pipe type for Video transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the C# representation of MLAppConnectPipeType from #ml_app_connect.h. The type of media pipe to send/receive data with remote users. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="319" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="318" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a94714cb844b5feba99a6d3ae7ab32f5c" prot="public" static="no">
+        <name>PipeReliability</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a94714cb844b5feba99a6d3ae7ab32f5caeae4cced3a8b7a1fdcea4673e017377b" prot="public">
+          <name>UnknownPipeReliability</name>
+          <briefdescription>
+<para>Unknown reliability. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a94714cb844b5feba99a6d3ae7ab32f5ca84fcf5d37086f2a93953734ce8f385b6" prot="public">
+          <name>Reliable</name>
+          <briefdescription>
+<para>Reliable data transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a94714cb844b5feba99a6d3ae7ab32f5ca98a19ff88f463baefac152f8641dea36" prot="public">
+          <name>Unreliable</name>
+          <briefdescription>
+<para>Unreliable data transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The reliability of the pipe. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="344" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="343" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a1788285a2329cd6a642437f182de9eed" prot="public" static="no">
+        <name>PipeOrdering</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a1788285a2329cd6a642437f182de9eedaf6a154db4fbd40cde99c15a670dc151a" prot="public">
+          <name>UnknownPipeOrdering</name>
+          <briefdescription>
+<para>Unknown order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a1788285a2329cd6a642437f182de9eeda26e09a1ee1517389c7b07f42df65561a" prot="public">
+          <name>Ordered</name>
+          <briefdescription>
+<para>Data transfer in order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a1788285a2329cd6a642437f182de9eedaea39d9e56272ea9400c753104ced584f" prot="public">
+          <name>NotOrdered</name>
+          <briefdescription>
+<para>Data transfer not in order. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The data ordering of the pipe. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="365" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="364" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1" prot="public" static="no">
+        <name>PipeDirection</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1a0c34d4bd738b3c0d3555ad5e63848c8a" prot="public">
+          <name>UnknownPipeDirection</name>
+          <briefdescription>
+<para>Pipe direction, Unknown. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1abe596ca0cacbc68eeab47a4a87ee64db" prot="public">
+          <name>UniDirectionalOut</name>
+          <briefdescription>
+<para>Pipe direction, <computeroutput>UniDirection</computeroutput> out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1a719fe0e0cce6862215b3c311dd7c8a70" prot="public">
+          <name>UniDirectionalIn</name>
+          <briefdescription>
+<para>Pipe direction, <computeroutput>UniDirection</computeroutput> in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1a94dc82bdcd1c3e58e90b5d4317b1b701" prot="public">
+          <name>BiDirectional</name>
+          <briefdescription>
+<para>Pipe direction, BiDirection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The direction of data flow in a pipe. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="386" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="385" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a0412d51958748d70f930e28056ec4250" prot="public" static="no">
+        <name>Priority</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a0412d51958748d70f930e28056ec4250a655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <briefdescription>
+<para>priority, High. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a0412d51958748d70f930e28056ec4250a960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
+          <name>Normal</name>
+          <briefdescription>
+<para>priority, Normal. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a0412d51958748d70f930e28056ec4250a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <briefdescription>
+<para>priority, Low. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the C# representation of MLAppConnectPriority from #ml_app_connect.h Before the data is actually sent to other users, it gets queued according to a priority. If 2 pipes with different priorities have queued data at the same time, then the pipe with the higher priority will flush its data before the pipe with lower priority. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="415" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="414" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570" prot="public" static="no">
+        <name>EventType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a39bc84a02682b9d6e65dd358bf35e9dd" prot="public">
+          <name>UnknownEvent</name>
+          <briefdescription>
+<para>Unknown Event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570ac6219aeaa07538d6d5e8a352f2215fa8" prot="public">
+          <name>PipeCreated</name>
+          <briefdescription>
+<para>Pipe Created. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570ab927bfb54919e3c438796a73c5d16f73" prot="public">
+          <name>PipeFailed</name>
+          <briefdescription>
+<para>Pipe Creation Failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570af716d33b6193e7a33a8cee0e16fe32de" prot="public">
+          <name>PipeDeleted</name>
+          <briefdescription>
+<para>Pipe Deleted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a6d9af972d7fa23107de4e01f1996c008" prot="public">
+          <name>PipeLargeData</name>
+          <briefdescription>
+<para>Pipe received large data packet(s). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a07e06e376b32f228decf42402cac0ec8" prot="public">
+          <name>MicMuted</name>
+          <briefdescription>
+<para>Microphone Muted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570ad6cfbd7466c70d891f41ff526a95f4c9" prot="public">
+          <name>MicUnmuted</name>
+          <briefdescription>
+<para>Microphone Unmuted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a5d5ce7213ef6efe73b03de1e5003bd7b" prot="public">
+          <name>UserJoined</name>
+          <briefdescription>
+<para>Contact joined the connection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a0de7a536923b46d0a514a8ba4e6858af" prot="public">
+          <name>UserExited</name>
+          <briefdescription>
+<para>Contact left the connection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570af78d3d115a731e72c9715bf782100005" prot="public">
+          <name>UserInvite</name>
+          <briefdescription>
+<para>A new user got invited. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570a50a7be99b40e31448be5d6c6f391767b" prot="public">
+          <name>UsersInviteAbort</name>
+          <briefdescription>
+<para>User decided to abort the &quot;invite dialog&quot;. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the C# representation of MLAppConnectConnectionEventType from #ml_app_connect.h The AppConnect event types that can be reported to client applications. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="437" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="436" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a3d420535d30e8058f8b365660813e71a" prot="public" static="no">
+        <name>VideoFormat</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a3d420535d30e8058f8b365660813e71aaea3495a278957dc58165e48a8945469f" prot="public">
+          <name>RGBA</name>
+          <briefdescription>
+<para>RGBA format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a3d420535d30e8058f8b365660813e71aacd1ea458818d68e388b9356fd528d67a" prot="public">
+          <name>I420</name>
+          <briefdescription>
+<para>I420 video format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Video format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="498" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="497" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages App Connections. </para>    </briefdescription>
+    <detaileddescription>
+<para>cle </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>UnityEngine.XR.MagicLeap.MLAppConnect</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>MLAPISingleton&lt; MLAppConnect &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>UnityEngine.XR.MagicLeap.MLAppConnect</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>MLAPISingleton&lt; MLAppConnect &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" line="28" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAppConnect.cs" bodystart="27" bodyend="2597"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a328273ba44f629398a86562af61a41a6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>ConnectionType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a7048b02aa28fe510b01f8a0b66b09570" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>EventType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a059882eaf8d8bc2f87061072480134c1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>PipeDirection</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a1788285a2329cd6a642437f182de9eed" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>PipeOrdering</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a94714cb844b5feba99a6d3ae7ab32f5c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>PipeReliability</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1abb0a1eeb7a26ac55c4a700a745cde239" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>PipeType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a0412d51958748d70f930e28056ec4250" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>Priority</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect_1a3d420535d30e8058f8b365660813e71a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAppConnect</scope><name>VideoFormat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

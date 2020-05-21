@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLHandTracking</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLHandTracking &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2" prot="public" static="no">
+        <name>HandKeyPose</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2a05d7a63454d2014f937df55fd0fb3a63" prot="public">
+          <name>Finger</name>
+          <briefdescription>
+<para>Index finger. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2aae8faf2882fb1dfc7183a0a7a6784f9a" prot="public">
+          <name>Fist</name>
+          <briefdescription>
+<para>A A closed fist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2a1e4ddf6f135e4c639929b4633c29d4f2" prot="public">
+          <name>Pinch</name>
+          <briefdescription>
+<para>A pinch. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2a8807c97721e343cdc1fa2444cc00415b" prot="public">
+          <name>Thumb</name>
+          <briefdescription>
+<para>A closed fist with the thumb pointed up. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2ad20caec3b48a1eef164cb4ca81ba2587" prot="public">
+          <name>L</name>
+          <briefdescription>
+<para>An L shape </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2aad39746cdba57cad436b509f2f991d22" prot="public">
+          <name>OpenHand</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>An open hand. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2aa60852f204ed8028c1c58808b746d115" prot="public">
+          <name>Ok</name>
+          <briefdescription>
+<para>A pinch with all fingers, except the index finger and the thumb, extended out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2a0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <briefdescription>
+<para>A rounded &apos;C&apos; alphabet shape. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2aa6eab7d635f815ec189f2a99894d0c24" prot="public">
+          <name>NoPose</name>
+          <briefdescription>
+<para>No pose was recognized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2afde6f03305d95b3a425f4d6811d19234" prot="public">
+          <name>NoHand</name>
+          <briefdescription>
+<para>No hand was detected. Should be the last pose. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Static key pose types which are available when both hands are separated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="45" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" bodystart="44" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6ba949b377ef0e02a5c98c3e1a6f67d2" prot="public" static="no">
+        <name>KeyPointFilterLevel</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6ba949b377ef0e02a5c98c3e1a6f67d2a65e65c8ab0d8609ce12fc68a03cb8e00" prot="public">
+          <name>Raw</name>
+          <briefdescription>
+<para>Default value, no filtering is done, the points are raw. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6ba949b377ef0e02a5c98c3e1a6f67d2ac5d48c613aa395e2f92d06e97b85aa97" prot="public">
+          <name>Smoothed</name>
+          <briefdescription>
+<para>Some smoothing at the cost of latency. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6ba949b377ef0e02a5c98c3e1a6f67d2af01045f02c416e5a7dee5b4da9f59ba9" prot="public">
+          <name>ExtraSmoothed</name>
+          <briefdescription>
+<para>Predictive smoothing, at higher cost of latency. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configured level for key points filtering of key points and hand centers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="101" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" bodystart="100" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ad6e770336743fcc59480e7c24321474f" prot="public" static="no">
+        <name>PoseFilterLevel</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ad6e770336743fcc59480e7c24321474fa65e65c8ab0d8609ce12fc68a03cb8e00" prot="public">
+          <name>Raw</name>
+          <briefdescription>
+<para>Default value, no filtering, the poses are raw. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ad6e770336743fcc59480e7c24321474facd8257a80d3498e67b8972607c8377c0" prot="public">
+          <name>Robust</name>
+          <briefdescription>
+<para>Some robustness to flicker at some cost of latency. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ad6e770336743fcc59480e7c24321474fa3c94be3a4bbc38d238360d29d611c638" prot="public">
+          <name>ExtraRobust</name>
+          <briefdescription>
+<para>More robust to flicker at higher latency cost. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Configured level of filtering for static poses. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" bodystart="121" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6e22f802cabbf45ff9eae6199aacda67" prot="public" static="no">
+        <name>HandType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6e22f802cabbf45ff9eae6199aacda67a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>Left hand. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6e22f802cabbf45ff9eae6199aacda67a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>Right hand. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents if a hand is the right or left hand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="143" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" bodystart="142" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking" kindref="compound">MLHandTracking</ref> is the entry point for all the hand tracking data including gestures, hand centers and key points for both hands. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="48">
+        <label>UnityEngine.XR.MagicLeap.MLHandTracking</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>MLAPISingleton&lt; MLHandTracking &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>UnityEngine.XR.MagicLeap.MLHandTracking</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>MLAPISingleton&lt; MLHandTracking &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="23" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" bodystart="22" bodyend="333"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ac57b2bd5a47c00ef1d73bc41c00178d2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHandTracking</scope><name>HandKeyPose</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6e22f802cabbf45ff9eae6199aacda67" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHandTracking</scope><name>HandType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1a6ba949b377ef0e02a5c98c3e1a6f67d2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHandTracking</scope><name>KeyPointFilterLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking_1ad6e770336743fcc59480e7c24321474f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHandTracking</scope><name>PoseFilterLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

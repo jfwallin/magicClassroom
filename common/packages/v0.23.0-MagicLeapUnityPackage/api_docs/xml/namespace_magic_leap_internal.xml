@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_magic_leap_internal" kind="namespace" language="C#">
+    <compoundname>MagicLeapInternal</compoundname>
+    <innerclass refid="class_magic_leap_internal_1_1_audio_native_bindings" prot="public">MagicLeapInternal::AudioNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_camera_api_native_bindings" prot="public">MagicLeapInternal::CameraApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_connections_api_native_bindings" prot="public">MagicLeapInternal::ConnectionsApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_contacts_api_native_bindings" prot="public">MagicLeapInternal::ContactsApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_controller_native_bindings" prot="public">MagicLeapInternal::ControllerNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_c_v_camera_api_native_bindings" prot="package">MagicLeapInternal::CVCameraApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_dispatch_api_native_bindings" prot="public">MagicLeapInternal::DispatchApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_eye_api_native_bindings" prot="public">MagicLeapInternal::EyeApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings" prot="public">MagicLeapInternal::HandMeshingApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings" prot="public">MagicLeapInternal::HandTrackingApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_head_api_native_bindings" prot="public">MagicLeapInternal::HeadApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_identity_api_native_bindings" prot="public">MagicLeapInternal::IdentityApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_image_api_native_bindings" prot="public">MagicLeapInternal::ImageApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_image_tracker_native_bindings" prot="public">MagicLeapInternal::ImageTrackerNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_input_native_bindings" prot="public">MagicLeapInternal::InputNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_lighting_tracking_api_native_bindings" prot="public">MagicLeapInternal::LightingTrackingApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_locale_api_native_bindings" prot="public">MagicLeapInternal::LocaleApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_location_api_native_bindings" prot="public">MagicLeapInternal::LocationApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public">MagicLeapInternal::MagicLeapNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_media_player_native_bindings" prot="public">MagicLeapInternal::MediaPlayerNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_m_l_convert" prot="public">MagicLeapInternal::MLConvert</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_m_l_texture_utils" prot="public">MagicLeapInternal::MLTextureUtils</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_movement_api_native_bindings" prot="public">MagicLeapInternal::MovementApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_music_service_native_bindings" prot="public">MagicLeapInternal::MusicServiceNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_networking_api_native_bindings" prot="public">MagicLeapInternal::NetworkingApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_p_c_f_api_native_bindings" prot="public">MagicLeapInternal::PCFApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_planes_api_native_bindings" prot="public">MagicLeapInternal::PlanesApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_privileges_api_native_bindings" prot="public">MagicLeapInternal::PrivilegesApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_raycast_api_native_bindings" prot="public">MagicLeapInternal::RaycastApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_screens_native_bindings" prot="public">MagicLeapInternal::ScreensNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_secure_storage_api_native_bindings" prot="public">MagicLeapInternal::SecureStorageApiNativeBindings</innerclass>
+    <innerclass refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings" prot="public">MagicLeapInternal::TokenAgentApiNativeBindings</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_magic_leap_internal_1ad82fbea49b2e3c832246cc6590ea5b35" prot="package" static="no">
+        <name>MLCVCameraID</name>
+        <enumvalue id="namespace_magic_leap_internal_1ad82fbea49b2e3c832246cc6590ea5b35acf7616ba04e9d479216732a27645ef5a" prot="package">
+          <name>ColorCamera</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MLCVCameraID enum from ml_cv_camera.h </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CVCameraApiNativeBindings.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="57" column="1"/>
+  </compounddef>
+</doxygen>

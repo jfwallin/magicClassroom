@@ -1,0 +1,37 @@
+# These options are injected when building programs.
+
+LDFLAGS.lumin=\
+        -pie \
+        -Wl,--gc-sections \
+        -Wl,-z,nocopyreloc \
+        -Wl,--warn-shared-textrel \
+        -Wl,--fatal-warnings \
+        -Wl,--build-id
+
+CFLAGS.lumin=\
+        -fPIE
+CXXFLAGS.lumin=\
+        -fPIE
+
+# Default system libraries for msvc.
+SHLIBS.msvc=\
+	kernel32 \
+	user32 \
+	gdi32 \
+	winspool \
+	comdlg32 \
+	advapi32 \
+	shell32 \
+	ole32 \
+	oleaut32 \
+	uuid \
+	odbc32 \
+	odbccp32
+
+SHLIBS.linux=\
+	c \
+	m
+
+SHLIBS.device=\
+	c \
+	m

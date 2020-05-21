@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLVerbosity</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671" prot="public" static="no">
+        <name>Levels</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671a1e3332b2cd20d2d3db407a20f6913d0d" prot="public">
+          <name>Silent</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Don&apos;t print any MLPlugin logs. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671ae0a1284706116eec7a83a489235a9ef8" prot="public">
+          <name>ErrorsOnly</name>
+          <briefdescription>
+<para>Print only MLPlugin error logs. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671ac97dda1f78d8fbb5a4f489ab1b51ff4d" prot="public">
+          <name>WarningsAndErrors</name>
+          <briefdescription>
+<para>Print MLPlugin error and warning logs. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671ad4a9fa383ab700c5bdd6f31cf7df0faf" prot="public">
+          <name>Verbose</name>
+          <briefdescription>
+<para>Print all MLPlugin logs. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Different levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLVerbosity.cs" line="28" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLVerbosity.cs" bodystart="27" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class to handle verbosity of MLPlugin logs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLVerbosity.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLVerbosity.cs" bodystart="21" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity_1a76cf61e71e38c1038a62b0c37ca14671" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLVerbosity</scope><name>Levels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

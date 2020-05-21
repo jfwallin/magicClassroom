@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLInputController</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8b0948b78e9126c66da77fc60f9ea939" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLInputController._inputTrackerHandle</definition>
+        <argsstring></argsstring>
+        <name>_inputTrackerHandle</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8e590ac2f5c8eb4d5ba8ba718bfaafa7" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte UnityEngine.XR.MagicLeap.MLInputController._controllerId</definition>
+        <argsstring></argsstring>
+        <name>_controllerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a5df632d09353b9f5014bae80e891ef89" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_transform" kindref="compound">MagicLeapNativeBindings.MLTransform</ref></type>
+        <definition>MagicLeapNativeBindings.MLTransform UnityEngine.XR.MagicLeap.MLInputController._transform</definition>
+        <argsstring></argsstring>
+        <name>_transform</name>
+        <initializer>= MagicLeapNativeBindings.MLTransform.Identity()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aed70291ba73d2aa9b11509986413f813" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af7da5bc4627392d3e57f496e76b11ced" kindref="member">MLControllerMode</ref></type>
+        <definition>MLControllerMode UnityEngine.XR.MagicLeap.MLInputController._controllerMode</definition>
+        <argsstring></argsstring>
+        <name>_controllerMode</name>
+        <initializer>= MLControllerMode.Fused6DOF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="60" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad73d9192f0d36c7d235c5ed9c76cfc20" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLInputController._isMenuButtonDown</definition>
+        <argsstring></argsstring>
+        <name>_isMenuButtonDown</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1adc0b5d9cae6472523d0113f6f3c2db7a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a33dfd3fcd801c26362b920d9e3fb79c5" kindref="member">MLInput.ControllerTouchpadGestureDelegate</ref></type>
+        <definition>MLInput.ControllerTouchpadGestureDelegate UnityEngine.XR.MagicLeap.MLInputController.OnTouchpadGestureStart</definition>
+        <argsstring></argsstring>
+        <name>OnTouchpadGestureStart</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a detected touchpad gesture begins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a42d09dfb15ed4a1fd4dd0dff43f5d0c1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a33dfd3fcd801c26362b920d9e3fb79c5" kindref="member">MLInput.ControllerTouchpadGestureDelegate</ref></type>
+        <definition>MLInput.ControllerTouchpadGestureDelegate UnityEngine.XR.MagicLeap.MLInputController.OnTouchpadGestureContinue</definition>
+        <argsstring></argsstring>
+        <name>OnTouchpadGestureContinue</name>
+        <briefdescription>
+<para>This callback will be invoked as a detected touchpad gesture continues. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="72" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad4eba69258a2f1aa67f70290721d0786" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a33dfd3fcd801c26362b920d9e3fb79c5" kindref="member">MLInput.ControllerTouchpadGestureDelegate</ref></type>
+        <definition>MLInput.ControllerTouchpadGestureDelegate UnityEngine.XR.MagicLeap.MLInputController.OnTouchpadGestureEnd</definition>
+        <argsstring></argsstring>
+        <name>OnTouchpadGestureEnd</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a detected touchpad gesture ends. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8533990d5bf89ed2a2df963fc8925266" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1acf640a191b95008b979ec49a85f7f0fa" kindref="member">MLInput.ControllerButtonDelegate</ref></type>
+        <definition>MLInput.ControllerButtonDelegate UnityEngine.XR.MagicLeap.MLInputController.OnButtonDown</definition>
+        <argsstring></argsstring>
+        <name>OnButtonDown</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a button press is detected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a30f7c447ebb5e24455111633b43f6440" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1acf640a191b95008b979ec49a85f7f0fa" kindref="member">MLInput.ControllerButtonDelegate</ref></type>
+        <definition>MLInput.ControllerButtonDelegate UnityEngine.XR.MagicLeap.MLInputController.OnButtonUp</definition>
+        <argsstring></argsstring>
+        <name>OnButtonUp</name>
+        <briefdescription>
+<para>This callback will be invoked whenever a button release is detected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="85" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a92ff0654ea7a07b46db263e72882e486" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a29f0b612d928e1942f7b21e92980584c" kindref="member">MLInput.ControllerConnectionDelegate</ref></type>
+        <definition>MLInput.ControllerConnectionDelegate UnityEngine.XR.MagicLeap.MLInputController.OnConnect</definition>
+        <argsstring></argsstring>
+        <name>OnConnect</name>
+        <briefdescription>
+<para>This callback will be invoked when a controller is connected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="90" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a7c2cada7734ba2c5137a327f07a4de25" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a29f0b612d928e1942f7b21e92980584c" kindref="member">MLInput.ControllerConnectionDelegate</ref></type>
+        <definition>MLInput.ControllerConnectionDelegate UnityEngine.XR.MagicLeap.MLInputController.OnDisconnect</definition>
+        <argsstring></argsstring>
+        <name>OnDisconnect</name>
+        <briefdescription>
+<para>This callback will be invoked when a controller is disconnected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a88561cc90bc0893476c4d1c2d088c8b9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1ac43b006e7f71152d877061ff51aee5ab" kindref="member">MLInput.Hand</ref></type>
+        <definition>MLInput.Hand UnityEngine.XR.MagicLeap.MLInputController.Hand</definition>
+        <argsstring></argsstring>
+        <name>Hand</name>
+        <briefdescription>
+<para>The hand this controller is mapped to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ade7d1da9c9444d4237de4fffaee0bbb1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLInputController.Connected</definition>
+        <argsstring></argsstring>
+        <name>Connected</name>
+        <briefdescription>
+<para>Is this controller connected to the device? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="104" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ae6a445a3292fe4417af54216b6a1e3a1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLInputController.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+<para>Gets the current 3DoF position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="109" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ae12baf59f1442f60bfa2b6f6cad19439" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion UnityEngine.XR.MagicLeap.MLInputController.Orientation</definition>
+        <argsstring></argsstring>
+        <name>Orientation</name>
+        <briefdescription>
+<para>Gets the current 3DoF orientation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="114" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aa47ca2816249ac44756b7986eb1140d6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLInputController.Touch1PosAndForce</definition>
+        <argsstring></argsstring>
+        <name>Touch1PosAndForce</name>
+        <briefdescription>
+<para>Gets the current touch 1 position (x,y) and force (z). Force is [0-1]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad55ab9666aec9463805442e42479e35a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLInputController.Touch1Active</definition>
+        <argsstring></argsstring>
+        <name>Touch1Active</name>
+        <briefdescription>
+<para>Gets whether touch 1 is active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="124" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a788feddd46bd132e090f5325dff3d1d3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLInputController.Touch2PosAndForce</definition>
+        <argsstring></argsstring>
+        <name>Touch2PosAndForce</name>
+        <briefdescription>
+<para>Gets the current touch 2 position (x,y) and force (z). Force is [0-1]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8f26105adc7b32d09ed8a0744e653848" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLInputController.Touch2Active</definition>
+        <argsstring></argsstring>
+        <name>Touch2Active</name>
+        <briefdescription>
+<para>Gets whether touch 2 is active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="134" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a3b4b80edd9c946a428c27d3ea205f22b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLInputController.TriggerValue</definition>
+        <argsstring></argsstring>
+        <name>TriggerValue</name>
+        <briefdescription>
+<para>Gets current trigger value [0.0-1.0] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="139" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8ce026dadd631b2decd8d7a7fb48927f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLInputController.IsBumperDown</definition>
+        <argsstring></argsstring>
+        <name>IsBumperDown</name>
+        <briefdescription>
+<para>Get current status of bumper </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8daee2f0d3fa2e04ad33748cb8538973" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a0ab8ada0294bd5fc53e8125de8712079" kindref="member">MLInputControllerTouchpadGestureState</ref></type>
+        <definition>MLInputControllerTouchpadGestureState UnityEngine.XR.MagicLeap.MLInputController.TouchpadGestureState</definition>
+        <argsstring></argsstring>
+        <name>TouchpadGestureState</name>
+        <briefdescription>
+<para>Current touchpad gesture state </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="149" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a2bb76036aa43429776a001986914419b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a97592430731fca06b03af8bf86c5bffc" kindref="member">MLInputControllerType</ref></type>
+        <definition>MLInputControllerType UnityEngine.XR.MagicLeap.MLInputController.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+<para>Type of this controller </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1af0f03f000af4e1763e6ccf2a16d9a3e0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad96439eff524989500bca6dff4df25dc" kindref="member">MLInputControllerDof</ref></type>
+        <definition>MLInputControllerDof UnityEngine.XR.MagicLeap.MLInputController.Dof</definition>
+        <argsstring></argsstring>
+        <name>Dof</name>
+        <briefdescription>
+<para>Current degrees of freedom mode of the controller </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="159" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a4394a637d3cb9627bb1b83b06291db3e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280" kindref="member">MLControllerCalibAccuracy</ref></type>
+        <definition>MLControllerCalibAccuracy UnityEngine.XR.MagicLeap.MLInputController.CalibrationAccuracy</definition>
+        <argsstring></argsstring>
+        <name>CalibrationAccuracy</name>
+        <briefdescription>
+<para>The calibration accuracy levels for controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="164" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a41be5c15601d60c312d32f3b13e25401" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_touchpad_gesture" kindref="compound">MLInputControllerTouchpadGesture</ref></type>
+        <definition>MLInputControllerTouchpadGesture UnityEngine.XR.MagicLeap.MLInputController.TouchpadGesture</definition>
+        <argsstring></argsstring>
+        <name>TouchpadGesture</name>
+        <briefdescription>
+<para>Current touchpad gesture </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="169" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad7a38ed078b65265129d10aa252f401f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>byte</type>
+        <definition>byte UnityEngine.XR.MagicLeap.MLInputController.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+<para>Controller ID </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="174" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a547fc1b7c0c42370a52275226b32f719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLInputController.MLInputController</definition>
+        <argsstring>(ulong inputTrackerHandle, byte controllerId, MLInput.Hand inputHand)</argsstring>
+        <name>MLInputController</name>
+        <param>
+          <type>ulong</type>
+          <declname>inputTrackerHandle</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>controllerId</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1ac43b006e7f71152d877061ff51aee5ab" kindref="member">MLInput.Hand</ref></type>
+          <declname>inputHand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="177" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="177" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1af6387012b59e0ef62ab3f8e531347cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.Update</definition>
+        <argsstring>(InputDevice device)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>InputDevice</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>Updates the control state using the MLController API. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current device for the frame.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the result from either MLControllerGetState or MLSnapshotGetTransform.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="208" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="208" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a97a7cbe4a5c8fe25ff4cb724201831cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.StartFeedbackPatternLED</definition>
+        <argsstring>(MLInputControllerFeedbackPatternLED pattern, MLInputControllerFeedbackColorLED color, float duration)</argsstring>
+        <name>StartFeedbackPatternLED</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad5a11d13818576fc8755f146f3c8842b" kindref="member">MLInputControllerFeedbackPatternLED</ref></type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abc0f1840a6831ab738a40000eae3c8f4" kindref="member">MLInputControllerFeedbackColorLED</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Start the controller&apos;s LED in the specified pattern and set the duration (in seconds) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to other internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="377" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="377" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a822b558800877c46debbc6d9ecd7bbe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.StartFeedbackPatternEffectLED</definition>
+        <argsstring>(MLInputControllerFeedbackEffectLED effect, MLInputControllerFeedbackEffectSpeedLED speed, MLInputControllerFeedbackPatternLED pattern, MLInputControllerFeedbackColorLED color, float duration)</argsstring>
+        <name>StartFeedbackPatternEffectLED</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a4bf1347cd0b50edddfc784bb10541f0d" kindref="member">MLInputControllerFeedbackEffectLED</ref></type>
+          <declname>effect</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aa04d9ea1effc7e22c5c9ec3962bcae43" kindref="member">MLInputControllerFeedbackEffectSpeedLED</ref></type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad5a11d13818576fc8755f146f3c8842b" kindref="member">MLInputControllerFeedbackPatternLED</ref></type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abc0f1840a6831ab738a40000eae3c8f4" kindref="member">MLInputControllerFeedbackColorLED</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Start the controller&apos;s LED performing the specified effect at the specified speed with the specified pattern for the specified duration (in seconds) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to other internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="399" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="399" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a10e865d720d536cb4c12c17dd62e1c5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.StopFeedbackPatternLED</definition>
+        <argsstring>()</argsstring>
+        <name>StopFeedbackPatternLED</name>
+        <briefdescription>
+<para>Stop on-going LED patterns for the controller </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to other internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="421" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="421" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a049238ce521e458cafef997096c9f3f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.StartFeedbackPatternVibe</definition>
+        <argsstring>(MLInputControllerFeedbackPatternVibe pattern, MLInputControllerFeedbackIntensity intensity)</argsstring>
+        <name>StartFeedbackPatternVibe</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac2f969030c6f49add05e914a88c45ee2" kindref="member">MLInputControllerFeedbackPatternVibe</ref></type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a98c3fca405c16ccb5139264f837f54a6" kindref="member">MLInputControllerFeedbackIntensity</ref></type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+<para>Vibrate the controller in the specified pattern </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to other internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="443" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="443" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aa6bbe2e1d710d5924d4b6e86c057e20f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLInputController.StopFeedbackPatternVibe</definition>
+        <argsstring>()</argsstring>
+        <name>StopFeedbackPatternVibe</name>
+        <briefdescription>
+<para>Stop on-going Vibration patterns for the controller </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to other internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="464" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="464" bodyend="476"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a0fdaf8f6b501d3a195925eea2e2ae14d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLInputController.~MLInputController</definition>
+        <argsstring>()</argsstring>
+        <name>~MLInputController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="194" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="194" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a67725137b63da9d021053c83490e475d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLInputController.HandleOnTouchpadGestureChanged</definition>
+        <argsstring>(MagicLeapTouchpadGestureEvent gestureEvent)</argsstring>
+        <name>HandleOnTouchpadGestureChanged</name>
+        <param>
+          <type>MagicLeapTouchpadGestureEvent</type>
+          <declname>gestureEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="478" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="478" bodyend="509"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="382">
+        <label>UnityEngine.XR.MagicLeap.MLInputController</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller"/>
+        <childnode refid="383" relation="usage">
+          <edgelabel>OnConnect</edgelabel>
+          <edgelabel>OnButtonUp</edgelabel>
+          <edgelabel>OnTouchpadGestureContinue</edgelabel>
+          <edgelabel>OnDisconnect</edgelabel>
+          <edgelabel>OnTouchpadGestureStart</edgelabel>
+          <edgelabel>OnTouchpadGestureEnd</edgelabel>
+          <edgelabel>OnButtonDown</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>UnityEngine.XR.MagicLeap.MLInput</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>MLAPISingleton&lt; MLInput &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInputController.cs" bodystart="52" bodyend="510"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8e590ac2f5c8eb4d5ba8ba718bfaafa7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>_controllerId</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aed70291ba73d2aa9b11509986413f813" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>_controllerMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8b0948b78e9126c66da77fc60f9ea939" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>_inputTrackerHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad73d9192f0d36c7d235c5ed9c76cfc20" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>_isMenuButtonDown</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a5df632d09353b9f5014bae80e891ef89" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>_transform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a4394a637d3cb9627bb1b83b06291db3e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>CalibrationAccuracy</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ade7d1da9c9444d4237de4fffaee0bbb1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Connected</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1af0f03f000af4e1763e6ccf2a16d9a3e0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Dof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a88561cc90bc0893476c4d1c2d088c8b9" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Hand</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a67725137b63da9d021053c83490e475d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>HandleOnTouchpadGestureChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad7a38ed078b65265129d10aa252f401f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Id</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8ce026dadd631b2decd8d7a7fb48927f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>IsBumperDown</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a547fc1b7c0c42370a52275226b32f719" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>MLInputController</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8533990d5bf89ed2a2df963fc8925266" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnButtonDown</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a30f7c447ebb5e24455111633b43f6440" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnButtonUp</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a92ff0654ea7a07b46db263e72882e486" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnConnect</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a7c2cada7734ba2c5137a327f07a4de25" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnDisconnect</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a42d09dfb15ed4a1fd4dd0dff43f5d0c1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnTouchpadGestureContinue</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad4eba69258a2f1aa67f70290721d0786" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnTouchpadGestureEnd</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1adc0b5d9cae6472523d0113f6f3c2db7a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>OnTouchpadGestureStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ae12baf59f1442f60bfa2b6f6cad19439" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Orientation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ae6a445a3292fe4417af54216b6a1e3a1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Position</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a822b558800877c46debbc6d9ecd7bbe3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>StartFeedbackPatternEffectLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a97a7cbe4a5c8fe25ff4cb724201831cf" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>StartFeedbackPatternLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a049238ce521e458cafef997096c9f3f2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>StartFeedbackPatternVibe</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a10e865d720d536cb4c12c17dd62e1c5c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>StopFeedbackPatternLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aa6bbe2e1d710d5924d4b6e86c057e20f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>StopFeedbackPatternVibe</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1ad55ab9666aec9463805442e42479e35a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Touch1Active</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1aa47ca2816249ac44756b7986eb1140d6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Touch1PosAndForce</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8f26105adc7b32d09ed8a0744e653848" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Touch2Active</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a788feddd46bd132e090f5325dff3d1d3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Touch2PosAndForce</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a41be5c15601d60c312d32f3b13e25401" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>TouchpadGesture</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a8daee2f0d3fa2e04ad33748cb8538973" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>TouchpadGestureState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a3b4b80edd9c946a428c27d3ea205f22b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>TriggerValue</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a2bb76036aa43429776a001986914419b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Type</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1af6387012b59e0ef62ab3f8e531347cf2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>Update</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_controller_1a0fdaf8f6b501d3a195925eea2e2ae14d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInputController</scope><name>~MLInputController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

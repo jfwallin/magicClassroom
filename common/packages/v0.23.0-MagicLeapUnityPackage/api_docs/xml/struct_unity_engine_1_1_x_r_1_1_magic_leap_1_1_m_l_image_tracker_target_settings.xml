@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLImageTrackerTargetSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1ad5358dcba9976ddf06011ea497d26364" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLImageTrackerTargetSettings.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+<para>Name of the target </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>This name has to be unique across all targets added to the Image Tracker.</para></listitem><listitem><para>Caller should allocate memory for this.</para></listitem><listitem><para>Encoding should be in UTF8.</para></listitem><listitem><para>This will be copied internally. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1aee47624dd1925a151379ed7600343141" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLImageTrackerTargetSettings.LongerDimension</definition>
+        <argsstring></argsstring>
+        <name>LongerDimension</name>
+        <briefdescription>
+<para>LongerDimension refer to the size of the longer dimension of the physical Image Target in Unity scene units.. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="65" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1a8617e52b6b059a718cbe2688af2add54" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLImageTrackerTargetSettings.IsStationary</definition>
+        <argsstring></argsstring>
+        <name>IsStationary</name>
+        <briefdescription>
+<para>Set this to <computeroutput>true</computeroutput> to improve detection for stationary targets. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>An Image Target is a stationary target if its position in the physical world does not change.</para></listitem><listitem><para>This is best suited for cases where the target is stationary and when the local geometry (environment surrounding the target) is planar.</para></listitem><listitem><para>When in doubt set this to false.</para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1ad09efda95727597b5c9530db8e827e4a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLImageTrackerTargetSettings.IsEnabled</definition>
+        <argsstring></argsstring>
+        <name>IsEnabled</name>
+        <briefdescription>
+<para>Set this to <computeroutput>true</computeroutput> to track the image target. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Disabling the target when not needed marginally improves the tracker CPU performance.</para></listitem><listitem><para>This is best suited for cases where the target is temporarily not needed. If the target no longer needs to be tracked it is best to use remove the target. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="90" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the settings of an Image Target All fields are required for an Image Target to be tracked. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="50" bodyend="91"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1ad09efda95727597b5c9530db8e827e4a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerTargetSettings</scope><name>IsEnabled</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1a8617e52b6b059a718cbe2688af2add54" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerTargetSettings</scope><name>IsStationary</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1aee47624dd1925a151379ed7600343141" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerTargetSettings</scope><name>LongerDimension</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_target_settings_1ad5358dcba9976ddf06011ea497d26364" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerTargetSettings</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

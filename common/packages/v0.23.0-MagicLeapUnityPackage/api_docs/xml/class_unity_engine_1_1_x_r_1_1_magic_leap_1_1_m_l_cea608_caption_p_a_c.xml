@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCea608CaptionPAC</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a33151dcfd8c611df49f82724d78070aa" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_style_color" kindref="compound">MLCea608CaptionStyleColor</ref></type>
+        <definition>MLCea608CaptionStyleColor UnityEngine.XR.MagicLeap.MLCea608CaptionPAC.styleColor</definition>
+        <argsstring></argsstring>
+        <name>styleColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="243" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a7d8151f545dcb273a2b1ca94f614faa0" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLCea608CaptionPAC.row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="244" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a8d124836a67a748f41ef6ce415566c82" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLCea608CaptionPAC.col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="245" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cea608 caption preamble address code. copied from ml_media_cea608_caption.h </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="222">
+        <label>UnityEngine.XR.MagicLeap.MLCea608CaptionStyleColor</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_style_color"/>
+      </node>
+      <node id="221">
+        <label>UnityEngine.XR.MagicLeap.MLCea608CaptionPAC</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c"/>
+        <childnode refid="222" relation="usage">
+          <edgelabel>styleColor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="242" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="241" bodyend="246"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a8d124836a67a748f41ef6ce415566c82" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionPAC</scope><name>col</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a7d8151f545dcb273a2b1ca94f614faa0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionPAC</scope><name>row</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c_1a33151dcfd8c611df49f82724d78070aa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionPAC</scope><name>styleColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

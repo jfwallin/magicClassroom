@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_eye_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::EyeApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_eye_api_native_bindings_1af150d12ef77203bdcae826c7a16d2bb1" prot="public" static="no">
+        <name>MLEyeTrackingError</name>
+        <enumvalue id="class_magic_leap_internal_1_1_eye_api_native_bindings_1af150d12ef77203bdcae826c7a16d2bb1a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_eye_api_native_bindings_1af150d12ef77203bdcae826c7a16d2bb1a8045a0a6c688b0635e3caccc408a1446" prot="public">
+          <name>Generic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a30379eaa59e7a278086e4b2955c3decf" prot="public" static="no">
+        <name>MLEyeTrackingCalibrationStatus</name>
+        <enumvalue id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a30379eaa59e7a278086e4b2955c3decfa4fdce556c4bda67e8ec9ce1fbc30bcd0" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a30379eaa59e7a278086e4b2955c3decfa4697db864a568cb374cb98ad8f543e36" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_Bad</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a30379eaa59e7a278086e4b2955c3decfac113b4720e33d49339bd076ecc693a64" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_Good</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" bodystart="63" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_eye_api_native_bindings_1ab3fd69380070fa3c97c0da2ba837110d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.EyeApiNativeBindings.EyeApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>EyeApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" bodystart="54" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a40dd5b56db7839dcfb1effeee43c18cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.EyeApiNativeBindings.GetEyeTrackerActive</definition>
+        <argsstring>()</argsstring>
+        <name>GetEyeTrackerActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_eye_api_native_bindings_1a03f3cffa51daa333bb76a904d2326260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.EyeApiNativeBindings.SetEyeTrackerActive</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetEyeTrackerActive</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_eye_tracking.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>MagicLeapInternal.EyeApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_eye_api_native_bindings"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>MagicLeapInternal.EyeApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_eye_api_native_bindings"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/EyeApiNativeBindings.cs" bodystart="52" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_eye_api_native_bindings_1ab3fd69380070fa3c97c0da2ba837110d" prot="private" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>EyeApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_eye_api_native_bindings_1a40dd5b56db7839dcfb1effeee43c18cd" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>GetEyeTrackerActive</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_eye_api_native_bindings_1a30379eaa59e7a278086e4b2955c3decf" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLEyeTrackingCalibrationStatus</name></member>
+      <member refid="class_magic_leap_internal_1_1_eye_api_native_bindings_1af150d12ef77203bdcae826c7a16d2bb1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLEyeTrackingError</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_eye_api_native_bindings_1a03f3cffa51daa333bb76a904d2326260" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>SetEyeTrackerActive</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::EyeApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

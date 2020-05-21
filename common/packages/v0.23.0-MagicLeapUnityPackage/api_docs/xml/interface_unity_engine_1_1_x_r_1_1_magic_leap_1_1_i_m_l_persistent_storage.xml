@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage" kind="interface" language="C#" prot="package">
+    <compoundname>UnityEngine::XR::MagicLeap::IMLPersistentStorage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+    <derivedcompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_file_storage" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLPersistentFileStorage&lt; MLContentBindings &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a1907ddb7943c539577a590429d6e0bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;.Load</definition>
+        <argsstring>(string id)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a7942543e379798a4b7745d27bf6dae32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;.LoadAsync</definition>
+        <argsstring>(string id, System.Action&lt; bool, T &gt; callback)</argsstring>
+        <name>LoadAsync</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>System.Action&lt; bool, T &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a223b98919048e94a2ed5f8aa73186d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;.Save</definition>
+        <argsstring>(string id, T data)</argsstring>
+        <name>Save</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1acc4cb6eaf519a647ef948f0ff9c17e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;.SaveAsync</definition>
+        <argsstring>(string id, T data, System.Action&lt; bool &gt; callback)</argsstring>
+        <name>SaveAsync</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>System.Action&lt; bool &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Persistent Storage interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>IDisposable</label>
+      </node>
+      <node id="68">
+        <label>UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;</label>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>UnityEngine::XR::MagicLeap::MLPersistentFileStorage&lt; MLContentBindings &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_file_storage"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="72">
+        <label>IDisposable</label>
+      </node>
+      <node id="71">
+        <label>UnityEngine.XR.MagicLeap.IMLPersistentStorage&lt; T &gt;</label>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" line="44" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/IMLPersistentStorage.cs" bodystart="43" bodyend="49"/>
+    <listofallmembers>
+      <member refid="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a1907ddb7943c539577a590429d6e0bfa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::IMLPersistentStorage</scope><name>Load</name></member>
+      <member refid="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a7942543e379798a4b7745d27bf6dae32" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::IMLPersistentStorage</scope><name>LoadAsync</name></member>
+      <member refid="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1a223b98919048e94a2ed5f8aa73186d85" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::IMLPersistentStorage</scope><name>Save</name></member>
+      <member refid="interface_unity_engine_1_1_x_r_1_1_magic_leap_1_1_i_m_l_persistent_storage_1acc4cb6eaf519a647ef948f0ff9c17e8b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::IMLPersistentStorage</scope><name>SaveAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

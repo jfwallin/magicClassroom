@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCea608CaptionLineInternal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1a47e41027381dfbf82690661790c4e8da" prot="public" static="no" mutable="no">
+        <type>byte []</type>
+        <definition>byte [] UnityEngine.XR.MagicLeap.MLCea608CaptionLineInternal.displayChars</definition>
+        <argsstring></argsstring>
+        <name>displayChars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="255" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1abf11337baefba2a36779679489450b3c" prot="public" static="no" mutable="no">
+        <type>IntPtr []</type>
+        <definition>IntPtr [] UnityEngine.XR.MagicLeap.MLCea608CaptionLineInternal.midRowStyles</definition>
+        <argsstring></argsstring>
+        <name>midRowStyles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="258" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1ab20ec50a80a94d881f9a4f82958de2e9" prot="public" static="no" mutable="no">
+        <type>IntPtr []</type>
+        <definition>IntPtr [] UnityEngine.XR.MagicLeap.MLCea608CaptionLineInternal.pacStyles</definition>
+        <argsstring></argsstring>
+        <name>pacStyles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="261" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cea608 caption line structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="253" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="252" bodyend="262"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1a47e41027381dfbf82690661790c4e8da" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLineInternal</scope><name>displayChars</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1abf11337baefba2a36779679489450b3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLineInternal</scope><name>midRowStyles</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_internal_1ab20ec50a80a94d881f9a4f82958de2e9" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLineInternal</scope><name>pacStyles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

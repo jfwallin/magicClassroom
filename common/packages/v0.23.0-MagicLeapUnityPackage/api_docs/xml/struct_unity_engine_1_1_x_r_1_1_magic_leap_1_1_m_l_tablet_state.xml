@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLTabletState</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ab2501ff56141eec6ad2b5bed585ce245" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ae7e8ad1e4e603f51db21b4bf892326eb" kindref="member">MLInputTabletDeviceType</ref></type>
+        <definition>MLInputTabletDeviceType UnityEngine.XR.MagicLeap.MLTabletState.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+<para>Type of this tablet device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ac8b7e0c3cccb1312f7d5e2d32f5d9e57" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a84a8e4c2c71e09aa798fbe58438042f0" kindref="member">MLInputTabletDeviceToolType</ref></type>
+        <definition>MLInputTabletDeviceToolType UnityEngine.XR.MagicLeap.MLTabletState.ToolType</definition>
+        <argsstring></argsstring>
+        <name>ToolType</name>
+        <briefdescription>
+<para>Type of tool used with the tablet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="126" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a09c11de5da80d3dfd4d20f7ab9b6fdd1" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLTabletState.PenTouchPosAndForce</definition>
+        <argsstring></argsstring>
+        <name>PenTouchPosAndForce</name>
+        <briefdescription>
+<para>Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a77d4e5dfd14f1fa1f5a9e0651c1d2957" prot="public" static="no" mutable="no">
+        <type>int []</type>
+        <definition>int [] UnityEngine.XR.MagicLeap.MLTabletState.AdditionalPenTouchData</definition>
+        <argsstring></argsstring>
+        <name>AdditionalPenTouchData</name>
+        <briefdescription>
+<para>Additional coordinate values (x, y, z) It could contain data specific to the device type. </para>        </briefdescription>
+        <detaileddescription>
+<para>AdditionalPenTouchData for Wacom holds pen tilt data (x, y), in degrees from -64 to 64. Straight up an down is 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="138" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a3d7b7190d1019411556cb133956c57e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLTabletState.IsPenTouchActive</definition>
+        <argsstring></argsstring>
+        <name>IsPenTouchActive</name>
+        <briefdescription>
+<para>Is touch active. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="142" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a9b9a64b946405778441d9ac0b8aaf3fa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLTabletState.IsConnected</definition>
+        <argsstring></argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>If this tablet is connected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="146" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1aceb58c82fca9c09fdf38443fa08cbad5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLTabletState.PenDistance</definition>
+        <argsstring></argsstring>
+        <name>PenDistance</name>
+        <briefdescription>
+<para>Distance between pen and tablet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="150" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1aab3e2076a11aa98a52b087e8ff085930" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLTabletState.TimeStamp</definition>
+        <argsstring></argsstring>
+        <name>TimeStamp</name>
+        <briefdescription>
+<para>Time stamp of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a1c0c0b7794363282d4f4db721b0d5c5a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9a79cc02f5eefe195c7e83b21b617e20" kindref="member">MLInputTabletDeviceStateMask</ref></type>
+        <definition>MLInputTabletDeviceStateMask UnityEngine.XR.MagicLeap.MLTabletState.ValidityCheck</definition>
+        <argsstring></argsstring>
+        <name>ValidityCheck</name>
+        <briefdescription>
+<para>Used to determine what data in this structure is valid. Example: Before using AdditionalPenTouchData check if that variable is valid in the ValidityCheck. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="159" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ab762b8d9f86e61f51b0ac0792c970da7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string UnityEngine.XR.MagicLeap.MLTabletState.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+<para>Override the ToString. Does not print the ValidityCheck. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="163" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure containing information about the state of the tablet device. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" line="118" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLInput.cs" bodystart="117" bodyend="169"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a77d4e5dfd14f1fa1f5a9e0651c1d2957" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>AdditionalPenTouchData</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a9b9a64b946405778441d9ac0b8aaf3fa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>IsConnected</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a3d7b7190d1019411556cb133956c57e6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>IsPenTouchActive</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1aceb58c82fca9c09fdf38443fa08cbad5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>PenDistance</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a09c11de5da80d3dfd4d20f7ab9b6fdd1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>PenTouchPosAndForce</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1aab3e2076a11aa98a52b087e8ff085930" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>TimeStamp</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ac8b7e0c3cccb1312f7d5e2d32f5d9e57" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>ToolType</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ab762b8d9f86e61f51b0ac0792c970da7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>ToString</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1ab2501ff56141eec6ad2b5bed585ce245" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>Type</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_tablet_state_1a1c0c0b7794363282d4f4db721b0d5c5a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLTabletState</scope><name>ValidityCheck</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

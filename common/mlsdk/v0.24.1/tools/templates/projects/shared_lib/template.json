@@ -1,0 +1,6 @@
+{
+	"label": "Shared Library Project Template",
+	"description": "This project template can be used to create a skeleton shared library project",
+	"projectFile": "${projectName}.mabu",
+	"initialFilesToOpen": ["src/${projectName}.cpp"]
+}

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1a135d80d6fd55e0e6bcc1cf9e9de7ac1d" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+<para>Identification number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1aed936f7efc2844365fec3f85f4eb31a4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <briefdescription>
+<para>Media title. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1ad2c31a7410246b229ac29363ba335706" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.Subtitle</definition>
+        <argsstring></argsstring>
+        <name>Subtitle</name>
+        <briefdescription>
+<para>Media subtitle. Can be left as empty string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="92" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1af4589b7022d56e666c26026c2c3a607c" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.PlaybackPositionMs</definition>
+        <argsstring></argsstring>
+        <name>PlaybackPositionMs</name>
+        <briefdescription>
+<para>Last playback position in milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1addbe8b44272b8dee5f846b5cabe89b6f" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.PlaybackDurationMs</definition>
+        <argsstring></argsstring>
+        <name>PlaybackDurationMs</name>
+        <briefdescription>
+<para>Total duration in milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1aed823c78fb332161b61c3501f40aa927" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.IsValid</definition>
+        <argsstring></argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+<para>Entry is valid if: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>PlaybackPositionMs is smaller or equal to PlaybackDurationMs.</para></listitem><listitem><para>Title and Subtitle are not null. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="109" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1a127e9eb71a23ff371961b9c021f21c8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string UnityEngine.XR.MagicLeap.MLScreensWatchHistoryEntry.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="120" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="120" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Media watch entry for channel application. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLScreens.cs" bodystart="77" bodyend="134"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1a135d80d6fd55e0e6bcc1cf9e9de7ac1d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>Id</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1aed823c78fb332161b61c3501f40aa927" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>IsValid</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1addbe8b44272b8dee5f846b5cabe89b6f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>PlaybackDurationMs</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1af4589b7022d56e666c26026c2c3a607c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>PlaybackPositionMs</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1ad2c31a7410246b229ac29363ba335706" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>Subtitle</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1aed936f7efc2844365fec3f85f4eb31a4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>Title</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_watch_history_entry_1a127e9eb71a23ff371961b9c021f21c8c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLScreensWatchHistoryEntry</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

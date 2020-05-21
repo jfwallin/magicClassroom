@@ -1,0 +1,1151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_media_player_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MediaPlayerNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_media_player_native_bindings_1_1_media_player_managed_callbacks" prot="public">MagicLeapInternal::MediaPlayerNativeBindings::MediaPlayerManagedCallbacks</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa2cae4863dbfbdfc6b5f139dc0d68fba" prot="public" static="no">
+        <name>MediaPlayerColorSpace</name>
+        <enumvalue id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa2cae4863dbfbdfc6b5f139dc0d68fbaa32a843da6ea40ab3b17a3421ccdf671b" prot="public">
+          <name>Linear</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa2cae4863dbfbdfc6b5f139dc0d68fbaad9cdb0f6e0d556347c10a8695545a4b5" prot="public">
+          <name>Gamma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="303" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="302" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a956df9d81e8e895762ea755d3680a5a7" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.MediaPlayerNativeBindings.MediaPlayerPluginDLL</definition>
+        <argsstring></argsstring>
+        <name>MediaPlayerPluginDLL</name>
+        <initializer>= &quot;ml_mediaplayer_plugin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="308" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa946ea64672f17a94f6ce74c543a1447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerPreparedCallback</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>PlayerPreparedCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aea4b06cca0d98b444d967ed6c33b177e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerCompletionCallback</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>PlayerCompletionCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aaf79e94c7d77fd2174df61ca4a42614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerBufferingCallback</definition>
+        <argsstring>(int percent, int mediaPlayerID)</argsstring>
+        <name>PlayerBufferingCallback</name>
+        <param>
+          <type>int</type>
+          <declname>percent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1ae33dcec073cd722cd41e7250c7017931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerErrorCallback</definition>
+        <argsstring>(int result, System.IntPtr errorString, int mediaPlayerID)</argsstring>
+        <name>PlayerErrorCallback</name>
+        <param>
+          <type>int</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>System.IntPtr</type>
+          <declname>errorString</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a0958d99dca3fe5e68b811f5c7970614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerInfoCallback</definition>
+        <argsstring>(int info, int extra, int mediaPlayerID)</argsstring>
+        <name>PlayerInfoCallback</name>
+        <param>
+          <type>int</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>extra</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a32e1c3680e7f46c228e298db1fff67b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerSeekCompletedCallback</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>PlayerSeekCompletedCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="316" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aaaadd6db92c74f71a58c211243ac6e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerVideoSizeChangedCallback</definition>
+        <argsstring>(int width, int height, int mediaPlayerID)</argsstring>
+        <name>PlayerVideoSizeChangedCallback</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a8a7709e7351737d86c25495b1ede8ef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerTrackDRMInfoCallback</definition>
+        <argsstring>(uint DRMTrackIndex, int mediaPlayerID)</argsstring>
+        <name>PlayerTrackDRMInfoCallback</name>
+        <param>
+          <type>uint</type>
+          <declname>DRMTrackIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1ad922425e1478f0d401e820310834c55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerAllTracksCallback</definition>
+        <argsstring>(int mediaPlayerID, MediaPlayerTracks outInfo)</argsstring>
+        <name>PlayerAllTracksCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks" kindref="compound">MediaPlayerTracks</ref></type>
+          <declname>outInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a0d7a6e64dd4f104d14cd74a8842789ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerSubtitleTracksCallback</definition>
+        <argsstring>(int mediaPlayerID, MediaPlayerTracks outInfo)</argsstring>
+        <name>PlayerSubtitleTracksCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks" kindref="compound">MediaPlayerTracks</ref></type>
+          <declname>outInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a6eafb7aca803309804443ae3b02d2b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerSubtitleInfoCallback</definition>
+        <argsstring>(int mediaPlayerID, ref MLCea608CaptionSegmentInternal ccSegInt)</argsstring>
+        <name>PlayerSubtitleInfoCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_segment_internal" kindref="compound">MLCea608CaptionSegmentInternal</ref></type>
+          <declname>ccSegInt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1acd9a3af1e963f5df198edd27fcb9e29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.MediaPlayerNativeBindings.PlayerTimedTextInfoCallback</definition>
+        <argsstring>(int mediaPlayerID, System.IntPtr utf8ByteArray, long startTimeMs, long endTimeMs)</argsstring>
+        <name>PlayerTimedTextInfoCallback</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>System.IntPtr</type>
+          <declname>utf8ByteArray</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>startTimeMs</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>endTimeMs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1af6b599e1b534a4d3cecdf158d51f9f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.InstantiateMediaPlayerContext</definition>
+        <argsstring>(int mediaPlayerID, [MarshalAs(UnmanagedType.LPStr)] string mediaSource, MediaPlayerColorSpace colorSpace, MediaPlayerManagedCallbacks managedCallbacks)</argsstring>
+        <name>InstantiateMediaPlayerContext</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>string</type>
+          <declname>mediaSource</declname>
+        </param>
+        <param>
+          <type>MediaPlayerColorSpace</type>
+          <declname>colorSpace</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_media_player_native_bindings_1_1_media_player_managed_callbacks" kindref="compound">MediaPlayerManagedCallbacks</ref></type>
+          <declname>managedCallbacks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a9f50f702e64793fb12a36d95036351e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.MediaPlayerNativeBindings.SetTextureFromUnity</definition>
+        <argsstring>(int mediaPlayerID, System.IntPtr texture, int w, int h)</argsstring>
+        <name>SetTextureFromUnity</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>System.IntPtr</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a5a6a1b5bed90f6e2af8df54bca2be974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>System.IntPtr</type>
+        <definition>static System.IntPtr MagicLeapInternal.MediaPlayerNativeBindings.GetRenderCallback</definition>
+        <argsstring>()</argsstring>
+        <name>GetRenderCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a890c4f1956289fe3e56c5e0fc36937cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>System.IntPtr</type>
+        <definition>static System.IntPtr MagicLeapInternal.MediaPlayerNativeBindings.GetRenderCleanupCallback</definition>
+        <argsstring>()</argsstring>
+        <name>GetRenderCleanupCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a3805ec24e276406d1e2545115afd7f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.OpenDRMSession</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack)</argsstring>
+        <name>OpenDRMSession</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="354" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aecc276c18ca13502d7f9b852c0b67b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.CloseDRMSession</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack)</argsstring>
+        <name>CloseDRMSession</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a12a7b2215966db8109aa3bd266acf043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetProvisionRequest</definition>
+        <argsstring>(int mediaPlayerID, [MarshalAs(UnmanagedType.LPStr)] string certType, ref IntPtr outRequestMessage, ref ulong outRequestMessageLength, [MarshalAs(UnmanagedType.LPStr)] ref string outDefaultURL)</argsstring>
+        <name>GetProvisionRequest</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>string</type>
+          <declname>certType</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outRequestMessage</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>outRequestMessageLength</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>ref string</type>
+          <declname>outDefaultURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a2e36a7b5e3316f736179a596efbda9f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.ProvideProvisionResponse</definition>
+        <argsstring>(int mediaPlayerID, byte[] responseMessage, ulong responseMessageLength)</argsstring>
+        <name>ProvideProvisionResponse</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>responseMessage</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>responseMessageLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a580a86611528b71b52309425c7d9ad94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetActivationProvisionRequest</definition>
+        <argsstring>([MarshalAs(UnmanagedType.LPStr)] string certType, ref IntPtr outRequestMessage, ref ulong outRequestMessageLength, [MarshalAs(UnmanagedType.LPStr)] ref string outDefaultURL)</argsstring>
+        <name>GetActivationProvisionRequest</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>string</type>
+          <declname>certType</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outRequestMessage</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>outRequestMessageLength</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>ref string</type>
+          <declname>outDefaultURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="363" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a56e8ba2b4b6b1e8842929bd6787955e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.ProvideActivationProvisionResponse</definition>
+        <argsstring>(byte[] responseMessage, ulong responseMessageLength)</argsstring>
+        <name>ProvideActivationProvisionResponse</name>
+        <param>
+          <type>byte []</type>
+          <declname>responseMessage</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>responseMessageLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a44e73860ab9263fb614c93e4c26049be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.SetKeyRequestCustomData</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack, [MarshalAs(UnmanagedType.LPStr)] string[] keys, [MarshalAs(UnmanagedType.LPStr)] string[] values, ulong pairCount)</argsstring>
+        <name>SetKeyRequestCustomData</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>string []</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>string []</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>pairCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1ab1c44c814b6b2dc8124d267b5d0374d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetActivationKeyRequest</definition>
+        <argsstring>(ref MLUUIDBytes drmUUID, MLMediaDRMKeyType keyType, ref IntPtr outRequestMessage, ref ulong outRequestMessageLength, [MarshalAs(UnmanagedType.LPStr)] ref string outDefaultURL)</argsstring>
+        <name>GetActivationKeyRequest</name>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d_bytes" kindref="compound">MLUUIDBytes</ref></type>
+          <declname>drmUUID</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffc" kindref="member">MLMediaDRMKeyType</ref></type>
+          <declname>keyType</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outRequestMessage</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>outRequestMessageLength</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>ref string</type>
+          <declname>outDefaultURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1adbf3a4db1ba9b32fb868740e644329cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetKeyRequest</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack, MLMediaDRMKeyType keyType, ref IntPtr outRequestMessage, ref ulong outRequestMessageLength, [MarshalAs(UnmanagedType.LPStr)] ref string outDefaultURL)</argsstring>
+        <name>GetKeyRequest</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffc" kindref="member">MLMediaDRMKeyType</ref></type>
+          <declname>keyType</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outRequestMessage</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>outRequestMessageLength</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPStr)]</attributes>
+          <type>ref string</type>
+          <declname>outDefaultURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="374" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a5ade2a5764aa0d27f01073a8e95f5271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.ProvideKeyResponse</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack, byte[] responseMessage, ulong responseMessageLength)</argsstring>
+        <name>ProvideKeyResponse</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <param>
+          <type>byte []</type>
+          <declname>responseMessage</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>responseMessageLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="377" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a323d8a12b6670593b7f0b34e4ea196e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.PrepareDRM</definition>
+        <argsstring>(int mediaPlayerID, MLMediaDRMTrack drmTrack)</argsstring>
+        <name>PrepareDRM</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>MLMediaDRMTrack</type>
+          <declname>drmTrack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a84ca10987ffa8c516ccb67546f5172e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.Play</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>Play</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="383" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1adb5d8f81e1569651905452c43ac0b617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.PauseVideo</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>PauseVideo</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a3139b96813e94eadf14b73f486a51001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.Seek</definition>
+        <argsstring>(int mediaPlayerID, int positionMilliseconds)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>positionMilliseconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="387" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1ad844dd8dcefcfd5582d7b5971d31fae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.Resume</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>Resume</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a9c392f9642de36bfb533c027382033f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.Stop</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>Stop</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1af7107e8d8394ea32872bca2a847a291e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.SetLooping</definition>
+        <argsstring>(int mediaPlayerID, [MarshalAs(UnmanagedType.I1)] bool loop)</argsstring>
+        <name>SetLooping</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>loop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa73160894871ac86e43f3c6f82d82e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.SetVolume</definition>
+        <argsstring>(int mediaPlayerID, float vol)</argsstring>
+        <name>SetVolume</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a0913e16404e815928c44d6cfd3a44866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetDurationMilliseconds</definition>
+        <argsstring>(int mediaPlayerID, out int outMS)</argsstring>
+        <name>GetDurationMilliseconds</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>outMS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="397" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1abf56fd87dd9f8534fb70d282ee792932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetPositionMilliseconds</definition>
+        <argsstring>(int mediaPlayerID, out int outMS)</argsstring>
+        <name>GetPositionMilliseconds</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>outMS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1aa00ec29392f79c3d3fd58b58b7d4f561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetWidth</definition>
+        <argsstring>(int mediaPlayerID, out int outWidth)</argsstring>
+        <name>GetWidth</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>outWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1acb991d119ec9ca4211c81ca9b2ec7a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetHeight</definition>
+        <argsstring>(int mediaPlayerID, out int outHeight)</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>outHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="403" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a8975973c9749df9db2f0fd2f7670e888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetVideoBitrate</definition>
+        <argsstring>(int mediaPlayerID, out int outBitrate)</argsstring>
+        <name>GetVideoBitrate</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>outBitrate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a1816e568f385acd194614b748901924e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ulong</type>
+        <definition>static ulong MagicLeapInternal.MediaPlayerNativeBindings.GetFrameDropThresholdMs</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>GetFrameDropThresholdMs</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a6622e8317d58288d353f1b5ef29f341c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.MediaPlayerNativeBindings.SetFrameDropThresholdMs</definition>
+        <argsstring>(int mediaPlayerID, ulong threshold)</argsstring>
+        <name>SetFrameDropThresholdMs</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a6863ef4f461b2e84fa8da26f3f3bcc4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.GetTrackData</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>GetTrackData</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1ac82e068a2f3a31b5032b930e8def9dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.SelectSubtitleTrack</definition>
+        <argsstring>(int mediaPlayerID, uint id)</argsstring>
+        <name>SelectSubtitleTrack</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a877ef799844e3daedd3d016ef2a25e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.UnselectSubtitleTrack</definition>
+        <argsstring>(int mediaPlayerID, uint id)</argsstring>
+        <name>UnselectSubtitleTrack</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_media_player_native_bindings_1a0534b3a10cb8a0b0304189f095996f03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MediaPlayerNativeBindings.Cleanup</definition>
+        <argsstring>(int mediaPlayerID)</argsstring>
+        <name>Cleanup</name>
+        <param>
+          <type>int</type>
+          <declname>mediaPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="420" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="164">
+        <label>MagicLeapInternal.MediaPlayerNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_media_player_native_bindings"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="166">
+        <label>MagicLeapInternal.MediaPlayerNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_media_player_native_bindings"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="301" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="300" bodyend="421"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a0534b3a10cb8a0b0304189f095996f03" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>Cleanup</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aecc276c18ca13502d7f9b852c0b67b62" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>CloseDRMSession</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1ab1c44c814b6b2dc8124d267b5d0374d9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetActivationKeyRequest</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a580a86611528b71b52309425c7d9ad94" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetActivationProvisionRequest</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a0913e16404e815928c44d6cfd3a44866" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetDurationMilliseconds</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a1816e568f385acd194614b748901924e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetFrameDropThresholdMs</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1acb991d119ec9ca4211c81ca9b2ec7a7e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetHeight</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1adbf3a4db1ba9b32fb868740e644329cc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetKeyRequest</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1abf56fd87dd9f8534fb70d282ee792932" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetPositionMilliseconds</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a12a7b2215966db8109aa3bd266acf043" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetProvisionRequest</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a5a6a1b5bed90f6e2af8df54bca2be974" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetRenderCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a890c4f1956289fe3e56c5e0fc36937cd" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetRenderCleanupCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a6863ef4f461b2e84fa8da26f3f3bcc4b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetTrackData</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a8975973c9749df9db2f0fd2f7670e888" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetVideoBitrate</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aa00ec29392f79c3d3fd58b58b7d4f561" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>GetWidth</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1af6b599e1b534a4d3cecdf158d51f9f9e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>InstantiateMediaPlayerContext</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aa2cae4863dbfbdfc6b5f139dc0d68fba" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MediaPlayerColorSpace</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a956df9d81e8e895762ea755d3680a5a7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MediaPlayerPluginDLL</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a3805ec24e276406d1e2545115afd7f38" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>OpenDRMSession</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1adb5d8f81e1569651905452c43ac0b617" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PauseVideo</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a84ca10987ffa8c516ccb67546f5172e8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>Play</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1ad922425e1478f0d401e820310834c55e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerAllTracksCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aaf79e94c7d77fd2174df61ca4a42614b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerBufferingCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aea4b06cca0d98b444d967ed6c33b177e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerCompletionCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1ae33dcec073cd722cd41e7250c7017931" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerErrorCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a0958d99dca3fe5e68b811f5c7970614b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerInfoCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aa946ea64672f17a94f6ce74c543a1447" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerPreparedCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a32e1c3680e7f46c228e298db1fff67b6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerSeekCompletedCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a6eafb7aca803309804443ae3b02d2b58" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerSubtitleInfoCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a0d7a6e64dd4f104d14cd74a8842789ca" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerSubtitleTracksCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1acd9a3af1e963f5df198edd27fcb9e29f" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerTimedTextInfoCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a8a7709e7351737d86c25495b1ede8ef4" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerTrackDRMInfoCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aaaadd6db92c74f71a58c211243ac6e78" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PlayerVideoSizeChangedCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a323d8a12b6670593b7f0b34e4ea196e2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>PrepareDRM</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a56e8ba2b4b6b1e8842929bd6787955e7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>ProvideActivationProvisionResponse</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a5ade2a5764aa0d27f01073a8e95f5271" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>ProvideKeyResponse</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a2e36a7b5e3316f736179a596efbda9f6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>ProvideProvisionResponse</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1ad844dd8dcefcfd5582d7b5971d31fae7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>Resume</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a3139b96813e94eadf14b73f486a51001" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>Seek</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1ac82e068a2f3a31b5032b930e8def9dc5" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SelectSubtitleTrack</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a6622e8317d58288d353f1b5ef29f341c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SetFrameDropThresholdMs</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a44e73860ab9263fb614c93e4c26049be" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SetKeyRequestCustomData</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1af7107e8d8394ea32872bca2a847a291e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SetLooping</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a9f50f702e64793fb12a36d95036351e2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SetTextureFromUnity</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1aa73160894871ac86e43f3c6f82d82e50" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>SetVolume</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a9c392f9642de36bfb533c027382033f6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>Stop</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+      <member refid="class_magic_leap_internal_1_1_media_player_native_bindings_1a877ef799844e3daedd3d016ef2a25e25" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MediaPlayerNativeBindings</scope><name>UnselectSubtitleTrack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

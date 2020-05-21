@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_1ca21e4b5b67fb06c2b2d6db5cf10ec6" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence</compoundname>
+    <innerfile refid="_i_m_l_persistent_storage_8cs">IMLPersistentStorage.cs</innerfile>
+    <innerfile refid="_m_l_content_binding_8cs">MLContentBinding.cs</innerfile>
+    <innerfile refid="_m_l_content_bindings_8cs">MLContentBindings.cs</innerfile>
+    <innerfile refid="_m_l_p_c_f_8cs">MLPCF.cs</innerfile>
+    <innerfile refid="_m_l_persistent_coordinate_frames_8cs">MLPersistentCoordinateFrames.cs</innerfile>
+    <innerfile refid="_m_l_persistent_file_storage_8cs">MLPersistentFileStorage.cs</innerfile>
+    <innerfile refid="_m_l_persistent_store_8cs">MLPersistentStore.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/"/>
+  </compounddef>
+</doxygen>

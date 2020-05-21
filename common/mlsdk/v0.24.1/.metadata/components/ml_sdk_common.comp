@@ -1,0 +1,22 @@
+
+# Path to the ml_api headers.
+INCS = $(MLSDK)/include
+
+USES = OpenGL
+OPTIONS = standard-c++/11
+
+# Paths to the SDK libraries.
+# - Windows
+LIBPATHS.win = $(MLSDK)/lib/win64
+
+# - Linux
+LIBPATHS.linux = $(MLSDK)/lib/linux64
+
+# - MacOS
+LIBPATHS.osx = $(MLSDK)/lib/osx
+
+# - Lumin
+LIBPATHS.device = $(MLSDK)/lib/lumin
+
+# Needed to build without the system libraries present.
+LDFLAGS.device = -Wl,-unresolved-symbols=ignore-in-shared-libs

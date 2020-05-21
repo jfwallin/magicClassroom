@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1aec9328351eac254cc2727a65b057ef94" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a7066c6137a13d6add1821306948c0989" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.Confidence</definition>
+        <argsstring></argsstring>
+        <name>Confidence</name>
+        <briefdescription>
+<para>A confidence value (from [0, 1]) representing the confidence in the Persistent Coordinate Frame error within the valid radius. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1ae9162e270efbe4abb7e4efd1457dddb2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.ValidRadiusM</definition>
+        <argsstring></argsstring>
+        <name>ValidRadiusM</name>
+        <briefdescription>
+<para>The radius (in meters) within which the confidence is valid. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1ac269e874ab5f6b9f1a3386020f994638" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.RotationErrDeg</definition>
+        <argsstring></argsstring>
+        <name>RotationErrDeg</name>
+        <briefdescription>
+<para>The rotational error (in degrees). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a291ea12137aec5bfd800fefb6fb555fc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.TranslationErrM</definition>
+        <argsstring></argsstring>
+        <name>TranslationErrM</name>
+        <briefdescription>
+<para>The translation error (in meters). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a13f1f7c41fc4e3f19eb1a9a3192c753a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.PCFApiNativeBindings.MLPCFFrameStateInternal.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="73" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PCFApiNativeBindings.cs" bodystart="52" bodyend="81"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a7066c6137a13d6add1821306948c0989" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>Confidence</name></member>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a13f1f7c41fc4e3f19eb1a9a3192c753a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1ac269e874ab5f6b9f1a3386020f994638" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>RotationErrDeg</name></member>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1a291ea12137aec5bfd800fefb6fb555fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>TranslationErrM</name></member>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1ae9162e270efbe4abb7e4efd1457dddb2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>ValidRadiusM</name></member>
+      <member refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal_1aec9328351eac254cc2727a65b057ef94" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PCFApiNativeBindings::MLPCFFrameStateInternal</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

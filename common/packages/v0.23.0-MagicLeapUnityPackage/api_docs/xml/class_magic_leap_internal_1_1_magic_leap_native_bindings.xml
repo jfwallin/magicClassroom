@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_magic_leap_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MagicLeapNativeBindings</compoundname>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_audio_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.AudioNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_camera_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.CameraApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_connections_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ConnectionsApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_contacts_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ContactsApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_controller_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ControllerNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_c_v_camera_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.CVCameraApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_dispatch_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.DispatchApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_eye_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.EyeApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.HandMeshingApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.HandTrackingApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_head_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.HeadApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_identity_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.IdentityApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_image_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ImageApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_image_tracker_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ImageTrackerNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_input_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.InputNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_lighting_tracking_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.LightingTrackingApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_locale_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.LocaleApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_location_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.LocationApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_media_player_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MediaPlayerNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_movement_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MovementApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_music_service_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MusicServiceNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_networking_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.NetworkingApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_p_c_f_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.PCFApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_planes_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.PlanesApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_privileges_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.PrivilegesApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_raycast_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.RaycastApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_screens_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.ScreensNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_secure_storage_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.SecureStorageApiNativeBindings</derivedcompoundref>
+    <derivedcompoundref refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.TokenAgentApiNativeBindings</derivedcompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_mat4f" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLMat4f</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_rectf" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLRectf</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLRecti</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_transform" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLTransform</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLUUID</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d_bytes" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLUUIDBytes</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_vec2f" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLVec2f</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_vec3f" prot="public">MagicLeapInternal::MagicLeapNativeBindings::MLVec3f</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" static="no">
+        <name>MLSensoryState</name>
+        <enumvalue id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3efa32b169f72b293ef80d35435e9894f8e2" prot="public">
+          <name>Initializing</name>
+          <briefdescription>
+<para>The tracker is not ready, don&apos;t use the data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3efae7d31fc0602fb2ede144d18cdffd816b" prot="public">
+          <name>Ready</name>
+          <briefdescription>
+<para>The tracker&apos;s data can be used. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The current state of a given tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="673" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="672" bodyend="683"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.MagicLeapNativeBindings.MLPerceptionClientDll</definition>
+        <argsstring></argsstring>
+        <name>MLPerceptionClientDll</name>
+        <initializer>= &quot;ml_perception_client&quot;</initializer>
+        <briefdescription>
+<para>Perception library name string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="607" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.MagicLeapNativeBindings.MLPlatformDll</definition>
+        <argsstring></argsstring>
+        <name>MLPlatformDll</name>
+        <initializer>= &quot;ml_platform&quot;</initializer>
+        <briefdescription>
+<para>Platform level library name string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="612" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" static="no" mutable="no">
+        <type>const ulong</type>
+        <definition>const ulong MagicLeapInternal.MagicLeapNativeBindings.InvalidHandle</definition>
+        <argsstring></argsstring>
+        <name>InvalidHandle</name>
+        <initializer>= 0xFFFFFFFFFFFFFFFF</initializer>
+        <briefdescription>
+<para>The 64 bit id for an invalid native handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="619" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.MagicLeapNativeBindings.MagicLeapNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>MagicLeapNativeBindings</name>
+        <briefdescription>
+<para>Define constructor private to prevent instantiation of the class through new </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="602" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="602" bodyend="602"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.MagicLeapNativeBindings.MLHandleIsValid</definition>
+        <argsstring>(ulong handle)</argsstring>
+        <name>MLHandleIsValid</name>
+        <param>
+          <type>ulong</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Checks if 64 bit handle is valid. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput>, if handle is valid, <computeroutput>false</computeroutput> if invalid.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to check.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="626" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="626" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string MagicLeapInternal.MagicLeapNativeBindings.MLGetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>MLGetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Returns an ASCII string for MLResultGlobal codes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input MLResult enum from ML API methods.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ASCII string containing readable version of result code.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="636" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="636" bodyend="666"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MagicLeapNativeBindings.MLPerceptionGetSnapshot</definition>
+        <argsstring>(ref IntPtr snapshot)</argsstring>
+        <name>MLPerceptionGetSnapshot</name>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>snapshot</declname>
+        </param>
+        <briefdescription>
+<para>Returns pointer to the current MLSnapshot structure </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="914" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MagicLeapNativeBindings.MLPerceptionReleaseSnapshot</definition>
+        <argsstring>(IntPtr snap)</argsstring>
+        <name>MLPerceptionReleaseSnapshot</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>snap</declname>
+        </param>
+        <briefdescription>
+<para>Releases a previously acquired snapshot from MLPerceptionGetSnapshot </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="920" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MagicLeapNativeBindings.MLSnapshotGetTransform</definition>
+        <argsstring>(IntPtr snap, ref MLCoordinateFrameUID id, ref MLTransform outTransform)</argsstring>
+        <name>MLSnapshotGetTransform</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>snap</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_transform" kindref="compound">MLTransform</ref></type>
+          <declname>outTransform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="927" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPtr</type>
+        <definition>static IntPtr MagicLeapInternal.MagicLeapNativeBindings.MLSnapshotGetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>MLSnapshotGetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="931" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.MagicLeapNativeBindings.MLPlatformGetAPILevel</definition>
+        <argsstring>(ref uint level)</argsstring>
+        <name>MLPlatformGetAPILevel</name>
+        <param>
+          <type>ref uint</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="935" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.MagicLeapNativeBindings.UnityMagicLeap_TryGetPose</definition>
+        <argsstring>(MLCoordinateFrameUID id, out UnityEngine.Pose pose)</argsstring>
+        <name>UnityMagicLeap_TryGetPose</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>out UnityEngine.Pose</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="939" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines C# API interface to C-API layer </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>MagicLeapInternal.ImageTrackerNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_image_tracker_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>MagicLeapInternal.CameraApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_camera_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>MagicLeapInternal.HandTrackingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>MagicLeapInternal.CVCameraApiNativeBindings</label>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>MagicLeapInternal.MediaPlayerNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_media_player_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>MagicLeapInternal.InputNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_input_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>MagicLeapInternal.MovementApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_movement_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>MagicLeapInternal.AudioNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_audio_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>MagicLeapInternal.ContactsApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_contacts_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>MagicLeapInternal.LightingTrackingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_lighting_tracking_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>MagicLeapInternal.LocationApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_location_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>MagicLeapInternal.ConnectionsApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_connections_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>MagicLeapInternal.PlanesApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_planes_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>MagicLeapInternal.ScreensNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_screens_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>MagicLeapInternal.SecureStorageApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_secure_storage_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>MagicLeapInternal.PrivilegesApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_privileges_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>MagicLeapInternal.PCFApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_p_c_f_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>MagicLeapInternal.NetworkingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_networking_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>MagicLeapInternal.DispatchApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_dispatch_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>MagicLeapInternal.LocaleApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_locale_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>MagicLeapInternal.EyeApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_eye_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>MagicLeapInternal.ImageApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_image_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>MagicLeapInternal.ControllerNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_controller_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>MagicLeapInternal.HeadApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_head_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>MagicLeapInternal.HandMeshingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>MagicLeapInternal.RaycastApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_raycast_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>MagicLeapInternal.TokenAgentApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>MagicLeapInternal.IdentityApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_identity_api_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>MagicLeapInternal.MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="134">
+        <label>MagicLeapInternal.MusicServiceNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_music_service_native_bindings"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="598" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="597" bodyend="940"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

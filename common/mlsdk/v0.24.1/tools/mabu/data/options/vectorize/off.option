@@ -1,0 +1,3 @@
+CFLAGS.gcc,clang=-fno-tree-vectorize
+CXXFLAGS.gcc,clang=-fno-tree-vectorize
+CFLAGS.msvc=   # can't disable vectorization

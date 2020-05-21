@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLNetworkingWifiData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1a3d34df240747822a396988398811e4c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLNetworkingWifiData.Rssi</definition>
+        <argsstring></argsstring>
+        <name>Rssi</name>
+        <briefdescription>
+<para>WiFi RSSI in dbM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1adad2b3e39e0da5ff0c11b44c374f6492" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLNetworkingWifiData.LinkSpeed</definition>
+        <argsstring></argsstring>
+        <name>LinkSpeed</name>
+        <briefdescription>
+<para>WiFi link speed in Mb/s. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1ac3cdd1d5ed7852d96821c4dec404bdd6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLNetworkingWifiData.Frequency</definition>
+        <argsstring></argsstring>
+        <name>Frequency</name>
+        <briefdescription>
+<para>WiFi frequency in MHz. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains wifi related data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" line="47" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/NetworkingApiNativeBindings.cs" bodystart="46" bodyend="60"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1ac3cdd1d5ed7852d96821c4dec404bdd6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLNetworkingWifiData</scope><name>Frequency</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1adad2b3e39e0da5ff0c11b44c374f6492" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLNetworkingWifiData</scope><name>LinkSpeed</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_networking_wifi_data_1a3d34df240747822a396988398811e4c1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLNetworkingWifiData</scope><name>Rssi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

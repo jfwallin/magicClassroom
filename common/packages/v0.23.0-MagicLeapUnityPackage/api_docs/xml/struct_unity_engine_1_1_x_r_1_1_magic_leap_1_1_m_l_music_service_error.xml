@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMusicServiceError</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error_1a520418cd87ada510680c4449f1774ee3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8" kindref="member">MLMusicServiceErrorType</ref></type>
+        <definition>MLMusicServiceErrorType UnityEngine.XR.MagicLeap.MLMusicServiceError.ErrorType</definition>
+        <argsstring></argsstring>
+        <name>ErrorType</name>
+        <briefdescription>
+<para>The error type</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="173" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error_1a43021fb422def1841002154a8f65dc83" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLMusicServiceError.ErrorCode</definition>
+        <argsstring></argsstring>
+        <name>ErrorCode</name>
+        <briefdescription>
+<para>For ErrorTypes other than ServiceSpecific, the value of ErrorCode will match the value of ErrorType. When ErrorType is ServiceSpecific, the ErrorCode will be specific to the music streaming service </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="180" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains the error type and error code received from the music service </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" line="171" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MusicServiceNativeBindings.cs" bodystart="170" bodyend="181"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error_1a43021fb422def1841002154a8f65dc83" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicServiceError</scope><name>ErrorCode</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error_1a520418cd87ada510680c4449f1774ee3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicServiceError</scope><name>ErrorType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MagicLeapNativeBindings::MLRecti</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1a6ed1f3b8a87e53fac81f5352fbae4092" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MagicLeapInternal.MagicLeapNativeBindings.MLRecti.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>The x coordinate.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="797" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="797" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1af55e561275ed5c62dfe098b26361f91c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MagicLeapInternal.MagicLeapNativeBindings.MLRecti.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>The y coordinate.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="799" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1acfe07b2231bff28d62ed06dec92bcdbe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MagicLeapInternal.MagicLeapNativeBindings.MLRecti.w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+<para>The width.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="801" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1aa936ce18debab2312ba068cb087b2ac0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MagicLeapInternal.MagicLeapNativeBindings.MLRecti.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+<para>The height.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="803" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>2D rectangle with integer values in native format. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="795" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="794" bodyend="804"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1aa936ce18debab2312ba068cb087b2ac0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLRecti</scope><name>h</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1acfe07b2231bff28d62ed06dec92bcdbe" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLRecti</scope><name>w</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1a6ed1f3b8a87e53fac81f5352fbae4092" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLRecti</scope><name>x</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_recti_1af55e561275ed5c62dfe098b26361f91c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLRecti</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

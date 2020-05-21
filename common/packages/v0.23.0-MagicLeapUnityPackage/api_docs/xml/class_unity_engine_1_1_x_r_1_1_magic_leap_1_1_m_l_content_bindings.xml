@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_bindings" kind="class" language="C#" prot="package">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContentBindings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_bindings_1a1701ddce7839c6a816b624cdd63ec311" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLContentBindings.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+<para>The version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_bindings_1a51ef0eedebc17ebaa7326416797f3955" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_binding" kindref="compound">MLContentBinding</ref> &gt;</type>
+        <definition>List&lt;MLContentBinding&gt; UnityEngine.XR.MagicLeap.MLContentBindings.Bindings</definition>
+        <argsstring></argsstring>
+        <name>Bindings</name>
+        <briefdescription>
+<para>The bindings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Storage entry </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLContentBindings.cs" bodystart="45" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_bindings_1a51ef0eedebc17ebaa7326416797f3955" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContentBindings</scope><name>Bindings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_bindings_1a1701ddce7839c6a816b624cdd63ec311" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContentBindings</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

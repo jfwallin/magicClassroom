@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContacts</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLContacts &gt;</basecompoundref>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLContacts &gt;</basecompoundref>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1_1_list_page" prot="public">UnityEngine::XR::MagicLeap::MLContacts::ListPage</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4f" prot="public" static="no">
+        <name>OperationStatus</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4fa505a83f220c02df2f85c3810cd9ceb38" prot="public">
+          <name>Success</name>
+          <briefdescription>
+<para>Operation succeeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4faceaa0734f0b3c738120c67344d8f3ec1" prot="public">
+          <name>Fail</name>
+          <briefdescription>
+<para>Operation failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4faed75712b0eb1913c28a3872731ffd48d" prot="public">
+          <name>Duplicate</name>
+          <briefdescription>
+<para>MLContacts.Contact with the details specified for an insert already exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4fa38c300f4fc9ce8a77aad4a30de05cad8" prot="public">
+          <name>NotFound</name>
+          <briefdescription>
+<para>MLContacts.Contact to be deleted/updated does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines possible status values for an operation performed on a MLContacts.Contact. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" bodystart="136" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daa" prot="public" static="no">
+        <name>SearchField</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daaa49ee3087348e8d44e1feda1917443987" prot="public">
+          <name>Name</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Search for name </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daaabcc254b55c4a1babdf1dcb82c207506b" prot="public">
+          <name>Phone</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Search for phone number </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daaace8ae9da5b7cd6c3df2929543a9af92d" prot="public">
+          <name>Email</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Search for email address </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daaab1c94ca2fbc3e78fc30069c8d0f01680" prot="public">
+          <name>All</name>
+          <initializer>= Name | Phone | Email</initializer>
+          <briefdescription>
+<para>Search all fields </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Selection bit field for choosing which fields a search should be executed in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" line="164" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" bodystart="163" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0" prot="public" static="no">
+        <name>SelectionField</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0a49ee3087348e8d44e1feda1917443987" prot="public">
+          <name>Name</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Search for name </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0abcc254b55c4a1babdf1dcb82c207506b" prot="public">
+          <name>Phone</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Search for phone number </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0ace8ae9da5b7cd6c3df2929543a9af92d" prot="public">
+          <name>Email</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Search for email address </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0ab1c94ca2fbc3e78fc30069c8d0f01680" prot="public">
+          <name>All</name>
+          <initializer>= Name | Phone | Email</initializer>
+          <briefdescription>
+<para>Search all fields </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Selection bit field for choosing which fields a search should be executed in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" line="191" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" bodystart="190" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts" kindref="compound">MLContacts</ref> provides address book style functionality for storing, editing, deleting and retrieving contacts from on device storage. This API does not expose access to user&apos;s connections with other magic leap users (e.g.social graph). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>MLAPISingleton&lt; MLContacts &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="36">
+        <label>UnityEngine.XR.MagicLeap.MLContacts</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>MLAPISingleton&lt; MLContacts &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="38">
+        <label>UnityEngine.XR.MagicLeap.MLContacts</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" line="25" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLContacts.cs" bodystart="24" bodyend="1244"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1ac121b0baeba2f70ec09dfb6d6ceccc4f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContacts</scope><name>OperationStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1adc2891fc12297fad28daf8413bb43daa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContacts</scope><name>SearchField</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a647ac5efea30f4f85cece8c07f9cedc0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContacts</scope><name>SelectionField</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

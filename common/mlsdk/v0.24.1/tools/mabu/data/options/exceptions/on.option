@@ -1,0 +1,3 @@
+CXXFLAGS.gcc,clang=-fexceptions
+CXXFLAGS.msvc=-EHsc
+

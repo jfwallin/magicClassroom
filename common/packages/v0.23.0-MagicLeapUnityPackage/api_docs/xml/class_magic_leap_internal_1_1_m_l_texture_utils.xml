@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_m_l_texture_utils" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MLTextureUtils</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_m_l_texture_utils_1a598c605967401e698e3e6ea75abcbe77" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte []</type>
+        <definition>static byte [] MagicLeapInternal.MLTextureUtils.ConvertToByteArray</definition>
+        <argsstring>(Texture2D texture, out int numChannels)</argsstring>
+        <name>ConvertToByteArray</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>numChannels</declname>
+        </param>
+        <briefdescription>
+<para>Convert Unity Texture2D to a byte array. Texture2D should be in one of the following formats: DXT1, RGBA32, RGB24. For DXT1 and RGBA32, resulting byte array is in RGBA format. For RGB24, resulting byte array is in RGB format. The origin of the byte array will be at the top left corner. Returns null on unsupported formats. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texture to extract byte array from</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChannels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Out parameter to determine how many bytes per pixel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapTextureUtils.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapTextureUtils.cs" bodystart="59" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class containing utility functions to convert Unity Texture to Lumin OS compatible data structures. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapTextureUtils.cs" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapTextureUtils.cs" bodystart="47" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_m_l_texture_utils_1a598c605967401e698e3e6ea75abcbe77" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MLTextureUtils</scope><name>ConvertToByteArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

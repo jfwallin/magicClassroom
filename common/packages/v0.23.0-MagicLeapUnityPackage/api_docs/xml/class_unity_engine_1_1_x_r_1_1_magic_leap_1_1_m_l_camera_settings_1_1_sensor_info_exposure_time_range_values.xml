@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a345462103674392c1117210e77e9fce7" prot="public" static="no" mutable="no">
+        <type>readonly long</type>
+        <definition>readonly long UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoExposureTimeRangeValues.Minimum</definition>
+        <argsstring></argsstring>
+        <name>Minimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="96" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1af317b9f2ff65006380b76945ba596105" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoExposureTimeRangeValues._maximum</definition>
+        <argsstring></argsstring>
+        <name>_maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="98" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a58eaf2b14d00e94e0dcec9555f077178" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>long</type>
+        <definition>long UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoExposureTimeRangeValues.Maximum</definition>
+        <argsstring></argsstring>
+        <name>Maximum</name>
+        <briefdescription>
+<para>Only the Maximum exposure time range can be modified. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a548243d250fc047b7a9c8039d211058d" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoExposureTimeRangeValues.isDirty</definition>
+        <argsstring></argsstring>
+        <name>isDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="104" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1acd5aa71b08d9fae40239f7ded01c36a8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoExposureTimeRangeValues.SensorInfoExposureTimeRangeValues</definition>
+        <argsstring>(long minimum, long maximum)</argsstring>
+        <name>SensorInfoExposureTimeRangeValues</name>
+        <param>
+          <type>long</type>
+          <declname>minimum</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="93" bodyend="106"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1af317b9f2ff65006380b76945ba596105" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</scope><name>_maximum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a548243d250fc047b7a9c8039d211058d" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</scope><name>isDirty</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a58eaf2b14d00e94e0dcec9555f077178" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</scope><name>Maximum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1a345462103674392c1117210e77e9fce7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</scope><name>Minimum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_exposure_time_range_values_1acd5aa71b08d9fae40239f7ded01c36a8" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoExposureTimeRangeValues</scope><name>SensorInfoExposureTimeRangeValues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

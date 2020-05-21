@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_media_player_track_data" kind="struct" language="C++" prot="public">
+    <compoundname>MediaPlayerTrackData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_media_player_track_data_1aefb2d494456f21e7bbd14e8c7b53127d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MediaPlayerTrackData::track_number</definition>
+        <argsstring></argsstring>
+        <name>track_number</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_media_player_track_data_1a7bca30e5f559f9f509f20237574170d5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* MediaPlayerTrackData::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="70" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_media_player_track_data_1a76158902df7c6844aac2e9a97ac5ed2b" prot="public" static="no" mutable="no">
+        <type>MLMediaPlayerTrackType</type>
+        <definition>MLMediaPlayerTrackType MediaPlayerTrackData::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= MediaPlayerTrackType_Unknown</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_media_player_track_data_1a4410a15caebad02105a841cac4b1dc96" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* MediaPlayerTrackData::mime_type</definition>
+        <argsstring></argsstring>
+        <name>mime_type</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="72" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_media_player_track_data_1a19c78aa6d7930c776312f4f0305deffb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MediaPlayerTrackData::MediaPlayerTrackData</definition>
+        <argsstring>()</argsstring>
+        <name>MediaPlayerTrackData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="74" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_media_player_track_data_1ae1e7745c49a06dd378899a9643f6a9e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MediaPlayerTrackData::SetLanguageFromML</definition>
+        <argsstring>(char *lang)</argsstring>
+        <name>SetLanguageFromML</name>
+        <param>
+          <type>char *</type>
+          <declname>lang</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="82" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_media_player_track_data_1afba3b9abaaf3209b528bdabd55df07c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MediaPlayerTrackData::SetMimeTypeFromML</definition>
+        <argsstring>(char *new_mime_type)</argsstring>
+        <name>SetMimeTypeFromML</name>
+        <param>
+          <type>char *</type>
+          <declname>new_mime_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_media_player_track_data_1a8a6a4597cd8afd6b1d1e5977c998b1d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_media_player_track_data" kindref="compound">MediaPlayerTrackData</ref> &amp;</type>
+        <definition>MediaPlayerTrackData&amp; MediaPlayerTrackData::operator=</definition>
+        <argsstring>(const MediaPlayerTrackData &amp;from)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="struct_media_player_track_data" kindref="compound">MediaPlayerTrackData</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="120" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_media_player_track_data_1a1bc241a493ff094bc07bf6c942bdf181" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MediaPlayerTrackData::MediaPlayerTrackData</definition>
+        <argsstring>(const MediaPlayerTrackData &amp;src)</argsstring>
+        <name>MediaPlayerTrackData</name>
+        <param>
+          <type>const <ref refid="struct_media_player_track_data" kindref="compound">MediaPlayerTrackData</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_media_player_track_data_1abd0342d30e066f0c865c1a49b1876279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MediaPlayerTrackData::~MediaPlayerTrackData</definition>
+        <argsstring>()</argsstring>
+        <name>~MediaPlayerTrackData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="137" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.h" bodystart="67" bodyend="142"/>
+    <listofallmembers>
+      <member refid="struct_media_player_track_data_1a7bca30e5f559f9f509f20237574170d5" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>language</name></member>
+      <member refid="struct_media_player_track_data_1a19c78aa6d7930c776312f4f0305deffb" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>MediaPlayerTrackData</name></member>
+      <member refid="struct_media_player_track_data_1a1bc241a493ff094bc07bf6c942bdf181" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>MediaPlayerTrackData</name></member>
+      <member refid="struct_media_player_track_data_1a4410a15caebad02105a841cac4b1dc96" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>mime_type</name></member>
+      <member refid="struct_media_player_track_data_1a8a6a4597cd8afd6b1d1e5977c998b1d2" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>operator=</name></member>
+      <member refid="struct_media_player_track_data_1ae1e7745c49a06dd378899a9643f6a9e0" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>SetLanguageFromML</name></member>
+      <member refid="struct_media_player_track_data_1afba3b9abaaf3209b528bdabd55df07c9" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>SetMimeTypeFromML</name></member>
+      <member refid="struct_media_player_track_data_1aefb2d494456f21e7bbd14e8c7b53127d" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>track_number</name></member>
+      <member refid="struct_media_player_track_data_1a76158902df7c6844aac2e9a97ac5ed2b" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>type</name></member>
+      <member refid="struct_media_player_track_data_1abd0342d30e066f0c865c1a49b1876279" prot="public" virt="non-virtual"><scope>MediaPlayerTrackData</scope><name>~MediaPlayerTrackData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

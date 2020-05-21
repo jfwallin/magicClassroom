@@ -1,0 +1,2 @@
+
+SHLIBS.win = ws2_32

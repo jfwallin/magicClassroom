@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3075148247df9b809b5139f771cba44e" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils</compoundname>
+    <innerfile refid="_magic_leap_bit_mask_8cs">MagicLeapBitMask.cs</innerfile>
+    <innerfile refid="_magic_leap_device_8cs">MagicLeapDevice.cs</innerfile>
+    <innerfile refid="_magic_leap_texture_utils_8cs">MagicLeapTextureUtils.cs</innerfile>
+    <innerfile refid="_magic_leap_unity_convert_8cs">MagicLeapUnityConvert.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/"/>
+  </compounddef>
+</doxygen>

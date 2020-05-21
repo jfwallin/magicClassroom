@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a9dbd711b214798941b30ac259402a54a" prot="package" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac87c038bef9d9c78d84d4346e62b6f6b" kindref="member">MLCameraCaptureType</ref></type>
+        <definition>MLCameraCaptureType UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.CaptureType</definition>
+        <argsstring></argsstring>
+        <name>CaptureType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a1336c6a94780dd77355540fee87622f2" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._prepareHandle</definition>
+        <argsstring></argsstring>
+        <name>_prepareHandle</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8092b2224b5f57bb0c666abeb06bfc98" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a218b7a8042bbf1af40be5dd95e0d82d4" kindref="member">MLCameraMetadataColorCorrectionMode</ref></type>
+        <definition>MLCameraMetadataColorCorrectionMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._colorCorrectionMode</definition>
+        <argsstring></argsstring>
+        <name>_colorCorrectionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aaa0898096c3f558f1c1ecb61bc5b41a3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform" kindref="compound">MLCameraColorCorrectionTransform</ref></type>
+        <definition>MLCameraColorCorrectionTransform UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._colorCorrectionTransform</definition>
+        <argsstring></argsstring>
+        <name>_colorCorrectionTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="65" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a83f061f7bc0f856eec4f827158fb79fc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_gains" kindref="compound">MLCameraColorCorrectionGains</ref></type>
+        <definition>MLCameraColorCorrectionGains UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._colorCorrectionGains</definition>
+        <argsstring></argsstring>
+        <name>_colorCorrectionGains</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ac94dc2b883516ffeb8e175278e4cbd56" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range" kindref="compound">MLCameraControlAETargetFPSRange</ref></type>
+        <definition>MLCameraControlAETargetFPSRange UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAETargetFPSRange</definition>
+        <argsstring></argsstring>
+        <name>_controlAETargetFPSRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8e2465851f3861ac6e8e3fd78953bb5a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_scaler_crop_region" kindref="compound">MLCameraScalerCropRegion</ref></type>
+        <definition>MLCameraScalerCropRegion UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._scalerCropRegion</definition>
+        <argsstring></argsstring>
+        <name>_scalerCropRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="89" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a3b258f1d767ea9b8f9a3c2ca7511c7cb" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adc63c9e5a5383e9ba52b3edf2cbbcdad" kindref="member">MLCameraMetadataColorCorrectionAberrationMode</ref></type>
+        <definition>MLCameraMetadataColorCorrectionAberrationMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._colorCorrectionAberrationMode</definition>
+        <argsstring></argsstring>
+        <name>_colorCorrectionAberrationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a4ca1ac6b2744a224e2ae3dd231f38b8d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a18a3199038724d5638ff6d3d05eba44b" kindref="member">MLCameraMetadataControlAEAntibandingMode</ref></type>
+        <definition>MLCameraMetadataControlAEAntibandingMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAEAntibandingMode</definition>
+        <argsstring></argsstring>
+        <name>_controlAEAntibandingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aa0cff4f639df6ee1707a16c31d1fc50c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._aeExposureCompensation</definition>
+        <argsstring></argsstring>
+        <name>_aeExposureCompensation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a24603cb3dc3242a450c4c05dc904ace7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aa2809a849451e246aa044078ad94db25" kindref="member">MLCameraMetadataControlAELock</ref></type>
+        <definition>MLCameraMetadataControlAELock UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAELock</definition>
+        <argsstring></argsstring>
+        <name>_controlAELock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a68d3490436eb3c9c9d2681c59f5b26ae" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ae2f12fdd8ac32eae08705cc6806e288a" kindref="member">MLCameraMetadataControlAEMode</ref></type>
+        <definition>MLCameraMetadataControlAEMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAEMode</definition>
+        <argsstring></argsstring>
+        <name>_controlAEMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ab01659a2b02d63fa57b3cdde105c1ca4" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a4d90e07b96156da8c731518c83f7b1db" kindref="member">MLCameraMetadataControlAWBLock</ref></type>
+        <definition>MLCameraMetadataControlAWBLock UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAWBLock</definition>
+        <argsstring></argsstring>
+        <name>_controlAWBLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a64e38eb8b1ab1215fdb46a15c41702ad" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9fd067e5e7b3fa413efb4da1ed023a1e" kindref="member">MLCameraMetadataControlAWBMode</ref></type>
+        <definition>MLCameraMetadataControlAWBMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._controlAWBMode</definition>
+        <argsstring></argsstring>
+        <name>_controlAWBMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="145" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aad72f77ab929f0ebeb5ba96691b6e38e" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._sensorExposureTime</definition>
+        <argsstring></argsstring>
+        <name>_sensorExposureTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="153" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1af91528bf67bce09dc22b0b64cdd9afd0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraCaptureSettings._sensorSensitivity</definition>
+        <argsstring></argsstring>
+        <name>_sensorSensitivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="161" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ad6da8549941c854f2d0bda27bc8c4a2a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a218b7a8042bbf1af40be5dd95e0d82d4" kindref="member">MLCameraMetadataColorCorrectionMode</ref></type>
+        <definition>MLCameraMetadataColorCorrectionMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ColorCorrectionMode</definition>
+        <argsstring></argsstring>
+        <name>ColorCorrectionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ae0d4678d1e19b46dcbd6ef27fb9715ba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_transform" kindref="compound">MLCameraColorCorrectionTransform</ref></type>
+        <definition>MLCameraColorCorrectionTransform UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ColorCorrectionTransform</definition>
+        <argsstring></argsstring>
+        <name>ColorCorrectionTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aefcff74ccf53f0764d6b50070b93d983" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_color_correction_gains" kindref="compound">MLCameraColorCorrectionGains</ref></type>
+        <definition>MLCameraColorCorrectionGains UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ColorCorrectionGains</definition>
+        <argsstring></argsstring>
+        <name>ColorCorrectionGains</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="75" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8d94070abe55b0ab3fddc07f4bf736ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range" kindref="compound">MLCameraControlAETargetFPSRange</ref></type>
+        <definition>MLCameraControlAETargetFPSRange UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAETargetFPSRange</definition>
+        <argsstring></argsstring>
+        <name>ControlAETargetFPSRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="83" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a53ba4858f299cccef6dedf4e31cae847" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_scaler_crop_region" kindref="compound">MLCameraScalerCropRegion</ref></type>
+        <definition>MLCameraScalerCropRegion UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ScalerCropRegion</definition>
+        <argsstring></argsstring>
+        <name>ScalerCropRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="91" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a08728f843d12715cda168d81aa0e134c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adc63c9e5a5383e9ba52b3edf2cbbcdad" kindref="member">MLCameraMetadataColorCorrectionAberrationMode</ref></type>
+        <definition>MLCameraMetadataColorCorrectionAberrationMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ColorCorrectionAberrationMode</definition>
+        <argsstring></argsstring>
+        <name>ColorCorrectionAberrationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a392d8dfcdea653bab68e01cb81b594b6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a18a3199038724d5638ff6d3d05eba44b" kindref="member">MLCameraMetadataControlAEAntibandingMode</ref></type>
+        <definition>MLCameraMetadataControlAEAntibandingMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAEAntibandingMode</definition>
+        <argsstring></argsstring>
+        <name>ControlAEAntibandingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1afe6aaa4964fedacd06068b9f08faca79" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.AEExposureCompensation</definition>
+        <argsstring></argsstring>
+        <name>AEExposureCompensation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="115" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a9acf9638c527dcd399f02dfafce4b492" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aa2809a849451e246aa044078ad94db25" kindref="member">MLCameraMetadataControlAELock</ref></type>
+        <definition>MLCameraMetadataControlAELock UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAELock</definition>
+        <argsstring></argsstring>
+        <name>ControlAELock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="123" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1af62d320373ad46b7b6138266a811af7a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ae2f12fdd8ac32eae08705cc6806e288a" kindref="member">MLCameraMetadataControlAEMode</ref></type>
+        <definition>MLCameraMetadataControlAEMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAEMode</definition>
+        <argsstring></argsstring>
+        <name>ControlAEMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a12db01b6b4eb20f9254a8a64c0a7ec66" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a4d90e07b96156da8c731518c83f7b1db" kindref="member">MLCameraMetadataControlAWBLock</ref></type>
+        <definition>MLCameraMetadataControlAWBLock UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAWBLock</definition>
+        <argsstring></argsstring>
+        <name>ControlAWBLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="139" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a4acaa32120ebc36fcd1b5b6a234d7730" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9fd067e5e7b3fa413efb4da1ed023a1e" kindref="member">MLCameraMetadataControlAWBMode</ref></type>
+        <definition>MLCameraMetadataControlAWBMode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ControlAWBMode</definition>
+        <argsstring></argsstring>
+        <name>ControlAWBMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="147" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a49568e0b2da04c4f85f2273ba45f6ccb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>long</type>
+        <definition>long UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.SensorExposureTime</definition>
+        <argsstring></argsstring>
+        <name>SensorExposureTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a10367a475119aacd8c863f5d091d1ff8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.SensorSensitivity</definition>
+        <argsstring></argsstring>
+        <name>SensorSensitivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aad3533611c5d5ded55700a91c2efb00d" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.IsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="170" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a008e01af00e11d666bc4519e32aba462" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.PopulateSettings</definition>
+        <argsstring>(ulong prepareHandle, MLCameraCaptureType captureType)</argsstring>
+        <name>PopulateSettings</name>
+        <param>
+          <type>ulong</type>
+          <declname>prepareHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac87c038bef9d9c78d84d4346e62b6f6b" kindref="member">MLCameraCaptureType</ref></type>
+          <declname>captureType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="172" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="172" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8bc4aa43af8eb964ae8019ef5dbd0d2f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MLCameraCaptureSettings.ApplySettings</definition>
+        <argsstring>()</argsstring>
+        <name>ApplySettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="294" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="294" bodyend="448"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Settings that are specific to a submitted capture </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraCaptureSettings.cs" bodystart="51" bodyend="449"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aa0cff4f639df6ee1707a16c31d1fc50c" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_aeExposureCompensation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a3b258f1d767ea9b8f9a3c2ca7511c7cb" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_colorCorrectionAberrationMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a83f061f7bc0f856eec4f827158fb79fc" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_colorCorrectionGains</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8092b2224b5f57bb0c666abeb06bfc98" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_colorCorrectionMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aaa0898096c3f558f1c1ecb61bc5b41a3" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_colorCorrectionTransform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a4ca1ac6b2744a224e2ae3dd231f38b8d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAEAntibandingMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a24603cb3dc3242a450c4c05dc904ace7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAELock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a68d3490436eb3c9c9d2681c59f5b26ae" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAEMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ac94dc2b883516ffeb8e175278e4cbd56" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAETargetFPSRange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ab01659a2b02d63fa57b3cdde105c1ca4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAWBLock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a64e38eb8b1ab1215fdb46a15c41702ad" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_controlAWBMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a1336c6a94780dd77355540fee87622f2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_prepareHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8e2465851f3861ac6e8e3fd78953bb5a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_scalerCropRegion</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aad72f77ab929f0ebeb5ba96691b6e38e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_sensorExposureTime</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1af91528bf67bce09dc22b0b64cdd9afd0" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>_sensorSensitivity</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1afe6aaa4964fedacd06068b9f08faca79" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>AEExposureCompensation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8bc4aa43af8eb964ae8019ef5dbd0d2f" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ApplySettings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a9dbd711b214798941b30ac259402a54a" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>CaptureType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a08728f843d12715cda168d81aa0e134c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ColorCorrectionAberrationMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aefcff74ccf53f0764d6b50070b93d983" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ColorCorrectionGains</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ad6da8549941c854f2d0bda27bc8c4a2a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ColorCorrectionMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1ae0d4678d1e19b46dcbd6ef27fb9715ba" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ColorCorrectionTransform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a392d8dfcdea653bab68e01cb81b594b6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAEAntibandingMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a9acf9638c527dcd399f02dfafce4b492" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAELock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1af62d320373ad46b7b6138266a811af7a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAEMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a8d94070abe55b0ab3fddc07f4bf736ce" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAETargetFPSRange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a12db01b6b4eb20f9254a8a64c0a7ec66" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAWBLock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a4acaa32120ebc36fcd1b5b6a234d7730" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ControlAWBMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1aad3533611c5d5ded55700a91c2efb00d" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>IsDirty</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a008e01af00e11d666bc4519e32aba462" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>PopulateSettings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a53ba4858f299cccef6dedf4e31cae847" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>ScalerCropRegion</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a49568e0b2da04c4f85f2273ba45f6ccb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>SensorExposureTime</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_capture_settings_1a10367a475119aacd8c863f5d091d1ff8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraCaptureSettings</scope><name>SensorSensitivity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::LightingTrackingApiNativeBindings::MLLightingTrackingAmbientGlobalState</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state_1a104b938053518f2544ec2342e25b09b9" prot="public" static="no" mutable="no">
+        <type>ushort []</type>
+        <definition>ushort [] MagicLeapInternal.LightingTrackingApiNativeBindings.MLLightingTrackingAmbientGlobalState.cameraLuminance</definition>
+        <argsstring></argsstring>
+        <name>cameraLuminance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" line="75" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state_1a41c4b8633ef40c3c6a9e32ba85d178ed" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long MagicLeapInternal.LightingTrackingApiNativeBindings.MLLightingTrackingAmbientGlobalState.TimestampInNanoSeconds</definition>
+        <argsstring></argsstring>
+        <name>TimestampInNanoSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/LightingTrackingApiNativeBindings.cs" bodystart="72" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state_1a104b938053518f2544ec2342e25b09b9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LightingTrackingApiNativeBindings::MLLightingTrackingAmbientGlobalState</scope><name>cameraLuminance</name></member>
+      <member refid="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state_1a41c4b8633ef40c3c6a9e32ba85d178ed" prot="public" virt="non-virtual"><scope>MagicLeapInternal::LightingTrackingApiNativeBindings::MLLightingTrackingAmbientGlobalState</scope><name>TimestampInNanoSeconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

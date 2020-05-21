@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLConnections</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLConnections &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67" prot="public" static="no">
+        <name>InviteStatus</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67ad7149268a66eee258853c275dcb32faa" prot="public">
+          <name>SubmittingRequest</name>
+          <briefdescription>
+<para>The request to start the sending process is being submitted to the system. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67a2d13df6f8b5e4c5af9f87e0dc39df69d" prot="public">
+          <name>Pending</name>
+          <briefdescription>
+<para>The sending process has successfully initiated and invite dialog is being displayed to the user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67af75c37de7700f90c2e3256060397c229" prot="public">
+          <name>Dispatched</name>
+          <briefdescription>
+<para>The invite dialog has been completed by the user and the invite was successfully sent. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67abfa586e57033efb47e2fef897a24e0d7" prot="public">
+          <name>DispatchFailed</name>
+          <briefdescription>
+<para>The user has completed the invite dialog but the system was unable to send the invite. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67aa149e85a44aeec9140e92733d9ed694e" prot="public">
+          <name>Cancelled</name>
+          <briefdescription>
+<para>The sending process was cancelled either by user, system or by CancelSentInvite </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67a2d0e462e9958ce7bb443e70023241dfe" prot="public">
+          <name>InvalidHandle</name>
+          <briefdescription>
+<para>Unable to determine invite status, because provided handle is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines possible status values for sending invites with MLConnections.SendInvite. Links to MLConnectionsInviteStatus in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="183" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="182" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ad49bebe79b48c345b79f02d1b4b29a85" prot="public" static="no">
+        <name>InviteeFilter</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ad49bebe79b48c345b79f02d1b4b29a85a24c714ccb3857346b52bfe17e287d210" prot="public">
+          <name>Followers</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and follow current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ad49bebe79b48c345b79f02d1b4b29a85a16349a66291a087354de6e7926333e9f" prot="public">
+          <name>Mutual</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and are mutual followers for current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines default filter for Magic Leap connections when displaying invite dialog to the user in MLConnections.SendInvite. Links to MLConnectionsInviteeFilter in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="219" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="218" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a4c8da2ab9c8d0fc253af19570072d926" prot="public" static="no">
+        <name>SelectionFilter</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a4c8da2ab9c8d0fc253af19570072d926a6f796b0e6deb4f4c2c0ee0ed5e10e117" prot="public">
+          <name>Following</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and followed by current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a4c8da2ab9c8d0fc253af19570072d926a24c714ccb3857346b52bfe17e287d210" prot="public">
+          <name>Followers</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and follow current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a4c8da2ab9c8d0fc253af19570072d926a16349a66291a087354de6e7926333e9f" prot="public">
+          <name>Mutual</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and are mutual followers for current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines default filter for Magic Leap connections when displaying invite dialog to the user MLConnectionsRequestSelection. Links to MLConnectionsSelectionFilter in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="235" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="234" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8" prot="public" static="no">
+        <name>SelectionStatus</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8a2d13df6f8b5e4c5af9f87e0dc39df69d" prot="public">
+          <name>Pending</name>
+          <briefdescription>
+<para>Indicates the request to start the sending process has been submitted to the system. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8a205bc73c4ab4286a1fb9d4c18322777c" prot="public">
+          <name>Confirmed</name>
+          <briefdescription>
+<para>Indicates that the selection is ready. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8aa149e85a44aeec9140e92733d9ed694e" prot="public">
+          <name>Cancelled</name>
+          <briefdescription>
+<para>Indicates that the selection was cancelled by user action. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8ad7c8c85bf79bbe1b7188497c32c3b0ca" prot="public">
+          <name>Failed</name>
+          <briefdescription>
+<para>Indicates that the selection failed unexpectedly. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines possible status values for selecting connections using <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref>.. Links to MLConnectionsSelectionStatus in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="256" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="255" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8" prot="public" static="no">
+        <name>InvitationDeliveryStatus</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8a643562a9ae7099c8aabfdc93478db117" prot="public">
+          <name>Processing</name>
+          <briefdescription>
+<para>The invitation request is being processed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8af75c37de7700f90c2e3256060397c229" prot="public">
+          <name>Dispatched</name>
+          <briefdescription>
+<para>The invitee was found and the invitation was dispatched. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8a67edd3b99247c9eb5884a02802a20fa7" prot="public">
+          <name>Delivered</name>
+          <briefdescription>
+<para>The invitee is online and the invitation was delivered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8a7d50c09f1ad7d098e0a847bcdcab7efb" prot="public">
+          <name>Joined</name>
+          <briefdescription>
+<para>A new participant joined. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8ad7c8c85bf79bbe1b7188497c32c3b0ca" prot="public">
+          <name>Failed</name>
+          <briefdescription>
+<para>A system level failure prevented the delivery of the invitation to this invitee. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines invitation status types. Links to MLConnectionsInvitationDeliveryStatus in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="282" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="281" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref> class is the entry point for the Connections API </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>UnityEngine.XR.MagicLeap.MLConnections</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>MLAPISingleton&lt; MLConnections &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>UnityEngine.XR.MagicLeap.MLConnections</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>MLAPISingleton&lt; MLConnections &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLConnections.cs" bodystart="21" bodyend="707"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a73d9d6d32c5ac0f323752e1dc68214d8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>InvitationDeliveryStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ad49bebe79b48c345b79f02d1b4b29a85" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>InviteeFilter</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1afd8782ea39ff1734677ec70486d5be67" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>InviteStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1a4c8da2ab9c8d0fc253af19570072d926" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>SelectionFilter</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac44c732949210488488bbb2fe1c703d8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLConnections</scope><name>SelectionStatus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

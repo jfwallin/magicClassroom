@@ -1,0 +1,4 @@
+KIND=static
+SRCS=empty.c empty.cpp
+USES=base
+

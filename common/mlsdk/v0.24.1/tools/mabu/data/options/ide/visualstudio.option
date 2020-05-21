@@ -1,0 +1,3 @@
+# when running under VS, we want output so that it can parse error/warning output more easily
+CFLAGS.clang=-fdiagnostics-format=msvc
+CXXFLAGS.clang=-fdiagnostics-format=msvc

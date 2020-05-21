@@ -1,0 +1,2610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kind="namespace" language="C#">
+    <compoundname>UnityEngine::XR::MagicLeap</compoundname>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_bit_mask" prot="public">UnityEngine::XR::MagicLeap::MagicLeapBitMask</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public">UnityEngine::XR::MagicLeap::MLAPISingleton</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect" prot="public">UnityEngine::XR::MagicLeap::MLAppConnect</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio" prot="public">UnityEngine::XR::MagicLeap::MLAudio</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_bit_mask" prot="public">UnityEngine::XR::MagicLeap::MLBitMask</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_bluetooth_l_e" prot="public">UnityEngine::XR::MagicLeap::MLBluetoothLE</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera" prot="public">UnityEngine::XR::MagicLeap::MLCamera</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" prot="public">UnityEngine::XR::MagicLeap::MLConnections</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts" prot="public">UnityEngine::XR::MagicLeap::MLContacts</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye" prot="public">UnityEngine::XR::MagicLeap::MLEye</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes" prot="public">UnityEngine::XR::MagicLeap::MLEyes</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_tracking" prot="public">UnityEngine::XR::MagicLeap::MLHandTracking</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking" prot="public">UnityEngine::XR::MagicLeap::MLHeadTracking</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension" prot="public">UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity" prot="public">UnityEngine::XR::MagicLeap::MLIdentity</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile" prot="public">UnityEngine::XR::MagicLeap::MLIdentityProfile</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" prot="public">UnityEngine::XR::MagicLeap::MLImageTarget</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker" prot="public">UnityEngine::XR::MagicLeap::MLImageTracker</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input" prot="public">UnityEngine::XR::MagicLeap::MLInput</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking" prot="public">UnityEngine::XR::MagicLeap::MLLightingTracking</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player" prot="public">UnityEngine::XR::MagicLeap::MLMediaPlayer</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement" prot="public">UnityEngine::XR::MagicLeap::MLMovement</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service" prot="public">UnityEngine::XR::MagicLeap::MLMusicService</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames" prot="public">UnityEngine::XR::MagicLeap::MLPersistentCoordinateFrames</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_planes" prot="public">UnityEngine::XR::MagicLeap::MLPlanes</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_plugin_log" prot="public">UnityEngine::XR::MagicLeap::MLPluginLog</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" prot="public">UnityEngine::XR::MagicLeap::MLPrivileges</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_raycast" prot="public">UnityEngine::XR::MagicLeap::MLRaycast</innerclass>
+    <innerclass refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" prot="public">UnityEngine::XR::MagicLeap::MLResult</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_verbosity" prot="public">UnityEngine::XR::MagicLeap::MLVerbosity</innerclass>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays" prot="public">UnityEngine::XR::MagicLeap::MLWorldRays</innerclass>
+    <innernamespace refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1_1_native">UnityEngine::XR::MagicLeap::Native</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ab8cd31e5f629ed781ba37465267d2e43" prot="public" static="no">
+        <name>ButtonDeltaState</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ab8cd31e5f629ed781ba37465267d2e43a4bac8cdf0a968472b519b3b295d0d48b" prot="public">
+          <name>NoChange</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No changes occurred. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ab8cd31e5f629ed781ba37465267d2e43ad78a68f6a85421ae121c2cb5b73a1040" prot="public">
+          <name>Pressed</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Button was pressed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ab8cd31e5f629ed781ba37465267d2e43aea1e34304a5d8ffa7c9b0ed8ede4ef1a" prot="public">
+          <name>Released</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Button was released. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A series of flags to determine if a button has been pressed or released since the last time checked. Useful for identifying press/release events that occur in a single frame or sample. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputDevice.cs" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputDevice.cs" bodystart="25" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84e" prot="public" static="no">
+        <name>MLConnectionsInviteStatus</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ead7149268a66eee258853c275dcb32faa" prot="public">
+          <name>SubmittingRequest</name>
+          <briefdescription>
+<para>The request to start the sending process is being submitted to the system. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d13df6f8b5e4c5af9f87e0dc39df69d" prot="public">
+          <name>Pending</name>
+          <briefdescription>
+<para>The sending process has successfully initiated and invite dialog is being displayed to the user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84eaf75c37de7700f90c2e3256060397c229" prot="public">
+          <name>Dispatched</name>
+          <briefdescription>
+<para>The invite dialog has been completed by the user and the invite was successfully sent. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84eabfa586e57033efb47e2fef897a24e0d7" prot="public">
+          <name>DispatchFailed</name>
+          <briefdescription>
+<para>The user has completed the invite dialog but the system was unable to send the invite. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84eaa149e85a44aeec9140e92733d9ed694e" prot="public">
+          <name>Cancelled</name>
+          <briefdescription>
+<para>The sending process was cancelled either by user, system or by CancelSentInvite </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" prot="public">
+          <name>InvalidHandle</name>
+          <briefdescription>
+<para>Unable to determine invite status, because provided handle is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines possible status values for sending invites with MLConnectionsRequestInvite. Links to MLConnectionsInviteStatus in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLConnections.cs" line="30" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLConnections.cs" bodystart="29" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad456b39aba3c845c6fc2f543e27ee3ac" prot="public" static="no">
+        <name>MLConnectionsInviteeFilter</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad456b39aba3c845c6fc2f543e27ee3aca24c714ccb3857346b52bfe17e287d210" prot="public">
+          <name>Followers</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and follow current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad456b39aba3c845c6fc2f543e27ee3aca16349a66291a087354de6e7926333e9f" prot="public">
+          <name>Mutual</name>
+          <briefdescription>
+<para>Show Magic Leap connections who are online and are mutual followers for current user. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines default filter for Magic Leap connections when displaying invite dialog to the user in MLConnectionsRequestInvite. Links to MLConnectionsInviteeFilter in ml_connections.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLConnections.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLConnections.cs" bodystart="66" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a10cdb158617c8a1be2f3bc0e46e21001" prot="public" static="no">
+        <name>MLContactsOperationStatus</name>
+        <briefdescription>
+<para>Defines possible status values for an operation performed on a MLContacts.Contact. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af2aad76c9750c7c0f2de6801e7e834f0" prot="public" static="no">
+        <name>MLContactsSearchField</name>
+        <briefdescription>
+<para>Selection bit field for choosing which fields a search should be executed in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a01a35fb83cf94c5acde224e6cc6ec83c" prot="public" static="no">
+        <name>MLContactsSelectionField</name>
+        <briefdescription>
+<para>Selection bit field for choosing which fields a search should be executed in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" line="44" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContacts.cs" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ada88fb6044dac80edf5476963d7a2b37" prot="public" static="no">
+        <name>MLContentBindingType</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ada88fb6044dac80edf5476963d7a2b37a0a4faf97013814ceb7f7afe1205a516b" prot="public">
+          <name>PCF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ada88fb6044dac80edf5476963d7a2b37aa5c88aa37aeb2ad89884c76e8a012ff7" prot="public">
+          <name>FoundObjects</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Content Binding type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContentBinding.cs" line="24" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLContentBinding.cs" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af7da5bc4627392d3e57f496e76b11ced" prot="public" static="no">
+        <name>MLControllerMode</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af7da5bc4627392d3e57f496e76b11cedac02aa90d3aada832fc42c4af6002204e" prot="public">
+          <name>IMU3DOF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para><computeroutput>IMU 3 degree of freedom tracking (orientation only).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af7da5bc4627392d3e57f496e76b11ceda56751f471ef61334280bd2042e370517" prot="public">
+          <name>EM6DOF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para><computeroutput>EM 6 degrees of freedom tracking (position and orientation).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af7da5bc4627392d3e57f496e76b11cedac146c21ce283bad08febf88856c5b129" prot="public">
+          <name>Fused6DOF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para><computeroutput>High quality EF Fused with IMU 6 degrees of freedom tracking (position and orientation).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The tracking mode used for the controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLControllerNativeBindings.cs" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLControllerNativeBindings.cs" bodystart="76" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280" prot="public" static="no">
+        <name>MLControllerCalibAccuracy</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280a7ff3e75ce6aca348bc513ed3d5882946" prot="public">
+          <name>Bad</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The calibration accuracy is bad. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The calibration accuracy is low. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280a87f8a6ab85c9ced3702b4ea641ad4bb5" prot="public">
+          <name>Medium</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The calibration accuracy is medium. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c70089126170c52aca21bff0c219280a655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The calibration accuracy is high. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The calibration accuracy levels for controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLControllerNativeBindings.cs" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLControllerNativeBindings.cs" bodystart="98" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a43635ba0750579524db19b5131f877fa" prot="public" static="no">
+        <name>MLHeadTrackingError</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a43635ba0750579524db19b5131f877faa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+<para>No error, tracking is nominal. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a43635ba0750579524db19b5131f877faaa13ac4e5c501f3af6e05084cefa2d26e" prot="public">
+          <name>NotEnoughFeatures</name>
+          <briefdescription>
+<para>There are not enough features in the environment. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a43635ba0750579524db19b5131f877faab156f1fe83f043b176f119c2c3e048e0" prot="public">
+          <name>LowLight</name>
+          <briefdescription>
+<para>Lighting in the environment is not sufficient to track accurately. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a43635ba0750579524db19b5131f877faa88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Head tracking failed for an unkown reason. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible error conditions that can cause Head Tracking to be less than ideal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" line="23" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" bodystart="22" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abe03c53b0b6a23356d88e85abd01889a" prot="public" static="no">
+        <name>MLHeadTrackingMode</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abe03c53b0b6a23356d88e85abd01889aa8424aeee8c2e36a0cee1c77d9e84fa48" prot="public">
+          <name>Mode6DOF</name>
+          <briefdescription>
+<para>Full 6 degrees of freedom tracking (position and orientation). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abe03c53b0b6a23356d88e85abd01889aadec2121216754d9541577bf985fc7f74" prot="public">
+          <name>ModeUnavailable</name>
+          <briefdescription>
+<para>Head tracking is unavailable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of possible tracking modes the Head Tracking system can be in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ff" prot="public" static="no">
+        <name>MLHeadTrackingMapEvent</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ffab578b733cbb788fc6ad208314d2c4c2b" prot="public">
+          <name>Lost</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+<para>Map was lost. It could possibly recover. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ffa5c4c4cf7bbab0d76fe61420aee14a5ca" prot="public">
+          <name>Recovered</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+<para>Previous map was recovered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ffa1e1f7d389f00a6fb6245ca9685bd9a98" prot="public">
+          <name>RecoveryFailed</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+<para>Failed to recover previous map. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ffab5743e22fdc2a52b6db271ee0c2ee0d2" prot="public">
+          <name>NewSession</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+<para>New map session created. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of all types of map events that can occur that a developer may have to handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLHeadTrackingNativeBindings.cs" bodystart="68" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0207d07522e3c670ec8b7b3f56218ef" prot="public" static="no">
+        <name>MLIdentityAttributeKey</name>
+        <briefdescription>
+<para>MLIdentityAttributeKey identifies an attribute in a user profile. Attributes that were not known at the time the library was built, are marked as Unknown. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLIdentityAttribute.cs" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLIdentityAttribute.cs" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a875018c12e2cedd1f3c827a4c365374c" prot="public" static="no">
+        <name>MLImageTrackerImageFormat</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a875018c12e2cedd1f3c827a4c365374cad3f6975213fb5546d8486b54b025dbd7" prot="public">
+          <name>Grayscale</name>
+          <briefdescription>
+<para>Grayscale format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a875018c12e2cedd1f3c827a4c365374ca889574aebacda6bfd3e534e2b49b8028" prot="public">
+          <name>RGB</name>
+          <briefdescription>
+<para>RGB format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a875018c12e2cedd1f3c827a4c365374caea3495a278957dc58165e48a8945469f" prot="public">
+          <name>RGBA</name>
+          <briefdescription>
+<para>RGBA format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Supported formats when adding Image Targets to the Image Tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLImageTrackerSettings.cs" line="27" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLImageTrackerSettings.cs" bodystart="26" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a1b5f0542333b0c8389fca9bf105d31e3" prot="public" static="no">
+        <name>MLImageTargetTrackingStatus</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a1b5f0542333b0c8389fca9bf105d31e3a5e1b39ae9fac0eab832877bd5cd01690" prot="public">
+          <name>Tracked</name>
+          <initializer>= MLImageTracker.Target.TrackingStatus.Tracked</initializer>
+          <briefdescription>
+<para>Image target is tracked. The image tracker system will provide a 6 DOF pose when queried using MLSnapshotGetTransform function. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a1b5f0542333b0c8389fca9bf105d31e3a98a19ff88f463baefac152f8641dea36" prot="public">
+          <name>Unreliable</name>
+          <initializer>= MLImageTracker.Target.TrackingStatus.Unreliable</initializer>
+          <briefdescription>
+<para>Image target is tracked with low confidence. The image tracker system will still provide a 6 DOF pose. But this pose might be inaccurate and might have jitter. When the tracking is unreliable one of the following two events will happen quickly : Either the tracking will recover to MLImageTrackerTargetStatus_Tracked or tracking will be lost and the status will change to MLImageTrackerTargetStatus_NotTracked. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a1b5f0542333b0c8389fca9bf105d31e3a90cec99cb3d475323540596ef1e2f5dc" prot="public">
+          <name>NotTracked</name>
+          <initializer>= MLImageTracker.Target.TrackingStatus.NotTracked</initializer>
+          <briefdescription>
+<para>Image target is lost. The image tracker system will not report any pose for this target. Querying for the pose using MLSnapshotGetTransform will return false. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Identifies the status of an image target. Each MLImageTargetResult will include a ImageTrackerTargetStatus giving the current status of the target. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLImageTrackerTargetSettings.cs" line="29" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLImageTrackerTargetSettings.cs" bodystart="28" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3d11163cc8e61d8d50dab731dd1aa56b" prot="public" static="no">
+        <name>MLLightingTrackingCamera</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3d11163cc8e61d8d50dab731dd1aa56ba945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3d11163cc8e61d8d50dab731dd1aa56ba92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3d11163cc8e61d8d50dab731dd1aa56ba8aece0c0b114cd55b6240a0be360ad16" prot="public">
+          <name>FarLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3d11163cc8e61d8d50dab731dd1aa56bae1f25d9903d88155c2372568e8bf1cb8" prot="public">
+          <name>FarRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLLightingTracker.cs" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLLightingTracker.cs" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159c" prot="public" static="no">
+        <name>MLMediaPlayerInfo</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Unknown status </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca44388007036e1a0e7790a101c8902b9a" prot="public">
+          <name>StartedAsNext</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The player was started because it was used as the next player. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca7bc627f4c02d993a3a750b6681926fe8" prot="public">
+          <name>RenderingStart</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The player just pushed the very first video frame for rendering. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159caa56d66d7acdce18b9861f4c84bf8f777" prot="public">
+          <name>Looping</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>The player just reached EOS and started from beginning loop. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159cadbff9a5b7059ac703a655584b5d94c0a" prot="public">
+          <name>VideoTrackLagging</name>
+          <initializer>= 700</initializer>
+          <briefdescription>
+<para>The video is too complex for the decoder: it can&apos;t decode frames fast enough. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca9521c98431c79212207d9d40f6a82296" prot="public">
+          <name>BufferingStart</name>
+          <initializer>= 701</initializer>
+          <briefdescription>
+<para>Media player is temporarily pausing playback. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca89748b0f2bbfbef1bf8c2db1d217083b" prot="public">
+          <name>BufferingEnd</name>
+          <initializer>= 702</initializer>
+          <briefdescription>
+<para>Media player is resuming playback after filling buffers. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca03280d0d3745457a46b7640efaff6bad" prot="public">
+          <name>NetworkBandwidth</name>
+          <initializer>= 703</initializer>
+          <briefdescription>
+<para>Network bandwidth info. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca21610a6b3a304f962b522f125aa13a4a" prot="public">
+          <name>BadInterleaving</name>
+          <initializer>= 800</initializer>
+          <briefdescription>
+<para>Bad interleaving means that a media has been improperly interleaved. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca2b173e3ae97968c4cc6079e9f7479244" prot="public">
+          <name>NotSeekable</name>
+          <initializer>= 801</initializer>
+          <briefdescription>
+<para>The media is not seekable e.g live stream. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159caab95e775130b13130a25256fc574f5e0" prot="public">
+          <name>MetadataUpdate</name>
+          <initializer>= 802</initializer>
+          <briefdescription>
+<para>New media metadata is available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abee9a4e0178e508fd69f819005ee159ca898b87196f5c314da26770f71866270a" prot="public">
+          <name>TimedTextError</name>
+          <initializer>= 900</initializer>
+          <briefdescription>
+<para>Media timed text error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Indicates various trigger various media player actions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="23" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="22" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffc" prot="public" static="no">
+        <name>MLMediaDRMKeyType</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffcaac21d502848247aa2f578d0f718f5d1d" prot="public">
+          <name>Streaming</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>This key request type specifies that the keys will be for online use, they will. not be saved to the device for subsequent use when the device is not connected to a network. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffca8d9da4bc0e49a50e09ac9f7e56789d39" prot="public">
+          <name>Offline</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>This key request type specifies that the keys will be for offline use, they will be saved to the device for use when the device is not connected to a network. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aade3363c22fa9484a9605b237c612ffcab8e7b465df7c5979dc731d06e84ce2cf" prot="public">
+          <name>Release</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>This key request type specifies that previously saved offline keys should be released. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of DRM key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="90" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="89" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a0129596472844c91254ac18db6547a52" prot="public" static="no">
+        <name>MLMediaDRMTrack</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a0129596472844c91254ac18db6547a52a34e2d1989a1dbf75cd631596133ee5ee" prot="public">
+          <name>Video</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Indicates the DRM track is a video. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a0129596472844c91254ac18db6547a52ab22f0418e8ac915eb66f829d262d14a2" prot="public">
+          <name>Audio</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Indicates the DRM track is audio. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of DRM track. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="114" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="113" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0" prot="public" static="no">
+        <name>MLMediaPlayerTrackType</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Unspecified type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0a34e2d1989a1dbf75cd631596133ee5ee" prot="public">
+          <name>Video</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Indicates the track is a video. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0ab22f0418e8ac915eb66f829d262d14a2" prot="public">
+          <name>Audio</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Indicates the track is audio. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0ae5ecf6e779aeae7f0583f06c7bd0d9ee" prot="public">
+          <name>TimedText</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Indicates the track is timed text. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0a035f4e29da2d6d31303f7d7cfa1be13b" prot="public">
+          <name>Subtitle</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Indicates the track is subtitle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abbdf743a9828755ba8d514082dfb71b0ace21470ab49d1d1976bc3dc72438c183" prot="public">
+          <name>Metadata</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Indicates the track is metadata. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MediaTrack types returned by MLMediaPlayerGetTrackType(...). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="130" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6" prot="public" static="no">
+        <name>MLCea608CaptionColor</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6a25a81701fbfa4a1efdf660a950c1d006" prot="public">
+          <name>White</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is white. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6ad382816a3cbeed082c9e216e7392eed1" prot="public">
+          <name>Green</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is green. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6a9594eec95be70e7b1710f730fdda33d9" prot="public">
+          <name>Blue</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is blue. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6a023c239d2f2538f140a20e72c7b73f20" prot="public">
+          <name>Cyan</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is cyan. </para>          </briefdescription>
+          <detaileddescription>
+<para>&gt; </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6aee38e4d5dd68c4e440825018d549cb47" prot="public">
+          <name>Red</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is red. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6a51e6cd92b6c45f9affdc158ecca2b8b8" prot="public">
+          <name>Yellow</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is yellow. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6ab91cc2c1416fcca942b61c7ac5b1a9ac" prot="public">
+          <name>Magenta</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is magenta. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2c335e2efd90257640b8f145c60a60e6a4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption color code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="168" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="167" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2fa36fd7d589555e804b43a2e5699b3a" prot="public" static="no">
+        <name>MLCea608CaptionStyle</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2fa36fd7d589555e804b43a2e5699b3aa960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
+          <name>Normal</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption style code is normal. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2fa36fd7d589555e804b43a2e5699b3aab9b3f379108d4441bedd41921ae1ed17" prot="public">
+          <name>Italics</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption style code is italics. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2fa36fd7d589555e804b43a2e5699b3aa852721aa5fc738dfedff2945d71da439" prot="public">
+          <name>Underline</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption style code is underline. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption style code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="215" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="214" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a765b944959b5856194697ecb293ae5b3" prot="public" static="no">
+        <name>MLCea608CaptionDimension</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a765b944959b5856194697ecb293ae5b3a65713b1529d2d7f21afa4dd80ff212ae" prot="public">
+          <name>MLCea608_CCMaxRows</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>Max number of rows. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a765b944959b5856194697ecb293ae5b3afb73ca884af7a5fccfba5307bd45a059" prot="public">
+          <name>MLCea608_CCMaxCols</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+<para>Max number of columns. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a765b944959b5856194697ecb293ae5b3a83b4d2390b5b12757958675c05e3e029" prot="public">
+          <name>MLCea608_CCMaxRowsPlus2</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+<para>Max number of plus 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a765b944959b5856194697ecb293ae5b3a4a2f82d42c5c778dea99c3d78dae048e" prot="public">
+          <name>MLCea608_CCMaxColsPlus2</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+<para>Max number of columns plus 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><computeroutput>Cea608</computeroutput> caption Dimension constants. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" line="237" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMediaPlayerNativeBindings.cs" bodystart="236" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8" prot="public" static="no">
+        <name>MLMusicServiceErrorType</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a9bd9d0ebc081bd74f5bef4e136bb1aed" prot="public">
+          <name>Connectivity</name>
+          <briefdescription>
+<para>Connectivity error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8ac85a251cc457840f1e032f1b733e9398" prot="public">
+          <name>Timeout</name>
+          <briefdescription>
+<para>Timeout error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a18d98fdff936fcbf048bc692e75c86d7" prot="public">
+          <name>GeneralPlayback</name>
+          <briefdescription>
+<para>General playback error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a144edebc7d680a1f3b7e7ae1c2fff7e8" prot="public">
+          <name>Privilege</name>
+          <briefdescription>
+<para>Privilege error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8ae5763a70dbe74a779b64fc7f18d401c6" prot="public">
+          <name>ServiceSpecific</name>
+          <briefdescription>
+<para>Service specific error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a9f13a978003af046bdd4b13f7cdac5b2" prot="public">
+          <name>NoMemory</name>
+          <briefdescription>
+<para>No memory error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8a6fcdc090caeade09d0efd6253932b6f5" prot="public">
+          <name>Unspecified</name>
+          <briefdescription>
+<para>Unspecified error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService Error type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="21" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650d" prot="public" static="no">
+        <name>MLMusicServiceStatus</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650da03f915379f205ccd00a73867ec56b11e" prot="public">
+          <name>ContextChanged</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Context changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650da0eceeb45861f9585dd7a97a3e36f85c6" prot="public">
+          <name>Created</name>
+          <briefdescription>
+<para>Context was created. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650dafebcd1edf6010db4858e623d1dd2f3bc" prot="public">
+          <name>LoggedIn</name>
+          <briefdescription>
+<para>Logged in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650dae27816978dfe5f0f3acd72cee314955f" prot="public">
+          <name>LoggedOut</name>
+          <briefdescription>
+<para>Logged out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650da68cb3886bd9a4fe34ba9abcf1fd3054c" prot="public">
+          <name>NextTrack</name>
+          <briefdescription>
+<para>Next track. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650daf71f0417e2a257e70595280513919e95" prot="public">
+          <name>PrevTrack</name>
+          <briefdescription>
+<para>Previous track. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650da20958a86532bf06ee2ee7820f31032bc" prot="public">
+          <name>TrackChanged</name>
+          <briefdescription>
+<para>Track changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650da88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Unknown status. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService status </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="68" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49" prot="public" static="no">
+        <name>MLMusicServicePlaybackState</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49ac9dbb2b7c84159b632d71e512eba8428" prot="public">
+          <name>Playing</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Playback playing. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49ae99180abf47a8b3a856e0bcb2656990a" prot="public">
+          <name>Paused</name>
+          <briefdescription>
+<para>Playback paused. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49ac23e2b09ebe6bf4cb5e2a9abe85c0be2" prot="public">
+          <name>Stopped</name>
+          <briefdescription>
+<para>Playback stopped. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <briefdescription>
+<para>Playback had an error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Unknown playback state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService playback state </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="116" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="115" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" prot="public" static="no">
+        <name>MLMusicServiceRepeatState</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4ad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Repeat state Off. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4a816681f7ec9c9061b5c183095aff399e" prot="public">
+          <name>Song</name>
+          <briefdescription>
+<para>Repeat state Song. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4ac4f8393e0c007b946261398d0314a257" prot="public">
+          <name>Album</name>
+          <briefdescription>
+<para>Repeat state Album. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Repeat state Unknown. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService repeat setting </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="148" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="147" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" prot="public" static="no">
+        <name>MLMusicServiceShuffleState</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585ba521c36a31c2762741cf0f8890cbe05e3" prot="public">
+          <name>On</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Shuffle state On. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585bad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <briefdescription>
+<para>Shuffle state Off. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585ba88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Shuffle state Unknown. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService shuffle setting </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="175" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="174" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a281dabb3a9f5e7d81bd67f49e49d3447" prot="public" static="no">
+        <name>MLMusicServiceTrackType</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a281dabb3a9f5e7d81bd67f49e49d3447add1f775e443ff3b9a89270713580a51b" prot="public">
+          <name>Previous</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Previous track. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a281dabb3a9f5e7d81bd67f49e49d3447a222a267cc5778206b253be35ee3ddab5" prot="public">
+          <name>Current</name>
+          <briefdescription>
+<para>Current track. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a281dabb3a9f5e7d81bd67f49e49d3447a10ac3d04253ef7e1ddc73e6091c0cd55" prot="public">
+          <name>Next</name>
+          <briefdescription>
+<para>Next track. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MusicService enumerations used to get the Metadata information of a track. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" line="197" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLMusicServiceMetadata.cs" bodystart="196" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195e" prot="public" static="no">
+        <name>MLPrivilegeId</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Invalid privilege </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eab9d67e3518019ee4a324b19a7a3a4e44" prot="public">
+          <name>AddressBookRead</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Full read and search access to address book contacts. Type: Sensitive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eae0583fcec68bdb4436185fd05d16d894" prot="public">
+          <name>AddressBookWrite</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Ability to add, modify and delete address book contacts. Type: Sensitive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea7cecd941ad0b52c91338d915780ee533" prot="public">
+          <name>AudioRecognizer</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+<para>Deprecated and scheduled for removal. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eac74636c5149f545b3adf21f1edf2fa9d" prot="public">
+          <name>BatteryInfo</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+<para>Query battery status/percentage. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eadd21a622b374167fcbd60320af1f6500" prot="public">
+          <name>CameraCapture</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+<para>Take pictures and videos using camera. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea942c0c0e4cf004d7e97e0cfe93ca7d76" prot="public">
+          <name>WorldReconstruction</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+<para>Access dense map. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaec9ededa3619d9db9c1b53873776c2d7" prot="public">
+          <name>InAppPurchase</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+<para>Use the in-app purchase mechanism. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea7d60506789cd39f5024ca28f9d0b94ad" prot="public">
+          <name>AudioCaptureMic</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+<para>Open a microphone stream of the users voice or the ambient surroundings. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaf33a9d4f6d2297198b36d88dc282ee8b" prot="public">
+          <name>DrmCertificates</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+<para>Provision and use DRM certficates. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaaaceaef1909e0c12c4eb1a0d2b4bc42f" prot="public">
+          <name>Occlusion</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+<para>Deprecated and scheduled for removal. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eac6ede5da882c015e422dcf328ad9adaa" prot="public">
+          <name>LowLatencyLightwear</name>
+          <initializer>= 59</initializer>
+          <briefdescription>
+<para>Access Low Latency data from the Lightwear. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eac8205c7636e728d448c2774e6a4a944b" prot="public">
+          <name>Internet</name>
+          <initializer>= 96</initializer>
+          <briefdescription>
+<para>Access the internet. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea4c0596444f27ece9c35f284cf6bab0b5" prot="public">
+          <name>IdentityRead</name>
+          <initializer>= 113</initializer>
+          <briefdescription>
+<para>Read user profile attributes. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea6a262a1493504400ef5de58b8c80e746" prot="public">
+          <name>BackgroundDownload</name>
+          <initializer>= 120</initializer>
+          <briefdescription>
+<para>Download in the background. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eadf1d995dc6d07c7252e4a6c603d48fea" prot="public">
+          <name>BackgroundUpload</name>
+          <initializer>= 121</initializer>
+          <briefdescription>
+<para>Upload in the background. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea6e1f591ed19870e399cefe478bf370a3" prot="public">
+          <name>PowerInfo</name>
+          <initializer>= 150</initializer>
+          <briefdescription>
+<para>Get power information. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ead339c540e6034ce001c1348607e310fb" prot="public">
+          <name>LocalAreaNetwork</name>
+          <initializer>= 171</initializer>
+          <briefdescription>
+<para>Access other entities on the local network. Type: Sensitive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea7176939b25c7087ef148acd72a55b1bf" prot="public">
+          <name>VoiceInput</name>
+          <initializer>= 173</initializer>
+          <briefdescription>
+<para>Receive voice input. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea5266c93bc3473b6ca842b99bf98c57b8" prot="public">
+          <name>ConnectBackgroundMusicService</name>
+          <initializer>= 192</initializer>
+          <briefdescription>
+<para>Connect to Background Music Service. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea4fc8490d53cae07883af06c13af0ca0e" prot="public">
+          <name>RegisterBackgroundMusicService</name>
+          <initializer>= 193</initializer>
+          <briefdescription>
+<para>Register with Background Music Service. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea709a85314fdeb85b92a7426122113900" prot="public">
+          <name>PwFoundObjRead</name>
+          <initializer>= 201</initializer>
+          <briefdescription>
+<para>Read found objects from Passable World. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaf404ba30290863475887ffe5f1d33460" prot="public">
+          <name>PcfRead</name>
+          <initializer>= 201</initializer>
+          <briefdescription>
+<para>Read found objects from Passable World. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaf243bac856c26f1a054cae3f8a8eeeed" prot="public">
+          <name>NormalNotificationsUsage</name>
+          <initializer>= 208</initializer>
+          <briefdescription>
+<para>Post notifications for users to see, dismiss own notifications, listen for own notification events. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eae3a54fe8cb2bd1ad0f4eee05817e3153" prot="public">
+          <name>MusicService</name>
+          <initializer>= 218</initializer>
+          <briefdescription>
+<para>Access Music Service functionality. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea70151a792b731832ba5129dcaa5c929f" prot="public">
+          <name>ControllerPose</name>
+          <initializer>= 263</initializer>
+          <briefdescription>
+<para>Access controller pose data. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaca7c7c565dbb66212173ba7dde86c92b" prot="public">
+          <name>ScreensProvider</name>
+          <initializer>= 264</initializer>
+          <briefdescription>
+<para>Create channels in the screens framework&apos;. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea4ba4375c9cde22cae1b6681aed994584" prot="public">
+          <name>GesturesSubscribe</name>
+          <initializer>= 268</initializer>
+          <briefdescription>
+<para>Subscribe to gesture hand mask and config data. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eaa79b76107301673ffa3e0173a356d416" prot="public">
+          <name>GesturesConfig</name>
+          <initializer>= 269</initializer>
+          <briefdescription>
+<para>Set/Get gesture configuration. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea1cbc6083c8015e25b97715da59f9591c" prot="public">
+          <name>AddressBookBasicAccess</name>
+          <initializer>= 305</initializer>
+          <briefdescription>
+<para>Access a manually selected subset of contacts from address book. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea09ebea3ec4b2b6b21e045c1e64512935" prot="public">
+          <name>HandMesh</name>
+          <initializer>= 315</initializer>
+          <briefdescription>
+<para>Access hand mesh features. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ead5d13217eb3cf83688545b800c1b24e4" prot="public">
+          <name>CoarseLocation</name>
+          <initializer>= 323</initializer>
+          <briefdescription>
+<para>Get coarse location of the device. Type: Sensitive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eab3d1de300ac026e296f6ee0593e7cb92" prot="public">
+          <name>SocialConnectionsInvitesAccess</name>
+          <initializer>= 329</initializer>
+          <briefdescription>
+<para>Ability to initiate invites to Social connections. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195eae4066be0f6b5720f2a1e3ab966a1da5e" prot="public">
+          <name>ComputerVision</name>
+          <initializer>= 343</initializer>
+          <briefdescription>
+<para>SDK access CV related info from graph_pss. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea100edfefb170c0edd39bad8469b766f5" prot="public">
+          <name>WifiStatusRead</name>
+          <initializer>= 344</initializer>
+          <briefdescription>
+<para>Get Wifi status to application. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ead8435aeabb9c5e727ca76a168e5ca85a" prot="public">
+          <name>SecureBrowserWindow</name>
+          <initializer>= 357</initializer>
+          <briefdescription>
+<para>Request a secure browser window. Type: AutoGranted </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1af5b26c8e9eaae513e883ec15e84f195ea133914c63af765b933768550deab6c11" prot="public">
+          <name>FineLocation</name>
+          <initializer>= 367</initializer>
+          <briefdescription>
+<para>Get fine location of the device. Type: Reality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Privilege Types: AutoGranted - Once it is included in the manifest the application is granted the privilege. Sensitive - Must be requested at runtime, as well as in the manifest, because it requires user consent on first use. Reality - Must be requested at runtime and every time the application gains focus, as well as in the manifest, because it requires user consent every active session. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLPrivilegeIds.cs" line="23" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLPrivilegeIds.cs" bodystart="22" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706" prot="public" static="no">
+        <name>MLRuntimeRequestPrivilegeId</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706a7d60506789cd39f5024ca28f9d0b94ad" prot="public">
+          <name>AudioCaptureMic</name>
+          <initializer>= MLPrivilegeId.AudioCaptureMic</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706add21a622b374167fcbd60320af1f6500" prot="public">
+          <name>CameraCapture</name>
+          <initializer>= MLPrivilegeId.CameraCapture</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706ad339c540e6034ce001c1348607e310fb" prot="public">
+          <name>LocalAreaNetwork</name>
+          <initializer>= MLPrivilegeId.LocalAreaNetwork</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706af404ba30290863475887ffe5f1d33460" prot="public">
+          <name>PcfRead</name>
+          <initializer>= MLPrivilegeId.PcfRead</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706ab9d67e3518019ee4a324b19a7a3a4e44" prot="public">
+          <name>AddressBookRead</name>
+          <initializer>= MLPrivilegeId.AddressBookRead</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706ae0583fcec68bdb4436185fd05d16d894" prot="public">
+          <name>AddressBookWrite</name>
+          <initializer>= MLPrivilegeId.AddressBookWrite</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706ad5d13217eb3cf83688545b800c1b24e4" prot="public">
+          <name>CoarseLocation</name>
+          <initializer>= MLPrivilegeId.CoarseLocation</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706ae4066be0f6b5720f2a1e3ab966a1da5e" prot="public">
+          <name>ComputerVision</name>
+          <initializer>= MLPrivilegeId.ComputerVision</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adb4252ca72fccac4245629ca15b83706a133914c63af765b933768550deab6c11" prot="public">
+          <name>FineLocation</name>
+          <initializer>= MLPrivilegeId.FineLocation</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Privilege ids that need to be requested at runtime in addition to being specified in the app manifest. Descriptions for each value can be found in MLPrivilegeId enum. This is the subset of runtime privileges applicable to Unity apps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLPrivilegeIds.cs" line="258" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLPrivilegeIds.cs" bodystart="257" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" prot="public" static="no">
+        <name>MLResultCode</name>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa60852f204ed8028c1c58808b746d115" prot="public">
+          <name>Ok</name>
+          <initializer>= (0 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLResultGlobal</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2d13df6f8b5e4c5af9f87e0dc39df69d" prot="public">
+          <name>Pending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac85a251cc457840f1e032f1b733e9398" prot="public">
+          <name>Timeout</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad0f2e5376298c880665077b565ffd7dd" prot="public">
+          <name>Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" prot="public">
+          <name>UnspecifiedFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" prot="public">
+          <name>InvalidParam</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af5576b457e6e3048732bc8bd5eba789b" prot="public">
+          <name>AllocFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" prot="public">
+          <name>PrivilegeDenied</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a997ca4ce119685f40f03a9a8a6c5346e" prot="public">
+          <name>NotImplemented</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a89d5f5b7dc4b5caf60e312317acaa3ef" prot="public">
+          <name>NotCompatible</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5944c19022f8e8f09a90a534e2f2a651" prot="public">
+          <name>AudioNotImplemented</name>
+          <initializer>= (0x9e11 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLAudioResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac678217e9221549a9b0835a09ca53899" prot="public">
+          <name>AudioHandleNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a580b7af6747c5eb9402bdc442f6aaaa1" prot="public">
+          <name>AudioInvalidSampleRate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a840cea34dfc327cba76f2715d0d6f59b" prot="public">
+          <name>AudioInvalidBitsPerSample</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4908e1ce221b836f4a524f488e7df522" prot="public">
+          <name>AudioInvalidValidBits</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa5c7af6649e3962ab8a31f1affc35e92" prot="public">
+          <name>AudioInvalidSampleFormat</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aaf10bcf32be906146bc8ec9eb42307a2" prot="public">
+          <name>AudioInvalidChannelCount</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af2067ddf5155e7dc47cc36e864a86558" prot="public">
+          <name>AudioInvalidBufferSize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0aaa0061c4eb6c518ca8149760f6945" prot="public">
+          <name>AudioBufferNotReady</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8dac2dafd761de0330b64d07ea2637c5" prot="public">
+          <name>AudioFileNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aae857bbb331d5fe325e776c8f84fe011" prot="public">
+          <name>AudioFileNotRecognized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac9471428e1c51f8aed46345d302d53f6" prot="public">
+          <name>AudioResourceNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a60020608278d99e15b41459410edf998" prot="public">
+          <name>AudioResourceDiscarded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac9bd7b604f99f640b25f8ec11f0fc1fb" prot="public">
+          <name>AudioOperationUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad4e54843fd8995b476804735e20def32" prot="public">
+          <name>AudioInternalConfigError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab5febbae7c9467c12ca1750d56ea8ea7" prot="public">
+          <name>MediaPlayerServerDied</name>
+          <initializer>= (0xc435 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLMediaPlayerResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a982eee84491938e9cc5b24e3f47f0c43" prot="public">
+          <name>MediaPlayerNotValidForProgressivePlayback</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac174cc235b981ede0f7307546820ba93" prot="public">
+          <name>MediaNotConnected</name>
+          <initializer>= (0x4184 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLMediaResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a771040878bcfaad5eafffc46fa1127ab" prot="public">
+          <name>MediaUnknownHost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9648db48bf855d64b5705372fc08aae9" prot="public">
+          <name>MediaCannotConnect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae1cef284487799cf157ffc959918d016" prot="public">
+          <name>MediaIO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a314036efc11f756b61853a9459b55c19" prot="public">
+          <name>MediaConnectionLost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a73ab9ecdb7b8ffc1d5ce84c2868014b2" prot="public">
+          <name>MediaLegacy1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4242b1f819e8cc6153cb81a27cc79204" prot="public">
+          <name>MediaMalformed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9648a117d53be2533fdecf70841cca87" prot="public">
+          <name>MediaOutOfRange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4c9b4f53d809949c934449973d502b6a" prot="public">
+          <name>MediaBufferTooSmall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa7917727ff62433482f31851c0f1d257" prot="public">
+          <name>MediaUnsupported</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a838f5e190d77ae1d6fc3b81d800d929b" prot="public">
+          <name>MediaEndOfStream</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9bbdf5e7089f7776b05bf379f9931c51" prot="public">
+          <name>MediaFormatChanged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8c109a5fd18c7826120a9ba0a2b5842c" prot="public">
+          <name>MediaDiscontinuity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1dbfe357b3e458c5746eae9a1576decf" prot="public">
+          <name>MediaOutputBuffersChanged</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a57307e343f0e7ea7a1ba6dc29963f9b4" prot="public">
+          <name>MediaPermissionRevoked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac216c1f111a85337ce0b5dc9dd89e09e" prot="public">
+          <name>MediaUnsupportedAudioFormat</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a3cb6da65e6e72aa8c1785e461e1092a7" prot="public">
+          <name>MediaHeartbeatTerminateRequested</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aad682f0d055cbccea75bf4ef512905e7" prot="public">
+          <name>MediaDRMUnknown</name>
+          <initializer>= (0x62ce &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLMediaDRMResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2fb34eed849357c0a7edab917d7f73ac" prot="public">
+          <name>MediaDRMNoLicense</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a99ad40c42db8faf3f53f8fb391e831de" prot="public">
+          <name>MediaDRMLicenseExpired</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6f7ba48c084acc200f60dc7095c022e5" prot="public">
+          <name>MediaDRMSessionNotOpened</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a89fdf4f7c00aadb0251e04d13ed321e3" prot="public">
+          <name>MediaDRMDecryptUnitNotInitialized</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aedaae0fc4f00fc1b3e75fd93ae357328" prot="public">
+          <name>MediaDRMDecrypt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5284b8df8f407a44f9d311114cadda54" prot="public">
+          <name>MediaDRMCannotHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359acb528ac51fd04cd1415aad4a0e4b41a2" prot="public">
+          <name>MediaDRMTamperDetect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab48467104000bb951322bd193e84422c" prot="public">
+          <name>MediaDRMNotProvisioned</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab653ed354a91f81c86dce126beab6447" prot="public">
+          <name>MediaDRMDeviceRevoked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5397897afe7d59238d636876840d9244" prot="public">
+          <name>MediaDRMResourceBusy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a7ba9ce5f2c5a17ed05767a6127c24e83" prot="public">
+          <name>MediaDRMInsufficientOutputProtection</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae39b21096233d2d7f0734c2f7b43a5b3" prot="public">
+          <name>MediaDRMLastUsedErrorCode</name>
+          <initializer>= MediaDRMInsufficientOutputProtection</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a434fb5024a4c5b47488b60c20966b699" prot="public">
+          <name>MediaDRMVendorMin</name>
+          <initializer>= (0x62ce &lt;&lt; 16) + 500</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0f2ff6c9c274834cfaf58a268071fe67" prot="public">
+          <name>MediaDRMVendorMax</name>
+          <initializer>= (0x62ce &lt;&lt; 16) + 999</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab79ca23ffd84ef65a3eb51ec349057da" prot="public">
+          <name>MediaGenericInvalidOperation</name>
+          <initializer>= (0xbf3b &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLMediaGenericResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac12e55b752f5a9ed74ea8bcf7f5e9011" prot="public">
+          <name>MediaGenericBadType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0b5765b08ee6c8ff95c26faf364abeb1" prot="public">
+          <name>MediaGenericNameNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab17cdd1abd11470319ae5c07355efb21" prot="public">
+          <name>MediaGenericHandleNotFound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" prot="public">
+          <name>MediaGenericNoInit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a25cc9815e1c3f4b4e0c7643266259544" prot="public">
+          <name>MediaGenericAlreadyExists</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af34d8741a840d69ee2372a692173ecf3" prot="public">
+          <name>MediaGenericDeadObject</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a86ed2157a969f713fbd31b5fd49d311c" prot="public">
+          <name>MediaGenericFailedTransaction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5df02b381ff7932aa8217d986a6e9a30" prot="public">
+          <name>MediaGenericBadIndex</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6eb58b27e893de45a903fc7bc3cfe1a6" prot="public">
+          <name>MediaGenericNotEnoughData</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac2ea6b6ec915a7eba78e6263743c550d" prot="public">
+          <name>MediaGenericWouldBlock</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a57cda85d5880b4c631e21a702917faca" prot="public">
+          <name>MediaGenericUnknownTransaction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0e697a48155de872143226bf9667c792" prot="public">
+          <name>MediaGenericFDSNotAllowed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abbd93ff054986da4339bf2898d463ea9" prot="public">
+          <name>MediaGenericUnexpectedNull</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae9d93ed63a45bf2f2565c57d2c6520c2" prot="public">
+          <name>DispatchCannotStartApp</name>
+          <initializer>= (0xBBE0 &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Cannot start app. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLDispatchResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aae7abf98dc6ff0c971c465b34e164b4a" prot="public">
+          <name>DispatchInvalidPacket</name>
+          <briefdescription>
+<para>Invalid packet. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2462d1bbdc2bf9de65aa8ec4e142966c" prot="public">
+          <name>DispatchNoAppFound</name>
+          <briefdescription>
+<para>No app found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a91fac84def1c260c1a5515e472b3ddfd" prot="public">
+          <name>DispatchAppPickerDialogFailure</name>
+          <briefdescription>
+<para>App packet dialog failure. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab181271d65f4c482fb835483403a6e14" prot="public">
+          <name>DispatchInvalidUrl</name>
+          <briefdescription>
+<para>Invalid Url. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5e813805ed2a1bf1fc534b6f765e89c0" prot="public">
+          <name>DispatchSchemaAlreadyRegistered</name>
+          <briefdescription>
+<para>Schema Already Registered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4a71132ec176b40bfc5314a59528c2ff" prot="public">
+          <name>IdentityFailedToConnectToLocalService</name>
+          <initializer>= (0x7d4d &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The local service is not running, or it cannot be accessed. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLIdentityResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359afff46b948a21554149561dabca493b4c" prot="public">
+          <name>IdentityFailedToConnectToCloudService</name>
+          <briefdescription>
+<para>The service failed to access the cloud service. Either there is no IP connection or the cloud service is not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abce08d6724ae139d6ee672c6a0db0d44" prot="public">
+          <name>IdentityCloudAuthentication</name>
+          <briefdescription>
+<para>The user does not have the required privileges to use the requesting service or the refresh token used by the service is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a483a8709eb9554eb8df42898b358de91" prot="public">
+          <name>IdentityInvalidInformationFromCloud</name>
+          <briefdescription>
+<para>Signature verification failed on the information returned by the cloud or a parsing error occurred. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a7043fc5e59c13b8a4986adca4529f820" prot="public">
+          <name>IdentityNotLoggedIn</name>
+          <briefdescription>
+<para>The operation failed because the user is not logged in to the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aca68e69c7881799badde3875d57949e0" prot="public">
+          <name>IdentityExpiredCredentials</name>
+          <briefdescription>
+<para>The user&apos;s credentials have expired. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0e65579ba82998fdeae2df29734919e4" prot="public">
+          <name>IdentityFailedToGetUserProfile</name>
+          <briefdescription>
+<para>Failed to retrieve attributes of the user&apos;s profile. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a295717f69d7cf73fe702b6470b40c596" prot="public">
+          <name>IdentityUnauthorized</name>
+          <briefdescription>
+<para>The cloud rejected the operation because the user is not authorized to execute it. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad945f5bb7541cba2754ccf7ffbf5cb1b" prot="public">
+          <name>IdentityCertificateError</name>
+          <briefdescription>
+<para>The device failed to authenticate the server. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad50b3d84de14209bd7a0ca8e1fa7a462" prot="public">
+          <name>IdentityRejectedByCloud</name>
+          <briefdescription>
+<para>The cloud rejected the operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2f9c977fb71eba0e8aa8e9f2645c685d" prot="public">
+          <name>IdentityAlreadyLoggedIn</name>
+          <briefdescription>
+<para>The user is already logged in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a3b132ba615d85437607e81b802a44fc3" prot="public">
+          <name>IdentityModifyIsNotSupported</name>
+          <briefdescription>
+<para>The cloud does not support modification of an attribute value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a522c9afd8d01a620cc13607d49d1bb53" prot="public">
+          <name>IdentityNetworkError</name>
+          <briefdescription>
+<para>The device is not connected to a network. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad5a147825761cd8eeb77911dca740080" prot="public">
+          <name>PassableWorldLowMapQuality</name>
+          <initializer>= (0x41c7 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLPassableWorldResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa3b2b478c395f02178f9d27770bb815d" prot="public">
+          <name>PassableWorldUnableToLocalize</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab2f964ea814dc78844bd9c51353ef36d" prot="public">
+          <name>PassableWorldServerUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4d3c141eb0576c9becd55bc6f277a8a1" prot="public">
+          <name>ScreensServiceNotAvailable</name>
+          <initializer>= (0xFB4E &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLScreensResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4b33a686be73bb172407d73b26356275" prot="public">
+          <name>PermissionDenied</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a92c499146d0ec6e9e6231ee3fb3fca15" prot="public">
+          <name>InvalidScreenId</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a267718d10ac6f3f4faca85d4caa3a62e" prot="public">
+          <name>TokenAgentFailedToConnectToLocalService</name>
+          <initializer>= (0x37ee &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The local binder service was not found. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLTokenAgentResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1318263bce72d3d4187c90eef87261cd" prot="public">
+          <name>TokenAgentServiceNotStarted</name>
+          <briefdescription>
+<para>The local binder service is running but has not been registered by the login service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5192c49c4cf83a65877d5a247e0a314f" prot="public">
+          <name>TokenAgentFailedToConnectToCloud</name>
+          <briefdescription>
+<para>The local binder service failed to connect to the cloud service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a02c3017ca0fa6e308458985e7db77bea" prot="public">
+          <name>TokenAgentCloudAuthentication</name>
+          <briefdescription>
+<para>The cloud service rejected the request due to inappropriate credentials. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6afba5fa07ecf87db80a66a3cf83512b" prot="public">
+          <name>TokenAgentFailedToLogin</name>
+          <briefdescription>
+<para>The local server failed to log in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0b76e5ee5d496559ce8ae53b7dbdd23" prot="public">
+          <name>TokenAgentLoginNotBegun</name>
+          <briefdescription>
+<para>An attempt to complete the login was begun without starting the login. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1c7a100cb7d08a53babcd771813fb1f0" prot="public">
+          <name>TokenAgentNotLoggedIn</name>
+          <briefdescription>
+<para>The operation was rejected because the local server was not logged in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad7a0ee1c4a4a8fed8a34347203a12c40" prot="public">
+          <name>TokenAgentAlreadyLoggedIn</name>
+          <briefdescription>
+<para>The login request failed because the local server is already logged in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aec3a705eb5bb59f449bfc37e36c0ed76" prot="public">
+          <name>TokenAgentLoginInProgress</name>
+          <briefdescription>
+<para>The login request request failed because a login is already in progress. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae9d8791e4eaf5ccc92c345a3021b8850" prot="public">
+          <name>TokenAgentFailedToStartIdentityService</name>
+          <briefdescription>
+<para>Having completed the login process with the cloud successfully, the service failed to start the local identity service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8e94e4d770ced49323ef817bbeddfd22" prot="public">
+          <name>TokenAgentDeviceNotRegistered</name>
+          <briefdescription>
+<para>The serial number of the device is not recognized by the cloud so login failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8827e477bdbc6674c8063b599a2a0732" prot="public">
+          <name>TokenAgentDeviceNotConnected</name>
+          <briefdescription>
+<para>The device is not yet connected to the cloud so login failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359adfcc0d8d4a61c8a156b7e90d7c229b28" prot="public">
+          <name>SnapshotPoseNotFound</name>
+          <initializer>= (0x87b8 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLSnapshotResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad030d237620a1afb0991886c214e1f98" prot="public">
+          <name>PurchaseUserCancelled</name>
+          <initializer>= (0xdf1d &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLPurchaseResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a527aa2f9e9898f953d9e34990d67e94f" prot="public">
+          <name>PurchaseItemAlreadyPurchased</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359affc5878beaa61118af53e092f140bab0" prot="public">
+          <name>PurchasePaymentSourceError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a303e5649f1fdb317c8ff1856d4249c0e" prot="public">
+          <name>PurchaseInvalidPurchaseToken</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8e4dc566258a3e7974d3c5502daee6ff" prot="public">
+          <name>PurchaseItemUnavailable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a3fe0a960d05647595b8bcddddb334daf" prot="public">
+          <name>PurchaseNoDefaultPayment</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0d560c0d5932f731f180caa65a627515" prot="public">
+          <name>CloudNotFound</name>
+          <initializer>= (0xc4e3 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLCloudResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2f8dcc370d08066dad17621f7afb1025" prot="public">
+          <name>CloudServerError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac0879bafa512564265aae2d12fc3f6bc" prot="public">
+          <name>CloudNetworkError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a62c943d7089b415f01a8e324a19971bc" prot="public">
+          <name>CloudSystemError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a560eb79d14c87c2121ab5081cdf38ee1" prot="public">
+          <name>CloudInvalidHandle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abe2a8fc0ab19fdce22cca6f11bd861c3" prot="public">
+          <name>CloudBadHandleState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2393f46a53801896ee6c5204b6411204" prot="public">
+          <name>PrivilegeGranted</name>
+          <initializer>= (0xcbcd &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Used for <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" kindref="compound">MLPrivileges</ref> check and request privilege functions. Indicates if the user has decided to grant the privilege to the application. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLPrivilegesResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a16b1332e475a42d518f6a90e481d98de" prot="public">
+          <name>PrivilegeNotGranted</name>
+          <briefdescription>
+<para>Used for <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" kindref="compound">MLPrivileges</ref> check and request privilege functions. Indicates whether a privilege has not yet been requested or if the user has decided not to grant the privilege to the application. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a04063d0f0673cf8b72d810f12c3aecf5" prot="public">
+          <name>ContactsHandleNotFound</name>
+          <initializer>= (0x94a0 &lt;&lt; 16)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MLContactsResult</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4d7902b17a538b435b228822b2da54be" prot="public">
+          <name>ContactsCompleted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9503dffd180df80e28e63a1a4e1f2ff6" prot="public">
+          <name>ContactsCancelled</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a191ec79bf4d11d76de4a7b330c891a8b" prot="public">
+          <name>ContactsIllegalState</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abd98e089a6121776cee59464f21bdfda" prot="public">
+          <name>LocationUnknown</name>
+          <initializer>= (0xda19 &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Unknown location error. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLLocationResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0090c2d644abb6b2d4807a157cbce9f" prot="public">
+          <name>LocationNetworkConnection</name>
+          <briefdescription>
+<para>No connection to server. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a300ed0778de0eb60de70a8b055707921" prot="public">
+          <name>LocationNoLocation</name>
+          <briefdescription>
+<para>No location data received. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1d8331667305afbaec803dae6e9b9309" prot="public">
+          <name>LocationProviderNotFound</name>
+          <briefdescription>
+<para>Location provider is not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4427b3d3c3f7f0ea32fea902bdbd499a" prot="public">
+          <name>NetworkingServiceNotAvailable</name>
+          <initializer>= (0x4c62 &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The corresponding service is not available. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLNetworkingResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359adaace8782bac08b45fa9ae2062dfd72d" prot="public">
+          <name>NetworkingServiceError</name>
+          <briefdescription>
+<para>The corresponding service returned with error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2187eea046b2aecd732281d53a2555e3" prot="public">
+          <name>NetworkingWiFiDataStructureVersionError</name>
+          <briefdescription>
+<para>The version number in MLNetworkingWiFiData is not recognized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac272bd6019d7f006b3cb623d52fa08d8" prot="public">
+          <name>NetworkingWiFiServiceInvalidState</name>
+          <briefdescription>
+<para>WiFi service is not in the right state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" prot="public">
+          <name>MovementInvalidMovementHandle</name>
+          <initializer>= (0xdffe &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Not a valid MLHandle for movement session. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLMovementResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" prot="public">
+          <name>MovementInvalidCollisionHandle</name>
+          <briefdescription>
+<para>Not a valid MLHandle for a collision session. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab94e685e18b89f6291212fe0c5222cf5" prot="public">
+          <name>ConnectionsInvalidHandle</name>
+          <initializer>= (0xbfae &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>This MLHandle is not recognized. </para>          </briefdescription>
+          <detaileddescription>
+<para>MLConnectionsResult </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1ccf4e29dd1de41e7ad15fc61e2dbd60" prot="public">
+          <name>ConnectionsInvalidInviteeCount</name>
+          <briefdescription>
+<para>Indicates number of invitees is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af78f90d5052263aa18bf61c2732f68c2" prot="public">
+          <name>ConnectionsInvalidSelecteeCount</name>
+          <initializer>= ConnectionsInvalidInviteeCount</initializer>
+          <briefdescription>
+<para>Indicates number of selectees is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9e48fb43b098b7fdc58ceaa9e35173e2" prot="public">
+          <name>ConnectionsCancellationPending</name>
+          <briefdescription>
+<para>Indicates invite request has been found and the system is attempting to cancel the process. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a96d3611e5d7f56e434e666979af8cec9" prot="public">
+          <name>ConnectionsIllegalState</name>
+          <briefdescription>
+<para>Request failed due to system being in an illegal state, e.g. user has not successfully logged-in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2a7d55271e387991e459070b66718a5a" prot="public">
+          <name>ConnectionsNetworkFailure</name>
+          <briefdescription>
+<para>MLConnectionsRegisterForInvite failed because the system had an error with network connectivity, or the servers could not be reached. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a27b8c6c842a3620aa54723b4f9a376e8" prot="public">
+          <name>ConnectionsAlreadyRegistered</name>
+          <briefdescription>
+<para>MLConnectionsRegisterForInvite failed because the application is already registered to handle invite requests. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aad96283ac5901f99718dc810616eeae0" prot="public">
+          <name>ConnectionsSystemFailure</name>
+          <briefdescription>
+<para>Indicates a general system failure </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Identifier of Magic Leap API results </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLSnapshot.cs" line="25" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLSnapshot.cs" bodystart="24" bodyend="496"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/HandTracking/MLHandTracking.cs" line="14" column="1"/>
+  </compounddef>
+</doxygen>

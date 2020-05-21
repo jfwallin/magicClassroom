@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_i_unity_interfaces" kind="struct" language="C++" prot="public">
+    <compoundname>IUnityInterfaces</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_unity_interfaces_1a0f6e43fbe0774b9288d4d778043840b7" prot="public" static="no" mutable="no">
+        <type>IUnityInterface *(*</type>
+        <definition>IUnityInterface *(* IUnityInterfaces::GetInterface)(UnityInterfaceGUID guid)</definition>
+        <argsstring>)(UnityInterfaceGUID guid)</argsstring>
+        <name>GetInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_unity_interfaces_1a1bb0885801b6946b808ed98fc253c824" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* IUnityInterfaces::RegisterInterface)(UnityInterfaceGUID guid, IUnityInterface *ptr)</definition>
+        <argsstring>)(UnityInterfaceGUID guid, IUnityInterface *ptr)</argsstring>
+        <name>RegisterInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="116" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="110" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="109" bodyend="133"/>
+    <listofallmembers>
+      <member refid="struct_i_unity_interfaces_1a0f6e43fbe0774b9288d4d778043840b7" prot="public" virt="non-virtual"><scope>IUnityInterfaces</scope><name>GetInterface</name></member>
+      <member refid="struct_i_unity_interfaces_1a1bb0885801b6946b808ed98fc253c824" prot="public" virt="non-virtual"><scope>IUnityInterfaces</scope><name>RegisterInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_audio_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::AudioNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_audio_native_bindings_1a013003f58fc5e4c7c22e62ce1bce1111" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.AudioNativeBindings.AudioPlayerDLL</definition>
+        <argsstring></argsstring>
+        <name>AudioPlayerDLL</name>
+        <initializer>= &quot;ml_audio&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1a24b9f5a3a048880e59d7cc30d2b60ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.AudioNativeBindings.MLAudioMicMuteCallback</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] bool muted, IntPtr callback)</argsstring>
+        <name>MLAudioMicMuteCallback</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>muted</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1a75217b449f42f8b176f491d4bf66cc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.AudioNativeBindings.MLAudioMasterVolumeChangedCallback</definition>
+        <argsstring>(float volume, IntPtr callback)</argsstring>
+        <name>MLAudioMasterVolumeChangedCallback</name>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1acdd4d109c437743c0e36048681c86aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioGetOutputDevice</definition>
+        <argsstring>(out MLAudioOutputDevice device)</argsstring>
+        <name>MLAudioGetOutputDevice</name>
+        <param>
+          <type>out <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcd8b2a18ec0d3a4662a969061dd6c0e" kindref="member">MLAudioOutputDevice</ref></type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1af7b9b536571e14c4116f288701ea43e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioGetMasterVolume</definition>
+        <argsstring>(out float volume)</argsstring>
+        <name>MLAudioGetMasterVolume</name>
+        <param>
+          <type>out float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1ab9eda171bffe1bb34943be53644e986b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioSetMicMute</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] bool muted)</argsstring>
+        <name>MLAudioSetMicMute</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>muted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1a572588c71c72d4bc69667e64e12554f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioIsMicMuted</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] out bool isMuted)</argsstring>
+        <name>MLAudioIsMicMuted</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>out bool</type>
+          <declname>isMuted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1a5ec60f4a48bded87e5c920f76fa45601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioSetMasterVolumeCallback</definition>
+        <argsstring>(MLAudioMasterVolumeChangedCallback callback, IntPtr data)</argsstring>
+        <name>MLAudioSetMasterVolumeCallback</name>
+        <param>
+          <type>MLAudioMasterVolumeChangedCallback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_audio_native_bindings_1aab5061be98e440e1b4a92a60bcffceb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.AudioNativeBindings.MLAudioSetMicMuteCallback</definition>
+        <argsstring>(MLAudioMicMuteCallback callback, IntPtr data)</argsstring>
+        <name>MLAudioSetMicMuteCallback</name>
+        <param>
+          <type>MLAudioMicMuteCallback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_audio.h for additional comments. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MagicLeapInternal.AudioNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_audio_native_bindings"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>MagicLeapInternal.AudioNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_audio_native_bindings"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/AudioNativeBindings.cs" bodystart="61" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1a013003f58fc5e4c7c22e62ce1bce1111" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>AudioPlayerDLL</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1af7b9b536571e14c4116f288701ea43e8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioGetMasterVolume</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1acdd4d109c437743c0e36048681c86aee" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioGetOutputDevice</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1a572588c71c72d4bc69667e64e12554f5" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioIsMicMuted</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1a75217b449f42f8b176f491d4bf66cc45" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioMasterVolumeChangedCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1a24b9f5a3a048880e59d7cc30d2b60ba8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioMicMuteCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1a5ec60f4a48bded87e5c920f76fa45601" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioSetMasterVolumeCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1ab9eda171bffe1bb34943be53644e986b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioSetMicMute</name></member>
+      <member refid="class_magic_leap_internal_1_1_audio_native_bindings_1aab5061be98e440e1b4a92a60bcffceb7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLAudioSetMicMuteCallback</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::AudioNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

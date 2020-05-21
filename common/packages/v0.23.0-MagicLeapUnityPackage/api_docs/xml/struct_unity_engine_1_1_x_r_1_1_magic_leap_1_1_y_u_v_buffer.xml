@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::YUVBuffer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1abfbb4fed3f4946bc5677d278c0c7b121" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.YUVBuffer.IsValid</definition>
+        <argsstring></argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+<para>Indicate if this structure contians valid data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="174" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1ac79911cb76216df84dded31bac738821" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.YUVBuffer.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+<para>Width of the output image in pixels </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="179" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a131a79d19ebad1b4b9995b25b96c796d" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.YUVBuffer.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+<para>Height of the output image in pixels </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="184" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a4d501f0c94efc67df915c5754487d96f" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.YUVBuffer.Stride</definition>
+        <argsstring></argsstring>
+        <name>Stride</name>
+        <briefdescription>
+<para>Stride of the output image in pixels </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="189" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a5f11e5b626dc520613b23c3152c23899" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.YUVBuffer.BytesPerPixel</definition>
+        <argsstring></argsstring>
+        <name>BytesPerPixel</name>
+        <briefdescription>
+<para>Number of bytes used to represent a pixel </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="194" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1acfb7567de369c8407218f136a8bfceb3" prot="public" static="no" mutable="no">
+        <type>byte []</type>
+        <definition>byte [] UnityEngine.XR.MagicLeap.YUVBuffer.Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+<para>Image Data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="199" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a1f0e0d397d7923481ad97933bd82f22f" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.YUVBuffer.Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Number of bytes in the image output data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="204" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1aeb18bc12aaac195abdb7b1a8e9ba9f64" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.YUVBuffer.CopyFromPlane</definition>
+        <argsstring>(MLCameraPlaneInfo plane)</argsstring>
+        <name>CopyFromPlane</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_plane_info" kindref="compound">MLCameraPlaneInfo</ref></type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="206" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="206" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains both the data and information necessary to read the data for a specific buffer in a YUV capture </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="170" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="169" bodyend="219"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a5f11e5b626dc520613b23c3152c23899" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>BytesPerPixel</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1aeb18bc12aaac195abdb7b1a8e9ba9f64" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>CopyFromPlane</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1acfb7567de369c8407218f136a8bfceb3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>Data</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a131a79d19ebad1b4b9995b25b96c796d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>Height</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1abfbb4fed3f4946bc5677d278c0c7b121" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>IsValid</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a1f0e0d397d7923481ad97933bd82f22f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>Size</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1a4d501f0c94efc67df915c5754487d96f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>Stride</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_y_u_v_buffer_1ac79911cb76216df84dded31bac738821" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::YUVBuffer</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

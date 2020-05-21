@@ -1,0 +1,11 @@
+# Pass appropriate flags to the linker to avoid linking
+# SHLIBS entries that are not actually consumed
+# (only available in GNU linkers at the moment).
+# This may cause unexpected behavior when shared libraries
+# are linked for side effects from static initializers or destructors.
+
+LINKFLAGS.default = ignoreUnusedShlibs=1
+
+# macOS clang + linker does not support this option
+# (gcc installations use the macOS linker as well)
+LINKFLAGS.osx = ignoreUnusedShlibs=0

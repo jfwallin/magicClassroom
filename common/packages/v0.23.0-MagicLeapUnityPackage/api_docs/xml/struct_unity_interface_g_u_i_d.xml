@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_interface_g_u_i_d" kind="struct" language="C++" prot="public">
+    <compoundname>UnityInterfaceGUID</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_interface_g_u_i_d_1ac8203ae78d6e760be4f5825ba99d2fa9" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long UnityInterfaceGUID::m_GUIDHigh</definition>
+        <argsstring></argsstring>
+        <name>m_GUIDHigh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_interface_g_u_i_d_1accfb3aa987300bf9f0d871983b585344" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long UnityInterfaceGUID::m_GUIDLow</definition>
+        <argsstring></argsstring>
+        <name>m_GUIDLow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="56" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" line="31" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/IUnityInterface.h" bodystart="30" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_unity_interface_g_u_i_d_1ac8203ae78d6e760be4f5825ba99d2fa9" prot="public" virt="non-virtual"><scope>UnityInterfaceGUID</scope><name>m_GUIDHigh</name></member>
+      <member refid="struct_unity_interface_g_u_i_d_1accfb3aa987300bf9f0d871983b585344" prot="public" virt="non-virtual"><scope>UnityInterfaceGUID</scope><name>m_GUIDLow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

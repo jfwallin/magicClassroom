@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['register',['Register',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#a39596c5479904cbcba726b342ab14df5',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registerendofframeupdate',['RegisterEndOfFrameUpdate',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#a48d975c4784f6bf8cb8105c19dc17c42',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registergesturesubsystem',['RegisterGestureSubsystem',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#acc3af2a74c64fea385da85e5c6aaef99',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registerheadtrackingmodechanged',['RegisterHeadTrackingModeChanged',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#a4b30e6e4cf3c85656969017513d35a65',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registeronapplicationpause',['RegisterOnApplicationPause',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#a8c8a3ab48ed26776cbf055ef2b4854f4',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registeronheadtrackingmapevent',['RegisterOnHeadTrackingMapEvent',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device.html#aab09c703616de1d0ce1ede452a3cde3e',1,'UnityEngine::XR::MagicLeap::MagicLeapDevice']]],
+  ['registrationcompletedelegate',['RegistrationCompleteDelegate',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections.html#acb6c3befe6390c9bdc2ed4c75473035b',1,'UnityEngine::XR::MagicLeap::MLConnections']]],
+  ['releaseclientcredentials',['ReleaseClientCredentials',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_token_agent.html#ad6697c70d0294ac46c92640509dd2185',1,'UnityEngine::XR::MagicLeap::MLTokenAgent']]],
+  ['remove',['Remove',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens.html#a12072b7d6de2d16405913ba10bd450fd',1,'UnityEngine::XR::MagicLeap::MLScreens']]],
+  ['removetarget',['RemoveTarget',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker.html#a3faba2ee5ddcf2fcdd64fa39a83ff1fa',1,'UnityEngine::XR::MagicLeap::MLImageTracker']]],
+  ['requestactivationkeyrequest',['RequestActivationKeyRequest',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#af7e2df5801915964433933efe1864e51',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['requesthandmesh',['RequestHandMesh',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_meshing.html#ae158b6847a940b0fbbe8243788be14f0',1,'UnityEngine::XR::MagicLeap::MLHandMeshing']]],
+  ['requestprivilege',['RequestPrivilege',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges.html#a47ae13b4a342a4eb0cda78d9617664b0',1,'UnityEngine::XR::MagicLeap::MLPrivileges']]],
+  ['requestprivilegeasync',['RequestPrivilegeAsync',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges.html#ae08abcb1761ac407dbfd9c2421d7fc02',1,'UnityEngine::XR::MagicLeap::MLPrivileges']]],
+  ['requeststatusdelegate',['RequestStatusDelegate',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections.html#a19d2e9a8616474c4376fffffb0d59a33',1,'UnityEngine::XR::MagicLeap::MLConnections']]],
+  ['reset',['Reset',['../struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_device_1_1_internal_data.html#a9010ff1a8d8e326cb6e9884b67421fca',1,'UnityEngine.XR.MagicLeap.MLInputDevice.InternalData.Reset()'],['../struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_device.html#ab5454341d6273b0ff7263f89a4435419',1,'UnityEngine.XR.MagicLeap.MLInputDevice.Reset()']]],
+  ['restore',['Restore',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_binding.html#ae4eca0f4822c687e8cc7584eb580cfd5',1,'UnityEngine.XR.MagicLeap.MLContentBinding.Restore()'],['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_content_binder.html#ac9c38c253eae350600fd29565d21361f',1,'UnityEngine.XR.MagicLeap.MLContentBinder.Restore()']]],
+  ['resultcallback',['ResultCallback',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays.html#a8c9afefe6758df2fed3020bac65b8a24',1,'UnityEngine::XR::MagicLeap::MLWorldRays']]],
+  ['resumeplayback',['ResumePlayback',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service.html#adb81479ba5415d1b710809f443d68765',1,'UnityEngine::XR::MagicLeap::MLMusicService']]]
+];

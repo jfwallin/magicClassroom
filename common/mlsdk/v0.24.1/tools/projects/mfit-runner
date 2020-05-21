@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#
+# This script is the top-level driver for the mabu json tool.
+# For Magic Leap internal use only.
+#
+
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   python='bin/python3.5'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   python='bin/python3.5'
+else
+   python='python'
+fi
+
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+if [ -z "$PYTHON" ]; then
+   if [ -n "$MLSDK" ]; then
+      PYTHON=$MLSDK/tools/python3/$python
+   else
+      PYTHON=$SCRIPT_DIR/../python3/$python
+   fi
+fi
+
+"$PYTHON" "$SCRIPT_DIR/../mabu/tools/mfit/mfit-runner.py" "$@"
+

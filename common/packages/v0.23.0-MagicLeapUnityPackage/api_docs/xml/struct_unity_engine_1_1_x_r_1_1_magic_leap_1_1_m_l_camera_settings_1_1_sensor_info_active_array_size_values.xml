@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a47b09b726dcf1eb3ff1cccb094554601" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoActiveArraySizeValues.Left</definition>
+        <argsstring></argsstring>
+        <name>Left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="70" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a3bde291df147cd56353e208395d27dd2" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoActiveArraySizeValues.Top</definition>
+        <argsstring></argsstring>
+        <name>Top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="72" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1ad773aadd295824ebc8b1966ca101cbd3" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoActiveArraySizeValues.Right</definition>
+        <argsstring></argsstring>
+        <name>Right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="74" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a002c1fdfd01e3dac314a7166d7f676cb" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoActiveArraySizeValues.Bottom</definition>
+        <argsstring></argsstring>
+        <name>Bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a0240f26d14a7f07572b48c1bda30b653" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLCameraSettings.SensorInfoActiveArraySizeValues.SensorInfoActiveArraySizeValues</definition>
+        <argsstring>(int left, int top, int right, int bottom)</argsstring>
+        <name>SensorInfoActiveArraySizeValues</name>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="67" bodyend="79"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a002c1fdfd01e3dac314a7166d7f676cb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</scope><name>Bottom</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a47b09b726dcf1eb3ff1cccb094554601" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</scope><name>Left</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1ad773aadd295824ebc8b1966ca101cbd3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</scope><name>Right</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a0240f26d14a7f07572b48c1bda30b653" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</scope><name>SensorInfoActiveArraySizeValues</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_sensor_info_active_array_size_values_1a3bde291df147cd56353e208395d27dd2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::SensorInfoActiveArraySizeValues</scope><name>Top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

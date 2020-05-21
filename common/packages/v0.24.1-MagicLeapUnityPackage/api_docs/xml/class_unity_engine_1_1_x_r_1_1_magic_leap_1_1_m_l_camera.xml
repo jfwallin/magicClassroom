@@ -1,0 +1,740 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCamera</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLCamera &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aa7354d5a89db89606767df2df4fd70b8" prot="public" static="no">
+        <name>RawVideoFrameData</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aa7354d5a89db89606767df2df4fd70b8a71bb6e4d1fa40e68f8c45ea97acae945" prot="public">
+          <name>Intensity</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Intensity only frame data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aa7354d5a89db89606767df2df4fd70b8a70c119238110321ee9cca43db3aacf07" prot="public">
+          <name>IntensityAndColor</name>
+          <briefdescription>
+<para>Intensity and color frame data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of raw video frame data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="316" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="315" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39a" prot="public" static="no">
+        <name>ErrorType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa4bbb8f967da6d1a610596d7257179c2b" prot="public">
+          <name>Invalid</name>
+          <briefdescription>
+<para>Invalid state </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aab9f5c797ebbf55adccdd8539a65a0241" prot="public">
+          <name>Disabled</name>
+          <briefdescription>
+<para>Camera disabled </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa7ce1050a5ad320fcebb48a07ac6e3d08" prot="public">
+          <name>DeviceFailed</name>
+          <briefdescription>
+<para>Camera device failed </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa81c60df0c0f22ae1438f9f087d53aa09" prot="public">
+          <name>ServiceFailed</name>
+          <briefdescription>
+<para>Camera service failed </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa37cee3188f03af38c53e239f933be904" prot="public">
+          <name>CaptureFailed</name>
+          <briefdescription>
+<para>Capture failed </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39aa88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <briefdescription>
+<para>Unknown capture error </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera errors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="332" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="331" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22" prot="public" static="no">
+        <name>CaptureType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22abe53a0541a6d36f6ecb879fa2c584b08" prot="public">
+          <name>Image</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>To capture an image and save the JPEG-compressed data to a file. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22aa78cb34d6da4613207d21f3574510cd3" prot="public">
+          <name>ImageRaw</name>
+          <briefdescription>
+<para>To capture an image and obtain the JPEG-compressed stream. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22a34e2d1989a1dbf75cd631596133ee5ee" prot="public">
+          <name>Video</name>
+          <briefdescription>
+<para>To capture a video and save it to a file. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22aec3f8886a7aa64dd1ae7a6f6c26da762" prot="public">
+          <name>VideoRaw</name>
+          <briefdescription>
+<para>To capture a video and access the raw buffer of the frames. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Capture operation type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="373" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="372" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ae781cd2e328a1fdcc9ad5fca6fdbb953" prot="public" static="no">
+        <name>OutputFormat</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ae781cd2e328a1fdcc9ad5fca6fdbb953a88183b946cc5f0e8c96b2e66e1c74a7e" prot="public">
+          <name>Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Unknown format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ae781cd2e328a1fdcc9ad5fca6fdbb953a7c1d68fe5d102d559c3c454d2ae9ba54" prot="public">
+          <name>YUV_420_888</name>
+          <briefdescription>
+<para>YUV planar format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ae781cd2e328a1fdcc9ad5fca6fdbb953a907e06a16862d82ca6907a28a68d0ad6" prot="public">
+          <name>JPEG</name>
+          <briefdescription>
+<para>Compressed output stream </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Captured output format </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="399" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="398" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4" prot="public" static="no">
+        <name>DeviceStatusFlag</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4a78945de8de090e90045d299651a68a9b" prot="public">
+          <name>Available</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>The device status when the camera is available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4a1a11b1adc359c03db0ca798a00e2632c" prot="public">
+          <name>Opened</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>The device status when the camera is opened. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4aef70e46fd3bbc21e3e1f0b6815e750c0" prot="public">
+          <name>Disconnected</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>The device status when the camera is disconnected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The device status when the camera has an error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Client can implement polling mechanism to retrieve device status and use these masks to view device status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="421" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="420" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875c" prot="public" static="no">
+        <name>CaptureStatusFlag</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875ca8428552d86c0d262a542a528af490afa" prot="public">
+          <name>Started</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>The capture has started. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875cad7c8c85bf79bbe1b7188497c32c3b0ca" prot="public">
+          <name>Failed</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>The capture failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875ca7dc8c1fb183b2c47008067ddfed25bf4" prot="public">
+          <name>BufferLost</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>The buffer was lost. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875ca12d868c18cb29bf58f02b504be9033fd" prot="public">
+          <name>InProgress</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>The capture is in progress. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875ca07ca5050e697392c9ed47e6453f1453f" prot="public">
+          <name>Completed</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>The capture completed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Client can implement polling mechanism to retrieve capture status and use these masks to view capture status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="448" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="447" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3113f693af4a5fbf392d7585d0a4f4dd" prot="public" static="no">
+        <name>MetadataControlAEMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3113f693af4a5fbf392d7585d0a4f4ddad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AE mode: Off. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3113f693af4a5fbf392d7585d0a4f4dda521c36a31c2762741cf0f8890cbe05e3" prot="public">
+          <name>On</name>
+          <briefdescription>
+<para>The control AE mode: On. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AE mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="479" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="478" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a35dda4d87d6096d0ba0667ebf3fa7dce" prot="public" static="no">
+        <name>MetadataColorCorrectionAberrationMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a35dda4d87d6096d0ba0667ebf3fa7dcead15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The color correction aberration mode: Off. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a35dda4d87d6096d0ba0667ebf3fa7dceae16b5b7f26f54214445cbe38d72c2828" prot="public">
+          <name>Fast</name>
+          <briefdescription>
+<para>The color correction aberration mode: Fast. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a35dda4d87d6096d0ba0667ebf3fa7dcea175583ddd7989a8c2807a52cde97bd19" prot="public">
+          <name>HighQuality</name>
+          <briefdescription>
+<para>The color correction aberration mode: High Quality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the color correction aberration mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="495" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="494" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a563e2af3337febe12dcefb21359e30ad" prot="public" static="no">
+        <name>MetadataControlAELock</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a563e2af3337febe12dcefb21359e30adad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AE lock: Off </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a563e2af3337febe12dcefb21359e30ada521c36a31c2762741cf0f8890cbe05e3" prot="public">
+          <name>On</name>
+          <briefdescription>
+<para>The control AE lock: On </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AE lock. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="516" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="515" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3f" prot="public" static="no">
+        <name>MetadataControlAWBMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AWB mode: Off </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa06b9281e396db002010bde1de57262eb" prot="public">
+          <name>Auto</name>
+          <briefdescription>
+<para>The control AWB mode: Auto </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fac05475b31c155fd23d7162e94d772183" prot="public">
+          <name>Incandescent</name>
+          <briefdescription>
+<para>The control AWB mode: Incandescent </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa38056812059385c2eda93e6fb346d914" prot="public">
+          <name>Fluorescent</name>
+          <briefdescription>
+<para>The control AWB mode: Fluorescent </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa804cccb032108b98f8e743f16bac76ab" prot="public">
+          <name>WarmFluorescent</name>
+          <briefdescription>
+<para>The control AWB mode: Warm Fluorescent </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa6b9102e495c254bf17738d63b2b69970" prot="public">
+          <name>Daylight</name>
+          <briefdescription>
+<para>The control AWB mode: Daylight </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fac5cbea346974aa479f3d53d1046d1576" prot="public">
+          <name>CloudyDaylight</name>
+          <briefdescription>
+<para>The control AWB mode: Cloudy Day Light </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa01d0722c1f9961f2b763fbe51869299a" prot="public">
+          <name>Twilight</name>
+          <briefdescription>
+<para>The control AWB mode: Twilight </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3fa1c749862591cbbc9e4609d7a10288f49" prot="public">
+          <name>Shade</name>
+          <briefdescription>
+<para>The control AWB mode: Shade </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AWB mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="532" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="531" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3168de86720051a8a66f93cd10370837" prot="public" static="no">
+        <name>MetadataControlAWBLock</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3168de86720051a8a66f93cd10370837ad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AWB lock: Off </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3168de86720051a8a66f93cd10370837a521c36a31c2762741cf0f8890cbe05e3" prot="public">
+          <name>On</name>
+          <briefdescription>
+<para>The control AWB lock: On </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AWB lock. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="583" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="582" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9f43ed7ffa8dd759557ca0cd7df77677" prot="public" static="no">
+        <name>MetadataColorCorrectionMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9f43ed7ffa8dd759557ca0cd7df77677a446dc9b9b2c4c0c96e0e0ec974ed3eac" prot="public">
+          <name>TransformMatrix</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The color correction mode: Transform Matrix </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9f43ed7ffa8dd759557ca0cd7df77677ae16b5b7f26f54214445cbe38d72c2828" prot="public">
+          <name>Fast</name>
+          <briefdescription>
+<para>The color correction mode: Fast </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9f43ed7ffa8dd759557ca0cd7df77677a175583ddd7989a8c2807a52cde97bd19" prot="public">
+          <name>HighQuality</name>
+          <briefdescription>
+<para>The color correction mode: High Quality </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the color correction mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="599" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="598" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bd" prot="public" static="no">
+        <name>MetadataControlAEAntibandingMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bdad15305d7a4e34e02489c74a5ef542f36" prot="public">
+          <name>Off</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AE anti banding mode: Off </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bdad11ee16191ad2daa48ef1c3597bd285d" prot="public">
+          <name>FiftyHz</name>
+          <briefdescription>
+<para>The control AE anti banding mode: 50hz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bda3bd9111009a3c2e272d965fdb805f376" prot="public">
+          <name>SixtyHz</name>
+          <briefdescription>
+<para>The control AE anti banding mode: 60hz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bda06b9281e396db002010bde1de57262eb" prot="public">
+          <name>Auto</name>
+          <briefdescription>
+<para>The control AE anti banding mode: Auto </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AE anti banding mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="620" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="619" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12e" prot="public" static="no">
+        <name>MetadataScalerAvailableFormats</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12eaf82214f875124529522cb732a14f3d4a" prot="public">
+          <name>RAW16</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>RAW16 Format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12ea006fdd2fd3f79db9811fc2a262ec225a" prot="public">
+          <name>RAW_OPAQUE</name>
+          <initializer>= 0x24</initializer>
+          <briefdescription>
+<para>RAW OPAQUE Format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12ea99dc3162295b639b401fe354d5059f52" prot="public">
+          <name>YV12</name>
+          <initializer>= 0x32315659</initializer>
+          <briefdescription>
+<para>YV12 Format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12eac19333dc8f649cb77968328a2b2831d8" prot="public">
+          <name>YCrCb_420_SP</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+<para><computeroutput>YCrCb 420 SP Format</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12ea82c4aeedaca5980f6ba33a6ffc4ccbb9" prot="public">
+          <name>IMPLEMENTATION_DEFINED</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+<para>Implementation Defined </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12ea694ed09f1f6a6848ab2ef044ff9bf109" prot="public">
+          <name>YCbCr_420_888</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+<para><computeroutput>YCbCr 420 888 Format</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12ea1649cff06611a6025da3dd511a97fb43" prot="public">
+          <name>BLOB</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+<para>BLOB Format </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for <computeroutput>scaler</computeroutput> available formats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="646" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="645" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ab3285e85e0b9c84a1a006768686a042c" prot="public" static="no">
+        <name>MetadataScalerAvailableStreamConfigurations</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ab3285e85e0b9c84a1a006768686a042ca50a87f0d71f7221582dad4bf507a0f34" prot="public">
+          <name>OUTPUT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The <computeroutput>scaler</computeroutput> available stream configuration: Output </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ab3285e85e0b9c84a1a006768686a042caa84cc046d48610b05c21fd3670d0c829" prot="public">
+          <name>INPUT</name>
+          <briefdescription>
+<para>The <computeroutput>scaler</computeroutput> available stream configuration: Input </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for <computeroutput>scaler</computeroutput> available stream configurations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="687" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="686" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4b" prot="public" static="no">
+        <name>MetadataControlAEState</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4ba3cab03c00dbd11bc3569afa0748013f0" prot="public">
+          <name>Inactive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AE state: Inactive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4ba843627586c62e389041a4d8800143974" prot="public">
+          <name>Searching</name>
+          <briefdescription>
+<para>The control AE state: Searching </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4bada5418b1eb4e80d05f2c1c7c4fa1b6ec" prot="public">
+          <name>Converged</name>
+          <briefdescription>
+<para>The control AE state: Converged </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4bad0f2e5376298c880665077b565ffd7dd" prot="public">
+          <name>Locked</name>
+          <briefdescription>
+<para>The control AE state: Locked </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4ba9169e6a4d75473a79b544e6183001e44" prot="public">
+          <name>FlashRequired</name>
+          <briefdescription>
+<para>The control AE state: Flash Required </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4ba9e8d8c99f1ec55879f20d1e137ede31f" prot="public">
+          <name>PreCapture</name>
+          <briefdescription>
+<para>The control AE state: Pre-capture </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AE state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="703" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="702" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74" prot="public" static="no">
+        <name>MetadataControlAWBState</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74a3cab03c00dbd11bc3569afa0748013f0" prot="public">
+          <name>Inactive</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The control AWB state: Inactive </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74a843627586c62e389041a4d8800143974" prot="public">
+          <name>Searching</name>
+          <briefdescription>
+<para>The control AWB state: Searching </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74ada5418b1eb4e80d05f2c1c7c4fa1b6ec" prot="public">
+          <name>Converged</name>
+          <briefdescription>
+<para>The control AWB state: Converged </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74ad0f2e5376298c880665077b565ffd7dd" prot="public">
+          <name>Locked</name>
+          <briefdescription>
+<para>The control AWB state: Locked </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The metadata for the control AWB state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="739" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="738" bodyend="759"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera" kindref="compound">MLCamera</ref> class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>MLAPISingleton&lt; MLCamera &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="28">
+        <label>UnityEngine.XR.MagicLeap.MLCamera</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>MLAPISingleton&lt; MLCamera &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="30">
+        <label>UnityEngine.XR.MagicLeap.MLCamera</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" line="30" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLCamera.cs" bodystart="29" bodyend="3179"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1afcd1a97e8521d11722d7c98ad181875c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>CaptureStatusFlag</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a8d2efac36fccc75d9ca80a039ce9ae22" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>CaptureType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aeb3631caeea0f4ba6905368bbe233dc4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>DeviceStatusFlag</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9dbf80380beebd6a8c779eaa1889a39a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>ErrorType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a35dda4d87d6096d0ba0667ebf3fa7dce" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataColorCorrectionAberrationMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9f43ed7ffa8dd759557ca0cd7df77677" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataColorCorrectionMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a1aba4ab232ec6427be861f0ef732d1bd" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAEAntibandingMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a563e2af3337febe12dcefb21359e30ad" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAELock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3113f693af4a5fbf392d7585d0a4f4dd" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAEMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aed899d19afbf9d15e60628f4b97aed4b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAEState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a3168de86720051a8a66f93cd10370837" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAWBLock</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a159bca9155be78a5f08aa9004bfbbe3f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAWBMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a299ed6ad8b05ab2b5fc5ddb2527f9d74" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataControlAWBState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a91a8f4be8acb2f41729425c8469da12e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataScalerAvailableFormats</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ab3285e85e0b9c84a1a006768686a042c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>MetadataScalerAvailableStreamConfigurations</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1ae781cd2e328a1fdcc9ad5fca6fdbb953" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>OutputFormat</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1aa7354d5a89db89606767df2df4fd70b8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCamera</scope><name>RawVideoFrameData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

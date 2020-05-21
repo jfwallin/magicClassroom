@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::InputNativeBindings::MLInputTabletDeviceStatesList</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a7cccdc0b57d863ec9b36a71e47781c7b" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.InputNativeBindings.MLInputTabletDeviceStatesList.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+<para>Version of this structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="515" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a70f317a139ac66e81b5dad3af0348245" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.InputNativeBindings.MLInputTabletDeviceStatesList.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+<para>Number of tablet device states in this list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="519" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a34e87510d4d8b7eadb9ebfa7eb2148ab" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.InputNativeBindings.MLInputTabletDeviceStatesList.Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+<para>Pointer referring to the array of <ref refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_state" kindref="compound">MLInputTabletDeviceState</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="523" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a91b6be4084d061893b5f3bf2f51e62e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.InputNativeBindings.MLInputTabletDeviceStatesList.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Intializes the default values for <ref refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list" kindref="compound">MLInputTabletDeviceStatesList</ref>. Links to MLInputConnectedDevicesListInit in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="527" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="527" bodyend="532"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Links to <ref refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list" kindref="compound">MLInputTabletDeviceStatesList</ref> in ml_input.h. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="511" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="510" bodyend="533"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a70f317a139ac66e81b5dad3af0348245" prot="public" virt="non-virtual"><scope>MagicLeapInternal::InputNativeBindings::MLInputTabletDeviceStatesList</scope><name>Count</name></member>
+      <member refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a34e87510d4d8b7eadb9ebfa7eb2148ab" prot="public" virt="non-virtual"><scope>MagicLeapInternal::InputNativeBindings::MLInputTabletDeviceStatesList</scope><name>Data</name></member>
+      <member refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a91b6be4084d061893b5f3bf2f51e62e8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::InputNativeBindings::MLInputTabletDeviceStatesList</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_tablet_device_states_list_1a7cccdc0b57d863ec9b36a71e47781c7b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::InputNativeBindings::MLInputTabletDeviceStatesList</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request" kind="class" language="C#" prot="private">
+    <compoundname>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7" prot="public" static="no">
+        <name>State</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7a98690bf632c29c17c9e4c5a64069903c" prot="public">
+          <name>CREATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7ab55d28a63d7add39262f4d6a5615af04" prot="public">
+          <name>REQUESTING_ATTRIB_NAMES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7a6523d984021177950baa19f154d4eccc" prot="public">
+          <name>ATTRIB_NAMES_READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7a43ef0c38708c067719846c51b875eaa6" prot="public">
+          <name>REQUESTING_ATTRIB_VALUES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7a07533b51577b304b79304756a1d0b77d" prot="public">
+          <name>ATTRIB_VALUES_READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7a2ba22e58ca17bb728d522bba36cf8350" prot="public">
+          <name>DONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="109" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="108" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a0fee88f5c4f3f9224d797d30540eaaea" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future" kindref="compound">MLInvokeFuture</ref></type>
+        <definition>MLInvokeFuture UnityEngine.XR.MagicLeap.MLIdentityProfile.Request.PendingFuture</definition>
+        <argsstring></argsstring>
+        <name>PendingFuture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a71db513cbb63a850b933c02e39705029" prot="public" static="no" mutable="no">
+        <type>State</type>
+        <definition>State UnityEngine.XR.MagicLeap.MLIdentityProfile.Request.RequestState</definition>
+        <argsstring></argsstring>
+        <name>RequestState</name>
+        <initializer>= State.CREATED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a401ca50f5603e7b196a7eea29db00d3f" prot="public" static="no" mutable="no">
+        <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref> &gt;</type>
+        <definition>Action&lt;MLResult&gt; UnityEngine.XR.MagicLeap.MLIdentityProfile.Request.Callback</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="123" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a83cdc043e4598964f428a47752aeee69" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MLIdentityProfile.Request.Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="125" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="661">
+        <label>UnityEngine.XR.MagicLeap.MLInvokeFuture</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future"/>
+      </node>
+      <node id="660">
+        <label>UnityEngine.XR.MagicLeap.MLIdentityProfile.Request</label>
+        <childnode refid="661" relation="usage">
+          <edgelabel>PendingFuture</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLIdentity.cs" bodystart="106" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a401ca50f5603e7b196a7eea29db00d3f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</scope><name>Callback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a0fee88f5c4f3f9224d797d30540eaaea" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</scope><name>PendingFuture</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a71db513cbb63a850b933c02e39705029" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</scope><name>RequestState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1a83cdc043e4598964f428a47752aeee69" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</scope><name>Result</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile_1_1_request_1ab2e3b23c7ddb9b42069e6116495716c7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLIdentityProfile::Request</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

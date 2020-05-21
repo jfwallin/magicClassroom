@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContactsOperationResult</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result_1a5c0aca140460b2afb11b893d32bb2cfb" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a10cdb158617c8a1be2f3bc0e46e21001" kindref="member">MLContactsOperationStatus</ref></type>
+        <definition>MLContactsOperationStatus UnityEngine.XR.MagicLeap.MLContactsOperationResult.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <briefdescription>
+<para>The status of the operation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="258" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result_1a56d9c9a3bc863099699f235884d7c928" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact" kindref="compound">MLContactsContact</ref></type>
+        <definition>MLContactsContact UnityEngine.XR.MagicLeap.MLContactsOperationResult.Contact</definition>
+        <argsstring></argsstring>
+        <name>Contact</name>
+        <briefdescription>
+<para>Resultant contact with updated fields, for e.g., the &apos;id&apos; of the contact would be available in this resultant contact for AddContact </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="264" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores the result of an operation performed on a <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact" kindref="compound">MLContactsContact</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="270">
+        <label>UnityEngine.XR.MagicLeap.MLContactsContact</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact"/>
+        <childnode refid="271" relation="usage">
+          <edgelabel>EmailAddressList</edgelabel>
+          <edgelabel>PhoneNumberList</edgelabel>
+        </childnode>
+      </node>
+      <node id="271">
+        <label>UnityEngine.XR.MagicLeap.MLContactsTaggedAttributeList</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list"/>
+      </node>
+      <node id="269">
+        <label>UnityEngine.XR.MagicLeap.MLContactsOperationResult</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result"/>
+        <childnode refid="270" relation="usage">
+          <edgelabel>Contact</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="254" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="253" bodyend="265"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result_1a56d9c9a3bc863099699f235884d7c928" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsOperationResult</scope><name>Contact</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_operation_result_1a5c0aca140460b2afb11b893d32bb2cfb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsOperationResult</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

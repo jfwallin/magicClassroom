@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_identity_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::IdentityApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a392d36135a22d8600c394d2e0c6895e1" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.IdentityApiNativeBindings.MLIdentityDll</definition>
+        <argsstring></argsstring>
+        <name>MLIdentityDll</name>
+        <initializer>= &quot;ml_identity&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="88" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1ace92ff9a08d90222a6a14c50c328ebc7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.IdentityApiNativeBindings.IdentityApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>IdentityApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="86" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" bodystart="86" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a841fc3027a287ca58d497a3ce7dd9d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityGetAttributeNames</definition>
+        <argsstring>(ref IntPtr outProfile)</argsstring>
+        <name>MLIdentityGetAttributeNames</name>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outProfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a4b02aaa1bb84a5ba2bd43299f343895a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityGetKnownAttributeNames</definition>
+        <argsstring>([MarshalAs(UnmanagedType.LPArray)] MLIdentityAttributeKey[] keys, uint keyCount, ref IntPtr outProfile)</argsstring>
+        <name>MLIdentityGetKnownAttributeNames</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.LPArray)]</attributes>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0207d07522e3c670ec8b7b3f56218ef" kindref="member">MLIdentityAttributeKey</ref> []</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>keyCount</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outProfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a6c6e150400293cd29e5e98045b653075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityGetAttributeNamesAsync</definition>
+        <argsstring>(ref IntPtr outFuture)</argsstring>
+        <name>MLIdentityGetAttributeNamesAsync</name>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outFuture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a350bc15c23b3e98f51a2aa874b1fe753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityGetAttributeNamesWait</definition>
+        <argsstring>(IntPtr future, uint msecTimeout, ref IntPtr outProfile)</argsstring>
+        <name>MLIdentityGetAttributeNamesWait</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>future</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>msecTimeout</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outProfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a3141a499d0900e2bd9d4fb825ac5b53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityRequestAttributeValues</definition>
+        <argsstring>(IntPtr profile)</argsstring>
+        <name>MLIdentityRequestAttributeValues</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>profile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a255558e7ae6398529d9f37d74265400a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityRequestAttributeValuesAsync</definition>
+        <argsstring>(IntPtr profile, ref IntPtr outFuture)</argsstring>
+        <name>MLIdentityRequestAttributeValuesAsync</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>profile</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outFuture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a809c978238e2ee0e72fbe4e7f8a036ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityRequestAttributeValuesWait</definition>
+        <argsstring>(IntPtr future, uint msecTimeout)</argsstring>
+        <name>MLIdentityRequestAttributeValuesWait</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>future</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>msecTimeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a5eccbfc86ba7ffa3399ced060c398e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.IdentityApiNativeBindings.MLIdentityReleaseUserProfile</definition>
+        <argsstring>(IntPtr profile)</argsstring>
+        <name>MLIdentityReleaseUserProfile</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>profile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_identity_api_native_bindings_1a6a1fa238f1f635abecb861c3d9a978e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPtr</type>
+        <definition>static IntPtr MagicLeapInternal.IdentityApiNativeBindings.MLIdentityGetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>MLIdentityGetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="123" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_identity.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="53">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="52">
+        <label>MagicLeapInternal.IdentityApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_identity_api_native_bindings"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="55">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="54">
+        <label>MagicLeapInternal.IdentityApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_identity_api_native_bindings"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="85" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" bodystart="84" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1ace92ff9a08d90222a6a14c50c328ebc7" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>IdentityApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a392d36135a22d8600c394d2e0c6895e1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a841fc3027a287ca58d497a3ce7dd9d06" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityGetAttributeNames</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a6c6e150400293cd29e5e98045b653075" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityGetAttributeNamesAsync</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a350bc15c23b3e98f51a2aa874b1fe753" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityGetAttributeNamesWait</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a4b02aaa1bb84a5ba2bd43299f343895a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityGetKnownAttributeNames</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a6a1fa238f1f635abecb861c3d9a978e1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a5eccbfc86ba7ffa3399ced060c398e25" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityReleaseUserProfile</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a3141a499d0900e2bd9d4fb825ac5b53d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityRequestAttributeValues</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a255558e7ae6398529d9f37d74265400a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityRequestAttributeValuesAsync</name></member>
+      <member refid="class_magic_leap_internal_1_1_identity_api_native_bindings_1a809c978238e2ee0e72fbe4e7f8a036ac" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLIdentityRequestAttributeValuesWait</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::IdentityApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

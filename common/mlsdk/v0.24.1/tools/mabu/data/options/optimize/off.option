@@ -1,0 +1,4 @@
+CFLAGS.gcc,clang=-O0
+CXXFLAGS.gcc,clang=-O0
+CFLAGS.msvc=-Od
+CXXFLAGS.msvc=-Od

@@ -1,0 +1,22 @@
+#
+# Example option in a group.
+#
+# Options are organized into mutually-exclusive groups by virtue
+# of being organized into subdirectories.  For example, the "optimization"
+# directory contains "off.option", "on.option", and "high.option" -- these
+# are exclusive.
+#
+# If multiple variants of a group option, e.g. "optimization/...", are
+# incorporated into a project via configs, components, or *.mabu projects
+# being REF'ed, the variant closest to the built project wins
+# (e.g., the "optimization/" setting in foo.mabu wins over REFS=other.mabu,
+# and that wins over one coming from a configuration via '-t config_...',
+# and that wins over an option published from a USES=foo.)
+#
+# To create such groups, the path passed to --path or MABUPATH should point to the
+# parent of the directory where you define the group directory(-ies) containing
+# *.option files -- e.g. "examples" above -- and clients should use the
+# style "OPTION = option-group/choice1" to pick their choice.
+#
+
+DEFS = CHOICE=3

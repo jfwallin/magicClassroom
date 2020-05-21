@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_16ab7c090011cb72f64cf99d5af906b7" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Bindings</compoundname>
+    <innerfile refid="_bindings_2_magic_leap_native_bindings_8cs">MagicLeapNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_app_connect_native_bindings_8cs">MLAppConnectNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_audio_native_bindings_8cs">MLAudioNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_bluetooth_native_bindings_8cs">MLBluetoothNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_camera_native_bindings_8cs">MLCameraNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_connections_native_bindings_8cs">MLConnectionsNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_contacts_native_bindings_8cs">MLContactsNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_controller_native_bindings_8cs">MLControllerNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_c_v_camera_native_bindings_8cs">MLCVCameraNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_dispatch_native_bindings_8cs">MLDispatchNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_eye_native_bindings_8cs">MLEyeNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_found_object_native_bindings_8cs">MLFoundObjectNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_hand_meshing_native_bindings_8cs">MLHandMeshingNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_hand_tracking_native_bindings_8cs">MLHandTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_head_tracking_native_bindings_8cs">MLHeadTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_identity_native_bindings_8cs">MLIdentityNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_image_native_bindings_8cs">MLImageNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_image_tracker_native_bindings_8cs">MLImageTrackerNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_input_native_bindings_8cs">MLInputNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_lighting_tracking_native_bindings_8cs">MLLightingTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_locale_native_bindings_8cs">MLLocaleNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_location_native_bindings_8cs">MLLocationNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_media_error_native_bindings_8cs">MLMediaErrorNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_media_player_native_bindings_8cs">MLMediaPlayerNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_movement_native_bindings_8cs">MLMovementNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_music_service_native_bindings_8cs">MLMusicServiceNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_networking_native_bindings_8cs">MLNetworkingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_p_c_f_native_bindings_8cs">MLPCFNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_planes_native_bindings_8cs">MLPlanesNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_privileges_native_bindings_8cs">MLPrivilegesNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_raycast_native_bindings_8cs">MLRaycastNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_secure_storage_native_bindings_8cs">MLSecureStorageNativeBindings.cs</innerfile>
+    <innerfile refid="_bindings_2_m_l_token_agent_native_bindings_8cs">MLTokenAgentNativeBindings.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Bindings/"/>
+  </compounddef>
+</doxygen>
