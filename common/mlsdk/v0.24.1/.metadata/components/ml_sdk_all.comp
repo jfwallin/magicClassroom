@@ -1,0 +1,29 @@
+USES = ml_sdk_common \
+  ml_media
+
+# SDK shared libraries
+SHLIBS = \
+  ml_audio \
+  ml_camera \
+  ml_camera_metadata \
+  ml_contacts \
+  ml_dispatch \
+  ml_graphics \
+  ml_graphics_utils \
+  ml_identity \
+  ml_input \
+  ml_lifecycle \
+  ml_ext_logging \
+  ml_musicservice \
+  ml_musicservice_provider \
+  ml_perception_client \
+  ml_platform \
+  ml_privileges \
+  ml_purchase \
+  ml_screens \
+  ml_secure_storage \
+  ml_sharedfile \
+
+# esp. for device builds, ensure the ELF only references the
+# libraries actually used by your program.
+OPTIONS=link/ignoreUnusedShlibs/on

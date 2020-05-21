@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>UnityEngine::XR::MagicLeap::MLAPISingleton</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;._instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Singleton object instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a2666920d34f653ca1fdc3a0fa34b4fb6" prot="private" static="no" mutable="no">
+        <type>PerceptionHandle</type>
+        <definition>PerceptionHandle UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;._perceptionHandle</definition>
+        <argsstring></argsstring>
+        <name>_perceptionHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="72" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1abec70148adeea0c503aea42df1176eec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;._perceptionHasStarted</definition>
+        <argsstring></argsstring>
+        <name>_perceptionHasStarted</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="74" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a38f4db0eb083cecd494c5843349d9995" prot="private" static="yes" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;._startCount</definition>
+        <argsstring></argsstring>
+        <name>_startCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.DllNotFoundError</definition>
+        <argsstring></argsstring>
+        <name>DllNotFoundError</name>
+        <initializer>= &quot;MLAPISingleton.BaseStart failed, {0} is only available on device or when running inside the Unity editor with Zero iteration enabled.&quot;</initializer>
+        <briefdescription>
+<para>Error message displayed to user when API dll was not found </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>T</type>
+        <definition>T UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+<para>Returns the singleton object instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The singleton object instance.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.IsStarted</definition>
+        <argsstring></argsstring>
+        <name>IsStarted</name>
+        <briefdescription>
+<para>Determine if the API was started successfully </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns false if no instance exists</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.IsValidInstance</definition>
+        <argsstring>()</argsstring>
+        <name>IsValidInstance</name>
+        <briefdescription>
+<para>Utility function returns true is the instance exists </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="86" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.CheckValidInstance</definition>
+        <argsstring>()</argsstring>
+        <name>CheckValidInstance</name>
+        <briefdescription>
+<para>Utility function checks for valid instance and throws an execption if not found </para>        </briefdescription>
+        <detaileddescription>
+<para>&lt;throw&gt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception" kindref="compound">InvalidInstanceException</ref> &lt;/throw&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="95" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.BaseStart</definition>
+        <argsstring>(bool requiresXRLoader=false)</argsstring>
+        <name>BaseStart</name>
+        <param>
+          <type>bool</type>
+          <declname>requiresXRLoader</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Utility function set up instance and tracks successfull _startCount </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error (<ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> <ref refid="namespace_unity_engine_1_1_x_r" kindref="compound">XR</ref> Loader not loaded, no device, dll not found, no API symbols). Otherwise, see specific implemetation of StartAPI() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="139" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="139" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stop the API </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="198" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="198" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1ed3121caef7e0874289d8ac26d8785f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.~MLAPISingleton</definition>
+        <argsstring>()</argsstring>
+        <name>~MLAPISingleton</name>
+        <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" kindref="compound">MLAPISingleton</ref> finalizer used to ensure we dispose data correctly. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="209" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="209" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0fa851171e0caa56677d76e455becbc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.StopAPI</definition>
+        <argsstring>()</argsstring>
+        <name>StopAPI</name>
+        <briefdescription>
+<para>Decrement API instance count and cleanup if this is the last one. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="230" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="230" bodyend="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.CleanupAPI</definition>
+        <argsstring>(bool isSafeToAccessManagedObjects)</argsstring>
+        <name>CleanupAPI</name>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges_1a8fb73f7987238f12ad0f750c77abd335">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_meshing_1afe67007680dca47b6f250d9c9734acf0">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_location_1ab3a71e9edb376301c5e1723a44b2ef13">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1a565e1284885e14f2600017005f5656a5">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1ac5eedae3ed73c89338304f3820849506">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ad001835894e31a3ae81c88bd6bbc95e7">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a4c0227f9ab2d4da73773d48cc58a2a43">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a658e02d5d200eddf92822c4180d36268">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_store_1adcaf2669fecf4ac068830deff79d19e9">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a43480d045a4c77b01172d7c75ab14858">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1abf2ccb0814fb64942b310dc42e80aaed">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab21741c0e3db66a28835b2b80c08a45f">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_1a70a8c8bfc9d9911d3085df223faacaf9">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a9c594d5c46f33927fb7e0d58e53d6951">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1a096767d52a629cbbe02de0359116f6ac">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1a3c94f1f044c5292f1e7c482e350fc8b7">CleanupAPI</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1a0d880764832bfd85ee901ff53c54144f">CleanupAPI</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>isSafeToAccessManagedObjects</declname>
+        </param>
+        <briefdescription>
+<para>Cleans up unmanaged memory </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isSafeToAccessManagedObjects</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean that tells if it is safe to clear managed memory</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.Update</definition>
+        <argsstring>(float timeDelta)</argsstring>
+        <name>Update</name>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges_1a14d548bc79d407d3d3879df71a8f8e80">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hands_1ac4dbb3527c7267a8d48ea4f3bfd9affd">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_location_1a162a98cc81f3b32222b4448e2a60d642">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a41cb8f645c66cdc65e4aba1bf8503047">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1a81662ffa55b74e8c876ce21b2fcd8b14">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_store_1a0c9581fc601ccc17dff8d8ab2b6932a5">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1ae5af76f4b7cbb91b8487ffcb37d31574">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a0058cb7d897b3186c7632d52a49f8eae">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a1325dd57563c881909c0766ab41651d4">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_meshing_1a94db6bd73abc67fca2baeec19f0a1b50">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_screens_1a8be3f3645ba33898e04a7e0dcee276c4">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a0b8bcd587fc71ee10add06ac876f85b8">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections_1ac3df2700688e483d2901518216a97867">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2b22458f833ce9d1e66eb9d2419dd03a">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_1a4c5503670727e9c3f50214339a969762">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1a9f360d9d171daf05e90626ba630fd746">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_1aeb63b235d4356647479227534735afb7">Update</reimplementedby>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1aef88e1d099e3a8ccd7446a9cee76ca21">Update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>timeDelta</declname>
+        </param>
+        <briefdescription>
+<para>Update function registered with <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device" kindref="compound">MagicLeapDevice</ref> to do API specific per frame work. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeDelta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time in seconds it took to complete the last frame.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void UnityEngine.XR.MagicLeap.MLAPISingleton&lt; T &gt;.OnApplicationPause</definition>
+        <argsstring>(bool pauseStatus)</argsstring>
+        <name>OnApplicationPause</name>
+        <reimplementedby refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ab1b27b504e7ebc057c96e68714f8d3bd">OnApplicationPause</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>pauseStatus</declname>
+        </param>
+        <briefdescription>
+<para>Callback sent to all <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> APIs on application pause. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pauseStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the application is paused, else False. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="278" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="278" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" kindref="compound">MLAPISingleton</ref> class contains a template for singleton APIs </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="63" bodyend="281"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a2666920d34f653ca1fdc3a0fa34b4fb6" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>_perceptionHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1abec70148adeea0c503aea42df1176eec" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>_perceptionHasStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a38f4db0eb083cecd494c5843349d9995" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>_startCount</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>BaseStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>CheckValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d" prot="protected" virt="pure-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>CleanupAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>DllNotFoundError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>IsStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>IsValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>Stop</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0fa851171e0caa56677d76e455becbc0" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>StopAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a" prot="protected" virt="pure-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>Update</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1ed3121caef7e0874289d8ac26d8785f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAPISingleton</scope><name>~MLAPISingleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

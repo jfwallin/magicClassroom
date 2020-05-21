@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLLightingTracker</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLLightingTracker &gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1aa53dbf1523b4020c7429bf3785bac9a8" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ushort</type>
+        <definition>ushort UnityEngine.XR.MagicLeap.MLLightingTracker.GlobalTemperature</definition>
+        <argsstring></argsstring>
+        <name>GlobalTemperature</name>
+        <briefdescription>
+<para>Kelvin color temperature</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ac63da0f8f510385b26d02bc3bc3f492d" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double UnityEngine.XR.MagicLeap.MLLightingTracker.GlobalTemperatureAgeSeconds</definition>
+        <argsstring></argsstring>
+        <name>GlobalTemperatureAgeSeconds</name>
+        <briefdescription>
+<para>Time at which global temperature data was captured (represented as elapsed seconds since DateTime.MinValue). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ab3286d5eaadc81710d7147931eb36f22" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Color</type>
+        <definition>Color UnityEngine.XR.MagicLeap.MLLightingTracker.GlobalTemperatureColor</definition>
+        <argsstring></argsstring>
+        <name>GlobalTemperatureColor</name>
+        <briefdescription>
+<para>RGB represenation of the kelvin color temperature.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a67278479a78d9875d8295bd8dcc2bec7" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ushort []</type>
+        <definition>ushort [] UnityEngine.XR.MagicLeap.MLLightingTracker.AmbientCameraLuminance</definition>
+        <argsstring></argsstring>
+        <name>AmbientCameraLuminance</name>
+        <briefdescription>
+<para>Array of each camera&apos;s luminance in nits.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="80" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a995ee4e937c7af91b5672e1a8ff09aff" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double UnityEngine.XR.MagicLeap.MLLightingTracker.AmbientCameraLuminanceAgeSeconds</definition>
+        <argsstring></argsstring>
+        <name>AmbientCameraLuminanceAgeSeconds</name>
+        <briefdescription>
+<para>Time at which ambient camera luminance data was captured (represented as elapsed seconds since DateTime.MinValue). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a4f7cb80b4413cf0ac44ffc71f0d303c3" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>ushort</type>
+        <definition>ushort UnityEngine.XR.MagicLeap.MLLightingTracker.AverageLuminance</definition>
+        <argsstring></argsstring>
+        <name>AverageLuminance</name>
+        <briefdescription>
+<para>Average luminace in nits of all sensors.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1acdbe6ece99e34e677fc8110c639e7eeb" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLLightingTracker.RawPixelColorAverage</definition>
+        <argsstring></argsstring>
+        <name>RawPixelColorAverage</name>
+        <briefdescription>
+<para>Accumulated R, G and B values over a 250 ms time period by the Ambient Light Sensor.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a61f978d34cc571942444475ef5dc6319" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLLightingTracker.TristimulusValues</definition>
+        <argsstring></argsstring>
+        <name>TristimulusValues</name>
+        <briefdescription>
+<para>The CIE Tri-Stimulus values in Q16 format (scaled 2^16.)</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="120" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a0ebdb11800df859404aead789c0d904e" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLLightingTracker._nativeTracker</definition>
+        <argsstring></argsstring>
+        <name>_nativeTracker</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="128" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a2522cff5c16d521d2da67c6a98ed068f" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_ambient_global_state" kindref="compound">LightingTrackingApiNativeBindings.MLLightingTrackingAmbientGlobalState</ref></type>
+        <definition>LightingTrackingApiNativeBindings.MLLightingTrackingAmbientGlobalState UnityEngine.XR.MagicLeap.MLLightingTracker._intensityState</definition>
+        <argsstring></argsstring>
+        <name>_intensityState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a33ad16dca23362c0c8f5b9a3f9281ef3" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_lighting_tracking_api_native_bindings_1_1_m_l_lighting_tracking_color_temperature_state" kindref="compound">LightingTrackingApiNativeBindings.MLLightingTrackingColorTemperatureState</ref></type>
+        <definition>LightingTrackingApiNativeBindings.MLLightingTrackingColorTemperatureState UnityEngine.XR.MagicLeap.MLLightingTracker._temperatureState</definition>
+        <argsstring></argsstring>
+        <name>_temperatureState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="130" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a5f28fc1abfccbba18e530c541b2a1256" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color UnityEngine.XR.MagicLeap.MLLightingTracker._globalTemperatureColor</definition>
+        <argsstring></argsstring>
+        <name>_globalTemperatureColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1abd45896d78009c860656061a9d6d91a8" prot="private" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort UnityEngine.XR.MagicLeap.MLLightingTracker._averageLuminance</definition>
+        <argsstring></argsstring>
+        <name>_averageLuminance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="132" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a93e5fcad672db514a8819beeb9e8217e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLLightingTracker._getAmbientGlobalStateFailed</definition>
+        <argsstring></argsstring>
+        <name>_getAmbientGlobalStateFailed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="133" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a1fc2afccec5813f3b8a3c5a41e79d01c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLLightingTracker._getColorTemperatureStateFailed</definition>
+        <argsstring></argsstring>
+        <name>_getColorTemperatureStateFailed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="134" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1adf8f85c2d85bf245183d17842b790112" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLLightingTracker._rawPixelAccumulation</definition>
+        <argsstring></argsstring>
+        <name>_rawPixelAccumulation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="136" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1abc38af8031759a42a8e89c7067b9de8d" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLLightingTracker._tristimulusValues</definition>
+        <argsstring></argsstring>
+        <name>_tristimulusValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1af2e9a7357e402ac099c6b16def3944d6" prot="private" static="yes" mutable="no">
+        <type>ushort []</type>
+        <definition>ushort [] UnityEngine.XR.MagicLeap.MLLightingTracker._tempCameraLuminanceCopy</definition>
+        <argsstring></argsstring>
+        <name>_tempCameraLuminanceCopy</name>
+        <initializer>= new ushort[LightingTrackingApiNativeBindings.CameraCount]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="135" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a8f7c3bf88a5635dda0bf99ee450a5bf4" prot="private" static="yes" mutable="no">
+        <type>readonly DateTime</type>
+        <definition>readonly DateTime UnityEngine.XR.MagicLeap.MLLightingTracker._epochStart</definition>
+        <argsstring></argsstring>
+        <name>_epochStart</name>
+        <initializer>= new DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="138" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ab0400b7517d3f5b24c2b3d53af279b79" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLLightingTracker.MLLightingTracker</definition>
+        <argsstring>()</argsstring>
+        <name>MLLightingTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="141" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="141" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a97f28924a4bbe8a015b7555ad74aa6b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLLightingTracker.CalculateGlobalTemperatureColor</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateGlobalTemperatureColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="214" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="214" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ad6ac1b1c7885eeaebb2f38741bfa8c8c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLLightingTracker.CalculateGlobalAmbientScalar</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateGlobalAmbientScalar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="258" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="258" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a2661a405f00b11b9007c5ca548560b16" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLLightingTracker.CreateInstance</definition>
+        <argsstring>()</argsstring>
+        <name>CreateInstance</name>
+        <briefdescription>
+<para>Static instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker" kindref="compound">MLLightingTracker</ref> class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ac3e1af5e03402b75020b9eee8ce9ba97" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double UnityEngine.XR.MagicLeap.MLLightingTracker.ElapsedSeconds</definition>
+        <argsstring>(long timestampInNanoSeconds)</argsstring>
+        <name>ElapsedSeconds</name>
+        <param>
+          <type>long</type>
+          <declname>timestampInNanoSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="314" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="314" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1af855f3e8890e0d5ef43908f5ee026725" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLLightingTracker.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Starts <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker" kindref="compound">MLLightingTracker</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to internal invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="173" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="173" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a43480d045a4c77b01172d7c75ab14858" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLLightingTracker.CleanupAPI</definition>
+        <argsstring>(bool isSafeToAccessManagedObjects)</argsstring>
+        <name>CleanupAPI</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d">CleanupAPI</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>isSafeToAccessManagedObjects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="200" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="200" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a0b8bcd587fc71ee10add06ac876f85b8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLLightingTracker.Update</definition>
+        <argsstring>(float timeDelta)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>timeDelta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="270" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="270" bodyend="312"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides environment lighting information. Capturing images or video will stop the lighting information update. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="406">
+        <label>MLAPISingleton&lt; MLLightingTracker &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="405">
+        <label>UnityEngine.XR.MagicLeap.MLLightingTracker</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="408">
+        <label>MLAPISingleton&lt; MLLightingTracker &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="407">
+        <label>UnityEngine.XR.MagicLeap.MLLightingTracker</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker"/>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLLightingTracker.cs" bodystart="47" bodyend="320"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1abd45896d78009c860656061a9d6d91a8" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_averageLuminance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a8f7c3bf88a5635dda0bf99ee450a5bf4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_epochStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a93e5fcad672db514a8819beeb9e8217e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_getAmbientGlobalStateFailed</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a1fc2afccec5813f3b8a3c5a41e79d01c" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_getColorTemperatureStateFailed</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a5f28fc1abfccbba18e530c541b2a1256" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_globalTemperatureColor</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a2522cff5c16d521d2da67c6a98ed068f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_intensityState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a0ebdb11800df859404aead789c0d904e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_nativeTracker</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1adf8f85c2d85bf245183d17842b790112" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_rawPixelAccumulation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1af2e9a7357e402ac099c6b16def3944d6" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_tempCameraLuminanceCopy</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a33ad16dca23362c0c8f5b9a3f9281ef3" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_temperatureState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1abc38af8031759a42a8e89c7067b9de8d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>_tristimulusValues</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a67278479a78d9875d8295bd8dcc2bec7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>AmbientCameraLuminance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a995ee4e937c7af91b5672e1a8ff09aff" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>AmbientCameraLuminanceAgeSeconds</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a4f7cb80b4413cf0ac44ffc71f0d303c3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>AverageLuminance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>BaseStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ad6ac1b1c7885eeaebb2f38741bfa8c8c" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>CalculateGlobalAmbientScalar</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a97f28924a4bbe8a015b7555ad74aa6b2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>CalculateGlobalTemperatureColor</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>CheckValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a43480d045a4c77b01172d7c75ab14858" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>CleanupAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a2661a405f00b11b9007c5ca548560b16" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>CreateInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>DllNotFoundError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ac3e1af5e03402b75020b9eee8ce9ba97" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>ElapsedSeconds</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1aa53dbf1523b4020c7429bf3785bac9a8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>GlobalTemperature</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ac63da0f8f510385b26d02bc3bc3f492d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>GlobalTemperatureAgeSeconds</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ab3286d5eaadc81710d7147931eb36f22" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>GlobalTemperatureColor</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>IsStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>IsValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1ab0400b7517d3f5b24c2b3d53af279b79" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>MLLightingTracker</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1acdbe6ece99e34e677fc8110c639e7eeb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>RawPixelColorAverage</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1af855f3e8890e0d5ef43908f5ee026725" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>Stop</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a61f978d34cc571942444475ef5dc6319" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>TristimulusValues</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracker_1a0b8bcd587fc71ee10add06ac876f85b8" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracker</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

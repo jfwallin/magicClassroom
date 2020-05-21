@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLContactsListPage</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1a929716beaabc7ccfe410178c41755ecc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a01a35fb83cf94c5acde224e6cc6ec83c" kindref="member">MLContactsSelectionField</ref></type>
+        <definition>MLContactsSelectionField UnityEngine.XR.MagicLeap.MLContactsSelectionPage._selectionFields</definition>
+        <argsstring></argsstring>
+        <name>_selectionFields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" line="49" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1aafd155b2119748675dddeb15c2f9c442" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLContactsSelectionPage.MLContactsSelectionPage</definition>
+        <argsstring>(MLContactsSelectionField selectionFields, uint pageLength, Action&lt; MLContactsListPage &gt; pageReady=null, Action&lt; MLContactsListPage, MLResult &gt; pageFailed=null)</argsstring>
+        <name>MLContactsSelectionPage</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a01a35fb83cf94c5acde224e6cc6ec83c" kindref="member">MLContactsSelectionField</ref></type>
+          <declname>selectionFields</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>pageLength</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page" kindref="compound">MLContactsListPage</ref> &gt;</type>
+          <declname>pageReady</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page" kindref="compound">MLContactsListPage</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref> &gt;</type>
+          <declname>pageFailed</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1ac88d357f4e8c15f02bb77ed730b7a356" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>override MLResult UnityEngine.XR.MagicLeap.MLContactsSelectionPage.InternalNewPage</definition>
+        <argsstring>(uint pageLength, string offset)</argsstring>
+        <name>InternalNewPage</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1ab925303ca0fa4cafa6269288fdd9b0ea">InternalNewPage</reimplements>
+        <param>
+          <type>uint</type>
+          <declname>pageLength</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Request a new page </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pageLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the page</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if sucessfully submitted</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if either of the parameters are invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" bodystart="68" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper to step through and manage pages of a selection in the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts" kindref="compound">MLContacts</ref> address book. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="281">
+        <label>MLContactsListPage</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page"/>
+      </node>
+      <node id="280">
+        <label>UnityEngine.XR.MagicLeap.MLContactsSelectionPage</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page"/>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="283">
+        <label>MLContactsListPage</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page"/>
+      </node>
+      <node id="282">
+        <label>UnityEngine.XR.MagicLeap.MLContactsSelectionPage</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page"/>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContactsSelectionPage.cs" bodystart="47" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a4ed434fab735e46813f84ff45b6ba374" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>_requestHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1a929716beaabc7ccfe410178c41755ecc" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>_selectionFields</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a5d59dfb471ecf57a04cfebff5004efec" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>_unregisterUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a2eced2fa008e0abf12b9c01ee93c317c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>ContactsList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1ac88d357f4e8c15f02bb77ed730b7a356" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>InternalNewPage</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a7ac1d11e7d3445ed9d11c4b06a45a866" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>MLContactsListPage</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_selection_page_1aafd155b2119748675dddeb15c2f9c442" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>MLContactsSelectionPage</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a7ecb71fcc1203e3b954972c52cc5cd9d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>NextPage</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a83a857cca3fc45de375f6b6109c4fa20" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>PageStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1ab926887db0b5f860c3899e41ec30bec4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>Status</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1acc15dbce8d8c2cf125bb20f3761ad0f6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>TotalHits</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_list_page_1a3e873957e98fe75d816333c9f7c3c374" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsSelectionPage</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

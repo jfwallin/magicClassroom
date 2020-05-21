@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <title>Lumin SDK Release Notes</title>
+
+<style>
+body {
+   font-family: Helvetica, arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.6;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color: #f0f0f0;
+   padding: 30px; }
+
+body > *:first-child {
+   margin-top: 0 !important; }
+body > *:last-child {
+   margin-bottom: 0 !important; }
+
+a {
+   color: #4183C4; }
+a.absent {
+   color: #cc0000; }
+a.anchor {
+   display: block;
+   padding-left: 30px;
+   margin-left: -30px;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 20px 0 10px;
+   padding: 0;
+   font-weight: bold;
+   -webkit-font-smoothing: antialiased;
+   cursor: text;
+   position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+   text-decoration: none; }
+
+h1 tt, h1 code {
+   font-size: inherit; }
+
+h2 tt, h2 code {
+   font-size: inherit; }
+
+h3 tt, h3 code {
+   font-size: inherit; }
+
+h4 tt, h4 code {
+   font-size: inherit; }
+
+h5 tt, h5 code {
+   font-size: inherit; }
+
+h6 tt, h6 code {
+   font-size: inherit; }
+
+h1 {
+   font-size: 32px;
+   color: #003399; }
+
+h2 {
+   font-size: 24px;
+   border-bottom: 1px solid #cccccc;
+   color: black; }
+
+h3 {
+   font-size: 18px; }
+
+h4 {
+   font-size: 16px; }
+
+h5 {
+   font-size: 14px; }
+
+h6 {
+   color: #777777;
+   font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+   margin: 15px 0; }
+
+hr {
+   border: 0 none;
+   color: #cccccc;
+   height: 4px;
+   padding: 0;
+}
+
+body > h2:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+body > h1:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+body > h1:first-child + h2 {
+   margin-top: 0;
+   padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+   margin-top: 0;
+   padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+   margin-top: 0;
+   padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+   margin-top: 0; }
+
+li p.first {
+   display: inline-block; }
+li {
+   margin: 0; }
+ul, ol {
+   padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+   margin-top: 0; }
+
+dl {
+   padding: 0; }
+dl dt {
+   font-size: 14px;
+   font-weight: bold;
+   font-style: italic;
+   padding: 0;
+   margin: 15px 0 5px; }
+dl dt:first-child {
+   padding: 0; }
+dl dt > :first-child {
+   margin-top: 0; }
+dl dt > :last-child {
+   margin-bottom: 0; }
+dl dd {
+   margin: 0 0 15px;
+   padding: 0 15px; }
+dl dd > :first-child {
+   margin-top: 0; }
+dl dd > :last-child {
+   margin-bottom: 0; }
+
+blockquote {
+   border-left: 4px solid #dddddd;
+   padding: 0 15px;
+   color: #777777; }
+blockquote > :first-child {
+   margin-top: 0; }
+blockquote > :last-child {
+   margin-bottom: 0; }
+
+table {
+   padding: 0;border-collapse: collapse; }
+table tr {
+   border-top: 1px solid #cccccc;
+   background-color: white;
+   margin: 0;
+   padding: 0; }
+table tr:nth-child(2n) {
+   background-color: #f8f8f8; }
+table tr th {
+   font-weight: bold;
+   border: 1px solid #cccccc;
+   margin: 0;
+   padding: 6px 13px; }
+table tr td {
+   border: 1px solid #cccccc;
+   margin: 0;
+   padding: 6px 13px; }
+table tr th :first-child, table tr td :first-child {
+   margin-top: 0; }
+table tr th :last-child, table tr td :last-child {
+   margin-bottom: 0; }
+
+img {
+   max-width: 100%; }
+
+span.frame {
+   display: block;
+   overflow: hidden; }
+span.frame > span {
+   border: 1px solid #dddddd;
+   display: block;
+   float: left;
+   overflow: hidden;
+   margin: 13px 0 0;
+   padding: 7px;
+   width: auto; }
+span.frame span img {
+   display: block;
+   float: left; }
+span.frame span span {
+   clear: both;
+   color: #333333;
+   display: block;
+   padding: 5px 0 0; }
+span.align-center {
+   display: block;
+   overflow: hidden;
+   clear: both; }
+span.align-center > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px auto 0;
+   text-align: center; }
+span.align-center span img {
+   margin: 0 auto;
+   text-align: center; }
+span.align-right {
+   display: block;
+   overflow: hidden;
+   clear: both; }
+span.align-right > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px 0 0;
+   text-align: right; }
+span.align-right span img {
+   margin: 0;
+   text-align: right; }
+span.float-left {
+   display: block;
+   margin-right: 13px;
+   overflow: hidden;
+   float: left; }
+span.float-left span {
+   margin: 13px 0 0; }
+span.float-right {
+   display: block;
+   margin-left: 13px;
+   overflow: hidden;
+   float: right; }
+span.float-right > span {
+   display: block;
+   overflow: hidden;
+   margin: 13px auto 0;
+   text-align: right; }
+
+code, tt {
+   margin: 0 2px;
+   padding: 0 5px;
+   white-space: nowrap;
+   border: 1px solid #eaeaea;
+   background-color: #f8f8f8;
+   border-radius: 3px; }
+
+pre code {
+   margin: 0;
+   padding: 0;
+   white-space: pre;
+   border: none;
+   background: transparent; }
+
+.highlight pre {
+   background-color: #f8f8f8;
+   border: 1px solid #cccccc;
+   font-size: 13px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px; }
+
+pre {
+   background-color: #f8f8f8;
+   border: 1px solid #cccccc;
+   font-size: 13px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px; }
+pre code, pre tt {
+   background-color: transparent;
+   border: none; }
+
+sup {
+   font-size: 0.83em;
+   vertical-align: super;
+   line-height: 0;
+}
+
+div.version {
+   padding: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: #EBF5FF;
+   font-style: italic;
+}
+
+div.version:first-of-type {
+   background-color: #f8f8f8;
+   font-style: normal;
+}
+
+* {
+     -webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+   body {
+      width: 854px;
+      margin:0 auto;
+   }
+}
+@media print {
+     table, pre {
+          page-break-inside: avoid;
+     }
+     pre {
+          word-wrap: break-word;
+     }
+}
+</style>
+</head>
+
+<body>
+  <h1>Lumin SDK Release Notes</h1>
+  <p>This document contains the Lumin SDK release notes including the notes for
+    the core SDK, Unity&reg; integration, and Unreal Engine integration.</p>
+<div class='version'>
+  <meta charset="UTF-8">
+  <h1><strong>Lumin SDK 0.24.1</strong></h1>
+
+  <ul>
+    <li>Lumin OS 0.98.10</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+
+  <h2><strong>C API</strong></h2>
+
+  <h3><strong>New Features</strong></h3>
+
+  <ul>
+    <li>NOTE: 0.24.1 is a patch fix for Unity's spatial audio MSA plug-in and to mark C API Found Objects API as experimental. Lumin SDK 0.24.0 and 0.24.1 are otherwise identical for other platform areas.<li>
+    <li><b>Bluetooth Low Energy</b>: Introduces BLE client APIs</li>
+    <ul>
+      <li>BLE client app can scan for a BLE peripherals .Get remote RSSI, name, and other device specific information.</li>
+      <li>Connect to GATT server and discover GATT service record from the server.</li>
+      <li>Enable/disable notifications and indications from peripheral devices.</li>
+      <li>Get the state of local Bluetooth adapter (Bluetooth ON/OFF state).</li>
+      <li>Create Bond with peripheral device for an authenticated and encrypted communication between the devices.</li>
+    </ul>
+    <li><b>MLAppConnect</b>: Enables application to get the avatar settings, asset data (meshes, materials, textures), animation data, and material properties (e.g. model opacity, current hair color) from the Avatar Engine so that the Avatar model can be created and rendered from within the Application. Note: This API is meant to be used via other higher level rendering engines. Support for Unity and Unreal engines will be available in future releases.</li>
+    <li><b>MLAvatar</b>: Enables application to get the avatar settings, asset data (meshed, materials, textures), material properties (e.g. model opacity, current hair color) from the Avatar Engine so that the Avatar model can be rendered from within the Application. Note: This meant to be used via other higher level rendering engines. Support for Unity and Unreal engines will be available in the future release.</li>
+    <li><b>MLDCA</b>: Enables an ML1 app to subscribe to platform services for file modifications and create networking resources on behalf of a desktop application. This allows for applications on the desktop to be created that can communicate with certain ML1 platform services.</li>
+    <li><b>MLFoundObject</b>: Enables application to query for objects in the real world. The following 5 object categories will be supported in this release: couch, chair, table, poster, and screen. Each found object will have an associated bounding box and score. This is an experimental feature.</li>
+    <li><b>MLArucoTracker</b>: Enables applications to track square fiducial markers (also known as Augmented Reality Markers). It allows for rendering virtual content in relation to the location of Aruco markers that can be attached to flat surfaces.</li>
+    <li><b>MLMediaCea708</b>: Enables application to support CEA708 close captions. The parsed data is provided via asynchronous APIs and is in UTF-8 format.</li>
+    <li><b>Media Player Sharing</b>: Applications can share the media player across different users.</li>
+    <ul>
+      <li>MLMediaPlayerSetSharingInfo and MLMediaPlayerSetID APIs will setup the sharing experience.</li>
+      <li>on_info callback will provide notifications when the shared media players starts, stops, pauses, or seeks.</li>
+    </ul>
+  </ul>
+
+  <h3><strong>Updates to existing features</strong></h3>
+
+  <ul>
+    <li><b>MLAudio</b>:</li>
+    <ul>
+      <li>Added a polling and callback API to notify when the output mute has changed.</li>
+      <li>Added a callback API to notify when the output device has changed.</li>
+      <li>Added support for 6-channel audio to MLAudioCreateSoundWithBufferedOutput.</li>
+      <li>Added support for 24-bit integer and 32-bit integer/float to MLAudioCreateSound(orResource)WithLoaded(orStreamed)File.</li>
+    </ul>
+    <li><b>MLConnection</b>:</li>
+    <ul>
+      <li>Added an API to get the current user's followers, followed, and mutual connections. The returned structure will include the connection's name and personalization settings (which can be used with the MLAvatar API).</li>
+      <li>Added an API to deliver the status of each user invited via the MLConnections API. The status can be one of the following: Processing, Dispatched, Delivered, Failed.</li>
+      <li>Added an API for the initiator to start a session by generating a join-code. Other users can then use this join-code to join the same session. Invitations based on join by code do not provide status of the participants in the session.</li>
+    </ul>
+    <li><b>MLContacts</b>:</li>
+    <ul>
+      <li>MLContactsCancelRequest will now return MLResult_Ok on success instead of MLContactsResult_Cancelled.</li>
+      <li>Several MLContact APIs will provide additional return values.</li>
+      <li>Versions of several MLContacts structures were incremented.</li>
+    </ul>
+    <li><b>MLDispatch</b>:</li>
+    <ul>
+      <li>Added a new MLDispatch OAuth API MLDispatchOAuthOpenWindowEx, this replaces MLDispatchOAuthOpenWindow. With this new API applications can disallow http urls.</li>
+      <li>Added a new MLDispatch OAuth API, MLDispatchOAuthRegisterSchemaEx, to register for a callback that also provides a context pointer in the callback.</li>
+    </ul>
+    <li><b>MLInput</b>:</li>
+    <ul>
+      <li>MLInput APIs provide more granular API specific MLInputResult.</li>
+      <li>on_touchpad_gesture_start callback was renamed by on_touchpad_gesture callback. The older MLInputControllerCallbacks and MLInputSetControllerCallbacks are deprecated and replaced by MLInputControllerCallbacksEx and MLInputSetControllerCallbacksEx.</li>
+    </ul>
+    <li><b>Multi Media</b>:</li>
+    <ul>
+      <li>Added a new callback, on_frame_packing, to provide frame packing information.</li>
+      <li>Added a new API, MLMediaPlayerGetMetrics, to get metrics for the current media player. It provides average frame rate, average video bit rate, and average audio bit rate. This is only supported for DASH streams.</li>
+      <li>The on_info callback has additional events for state transitions when the media player started, stopped, paused, or resumed.</li>
+      <li>CEA608 Closed Caption now supports UTF-16 encoding via synchronous and asynchronous mechanism.</li>
+      <ul>
+        <li>MLMediaCCParserGetDisplayableEx is the new is synchronous API that returns the parse dayta in UTF-16 format. The older MLMediaCCParserGetDisplayable API is deprecated.</li>
+        <li>MLMediaCCParserParse is an asynchronous API which will return the parsed data via the MLMediaCCParserDisplayChangedCallback, which can be set using MLMediaCCParserSetDisplayChangedCallback.</li>
+      </ul>
+      <li>Added an API, MLMediaPlayerResetAsync, to reset the media player asynchronously. The result of the operation will be delivered via the on_reset_complete callback.</li>
+      <li>MLMusicService has an additional return code.</li>
+    </ul>
+    <li><b>MLSnapshot</b>: Added MLSnapshotGetTransformWithDerivatives to get the pose derivatives (i.e. linear and angular velocity and acceleration) of the Control. Getting pose derivatives for other trackers is currently not supported.</li>
+    <li><b>MLPersistentCoordnateFrames</b>: Added MLPersistentCoordinateFrameQuery API to submit a query filter for fetching PCFs. PCFs can now be filtered based on type and distance from a given point.</li>
+    <li><b>MLPrivileges</b>: API privileges are now available as a json file for convenience.</li>
+  </ul>
+
+  <h3><strong>Deprecation Notice</strong></h3>
+
+  <ul>
+    <li><b>MLDispatch</b></li>
+    <ul>
+      <li>ml_dispatch_oauth_schema_handler is deprecated and replaced by MLDispatchOAuthCallbacks.</li>
+      <li>MLDispatchOAuthRegisterSchema is deprecated and replaced by MLDispatchOAuthRegisterSchemaEx.</li>
+      <li>MLDispatchOAuthOpenWindow is deprecated and replaced by MLDispatchOAuthOpenWindowEx.</li>
+    </ul>
+    <li><b>MLInput</b>:</li>
+    <ul>
+      <li>MLInputControllerCallbacks deprecated and replaced be MLInputControllerCallbacksEx.</li>
+      <li>MLInputSetControllerCallbacks deprecated and replaced be MLInputSetControllerCallbacksEx.</li>
+    </ul>
+    <li><b>Multi Media</b>:</li>
+    <ul>
+      <li>MLMediaCCParserGetDisplayable deprecated and replaced by MLMediaCCParserGetDisplayableEx.</li>
+      <li>MLCea608CaptionLine deprecated and replaced by MLCea608CaptionLineEx.</li>
+      <li>MLCea608CaptionSegment deprecated and replaced by MLCea608CaptionSegmentEx.</li>
+    </ul>
+    <li><b>MLAudio</b>: APIs used for controlling frequencies for spatialization is deprecated, here is the list of the APIs: MLAudioSpatialSoundControlFrequencies, MLAudioSetSpatialSoundControlFrequencies, MLAudioGetSpatialSoundControlFrequencies.</li>
+  </ul>
+
+  <h3><strong>Known Issues</strong></h3>
+
+  <ul>
+    <li>MLAppConnectDataPipePropertiesInit and MLAppConnectVideoPipePropertiesInit incorrectly set the pipe direction to MLAppConnectPipeDirection_BiDirectional, it should be set to MLAppConnectPipeDirection_UniDirectionalOut.</li>
+    <li>MLFoundObject API documentation mentions sofa as one of categories. But the actual label returned by the API is couch.</li>
+  </ul>
+
+  <h3><strong>Notes</strong></h3>
+
+  <ul>
+    <li>Object Recognition is using the RGB Camera for 5 seconds every 25 seconds which will prevent Ambient Light System (ALS) from running in those 5 seconds. Also, if the application attempt to open the camera during the 5 seconds it will fail.</li>
+    <li>Use of the Applications Connectivity Platform API is currently provided free of charge, however Magic Leap reserves the right to charge for use of the ACP API in the future. Consumption of a disproportionate amount of available API network resources resulting in the potential to disrupt or degrade ACP usage by others is prohibited.</li>
+    <li>MLAvatar API is meant to be used via other higher level rendering engines. Support for Unity and Unreal engines will be available in the future release.</li>
+    <li>Object Recognition API is experimental.</li>
+  </ul>
+
+  <h2><strong>Dev Tools</strong></h2>
+
+  <h3><strong>Bug Fixes</strong></h3>
+
+  <ul>
+    <li>mabu: Fixed bug in cmake toolchain generation where user-provided flags were not separated from generated flags, causing build-time errors.</li>
+    <li>mabu: Fixed bug not ignoring "package/validateManifest/off" option properly.</li>
+    <li>mabu: Fixed bug where manifest validation warnings and errors were reported twice.</li>
+  </ul>
+
+  <h2><strong>mldb</strong></h2>
+
+  <h3><strong>Features</strong></h3>
+
+  <ul>
+    <li>new 'ping-response' command makes the device respond to ping requests (ICMP echo). For security reasons, the device does not respond to pings by default. You can now make it respond during the current boot session with this command.</li>
+  </ul>
+
+  <h3><strong>Bug Fixes</strong></h3>
+
+  <ul>
+    <li>When an application launch fails due to a missing library, "mldb log" output now contains the name of the missing library. More generally, all logging by libc in debuggable applications now shows up in 'mldb log'.</li>
+    <li>Server process no longer crashes when unplugging a device.</li>
+    <li>Some filesystem commands failed if the given path(s) didn't contain a leading forward slash. The slash is implicit and thus meant to be optional. For some commands, that wasn't the case.</li>
+    <li>Fixed regression in SDK 0.23 mldb server that prevented multiple simultaneous device connections over TCP/IP. Make sure to do 'mldb kill-server' to start use the new (0.24) server.</li>
+    <li>Fixed macOS mldb's inability to have more than four commands running in parallel.</li>
+    <li>Fixed process leak in 'notify' command.</li>
+  </ul>
+
+</div>
+<div class='version'>
+
+    <h1><strong>Lumin Runtime SDK 0.24.1</strong></h1>
+
+    <ul>
+        <li>Lumin OS 0.98.10</li>
+    </ul>
+
+    <p>Lumin Runtime is a declarative application framework that enables you to author both Landscape and Immersive apps. Landscape apps can run and render simultaneously with other Landscape apps and are contained in a volume called a Prism. Immersive apps suspend all other apps and can utilize your entire space. Lumin Runtime relies on a client/server model to render multiple client applications within the real world. It facilitates application sharing out of the box, allowing application developers to collaborate with multiple users.</p>
+
+    <p>The Lumin Runtime SDK adds support for creating Lumin Runtime applications to the Magic Leap Lumin SDK, including APIs, examples and build support.</p>
+
+</div>
+<div class='version'>
+
+    <h1><strong>Lumin Runtime Editor 0.24.1</strong></h1>
+
+    <p>The Lumin Runtime Editor tool provides you with comprehensive features for building scene graphs for your Lumin Runtime Landscape application. The editor  includes line, quad, text, model, and transform nodes with which you can arrange the graphical content of your app. All of the ready-made, animated, 3D UI elements from the Magic Leap UI Kit are also available as node types. These predefined UI nodes and properties enable you to rapidly design and develop apps that share the same design sense as other Lumin Runtime applications.</p>
+
+    <h2><strong>Features</strong></h2>
+
+    <ul>
+      <li>MagicScript Components</li>
+      <ul>
+	      <li>Initial editor support for MagicScript components.</li>
+	      <li>Visual Editing of scenes.</li>
+	      <li>Project sources generated.</li>
+	      <li>JSX for scenes dynamically updated as user edits.</li>
+	      <li>Event handlers can be added.</li>
+	      <li>Build support targets device, ZI, and mobile platforms.</li>
+	      <li>Video resources supported for video component.</li>
+      </ul>
+      <li>Prefabs</li>
+      <ul>
+	      <li>Supported for both Lumin RT (c++) and MagicScript.</li>
+	      <li>Reusable sub-scenes that can be added to scenes via the editor.</li>
+	      <li>Source generated allows user to spawn prefab instances dynamically.</li>
+	      <li>Properties of sub-nodes can be exposed via the prefab root node.</li>
+      </ul>
+    </ul>
+
+	<h2><strong>Known Issues</strong></h2>
+
+   	 <ul>
+		<li>VS2017 and VSCode fails to build a LRE project with a handler. The user must define their handlers to build successfully.</li>
+		<li>MagicScript projects created using the editor will have a 'resources' dir that comes from the default MagicScript template, but the editor will put assets into the 'pipeline' dir when added to the asset library. Developers may still use the included 'resources' dir for their own purposes as this will be copied into the application.</li>
+		<li>Quad component creation is disabled on MagicScript projects.</li>
+		<li>Code generation for MagicScript projects may fail on windows for large or multiple scenes.</li>
+		<li>Prefabs in MagicScript projects containing components with the external property selected will run into issues when adding handlers, or when adding the prefab to another scene. As a workaround, make properties public instead of making the entire component or prefab external.</li>
+	 </ul>
+</div>
+<div class='version'>
+  <h1><strong>Unity&reg; Package 0.24.1</strong></h1>
+
+  <ul>
+    <li>Lumin SDK Version 0.24.1</li>
+    <li>Unity&reg; Version: 2019.3</li>
+    <li>Lumin OS 0.98.10</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+  <h2><strong>Important Notes</strong></h2>
+
+  <ul>
+    <li>NOTE: 0.24.1 is a patch fix for Unity's spatial audio MSA plug-in and to mark C API Found Objects API as experimental. Lumin SDK 0.24.0 and 0.24.1 are otherwise identical for other platform areas.<li>
+    <li>A major refactor and optimization effort has caused many enums, classes, and structs to be rescoped. A detailed list of changes is in the Deprecation Notices section below.</li>
+    <li>The Magic Leap Unity plugin source is now available in github. https://github.com/MagicLeap/MagicLeapUnitySDK/</li>
+    <li>Non-serializable API code targeting Lumin only is wrapped with #if PLATFORM_LUMIN which will allow developers to build against other platforms.</li>
+    <li>The previous MLResult.Code has been renamed to MLResult.Result. MLResult.Code is now the enum of all possible results.</li>
+    <li>It is required to start Zero Iteration before importing the support libraries (MagicLeap > MLRemote > Import Support Libraries).</li>
+    <li>Please note that Object Recognition API and 5.1 channel support is experimental.</li>
+  </ul>
+
+  <h2><strong>Features</strong></h2>
+
+  <ul>
+    <li>Official support for Unity editor version 2019.3 (Tested against Magic Leap XR Plugin version 4.0.7-preview.1).</li>
+    <li>All examples have been refactored with a common UI, consistent layout, helper scripts (StarterKit) and functionality improvements.</li>
+    <li>New example for virtual keyboard included.</li>
+    <li>Added new MLAppConnect API for content sharing.</li>
+    <li>Added new MLFoundObjects API for object recognition.</li>
+    <li>Added new MLBluetoothLE API for Bluetooth Low Energy (BLE) support.</li>
+    <li>Updated MLEyes API to retrieve gaze for left and right eyes.</li>
+    <li>Updated MLDispatch to include OAuth support.</li>
+    <li>Updated MLPersistentCoordinateFrames API to include PCF type.</li>
+    <li>Updated MLConnections API to include acknowledgement and selection functionality.</li>
+    <li>Updated MLMediaPlayer API to expose power state transitions.</li>
+    <li>Updated MLMediaPlayer API to include CEA-708 support.</li>
+    <li>Updated MLMediaPlayer API to include media synchronization support.</li>
+    <li>Updated MLMediaPlayer API to support AC3 5.1 audio for DASH media streams.</li>
+  </ul>
+
+  <h2><strong>Bug fixes</strong></h2>
+
+  <ul>
+    <li>AudioCapture example audio crackling issue has been fixed.</li>
+  </ul>
+
+  <h2><strong>Known Issues</strong></h2>
+
+  <ul>
+    <li>MLAppConnect API OnPipeEvent is not triggered for MicAudioPipe.</li>
+    <li>Running Device Stream while MLCamera is started will cause MLCamera to lose connection.</li>
+  </ul>
+
+  <h2><strong>Deprecation Notices</strong></h2>
+
+  <ul>
+    <li>MLMediaPlayer.Cea608CaptionLine.DisplayChars has been marked deprecated and replaced with DisplayString.</li>
+    <li>MLResult.Code.NotCompatible is marked deprecated and is replaced with NotImplemented.</li>
+    <li>MLCameraMetadataControlAWBMode, MLCameraMetadataControlAWBLock, MLCameraMetadataColorCorrectionMode, MLCameraMetadataControlAEAntibandingMode, MLCameraMetadataScalerAvailableFormats, MLCameraMetadataScalerAvailableStreamConfigurations, MLCameraMetadataControlAEState, MLCameraMetadataControlAWBState, MLCameraPlaneInfo, MLCameraOutput, YUVBuffer, YUVFrameInfo, MLCameraResultExtras, MLCameraFrameMetadata, MLCameraColorCorrectionTransform, MLCameraColorCorrectionGains, MLCameraControlAETargetFPSRange, and MLCameraScalerCropRegion enums and structs are deprecated and have been rescoped to be under MLCamera.</li>
+    <li>MLConnectionsInviteeFilter is deprecated and replaced with MLConnections.InviteeFilter.</li>
+    <li>MLContacts.DEFAULT_FETCH_LIMIT is deprecated and replaced with MLContacts.DefaultFetchLimit.</li>
+    <li>MLContentBindingType, MLContentBinding, MLContentBindings, and MLContentBinder are deprecated and replaced with IMLPCFBinding to create bindings instead, see TransformBinding.cs in the Unity Package provided.</li>
+    <li>MLHand is deprecated and replaced with MLHandTracking.Hand.</li>
+    <li>MLHandMesh and MLHandMeshBlock are deprecated and replaced with MLHandMeshing.Meshing.Mesh and MLHandMeshing.Meshing.Mesh.Block.</li>
+    <li>MLHands is deprecated and replaced with MLHandTracking.</li>
+    <li>MLHandKeyPose, MLKeyPointFilterLevel, MLPoseFilterLevel, and MLHandType are deprecated and rescoped underneath MLHandTracking.</li>
+    <li>MLImageTrackerImageFormat and MLImageTargetTrackingStatus are deprecated and replaced with MLImageTracker.ImageFormat and MLImageTracker.Target.TrackingStatus.</li>
+    <li>MLInputControllerTouchpadGestureState, MLInputControllerTouchpadGestureType, MLInputControllerButton, MLInputControllerType, MLInputControllerTouchpadGestureDirection, MLInputControllerFeedbackPatternLED, MLInputControllerFeedbackEffectLED, MLInputControllerFeedbackColorLED, MLInputControllerFeedbackEffectSpeedLED, MLInputControllerFeedbackPatternVibe, and MLInputControllerFeedbackIntensity are deprecated and have bene rescoped to be under MLInput.Controller.</li>
+    <li>MLInputTabletDeviceStateMask is deprecated and replaced with MLInput.TabletDeviceStateMask.</li>
+    <li>MLKeyPoint is deprecated and replaced with MLHandTracking.KeyPoint.</li>
+    <li>MLKeyPoseManager is deprecated and replaced with MLHandTracking.KeyposeManager.</li>
+    <li>MLLightingTracker and MLLightingTrackingCamera are deprecated and replaced with MLLightingTracking and MLLightingTracking.Camera.</li>
+    <li>MLLocalization is deprecated and replaced with MLLocale.</li>
+    <li>MLLocationData is deprecated and replaced with MLLocation.Location.</li>
+    <li>MLMediaPlayer.OnSubtitleDataFound has been deprecated and replaced with MLMediaPlayer.OnSubtitle608DataFound.</li>
+    <li>MLMediaPlayerInfo, MLMediaDRMKeyType, MLMediaDRMTrack, MLMediaPlayerTrackType, MLCea608CaptionColor, MLCea608CaptionStyle, MLCea608CaptionDimension, TrackData, MediaPlayerTracks, MLCea608CaptionStyleColor, MLCea608CaptionPAC, MLCea608CaptionLineInternal, MLCea608CaptionSegmentInternal, MLCea608CaptionLine, and MLCea608CaptionSegment are deprecated and have bene rescoped to be under MLMediaPlayer.</li>
+    <li>MLMovementSettings, MLMovement3DofControls, MLMovement6DofControls, MLMovementObject, MLMovement3DofSettings, and MLMovement6DofSettings are deprecated and rescoped to be under MLMovement.</li>
+    <li>MLNetworkingWifiData is deprecated and replaced with MLNetworking.WifiData.</li>
+    <li>MLPCF is deprecated and replaced with MLPersistentCoordinateFrames.PCF.</li>
+    <li>MLPCF.Orientation is deprecated and replaced with MLPersistentCoordinateFrames.PCF.Rotation.</li>
+    <li>MLPersistentCoordinateFrames.DelayBetweenAllPCFsQueryInSeconds and StartTimeOutInSeconds are depreated and scheduled for removal.</li>
+    <li>MLPersistentCoordinateFrames.IsReady, OnInitialized, and GetAllPCFs have been deprecated and replaced with MLPersistentCoordinateFrames.IsLocalized, OnLocalized, and FindAllPCFs.</li>
+    <li>MLPersistentCoordinateFrames.GetPCFPose is deprecated. Please directly call Update() using a reference to an MLPersistentCoordinateFrames.PCF object instead.</li>
+    <li>MLPersistentStore is deprecated and replaced with MLPersistentCoordinateFrames.PCF.BindingsLocalStorage.</li>
+    <li>MLResult.ResultOk and MLResult constructors are deprecated as MLResult.Create should be used instead.</li>
+    <li>MLResultCode is deprecated and replaced with MLResult.Code.</li>
+    <li>MLThumb is deprecated and replaced with MLHandTracking.Thumb.</li>
+    <li>MLWorldPlanes is deprecated and replaced with MLPlanes.</li>
+    <li>MLWorldPlanesQueryFlags, MLWorldPlanesQueryParams, MLWorldPlane, MLWorldPlaneBoundaries, MLWorldPlaneBoundary, and MLWorldPolygon are deprecated and re-scoped to be under MLPlanes.</li>
+    <li>MLWorldRays is deprecated and replaced with MLRaycast.</li>
+    <li>MLWrist is deprecated and replaced with MLHandTracking.Wrist.</li>
+    <li>MagicLeapBitMask is deprecated and replaced with MLBitMask.</li>
+    <li>All MLGetResultString functions have been marked obsolete and replaced with MLResult.CodeToString.</li>
+    <li>MLPrivileges PwFoundObjRead and ScreensProvider are now obsolete.</li>
+    <li>MLResult.Codes ScreensServiceNotAvailable, ScreensPermissionDenied, ScreensInvalidScreenId are now obsolete.</li>
+    <li>MagicLeapDevice is immediately obsolete and replaced with MLDevice and its Head tracking items have been moved to MLHeadTracking.</li>
+    <li>MLCameraCaptureSettings is obsolete and replaced with MLCamera.CaptureSettings.</li>
+    <li>MLCameraError, MLCameraCaptureType, MLCameraOutputFormat, MLCameraDeviceStatusFlag, MLCameraCaptureStatusFlag, MLCameraMetadataControlAEMode, MLCameraMetadataColorCorrectionAberrationMode, and MLCameraMetadataControlAELock enums have been marked obsolete and rescoped to under MLCamera.</li>
+    <li>MLCameraResultSettings is obsolete and replaced with MLCamera.ResultSettings.</li>
+    <li>MLCameraSettings and SensorInfoSensitivtyRangeValues are obsolete and replaced with MLCamera.GeneralSettings and MLCamera.SensorInfoSensitivityRangeValues.</li>
+    <li>MLConnections.OnRequestComplete event is obsolete and replaced with MLConnections.OnInvitationResult.</li>
+    <li>MLConnectionsInviteStatus is obsolete and replaced with MLConnections.InviteStatus.</li>
+    <li>MLContactsOperationStatus, MLContactsSearchField, MLContactsSelectionField, MLContactsOperationResult, MLContactsListResult, MLContactsContactList, MLContactsTaggedAttribute, MLContactsTaggedAttributeList, and MLContactsContact are all obsolete and rescoped to under MLContacts.</li>
+    <li>MLContactsListPage is obsolete and replaced with MLContacts.ListPage.</li>
+    <li>MLContactsSearchPage is obsolete and replaced with MLContacts.SearchPage.</li>
+    <li>MLContactsSelectionPage is obsolete and replaced with MLContacts.SelectionPage.</li>
+    <li>MLControllerMode and MLControllerCalibAccuracy are obsolete and rescoped under MLInput.Controller.</li>
+    <li>MLDispatcher class is obsolete and replaced with MLDispatch.</li>
+    <li>MLEye and MLEyeTrackingCalibrationStatus are obsolete and replaced with  MLEyes.Eye and MLEyes.Calibration.</li>
+    <li>MLHand.KeyPoseConfidence, MLHand.KeyPoseConfidenceFiltered, MLHand.OnKeyPoseBegin, MLHand.OnKeyPoseEnd, MLHand.HandType, MLHand.BeginKeyPose, and MLHand.EndKeyPose are obsolete and are now rescoped under MLHandTracking.Hand.</li>
+    <li>MLHandMeshing.HandMeshRequestCallback and MLHandMeshing.RequestHandMesh are obsolete and replaced with MLHandMeshing.RequestHandMeshCallback and MLHandMeshing.RequestHandMesh.</li>
+    <li>MLHeadTrackingError, MLHeadTrackingMode, MLHeadTrackingMapEvent, MLHeadTrackingState, and MapEventsExtension are obsolete and have been rescoped to be under MLHeadTracking.</li>
+    <li>MLIdentityAttribute and MLIdentityProfile are obsolete and replaced with MLIdentity.Profile.Attribute and MLIdentity.Profile.</li>
+    <li>MLImageTarget and MLImageTargetResult are obsolete and replaced with MLImageTracker.Target and MLImageTracker.Target.Result.</li>
+    <li>MLImageTrackerSettings is obsolete and replaced with MLImageTracker.Settings.</li>
+    <li>MLInput.MLTabletState is obsolete and replaced with MLInput.TabletState.</li>
+    <li>MLInputConfiguration is obsolete and replaced with MLInput.Configuration.</li>
+    <li>MLInputController is obsolete and has been replaced with MLInput.Controller.</li>
+    <li>MLInputControllerTouchpadGesture is obsolete and replaced with MLInput.Controller.TouchpadGesture.</li>
+    <li>MLInputControllerDof, MLInputTabletDeviceType, MLInputTabletDeviceToolType, and MLInputTabletDeviceButton are obsolete and have been rescoped to be under MLInput.</li>
+    <li>MLMusicServiceErrorType, MLMusicServiceStatus, MLMusicServicePlaybackState, MLMusicServiceRepeatState, MLMusicServiceShuffleState, MLMusicServiceTrackType, MLMusicServiceMetadata, and MLMusicServiceError are obsolete and have been rescoped under MLMusicService.</li>
+    <li>MLPCF events OnCreate, OnUpdate, OnLost, and OnRegain are obsolete and replaced with MLPersistentCoordinateFrames.PCF.OnStatusChange.</li>
+    <li>MLPersistentCoordinateFrames.GetPCFPosition is now obsolete. Please directly call Update() using a reference to an MLPersistentCoordinateFrames.PCF object instead.</li>
+    <li>MLPrivilegeId is obsolete and replaced with MLPrivileges.Id.</li>
+    <li>MLRuntimeRequestPrivilegeId is obsolete and replaced with MLPrivileges.RuntimeRequestId.</li>
+    <li>MLScreens, MLScreensScreenInfo, and MLScreensWatchHistoryEntry are obsolete and scheduled for removal.</li>
+    <li>MLVerbosity and MLVerbosity.Level are obsolete and replaced with MLPluginLog and MLPluginLog.Level.</li>
+    <li>MLFinger.DIP, MLThumb.CMC, MLInputDevice.ChangedThisFrame, MLMusicService.GetMetaData(MLMusicServiceTrackType trackType, ref MLMusicServiceMetadata metadata), MLHandKeyPose.OpenHandBack, MLPrivilegeId.Occlusion, and MLPrivilegeId.AudioRecognizer have been fully removed.</li>
+  </ul>
+</div>
+<div class='version'>
+
+  <h1><strong>Unreal Package 0.24.1</strong></h1>
+  <ul>
+    <li>Lumin SDK Version 0.24.1</li>
+    <li>Unreal Version: Unreal Engine compatible with Lumin SDK 0.24.1</li>
+    <li>Lumin OS 0.98.10</li>
+  </ul>
+
+  <p>Magic Leap's hardware and software is in a qualified developer release state right now. Some features or functionality of the Magic Leap hardware or software may not be available, may contain bugs or other defects, and/or may experience delays or failures. Please take a close look at this document since it contains valuable guidance on the current state of Magic Leap's hardware and software to help developers make the best possible use of the platform during our pre-release period. Want to know more? Head to the forums on our developer portal for more guidance.</p>
+
+  <h2><strong>Features</strong></h2>
+
+  <ul>
+    <li>NOTE: 0.24.1 is a patch fix for Unity's spatial audio MSA plug-in and to mark C API Found Objects API as experimental. Lumin SDK 0.24.0 and 0.24.1 are otherwise identical for other platform areas.<li>
+    <li>0.24.1 release is based on Unreal Engine 4.24.2.</li>
+    <li>Events for audio muted / unmuted by system have been exposed via the engine's AudioMuteDelegate.</li>
+    <li>Events for audio ducked / unducked by system have been exposed via the engine's UserMusicInterruptDelegate.</li>
+    <li>Exposed functions to get and set mic mute state.</li>
+    <li>Exposed CV camera API as a module of the MagicLeapCamera plugin. Access to the camera intrinsics, pose and texture frames (YUV_420 format only) is available via a BP function library (for more granular control) as well as a component (automatic tracker lifecycle management).</li>
+    <li>Exposed graphics performance numbers provided by the platform via UMagicLeapHMDFunctionLibrary::GetGraphicsClientPerformanceInfo() function.</li>
+    <li>Added ability for developers to set thread affinities by adding appropriate CVars to the Lumin / Lumin_Desktop device profiles or in ConsoleVariables.ini. The CVar lumin.DefaultThreadAffinity sets the thread affinity for Lumin platform with the arguments [MainGame|Rendering|RTHeartBeat|RHI|Pool|TaskGraph|TaskGraphBG|Audio] [int affinity] [optional int affinity2] [optional int affinity3]. e.g. lumin.DefaultThreadAffinity=MainGame 3 4 Rendering 2.</li>
+    <li>Exposed events in LuminLifecycleApplicationComponent to notify app when input focus is lost or regained.</li>
+    <li>Reduced app load out time by optimizing audio buffer flush during app termination.</li>
+    <li>Exposed BP function to check if the Control is being held in a given hand.</li>
+    <li>Exposed BP functions to get current API level of the platform and the minimum API level required by the engine.</li>
+    <li>LAN privilege is requested automatically if app is launched with an IP address in the command-line.</li>
+    <li>Oauth API has been exposed via the MagicLeapDispatch plugin. Triggering an OAuth request will launch the requested auth URL in the Helio browser.</li>
+    <li>LuminARSessionConfig has been updated to expose a FMagicLeapPlanesQuery struct directly to maintain compatibility with the MagicLeapPlanesComponent.</li>
+    <li>Added Visual Studio debugger support for Blueprint-only projects. Run GenerateProjectFiles.bat with the argument "-bponlyproject=&lt;full path to .uproject file&gt;". After that, you can open the generated UE4.sln file, switch the configuration to Lumin &amp; Developement / DebugGame etc and launch the app via the debugger.</li>
+    <li>Exposed callbacks in MagicLeapARPin interface to notify the app when pins are added, updated or deleted. When using this on Lumin, developers can set how frequently the plugin should check for updates and what magnitude of changes in pin state should mark that pin as "updated". These settings are avaialble in Project Settings &gt; Magic Leap AR Pin in the Editor.</li>
+    <li>Added a new member to the MagicLeapARPinState struct to indicate if the Pin can be shared with other devices or is local to the current device.</li>
+    <li>Added a new query function to MagicLeapARPin interface where developers can specify which type of Pins they are interested in (local vs shared) and what volume should these be searched in. This provides a lot more control to filter out the Pins an app would be interested in, reducing the amount of data an app needs to sift through. The interface also allows setting a query filter at the global level which will affect the results reported by the pins added, updated, deleted notification callback. The MagicLeapARPinComponent has also been updated to use this new query filter to search for the most appropriate Pin to bind itself to.</li>
+    <li>MagicLeapARPin interface has been updated to return "NotImplemented" instead of "Unavailable" when it is not implemented on a given platform vs the service being unavailable during that session.</li>
+    <li>Exposed light estimation via the AugmentedReality interface in addition to the already available MagicLeapLightEstimation plugin. Choose "Ambient Light Estimate" in the AR session config to enable light estimation tracking.</li>
+    <li>Exposed image tracking via the AugmentedReality interface in addition to the already available MagicLeapImageTrackerComponent.</li>
+    <li>Updated planes integration in the AugmentedReality interface implementation for Lumin to set "SubsumedByPlane" property to indicate which outer plane a given inner plane belongs to.</li>
+    <li>Updates planes integration in the AugmentedReality interface implementation for Lumin to use delta based queries for a more efficient measure of tracking planes.</li>
+    <li>Magic Leap plugins are now built for iOS as well. While none of the features will be available to use on iOS, having the plugins enabled in your projects will no longer cause building and packaging to fail for either platform.</li>
+    <li>Provide PinToBestFit(), PinToID() and PinToRestoredOrSyncedID() functions in MagicLeapARPinComponent to make it more explicit which PCF will be used for persistence.</li>
+    <li>Expose ObjectUID and UserIndex properties of MagicLeapARPinComponent on spawn i.e. they'll appear in the AddMagicLeapARPinComponent() BP function. This is done to fix the issue where spawning this component at runtime always failed to restore data because BeginPlay() was called before app could set these params. Additionally, made the function UMagicLeapARPinComponent::AttemptPinDataRestoration() public so devs can call it after they set the required ObjectUID.</li>
+  </ul>
+
+  <h2><strong>Deprecation Notices</strong></h2>
+
+  <ul>
+    <li>The MagicLeapScreens plugin deprecated in the last release has been removed from the engine. As a consequence, the ScreensProvider privilege, the IsScreensApp option in ProjectSettings, the "Screens" & "ScreensImmersive" component types have also been removed.</li>
+    <li>We missed adding the 'MagicLeap' prefix to the MeshTrackerComponent in the previous release. This has been amended now and the MeshTrackerComponent has been renamed to MagicLeapMeshTrackerComponent. Note that this does not require changes in any of the existing Blueprints as appropriate redirectors have been put in place. C++ usage of this, however, would need to be updated. Please refer to Unreal Engine API Reference on https://developer.magicleap.com/learn/reference/public/v0.23.0/UnrealAPI/index.html for the complete list of data types.</li>
+    <li>Deprecate PinSceneComponent() and PinActor() in MagicLeapARPinComponent and make them work only to pin the self component or the owner actor only. This is important because if we use these functions to pin some random component or actor, we cannot guarantee its restoration and thus persistence because the pinned reference will not mean anything in the next session.</li>
+  </ul>
+
+  <h2><strong>Bug Fixes</strong></h2>
+
+  <ul>
+    <li>Any project created with UE 4.23 has the setting r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange=True in their DefaultEngine.ini. This setting breaks rendering on Vulkan Mobile path on 4.24 and should be removed.</li>
+    <li>Fixed issue where audio, animations etc would desync from the game when headpose was lost.</li>
+    <li>Fixed hand tracking states not clearing out on consecutive VRPreview launches.</li>
+    <li>Fixed issue where image targets added for image tracking were not deleted when exiting VRPreview.</li>
+    <li>Fixed error destroying input tracking when exiting VRPreview.</li>
+    <li>Fixed issue where next LaunchOn would fail if app is uninstalled outside of the Unreal environment.</li>
+    <li>Fixed issues in destruction of ARPin (PCF) tracker.</li>
+    <li>Fixed bug where symbol stripping would fail for BP-only projects on Mac.</li>
+    <li>Fixed bug where performing any UBT or UAT operations on Mac would fail if MonoFramework is not already installed on the machine.</li>
+    <li>Fixed cook warnings caused by uninitialized data members in the FMagicLeapPlanesQuery struct.</li>
+    <li>Fixed errors in Put/GetSecureArray() functions that caused builds to fail when Blueprint nativization was enabled.</li>
+    <li>Multiple entries for DOF quality were present in the Lumin_Desktop device profile which caused confusion about the default setting. Removed both entries and inherited the value from the parent device profile which disabled DOF by default.</li>
+    <li>Fixed a bug where async versions of the MagicLeapLocation functions were not appearing in the Blueprints.</li>
+    <li>Fixed bug in MagicLeapDispatch module which added the requirement for including the MLSDK module as an additional dependency.</li>
+    <li>r.TranslucentLightingVolume has been re-enabled in the Lumin_Desktop device profile as disabling it was found to be causing an additional 0.4ms on the GPU whereas keeping it enabled and not using translucent lighting volumes in your scene caused so additional cost.</li>
+    <li>Visual Studio debugger used to archive the generated mpk at an odd location, outside of the project folder. Since the debugger picks up the mpk from the project's Binaries folder anyways, this archiving step has been removed when packaging an mpk from within VS.</li>
+    <li>Fixed a bug where the new OpenHand gesture event was never fired and the deprecated OpenHandBack event was still getting reported instead. Note that after this fix OpenHandBack will not be fired and apps will need to replace the deprecated event with the OpenHand event.</li>
+    <li>Fixed log spam of "unspecified failures" from ML function calls when attempting to join a server by passing an IP address in the mldb launch command line. The errors were harmless but no one likes to look at them.</li>
+    <li>Fixed linker errors when using ML plugin data types in C++.</li>
+    <li>Fixed a crash in the editor occurring when "Enable Zero Iteration" was checked in the Project Settings but ZI wasn't actually running.</li>
+    <li>Fixed hand mesh render flickering.</li>
+    <li>Fixed normal calculation for hand mesh.</li>
+    <li>Fixed a bug present in vanilla 4.24 where updating the Magic Leap SDK path in the Project Settings doesn't take effect until the editor is restarted.</li>
+    <li>Fixed planes not working on consecutive VRPReview launches when using the AugmentedReality interface.</li>
+    <li>Fixed MRMesh flickering when using the desktop renderer on UE 4.24.</li>
+    <li>Fixed crashes when starting device stream while the app is actively using the camera.</li>
+    <li>Fixed content persistence when bShouldPinActor in MagicLeapARPinComponent is true.</li>
+  </ul>
+
+</div>
+
+</body>
+</html>

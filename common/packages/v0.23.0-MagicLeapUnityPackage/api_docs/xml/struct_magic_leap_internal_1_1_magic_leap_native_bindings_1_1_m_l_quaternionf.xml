@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a721469c871dd756c81a9a6dda50a051e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.MagicLeapNativeBindings.MLQuaternionf.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="717" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a826b4b5606d2b0df66b6b12f0d29c220" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.MagicLeapNativeBindings.MLQuaternionf.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="718" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1aaa0bcd93f68b7b73117ffa2dc5566d13" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.MagicLeapNativeBindings.MLQuaternionf.z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="719" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a84fdfa70d6b5ee4306a8db8746e9155d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MagicLeapInternal.MagicLeapNativeBindings.MLQuaternionf.w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="720" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a446f451d0e22a7250b6afd0db9f079e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>static MLQuaternionf MagicLeapInternal.MagicLeapNativeBindings.MLQuaternionf.Identity</definition>
+        <argsstring>()</argsstring>
+        <name>Identity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="722" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="722" bodyend="733"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Quaternion in native format. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="716" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="715" bodyend="734"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a446f451d0e22a7250b6afd0db9f079e8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</scope><name>Identity</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a84fdfa70d6b5ee4306a8db8746e9155d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</scope><name>w</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a721469c871dd756c81a9a6dda50a051e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</scope><name>x</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1a826b4b5606d2b0df66b6b12f0d29c220" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</scope><name>y</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf_1aaa0bcd93f68b7b73117ffa2dc5566d13" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLQuaternionf</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

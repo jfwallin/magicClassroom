@@ -1,0 +1,4 @@
+# Do not generate archives using zip64 extensions.
+# (This limits the number of files, individual file size, or total archive size to 2 gigs --
+# yes, signed numbers were the norm in early DOS days)
+PKGFLAGS = zip64=0

@@ -1,0 +1,10 @@
+#
+# Set the expected character set of source/header files.
+#
+CFLAGS.gcc=-finput-charset=utf-8
+CXXFLAGS.gcc=-finput-charset=utf-8
+
+# clang uses utf-8 by default
+
+CFLAGS.msvc=-utf-8
+CXXFLAGS.msvc=-utf-8

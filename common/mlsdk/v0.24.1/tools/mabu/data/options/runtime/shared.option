@@ -1,0 +1,5 @@
+
+CFLAGS.debug_msvc=-MDd
+CFLAGS.release_msvc=-MD
+CXXFLAGS.debug_msvc=-MDd
+CXXFLAGS.release_msvc=-MD

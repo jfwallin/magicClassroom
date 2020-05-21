@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_settings" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMovement6DofSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_settings_1a7522f77b2bf9a3caa28f087272bb6cdf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLMovement6DofSettings.AutoCenter</definition>
+        <argsstring></argsstring>
+        <name>AutoCenter</name>
+        <briefdescription>
+<para>If the object should automatically center on the control direction when beginning movement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="253" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>6DoF specific movement settings that must be provided when starting a 6DoF movement session. </para>    </briefdescription>
+    <detaileddescription>
+<para>A 6DoF movement session relies on both the position and orientation of the user&apos;s pointing device when moving the target object. </para>    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="249" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="248" bodyend="254"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_settings_1a7522f77b2bf9a3caa28f087272bb6cdf" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMovement6DofSettings</scope><name>AutoCenter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

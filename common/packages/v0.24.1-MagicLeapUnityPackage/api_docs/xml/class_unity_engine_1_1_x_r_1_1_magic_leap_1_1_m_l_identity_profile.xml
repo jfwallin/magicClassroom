@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLIdentityProfile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <briefdescription>
+<para>Public represenation of <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile" kindref="compound">MLIdentityProfile</ref>. <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile" kindref="compound">MLIdentityProfile</ref> represents a set of attribute of a user&apos;s profile. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="62">
+        <label>UnityEngine.XR.MagicLeap.MLIdentityProfile</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="64">
+        <label>UnityEngine.XR.MagicLeap.MLIdentityProfile</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_profile"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLIdentityProfile.cs" line="28" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLIdentityProfile.cs" bodystart="27" bodyend="29"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

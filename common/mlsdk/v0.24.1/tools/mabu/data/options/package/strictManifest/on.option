@@ -1,0 +1,3 @@
+# when package/validateManifest/on (validateManifest=true), tells
+# mabu to report errors on unrecognized attributes or elements
+PKGFLAGS = manifestStrict=true

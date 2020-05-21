@@ -1,0 +1,3 @@
+# when package/validateManifest/on (validateManifest=true), tells
+# mabu to fail for any errors detected from validation
+PKGFLAGS = manifestEnforcement=true

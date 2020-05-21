@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_utils" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMediaUtils</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_utils_1af61fef00d1815728cf69d398a7b58d90" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string UnityEngine.XR.MagicLeap.MLMediaUtils.GetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>GetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="436" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="436" bodyend="446"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="435" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="434" bodyend="447"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_utils_1af61fef00d1815728cf69d398a7b58d90" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMediaUtils</scope><name>GetResultString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1514 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLResult</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" prot="public" static="no">
+        <name>Code</name>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa60852f204ed8028c1c58808b746d115" prot="public">
+          <name>Ok</name>
+          <initializer>= (CodePrefix.MLResultGlobal &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Operation completed successfully. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2d13df6f8b5e4c5af9f87e0dc39df69d" prot="public">
+          <name>Pending</name>
+          <briefdescription>
+<para>Asynchronous operation has not completed </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac85a251cc457840f1e032f1b733e9398" prot="public">
+          <name>Timeout</name>
+          <briefdescription>
+<para>Operation has timed out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad0f2e5376298c880665077b565ffd7dd" prot="public">
+          <name>Locked</name>
+          <briefdescription>
+<para>Request to lock a shared resource that is already locked. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa1a1b7fb0fe16bc1986da7912e4af2cb" prot="public">
+          <name>UnspecifiedFailure</name>
+          <briefdescription>
+<para>Operation failed due to an unspecified internal error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ada1b358bb9ad851e211f21df8a161c3d" prot="public">
+          <name>InvalidParam</name>
+          <briefdescription>
+<para>Operation failed due to an invalid parameter being supplied. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8af5576b457e6e3048732bc8bd5eba789b" prot="public">
+          <name>AllocFailed</name>
+          <briefdescription>
+<para>Operation failed because memory failed to be allocated. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a164b2dba29192dbd44b09a58ab94234a" prot="public">
+          <name>PrivilegeDenied</name>
+          <briefdescription>
+<para>Operation failed because a required privilege has not been granted. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a997ca4ce119685f40f03a9a8a6c5346e" prot="public">
+          <name>NotImplemented</name>
+          <briefdescription>
+<para>Operation failed because it is not currently implemented. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a89d5f5b7dc4b5caf60e312317acaa3ef" prot="public">
+          <name>NotCompatible</name>
+          <initializer>= NotImplemented</initializer>
+          <briefdescription>
+<para>Functionality not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5944c19022f8e8f09a90a534e2f2a651" prot="public">
+          <name>AudioNotImplemented</name>
+          <initializer>= (CodePrefix.MLAudioResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Audio function not implemented. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac678217e9221549a9b0835a09ca53899" prot="public">
+          <name>AudioHandleNotFound</name>
+          <briefdescription>
+<para>Not a valid MLHandle for a sound or input. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a580b7af6747c5eb9402bdc442f6aaaa1" prot="public">
+          <name>AudioInvalidSampleRate</name>
+          <briefdescription>
+<para>Sample rate not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a840cea34dfc327cba76f2715d0d6f59b" prot="public">
+          <name>AudioInvalidBitsPerSample</name>
+          <briefdescription>
+<para>Bits per sample not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4908e1ce221b836f4a524f488e7df522" prot="public">
+          <name>AudioInvalidValidBits</name>
+          <briefdescription>
+<para>Valid bits per sample not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa5c7af6649e3962ab8a31f1affc35e92" prot="public">
+          <name>AudioInvalidSampleFormat</name>
+          <briefdescription>
+<para>Sample format not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aaf10bcf32be906146bc8ec9eb42307a2" prot="public">
+          <name>AudioInvalidChannelCount</name>
+          <briefdescription>
+<para>Channel count not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8af2067ddf5155e7dc47cc36e864a86558" prot="public">
+          <name>AudioInvalidBufferSize</name>
+          <briefdescription>
+<para>Buffer size too small. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab0aaa0061c4eb6c518ca8149760f6945" prot="public">
+          <name>AudioBufferNotReady</name>
+          <briefdescription>
+<para>Buffer not ready for read or write. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8dac2dafd761de0330b64d07ea2637c5" prot="public">
+          <name>AudioFileNotFound</name>
+          <briefdescription>
+<para>Specified file not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aae857bbb331d5fe325e776c8f84fe011" prot="public">
+          <name>AudioFileNotRecognized</name>
+          <briefdescription>
+<para>Specified file has unsupported format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac9471428e1c51f8aed46345d302d53f6" prot="public">
+          <name>AudioResourceNotFound</name>
+          <briefdescription>
+<para>Specified resource is not on the list. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a60020608278d99e15b41459410edf998" prot="public">
+          <name>AudioResourceDiscarded</name>
+          <briefdescription>
+<para>Data was unloaded or file was closed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac9bd7b604f99f640b25f8ec11f0fc1fb" prot="public">
+          <name>AudioOperationUnavailable</name>
+          <briefdescription>
+<para>Requested operation not possible for given item. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad4e54843fd8995b476804735e20def32" prot="public">
+          <name>AudioInternalConfigError</name>
+          <briefdescription>
+<para>Internal configuration problem was detected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab5febbae7c9467c12ca1750d56ea8ea7" prot="public">
+          <name>MediaPlayerServerDied</name>
+          <initializer>= (CodePrefix.MLMediaPlayerResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Media errors (example: Codec not supported). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a982eee84491938e9cc5b24e3f47f0c43" prot="public">
+          <name>MediaPlayerNotValidForProgressivePlayback</name>
+          <briefdescription>
+<para>Runtime errors. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac174cc235b981ede0f7307546820ba93" prot="public">
+          <name>MediaNotConnected</name>
+          <initializer>= (CodePrefix.MLMediaResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Media not connected. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a771040878bcfaad5eafffc46fa1127ab" prot="public">
+          <name>MediaUnknownHost</name>
+          <briefdescription>
+<para>Media had unknown host. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a9648db48bf855d64b5705372fc08aae9" prot="public">
+          <name>MediaCannotConnect</name>
+          <briefdescription>
+<para>Media cannot connect. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae1cef284487799cf157ffc959918d016" prot="public">
+          <name>MediaIO</name>
+          <briefdescription>
+<para>Media IO. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a314036efc11f756b61853a9459b55c19" prot="public">
+          <name>MediaConnectionLost</name>
+          <briefdescription>
+<para>Media connection was lost. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a73ab9ecdb7b8ffc1d5ce84c2868014b2" prot="public">
+          <name>MediaLegacy1</name>
+          <briefdescription>
+<para>Deprecated error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4242b1f819e8cc6153cb81a27cc79204" prot="public">
+          <name>MediaMalformed</name>
+          <briefdescription>
+<para>Media was malformed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a9648a117d53be2533fdecf70841cca87" prot="public">
+          <name>MediaOutOfRange</name>
+          <briefdescription>
+<para>Media was out of range. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4c9b4f53d809949c934449973d502b6a" prot="public">
+          <name>MediaBufferTooSmall</name>
+          <briefdescription>
+<para>Media buffer was too small. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa7917727ff62433482f31851c0f1d257" prot="public">
+          <name>MediaUnsupported</name>
+          <briefdescription>
+<para>Media not supported. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a838f5e190d77ae1d6fc3b81d800d929b" prot="public">
+          <name>MediaEndOfStream</name>
+          <briefdescription>
+<para>Media end of stream. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a9bbdf5e7089f7776b05bf379f9931c51" prot="public">
+          <name>MediaFormatChanged</name>
+          <briefdescription>
+<para>Media format changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8c109a5fd18c7826120a9ba0a2b5842c" prot="public">
+          <name>MediaDiscontinuity</name>
+          <briefdescription>
+<para>Media discontinuity. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1dbfe357b3e458c5746eae9a1576decf" prot="public">
+          <name>MediaOutputBuffersChanged</name>
+          <briefdescription>
+<para>Media output buffers changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a57307e343f0e7ea7a1ba6dc29963f9b4" prot="public">
+          <name>MediaPermissionRevoked</name>
+          <briefdescription>
+<para>Media permission revoked. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac216c1f111a85337ce0b5dc9dd89e09e" prot="public">
+          <name>MediaUnsupportedAudioFormat</name>
+          <briefdescription>
+<para>Media had an unsupported audio format. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a3cb6da65e6e72aa8c1785e461e1092a7" prot="public">
+          <name>MediaHeartbeatTerminateRequested</name>
+          <briefdescription>
+<para>Media heartbeat requested to be terminated. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aad682f0d055cbccea75bf4ef512905e7" prot="public">
+          <name>MediaDRMUnknown</name>
+          <initializer>= (CodePrefix.MLMediaDRMResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Error code for undefined type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2fb34eed849357c0a7edab917d7f73ac" prot="public">
+          <name>MediaDRMNoLicense</name>
+          <briefdescription>
+<para>Error code for no DRM license. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a99ad40c42db8faf3f53f8fb391e831de" prot="public">
+          <name>MediaDRMLicenseExpired</name>
+          <briefdescription>
+<para>Error code for DRM license expired. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a6f7ba48c084acc200f60dc7095c022e5" prot="public">
+          <name>MediaDRMSessionNotOpened</name>
+          <briefdescription>
+<para>Error code for DRM session not expired. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a89fdf4f7c00aadb0251e04d13ed321e3" prot="public">
+          <name>MediaDRMDecryptUnitNotInitialized</name>
+          <briefdescription>
+<para>Error code for DRM when decrypt unit is not initialized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aedaae0fc4f00fc1b3e75fd93ae357328" prot="public">
+          <name>MediaDRMDecrypt</name>
+          <briefdescription>
+<para>Error code for DRM when failed to decrypt data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5284b8df8f407a44f9d311114cadda54" prot="public">
+          <name>MediaDRMCannotHandle</name>
+          <briefdescription>
+<para>Error code for DRM can not handle the operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8acb528ac51fd04cd1415aad4a0e4b41a2" prot="public">
+          <name>MediaDRMTamperDetect</name>
+          <briefdescription>
+<para>Error code for DRM when data is tampered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab48467104000bb951322bd193e84422c" prot="public">
+          <name>MediaDRMNotProvisioned</name>
+          <briefdescription>
+<para>Error Code when an operation on a MLMediaDRM handle is attempted and the device does not have a certificate. The app should obtain and install a certificate using the MLMediaDRM provisioning methods then retry the operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab653ed354a91f81c86dce126beab6447" prot="public">
+          <name>MediaDRMDeviceRevoked</name>
+          <briefdescription>
+<para>Error code for Device License Revoked. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5397897afe7d59238d636876840d9244" prot="public">
+          <name>MediaDRMResourceBusy</name>
+          <briefdescription>
+<para>Error code if the MLMediaDRM operation fails when the required resources are in use. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7ba9ce5f2c5a17ed05767a6127c24e83" prot="public">
+          <name>MediaDRMInsufficientOutputProtection</name>
+          <briefdescription>
+<para>Error code for insufficient output protection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae39b21096233d2d7f0734c2f7b43a5b3" prot="public">
+          <name>MediaDRMLastUsedErrorCode</name>
+          <initializer>= MediaDRMInsufficientOutputProtection</initializer>
+          <briefdescription>
+<para>Error code for insufficient output protection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a434fb5024a4c5b47488b60c20966b699" prot="public">
+          <name>MediaDRMVendorMin</name>
+          <initializer>= (CodePrefix.MLMediaDRMResult &lt;&lt; 16) + 500</initializer>
+          <briefdescription>
+<para>Range for vendor specific DRM errors. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a0f2ff6c9c274834cfaf58a268071fe67" prot="public">
+          <name>MediaDRMVendorMax</name>
+          <initializer>= (CodePrefix.MLMediaDRMResult &lt;&lt; 16) + 999</initializer>
+          <briefdescription>
+<para>Range for vendor specific DRM errors. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab79ca23ffd84ef65a3eb51ec349057da" prot="public">
+          <name>MediaGenericInvalidOperation</name>
+          <initializer>= (CodePrefix.MLMediaGenericResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Media invalid operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac12e55b752f5a9ed74ea8bcf7f5e9011" prot="public">
+          <name>MediaGenericBadType</name>
+          <briefdescription>
+<para>Media bad type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a0b5765b08ee6c8ff95c26faf364abeb1" prot="public">
+          <name>MediaGenericNameNotFound</name>
+          <briefdescription>
+<para>Media name not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab17cdd1abd11470319ae5c07355efb21" prot="public">
+          <name>MediaGenericHandleNotFound</name>
+          <briefdescription>
+<para>Media handle not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a570dff2e4b9268a1360438da864ac346" prot="public">
+          <name>MediaGenericNoInit</name>
+          <briefdescription>
+<para>Media <computeroutput>NoInit</computeroutput>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a25cc9815e1c3f4b4e0c7643266259544" prot="public">
+          <name>MediaGenericAlreadyExists</name>
+          <briefdescription>
+<para>Media already exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8af34d8741a840d69ee2372a692173ecf3" prot="public">
+          <name>MediaGenericDeadObject</name>
+          <briefdescription>
+<para>Media dead object. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a86ed2157a969f713fbd31b5fd49d311c" prot="public">
+          <name>MediaGenericFailedTransaction</name>
+          <briefdescription>
+<para>Media had a failed transaction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5df02b381ff7932aa8217d986a6e9a30" prot="public">
+          <name>MediaGenericBadIndex</name>
+          <briefdescription>
+<para>Media had a bad index. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a6eb58b27e893de45a903fc7bc3cfe1a6" prot="public">
+          <name>MediaGenericNotEnoughData</name>
+          <briefdescription>
+<para>Media not enough data. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac2ea6b6ec915a7eba78e6263743c550d" prot="public">
+          <name>MediaGenericWouldBlock</name>
+          <briefdescription>
+<para>Media would block. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a57cda85d5880b4c631e21a702917faca" prot="public">
+          <name>MediaGenericUnknownTransaction</name>
+          <briefdescription>
+<para>Media had an unknown transaction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a0e697a48155de872143226bf9667c792" prot="public">
+          <name>MediaGenericFDSNotAllowed</name>
+          <briefdescription>
+<para>Media FDS not allowed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8abbd93ff054986da4339bf2898d463ea9" prot="public">
+          <name>MediaGenericUnexpectedNull</name>
+          <briefdescription>
+<para>Media unexpected null. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae9d93ed63a45bf2f2565c57d2c6520c2" prot="public">
+          <name>DispatchCannotStartApp</name>
+          <initializer>= (CodePrefix.MLDispatchResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Cannot start app. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aae7abf98dc6ff0c971c465b34e164b4a" prot="public">
+          <name>DispatchInvalidPacket</name>
+          <briefdescription>
+<para>Invalid packet. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2462d1bbdc2bf9de65aa8ec4e142966c" prot="public">
+          <name>DispatchNoAppFound</name>
+          <briefdescription>
+<para>No app found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a91fac84def1c260c1a5515e472b3ddfd" prot="public">
+          <name>DispatchAppPickerDialogFailure</name>
+          <briefdescription>
+<para>App packet dialog failure. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a45ae608c98d1dff994a57f4d1009ede7" prot="public">
+          <name>DispatchInvalidSchema</name>
+          <briefdescription>
+<para>Invalid Schema. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab181271d65f4c482fb835483403a6e14" prot="public">
+          <name>DispatchInvalidUrl</name>
+          <briefdescription>
+<para>Invalid Url. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5e813805ed2a1bf1fc534b6f765e89c0" prot="public">
+          <name>DispatchSchemaAlreadyRegistered</name>
+          <briefdescription>
+<para>Schema Already Registered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4a71132ec176b40bfc5314a59528c2ff" prot="public">
+          <name>IdentityFailedToConnectToLocalService</name>
+          <initializer>= (CodePrefix.MLIdentityResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The local service is not running, or it cannot be accessed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8afff46b948a21554149561dabca493b4c" prot="public">
+          <name>IdentityFailedToConnectToCloudService</name>
+          <briefdescription>
+<para>The service failed to access the cloud service. Either there is no IP connection or the cloud service is not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8abce08d6724ae139d6ee672c6a0db0d44" prot="public">
+          <name>IdentityCloudAuthentication</name>
+          <briefdescription>
+<para>The user does not have the required privileges to use the requesting service or the refresh token used by the service is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a483a8709eb9554eb8df42898b358de91" prot="public">
+          <name>IdentityInvalidInformationFromCloud</name>
+          <briefdescription>
+<para>Signature verification failed on the information returned by the cloud or a parsing error occurred. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7043fc5e59c13b8a4986adca4529f820" prot="public">
+          <name>IdentityNotLoggedIn</name>
+          <briefdescription>
+<para>The operation failed because the user is not logged in to the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aca68e69c7881799badde3875d57949e0" prot="public">
+          <name>IdentityExpiredCredentials</name>
+          <briefdescription>
+<para>The user&apos;s credentials have expired. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a0e65579ba82998fdeae2df29734919e4" prot="public">
+          <name>IdentityFailedToGetUserProfile</name>
+          <briefdescription>
+<para>Failed to retrieve attributes of the user&apos;s profile. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a295717f69d7cf73fe702b6470b40c596" prot="public">
+          <name>IdentityUnauthorized</name>
+          <briefdescription>
+<para>The cloud rejected the operation because the user is not authorized to execute it. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad945f5bb7541cba2754ccf7ffbf5cb1b" prot="public">
+          <name>IdentityCertificateError</name>
+          <briefdescription>
+<para>The device failed to authenticate the server. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad50b3d84de14209bd7a0ca8e1fa7a462" prot="public">
+          <name>IdentityRejectedByCloud</name>
+          <briefdescription>
+<para>The cloud rejected the operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2f9c977fb71eba0e8aa8e9f2645c685d" prot="public">
+          <name>IdentityAlreadyLoggedIn</name>
+          <briefdescription>
+<para>The user is already logged in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a3b132ba615d85437607e81b802a44fc3" prot="public">
+          <name>IdentityModifyIsNotSupported</name>
+          <briefdescription>
+<para>The cloud does not support modification of an attribute value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a522c9afd8d01a620cc13607d49d1bb53" prot="public">
+          <name>IdentityNetworkError</name>
+          <briefdescription>
+<para>The device is not connected to a network. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad5a147825761cd8eeb77911dca740080" prot="public">
+          <name>PassableWorldLowMapQuality</name>
+          <initializer>= (CodePrefix.MLPassableWorldResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Low map quality. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa3b2b478c395f02178f9d27770bb815d" prot="public">
+          <name>PassableWorldUnableToLocalize</name>
+          <briefdescription>
+<para>Unable to localize. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab2f964ea814dc78844bd9c51353ef36d" prot="public">
+          <name>PassableWorldServerUnavailable</name>
+          <briefdescription>
+<para>Server unavailable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8adc345150342a9b48226c4c009b2c621a" prot="public">
+          <name>PassableWorldNotFound</name>
+          <briefdescription>
+<para>Not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8af25d3620064b2bcbd03f039af0b10ede" prot="public">
+          <name>PassableWorldSharedWorldNotEnabled</name>
+          <briefdescription>
+<para>User has not enabled shared world in settings. Operation not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4d3c141eb0576c9becd55bc6f277a8a1" prot="public">
+          <name>ScreensServiceNotAvailable</name>
+          <initializer>= (CodePrefix.MLScreensResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Service was not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a18dde68fe0dd4ef50dd817608d641a99" prot="public">
+          <name>ScreensPermissionDenied</name>
+          <briefdescription>
+<para>Application does not have permission for the operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7776656f2b6b53907cf30a34932e52f5" prot="public">
+          <name>ScreensInvalidScreenId</name>
+          <briefdescription>
+<para>Invalid screen id. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a267718d10ac6f3f4faca85d4caa3a62e" prot="public">
+          <name>TokenAgentFailedToConnectToLocalService</name>
+          <initializer>= (CodePrefix.MLTokenAgentResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The local binder service was not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1318263bce72d3d4187c90eef87261cd" prot="public">
+          <name>TokenAgentServiceNotStarted</name>
+          <briefdescription>
+<para>The local binder service is running but has not been registered by the login service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5192c49c4cf83a65877d5a247e0a314f" prot="public">
+          <name>TokenAgentFailedToConnectToCloud</name>
+          <briefdescription>
+<para>The local binder service failed to connect to the cloud service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a02c3017ca0fa6e308458985e7db77bea" prot="public">
+          <name>TokenAgentCloudAuthentication</name>
+          <briefdescription>
+<para>The cloud service rejected the request due to inappropriate credentials. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a6afba5fa07ecf87db80a66a3cf83512b" prot="public">
+          <name>TokenAgentFailedToLogin</name>
+          <briefdescription>
+<para>The local server failed to log in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab0b76e5ee5d496559ce8ae53b7dbdd23" prot="public">
+          <name>TokenAgentLoginNotBegun</name>
+          <briefdescription>
+<para>An attempt to complete the login was begun without starting the login. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1c7a100cb7d08a53babcd771813fb1f0" prot="public">
+          <name>TokenAgentNotLoggedIn</name>
+          <briefdescription>
+<para>The operation was rejected because the local server was not logged in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad7a0ee1c4a4a8fed8a34347203a12c40" prot="public">
+          <name>TokenAgentAlreadyLoggedIn</name>
+          <briefdescription>
+<para>The login request failed because the local server is already logged in with the cloud. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aec3a705eb5bb59f449bfc37e36c0ed76" prot="public">
+          <name>TokenAgentLoginInProgress</name>
+          <briefdescription>
+<para>The login request request failed because a login is already in progress. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae9d8791e4eaf5ccc92c345a3021b8850" prot="public">
+          <name>TokenAgentFailedToStartIdentityService</name>
+          <briefdescription>
+<para>Having completed the login process with the cloud successfully, the service failed to start the local identity service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8e94e4d770ced49323ef817bbeddfd22" prot="public">
+          <name>TokenAgentDeviceNotRegistered</name>
+          <briefdescription>
+<para>The serial number of the device is not recognized by the cloud so login failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8827e477bdbc6674c8063b599a2a0732" prot="public">
+          <name>TokenAgentDeviceNotConnected</name>
+          <briefdescription>
+<para>The device is not yet connected to the cloud so login failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8adfcc0d8d4a61c8a156b7e90d7c229b28" prot="public">
+          <name>SnapshotPoseNotFound</name>
+          <initializer>= (CodePrefix.MLSnapshotResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Pose not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2393f46a53801896ee6c5204b6411204" prot="public">
+          <name>PrivilegeGranted</name>
+          <initializer>= (CodePrefix.MLPrivilegesResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Used for <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" kindref="compound">MLPrivileges</ref> check and request privilege functions. Indicates if the user has decided to grant the privilege to the application. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a16b1332e475a42d518f6a90e481d98de" prot="public">
+          <name>PrivilegeNotGranted</name>
+          <briefdescription>
+<para>Used for <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" kindref="compound">MLPrivileges</ref> check and request privilege functions. Indicates whether a privilege has not yet been requested or if the user has decided not to grant the privilege to the application. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a04063d0f0673cf8b72d810f12c3aecf5" prot="public">
+          <name>ContactsHandleNotFound</name>
+          <initializer>= (CodePrefix.MLContactsResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>This MLHandle is not yet recognized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4d7902b17a538b435b228822b2da54be" prot="public">
+          <name>ContactsCompleted</name>
+          <briefdescription>
+<para>Request is completed, its corresponding result has been returned, and its related resources are pending to be freed. See MLContactsReleaseRequestResources(). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a9503dffd180df80e28e63a1a4e1f2ff6" prot="public">
+          <name>ContactsCancelled</name>
+          <briefdescription>
+<para>Request is successfully cancelled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a191ec79bf4d11d76de4a7b330c891a8b" prot="public">
+          <name>ContactsIllegalState</name>
+          <briefdescription>
+<para>Request failed due to system being in an illegal state, e.g., when the user hasn&apos;t successfully logged-in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8abd98e089a6121776cee59464f21bdfda" prot="public">
+          <name>LocationUnknown</name>
+          <initializer>= (CodePrefix.MLLocationResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Unknown location error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab0090c2d644abb6b2d4807a157cbce9f" prot="public">
+          <name>LocationNetworkConnection</name>
+          <briefdescription>
+<para>No connection to server. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a300ed0778de0eb60de70a8b055707921" prot="public">
+          <name>LocationNoLocation</name>
+          <briefdescription>
+<para>No location data received. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1d8331667305afbaec803dae6e9b9309" prot="public">
+          <name>LocationProviderNotFound</name>
+          <briefdescription>
+<para>Location provider is not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a4427b3d3c3f7f0ea32fea902bdbd499a" prot="public">
+          <name>NetworkingServiceNotAvailable</name>
+          <initializer>= (CodePrefix.MLNetworkingResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>The corresponding service is not available. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8adaace8782bac08b45fa9ae2062dfd72d" prot="public">
+          <name>NetworkingServiceError</name>
+          <briefdescription>
+<para>The corresponding service returned with error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2187eea046b2aecd732281d53a2555e3" prot="public">
+          <name>NetworkingWiFiDataStructureVersionError</name>
+          <briefdescription>
+<para>The version number in MLNetworkingWiFiData is not recognized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ac272bd6019d7f006b3cb623d52fa08d8" prot="public">
+          <name>NetworkingWiFiServiceInvalidState</name>
+          <briefdescription>
+<para>WiFi service is not in the right state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8d7f5bd90bf159c8d4e55714dc3b9ef0" prot="public">
+          <name>MovementInvalidMovementHandle</name>
+          <initializer>= (CodePrefix.MLMovementResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Not a valid MLHandle for movement session. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a0ad903a93513229d7eccc5c1c55eb33e" prot="public">
+          <name>MovementInvalidCollisionHandle</name>
+          <briefdescription>
+<para>Not a valid MLHandle for a collision session. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab94e685e18b89f6291212fe0c5222cf5" prot="public">
+          <name>ConnectionsInvalidHandle</name>
+          <initializer>= (CodePrefix.MLConnectionsResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>This MLHandle is not recognized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1ccf4e29dd1de41e7ad15fc61e2dbd60" prot="public">
+          <name>ConnectionsInvalidInviteeCount</name>
+          <briefdescription>
+<para>Indicates number of invitees is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8af78f90d5052263aa18bf61c2732f68c2" prot="public">
+          <name>ConnectionsInvalidSelecteeCount</name>
+          <initializer>= ConnectionsInvalidInviteeCount</initializer>
+          <briefdescription>
+<para>Indicates number of selectees is invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a9e48fb43b098b7fdc58ceaa9e35173e2" prot="public">
+          <name>ConnectionsCancellationPending</name>
+          <briefdescription>
+<para>Indicates invite request has been found and the system is attempting to cancel the process. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a96d3611e5d7f56e434e666979af8cec9" prot="public">
+          <name>ConnectionsIllegalState</name>
+          <briefdescription>
+<para>Request failed due to system being in an illegal state, e.g. user has not successfully logged-in. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a2a7d55271e387991e459070b66718a5a" prot="public">
+          <name>ConnectionsNetworkFailure</name>
+          <briefdescription>
+<para>MLConnectionsRegisterForInvite failed because the system had an error with network connectivity, or the servers could not be reached. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a27b8c6c842a3620aa54723b4f9a376e8" prot="public">
+          <name>ConnectionsAlreadyRegistered</name>
+          <briefdescription>
+<para>MLConnectionsRegisterForInvite failed because the application is already registered to handle invite requests. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aad96283ac5901f99718dc810616eeae0" prot="public">
+          <name>ConnectionsSystemFailure</name>
+          <briefdescription>
+<para>Indicates a general system failure </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae14316249c850df8bf21b7418af3954f" prot="public">
+          <name>SecureStorageBlobNotFound</name>
+          <initializer>= (CodePrefix.MLSecureStorageResult &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Blob not found. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a20c39b5526b6b6200f7034c984749c50" prot="public">
+          <name>SecureStorageIOFailure</name>
+          <briefdescription>
+<para>I/O failure. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a61795296466ae60229b304d2314b49e1" prot="public">
+          <name>AppConnectUnsupportedOperation</name>
+          <initializer>= (CodePrefix.MLAppConnect &lt;&lt; 16)</initializer>
+          <briefdescription>
+<para>Unsupported operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a8678f90c4d50c87e39a36c557d0d7476" prot="public">
+          <name>AppConnectCallbackNotRemoved</name>
+          <briefdescription>
+<para>Callback not removed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a17b162465ec2315306a2bb0ace13dc88" prot="public">
+          <name>AppConnectApplicationExists</name>
+          <briefdescription>
+<para>Application exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1cf073279b1f76ffda6d2de58d228739" prot="public">
+          <name>AppConnectApplicationDoesNotExist</name>
+          <briefdescription>
+<para>Application does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae01ec11b2a85e4e5a6ecb2c3edc0a456" prot="public">
+          <name>AppConnectConnectionCallbackNotRegistered</name>
+          <briefdescription>
+<para>Connection callback not registered. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7eec436cbaa7febeef3364ac2d04b2db" prot="public">
+          <name>AppConnectConnectionExists</name>
+          <briefdescription>
+<para>Connection exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a092e3840b60940b3aef9d3aeaa967a5c" prot="public">
+          <name>AppConnectConnectionDoesNotExist</name>
+          <briefdescription>
+<para>Connection does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ae7ee9b798370d965537754cd389c43c0" prot="public">
+          <name>AppConnectConnectionsPerAppExceeded</name>
+          <briefdescription>
+<para>Connections per app exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8adcaca5622d00a26cac01807927b9cb63" prot="public">
+          <name>AppConnectConnectionsPerDeviceExceeded</name>
+          <briefdescription>
+<para>Connections per device exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a77a8f5398fbc3421afd38681657c1c2d" prot="public">
+          <name>AppConnectDataPipesPerConnectionExceeded</name>
+          <briefdescription>
+<para>Max data pipes for connection exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8adf1143846a0a476d54a788d9f85d713a" prot="public">
+          <name>AppConnectPipeExists</name>
+          <briefdescription>
+<para>Pipe exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aa81a6eaa2ae0132cbe7cb46b88856ad2" prot="public">
+          <name>AppConnectPipeDoesNotExist</name>
+          <briefdescription>
+<para>Pipe does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a5727e5b2736c54cd084f16a034d81c33" prot="public">
+          <name>AppConnectPipeTypeMismatch</name>
+          <briefdescription>
+<para>Pipe type mismatch. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aec952e01ecad6bd1f7a95411420145a0" prot="public">
+          <name>AppConnectPipeClosed</name>
+          <briefdescription>
+<para>Pipe closed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1a154bf025fd05feca3480d260c2ce96" prot="public">
+          <name>AppConnectPipesPerConnectionExceeded</name>
+          <briefdescription>
+<para>Max pipes per connection exceeded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a96d43b14ce83ddffdd2bd3c6ae0ff580" prot="public">
+          <name>AppConnectPipeInvalidOperation</name>
+          <briefdescription>
+<para>Pipe invalid operation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a360f1df2445f9881d2f79f05c6454fcf" prot="public">
+          <name>AppConnectPipeInvalidProperties</name>
+          <briefdescription>
+<para>Pipe invalid properties. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a766634cf22b13bdf39b0751db8700b1a" prot="public">
+          <name>AppConnectPipeNameReserved</name>
+          <briefdescription>
+<para>Pipe name reserved. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a31be3e25941d0b67250451ad724f5452" prot="public">
+          <name>AppConnectPipeBufferSizeExceeded</name>
+          <briefdescription>
+<para>Pipe buffer requested size exceeded limit. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a64fdcf86633737c65ee1a19175d83790" prot="public">
+          <name>AppConnectPipeBufferSizeZero</name>
+          <briefdescription>
+<para>Pipe buffer size can not be zero. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a940f3ecb4d4ddc2491bdfe2d0b99aa82" prot="public">
+          <name>AppConnectPipeBufferInitError</name>
+          <briefdescription>
+<para>Pipe buffer can&apos;t be initialized. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a264239924b6f9e2541449493c8199398" prot="public">
+          <name>AppConnectPipeBufferReadOverrun</name>
+          <briefdescription>
+<para>Pipe buffer read overrun. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7afe054796fde360a7b65a894a9b94a3" prot="public">
+          <name>AppConnectPipeBufferReadError</name>
+          <briefdescription>
+<para>Pipe buffer read error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a35eea7581de0c066ce304fecd2e7c3c7" prot="public">
+          <name>AppConnectPipeBufferWriteError</name>
+          <briefdescription>
+<para>Pipe buffer write error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a759b7bfb97d7912a46d6f6fcda756325" prot="public">
+          <name>AppConnectPipeUnknownPriority</name>
+          <briefdescription>
+<para>Pipe unknown priority. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8aea5bf59c0c95857b12acf6e8fa589437" prot="public">
+          <name>AppConnectPipeLargeDataTimedOut</name>
+          <briefdescription>
+<para>Invalid pipe large data header. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a1ef210c20a4fe9a545f6e913fe7235ad" prot="public">
+          <name>AppConnectPipeLargeDataDoesNotExist</name>
+          <briefdescription>
+<para>Pipe large data doesn&apos;t exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a27d473fb7786717c9192906ea8b5557d" prot="public">
+          <name>AppConnectMicrophoneNotEnabled</name>
+          <briefdescription>
+<para>Microphone not enabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a231567a82f98b0cbab2ca71761b6fa36" prot="public">
+          <name>AppConnectVideoFrameNotReady</name>
+          <briefdescription>
+<para>Video frame not ready. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a687ec6947716fdd3b8ce410e61854efb" prot="public">
+          <name>AppConnectCameraInitializationFail</name>
+          <briefdescription>
+<para>Camera initialization fail. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab5b1f16c57a9e5bc1d56af41e45fc132" prot="public">
+          <name>AppConnectCloudGenericError</name>
+          <briefdescription>
+<para>[CAS] Cloud generic error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a00e648093af838addb2cf83f2f2dcf65" prot="public">
+          <name>AppConnectCloudContactsNotInvited</name>
+          <briefdescription>
+<para>[CAS] Contacts not invited. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ab9f365bf3d1622d753cc19d2661d7d36" prot="public">
+          <name>AppConnectCloudCredentialsNotValid</name>
+          <briefdescription>
+<para>[CAS] Credentials not valid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a500851df07ec9adb43ce2f2d451b99d1" prot="public">
+          <name>AppConnectCloudCopresenceSessionError</name>
+          <briefdescription>
+<para>[CAS] <computeroutput>Copresence</computeroutput> session error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a98cb28941c10fa1e8b8108af2699bfdb" prot="public">
+          <name>AppConnectContactsProviderRequestError</name>
+          <briefdescription>
+<para>Contacts Provider request time out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8acb97b25445f5ec1d00c33ae0bbe5dff7" prot="public">
+          <name>AppConnectUserIdExists</name>
+          <briefdescription>
+<para>Contact id already exists. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8add66de7cc79739af81c7efbd9095edc3" prot="public">
+          <name>AppConnectUserIdInvalid</name>
+          <briefdescription>
+<para>Contact id does not exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a38a7de1d25ef20b9d266f05ffa81b3be" prot="public">
+          <name>AppConnectInviteSelectionCancelledByUser</name>
+          <briefdescription>
+<para>Friend Picker selection canceled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8ad89340c07a5bb727d0646dbaa20dc3e6" prot="public">
+          <name>AppConnecInviteSelectionInvalid</name>
+          <briefdescription>
+<para>Friend Picker Invalid selection . </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a16b5dcb1c64666fa90c7fa9dc7b8a6af" prot="public">
+          <name>AppConnectFriendPickerLaunchFail</name>
+          <briefdescription>
+<para>Friend Picker launch failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a6975bc420607378d40058347d2709320" prot="public">
+          <name>AppConnectFriendPickerLaunchRegisterTimeOut</name>
+          <briefdescription>
+<para>Friend Picker launch/register time out. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8a7d1db3bec905299d7e6a7c86f63b4829" prot="public">
+          <name>AppConnectFriendPickerInvalidArg</name>
+          <briefdescription>
+<para>Friend Picker Invalid argument. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Identifier of Magic Leap API results </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" bodystart="61" bodyend="1023"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897" prot="private" static="no">
+        <name>CodePrefix</name>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a3bb8a629a758db171401b0554ba56bc7" prot="private">
+          <name>MLResultGlobal</name>
+          <initializer>= 0x0000</initializer>
+          <briefdescription>
+<para>Code for global MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a7f08ed2d9eb12fd68da761afd1e297ea" prot="private">
+          <name>MLAudioResult</name>
+          <initializer>= 0x9e11</initializer>
+          <briefdescription>
+<para>Code for audio related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a007cbe379fdd4ea223197536bdda2c6c" prot="private">
+          <name>MLCloudResult</name>
+          <initializer>= 0xc4e3</initializer>
+          <briefdescription>
+<para>Code for cloud related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897aa216380af0c9015277ebbc16f278cac4" prot="private">
+          <name>MLConnectionsResult</name>
+          <initializer>= 0xbfae</initializer>
+          <briefdescription>
+<para>Code for connections related MLResults.. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a9814bdeabfc1dce2734017c8ffeb0159" prot="private">
+          <name>MLContactsResult</name>
+          <initializer>= 0x94a0</initializer>
+          <briefdescription>
+<para>Code for contacts related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a4345c6580e63c1e9a378a302808b3844" prot="private">
+          <name>MLDispatchResult</name>
+          <initializer>= 0xBBE0</initializer>
+          <briefdescription>
+<para>Code for dispatch related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897ab08a004140f857790f5319cd951dcf1a" prot="private">
+          <name>MLIdentityResult</name>
+          <initializer>= 0x7d4d</initializer>
+          <briefdescription>
+<para>Code for identity related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a68a13e8fc03c45062fc9d581e8f6bee3" prot="private">
+          <name>MLLocationResult</name>
+          <initializer>= 0xda19</initializer>
+          <briefdescription>
+<para>Code for location related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a5fcb7105ac049b2b87239e412fb5fe86" prot="private">
+          <name>MLMediaDRMResult</name>
+          <initializer>= 0x62ce</initializer>
+          <briefdescription>
+<para>Code for mediaDRM related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a8f798bb65bd5300fdd8d2b9ddc557e8e" prot="private">
+          <name>MLMediaGenericResult</name>
+          <initializer>= 0xbf3b</initializer>
+          <briefdescription>
+<para>Code for generic media related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897ac1824caa7e5c8bb055e69c7b2204d2fe" prot="private">
+          <name>MLMediaPlayerResult</name>
+          <initializer>= 0xc435</initializer>
+          <briefdescription>
+<para>Code for media player related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a77136a4856df9c8172d1f36f521169a6" prot="private">
+          <name>MLMediaResult</name>
+          <initializer>= 0x4184</initializer>
+          <briefdescription>
+<para>Code for media related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a7f4e83ccceb3fe7eb016a30ee10078e2" prot="private">
+          <name>MLMovementResult</name>
+          <initializer>= 0xdffe</initializer>
+          <briefdescription>
+<para>Code for movement related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a307be2c969d89a55623082afefe2b7af" prot="private">
+          <name>MLNetworkingResult</name>
+          <initializer>= 0x4c62</initializer>
+          <briefdescription>
+<para>Code for networking related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a40510eca163c82b36ca88126d353a3e1" prot="private">
+          <name>MLPassableWorldResult</name>
+          <initializer>= 0x41c7</initializer>
+          <briefdescription>
+<para>Code for passable world related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897ab79c41e72788c646062be67faa3cdaa9" prot="private">
+          <name>MLPrivilegesResult</name>
+          <initializer>= 0xcbcd</initializer>
+          <briefdescription>
+<para>Code for privileges related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897aa3f17d9cff191d798170a4a02de57ae5" prot="private">
+          <name>MLPurchaseResult</name>
+          <initializer>= 0xdf1d</initializer>
+          <briefdescription>
+<para>Code for purchase related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a7051037828c3f94e69f231a939473588" prot="private">
+          <name>MLScreensResult</name>
+          <initializer>= 0xFB4E</initializer>
+          <briefdescription>
+<para>Code for screens related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a10a563707a53bf922d7eaf3250508ee2" prot="private">
+          <name>MLSecureStorageResult</name>
+          <initializer>= 0xba5c</initializer>
+          <briefdescription>
+<para>Code for secure storage related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a30ae9201055da2636ee84d4b07712406" prot="private">
+          <name>MLSnapshotResult</name>
+          <initializer>= 0x87b8</initializer>
+          <briefdescription>
+<para>Code for snapshot related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a2b211a81414bf3f682570b110b5dc67a" prot="private">
+          <name>MLTokenAgentResult</name>
+          <initializer>= 0x37ee</initializer>
+          <briefdescription>
+<para>Code for token agent related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897a6900f6e6a27edde9ddcc5dbf947fe613" prot="private">
+          <name>MLAppConnect</name>
+          <initializer>= 0xebf7</initializer>
+          <briefdescription>
+<para>Code for app connect related MLResults. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>this.Result code high order 2 byte prefix values used by the CAPI to group results by functionality. This is a <computeroutput>ushort</computeroutput> to facilitate bit shifting for final result values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" line="1029" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" bodystart="1028" bodyend="1140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Magic Leap API return value. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" line="27" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs" bodystart="26" bodyend="1341"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLResult</scope><name>Code</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1abd9036c74f7986320feea90180db1897" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLResult</scope><name>CodePrefix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

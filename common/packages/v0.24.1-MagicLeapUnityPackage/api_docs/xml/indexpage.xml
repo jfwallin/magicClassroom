@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Introduction</title>
+    <detaileddescription>
+<para>The Magic Leap Unity API exposes audio, gestures, multimedia, planes, and other features of the Magic Leap platform. These features are available under the namespace <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">UnityEngine.XR.MagicLeap</ref>.</para><para>Detailed struct and enum descriptions are sometimes found in the C API Reference. For example:</para><para><table rows="4" cols="2"><row>
+<entry thead="yes"><para>Details about... </para></entry><entry thead="yes"><para>can be found in the C API Reference under...  </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>MLWorldPlane</computeroutput> </para></entry><entry thead="no"><para><computeroutput>Planes</computeroutput> variables </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>MLMediaPlayerResult</computeroutput></para></entry><entry thead="no"><para><computeroutput>ml_media_error.h</computeroutput> enumeration types </para></entry></row>
+<row>
+<entry thead="no"><para><computeroutput>MLInputControllerButton</computeroutput></para></entry><entry thead="no"><para><computeroutput>ml_input.h</computeroutput> enumeration types </para></entry></row>
+</table>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

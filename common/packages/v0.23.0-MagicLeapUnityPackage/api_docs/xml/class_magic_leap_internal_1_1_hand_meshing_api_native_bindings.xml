@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::HandMeshingApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh" prot="public">MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_block" prot="public">MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMeshBlock</innerclass>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a58390adae9661aecce220bbf2b74e292" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.HandMeshingApiNativeBindings.HandMeshingApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>HandMeshingApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="47" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1aecc1de1b1b5a163fdbd073f13bd173f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMeshingCreateClient</definition>
+        <argsstring>(ref ulong handle)</argsstring>
+        <name>MLHandMeshingCreateClient</name>
+        <param>
+          <type>ref ulong</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1ac1396e2a4509e6e39d50f93e8b7c930f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMeshingDestroyClient</definition>
+        <argsstring>(ref ulong handle)</argsstring>
+        <name>MLHandMeshingDestroyClient</name>
+        <param>
+          <type>ref ulong</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a0ce19acb6e172fd44ba0ba580af44b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMeshingRequestMesh</definition>
+        <argsstring>(ulong handle, ref ulong requestHandle)</argsstring>
+        <name>MLHandMeshingRequestMesh</name>
+        <param>
+          <type>ulong</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>requestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a887e6da31e6b23927a5948e28b15ccec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMeshingGetResult</definition>
+        <argsstring>(ulong handle, ulong requestHandle, ref MLHandMesh mesh)</argsstring>
+        <name>MLHandMeshingGetResult</name>
+        <param>
+          <type>ulong</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>requestHandle</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh" kindref="compound">MLHandMesh</ref></type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1ab38ac99124d1f7666a009e34599109af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMeshingFreeResource</definition>
+        <argsstring>(ulong handle, ref ulong requestHandle)</argsstring>
+        <name>MLHandMeshingFreeResource</name>
+        <param>
+          <type>ulong</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>requestHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_hand_meshing.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="40">
+        <label>MagicLeapInternal.HandMeshingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="42">
+        <label>MagicLeapInternal.HandMeshingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="45" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a58390adae9661aecce220bbf2b74e292" prot="private" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>HandMeshingApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1aecc1de1b1b5a163fdbd073f13bd173f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandMeshingCreateClient</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1ac1396e2a4509e6e39d50f93e8b7c930f" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandMeshingDestroyClient</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1ab38ac99124d1f7666a009e34599109af" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandMeshingFreeResource</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a887e6da31e6b23927a5948e28b15ccec" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandMeshingGetResult</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1a0ce19acb6e172fd44ba0ba580af44b5d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLHandMeshingRequestMesh</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

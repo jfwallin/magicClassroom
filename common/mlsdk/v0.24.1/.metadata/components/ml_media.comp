@@ -1,0 +1,13 @@
+USES=ml_sdk_common
+
+# Media shared libraries
+SHLIBS = \
+  ml_mediacrypto \
+  ml_mediadrm \
+  ml_media_ccparser \
+  ml_mediacodec \
+  ml_mediacodeclist \
+  ml_mediaerror \
+  ml_mediaextractor \
+  ml_mediaformat \
+  ml_mediaplayer \

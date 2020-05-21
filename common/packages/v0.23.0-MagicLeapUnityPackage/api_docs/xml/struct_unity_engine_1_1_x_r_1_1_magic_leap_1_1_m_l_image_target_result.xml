@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLImageTargetResult</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1a1e5d974dae22d5152da51beb8b6df01a" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLImageTargetResult.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+<para>Position of the target. This is not valid if the target is not being tracked. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1a92d8fae6f4f0a1b6c5414d82370ae544" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion UnityEngine.XR.MagicLeap.MLImageTargetResult.Rotation</definition>
+        <argsstring></argsstring>
+        <name>Rotation</name>
+        <briefdescription>
+<para>Orientation of the target. This is not valid if the target is not being tracked. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" line="93" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1ae27bc3563980b2534c2172bf253eedad" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a1b5f0542333b0c8389fca9bf105d31e3" kindref="member">MLImageTargetTrackingStatus</ref></type>
+        <definition>MLImageTargetTrackingStatus UnityEngine.XR.MagicLeap.MLImageTargetResult.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <briefdescription>
+<para>Status of the target. Every target will have an associated status indicating the current tracking status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" line="100" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the image target result. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTarget.cs" bodystart="81" bodyend="101"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1a1e5d974dae22d5152da51beb8b6df01a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTargetResult</scope><name>Position</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1a92d8fae6f4f0a1b6c5414d82370ae544" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTargetResult</scope><name>Rotation</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result_1ae27bc3563980b2534c2172bf253eedad" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTargetResult</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

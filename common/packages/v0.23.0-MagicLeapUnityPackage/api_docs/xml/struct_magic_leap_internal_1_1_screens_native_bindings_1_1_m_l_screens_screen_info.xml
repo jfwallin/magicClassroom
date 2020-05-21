@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_screens_native_bindings_1_1_m_l_screens_screen_info" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::ScreensNativeBindings::MLScreensScreenInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_screens_native_bindings_1_1_m_l_screens_screen_info_1ad2c7e39a824d4b843f5c2c5beaeb84ad" prot="public" static="no" mutable="no">
+        <type>MLTransform</type>
+        <definition>MLTransform MagicLeapInternal.ScreensNativeBindings.MLScreensScreenInfo.Transform</definition>
+        <argsstring></argsstring>
+        <name>Transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_screens_native_bindings_1_1_m_l_screens_screen_info_1accd8ed5093cbd3d22f4aabc4126787e9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_vec3f" kindref="compound">MLVec3f</ref></type>
+        <definition>MLVec3f MagicLeapInternal.ScreensNativeBindings.MLScreensScreenInfo.Dimensions</definition>
+        <argsstring></argsstring>
+        <name>Dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ScreensNativeBindings.cs" bodystart="66" bodyend="70"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_screens_native_bindings_1_1_m_l_screens_screen_info_1accd8ed5093cbd3d22f4aabc4126787e9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ScreensNativeBindings::MLScreensScreenInfo</scope><name>Dimensions</name></member>
+      <member refid="struct_magic_leap_internal_1_1_screens_native_bindings_1_1_m_l_screens_screen_info_1ad2c7e39a824d4b843f5c2c5beaeb84ad" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ScreensNativeBindings::MLScreensScreenInfo</scope><name>Transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

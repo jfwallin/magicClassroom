@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1a6b17dc367b9074298b34cf3ab3b09c53" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMesh.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1acae8ccd884a8ddefdd775d4d4e28f550" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMesh.DataCount</definition>
+        <argsstring></argsstring>
+        <name>DataCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1ad9adee3bb5798c8551eb3c0ad8551721" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMesh.Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1a154a9629b7408515ae0c2a83aa454570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.HandMeshingApiNativeBindings.MLHandMesh.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="70" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="70" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandMeshingApiNativeBindings.cs" bodystart="62" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1ad9adee3bb5798c8551eb3c0ad8551721" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</scope><name>Data</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1acae8ccd884a8ddefdd775d4d4e28f550" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</scope><name>DataCount</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1a154a9629b7408515ae0c2a83aa454570" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_meshing_api_native_bindings_1_1_m_l_hand_mesh_1a6b17dc367b9074298b34cf3ab3b09c53" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandMeshingApiNativeBindings::MLHandMesh</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

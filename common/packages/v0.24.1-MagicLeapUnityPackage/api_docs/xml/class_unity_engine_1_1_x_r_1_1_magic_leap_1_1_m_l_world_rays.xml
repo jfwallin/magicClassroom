@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLWorldRays</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_raycast" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLRaycast</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6" prot="public" static="no">
+        <name>MLWorldRaycastResultState</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6a16776a607b5d629c58d164bd2b8e99ab" prot="public">
+          <name>RequestFailed</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>The ray cast request failed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6a4d40eea8a791157e1c65cfcb86014fc3" prot="public">
+          <name>NoCollision</name>
+          <briefdescription>
+<para>The ray passed beyond maximum ray cast distance and it doesn&apos;t hit any surface. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6a238d06584c8ca67c7ed99cf83f92851c" prot="public">
+          <name>HitUnobserved</name>
+          <briefdescription>
+<para>The ray hit unobserved area. This will on occur when collide_with_unobserved is set to true. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6aea899769cb3bd2130603d49a589d6987" prot="public">
+          <name>HitObserved</name>
+          <briefdescription>
+<para>The ray hit only observed area. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of ray cast result states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLWorldRays.cs" line="40" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLWorldRays.cs" bodystart="39" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sends requests to create Rays intersecting world geometry and returns results through callbacks. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="112">
+        <label>MLRaycast</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_raycast"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>UnityEngine.XR.MagicLeap.MLWorldRays</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>MLAPISingleton&lt; MLRaycast &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="115">
+        <label>MLRaycast</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_raycast"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>UnityEngine.XR.MagicLeap.MLWorldRays</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>MLAPISingleton&lt; MLRaycast &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLWorldRays.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLWorldRays.cs" bodystart="21" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_rays_1a83177cc2349baec2590a7f89b47145a6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldRays</scope><name>MLWorldRaycastResultState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_raycast_1aea49a3e75c863998e8a000db0fc86c98" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldRays</scope><name>ResultState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

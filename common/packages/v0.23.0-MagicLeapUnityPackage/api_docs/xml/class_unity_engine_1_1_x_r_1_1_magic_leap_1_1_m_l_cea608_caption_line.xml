@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCea608CaptionLine</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1a2fc275de6535e9d0544d926dad58d3aa" prot="public" static="no" mutable="no">
+        <type>byte []</type>
+        <definition>byte [] UnityEngine.XR.MagicLeap.MLCea608CaptionLine.displayChars</definition>
+        <argsstring></argsstring>
+        <name>displayChars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="282" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1ac620f889915d378eca50a2d984579409" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_style_color" kindref="compound">MLCea608CaptionStyleColor</ref> []</type>
+        <definition>MLCea608CaptionStyleColor [] UnityEngine.XR.MagicLeap.MLCea608CaptionLine.midRowStyles</definition>
+        <argsstring></argsstring>
+        <name>midRowStyles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="283" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1a0dd9420b4036da190e5a4274f3908ba7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c" kindref="compound">MLCea608CaptionPAC</ref> []</type>
+        <definition>MLCea608CaptionPAC [] UnityEngine.XR.MagicLeap.MLCea608CaptionLine.pacStyles</definition>
+        <argsstring></argsstring>
+        <name>pacStyles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="284" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cea608 caption line structure. copied from ml_media_cea608_caption.h </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="215">
+        <label>UnityEngine.XR.MagicLeap.MLCea608CaptionLine</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line"/>
+        <childnode refid="216" relation="usage">
+          <edgelabel>pacStyles</edgelabel>
+        </childnode>
+        <childnode refid="217" relation="usage">
+          <edgelabel>midRowStyles</edgelabel>
+        </childnode>
+      </node>
+      <node id="217">
+        <label>UnityEngine.XR.MagicLeap.MLCea608CaptionStyleColor</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_style_color"/>
+      </node>
+      <node id="216">
+        <label>UnityEngine.XR.MagicLeap.MLCea608CaptionPAC</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_p_a_c"/>
+        <childnode refid="217" relation="usage">
+          <edgelabel>styleColor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="281" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="280" bodyend="285"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1a2fc275de6535e9d0544d926dad58d3aa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLine</scope><name>displayChars</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1ac620f889915d378eca50a2d984579409" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLine</scope><name>midRowStyles</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_cea608_caption_line_1a0dd9420b4036da190e5a4274f3908ba7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCea608CaptionLine</scope><name>pacStyles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

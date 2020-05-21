@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d_bytes" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MagicLeapNativeBindings::MLUUIDBytes</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d_bytes_1ae8f9393bc7ae4c66d02ad77c9815c130" prot="public" static="no" mutable="no">
+        <type>byte []</type>
+        <definition>byte [] MagicLeapInternal.MagicLeapNativeBindings.MLUUIDBytes.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The 16 byte data array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="835" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Universally unique identifier, byte array </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="830" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="829" bodyend="836"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_u_u_i_d_bytes_1ae8f9393bc7ae4c66d02ad77c9815c130" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLUUIDBytes</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+
+SHLIBS.device = EGL GLESv2 GLESv3 m
+SHLIBS.win = OpenGL32
+SHLIBS.linux = GL
+
+LDFLAGS.osx = -framework AppKit -framework IOKit -framework OpenGL

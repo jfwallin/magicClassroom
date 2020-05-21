@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLIdentity</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLIdentity &gt;</basecompoundref>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity_1_1_profile" prot="public">UnityEngine::XR::MagicLeap::MLIdentity::Profile</innerclass>
+    <briefdescription>
+<para>Functionality to query for user profiles. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>MLAPISingleton&lt; MLIdentity &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="58">
+        <label>UnityEngine.XR.MagicLeap.MLIdentity</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>MLAPISingleton&lt; MLIdentity &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="60">
+        <label>UnityEngine.XR.MagicLeap.MLIdentity</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLIdentity.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLIdentity.cs" bodystart="21" bodyend="174"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

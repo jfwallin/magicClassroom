@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::HandTrackingApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" prot="public">MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a088faf5854be990ee1a96e14fc4fb14a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MagicLeapInternal.HandTrackingApiNativeBindings.MaxKeyPoints</definition>
+        <argsstring></argsstring>
+        <name>MaxKeyPoints</name>
+        <initializer>= 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a6bffff8a52236b350840caffb4a5d467" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MagicLeapInternal.HandTrackingApiNativeBindings.MaxKeyPoses</definition>
+        <argsstring></argsstring>
+        <name>MaxKeyPoses</name>
+        <initializer>= (int)(MLHandKeyPose.NoHand + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="114" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a3447e198c680e311eb5a8eaa6a7229bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.HandTrackingApiNativeBindings.HandTrackingApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>HandTrackingApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="111" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a49b5a75729857ef4f9b8058a0076e0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.HandTrackingApiNativeBindings.UpdateConfiguration</definition>
+        <argsstring>(ref MLHandTrackingConfiguration config)</argsstring>
+        <name>UpdateConfiguration</name>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" kindref="compound">MLHandTrackingConfiguration</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1aab2cc9914aaa0f4d60ffa3d4c0e02786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.HandTrackingApiNativeBindings.IsHandGesturesEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>IsHandGesturesEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a0b2c2aac725513f4227554a0793627b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.HandTrackingApiNativeBindings.SetHandGesturesEnabled</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetHandGesturesEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="139" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>MagicLeapInternal.HandTrackingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>MagicLeapInternal.HandTrackingApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="110" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="109" bodyend="140"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a3447e198c680e311eb5a8eaa6a7229bf" prot="private" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>HandTrackingApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1aab2cc9914aaa0f4d60ffa3d4c0e02786" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>IsHandGesturesEnabled</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a088faf5854be990ee1a96e14fc4fb14a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MaxKeyPoints</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a6bffff8a52236b350840caffb4a5d467" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MaxKeyPoses</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a0b2c2aac725513f4227554a0793627b4" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>SetHandGesturesEnabled</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+      <member refid="class_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1a49b5a75729857ef4f9b8058a0076e0ab" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings</scope><name>UpdateConfiguration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

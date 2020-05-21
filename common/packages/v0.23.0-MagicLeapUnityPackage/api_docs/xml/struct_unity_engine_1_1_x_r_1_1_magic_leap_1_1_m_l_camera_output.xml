@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraOutput</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1aa06b6cc2cca0f983cd3bc87f308d583c" prot="public" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte UnityEngine.XR.MagicLeap.MLCameraOutput.PlaneCount</definition>
+        <argsstring></argsstring>
+        <name>PlaneCount</name>
+        <briefdescription>
+<para>Number of output image planes: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>1 for compressed output such as JPEG stream,</para></listitem><listitem><para>3 for separate color component output such as YUV/YCbCr/RGB. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="151" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1a459cf75ee7ccf78dd539cee72c65ca29" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_plane_info" kindref="compound">MLCameraPlaneInfo</ref> []</type>
+        <definition>MLCameraPlaneInfo [] UnityEngine.XR.MagicLeap.MLCameraOutput.Planes</definition>
+        <argsstring></argsstring>
+        <name>Planes</name>
+        <briefdescription>
+<para>Output image plane info. The number of output planes is specified by PlaneCount. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="158" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1abf36ce08ceac1718a3627a881ac12ac9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a3a45926996da41c86af12d66fbbe47b7" kindref="member">MLCameraOutputFormat</ref></type>
+        <definition>MLCameraOutputFormat UnityEngine.XR.MagicLeap.MLCameraOutput.Format</definition>
+        <argsstring></argsstring>
+        <name>Format</name>
+        <briefdescription>
+<para>Supported output format specified by MLCameraOutputFormat </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Captured output </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="203">
+        <label>UnityEngine.XR.MagicLeap.MLCameraPlaneInfo</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_plane_info"/>
+      </node>
+      <node id="202">
+        <label>UnityEngine.XR.MagicLeap.MLCameraOutput</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output"/>
+        <childnode refid="203" relation="usage">
+          <edgelabel>Planes</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="145" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="144" bodyend="164"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1abf36ce08ceac1718a3627a881ac12ac9" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraOutput</scope><name>Format</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1aa06b6cc2cca0f983cd3bc87f308d583c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraOutput</scope><name>PlaneCount</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_output_1a459cf75ee7ccf78dd539cee72c65ca29" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraOutput</scope><name>Planes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a7e7a86c153c168475d1e978a2af8448b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLHeadTrackingMapEventsExtension.IsLost</definition>
+        <argsstring>(this MLHeadTracking.MapEvents events)</argsstring>
+        <name>IsLost</name>
+        <param>
+          <type>this <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5e" kindref="member">MLHeadTracking.MapEvents</ref></type>
+          <declname>events</declname>
+        </param>
+        <briefdescription>
+<para>Indicates if the lost event has been triggered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmask of all map events that have occurred.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5eab578b733cbb788fc6ad208314d2c4c2b" kindref="member">MLHeadTracking.MapEvents.Lost</ref> flag is true.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" line="27" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a0faf2bbd11e39f1b95be022c35f098e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLHeadTrackingMapEventsExtension.IsRecovered</definition>
+        <argsstring>(this MLHeadTracking.MapEvents events)</argsstring>
+        <name>IsRecovered</name>
+        <param>
+          <type>this <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5e" kindref="member">MLHeadTracking.MapEvents</ref></type>
+          <declname>events</declname>
+        </param>
+        <briefdescription>
+<para>Indicates if the recovered event has been triggered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmask of all map events that have occurred.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5ea5c4c4cf7bbab0d76fe61420aee14a5ca" kindref="member">MLHeadTracking.MapEvents.Recovered</ref> flag is true.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" line="37" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a80ff5bd852ffdf93f222b3c0f88d062d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLHeadTrackingMapEventsExtension.IsRecoveryFailed</definition>
+        <argsstring>(this MLHeadTracking.MapEvents events)</argsstring>
+        <name>IsRecoveryFailed</name>
+        <param>
+          <type>this <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5e" kindref="member">MLHeadTracking.MapEvents</ref></type>
+          <declname>events</declname>
+        </param>
+        <briefdescription>
+<para>Indicates if the recovery failed event has been triggered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmask of all map events that have occurred.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5ea1e1f7d389f00a6fb6245ca9685bd9a98" kindref="member">MLHeadTracking.MapEvents.RecoveryFailed</ref> flag is true.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" line="47" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1ad3ceeb971532fc7d884ca355ea8a469c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLHeadTrackingMapEventsExtension.IsNewSession</definition>
+        <argsstring>(this MLHeadTracking.MapEvents events)</argsstring>
+        <name>IsNewSession</name>
+        <param>
+          <type>this <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5e" kindref="member">MLHeadTracking.MapEvents</ref></type>
+          <declname>events</declname>
+        </param>
+        <briefdescription>
+<para>Indicates if the new session event has been triggered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>events</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmask of all map events that have occurred.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_1a9fbd6ed315f2c92bd3d472582c3c9a5eab5743e22fdc2a52b6db271ee0c2ee0d2" kindref="member">MLHeadTracking.MapEvents.NewSession</ref> flag is true.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to provide an extension for the MLHeadTrackingMapEvent enum. Provides an alternative to binary operator use in order to find if a specific event has occurred given a MLHeadTrackingMapEvent bitmask. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" line="21" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLHeadTrackingMapEventsExtension.cs" bodystart="20" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a7e7a86c153c168475d1e978a2af8448b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</scope><name>IsLost</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1ad3ceeb971532fc7d884ca355ea8a469c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</scope><name>IsNewSession</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a0faf2bbd11e39f1b95be022c35f098e4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</scope><name>IsRecovered</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_map_events_extension_1a80ff5bd852ffdf93f222b3c0f88d062d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHeadTrackingMapEventsExtension</scope><name>IsRecoveryFailed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

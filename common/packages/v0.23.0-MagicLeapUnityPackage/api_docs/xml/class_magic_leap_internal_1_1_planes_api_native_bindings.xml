@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_planes_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::PlanesApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPlane</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundaries</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundariesList</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundary" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundary</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_planes_query" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPlanesQuery</innerclass>
+    <innerclass refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_polygon" prot="public">MagicLeapInternal::PlanesApiNativeBindings::MLPolygon</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3" prot="public" static="no">
+        <name>MLPlanesQueryFlags</name>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3a06ce2a25e5d12c166a36f654dbea6012" prot="public">
+          <name>Vertical</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3ac1b5fa03ecdb95d4a45dd1c40b02527f" prot="public">
+          <name>Horizontal</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3a3c1fc46575f79b15fc8990642387d07f" prot="public">
+          <name>Arbitrary</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3add10f1815405c8f83d6b9aa528816aac" prot="public">
+          <name>AllOrientations</name>
+          <initializer>= Vertical | Horizontal | Arbitrary</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3a91ec6447f6c2cce9e2af1ba8b03c802d" prot="public">
+          <name>OrientToGravity</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3aa1684698ac3d8ffda353d0458c30b1e7" prot="public">
+          <name>Inner</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3ab8716623a94edf313c4e5be42a3afcf9" prot="public">
+          <name>IgnoreHoles</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3a30d25a1882ba435ce1166222cd416516" prot="public">
+          <name>Semantic_Ceiling</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3ac81153426633cd29b3337564a6eee164" prot="public">
+          <name>Semantic_Floor</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3a683c379f3fbf86e259d0544bbfeae196" prot="public">
+          <name>Semantic_Wall</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3aaac0c90e62f29e3d6ac9184720bf8dd4" prot="public">
+          <name>Semantic_All</name>
+          <initializer>= Semantic_Ceiling | Semantic_Floor | Semantic_Wall</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3aa7a7e14b2a005870ba134e6c92bb7b51" prot="public">
+          <name>Polygons</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="56" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac5759eae8eb6801a1d782856a6eb2438" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.PlanesApiNativeBindings.PlanesApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>PlanesApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="53" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1a7f93757dc52448d24ccca0b6f93d1065" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.PlanesApiNativeBindings.MLPlaneBoundariesListInit</definition>
+        <argsstring>(ref MLPlaneBoundariesList boundariesList)</argsstring>
+        <name>MLPlaneBoundariesListInit</name>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" kindref="compound">MLPlaneBoundariesList</ref></type>
+          <declname>boundariesList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="155" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1a6767fb0bdf8fd17c2dffb3760099e878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.PlanesApiNativeBindings.MLPlanesCreate</definition>
+        <argsstring>(ref ulong handle)</argsstring>
+        <name>MLPlanesCreate</name>
+        <param>
+          <type>ref ulong</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1a53e4b16fc2913d833c87f327aa9f6bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.PlanesApiNativeBindings.MLPlanesQueryBegin</definition>
+        <argsstring>(ulong planesTracker, ref MLPlanesQuery query, ref ulong handle)</argsstring>
+        <name>MLPlanesQueryBegin</name>
+        <param>
+          <type>ulong</type>
+          <declname>planesTracker</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_planes_query" kindref="compound">MLPlanesQuery</ref></type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>ref ulong</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1a1bd99bfeebd41d39077ed44bcd1d5934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.PlanesApiNativeBindings.MLPlanesDestroy</definition>
+        <argsstring>(ulong planesTracker)</argsstring>
+        <name>MLPlanesDestroy</name>
+        <param>
+          <type>ulong</type>
+          <declname>planesTracker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1af46a2db0755f324d4c1f1f6a7df62645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.PlanesApiNativeBindings.MLPlanesQueryGetResultsWithBoundaries</definition>
+        <argsstring>(ulong planesTracker, ulong queryHandle, IntPtr results, out uint numResults, ref MLPlaneBoundariesList planeBoundaries)</argsstring>
+        <name>MLPlanesQueryGetResultsWithBoundaries</name>
+        <param>
+          <type>ulong</type>
+          <declname>planesTracker</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>queryHandle</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>results</declname>
+        </param>
+        <param>
+          <type>out uint</type>
+          <declname>numResults</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" kindref="compound">MLPlaneBoundariesList</ref></type>
+          <declname>planeBoundaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac042a5ca6e0823b72d807500fe487b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.PlanesApiNativeBindings.MLPlanesReleaseBoundariesList</definition>
+        <argsstring>(ulong planesTracker, ref MLPlaneBoundariesList planeBoundaries)</argsstring>
+        <name>MLPlanesReleaseBoundariesList</name>
+        <param>
+          <type>ulong</type>
+          <declname>planesTracker</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" kindref="compound">MLPlaneBoundariesList</ref></type>
+          <declname>planeBoundaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="175" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_planes.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="628">
+        <label>MagicLeapInternal.PlanesApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_planes_api_native_bindings"/>
+        <childnode refid="629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="630">
+        <label>MagicLeapInternal.PlanesApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_planes_api_native_bindings"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="51" bodyend="176"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1a7f93757dc52448d24ccca0b6f93d1065" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlaneBoundariesListInit</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1a6767fb0bdf8fd17c2dffb3760099e878" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesCreate</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1a1bd99bfeebd41d39077ed44bcd1d5934" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesDestroy</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1a53e4b16fc2913d833c87f327aa9f6bed" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesQueryBegin</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac34341200e8204142f845e56876fe0c3" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesQueryFlags</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1af46a2db0755f324d4c1f1f6a7df62645" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesQueryGetResultsWithBoundaries</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac042a5ca6e0823b72d807500fe487b7f" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlanesReleaseBoundariesList</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_planes_api_native_bindings_1ac5759eae8eb6801a1d782856a6eb2438" prot="private" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>PlanesApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

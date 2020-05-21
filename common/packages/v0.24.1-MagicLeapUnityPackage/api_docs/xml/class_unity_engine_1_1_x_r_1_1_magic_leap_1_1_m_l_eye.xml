@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLEye</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye_1ae4d1f76acd8bd917284434f99a68a2e5" prot="public" static="no">
+        <name>EyeType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye_1ae4d1f76acd8bd917284434f99a68a2e5a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>Left Eye </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye_1ae4d1f76acd8bd917284434f99a68a2e5a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>Right Eye </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration to specify which eye. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" line="43" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" bodystart="42" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class used to represents a single eye. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" line="22" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" bodystart="21" bodyend="110"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eye_1ae4d1f76acd8bd917284434f99a68a2e5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLEye</scope><name>EyeType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

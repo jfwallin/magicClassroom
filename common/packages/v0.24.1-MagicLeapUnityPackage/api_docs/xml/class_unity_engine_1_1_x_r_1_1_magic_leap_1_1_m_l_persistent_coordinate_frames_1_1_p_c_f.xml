@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLPersistentCoordinateFrames::PCF</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a53e3dfa836eb0a07d0bffb5bebeb8453" prot="public" static="no">
+        <name>Types</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a53e3dfa836eb0a07d0bffb5bebeb8453a5da09f5ed79afe57e88486c89df32ae4" prot="public">
+          <name>SingleUserSingleSession</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> is available only in the current head pose session. This is <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> type is only available on the local device. It cannot be shared with other users and will not persist across device reboots. A SingleUserSingleSession type <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> can later be promoted to a SingleUserMultiSession type <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref>. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a53e3dfa836eb0a07d0bffb5bebeb8453af235c7c308e9a487606d80ef69280ba2" prot="public">
+          <name>SingleUserMultiSession</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> is available across multiple head pose sessions. This <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> type is only available on the local device. It cannot be shared with other users but will persist across device reboots. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a53e3dfa836eb0a07d0bffb5bebeb8453a8aada84a0f667acfa75cc69b4f597604" prot="public">
+          <name>MultiUserMultiSession</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> is available across multiple users and head pose sessions. This <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> type can be shared with other users in the same physical environment and will persist across device reboots. This <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> type requires that the user should enable the Shared World feature in the Settings app. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration specifying the type of a persistent coordinate frame (<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref>). Type is not fixed. <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> can vary in its type between multiple head pose sessions. A new head pose session is created when the device reboots or loses tracking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" bodystart="112" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49" prot="public" static="no">
+        <name>Status</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49ab578b733cbb788fc6ad208314d2c4c2b" prot="public">
+          <name>Lost</name>
+          <briefdescription>
+<para>The <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> is lost and unreliable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49a0eceeb45861f9585dd7a97a3e36f85c6" prot="public">
+          <name>Created</name>
+          <briefdescription>
+<para>The <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> has just been created/found for this map. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49aff0a3b7f3daef040faf89a88fdac01b7" prot="public">
+          <name>Updated</name>
+          <briefdescription>
+<para>The <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref>&apos;s pose has changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49aed9c1d4d1f908773ef93a219009c42fd" prot="public">
+          <name>Regained</name>
+          <briefdescription>
+<para>The <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> has been found again after being Lost. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49afa3aff3c185c6dc7754235f397c2099a" prot="public">
+          <name>Stable</name>
+          <briefdescription>
+<para>The <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> is stable, it&apos;s pose has been queried for multiple times and has not changed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The tracking status of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" line="142" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" bodystart="141" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> class is an abstraction for representing anchor points, called Persistent Coordinate Frames or PCFs, in the real world. PCFs cannot be created, modified or destroyed from the app level. Rather, we query the OS for any PCFs it has stored and query again to determine the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f" kindref="compound">PCF</ref> location, if it is within the vicinity. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Persistence/MLPCF.cs" bodystart="34" bodyend="657"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a02eeb9a6d9b9e9f294cb399578fb8c49" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPersistentCoordinateFrames::PCF</scope><name>Status</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames_1_1_p_c_f_1a53e3dfa836eb0a07d0bffb5bebeb8453" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPersistentCoordinateFrames::PCF</scope><name>Types</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

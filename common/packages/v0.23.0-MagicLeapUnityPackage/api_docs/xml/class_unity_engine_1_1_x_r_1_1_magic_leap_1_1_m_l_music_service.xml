@@ -1,0 +1,1482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLMusicService</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLMusicService &gt;</basecompoundref>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1adfab3e6f3f10cc9b03e976e4de744170" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49" kindref="member">MLMusicServicePlaybackState</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServicePlaybackState, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnPlaybackStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnPlaybackStateChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when playback state has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0ba7ccb9887d9543f88d3b520fb13d5a" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" kindref="member">MLMusicServiceRepeatState</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServiceRepeatState, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnRepeatStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnRepeatStateChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when repeat state has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="79" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6bdc9f048a17d9af947c761c071f37df" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" kindref="member">MLMusicServiceShuffleState</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServiceShuffleState, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnShuffleStateChange</definition>
+        <argsstring></argsstring>
+        <name>OnShuffleStateChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raisd when shuffle state has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1af91294c03717e5037ace52b6e090207f" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_metadata" kindref="compound">MLMusicServiceMetadata</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServiceMetadata, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnMetadataChange</definition>
+        <argsstring></argsstring>
+        <name>OnMetadataChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when metadata has has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="83" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a802dbac8ba57bbe0e53bfbd898a70cbe" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; int, IntPtr &gt;</type>
+        <definition>Action&lt;int, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnPositionChange</definition>
+        <argsstring></argsstring>
+        <name>OnPositionChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when playback head position has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="85" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6e0bb1628b899fe2851e0697bb5bb99f" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error" kindref="compound">MLMusicServiceError</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServiceError, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnError</definition>
+        <argsstring></argsstring>
+        <name>OnError</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when an error has occured</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="87" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae2428678f2c7927035478ca5adeee586" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650d" kindref="member">MLMusicServiceStatus</ref>, IntPtr &gt;</type>
+        <definition>Action&lt;MLMusicServiceStatus, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnStatusChange</definition>
+        <argsstring></argsstring>
+        <name>OnStatusChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when the Music Service status has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="89" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a23e6e09998e1a805053970921bb3e5d2" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>Action&lt; float, IntPtr &gt;</type>
+        <definition>Action&lt;float, IntPtr&gt; UnityEngine.XR.MagicLeap.MLMusicService.OnVolumeChange</definition>
+        <argsstring></argsstring>
+        <name>OnVolumeChange</name>
+        <initializer>= delegate { }</initializer>
+        <briefdescription>
+<para>Raised when the Music Service volume has changed</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="91" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6020b305436d880092817b607f309b9" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMusicService.Volume</definition>
+        <argsstring></argsstring>
+        <name>Volume</name>
+        <briefdescription>
+<para>Music Volume in range [0.0f ... 1.0f]. This can only be set when a media has been loaded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="96" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aff3b98a2afea582e716a1feaa59ce769" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLMusicService.TrackLength</definition>
+        <argsstring></argsstring>
+        <name>TrackLength</name>
+        <briefdescription>
+<para>Current Track Length in milliseconds </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a612ea62e5504b99f0108ce8cea6ff2f5" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLMusicService.CurrentPosition</definition>
+        <argsstring></argsstring>
+        <name>CurrentPosition</name>
+        <briefdescription>
+<para>Current position of playhead in Milliseconds </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab0aeeb82b31d35355d66b8f4c4e5e0ae" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49" kindref="member">MLMusicServicePlaybackState</ref></type>
+        <definition>MLMusicServicePlaybackState UnityEngine.XR.MagicLeap.MLMusicService.PlaybackState</definition>
+        <argsstring></argsstring>
+        <name>PlaybackState</name>
+        <briefdescription>
+<para>Current Playback State of the music service </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="133" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1abcb3f17e88c3c1cdc304f26e9a6bbef1" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" kindref="member">MLMusicServiceRepeatState</ref></type>
+        <definition>MLMusicServiceRepeatState UnityEngine.XR.MagicLeap.MLMusicService.RepeatState</definition>
+        <argsstring></argsstring>
+        <name>RepeatState</name>
+        <briefdescription>
+<para>Current Repeat State of the music service </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a16eec4199277874363b4e67d124c7a4e" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" kindref="member">MLMusicServiceShuffleState</ref></type>
+        <definition>MLMusicServiceShuffleState UnityEngine.XR.MagicLeap.MLMusicService.ShuffleState</definition>
+        <argsstring></argsstring>
+        <name>ShuffleState</name>
+        <briefdescription>
+<para>Current Shuffle State of the music service </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="160" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0bd1a3f75a80a8a547a11f4f7110fa9e" prot="private" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr UnityEngine.XR.MagicLeap.MLMusicService._callbacksUnmanaged</definition>
+        <argsstring></argsstring>
+        <name>_callbacksUnmanaged</name>
+        <initializer>= IntPtr.Zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="173" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1acc8bef1c4d7fca751dc95a924cf7a36e" prot="private" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr UnityEngine.XR.MagicLeap.MLMusicService._callbackData</definition>
+        <argsstring></argsstring>
+        <name>_callbackData</name>
+        <initializer>= IntPtr.Zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="174" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a90280f812f6b66b623aa1d7dab240635" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityEngine.XR.MagicLeap.MLMusicService._musicServiceProvider</definition>
+        <argsstring></argsstring>
+        <name>_musicServiceProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="175" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac64d513919cda74572a39186d126b80a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLMusicService._connected</definition>
+        <argsstring></argsstring>
+        <name>_connected</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="179" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a84dd012ed03d44128785fb5540b8e32e" prot="private" static="yes" mutable="no">
+        <type>Queue&lt; Action &gt;</type>
+        <definition>Queue&lt;Action&gt; UnityEngine.XR.MagicLeap.MLMusicService._queuedActions</definition>
+        <argsstring></argsstring>
+        <name>_queuedActions</name>
+        <initializer>= new Queue&lt;Action&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="176" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2687a894530677b7ad741c8c9702f437" prot="private" static="yes" mutable="no">
+        <type>Queue&lt; Action &gt;</type>
+        <definition>Queue&lt;Action&gt; UnityEngine.XR.MagicLeap.MLMusicService._dispatchQueue</definition>
+        <argsstring></argsstring>
+        <name>_dispatchQueue</name>
+        <initializer>= new Queue&lt;Action&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="177" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a8b8c81c04f7d7f67ac4f11c782c69951" prot="private" static="yes" mutable="no">
+        <type>object</type>
+        <definition>object UnityEngine.XR.MagicLeap.MLMusicService._eventQueueLockObject</definition>
+        <argsstring></argsstring>
+        <name>_eventQueueLockObject</name>
+        <initializer>= new object()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="178" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a910e70311cdac7f08d2866d8bdfcbeaf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.CreateInstance</definition>
+        <argsstring>(string musicServiceProvider, IntPtr callbackData)</argsstring>
+        <name>CreateInstance</name>
+        <param>
+          <type>string</type>
+          <declname>musicServiceProvider</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>callbackData</declname>
+        </param>
+        <briefdescription>
+<para>static instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service" kindref="compound">MLMusicService</ref> class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="185" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="185" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1abe9063d64f1b7b2da1e8c0558b29ae5e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.QueueCallback</definition>
+        <argsstring>(Action callback)</argsstring>
+        <name>QueueCallback</name>
+        <param>
+          <type>Action</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="337" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="337" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1c2ba6523c6b9380321067ecb3341c26" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnPlaybackStateChangeCallback</definition>
+        <argsstring>(MLMusicServicePlaybackState state, IntPtr data)</argsstring>
+        <name>OnPlaybackStateChangeCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49" kindref="member">MLMusicServicePlaybackState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1226" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1226" bodyend="1235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab460acd1b798338e8d9be0076b17c8a2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnRepeatStateChangeCallback</definition>
+        <argsstring>(MLMusicServiceRepeatState state, IntPtr data)</argsstring>
+        <name>OnRepeatStateChangeCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" kindref="member">MLMusicServiceRepeatState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1239" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1239" bodyend="1248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a94a3b58166f13779f4da85af5a32242b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnShuffleStateChangeCallback</definition>
+        <argsstring>(MLMusicServiceShuffleState state, IntPtr data)</argsstring>
+        <name>OnShuffleStateChangeCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" kindref="member">MLMusicServiceShuffleState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1252" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1252" bodyend="1261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aad61b0982a882aa100dcc706d1aa5a29" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnMetadataChangeCallback</definition>
+        <argsstring>(ref MusicServiceNativeBindings.MLMusicServiceMetadata metadata, IntPtr data)</argsstring>
+        <name>OnMetadataChangeCallback</name>
+        <param>
+          <type>ref <ref refid="struct_magic_leap_internal_1_1_music_service_native_bindings_1_1_m_l_music_service_metadata" kindref="compound">MusicServiceNativeBindings.MLMusicServiceMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1265" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1265" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab019f284993ec724997662051985ac6d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnPositionChangeCallback</definition>
+        <argsstring>(int position, IntPtr data)</argsstring>
+        <name>OnPositionChangeCallback</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1286" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1286" bodyend="1295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a012f78198461e56080432e4102f8f880" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnErrorCallback</definition>
+        <argsstring>(MLMusicServiceErrorType errorType, int errorCode, IntPtr data)</argsstring>
+        <name>OnErrorCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8" kindref="member">MLMusicServiceErrorType</ref></type>
+          <declname>errorType</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>errorCode</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1299" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1299" bodyend="1309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a4e2887b59c10b2f9638a4221608adc16" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnStatusChangeCallback</definition>
+        <argsstring>(MLMusicServiceStatus status, IntPtr data)</argsstring>
+        <name>OnStatusChangeCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650d" kindref="member">MLMusicServiceStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1313" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1313" bodyend="1322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2017c7d3245f47b62ae12240feef5e18" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLMusicService.OnVolumeChangeCallback</definition>
+        <argsstring>(float volume, IntPtr data)</argsstring>
+        <name>OnVolumeChangeCallback</name>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1326" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1326" bodyend="1335"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0636b8008708b11441bdb62840701ef2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode UnityEngine.XR.MagicLeap.MLMusicService.MLMusicServiceSetAuthString</definition>
+        <argsstring>(string authString)</argsstring>
+        <name>MLMusicServiceSetAuthString</name>
+        <param>
+          <type>string</type>
+          <declname>authString</declname>
+        </param>
+        <briefdescription>
+<para>Sets the authentication string for the MusicService </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>authString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service provider specific authentication string</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not music service is not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1352" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1352" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a8bbbc2ab94b6c9dd56eb73ba6c424a80" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode UnityEngine.XR.MagicLeap.MLMusicService.MLMusicServiceSetURL</definition>
+        <argsstring>(string url)</argsstring>
+        <name>MLMusicServiceSetURL</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Set a single, specific URL to play </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to play</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1375" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1375" bodyend="1381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a765f63af04178f5cb80efbd6a4a3b775" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode UnityEngine.XR.MagicLeap.MLMusicService.MLMusicServiceSetPlayList</definition>
+        <argsstring>(string[] playlist, ulong size)</argsstring>
+        <name>MLMusicServiceSetPlayList</name>
+        <param>
+          <type>string []</type>
+          <declname>playlist</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set an array of URLs to use for the playlist </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of URLs</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the playList array</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1397" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1397" bodyend="1413"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a9b0f2a8d9d7375e3b6a8420c7e4494c3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.Start</definition>
+        <argsstring>(string musicServiceProvider, IntPtr data=default(IntPtr))</argsstring>
+        <name>Start</name>
+        <param>
+          <type>string</type>
+          <declname>musicServiceProvider</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+          <defval>default(IntPtr)</defval>
+        </param>
+        <briefdescription>
+<para>Starts the Music Service API. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>musicServiceProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the music service provider</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extra user data passed as a void pointer through the callbacks</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if connected to MusicService successfully.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if one of the parameters is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af5576b457e6e3048732bc8bd5eba789b" kindref="member">MLResultCode.AllocFailed</ref> if connection failed with resource allocation failure</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a25cc9815e1c3f4b4e0c7643266259544" kindref="member">MLResultCode.MediaGenericAlreadyExists</ref> if connection exists already.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if the operation failed with an unspecified error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="215" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afa0a70ddcc55fb9257b41e8b6cfd2033" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.SetAuthString</definition>
+        <argsstring>(string authString)</argsstring>
+        <name>SetAuthString</name>
+        <param>
+          <type>string</type>
+          <declname>authString</declname>
+        </param>
+        <briefdescription>
+<para>Sets the authentication string for the MusicService </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>authString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service provider specific authentication string</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not music service is not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="360" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a5e8d42f9458e1c06b3689d8454990bc3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.SetURL</definition>
+        <argsstring>(string url)</argsstring>
+        <name>SetURL</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Set a single, specific URL to play </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to play</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="405" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac6f332844b2ed694125f9c852a32677e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.SetPlayList</definition>
+        <argsstring>(string[] playList)</argsstring>
+        <name>SetPlayList</name>
+        <param>
+          <type>string []</type>
+          <declname>playList</declname>
+        </param>
+        <briefdescription>
+<para>Set an array of URLs to use for the playlist </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of URLs</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="455" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="455" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a233f456005cf51be118d8c16bdf8d4ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.StartPlayback</definition>
+        <argsstring>()</argsstring>
+        <name>StartPlayback</name>
+        <briefdescription>
+<para>Start playing the current track </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="505" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="505" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae4be978aa006283fb377384644ce894b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.StopPlayback</definition>
+        <argsstring>()</argsstring>
+        <name>StopPlayback</name>
+        <briefdescription>
+<para>Stop playing the current track </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="546" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="546" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6ff29b3e7effbd1b19c0f8262eb252a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.PausePlayback</definition>
+        <argsstring>()</argsstring>
+        <name>PausePlayback</name>
+        <briefdescription>
+<para>Pause the current track </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="587" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="587" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1adb81479ba5415d1b710809f443d68765" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.ResumePlayback</definition>
+        <argsstring>()</argsstring>
+        <name>ResumePlayback</name>
+        <briefdescription>
+<para>Resume playback of the current track </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="628" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="628" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac3348fc53a464fc412d75932b968c2e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.Seek</definition>
+        <argsstring>(uint position)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>uint</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Seek to a specified position within the current track </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position in milliseconds to seek </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="672" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="672" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a264552c6f177ca37e075d1bb39db11e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.Next</definition>
+        <argsstring>()</argsstring>
+        <name>Next</name>
+        <briefdescription>
+<para>Advances to the next track in the playlist </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="714" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="714" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac45d742069d4d0745dcbdabddef121b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.Previous</definition>
+        <argsstring>()</argsstring>
+        <name>Previous</name>
+        <briefdescription>
+<para>Moves to the previous track in the playlist </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="755" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="755" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6705d9a49f7293789b24dd7524ed19c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.GetStatus</definition>
+        <argsstring>(ref MLMusicServiceStatus status)</argsstring>
+        <name>GetStatus</name>
+        <param>
+          <type>ref <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650d" kindref="member">MLMusicServiceStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Get the music service status </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status from the music service</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="905" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="905" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ad78f5f0c229679d90bd1992c838d6a6b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.GetError</definition>
+        <argsstring>(ref MLMusicServiceError error)</argsstring>
+        <name>GetError</name>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error" kindref="compound">MLMusicServiceError</ref></type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Get the last music service error </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure to contain the error parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="945" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="945" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a24a54dd2b46bc90d63e27742744ae63d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.GetMetadata</definition>
+        <argsstring>(ref MLMusicServiceMetadata metadata)</argsstring>
+        <name>GetMetadata</name>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_metadata" kindref="compound">MLMusicServiceMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Get the metadata for the current track. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure to contain the meta data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if one of the parameters is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1115" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1115" bodyend="1118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6b4b7ee663cca6672e47bef59f009011" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.GetMetadata</definition>
+        <argsstring>(MLMusicServiceTrackType trackType, ref MLMusicServiceMetadata metadata)</argsstring>
+        <name>GetMetadata</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a281dabb3a9f5e7d81bd67f49e49d3447" kindref="member">MLMusicServiceTrackType</ref></type>
+          <declname>trackType</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_metadata" kindref="compound">MLMusicServiceMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Get the metadata for a track. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>trackType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The track to return meta information about.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure to contain the metadata.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if one of the parameters is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1137" bodyend="1153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab2ee029ae9e7602cb4095471f52a5cfe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLMusicService.GetMetadata</definition>
+        <argsstring>(int relativeOffest, ref MLMusicServiceMetadata metadata)</argsstring>
+        <name>GetMetadata</name>
+        <param>
+          <type>int</type>
+          <declname>relativeOffest</declname>
+        </param>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_metadata" kindref="compound">MLMusicServiceMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Get the metadata for a track. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>relativeOffest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative offest of the current track that you would like medtadata for.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure to contain the metadata.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if one of the parameters is invalid.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MLResultCode.MediaGenericNoInit</ref> if not connected.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if necessary privilege is missing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1171" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1171" bodyend="1174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aa23d7f69e72ea030e5ccfb2093dd92d0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLMusicService.MLMusicService</definition>
+        <argsstring>()</argsstring>
+        <name>MLMusicService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="221" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae8b24d6edcf5242d66886cd64a6ded0f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalSetAuthString</definition>
+        <argsstring>(string authString)</argsstring>
+        <name>InternalSetAuthString</name>
+        <param>
+          <type>string</type>
+          <declname>authString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="365" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="365" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a39bda8d524e8542efbb9bf7f823ac977" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalSetURL</definition>
+        <argsstring>(string url)</argsstring>
+        <name>InternalSetURL</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="410" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="410" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a63c7a5de1380b8e4d4a79f92d2474c20" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalSetPlayList</definition>
+        <argsstring>(string[] playList)</argsstring>
+        <name>InternalSetPlayList</name>
+        <param>
+          <type>string []</type>
+          <declname>playList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="460" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="460" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a998be1aec5a1675b5ef53c4bed799096" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalStartPlayback</definition>
+        <argsstring>()</argsstring>
+        <name>InternalStartPlayback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="510" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="510" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a437d71528f66d0b39e77b40aa9247837" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalStopPlayback</definition>
+        <argsstring>()</argsstring>
+        <name>InternalStopPlayback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="551" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="551" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1b295582318fb2d9e2bae77d5f4384d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalPausePlayback</definition>
+        <argsstring>()</argsstring>
+        <name>InternalPausePlayback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="592" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="592" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a222cab9a49625cda341edc3f595424cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalResumePlayback</definition>
+        <argsstring>()</argsstring>
+        <name>InternalResumePlayback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="633" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="633" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afd779c8086e77a2ff57b3f0ec83cdfae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalSeek</definition>
+        <argsstring>(uint position)</argsstring>
+        <name>InternalSeek</name>
+        <param>
+          <type>uint</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="677" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="677" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab94d15f69b8db0af137bcf09a43d1ada" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalNext</definition>
+        <argsstring>()</argsstring>
+        <name>InternalNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="719" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="719" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1805676c7acddfd4f187c52fab7be9b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalPrevious</definition>
+        <argsstring>()</argsstring>
+        <name>InternalPrevious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="760" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="760" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a5d74bd9e8772fc588a0f134303782937" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLMusicService.InternalGetVolume</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="784" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="784" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a001528ab2ae7a2f8afab75fe5bd7a7cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLMusicService.InternalSetVolume</definition>
+        <argsstring>(float volume)</argsstring>
+        <name>InternalSetVolume</name>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="810" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="810" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a3aa66f6f6c3d0a50532ef3a01631d982" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLMusicService.InternalGetTrackLength</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetTrackLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="842" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="842" bodyend="866"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a4432db70935dd156837d401d6c8143fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLMusicService.InternalGetCurrentPosition</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetCurrentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="868" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="868" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a77abc29507784a6a34033891d480ac2a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalGetStatus</definition>
+        <argsstring>(ref MLMusicServiceStatus status)</argsstring>
+        <name>InternalGetStatus</name>
+        <param>
+          <type>ref <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a182b280c3ec09625584f3c14092e650d" kindref="member">MLMusicServiceStatus</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="910" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="910" bodyend="932"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6a47ec2aa2640436de2418f12c74b5e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalGetError</definition>
+        <argsstring>(ref MLMusicServiceError error)</argsstring>
+        <name>InternalGetError</name>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_error" kindref="compound">MLMusicServiceError</ref></type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="950" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="950" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aaee36e58b12c9400ec9eb7d84f91a737" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1abcbe1903c63246a9e2ca70164cceda49" kindref="member">MLMusicServicePlaybackState</ref></type>
+        <definition>MLMusicServicePlaybackState UnityEngine.XR.MagicLeap.MLMusicService.InternalGetPlaybackState</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetPlaybackState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="974" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="974" bodyend="998"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a9dca9e1a0b605e89a6962b71c3a76c38" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" kindref="member">MLMusicServiceRepeatState</ref></type>
+        <definition>MLMusicServiceRepeatState UnityEngine.XR.MagicLeap.MLMusicService.InternalGetRepeatState</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetRepeatState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1000" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1000" bodyend="1023"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a05ab572bf12d772041c90bc6815d16db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLMusicService.InternalSetRepeatState</definition>
+        <argsstring>(MLMusicServiceRepeatState state)</argsstring>
+        <name>InternalSetRepeatState</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ac0c7668002ba7427386add12b99959f4" kindref="member">MLMusicServiceRepeatState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1025" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1025" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a3067d6c5fc2f10e5d66e0f0b251980cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" kindref="member">MLMusicServiceShuffleState</ref></type>
+        <definition>MLMusicServiceShuffleState UnityEngine.XR.MagicLeap.MLMusicService.InternalGetShuffleState</definition>
+        <argsstring>()</argsstring>
+        <name>InternalGetShuffleState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1049" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1049" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afd9f9f747934dbed27ead437a1d3759d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLMusicService.InternalSetShuffleState</definition>
+        <argsstring>(MLMusicServiceShuffleState state)</argsstring>
+        <name>InternalSetShuffleState</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1adfb6de178fcfc3c4239ed6cb6f02585b" kindref="member">MLMusicServiceShuffleState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1076" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1076" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aa8c50b7461734415d5fbeca472165eaf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLMusicService.InternalGetMetadata</definition>
+        <argsstring>(ref MLMusicServiceMetadata metadata, int relativeOffest=0)</argsstring>
+        <name>InternalGetMetadata</name>
+        <param>
+          <type>ref <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_metadata" kindref="compound">MLMusicServiceMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>relativeOffest</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="1176" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="1176" bodyend="1222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab21741c0e3db66a28835b2b80c08a45f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLMusicService.CleanupAPI</definition>
+        <argsstring>(bool isSafeToAccessManagedObject)</argsstring>
+        <name>CleanupAPI</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d">CleanupAPI</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>isSafeToAccessManagedObject</declname>
+        </param>
+        <briefdescription>
+<para>Cleans up unmanaged memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="273" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="273" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2b22458f833ce9d1e66eb9d2419dd03a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLMusicService.Update</definition>
+        <argsstring>(float deltaTime)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="315" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="315" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages MusicService. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="469">
+        <label>UnityEngine.XR.MagicLeap.MLMusicService</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service"/>
+        <childnode refid="470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>MLAPISingleton&lt; MLMusicService &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="471">
+        <label>UnityEngine.XR.MagicLeap.MLMusicService</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>MLAPISingleton&lt; MLMusicService &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" line="75" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLMusicService.cs" bodystart="74" bodyend="1414"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1acc8bef1c4d7fca751dc95a924cf7a36e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_callbackData</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0bd1a3f75a80a8a547a11f4f7110fa9e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_callbacksUnmanaged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac64d513919cda74572a39186d126b80a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_connected</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2687a894530677b7ad741c8c9702f437" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_dispatchQueue</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a8b8c81c04f7d7f67ac4f11c782c69951" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_eventQueueLockObject</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a90280f812f6b66b623aa1d7dab240635" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_musicServiceProvider</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a84dd012ed03d44128785fb5540b8e32e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>_queuedActions</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>BaseStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>CheckValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab21741c0e3db66a28835b2b80c08a45f" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>CleanupAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a910e70311cdac7f08d2866d8bdfcbeaf" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>CreateInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a612ea62e5504b99f0108ce8cea6ff2f5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>CurrentPosition</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>DllNotFoundError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ad78f5f0c229679d90bd1992c838d6a6b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>GetError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a24a54dd2b46bc90d63e27742744ae63d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>GetMetadata</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6b4b7ee663cca6672e47bef59f009011" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>GetMetadata</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab2ee029ae9e7602cb4095471f52a5cfe" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>GetMetadata</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6705d9a49f7293789b24dd7524ed19c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>GetStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a4432db70935dd156837d401d6c8143fa" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetCurrentPosition</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6a47ec2aa2640436de2418f12c74b5e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aa8c50b7461734415d5fbeca472165eaf" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetMetadata</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aaee36e58b12c9400ec9eb7d84f91a737" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetPlaybackState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a9dca9e1a0b605e89a6962b71c3a76c38" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetRepeatState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a3067d6c5fc2f10e5d66e0f0b251980cf" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetShuffleState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a77abc29507784a6a34033891d480ac2a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a3aa66f6f6c3d0a50532ef3a01631d982" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetTrackLength</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a5d74bd9e8772fc588a0f134303782937" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalGetVolume</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab94d15f69b8db0af137bcf09a43d1ada" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalNext</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1b295582318fb2d9e2bae77d5f4384d5" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalPausePlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1805676c7acddfd4f187c52fab7be9b1" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalPrevious</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a222cab9a49625cda341edc3f595424cf" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalResumePlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afd779c8086e77a2ff57b3f0ec83cdfae" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSeek</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae8b24d6edcf5242d66886cd64a6ded0f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetAuthString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a63c7a5de1380b8e4d4a79f92d2474c20" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetPlayList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a05ab572bf12d772041c90bc6815d16db" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetRepeatState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afd9f9f747934dbed27ead437a1d3759d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetShuffleState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a39bda8d524e8542efbb9bf7f823ac977" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetURL</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a001528ab2ae7a2f8afab75fe5bd7a7cd" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalSetVolume</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a998be1aec5a1675b5ef53c4bed799096" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalStartPlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a437d71528f66d0b39e77b40aa9247837" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>InternalStopPlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>IsStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>IsValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aa23d7f69e72ea030e5ccfb2093dd92d0" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>MLMusicService</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0636b8008708b11441bdb62840701ef2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>MLMusicServiceSetAuthString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a765f63af04178f5cb80efbd6a4a3b775" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>MLMusicServiceSetPlayList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a8bbbc2ab94b6c9dd56eb73ba6c424a80" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>MLMusicServiceSetURL</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a264552c6f177ca37e075d1bb39db11e0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Next</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6e0bb1628b899fe2851e0697bb5bb99f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a012f78198461e56080432e4102f8f880" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnErrorCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1af91294c03717e5037ace52b6e090207f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnMetadataChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aad61b0982a882aa100dcc706d1aa5a29" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnMetadataChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1adfab3e6f3f10cc9b03e976e4de744170" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnPlaybackStateChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a1c2ba6523c6b9380321067ecb3341c26" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnPlaybackStateChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a802dbac8ba57bbe0e53bfbd898a70cbe" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnPositionChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab019f284993ec724997662051985ac6d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnPositionChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a0ba7ccb9887d9543f88d3b520fb13d5a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnRepeatStateChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab460acd1b798338e8d9be0076b17c8a2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnRepeatStateChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6bdc9f048a17d9af947c761c071f37df" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnShuffleStateChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a94a3b58166f13779f4da85af5a32242b" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnShuffleStateChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae2428678f2c7927035478ca5adeee586" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnStatusChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a4e2887b59c10b2f9638a4221608adc16" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnStatusChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a23e6e09998e1a805053970921bb3e5d2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnVolumeChange</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2017c7d3245f47b62ae12240feef5e18" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>OnVolumeChangeCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a6ff29b3e7effbd1b19c0f8262eb252a7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>PausePlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab0aeeb82b31d35355d66b8f4c4e5e0ae" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>PlaybackState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac45d742069d4d0745dcbdabddef121b7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Previous</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1abe9063d64f1b7b2da1e8c0558b29ae5e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>QueueCallback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1abcb3f17e88c3c1cdc304f26e9a6bbef1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>RepeatState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1adb81479ba5415d1b710809f443d68765" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>ResumePlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac3348fc53a464fc412d75932b968c2e3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Seek</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1afa0a70ddcc55fb9257b41e8b6cfd2033" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>SetAuthString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ac6f332844b2ed694125f9c852a32677e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>SetPlayList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a5e8d42f9458e1c06b3689d8454990bc3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>SetURL</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a16eec4199277874363b4e67d124c7a4e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>ShuffleState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a9b0f2a8d9d7375e3b6a8420c7e4494c3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a233f456005cf51be118d8c16bdf8d4ad" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>StartPlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Stop</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ae4be978aa006283fb377384644ce894b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>StopPlayback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1aff3b98a2afea582e716a1feaa59ce769" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>TrackLength</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1a2b22458f833ce9d1e66eb9d2419dd03a" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Update</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_music_service_1ab6020b305436d880092817b607f309b9" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLMusicService</scope><name>Volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

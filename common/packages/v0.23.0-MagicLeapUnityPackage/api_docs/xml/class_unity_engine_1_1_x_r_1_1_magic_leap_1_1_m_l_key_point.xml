@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLKeyPoint</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1ad745f16dd7d48e0413d3bba057566d75" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoint.IsValid</definition>
+        <argsstring></argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+<para>Returns if the keypoint is supported by the hand tracking framework. This is static data and does not update every frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" line="61" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1a47f964c2ca64a3421b71d0b74d1ba083" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoint.IsSupported</definition>
+        <argsstring></argsstring>
+        <name>IsSupported</name>
+        <briefdescription>
+<para>Returns if the keypoint is supported by the hand tracking framework. This is static data and does not update every frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1aada4e96a7e1ba63a7c5d3a15c26298eb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLKeyPoint.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+<para>Returns the position of the KeyPoint. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1a43dc98786fadd7f7b5a79a4edd429b13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLKeyPoint.MLKeyPoint</definition>
+        <argsstring>(bool supported)</argsstring>
+        <name>MLKeyPoint</name>
+        <param>
+          <type>bool</type>
+          <declname>supported</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the KeyPoint. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>supported</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The valid state of the KeyPoint.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class contains the valid state and current position of the KeyPoint. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoint.cs" bodystart="45" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1a47f964c2ca64a3421b71d0b74d1ba083" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoint</scope><name>IsSupported</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1ad745f16dd7d48e0413d3bba057566d75" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoint</scope><name>IsValid</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1a43dc98786fadd7f7b5a79a4edd429b13" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoint</scope><name>MLKeyPoint</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point_1aada4e96a7e1ba63a7c5d3a15c26298eb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoint</scope><name>Position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

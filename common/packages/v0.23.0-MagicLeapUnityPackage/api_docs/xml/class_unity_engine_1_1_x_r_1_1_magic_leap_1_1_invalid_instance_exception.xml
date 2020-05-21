@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::InvalidInstanceException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception_1adf1d73bb698fe770e39a30a901007060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.InvalidInstanceException.InvalidInstanceException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>InvalidInstanceException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Constructor to create an <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception" kindref="compound">InvalidInstanceException</ref> with a message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message to provide in the exception</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple custom exception for instance error checking </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>UnityEngine.XR.MagicLeap.InvalidInstanceException</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>UnityEngine.XR.MagicLeap.InvalidInstanceException</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" line="49" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLAPISingleton.cs" bodystart="48" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_invalid_instance_exception_1adf1d73bb698fe770e39a30a901007060" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::InvalidInstanceException</scope><name>InvalidInstanceException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

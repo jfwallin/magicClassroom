@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d0f023c2616b50e472311b446219f5c2" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input</compoundname>
+    <innerfile refid="_a_p_is_2_input_2_m_l_input_8cs">MLInput.cs</innerfile>
+    <innerfile refid="_a_p_is_2_input_2_m_l_input_controller_8cs">MLInputController.cs</innerfile>
+    <innerfile refid="_a_p_is_2_input_2_m_l_input_controller_touchpad_gesture_8cs">MLInputControllerTouchpadGesture.cs</innerfile>
+    <innerfile refid="_m_l_input_device_8cs">MLInputDevice.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/"/>
+  </compounddef>
+</doxygen>

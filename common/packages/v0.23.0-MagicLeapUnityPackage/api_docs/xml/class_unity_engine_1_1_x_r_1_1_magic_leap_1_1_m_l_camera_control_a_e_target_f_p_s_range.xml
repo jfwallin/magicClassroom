@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a4c4b38e66c6e10da8e62601f6eda38eb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange._minimum</definition>
+        <argsstring></argsstring>
+        <name>_minimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="597" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1aacc6c09b421420fec8fbc6f26566094b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange._maximum</definition>
+        <argsstring></argsstring>
+        <name>_maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="605" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1af7f36938e085e1c7b61d32897cebeb5f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange.Minimum</definition>
+        <argsstring></argsstring>
+        <name>Minimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="599" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a5d3289229b21625075b54062243e274f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange.Maximum</definition>
+        <argsstring></argsstring>
+        <name>Maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="607" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1ac4597320c363b351d9573c4bdc28863b" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange.isDirty</definition>
+        <argsstring></argsstring>
+        <name>isDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="613" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a074b937444c9085fe0b0c530a70a625d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLCameraControlAETargetFPSRange.MLCameraControlAETargetFPSRange</definition>
+        <argsstring>(int minimum, int maximum)</argsstring>
+        <name>MLCameraControlAETargetFPSRange</name>
+        <param>
+          <type>int</type>
+          <declname>minimum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="616" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="616" bodyend="622"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" line="596" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/CameraApiNativeBindings.cs" bodystart="595" bodyend="623"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1aacc6c09b421420fec8fbc6f26566094b" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>_maximum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a4c4b38e66c6e10da8e62601f6eda38eb" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>_minimum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1ac4597320c363b351d9573c4bdc28863b" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>isDirty</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a5d3289229b21625075b54062243e274f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>Maximum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1af7f36938e085e1c7b61d32897cebeb5f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>Minimum</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_control_a_e_target_f_p_s_range_1a074b937444c9085fe0b0c530a70a625d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraControlAETargetFPSRange</scope><name>MLCameraControlAETargetFPSRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_mesh" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLHandMesh</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_mesh_1aff012acd94fb6210b4620f66869e9609" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_mesh_block" kindref="compound">MLHandMeshBlock</ref> []</type>
+        <definition>MLHandMeshBlock [] UnityEngine.XR.MagicLeap.MLHandMesh.MeshBlock</definition>
+        <argsstring></argsstring>
+        <name>MeshBlock</name>
+        <briefdescription>
+<para>Array of mesh blocks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLHandMeshing.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLHandMeshing.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure to represent a hand mesh. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLHandMeshing.cs" line="65" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLHandMeshing.cs" bodystart="64" bodyend="70"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand_mesh_1aff012acd94fb6210b4620f66869e9609" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLHandMesh</scope><name>MeshBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

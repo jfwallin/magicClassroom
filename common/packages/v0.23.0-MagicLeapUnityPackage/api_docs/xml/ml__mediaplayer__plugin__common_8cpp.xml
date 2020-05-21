@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ml__mediaplayer__plugin__common_8cpp" kind="file" language="C++">
+    <compoundname>ml_mediaplayer_plugin_common.cpp</compoundname>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">ml_logging.h</includes>
+    <includes local="no">ml_media_player.h</includes>
+    <includes refid="ml__mediaplayer__plugin__common_8h" local="yes">ml_mediaplayer_plugin_common.h</includes>
+    <incdepgraph>
+      <node id="41">
+        <label>EGL/eglext.h</label>
+      </node>
+      <node id="43">
+        <label>GLES2/gl2ext.h</label>
+      </node>
+      <node id="46">
+        <label>IUnityInterface.h</label>
+        <link refid="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_interface_8h_source"/>
+      </node>
+      <node id="38">
+        <label>string</label>
+      </node>
+      <node id="33">
+        <label>map</label>
+      </node>
+      <node id="45">
+        <label>IUnityGraphics.h</label>
+        <link refid="_lumin_media_player_2_external_2_apis_2_media_player_plugin_2_i_unity_graphics_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp</label>
+        <link refid="ml__mediaplayer__plugin__common_8cpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>pthread.h</label>
+      </node>
+      <node id="31">
+        <label>unistd.h</label>
+      </node>
+      <node id="36">
+        <label>ml_mediaplayer_plugin_common.h</label>
+        <link refid="ml__mediaplayer__plugin__common_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>vector</label>
+      </node>
+      <node id="44">
+        <label>ml_media_cea608_caption.h</label>
+      </node>
+      <node id="42">
+        <label>GLES2/gl2.h</label>
+      </node>
+      <node id="35">
+        <label>ml_media_player.h</label>
+      </node>
+      <node id="40">
+        <label>EGL/egl.h</label>
+      </node>
+      <node id="34">
+        <label>ml_logging.h</label>
+      </node>
+      <node id="32">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ml__mediaplayer__plugin__common_8cpp_1a5cad805800af81351ca350a0e89ee140" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, <ref refid="struct_media_player_context" kindref="compound">MediaPlayerContext</ref> &gt;</type>
+        <definition>std::map&lt;int, MediaPlayerContext&gt; _player_contexts_map</definition>
+        <argsstring></argsstring>
+        <name>_player_contexts_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="12" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ml__mediaplayer__plugin__common_8cpp_1ab0a441423ec1252e48a20d6ea1574ddb" prot="public" static="yes" mutable="no">
+        <type>pthread_mutex_t</type>
+        <definition>pthread_mutex_t _player_contexts_map_mutex</definition>
+        <argsstring></argsstring>
+        <name>_player_contexts_map_mutex</name>
+        <initializer>= PTHREAD_MUTEX_INITIALIZER</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="15" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ml__mediaplayer__plugin__common_8cpp_1ad3c0164c3298eeee4dfa594ef8944b96" prot="public" static="no" mutable="no">
+        <type>pthread_attr_t</type>
+        <definition>pthread_attr_t _destroy_pthread_attr</definition>
+        <argsstring></argsstring>
+        <name>_destroy_pthread_attr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="18" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ml__mediaplayer__plugin__common_8cpp_1aacd423c9bcb39e94788e31db90817630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_media_player_context" kindref="compound">MediaPlayerContext</ref> *</type>
+        <definition>MediaPlayerContext* GetOrCreateMediaPlayerContextByID</definition>
+        <argsstring>(const int media_player_id)</argsstring>
+        <name>GetOrCreateMediaPlayerContextByID</name>
+        <param>
+          <type>const int</type>
+          <declname>media_player_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="20" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="20" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="ml__mediaplayer__plugin__common_8cpp_1a0cdb1903e431d5b5b4425dd47a671a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReleaseMediaPlayerContextByID</definition>
+        <argsstring>(const int media_player_id)</argsstring>
+        <name>ReleaseMediaPlayerContextByID</name>
+        <param>
+          <type>const int</type>
+          <declname>media_player_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="36" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="ml__mediaplayer__plugin__common_8cpp_1ac5e3c9399e948563eda1124428c33fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* MLMediaPlayerDestroyThread</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>MLMediaPlayerDestroyThread</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp" bodystart="46" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ml_logging.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ml_media_player.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ml_mediaplayer_plugin_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Need<sp/>a<sp/>context<sp/>per<sp/>player.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Static<sp/>map<sp/>of<sp/>all<sp/>the<sp/>active<sp/>players.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::map&lt;int,<sp/>MediaPlayerContext&gt;<sp/>_player_contexts_map;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>responsible<sp/>for<sp/>locking<sp/>when<sp/>manipulating<sp/>context<sp/>map.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>pthread_mutex_t<sp/>_player_contexts_map_mutex<sp/>=<sp/>PTHREAD_MUTEX_INITIALIZER;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>destroy<sp/>thread<sp/>attributes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">pthread_attr_t<sp/><sp/>_destroy_pthread_attr;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="struct_media_player_context" kindref="compound">MediaPlayerContext</ref>*<sp/>GetOrCreateMediaPlayerContextByID(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>media_player_id)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(&amp;_player_contexts_map_mutex);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>will<sp/>either<sp/>create<sp/>a<sp/>new<sp/>entry<sp/>or<sp/>find<sp/>an<sp/>existing<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_media_player_context" kindref="compound">MediaPlayerContext</ref>*<sp/>lMediaPlayerContext<sp/>=<sp/>&amp;(_player_contexts_map[media_player_id]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>sure<sp/>the<sp/>entry<sp/>returned<sp/>is<sp/>set<sp/>to<sp/>the<sp/>correct<sp/>media_player_id,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>is<sp/>only<sp/>really<sp/>relevant<sp/>on<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>lMediaPlayerContext-&gt;media_player_id<sp/>=<sp/>media_player_id;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(&amp;_player_contexts_map_mutex);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lMediaPlayerContext;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Remove<sp/>the<sp/>specified<sp/>media<sp/>player<sp/>context<sp/>from<sp/>our<sp/>player<sp/>map.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReleaseMediaPlayerContextByID(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>media_player_id)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(&amp;_player_contexts_map_mutex);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>_player_contexts_map.erase(media_player_id);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(&amp;_player_contexts_map_mutex);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Thread<sp/>function<sp/>used<sp/>to<sp/>destroy<sp/>media<sp/>players<sp/>on<sp/>detached<sp/>threads<sp/>to<sp/>prevent<sp/>blocking<sp/>main<sp/>thread.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>MLMediaPlayerDestroyThread(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pthread<sp/>names<sp/>are<sp/>limited<sp/>to<sp/>16<sp/>characters<sp/>[including<sp/>null]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>thread_name[16];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_media_player_destroy_thread_data" kindref="compound">MediaPlayerDestroyThreadData</ref>*<sp/>destroy_data<sp/>=<sp/>((<ref refid="struct_media_player_destroy_thread_data" kindref="compound">MediaPlayerDestroyThreadData</ref>*)<sp/>data);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(thread_name,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(thread_name),</highlight><highlight class="stringliteral">&quot;MPDestroy%06d&quot;</highlight><highlight class="normal">,<sp/>destroy_data-&gt;media_player_id);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ML_LOG_TAG(Debug,<sp/>_AppName,<sp/>&quot;%s()<sp/>MediaPlayerContext<sp/>%d<sp/>Thread<sp/>Name:<sp/>%s&quot;,<sp/>__FUNCTION__,<sp/>destroy_data.media_player_id,<sp/>thread_name);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>thread<sp/>name<sp/>to<sp/>something<sp/>reasonable<sp/>for<sp/>debugging<sp/>purposes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_setname_np(pthread_self(),<sp/>thread_name);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>MLResult<sp/>result<sp/>=<sp/>MLMediaPlayerDestroy(destroy_data-&gt;mediaplayer_handle);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>!=<sp/>MLResult_Ok)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ML_LOG_TAG(Debug,<sp/>_AppName,<sp/></highlight><highlight class="stringliteral">&quot;%s()<sp/>MediaPlayerContext<sp/>%d<sp/>MLMediaPlayerDestroy<sp/>failed.<sp/>Error:<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__FUNCTION__,<sp/>destroy_data-&gt;media_player_id,<sp/>MLMediaResultGetString(result));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>destroy_data;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Apis/MediaPlayerPlugin/ml_mediaplayer_plugin_common.cpp"/>
+  </compounddef>
+</doxygen>

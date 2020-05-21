@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundariesList</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1a5c0b331f4179127738fd00effdb1a61c" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong MagicLeapInternal.PlanesApiNativeBindings.MLPlaneBoundariesList.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="148" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1a12ade0f7859f2fd241f7c00f0bb23ca6" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.PlanesApiNativeBindings.MLPlaneBoundariesList.PlaneBoundaries</definition>
+        <argsstring></argsstring>
+        <name>PlaneBoundaries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="150" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1ad3c2178a4e4b963a21acfeb58457628d" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.PlanesApiNativeBindings.MLPlaneBoundariesList.PlaneBoundariesCount</definition>
+        <argsstring></argsstring>
+        <name>PlaneBoundariesCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="152" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" line="147" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/PlanesApiNativeBindings.cs" bodystart="146" bodyend="153"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1a12ade0f7859f2fd241f7c00f0bb23ca6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundariesList</scope><name>PlaneBoundaries</name></member>
+      <member refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1ad3c2178a4e4b963a21acfeb58457628d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundariesList</scope><name>PlaneBoundariesCount</name></member>
+      <member refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list_1a5c0b331f4179127738fd00effdb1a61c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::PlanesApiNativeBindings::MLPlaneBoundariesList</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

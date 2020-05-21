@@ -1,0 +1,2 @@
+# image supports MLSDK 0.15.0+
+PKGFLAGS = tailDataVersion=3 validateManifest=false

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLEyes</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLEyes &gt;</basecompoundref>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLEyes &gt;</basecompoundref>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1_1_m_l_eye" prot="public">UnityEngine::XR::MagicLeap::MLEyes::MLEye</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2ebcba70d171eead1ac933954b90319a" prot="public" static="no">
+        <name>Calibration</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2ebcba70d171eead1ac933954b90319aa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Eye calibration has not been performed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2ebcba70d171eead1ac933954b90319aa7ff3e75ce6aca348bc513ed3d5882946" prot="public">
+          <name>Bad</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The eye calibration data is bad. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2ebcba70d171eead1ac933954b90319aa0c6ad70beb3a7e76c3fc7adab7c46acc" prot="public">
+          <name>Good</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The eye calibration data is good. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for the eye calibration status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLEyes.cs" line="34" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLEyes.cs" bodystart="33" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2baadc01cbad2d0706527fd1b186aab7" prot="public" static="no">
+        <name>MLEyeTrackingCalibrationStatus</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2baadc01cbad2d0706527fd1b186aab7a4fdce556c4bda67e8ec9ce1fbc30bcd0" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Eye calibration has not been performed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2baadc01cbad2d0706527fd1b186aab7a4697db864a568cb374cb98ad8f543e36" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_Bad</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The eye calibration data is bad. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2baadc01cbad2d0706527fd1b186aab7ac113b4720e33d49339bd076ecc693a64" prot="public">
+          <name>MLEyeTrackingCalibrationStatus_Good</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The eye calibration data is good. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for the eye calibration status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/MLEye.cs" bodystart="121" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes" kindref="compound">MLEyes</ref> class contains all Eye tracking data for both left and right eyes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>UnityEngine.XR.MagicLeap.MLEyes</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>MLAPISingleton&lt; MLEyes &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>UnityEngine.XR.MagicLeap.MLEyes</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>MLAPISingleton&lt; MLEyes &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLEyes.cs" line="29" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLEyes.cs" bodystart="28" bodyend="359"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2ebcba70d171eead1ac933954b90319a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLEyes</scope><name>Calibration</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes_1a2baadc01cbad2d0706527fd1b186aab7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLEyes</scope><name>MLEyeTrackingCalibrationStatus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1aab68f50f2309e315cd372efebe0ffe72" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+<para>Version of this structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1aa142acb332c523e6af79a3949b500c53" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a3fd51cc067e82e1b25ffa4882f73ce9e" kindref="member">OnRegistrationCompleteCallback</ref></type>
+        <definition>OnRegistrationCompleteCallback MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.OnRegistrationComplete</definition>
+        <argsstring></argsstring>
+        <name>OnRegistrationComplete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="158" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a5073d78caf394427a6e6aed5910a372a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a2029ab827a4ce86aed8279b4edb599d6" kindref="member">OnInvitationCallback</ref></type>
+        <definition>OnInvitationCallback MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.OnInvitation</definition>
+        <argsstring></argsstring>
+        <name>OnInvitation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a3fd51cc067e82e1b25ffa4882f73ce9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.OnRegistrationCompleteCallback</definition>
+        <argsstring>(MLResultCode result, IntPtr data)</argsstring>
+        <name>OnRegistrationCompleteCallback</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a2029ab827a4ce86aed8279b4edb599d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.OnInvitationCallback</definition>
+        <argsstring>([MarshalAs(UnmanagedType.I1)] bool userAccepted, IntPtr payload, IntPtr data)</argsstring>
+        <name>OnInvitationCallback</name>
+        <param>
+          <attributes>[MarshalAs(UnmanagedType.I1)]</attributes>
+          <type>bool</type>
+          <declname>userAccepted</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>IntPtr</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a958ab6dc980dfb5e49db95cd67095465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.ConnectionsApiNativeBindings.MLConnectionsInviteCallbacks.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Initializes default values for <ref refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks" kindref="compound">MLConnectionsInviteCallbacks</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="168" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" bodystart="168" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Links to <ref refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks" kindref="compound">MLConnectionsInviteCallbacks</ref> in ml_input.h. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" line="150" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ConnectionsApiNativeBindings.cs" bodystart="149" bodyend="174"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a958ab6dc980dfb5e49db95cd67095465" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a5073d78caf394427a6e6aed5910a372a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>OnInvitation</name></member>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a2029ab827a4ce86aed8279b4edb599d6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>OnInvitationCallback</name></member>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1aa142acb332c523e6af79a3949b500c53" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>OnRegistrationComplete</name></member>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1a3fd51cc067e82e1b25ffa4882f73ce9e" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>OnRegistrationCompleteCallback</name></member>
+      <member refid="struct_magic_leap_internal_1_1_connections_api_native_bindings_1_1_m_l_connections_invite_callbacks_1aab68f50f2309e315cd372efebe0ffe72" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ConnectionsApiNativeBindings::MLConnectionsInviteCallbacks</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

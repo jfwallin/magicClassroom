@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1ace4cd675c8d8fcd845ac6f05c3d9c4d7" prot="public" static="no" mutable="no">
+        <type>byte []</type>
+        <definition>byte [] MagicLeapInternal.HandTrackingApiNativeBindings.MLHandTrackingConfiguration.KeyposeConfig</definition>
+        <argsstring></argsstring>
+        <name>KeyposeConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1aae22a281f7a89419f13174b19dbcc5ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MagicLeapInternal.HandTrackingApiNativeBindings.MLHandTrackingConfiguration.HandTrackingPipelineEnabled</definition>
+        <argsstring></argsstring>
+        <name>HandTrackingPipelineEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="124" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1a96e9e95c090192592bae9148fa43ce28" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aad0166a0e75c5741dff89c729fc584a3" kindref="member">MLKeyPointFilterLevel</ref></type>
+        <definition>MLKeyPointFilterLevel MagicLeapInternal.HandTrackingApiNativeBindings.MLHandTrackingConfiguration.KeyPointsFilterLevel</definition>
+        <argsstring></argsstring>
+        <name>KeyPointsFilterLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="126" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1ae297cebb29b731ed02e33e240fedfdc4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2f86e7832d16d3638b463ea253f93949" kindref="member">MLPoseFilterLevel</ref></type>
+        <definition>MLPoseFilterLevel MagicLeapInternal.HandTrackingApiNativeBindings.MLHandTrackingConfiguration.PoseFilterLevel</definition>
+        <argsstring></argsstring>
+        <name>PoseFilterLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="128" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" line="118" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/HandTrackingApiNativeBindings.cs" bodystart="117" bodyend="129"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1aae22a281f7a89419f13174b19dbcc5ba" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</scope><name>HandTrackingPipelineEnabled</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1a96e9e95c090192592bae9148fa43ce28" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</scope><name>KeyPointsFilterLevel</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1ace4cd675c8d8fcd845ac6f05c3d9c4d7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</scope><name>KeyposeConfig</name></member>
+      <member refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration_1ae297cebb29b731ed02e33e240fedfdc4" prot="public" virt="non-virtual"><scope>MagicLeapInternal::HandTrackingApiNativeBindings::MLHandTrackingConfiguration</scope><name>PoseFilterLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

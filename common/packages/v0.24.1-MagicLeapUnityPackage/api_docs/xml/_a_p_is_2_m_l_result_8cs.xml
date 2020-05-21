@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_a_p_is_2_m_l_result_8cs" kind="file" language="C#">
+    <compoundname>MLResult.cs</compoundname>
+    <innerclass refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" prot="public">UnityEngine::XR::MagicLeap::MLResult</innerclass>
+    <innernamespace refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap">UnityEngine::XR::MagicLeap</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>%BANNER_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_BEGIN%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&lt;copyright<sp/>file=&quot;MLResult.cs&quot;<sp/>company=&quot;Magic<sp/>Leap,<sp/>Inc&quot;&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2018-present,<sp/>Magic<sp/>Leap,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&lt;/copyright&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%COPYRIGHT_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>%BANNER_END%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_engine" kindref="compound">UnityEngine</ref>.XR.MagicLeap</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.InteropServices;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>PLATFORM_LUMIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_unity_engine" kindref="compound">UnityEngine</ref>.<ref refid="namespace_unity_engine_1_1_x_r" kindref="compound">XR</ref>.<ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref>.<ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1_1_native" kindref="compound">Native</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>partial<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>PLATFORM_LUMIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>Result;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Dictionary&lt;Code,<sp/>MLResult&gt;<sp/>existingResults;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>message;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>result,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>msg)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.Result<sp/>=<sp/>result;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.message<sp/>=<sp/>msg;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa60852f204ed8028c1c58808b746d115" kindref="member">Ok</ref><sp/>=<sp/>(CodePrefix.MLResultGlobal<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d13df6f8b5e4c5af9f87e0dc39df69d" kindref="member">Pending</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a08e07e103de24d42308550bebe98fab8ac85a251cc457840f1e032f1b733e9398" kindref="member">Timeout</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad0f2e5376298c880665077b565ffd7dd" kindref="member">Locked</ref>,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">UnspecifiedFailure</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">InvalidParam</ref>,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af5576b457e6e3048732bc8bd5eba789b" kindref="member">AllocFailed</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">PrivilegeDenied</ref>,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a997ca4ce119685f40f03a9a8a6c5346e" kindref="member">NotImplemented</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Obsolete(</highlight><highlight class="stringliteral">&quot;Please<sp/>use<sp/>MLResult.Code.NotImplemented<sp/>instead.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a89d5f5b7dc4b5caf60e312317acaa3ef" kindref="member">NotCompatible</ref><sp/>=<sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a997ca4ce119685f40f03a9a8a6c5346e" kindref="member">NotImplemented</ref>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLAudioResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5944c19022f8e8f09a90a534e2f2a651" kindref="member">AudioNotImplemented</ref><sp/>=<sp/>(CodePrefix.MLAudioResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac678217e9221549a9b0835a09ca53899" kindref="member">AudioHandleNotFound</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a580b7af6747c5eb9402bdc442f6aaaa1" kindref="member">AudioInvalidSampleRate</ref>,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a840cea34dfc327cba76f2715d0d6f59b" kindref="member">AudioInvalidBitsPerSample</ref>,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4908e1ce221b836f4a524f488e7df522" kindref="member">AudioInvalidValidBits</ref>,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa5c7af6649e3962ab8a31f1affc35e92" kindref="member">AudioInvalidSampleFormat</ref>,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aaf10bcf32be906146bc8ec9eb42307a2" kindref="member">AudioInvalidChannelCount</ref>,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af2067ddf5155e7dc47cc36e864a86558" kindref="member">AudioInvalidBufferSize</ref>,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0aaa0061c4eb6c518ca8149760f6945" kindref="member">AudioBufferNotReady</ref>,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8dac2dafd761de0330b64d07ea2637c5" kindref="member">AudioFileNotFound</ref>,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aae857bbb331d5fe325e776c8f84fe011" kindref="member">AudioFileNotRecognized</ref>,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac9471428e1c51f8aed46345d302d53f6" kindref="member">AudioResourceNotFound</ref>,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a60020608278d99e15b41459410edf998" kindref="member">AudioResourceDiscarded</ref>,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac9bd7b604f99f640b25f8ec11f0fc1fb" kindref="member">AudioOperationUnavailable</ref>,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad4e54843fd8995b476804735e20def32" kindref="member">AudioInternalConfigError</ref>,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLMediaPlayerResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab5febbae7c9467c12ca1750d56ea8ea7" kindref="member">MediaPlayerServerDied</ref><sp/>=<sp/>(CodePrefix.MLMediaPlayerResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a982eee84491938e9cc5b24e3f47f0c43" kindref="member">MediaPlayerNotValidForProgressivePlayback</ref>,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac174cc235b981ede0f7307546820ba93" kindref="member">MediaNotConnected</ref><sp/>=<sp/>(CodePrefix.MLMediaResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a771040878bcfaad5eafffc46fa1127ab" kindref="member">MediaUnknownHost</ref>,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9648db48bf855d64b5705372fc08aae9" kindref="member">MediaCannotConnect</ref>,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae1cef284487799cf157ffc959918d016" kindref="member">MediaIO</ref>,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a314036efc11f756b61853a9459b55c19" kindref="member">MediaConnectionLost</ref>,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a73ab9ecdb7b8ffc1d5ce84c2868014b2" kindref="member">MediaLegacy1</ref>,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4242b1f819e8cc6153cb81a27cc79204" kindref="member">MediaMalformed</ref>,</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9648a117d53be2533fdecf70841cca87" kindref="member">MediaOutOfRange</ref>,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4c9b4f53d809949c934449973d502b6a" kindref="member">MediaBufferTooSmall</ref>,</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa7917727ff62433482f31851c0f1d257" kindref="member">MediaUnsupported</ref>,</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a838f5e190d77ae1d6fc3b81d800d929b" kindref="member">MediaEndOfStream</ref>,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9bbdf5e7089f7776b05bf379f9931c51" kindref="member">MediaFormatChanged</ref>,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8c109a5fd18c7826120a9ba0a2b5842c" kindref="member">MediaDiscontinuity</ref>,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1dbfe357b3e458c5746eae9a1576decf" kindref="member">MediaOutputBuffersChanged</ref>,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a57307e343f0e7ea7a1ba6dc29963f9b4" kindref="member">MediaPermissionRevoked</ref>,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac216c1f111a85337ce0b5dc9dd89e09e" kindref="member">MediaUnsupportedAudioFormat</ref>,</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a3cb6da65e6e72aa8c1785e461e1092a7" kindref="member">MediaHeartbeatTerminateRequested</ref>,</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLMediaDRMResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aad682f0d055cbccea75bf4ef512905e7" kindref="member">MediaDRMUnknown</ref><sp/>=<sp/>(CodePrefix.MLMediaDRMResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2fb34eed849357c0a7edab917d7f73ac" kindref="member">MediaDRMNoLicense</ref>,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a99ad40c42db8faf3f53f8fb391e831de" kindref="member">MediaDRMLicenseExpired</ref>,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6f7ba48c084acc200f60dc7095c022e5" kindref="member">MediaDRMSessionNotOpened</ref>,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a89fdf4f7c00aadb0251e04d13ed321e3" kindref="member">MediaDRMDecryptUnitNotInitialized</ref>,</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aedaae0fc4f00fc1b3e75fd93ae357328" kindref="member">MediaDRMDecrypt</ref>,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5284b8df8f407a44f9d311114cadda54" kindref="member">MediaDRMCannotHandle</ref>,</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359acb528ac51fd04cd1415aad4a0e4b41a2" kindref="member">MediaDRMTamperDetect</ref>,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab48467104000bb951322bd193e84422c" kindref="member">MediaDRMNotProvisioned</ref>,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab653ed354a91f81c86dce126beab6447" kindref="member">MediaDRMDeviceRevoked</ref>,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5397897afe7d59238d636876840d9244" kindref="member">MediaDRMResourceBusy</ref>,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a7ba9ce5f2c5a17ed05767a6127c24e83" kindref="member">MediaDRMInsufficientOutputProtection</ref>,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae39b21096233d2d7f0734c2f7b43a5b3" kindref="member">MediaDRMLastUsedErrorCode</ref><sp/>=<sp/>MediaDRMInsufficientOutputProtection,</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a434fb5024a4c5b47488b60c20966b699" kindref="member">MediaDRMVendorMin</ref><sp/>=<sp/>(CodePrefix.MLMediaDRMResult<sp/>&lt;&lt;<sp/>16)<sp/>+<sp/>500,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0f2ff6c9c274834cfaf58a268071fe67" kindref="member">MediaDRMVendorMax</ref><sp/>=<sp/>(CodePrefix.MLMediaDRMResult<sp/>&lt;&lt;<sp/>16)<sp/>+<sp/>999,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLMediaGenericResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab79ca23ffd84ef65a3eb51ec349057da" kindref="member">MediaGenericInvalidOperation</ref><sp/>=<sp/>(CodePrefix.MLMediaGenericResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac12e55b752f5a9ed74ea8bcf7f5e9011" kindref="member">MediaGenericBadType</ref>,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0b5765b08ee6c8ff95c26faf364abeb1" kindref="member">MediaGenericNameNotFound</ref>,</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab17cdd1abd11470319ae5c07355efb21" kindref="member">MediaGenericHandleNotFound</ref>,</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a570dff2e4b9268a1360438da864ac346" kindref="member">MediaGenericNoInit</ref>,</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a25cc9815e1c3f4b4e0c7643266259544" kindref="member">MediaGenericAlreadyExists</ref>,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af34d8741a840d69ee2372a692173ecf3" kindref="member">MediaGenericDeadObject</ref>,</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a86ed2157a969f713fbd31b5fd49d311c" kindref="member">MediaGenericFailedTransaction</ref>,</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5df02b381ff7932aa8217d986a6e9a30" kindref="member">MediaGenericBadIndex</ref>,</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6eb58b27e893de45a903fc7bc3cfe1a6" kindref="member">MediaGenericNotEnoughData</ref>,</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac2ea6b6ec915a7eba78e6263743c550d" kindref="member">MediaGenericWouldBlock</ref>,</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a57cda85d5880b4c631e21a702917faca" kindref="member">MediaGenericUnknownTransaction</ref>,</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0e697a48155de872143226bf9667c792" kindref="member">MediaGenericFDSNotAllowed</ref>,</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abbd93ff054986da4339bf2898d463ea9" kindref="member">MediaGenericUnexpectedNull</ref>,</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLDispatchResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae9d93ed63a45bf2f2565c57d2c6520c2" kindref="member">DispatchCannotStartApp</ref><sp/>=<sp/>(CodePrefix.MLDispatchResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aae7abf98dc6ff0c971c465b34e164b4a" kindref="member">DispatchInvalidPacket</ref>,</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2462d1bbdc2bf9de65aa8ec4e142966c" kindref="member">DispatchNoAppFound</ref>,</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a91fac84def1c260c1a5515e472b3ddfd" kindref="member">DispatchAppPickerDialogFailure</ref>,</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DispatchInvalidSchema,</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab181271d65f4c482fb835483403a6e14" kindref="member">DispatchInvalidUrl</ref>,</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5e813805ed2a1bf1fc534b6f765e89c0" kindref="member">DispatchSchemaAlreadyRegistered</ref>,</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLIdentityResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4a71132ec176b40bfc5314a59528c2ff" kindref="member">IdentityFailedToConnectToLocalService</ref><sp/>=<sp/>(CodePrefix.MLIdentityResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359afff46b948a21554149561dabca493b4c" kindref="member">IdentityFailedToConnectToCloudService</ref>,</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abce08d6724ae139d6ee672c6a0db0d44" kindref="member">IdentityCloudAuthentication</ref>,</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a483a8709eb9554eb8df42898b358de91" kindref="member">IdentityInvalidInformationFromCloud</ref>,</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a7043fc5e59c13b8a4986adca4529f820" kindref="member">IdentityNotLoggedIn</ref>,</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aca68e69c7881799badde3875d57949e0" kindref="member">IdentityExpiredCredentials</ref>,</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0e65579ba82998fdeae2df29734919e4" kindref="member">IdentityFailedToGetUserProfile</ref>,</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a295717f69d7cf73fe702b6470b40c596" kindref="member">IdentityUnauthorized</ref>,</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad945f5bb7541cba2754ccf7ffbf5cb1b" kindref="member">IdentityCertificateError</ref>,</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad50b3d84de14209bd7a0ca8e1fa7a462" kindref="member">IdentityRejectedByCloud</ref>,</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2f9c977fb71eba0e8aa8e9f2645c685d" kindref="member">IdentityAlreadyLoggedIn</ref>,</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a3b132ba615d85437607e81b802a44fc3" kindref="member">IdentityModifyIsNotSupported</ref>,</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a522c9afd8d01a620cc13607d49d1bb53" kindref="member">IdentityNetworkError</ref>,</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLPassableWorldResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad5a147825761cd8eeb77911dca740080" kindref="member">PassableWorldLowMapQuality</ref><sp/>=<sp/>(CodePrefix.MLPassableWorldResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa3b2b478c395f02178f9d27770bb815d" kindref="member">PassableWorldUnableToLocalize</ref>,</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab2f964ea814dc78844bd9c51353ef36d" kindref="member">PassableWorldServerUnavailable</ref>,</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PassableWorldNotFound,</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PassableWorldSharedWorldNotEnabled,</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLScreensResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Obsolete(</highlight><highlight class="stringliteral">&quot;Deprecated<sp/>and<sp/>scheduled<sp/>for<sp/>removal.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4d3c141eb0576c9becd55bc6f277a8a1" kindref="member">ScreensServiceNotAvailable</ref><sp/>=<sp/>(CodePrefix.MLScreensResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Obsolete(</highlight><highlight class="stringliteral">&quot;Deprecated<sp/>and<sp/>scheduled<sp/>for<sp/>removal.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ScreensPermissionDenied,</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Obsolete(</highlight><highlight class="stringliteral">&quot;Deprecated<sp/>and<sp/>scheduled<sp/>for<sp/>removal.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ScreensInvalidScreenId,</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLTokenAgentResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a267718d10ac6f3f4faca85d4caa3a62e" kindref="member">TokenAgentFailedToConnectToLocalService</ref><sp/>=<sp/>(CodePrefix.MLTokenAgentResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1318263bce72d3d4187c90eef87261cd" kindref="member">TokenAgentServiceNotStarted</ref>,</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a5192c49c4cf83a65877d5a247e0a314f" kindref="member">TokenAgentFailedToConnectToCloud</ref>,</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a02c3017ca0fa6e308458985e7db77bea" kindref="member">TokenAgentCloudAuthentication</ref>,</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a6afba5fa07ecf87db80a66a3cf83512b" kindref="member">TokenAgentFailedToLogin</ref>,</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0b76e5ee5d496559ce8ae53b7dbdd23" kindref="member">TokenAgentLoginNotBegun</ref>,</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1c7a100cb7d08a53babcd771813fb1f0" kindref="member">TokenAgentNotLoggedIn</ref>,</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ad7a0ee1c4a4a8fed8a34347203a12c40" kindref="member">TokenAgentAlreadyLoggedIn</ref>,</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aec3a705eb5bb59f449bfc37e36c0ed76" kindref="member">TokenAgentLoginInProgress</ref>,</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ae9d8791e4eaf5ccc92c345a3021b8850" kindref="member">TokenAgentFailedToStartIdentityService</ref>,</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8e94e4d770ced49323ef817bbeddfd22" kindref="member">TokenAgentDeviceNotRegistered</ref>,</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8827e477bdbc6674c8063b599a2a0732" kindref="member">TokenAgentDeviceNotConnected</ref>,</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLSnapshotResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359adfcc0d8d4a61c8a156b7e90d7c229b28" kindref="member">SnapshotPoseNotFound</ref><sp/>=<sp/>(CodePrefix.MLSnapshotResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLPrivilegesResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2393f46a53801896ee6c5204b6411204" kindref="member">PrivilegeGranted</ref><sp/>=<sp/>(CodePrefix.MLPrivilegesResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a16b1332e475a42d518f6a90e481d98de" kindref="member">PrivilegeNotGranted</ref>,</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLContactsResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a04063d0f0673cf8b72d810f12c3aecf5" kindref="member">ContactsHandleNotFound</ref><sp/>=<sp/>(CodePrefix.MLContactsResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4d7902b17a538b435b228822b2da54be" kindref="member">ContactsCompleted</ref>,</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9503dffd180df80e28e63a1a4e1f2ff6" kindref="member">ContactsCancelled</ref>,</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a191ec79bf4d11d76de4a7b330c891a8b" kindref="member">ContactsIllegalState</ref>,</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLLocationResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359abd98e089a6121776cee59464f21bdfda" kindref="member">LocationUnknown</ref><sp/>=<sp/>(CodePrefix.MLLocationResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab0090c2d644abb6b2d4807a157cbce9f" kindref="member">LocationNetworkConnection</ref>,</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a300ed0778de0eb60de70a8b055707921" kindref="member">LocationNoLocation</ref>,</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1d8331667305afbaec803dae6e9b9309" kindref="member">LocationProviderNotFound</ref>,</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLNetworkingResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a4427b3d3c3f7f0ea32fea902bdbd499a" kindref="member">NetworkingServiceNotAvailable</ref><sp/>=<sp/>(CodePrefix.MLNetworkingResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359adaace8782bac08b45fa9ae2062dfd72d" kindref="member">NetworkingServiceError</ref>,</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2187eea046b2aecd732281d53a2555e3" kindref="member">NetworkingWiFiDataStructureVersionError</ref>,</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"></highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ac272bd6019d7f006b3cb623d52fa08d8" kindref="member">NetworkingWiFiServiceInvalidState</ref>,</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLMovementResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a8d7f5bd90bf159c8d4e55714dc3b9ef0" kindref="member">MovementInvalidMovementHandle</ref><sp/>=<sp/>(CodePrefix.MLMovementResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a0ad903a93513229d7eccc5c1c55eb33e" kindref="member">MovementInvalidCollisionHandle</ref>,</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLConnectionsResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ab94e685e18b89f6291212fe0c5222cf5" kindref="member">ConnectionsInvalidHandle</ref><sp/>=<sp/>(CodePrefix.MLConnectionsResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1ccf4e29dd1de41e7ad15fc61e2dbd60" kindref="member">ConnectionsInvalidInviteeCount</ref>,</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359af78f90d5052263aa18bf61c2732f68c2" kindref="member">ConnectionsInvalidSelecteeCount</ref><sp/>=<sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a1ccf4e29dd1de41e7ad15fc61e2dbd60" kindref="member">ConnectionsInvalidInviteeCount</ref>,</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a9e48fb43b098b7fdc58ceaa9e35173e2" kindref="member">ConnectionsCancellationPending</ref>,</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a96d3611e5d7f56e434e666979af8cec9" kindref="member">ConnectionsIllegalState</ref>,</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2a7d55271e387991e459070b66718a5a" kindref="member">ConnectionsNetworkFailure</ref>,</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a27b8c6c842a3620aa54723b4f9a376e8" kindref="member">ConnectionsAlreadyRegistered</ref>,</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"></highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aad96283ac5901f99718dc810616eeae0" kindref="member">ConnectionsSystemFailure</ref>,</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MLSecureStorageResult</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="803"><highlight class="normal"></highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SecureStorageBlobNotFound<sp/>=<sp/>(CodePrefix.MLSecureStorageResult<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SecureStorageIOFailure,</highlight></codeline>
+<codeline lineno="813"><highlight class="normal"></highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectUnsupportedOperation<sp/>=<sp/>(CodePrefix.MLAppConnect<sp/>&lt;&lt;<sp/>16),</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCallbackNotRemoved,</highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectApplicationExists,</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectApplicationDoesNotExist,</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectConnectionCallbackNotRegistered,</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"></highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectConnectionExists,</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"></highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectConnectionDoesNotExist,</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectConnectionsPerAppExceeded,</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"></highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectConnectionsPerDeviceExceeded,</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"></highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectDataPipesPerConnectionExceeded,</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeExists,</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeDoesNotExist,</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeTypeMismatch,</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeClosed,</highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipesPerConnectionExceeded,</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"></highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeInvalidOperation,</highlight></codeline>
+<codeline lineno="893"><highlight class="normal"></highlight></codeline>
+<codeline lineno="897"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeInvalidProperties,</highlight></codeline>
+<codeline lineno="898"><highlight class="normal"></highlight></codeline>
+<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeNameReserved,</highlight></codeline>
+<codeline lineno="903"><highlight class="normal"></highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferSizeExceeded,</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferSizeZero,</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"></highlight></codeline>
+<codeline lineno="917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferInitError,</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferReadOverrun,</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferReadError,</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"></highlight></codeline>
+<codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeBufferWriteError,</highlight></codeline>
+<codeline lineno="933"><highlight class="normal"></highlight></codeline>
+<codeline lineno="937"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeUnknownPriority,</highlight></codeline>
+<codeline lineno="938"><highlight class="normal"></highlight></codeline>
+<codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeLargeDataTimedOut,</highlight></codeline>
+<codeline lineno="943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="947"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectPipeLargeDataDoesNotExist,</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"></highlight></codeline>
+<codeline lineno="952"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectMicrophoneNotEnabled,</highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight></codeline>
+<codeline lineno="957"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectVideoFrameNotReady,</highlight></codeline>
+<codeline lineno="958"><highlight class="normal"></highlight></codeline>
+<codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCameraInitializationFail,</highlight></codeline>
+<codeline lineno="963"><highlight class="normal"></highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCloudGenericError,</highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight></codeline>
+<codeline lineno="972"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCloudContactsNotInvited,</highlight></codeline>
+<codeline lineno="973"><highlight class="normal"></highlight></codeline>
+<codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCloudCredentialsNotValid,</highlight></codeline>
+<codeline lineno="978"><highlight class="normal"></highlight></codeline>
+<codeline lineno="982"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectCloudCopresenceSessionError,</highlight></codeline>
+<codeline lineno="983"><highlight class="normal"></highlight></codeline>
+<codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectContactsProviderRequestError,</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"></highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectUserIdExists,</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"></highlight></codeline>
+<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectUserIdInvalid,</highlight></codeline>
+<codeline lineno="998"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectInviteSelectionCancelledByUser,</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnecInviteSelectionInvalid,</highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectFriendPickerLaunchFail,</highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectFriendPickerLaunchRegisterTimeOut,</highlight></codeline>
+<codeline lineno="1018"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AppConnectFriendPickerInvalidArg</highlight></codeline>
+<codeline lineno="1023"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1024"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>CodePrefix<sp/>:<sp/>ushort</highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLResultGlobal<sp/>=<sp/>0x0000,</highlight></codeline>
+<codeline lineno="1034"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1038"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLAudioResult<sp/>=<sp/>0x9e11,</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1043"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLCloudResult<sp/>=<sp/>0xc4e3,</highlight></codeline>
+<codeline lineno="1044"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1048"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLConnectionsResult<sp/>=<sp/>0xbfae,</highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1053"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLContactsResult<sp/>=<sp/>0x94a0,</highlight></codeline>
+<codeline lineno="1054"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1058"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLDispatchResult<sp/>=<sp/>0xBBE0,</highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1063"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLIdentityResult<sp/>=<sp/>0x7d4d,</highlight></codeline>
+<codeline lineno="1064"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1068"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLLocationResult<sp/>=<sp/>0xda19,</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLMediaDRMResult<sp/>=<sp/>0x62ce,</highlight></codeline>
+<codeline lineno="1074"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLMediaGenericResult<sp/>=<sp/>0xbf3b,</highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1083"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLMediaPlayerResult<sp/>=<sp/>0xc435,</highlight></codeline>
+<codeline lineno="1084"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1088"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLMediaResult<sp/>=<sp/>0x4184,</highlight></codeline>
+<codeline lineno="1089"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1093"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLMovementResult<sp/>=<sp/>0xdffe,</highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1098"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLNetworkingResult<sp/>=<sp/>0x4c62,</highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLPassableWorldResult<sp/>=<sp/>0x41c7,</highlight></codeline>
+<codeline lineno="1104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLPrivilegesResult<sp/>=<sp/>0xcbcd,</highlight></codeline>
+<codeline lineno="1109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLPurchaseResult<sp/>=<sp/>0xdf1d,</highlight></codeline>
+<codeline lineno="1114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Obsolete(</highlight><highlight class="stringliteral">&quot;Deprecated<sp/>and<sp/>scheduled<sp/>for<sp/>removal.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="1119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLScreensResult<sp/>=<sp/>0xFB4E,</highlight></codeline>
+<codeline lineno="1120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLSecureStorageResult<sp/>=<sp/>0xba5c,</highlight></codeline>
+<codeline lineno="1125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLSnapshotResult<sp/>=<sp/>0x87b8,</highlight></codeline>
+<codeline lineno="1130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MLTokenAgentResult<sp/>=<sp/>0x37ee,</highlight></codeline>
+<codeline lineno="1135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect" kindref="compound">MLAppConnect</ref><sp/>=<sp/>0xebf7</highlight></codeline>
+<codeline lineno="1140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1142"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>PLATFORM_LUMIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsOk</highlight></codeline>
+<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>.Ok<sp/>==<sp/>this.Result;</highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref><sp/>Create(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>result,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>msg<sp/>=<sp/>null)</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.IsNullOrEmpty(msg))</highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref><sp/>toReturn;</highlight></codeline>
+<codeline lineno="1167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(existingResults<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="1169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>existingResults<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Dictionary&lt;Code,<sp/>MLResult&gt;();</highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(existingResults.Count<sp/>==<sp/>0<sp/>||<sp/>!existingResults.TryGetValue(result,<sp/>out<sp/>toReturn))</highlight></codeline>
+<codeline lineno="1174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>toReturn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>(result,<sp/>msg);</highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>existingResults.Add(result,<sp/>toReturn);</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>toReturn;</highlight></codeline>
+<codeline lineno="1181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>(result,<sp/>msg);</highlight></codeline>
+<codeline lineno="1185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>CodeToString(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>.<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>resultCode)</highlight></codeline>
+<codeline lineno="1194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>codeString<sp/>=<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.Empty;</highlight></codeline>
+<codeline lineno="1196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>((CodePrefix)((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)resultCode<sp/>&gt;&gt;<sp/>16))</highlight></codeline>
+<codeline lineno="1198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLResultGlobal:</highlight></codeline>
+<codeline lineno="1200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLSnapshotResult:</highlight></codeline>
+<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MagicLeapNativeBindings.MLSnapshotGetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLAudioResult:</highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio" kindref="compound">MLAudio</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLMediaDRMResult:</highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLMediaGenericResult:</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLMediaPlayerResult:</highlight></codeline>
+<codeline lineno="1209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLMediaResult:</highlight></codeline>
+<codeline lineno="1210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player" kindref="compound">MLMediaPlayer</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLDispatchResult:</highlight></codeline>
+<codeline lineno="1213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLDispatch.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLIdentityResult:</highlight></codeline>
+<codeline lineno="1216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_identity" kindref="compound">MLIdentity</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLPassableWorldResult:</highlight></codeline>
+<codeline lineno="1219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_persistent_coordinate_frames" kindref="compound">MLPersistentCoordinateFrames</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLTokenAgentResult:</highlight></codeline>
+<codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLTokenAgent.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLPrivilegesResult:</highlight></codeline>
+<codeline lineno="1225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_privileges" kindref="compound">MLPrivileges</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLContactsResult:</highlight></codeline>
+<codeline lineno="1228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts" kindref="compound">MLContacts</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLLocationResult:</highlight></codeline>
+<codeline lineno="1231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLLocation.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLNetworkingResult:</highlight></codeline>
+<codeline lineno="1234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLNetworkingNativeBindings.MLNetworkingGetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLMovementResult:</highlight></codeline>
+<codeline lineno="1237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement" kindref="compound">MLMovement</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLConnectionsResult:</highlight></codeline>
+<codeline lineno="1240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(<ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_connections" kindref="compound">MLConnections</ref>.GetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLSecureStorageResult:</highlight></codeline>
+<codeline lineno="1243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLSecureStorageNativeBindings.MLSecureStorageGetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CodePrefix.MLAppConnect:</highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>Marshal.PtrToStringAnsi(MLAppConnectNativeBindings.MLAppConnectGetResultString(resultCode));</highlight></codeline>
+<codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>will<sp/>catch<sp/>any<sp/>unknown/invalid<sp/>return<sp/>values.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>codeString<sp/>=<sp/>MagicLeapNativeBindings.MLGetResultString(resultCode);</highlight></codeline>
+<codeline lineno="1251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>codeString;</highlight></codeline>
+<codeline lineno="1255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsOK(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>result)</highlight></codeline>
+<codeline lineno="1265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>.Ok<sp/>==<sp/>result;</highlight></codeline>
+<codeline lineno="1267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPending(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>result)</highlight></codeline>
+<codeline lineno="1275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>.Pending<sp/>==<sp/>result)<sp/>||<sp/>(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>.ConnectionsCancellationPending<sp/>==<sp/>result);</highlight></codeline>
+<codeline lineno="1277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>==(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref><sp/>one,<sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>.<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>two)</highlight></codeline>
+<codeline lineno="1286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>one.Result<sp/>==<sp/>two;</highlight></codeline>
+<codeline lineno="1288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>!=(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref><sp/>one,<sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>.<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref><sp/>two)</highlight></codeline>
+<codeline lineno="1297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(one.Result<sp/>==<sp/>two);</highlight></codeline>
+<codeline lineno="1299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equals(</highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>obj)</highlight></codeline>
+<codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj<sp/>is<sp/><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>.<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>)</highlight></codeline>
+<codeline lineno="1309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.Result<sp/>==<sp/>(<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>.<ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1ac64c3459f259be6f44237ca27f7b65d8" kindref="member">Code</ref>)obj;</highlight></codeline>
+<codeline lineno="1311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetHashCode()</highlight></codeline>
+<codeline lineno="1323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.Result.GetHashCode();</highlight></codeline>
+<codeline lineno="1325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ToString()</highlight></codeline>
+<codeline lineno="1332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.IsNullOrEmpty(this.message))</highlight></codeline>
+<codeline lineno="1334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.message<sp/>=<sp/>CodeToString(this.Result);</highlight></codeline>
+<codeline lineno="1336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.message;</highlight></codeline>
+<codeline lineno="1339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1340"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1342"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLResult.cs"/>
+  </compounddef>
+</doxygen>

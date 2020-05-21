@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a47f06b059a32e8dfbd9d9b87b7680ae3" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="407" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a54405ea6165893adbab05b6eaddd97e8" prot="public" static="no" mutable="no">
+        <type>MLVec3f</type>
+        <definition>MLVec3f MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.HeadposePosition</definition>
+        <argsstring></argsstring>
+        <name>HeadposePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="409" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1abf94c434558138c05caf273791037510" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>MLQuaternionf MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.HeadposeRotation</definition>
+        <argsstring></argsstring>
+        <name>HeadposeRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="411" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1abf60fed303b54c22a4c782758e5c201d" prot="public" static="no" mutable="no">
+        <type>MLVec3f</type>
+        <definition>MLVec3f MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.ControlPosition</definition>
+        <argsstring></argsstring>
+        <name>ControlPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="413" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1af7fc4e8020dac2f1958c3c4f738b07ba" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_quaternionf" kindref="compound">MLQuaternionf</ref></type>
+        <definition>MLQuaternionf MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.ControlRotation</definition>
+        <argsstring></argsstring>
+        <name>ControlRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="415" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a71e958db3571963071b68d75ac8a0620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="418" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="418" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a9d63c47c1d3704111051a30d8bef20e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.ToInternal</definition>
+        <argsstring>(in MLMovement6DofControls controls)</argsstring>
+        <name>ToInternal</name>
+        <param>
+          <type>in <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_controls" kindref="compound">MLMovement6DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="453" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="453" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1afaa531e050f4230b022eed99e5eca56b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MagicLeapInternal.MovementApiNativeBindings.MLMovement6DofControlsInternal.ToExternal</definition>
+        <argsstring>(out MLMovement6DofControls controls)</argsstring>
+        <name>ToExternal</name>
+        <param>
+          <type>out <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_movement6_dof_controls" kindref="compound">MLMovement6DofControls</ref></type>
+          <declname>controls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="462" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="462" bodyend="468"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Links to MLMovement6DofControls in ml_movement.h. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" line="405" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MovementApiNativeBindings.cs" bodystart="404" bodyend="469"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1abf60fed303b54c22a4c782758e5c201d" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>ControlPosition</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1af7fc4e8020dac2f1958c3c4f738b07ba" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>ControlRotation</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a54405ea6165893adbab05b6eaddd97e8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>HeadposePosition</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1abf94c434558138c05caf273791037510" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>HeadposeRotation</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a71e958db3571963071b68d75ac8a0620" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>Initialize</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1afaa531e050f4230b022eed99e5eca56b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>ToExternal</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a9d63c47c1d3704111051a30d8bef20e9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>ToInternal</name></member>
+      <member refid="struct_magic_leap_internal_1_1_movement_api_native_bindings_1_1_m_l_movement6_dof_controls_internal_1a47f06b059a32e8dfbd9d9b87b7680ae3" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MovementApiNativeBindings::MLMovement6DofControlsInternal</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

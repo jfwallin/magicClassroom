@@ -1,0 +1,3 @@
+CXXFLAGS.gcc,clang=-fno-exceptions
+CXXFLAGS.msvc=-EHs-c-
+

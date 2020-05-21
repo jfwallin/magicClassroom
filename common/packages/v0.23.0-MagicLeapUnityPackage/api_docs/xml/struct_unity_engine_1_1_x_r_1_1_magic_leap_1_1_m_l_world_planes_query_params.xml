@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a69ab156caf07361833e5f63b6d8bd0ce" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad6b734ab75eb1b54c527f6acaed873e0" kindref="member">MLWorldPlanesQueryFlags</ref></type>
+        <definition>MLWorldPlanesQueryFlags UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <briefdescription>
+<para>The flags to apply to this query. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="124" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1af209a42bf4e16d51b250dfc1516302f8" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.BoundsCenter</definition>
+        <argsstring></argsstring>
+        <name>BoundsCenter</name>
+        <briefdescription>
+<para>The center of the bounding box which defines where planes extraction should occur. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a676428e2cd14d1160088101b6af474ff" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.BoundsRotation</definition>
+        <argsstring></argsstring>
+        <name>BoundsRotation</name>
+        <briefdescription>
+<para>The rotation of the bounding box where planes extraction will occur. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="134" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a6345a8f16b58c743e504cf77e4459b2e" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.BoundsExtents</definition>
+        <argsstring></argsstring>
+        <name>BoundsExtents</name>
+        <briefdescription>
+<para>The size of the bounding box where planes extraction will occur. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="139" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1aaa4208a866bad342b71f1cbc616fbdd2" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.MaxResults</definition>
+        <argsstring></argsstring>
+        <name>MaxResults</name>
+        <briefdescription>
+<para>The maximum number of results that should be returned. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a6885b10484335f9ce72e18848ea9c2e2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.MinHoleLength</definition>
+        <argsstring></argsstring>
+        <name>MinHoleLength</name>
+        <briefdescription>
+<para>If <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad6b734ab75eb1b54c527f6acaed873e0ab8716623a94edf313c4e5be42a3afcf9" kindref="member">MLPlanesQueryFlags.IgnoreHoles</ref> is not set, holes with a perimeter (in meters) smaller than this value will be ignored, and can be part of the plane. This value cannot be lower than 0 (lower values will be capped to this minimum). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="152" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1afcc0dca04da7950b32d7e784a2091faa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLWorldPlanesQueryParams.MinPlaneArea</definition>
+        <argsstring></argsstring>
+        <name>MinPlaneArea</name>
+        <briefdescription>
+<para>The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="158" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Plane Startup Configuration Parameters. Pass these to the Start function </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="120" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="119" bodyend="159"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1af209a42bf4e16d51b250dfc1516302f8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>BoundsCenter</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a6345a8f16b58c743e504cf77e4459b2e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>BoundsExtents</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a676428e2cd14d1160088101b6af474ff" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>BoundsRotation</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a69ab156caf07361833e5f63b6d8bd0ce" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>Flags</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1aaa4208a866bad342b71f1cbc616fbdd2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>MaxResults</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1a6885b10484335f9ce72e18848ea9c2e2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>MinHoleLength</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_query_params_1afcc0dca04da7950b32d7e784a2091faa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanesQueryParams</scope><name>MinPlaneArea</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

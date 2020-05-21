@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a9da3596070b5a059e95819bd8cb353ab" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.First</definition>
+        <argsstring></argsstring>
+        <name>First</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="847" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a247f2c324616cc88579556765cb1f372" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.Second</definition>
+        <argsstring></argsstring>
+        <name>Second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="848" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a6f5003c002b65f21118d9b60904442b2" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+        <definition>MLCoordinateFrameUID MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.EmptyFrame</definition>
+        <argsstring></argsstring>
+        <name>EmptyFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="851" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a0f98aa449a89f6e8eaca34d53ce255e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="854" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="854" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1adfd2788d3478360c520228f445316af6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="865" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="865" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a1a020d256655a6325e651c4e6930dcde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="871" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="871" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a97c622ca210136b98610edd8ec6fa5e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Guid</type>
+        <definition>Guid MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.ToGuid</definition>
+        <argsstring>()</argsstring>
+        <name>ToGuid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="877" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="877" bodyend="885"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1ab9323f0324e60afe6dda5c4027e9f99e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.FlipGuidComponents</definition>
+        <argsstring>(byte[] bytes)</argsstring>
+        <name>FlipGuidComponents</name>
+        <param>
+          <type>byte []</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="887" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="887" bodyend="893"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a61ad194ae5ead87becf63b94746e95a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.operator==</definition>
+        <argsstring>(MLCoordinateFrameUID lhs, MLCoordinateFrameUID rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="896" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="896" bodyend="899"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1aa4b67563d4d2642da636c6536375de2f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MagicLeapInternal.MagicLeapNativeBindings.MLCoordinateFrameUID.operator!=</definition>
+        <argsstring>(MLCoordinateFrameUID lhs, MLCoordinateFrameUID rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MLCoordinateFrameUID</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="902" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="902" bodyend="905"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A unique identifier which represents a coordinate frame. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" line="846" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/MagicLeapNativeBindings.cs" bodystart="845" bodyend="906"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a6f5003c002b65f21118d9b60904442b2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>EmptyFrame</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a0f98aa449a89f6e8eaca34d53ce255e7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>Equals</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a9da3596070b5a059e95819bd8cb353ab" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>First</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1ab9323f0324e60afe6dda5c4027e9f99e" prot="private" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>FlipGuidComponents</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1adfd2788d3478360c520228f445316af6" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>GetHashCode</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1aa4b67563d4d2642da636c6536375de2f" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>operator!=</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a61ad194ae5ead87becf63b94746e95a7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>operator==</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a247f2c324616cc88579556765cb1f372" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>Second</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a97c622ca210136b98610edd8ec6fa5e7" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>ToGuid</name></member>
+      <member refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d_1a1a020d256655a6325e651c4e6930dcde" prot="public" virt="non-virtual"><scope>MagicLeapInternal::MagicLeapNativeBindings::MLCoordinateFrameUID</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

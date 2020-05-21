@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLPCF</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a728058ab7e5c284ffe9757931461b7bd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_magic_leap_native_bindings_1_1_m_l_coordinate_frame_u_i_d" kindref="compound">MagicLeapNativeBindings.MLCoordinateFrameUID</ref></type>
+        <definition>MagicLeapNativeBindings.MLCoordinateFrameUID UnityEngine.XR.MagicLeap.MLPCF.CFUID</definition>
+        <argsstring></argsstring>
+        <name>CFUID</name>
+        <briefdescription>
+<para>The cfuid. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a3de836b5bad067eeb57d519ec0659e8e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLPCF.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+<para>Position of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kindref="compound">MLPCF</ref> for the current session </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a07b153eeb60048f073931a0bc0d75d07" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion UnityEngine.XR.MagicLeap.MLPCF.Orientation</definition>
+        <argsstring></argsstring>
+        <name>Orientation</name>
+        <briefdescription>
+<para>Orientation of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kindref="compound">MLPCF</ref> for the current session </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a7428fc69d0a0864df3150094f1122731" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLPCF.Confidence</definition>
+        <argsstring></argsstring>
+        <name>Confidence</name>
+        <briefdescription>
+<para>A confidence value (from [0, 1]) representing the confidence in the Persistent Coordinate Frame error within the valid radius. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="105" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ac6d986c9490e82a4e4e7e08b22e2e5a0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLPCF.ValidRadiusM</definition>
+        <argsstring></argsstring>
+        <name>ValidRadiusM</name>
+        <briefdescription>
+<para>The radius (in meters) within which the confidence is valid. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="109" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a20079e0937cd03419db2d70b64ab313d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLPCF.RotationErrDeg</definition>
+        <argsstring></argsstring>
+        <name>RotationErrDeg</name>
+        <briefdescription>
+<para>The rotational error (in degrees). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="113" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a21bcade6547e48380e14ad92de653556" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MLPCF.TranslationErrM</definition>
+        <argsstring></argsstring>
+        <name>TranslationErrM</name>
+        <briefdescription>
+<para>The translation error (in meters). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="117" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae2965fb6e6a1f460c9db90c69a4be19a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MLPCF.CurrentResult</definition>
+        <argsstring></argsstring>
+        <name>CurrentResult</name>
+        <briefdescription>
+<para>Gets or sets the current result. It could be one of the following: </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2d13df6f8b5e4c5af9f87e0dc39df69d" kindref="member">MLResultCode.Pending</ref> - Position/Orientation does not exist</para><para><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> - Position/Orientation is reliable</para><para>Otherwise - Position/Orientation is unreliable </para><para>The current result.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="137" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae0b39c8fc0f3e2acc87e8bbff3b7748f" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLPCF._position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a80e649c41a4a89ff8a06c01cd2970be1" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion UnityEngine.XR.MagicLeap.MLPCF._orientation</definition>
+        <argsstring></argsstring>
+        <name>_orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1adfab5f2b43fe769ea120d2f3cb841f1b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLPCF._transformChanged</definition>
+        <argsstring></argsstring>
+        <name>_transformChanged</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a5cd5a55308448aa81bd8e00ee5d543b7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MLPCF._currentResultCode</definition>
+        <argsstring></argsstring>
+        <name>_currentResultCode</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a2d13df6f8b5e4c5af9f87e0dc39df69d" kindref="member">MLResultCode.Pending</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="179" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a15dde3b59acdf43ac3d85fb324df2b64" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>System.Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kindref="compound">MLPCF</ref> &gt;</type>
+        <definition>System.Action&lt;MLPCF&gt; UnityEngine.XR.MagicLeap.MLPCF.OnCreate</definition>
+        <argsstring></argsstring>
+        <name>OnCreate</name>
+        <briefdescription>
+<para>OnCreated event gets fired when a new PCF gets created. The parameter is the the instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kindref="compound">MLPCF</ref> that got created. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a67a7e43c7988ac7c902c70a188261ba9" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>System.Action</type>
+        <definition>System.Action UnityEngine.XR.MagicLeap.MLPCF.OnUpdate</definition>
+        <argsstring></argsstring>
+        <name>OnUpdate</name>
+        <briefdescription>
+<para>OnUpdate event gets fired when the position, orientation of the PCF changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="160" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ac515bcfb43a35665b769dd4138964606" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>System.Action</type>
+        <definition>System.Action UnityEngine.XR.MagicLeap.MLPCF.OnLost</definition>
+        <argsstring></argsstring>
+        <name>OnLost</name>
+        <briefdescription>
+<para>OnLost is triggered when the CurrentResult changes <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> to something other than <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref>. This indicates that the PCF is no longer available in the current map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="166" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a0b5397625f789ca3a87fe50a4e6b01f3" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>System.Action</type>
+        <definition>System.Action UnityEngine.XR.MagicLeap.MLPCF.OnRegain</definition>
+        <argsstring></argsstring>
+        <name>OnRegain</name>
+        <briefdescription>
+<para>OnRegain is triggered when the CurrentResult changes from something other than <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> to <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref>. This indicates that the PCF was found again after it was lost. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="172" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a34b1c18802b69f4fcf9a64abcdb02253" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLPCF.MLPCF</definition>
+        <argsstring>()</argsstring>
+        <name>MLPCF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a4f7ced7d8e07e45838ff0013f9f1dfea" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLPCF.UpdateState</definition>
+        <argsstring>(PCFApiNativeBindings.MLPCFFrameStateInternal state)</argsstring>
+        <name>UpdateState</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_p_c_f_api_native_bindings_1_1_m_l_p_c_f_frame_state_internal" kindref="compound">PCFApiNativeBindings.MLPCFFrameStateInternal</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="119" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae8f25271ca9d381c55381f0b90a1718c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLPCF.UpdateTransform</definition>
+        <argsstring>(MLResultCode result, Vector3 position, Quaternion orientation)</argsstring>
+        <name>UpdateTransform</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Quaternion</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="181" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="181" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1affc2bd2f8feaa891b71f33f3447e4bd2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLPCF.NotifyCreate</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyCreate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="191" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae4056d60af21dbf37602cd8f3085911a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLPCF.NotifyUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="201" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="201" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a276844178ad4a86a302283c2f495209e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLPCF.OnCurrentResultChanged</definition>
+        <argsstring>(MLResultCode oldCode, MLResultCode newCode)</argsstring>
+        <name>OnCurrentResultChanged</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>oldCode</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>newCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="221" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="221" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a256ab43839bea631d6b5dda133329093" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string UnityEngine.XR.MagicLeap.MLPCF.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+<para>Returns the string representation of the pcf. Use it only for debugging. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns the string representation of the pcf.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="252" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="252" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f" kindref="compound">MLPCF</ref> class is an abstraction for representing anchor points, called Persistent Coordinate Frames or PCFs, in the real world. PCFs cannot be created, modified or destroyed from the app level. Rather, we query the OS for any PCFs it has stored and query again to determine the PCF location, if it is within the vicinity. /summary&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="488">
+        <label>UnityEngine.XR.MagicLeap.MLPCF</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f"/>
+        <childnode refid="489" relation="usage">
+          <edgelabel>CFUID</edgelabel>
+        </childnode>
+      </node>
+      <node id="489">
+        <label>MagicLeapInternal.MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLPersistence/MLPCF.cs" bodystart="50" bodyend="274"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a5cd5a55308448aa81bd8e00ee5d543b7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>_currentResultCode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a80e649c41a4a89ff8a06c01cd2970be1" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>_orientation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae0b39c8fc0f3e2acc87e8bbff3b7748f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>_position</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1adfab5f2b43fe769ea120d2f3cb841f1b" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>_transformChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a728058ab7e5c284ffe9757931461b7bd" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>CFUID</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a7428fc69d0a0864df3150094f1122731" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>Confidence</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae2965fb6e6a1f460c9db90c69a4be19a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>CurrentResult</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a34b1c18802b69f4fcf9a64abcdb02253" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>MLPCF</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1affc2bd2f8feaa891b71f33f3447e4bd2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>NotifyCreate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae4056d60af21dbf37602cd8f3085911a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>NotifyUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a15dde3b59acdf43ac3d85fb324df2b64" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>OnCreate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a276844178ad4a86a302283c2f495209e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>OnCurrentResultChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ac515bcfb43a35665b769dd4138964606" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>OnLost</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a0b5397625f789ca3a87fe50a4e6b01f3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>OnRegain</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a67a7e43c7988ac7c902c70a188261ba9" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>OnUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a07b153eeb60048f073931a0bc0d75d07" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>Orientation</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a3de836b5bad067eeb57d519ec0659e8e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>Position</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a20079e0937cd03419db2d70b64ab313d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>RotationErrDeg</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a256ab43839bea631d6b5dda133329093" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>ToString</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a21bcade6547e48380e14ad92de653556" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>TranslationErrM</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1a4f7ced7d8e07e45838ff0013f9f1dfea" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>UpdateState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ae8f25271ca9d381c55381f0b90a1718c" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>UpdateTransform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_p_c_f_1ac6d986c9490e82a4e4e7e08b22e2e5a0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLPCF</scope><name>ValidRadiusM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

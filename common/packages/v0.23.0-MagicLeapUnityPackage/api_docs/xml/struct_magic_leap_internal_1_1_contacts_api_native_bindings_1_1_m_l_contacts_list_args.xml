@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::ContactsApiNativeBindings::MLContactsListArgs</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a7b291b176a7032994e78d2039048cafb" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.ContactsApiNativeBindings.MLContactsListArgs.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="95" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a61593470fe41ad8b2b777cc65c30e748" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.ContactsApiNativeBindings.MLContactsListArgs.Offset</definition>
+        <argsstring></argsstring>
+        <name>Offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="96" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a32c9ac1dcb1a95e1c900081e574bb27a" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.ContactsApiNativeBindings.MLContactsListArgs.Limit</definition>
+        <argsstring></argsstring>
+        <name>Limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="97" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="93" bodyend="98"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a32c9ac1dcb1a95e1c900081e574bb27a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsListArgs</scope><name>Limit</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a61593470fe41ad8b2b777cc65c30e748" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsListArgs</scope><name>Offset</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_list_args_1a7b291b176a7032994e78d2039048cafb" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsListArgs</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_camera_preview_graphics_context" kind="struct" language="C++" prot="public">
+    <compoundname>CameraPreviewGraphicsContext</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a0ad1873f4abda3a6c7d0558bd4fa0346" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* CameraPreviewGraphicsContext::texture_handle</definition>
+        <argsstring></argsstring>
+        <name>texture_handle</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a02ea62855ce6e947ea84e15107078e86" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CameraPreviewGraphicsContext::texture_width</definition>
+        <argsstring></argsstring>
+        <name>texture_width</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="70" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a8a89e81005bebdcdd257a575513bc9bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CameraPreviewGraphicsContext::texture_height</definition>
+        <argsstring></argsstring>
+        <name>texture_height</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a93140c7d308792e1e94e467a673c3293" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraPreviewGraphicsContext::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="73" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a90be31349298a9637efa814b01fd0275" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CameraPreviewGraphicsContext::init_ufbo</definition>
+        <argsstring></argsstring>
+        <name>init_ufbo</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="74" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a872619d5eae20c959f7da42e385953ea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CameraPreviewGraphicsContext::frame_data_available</definition>
+        <argsstring></argsstring>
+        <name>frame_data_available</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1ade11022bf4651f5d0f19a4c7099a5d75" prot="public" static="no" mutable="no">
+        <type>MLHandle</type>
+        <definition>MLHandle CameraPreviewGraphicsContext::native_frame_handle</definition>
+        <argsstring></argsstring>
+        <name>native_frame_handle</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1ae2749dc057e47c609b13943dfb2c54f6" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::ufbo</definition>
+        <argsstring></argsstring>
+        <name>ufbo</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="80" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1ae3c38d2cc70cb429b9e03b196e8a0d4e" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::vbo</definition>
+        <argsstring></argsstring>
+        <name>vbo</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a4e4b26811d8a89bf3d6fc0a6b03653de" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::external_texture_id</definition>
+        <argsstring></argsstring>
+        <name>external_texture_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="82" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a30e0e57c5b9ac9b2f172ccbaf2261b36" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::fragment_shader_id</definition>
+        <argsstring></argsstring>
+        <name>fragment_shader_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="83" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1ac7af43d602cda57edde898395c9f5fcc" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::vertex_shader_id</definition>
+        <argsstring></argsstring>
+        <name>vertex_shader_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="84" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_camera_preview_graphics_context_1a7ede017bfe7892670c05c051a96b5829" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint CameraPreviewGraphicsContext::program_id</definition>
+        <argsstring></argsstring>
+        <name>program_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="85" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" line="68" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/CameraPlugin/ml_camera_plugin.cpp" bodystart="67" bodyend="86"/>
+    <listofallmembers>
+      <member refid="struct_camera_preview_graphics_context_1a4e4b26811d8a89bf3d6fc0a6b03653de" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>external_texture_id</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a30e0e57c5b9ac9b2f172ccbaf2261b36" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>fragment_shader_id</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a872619d5eae20c959f7da42e385953ea" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>frame_data_available</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a90be31349298a9637efa814b01fd0275" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>init_ufbo</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a93140c7d308792e1e94e467a673c3293" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>initialized</name></member>
+      <member refid="struct_camera_preview_graphics_context_1ade11022bf4651f5d0f19a4c7099a5d75" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>native_frame_handle</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a7ede017bfe7892670c05c051a96b5829" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>program_id</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a0ad1873f4abda3a6c7d0558bd4fa0346" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>texture_handle</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a8a89e81005bebdcdd257a575513bc9bf" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>texture_height</name></member>
+      <member refid="struct_camera_preview_graphics_context_1a02ea62855ce6e947ea84e15107078e86" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>texture_width</name></member>
+      <member refid="struct_camera_preview_graphics_context_1ae2749dc057e47c609b13943dfb2c54f6" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>ufbo</name></member>
+      <member refid="struct_camera_preview_graphics_context_1ae3c38d2cc70cb429b9e03b196e8a0d4e" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>vbo</name></member>
+      <member refid="struct_camera_preview_graphics_context_1ac7af43d602cda57edde898395c9f5fcc" prot="public" virt="non-virtual"><scope>CameraPreviewGraphicsContext</scope><name>vertex_shader_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1aabfebf560e4b69d8a36636abc2ee2fe1" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="77" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a3d2e58b5fdfcf3320d8936d8583376fe" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact.ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="78" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a6c7d7ad77b4d02043ee811ad27c485cb" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="79" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a94492ee1b3822b758a6bad46736cead2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_tagged_attribute_list" kindref="compound">MLContactsTaggedAttributeList</ref></type>
+        <definition>MLContactsTaggedAttributeList MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact.PhoneNumberList</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumberList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="80" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a01c05183aa86f580634423d595674861" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_tagged_attribute_list" kindref="compound">MLContactsTaggedAttributeList</ref></type>
+        <definition>MLContactsTaggedAttributeList MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact.EmailAddressList</definition>
+        <argsstring></argsstring>
+        <name>EmailAddressList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="81" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="249">
+        <label>MagicLeapInternal.ContactsApiNativeBindings.MLContactsTaggedAttributeList</label>
+        <link refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_tagged_attribute_list"/>
+      </node>
+      <node id="248">
+        <label>MagicLeapInternal.ContactsApiNativeBindings.MLContactsContact</label>
+        <link refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>EmailAddressList</edgelabel>
+          <edgelabel>PhoneNumberList</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ContactsApiNativeBindings.cs" bodystart="75" bodyend="82"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a01c05183aa86f580634423d595674861" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</scope><name>EmailAddressList</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a3d2e58b5fdfcf3320d8936d8583376fe" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</scope><name>ID</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a6c7d7ad77b4d02043ee811ad27c485cb" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</scope><name>Name</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1a94492ee1b3822b758a6bad46736cead2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</scope><name>PhoneNumberList</name></member>
+      <member refid="struct_magic_leap_internal_1_1_contacts_api_native_bindings_1_1_m_l_contacts_contact_1aabfebf560e4b69d8a36636abc2ee2fe1" prot="public" virt="non-virtual"><scope>MagicLeapInternal::ContactsApiNativeBindings::MLContactsContact</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

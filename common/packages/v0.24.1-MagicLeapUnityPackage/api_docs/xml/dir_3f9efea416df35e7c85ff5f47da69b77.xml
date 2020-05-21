@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3f9efea416df35e7c85ff5f47da69b77" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated</compoundname>
+    <innerfile refid="_i_m_l_persistent_storage_8cs">IMLPersistentStorage.cs</innerfile>
+    <innerfile refid="_magic_leap_bit_mask_8cs">MagicLeapBitMask.cs</innerfile>
+    <innerfile refid="_magic_leap_device_8cs">MagicLeapDevice.cs</innerfile>
+    <innerfile refid="_deprecated_2_magic_leap_native_bindings_8cs">MagicLeapNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_camera_capture_settings_8cs">MLCameraCaptureSettings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_camera_native_bindings_8cs">MLCameraNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_camera_result_settings_8cs">MLCameraResultSettings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_camera_settings_8cs">MLCameraSettings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_connections_8cs">MLConnections.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_contacts_8cs">MLContacts.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_contacts_list_page_8cs">MLContactsListPage.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_contacts_search_page_8cs">MLContactsSearchPage.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_contacts_selection_page_8cs">MLContactsSelectionPage.cs</innerfile>
+    <innerfile refid="_m_l_content_binding_8cs">MLContentBinding.cs</innerfile>
+    <innerfile refid="_m_l_content_bindings_8cs">MLContentBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_controller_native_bindings_8cs">MLControllerNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_c_v_camera_native_bindings_8cs">MLCVCameraNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_dispatch_8cs">MLDispatch.cs</innerfile>
+    <innerfile refid="_m_l_dispatcher_8cs">MLDispatcher.cs</innerfile>
+    <innerfile refid="_m_l_eye_8cs">MLEye.cs</innerfile>
+    <innerfile refid="_m_l_finger_8cs">MLFinger.cs</innerfile>
+    <innerfile refid="_m_l_hand_8cs">MLHand.cs</innerfile>
+    <innerfile refid="_m_l_hand_mesh_8cs">MLHandMesh.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_hand_meshing_8cs">MLHandMeshing.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_hand_meshing_native_bindings_8cs">MLHandMeshingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_hands_8cs">MLHands.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_hand_tracking_native_bindings_8cs">MLHandTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_head_tracking_native_bindings_8cs">MLHeadTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_identity_attribute_8cs">MLIdentityAttribute.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_identity_native_bindings_8cs">MLIdentityNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_identity_profile_8cs">MLIdentityProfile.cs</innerfile>
+    <innerfile refid="_m_l_image_target_8cs">MLImageTarget.cs</innerfile>
+    <innerfile refid="_m_l_image_target_result_8cs">MLImageTargetResult.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_image_tracker_8cs">MLImageTracker.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_image_tracker_native_bindings_8cs">MLImageTrackerNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_image_tracker_settings_8cs">MLImageTrackerSettings.cs</innerfile>
+    <innerfile refid="_m_l_image_tracker_target_settings_8cs">MLImageTrackerTargetSettings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_input_8cs">MLInput.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_input_controller_8cs">MLInputController.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_input_controller_touchpad_gesture_8cs">MLInputControllerTouchpadGesture.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_input_native_bindings_8cs">MLInputNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_key_point_8cs">MLKeyPoint.cs</innerfile>
+    <innerfile refid="_m_l_key_pose_manager_8cs">MLKeyPoseManager.cs</innerfile>
+    <innerfile refid="_m_l_lighting_tracker_8cs">MLLightingTracker.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_lighting_tracking_native_bindings_8cs">MLLightingTrackingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_localization_8cs">MLLocalization.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_location_8cs">MLLocation.cs</innerfile>
+    <innerfile refid="_m_l_location_data_8cs">MLLocationData.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_location_native_bindings_8cs">MLLocationNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_media_player_8cs">MLMediaPlayer.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_media_player_native_bindings_8cs">MLMediaPlayerNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_media_utils_8cs">MLMediaUtils.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_movement_8cs">MLMovement.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_movement_native_bindings_8cs">MLMovementNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_movement_settings_8cs">MLMovementSettings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_music_service_8cs">MLMusicService.cs</innerfile>
+    <innerfile refid="_m_l_music_service_metadata_8cs">MLMusicServiceMetadata.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_music_service_native_bindings_8cs">MLMusicServiceNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_networking_8cs">MLNetworking.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_networking_native_bindings_8cs">MLNetworkingNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_networking_wifi_data_8cs">MLNetworkingWifiData.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_p_c_f_8cs">MLPCF.cs</innerfile>
+    <innerfile refid="_m_l_p_c_f_api_native_bindings_8cs">MLPCFApiNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_persistent_coordinate_frames_8cs">MLPersistentCoordinateFrames.cs</innerfile>
+    <innerfile refid="_m_l_persistent_file_storage_8cs">MLPersistentFileStorage.cs</innerfile>
+    <innerfile refid="_m_l_persistent_store_8cs">MLPersistentStore.cs</innerfile>
+    <innerfile refid="_m_l_privilege_ids_8cs">MLPrivilegeIds.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_privileges_8cs">MLPrivileges.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_result_8cs">MLResult.cs</innerfile>
+    <innerfile refid="_m_l_screens_8cs">MLScreens.cs</innerfile>
+    <innerfile refid="_m_l_screens_native_bindings_8cs">MLScreensNativeBindings.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_secure_storage_8cs">MLSecureStorage.cs</innerfile>
+    <innerfile refid="_m_l_snapshot_8cs">MLSnapshot.cs</innerfile>
+    <innerfile refid="_m_l_thumb_8cs">MLThumb.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_token_agent_8cs">MLTokenAgent.cs</innerfile>
+    <innerfile refid="_deprecated_2_m_l_token_agent_native_bindings_8cs">MLTokenAgentNativeBindings.cs</innerfile>
+    <innerfile refid="_m_l_verbosity_8cs">MLVerbosity.cs</innerfile>
+    <innerfile refid="_m_l_world_planes_query_params_8cs">MLWorldPlanesQueryParams.cs</innerfile>
+    <innerfile refid="_m_l_world_rays_8cs">MLWorldRays.cs</innerfile>
+    <innerfile refid="_m_l_wrist_8cs">MLWrist.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Deprecated/"/>
+  </compounddef>
+</doxygen>

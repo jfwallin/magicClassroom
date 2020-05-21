@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a6739a17243bc6bc91bb5786c0c7c9e9b" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a5dd8e68b342b55342c7ff12166f8b090" kindref="member">MLCameraMetadataScalerAvailableFormats</ref></type>
+        <definition>readonly MLCameraMetadataScalerAvailableFormats UnityEngine.XR.MagicLeap.MLCameraSettings.StreamConfiguration.AvailableFormats</definition>
+        <argsstring></argsstring>
+        <name>AvailableFormats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="123" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a1cc8786d09564a24d553881321615460" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a12d3f47c146901011daaa2fd2e7d4c61" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations</ref></type>
+        <definition>readonly MLCameraMetadataScalerAvailableStreamConfigurations UnityEngine.XR.MagicLeap.MLCameraSettings.StreamConfiguration.AvailableStreamConfigurations</definition>
+        <argsstring></argsstring>
+        <name>AvailableStreamConfigurations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="125" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1ade5a9d5c12c141ad051299c5ee3eacee" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.StreamConfiguration.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="127" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a8740d0927af28daca0cbb2173b6f5a9c" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityEngine.XR.MagicLeap.MLCameraSettings.StreamConfiguration.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="129" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1acf2e7a2e6a9e052b495a3a99ce305e46" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLCameraSettings.StreamConfiguration.StreamConfiguration</definition>
+        <argsstring>(MLCameraMetadataScalerAvailableFormats availableFormats, int width, int height, MLCameraMetadataScalerAvailableStreamConfigurations availableStreamConfigurations)</argsstring>
+        <name>StreamConfiguration</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a5dd8e68b342b55342c7ff12166f8b090" kindref="member">MLCameraMetadataScalerAvailableFormats</ref></type>
+          <declname>availableFormats</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a12d3f47c146901011daaa2fd2e7d4c61" kindref="member">MLCameraMetadataScalerAvailableStreamConfigurations</ref></type>
+          <declname>availableStreamConfigurations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="131" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="131" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" line="121" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLCameraSettings.cs" bodystart="120" bodyend="138"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a6739a17243bc6bc91bb5786c0c7c9e9b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</scope><name>AvailableFormats</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a1cc8786d09564a24d553881321615460" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</scope><name>AvailableStreamConfigurations</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1a8740d0927af28daca0cbb2173b6f5a9c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</scope><name>Height</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1acf2e7a2e6a9e052b495a3a99ce305e46" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</scope><name>StreamConfiguration</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera_settings_1_1_stream_configuration_1ade5a9d5c12c141ad051299c5ee3eacee" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLCameraSettings::StreamConfiguration</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

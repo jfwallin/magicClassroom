@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLKeyPoseManager</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5bc78ee990dc72f2970ad227ccc220d6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand" kindref="compound">MLHand</ref> []</type>
+        <definition>MLHand [] UnityEngine.XR.MagicLeap.MLKeyPoseManager.hands</definition>
+        <argsstring></argsstring>
+        <name>hands</name>
+        <initializer>= new <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand" kindref="compound">MLHand</ref>[2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aded90bea31a05c987a0bf8bec33f306a" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" kindref="compound">HandTrackingApiNativeBindings.MLHandTrackingConfiguration</ref></type>
+        <definition>HandTrackingApiNativeBindings.MLHandTrackingConfiguration UnityEngine.XR.MagicLeap.MLKeyPoseManager._config</definition>
+        <argsstring></argsstring>
+        <name>_config</name>
+        <initializer>=
+            new <ref refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" kindref="compound">HandTrackingApiNativeBindings.MLHandTrackingConfiguration</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aad325eed1bc9ec5fc708e0ab741eaeee" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548ad" kindref="member">MLHandKeyPose</ref>, <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ae9830369696669df9117ffe690db3012" kindref="member">MLHandType</ref> &gt;</type>
+        <definition>Action&lt;MLHandKeyPose, MLHandType&gt; UnityEngine.XR.MagicLeap.MLKeyPoseManager.OnHandKeyPoseBegin</definition>
+        <argsstring></argsstring>
+        <name>OnHandKeyPoseBegin</name>
+        <briefdescription>
+<para>Event is raised whenever a HandKeyPose starts being recognized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="61" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5bb0d0ae19fb57e2215fbf7f6cbe688b" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548ad" kindref="member">MLHandKeyPose</ref>, <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ae9830369696669df9117ffe690db3012" kindref="member">MLHandType</ref> &gt;</type>
+        <definition>Action&lt;MLHandKeyPose, MLHandType&gt; UnityEngine.XR.MagicLeap.MLKeyPoseManager.OnHandKeyPoseEnd</definition>
+        <argsstring></argsstring>
+        <name>OnHandKeyPoseEnd</name>
+        <briefdescription>
+<para>Event is raised whenever a HandKeyPose stops being recognized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1af91ace3637867909a3f639c3423f635d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548ad" kindref="member">MLHandKeyPose</ref> &gt;</type>
+        <definition>List&lt;MLHandKeyPose&gt; UnityEngine.XR.MagicLeap.MLKeyPoseManager.EnabledHandKeyPoses</definition>
+        <argsstring></argsstring>
+        <name>EnabledHandKeyPoses</name>
+        <briefdescription>
+<para>Gets the currently enabled hand key poses. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a722dc026ce096a861d968c029f7a1575" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aad0166a0e75c5741dff89c729fc584a3" kindref="member">MLKeyPointFilterLevel</ref></type>
+        <definition>MLKeyPointFilterLevel UnityEngine.XR.MagicLeap.MLKeyPoseManager.KeyPointsFilterLevel</definition>
+        <argsstring></argsstring>
+        <name>KeyPointsFilterLevel</name>
+        <briefdescription>
+<para>Gets the keypoints filter level </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The filter level.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="153" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a74b77d417bcf6fbc40ad24400797a670" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2f86e7832d16d3638b463ea253f93949" kindref="member">MLPoseFilterLevel</ref></type>
+        <definition>MLPoseFilterLevel UnityEngine.XR.MagicLeap.MLKeyPoseManager.PoseFilterLevel</definition>
+        <argsstring></argsstring>
+        <name>PoseFilterLevel</name>
+        <briefdescription>
+<para>Gets the pose filter level </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The filter level.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="173" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a167a6e1b0fdc7fb5db902db0cfb18aa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoseManager.DisableAllKeyPoses</definition>
+        <argsstring>()</argsstring>
+        <name>DisableAllKeyPoses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="88" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aaf058b23aafece2acb2cce874358a58a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoseManager.EnableKeyPoses</definition>
+        <argsstring>(MLHandKeyPose[] keyPoses, bool enable, bool exclusive=false)</argsstring>
+        <name>EnableKeyPoses</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548ad" kindref="member">MLHandKeyPose</ref> []</type>
+          <declname>keyPoses</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exclusive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Enables or disables an array of KeyPoses. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyPoses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable or disable KeyPoses.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exclusive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When enabling and this is true, only the list of provided KeyPoses are enabled, all other previously-enabled KeyPoses get disabled. No effect if parameter enable is false. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Enabling too many KeyPoses will currently lead to decreased sensitivity to each individual KeyPose. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="111" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="111" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1af281a42c09125e31b193721dfba071cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoseManager.SetKeyPointsFilterLevel</definition>
+        <argsstring>(MLKeyPointFilterLevel filterLevel)</argsstring>
+        <name>SetKeyPointsFilterLevel</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aad0166a0e75c5741dff89c729fc584a3" kindref="member">MLKeyPointFilterLevel</ref></type>
+          <declname>filterLevel</declname>
+        </param>
+        <briefdescription>
+<para>Sets the keypoints filter level </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired filter level</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the filter level was successfully applied and false otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="143" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1adb8e4905fbe612ff88ffbc2f1dd19893" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoseManager.SetPoseFilterLevel</definition>
+        <argsstring>(MLPoseFilterLevel filterLevel)</argsstring>
+        <name>SetPoseFilterLevel</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a2f86e7832d16d3638b463ea253f93949" kindref="member">MLPoseFilterLevel</ref></type>
+          <declname>filterLevel</declname>
+        </param>
+        <briefdescription>
+<para>Sets the pose filter level </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired filter level</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the filter level was successfully applied and false otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5629030641022de6d839ada08f454fd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLKeyPoseManager.MLKeyPoseManager</definition>
+        <argsstring>(MLHand leftHand, MLHand rightHand)</argsstring>
+        <name>MLKeyPoseManager</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand" kindref="compound">MLHand</ref></type>
+          <declname>leftHand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_hand" kindref="compound">MLHand</ref></type>
+          <declname>rightHand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leftHand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left hand to which <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager" kindref="compound">MLKeyPoseManager</ref> will subscribe for events.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightHand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right hand to which KeyPoseManager will subscribe for events.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="181" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="181" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a2fd96ffc90e7de25cd5e8566d0b556c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLKeyPoseManager.~MLKeyPoseManager</definition>
+        <argsstring>()</argsstring>
+        <name>~MLKeyPoseManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="197" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="197" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a7ad887502012eac40356fddd55ad4c0a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLKeyPoseManager.SetKeyPoseConfig</definition>
+        <argsstring>(byte value)</argsstring>
+        <name>SetKeyPoseConfig</name>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="209" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a59d9170b3f7e8c75d2842b7989ce2df2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLKeyPoseManager.ApplyConfig</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="233" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="233" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aa89b3ef0126d01fda0c7ed6b7a6d6852" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLKeyPoseManager.HandleOnKeyPoseChanged</definition>
+        <argsstring>(MagicLeapKeyPoseGestureEvent gestureEvent)</argsstring>
+        <name>HandleOnKeyPoseChanged</name>
+        <param>
+          <type>MagicLeapKeyPoseGestureEvent</type>
+          <declname>gestureEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="240" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="240" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a64abfd8ae1cb273261bbf3ba9e5f9a42" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLKeyPoseManager.SetKeyPoseConfig</definition>
+        <argsstring>(byte[] keyPoses, byte value)</argsstring>
+        <name>SetKeyPoseConfig</name>
+        <param>
+          <type>byte []</type>
+          <declname>keyPoses</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="214" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="214" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1afbf095a6578abe55aca20e0cbaab0832" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLKeyPoseManager.SetKeyPoseConfig</definition>
+        <argsstring>(HandTrackingApiNativeBindings.MLHandTrackingConfiguration config, MLHandKeyPose handKeyPose, bool enable)</argsstring>
+        <name>SetKeyPoseConfig</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_hand_tracking_api_native_bindings_1_1_m_l_hand_tracking_configuration" kindref="compound">HandTrackingApiNativeBindings.MLHandTrackingConfiguration</ref></type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548ad" kindref="member">MLHandKeyPose</ref></type>
+          <declname>handKeyPose</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="222" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="222" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages what KeyPoses are enabled and exposes the events. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLKeyPoseManager.cs" bodystart="51" bodyend="259"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aded90bea31a05c987a0bf8bec33f306a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>_config</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a59d9170b3f7e8c75d2842b7989ce2df2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>ApplyConfig</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a167a6e1b0fdc7fb5db902db0cfb18aa5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>DisableAllKeyPoses</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1af91ace3637867909a3f639c3423f635d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>EnabledHandKeyPoses</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aaf058b23aafece2acb2cce874358a58a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>EnableKeyPoses</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aa89b3ef0126d01fda0c7ed6b7a6d6852" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>HandleOnKeyPoseChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5bc78ee990dc72f2970ad227ccc220d6" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>hands</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a722dc026ce096a861d968c029f7a1575" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>KeyPointsFilterLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5629030641022de6d839ada08f454fd8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>MLKeyPoseManager</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1aad325eed1bc9ec5fc708e0ab741eaeee" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>OnHandKeyPoseBegin</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a5bb0d0ae19fb57e2215fbf7f6cbe688b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>OnHandKeyPoseEnd</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a74b77d417bcf6fbc40ad24400797a670" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>PoseFilterLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1af281a42c09125e31b193721dfba071cb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>SetKeyPointsFilterLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a7ad887502012eac40356fddd55ad4c0a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>SetKeyPoseConfig</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a64abfd8ae1cb273261bbf3ba9e5f9a42" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>SetKeyPoseConfig</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1afbf095a6578abe55aca20e0cbaab0832" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>SetKeyPoseConfig</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1adb8e4905fbe612ff88ffbc2f1dd19893" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>SetPoseFilterLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_pose_manager_1a2fd96ffc90e7de25cd5e8566d0b556c5" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLKeyPoseManager</scope><name>~MLKeyPoseManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

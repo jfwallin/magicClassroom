@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1adaf74d40ffad58310b2481967f49fab4" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MLImageTrackerSettings.MaxSimultaneousTargets</definition>
+        <argsstring></argsstring>
+        <name>MaxSimultaneousTargets</name>
+        <briefdescription>
+<para>Maximum number of Image Targets that can be tracked at any given time. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the tracker is already tracking the maximum number of targets possible then it will stop searching for new targets which helps reduce the load on the CPU. For example, if you are interested in tracking a maximum of x targets simultaneously from a list y (x &lt; y) targets then set this parameter to x.</para><para>The valid range for this parameter is from 1 through 25. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="120" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a917004b83ccbf6beb94fd35f8f918baf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLImageTrackerSettings.MLImageTrackerSettings</definition>
+        <argsstring>(uint maxTargets)</argsstring>
+        <name>MLImageTrackerSettings</name>
+        <param>
+          <type>uint</type>
+          <declname>maxTargets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a8f452fea1979a36f8996108f5f5e59b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLImageTrackerSettings.MLImageTrackerSettings</definition>
+        <argsstring>(MagicLeapInternal.ImageTrackerNativeBindings.MLImageTrackerSettings copiedSettings)</argsstring>
+        <name>MLImageTrackerSettings</name>
+        <param>
+          <type><ref refid="struct_magic_leap_internal_1_1_image_tracker_native_bindings_1_1_m_l_image_tracker_settings" kindref="compound">MagicLeapInternal.ImageTrackerNativeBindings.MLImageTrackerSettings</ref></type>
+          <declname>copiedSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="127" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1ad5ce4780d922901ee8270fe993c5900c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool UnityEngine.XR.MagicLeap.MLImageTrackerSettings.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="132" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="132" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a737719eb0d4b93735517556a1a9f381c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int UnityEngine.XR.MagicLeap.MLImageTrackerSettings.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="144" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="144" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a45d6b56d609259ceef91fa3470895604" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLImageTrackerSettings.operator==</definition>
+        <argsstring>(MLImageTrackerSettings one, MLImageTrackerSettings two)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>two</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="149" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1abe9ebbfafb3786a43c533c5c0c4a321f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLImageTrackerSettings.operator!=</definition>
+        <argsstring>(MLImageTrackerSettings one, MLImageTrackerSettings two)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>one</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>two</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the list of Image Tracker settings. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" line="108" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/ImageTrackerNativeBindings.cs" bodystart="107" bodyend="158"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1ad5ce4780d922901ee8270fe993c5900c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>Equals</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a737719eb0d4b93735517556a1a9f381c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>GetHashCode</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1adaf74d40ffad58310b2481967f49fab4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>MaxSimultaneousTargets</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a917004b83ccbf6beb94fd35f8f918baf" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>MLImageTrackerSettings</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a8f452fea1979a36f8996108f5f5e59b6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>MLImageTrackerSettings</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1abe9ebbfafb3786a43c533c5c0c4a321f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>operator!=</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings_1a45d6b56d609259ceef91fa3470895604" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTrackerSettings</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

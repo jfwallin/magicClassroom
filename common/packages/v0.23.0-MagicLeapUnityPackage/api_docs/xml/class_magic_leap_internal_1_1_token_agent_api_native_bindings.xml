@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_magic_leap_internal_1_1_token_agent_api_native_bindings" kind="class" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::TokenAgentApiNativeBindings</compoundname>
+    <basecompoundref refid="class_magic_leap_internal_1_1_magic_leap_native_bindings" prot="public" virt="non-virtual">MagicLeapInternal.MagicLeapNativeBindings</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a910b0294aae043997556886740ee39fa" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string MagicLeapInternal.TokenAgentApiNativeBindings.MLIdentityDll</definition>
+        <argsstring></argsstring>
+        <name>MLIdentityDll</name>
+        <initializer>= &quot;ml_identity&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="54" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1aa7ce743afc9d810650cb08b886028a0a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MagicLeapInternal.TokenAgentApiNativeBindings.TokenAgentApiNativeBindings</definition>
+        <argsstring>()</argsstring>
+        <name>TokenAgentApiNativeBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" bodystart="52" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a438dae48d72ef969abac7faf7220ab7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.TokenAgentApiNativeBindings.MLTokenAgentGetClientCredentials</definition>
+        <argsstring>(ref IntPtr outCredentials)</argsstring>
+        <name>MLTokenAgentGetClientCredentials</name>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outCredentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a59d7d6e7fc3097dbd99dd6268c67f43b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.TokenAgentApiNativeBindings.MLTokenAgentGetClientCredentialsAsync</definition>
+        <argsstring>(ref IntPtr outFuture)</argsstring>
+        <name>MLTokenAgentGetClientCredentialsAsync</name>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outFuture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1ad971903b3b772826110c25697cc87006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.TokenAgentApiNativeBindings.MLTokenAgentGetClientCredentialsWait</definition>
+        <argsstring>(IntPtr future, uint msecTimeout, ref IntPtr outCredentials)</argsstring>
+        <name>MLTokenAgentGetClientCredentialsWait</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>future</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>msecTimeout</declname>
+        </param>
+        <param>
+          <type>ref IntPtr</type>
+          <declname>outCredentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a0ddc1b61839716a684e969dcc2580534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>static MLResultCode MagicLeapInternal.TokenAgentApiNativeBindings.MLTokenAgentReleaseClientCredentials</definition>
+        <argsstring>(IntPtr credentials)</argsstring>
+        <name>MLTokenAgentReleaseClientCredentials</name>
+        <param>
+          <type>IntPtr</type>
+          <declname>credentials</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a0941f2aa6c60308510e29abe165f16ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPtr</type>
+        <definition>static IntPtr MagicLeapInternal.TokenAgentApiNativeBindings.MLTokenAgentGetResultString</definition>
+        <argsstring>(MLResultCode result)</argsstring>
+        <name>MLTokenAgentGetResultString</name>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>See ml_token_agent.h for additional comments </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="684">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="683">
+        <label>MagicLeapInternal.TokenAgentApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings"/>
+        <childnode refid="684" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="686">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="685">
+        <label>MagicLeapInternal.TokenAgentApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings"/>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/TokenAgentApiNativeBindings.cs" bodystart="50" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a604bf85a25cc2ccb0e46b5047ca1885c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>InvalidHandle</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a4f0ec148621ee968e5cbfaa7c30cf2ba" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MagicLeapNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a6cdbb2a6e6d4e721cb5e4fa429a838f0" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a665cf9f23a1f0e934c3df5c6d6bef2a2" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLHandleIsValid</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a910b0294aae043997556886740ee39fa" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLIdentityDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a9fcbc3e743480e4344e7a62ef12654fc" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLPerceptionClientDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1aa4c01a2b2b85e516b6d4b0dd805f214b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLPerceptionGetSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af9ccf1003c83f21760c526a7ab5e5cd9" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLPerceptionReleaseSnapshot</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1a12f7d4c87a7aa00f3f9eba6491a5168c" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLPlatformDll</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1af3fd07d24e8654c564855c1a439df195" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLPlatformGetAPILevel</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ac483b4f782837367924b0445385ed3ef" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLSensoryState</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afc7d03f6d5b95812429c863aa01eb98b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLSnapshotGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1afa7e0b031a25b606388e4d5c2bf1de44" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLSnapshotGetTransform</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a438dae48d72ef969abac7faf7220ab7a" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLTokenAgentGetClientCredentials</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a59d7d6e7fc3097dbd99dd6268c67f43b" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLTokenAgentGetClientCredentialsAsync</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1ad971903b3b772826110c25697cc87006" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLTokenAgentGetClientCredentialsWait</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a0941f2aa6c60308510e29abe165f16ee" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLTokenAgentGetResultString</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1a0ddc1b61839716a684e969dcc2580534" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>MLTokenAgentReleaseClientCredentials</name></member>
+      <member refid="class_magic_leap_internal_1_1_token_agent_api_native_bindings_1aa7ce743afc9d810650cb08b886028a0a" prot="protected" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>TokenAgentApiNativeBindings</name></member>
+      <member refid="class_magic_leap_internal_1_1_magic_leap_native_bindings_1ab75672201ed1b7aa16e14a4f7142d509" prot="public" virt="non-virtual"><scope>MagicLeapInternal::TokenAgentApiNativeBindings</scope><name>UnityMagicLeap_TryGetPose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

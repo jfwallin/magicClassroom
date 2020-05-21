@@ -1,0 +1,13 @@
+
+CXXFLAGS.device = -nostdinc++ -I$(MLSDK)/lumin/stl/gnu-libstdc++/include -I$(MLSDK)/lumin/stl/gnu-libstdc++/include/aarch64-linux-android -I$(MLSDK)/lumin/stl/gnu-libstdc++/include/backward
+LDFLAGS.device = -L$(MLSDK)/lumin/stl/gnu-libstdc++/lib
+
+CXXFLAGS.linux_clang = -stdlib=libstdc++
+
+STLIBS.device = gnustl_static supc++
+STLIBS.linux = :libstdc++.a
+STLIBS.gcc_win,clang_win = :libstdc++.a
+
+# Mac has deprecated libstdc++ and it does not have a static version of libc++.
+CXXFLAGS.osx = -stdlib=libc++
+SHLIBS.osx = c++ c++abi

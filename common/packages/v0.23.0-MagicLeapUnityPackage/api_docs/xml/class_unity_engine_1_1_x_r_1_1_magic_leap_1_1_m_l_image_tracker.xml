@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLImageTracker</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLImageTracker &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a8a0f22f2aecf62a6b181f6c1839cb756" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MLImageTracker._handle</definition>
+        <argsstring></argsstring>
+        <name>_handle</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+<para>The internal ML_HANDLE used to reference this tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a14932405706a83f0b5cecd6a2854f63c" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref> &gt;</type>
+        <definition>List&lt;MLImageTarget&gt; UnityEngine.XR.MagicLeap.MLImageTracker._targetList</definition>
+        <argsstring></argsstring>
+        <name>_targetList</name>
+        <briefdescription>
+<para>The list of targets currently being tracked by this image tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="60" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae0e701509a4eef1817b652ad72ea05ae" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_image_tracker_native_bindings_1_1_m_l_image_tracker_settings" kindref="compound">ImageTrackerNativeBindings.MLImageTrackerSettings</ref></type>
+        <definition>ImageTrackerNativeBindings.MLImageTrackerSettings UnityEngine.XR.MagicLeap.MLImageTracker._trackerSettings</definition>
+        <argsstring></argsstring>
+        <name>_trackerSettings</name>
+        <briefdescription>
+<para>The list of settings for this image tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="65" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a0f7a72354546098cd6162bfc3b5e9c4d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MLImageTracker.CreateInstance</definition>
+        <argsstring>()</argsstring>
+        <name>CreateInstance</name>
+        <briefdescription>
+<para>Static instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker" kindref="compound">MLImageTracker</ref> class </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="71" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ada7c814c3fcc256918f3da9efb3ed0be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLImageTracker.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start the image tracker with the defined settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to internal invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if image tracker was not created due to lack of privilege(s). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="92" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="92" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a2827be8ac67d427f47505dba532133ca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLImageTracker.Start</definition>
+        <argsstring>(MLImageTrackerSettings customSettings)</argsstring>
+        <name>Start</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>customSettings</declname>
+        </param>
+        <briefdescription>
+<para>Start the image tracker with the specified settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>customSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The settings to start the image tracker with.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed due to internal invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if image tracker was not created due to lack of privilege(s). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="122" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a97bf4fb54e032279566834f6a70a032f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref></type>
+        <definition>static MLImageTarget UnityEngine.XR.MagicLeap.MLImageTracker.AddTarget</definition>
+        <argsstring>(string name, Texture2D image, float longerDimension, Action&lt; MLImageTarget, MLImageTargetResult &gt; callback, bool isStationary=false)</argsstring>
+        <name>AddTarget</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>longerDimension</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result" kindref="compound">MLImageTargetResult</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isStationary</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Adds an image target to the image tracker system. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique name of this target.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Texture2D representing the image target. The aspect ration of the target should not be changed. Set the &quot;Non Power of 2&quot; property of Texture2D to none. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>longerDimension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the longer dimension in scene units.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function that will be triggered with target info.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isStationary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set this to true if the position of this image target in the physical world is fixed and the local geometry is planar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref> if the target was created and added successfully, null otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="290" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="290" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a3faba2ee5ddcf2fcdd64fa39a83ff1fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLImageTracker.RemoveTarget</definition>
+        <argsstring>(string name)</argsstring>
+        <name>RemoveTarget</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Removes a target whose name matches the passed in name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the target to remove.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the target was found and removed, false otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="316" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1aa6f5a5578426dbdbc0b696a985b88b6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+        <definition>static MLImageTrackerSettings UnityEngine.XR.MagicLeap.MLImageTracker.GetCurrentTrackerSettings</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentTrackerSettings</name>
+        <briefdescription>
+<para>Get the current <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="338" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a5a32d088d118a804d414d36f1ca98fe7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLImageTracker.UpdateTrackerSettings</definition>
+        <argsstring>(MLImageTrackerSettings customSettings)</argsstring>
+        <name>UpdateTrackerSettings</name>
+        <param>
+          <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref></type>
+          <declname>customSettings</declname>
+        </param>
+        <briefdescription>
+<para>Set <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>customSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_settings" kindref="compound">MLImageTrackerSettings</ref> wanted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successfully updated the image tracker settings.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359ada1b358bb9ad851e211f21df8a161c3d" kindref="member">MLResultCode.InvalidParam</ref> if failed to update the settings due to invalid input parameter.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359a164b2dba29192dbd44b09a58ab94234a" kindref="member">MLResultCode.PrivilegeDenied</ref> if failed to update the settings due to lack of privilege(s). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="356" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="356" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a0a59ac8647e90bd693bc656b6280caca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MLImageTracker.GetTrackerStatus</definition>
+        <argsstring>()</argsstring>
+        <name>GetTrackerStatus</name>
+        <briefdescription>
+<para>Get the enabled status of the Image Tracker </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if currently enabled, false if disabled.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="381" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="381" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ab10cb374ae7bfe2813bcfce18b9cf1b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLImageTracker.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <briefdescription>
+<para>Enable the Image Tracker </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="394" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="394" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a872711d00e1394fcf581c164e14d99cb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>static MLResult UnityEngine.XR.MagicLeap.MLImageTracker.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <briefdescription>
+<para>Disable the Image Tracker </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref> if successful.</para><para><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result_1a88eec53e01def9ddcd28160492c10dfc" kindref="member">MLResult.Code</ref> will be <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359aa1a1b7fb0fe16bc1986da7912e4af2cb" kindref="member">MLResultCode.UnspecifiedFailure</ref> if failed due to internal error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="407" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="407" bodyend="410"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae3e59ca7d98e509e0b8af8e26136fbda" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLImageTracker.MLImageTracker</definition>
+        <argsstring>()</argsstring>
+        <name>MLImageTracker</name>
+        <briefdescription>
+<para>Initialize the target list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="146" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="146" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae76f4c643d400a360c8eddf3a5fcf547" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLImageTracker.DestroyNativeTracker</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyNativeTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="204" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="204" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ad2e9c81d281e2fcb9a353241fea11559" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref></type>
+        <definition>MLImageTarget UnityEngine.XR.MagicLeap.MLImageTracker.CreateTarget</definition>
+        <argsstring>(string name, Texture2D image, float width, Action&lt; MLImageTarget, MLImageTargetResult &gt; callback, bool isStationary)</argsstring>
+        <name>CreateTarget</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result" kindref="compound">MLImageTargetResult</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isStationary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="243" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="243" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1aab3725ad896dd17e2c226afe84c0aea4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref></type>
+        <definition>MLImageTarget UnityEngine.XR.MagicLeap.MLImageTracker.AddTargetInternal</definition>
+        <argsstring>(string name, Texture2D image, float longerDimension, Action&lt; MLImageTarget, MLImageTargetResult &gt; callback, bool isStationary=false)</argsstring>
+        <name>AddTargetInternal</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>longerDimension</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target" kindref="compound">MLImageTarget</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_target_result" kindref="compound">MLImageTargetResult</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isStationary</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="296" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="296" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a20193485fbb8bcd49e429b6af0e078e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLImageTracker.RemoveTargetInternal</definition>
+        <argsstring>(string name)</argsstring>
+        <name>RemoveTargetInternal</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="321" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="321" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1abfade19f7a8f8fea2d1f9e3bcc1dd401" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLImageTracker.SetTrackerStatusInternal</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>SetTrackerStatusInternal</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="412" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="412" bodyend="430"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ad001835894e31a3ae81c88bd6bbc95e7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLImageTracker.CleanupAPI</definition>
+        <argsstring>(bool isSafeToAccessManagedObjects)</argsstring>
+        <name>CleanupAPI</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a88970d19eaefadf335c94ca01d85523d">CleanupAPI</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>isSafeToAccessManagedObjects</declname>
+        </param>
+        <briefdescription>
+<para>Cleanup the image targets first (if it safe) and the cleanup the image tracker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="187" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="187" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a1325dd57563c881909c0766ab41651d4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLImageTracker.Update</definition>
+        <argsstring>(float deltaTime)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a638c03906431b27e84f8111a83eff66a">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>Handle the update callback. Update the tracking results for all the image targets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="222" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="222" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ab1b27b504e7ebc057c96e68714f8d3bd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MLImageTracker.OnApplicationPause</definition>
+        <argsstring>(bool pauseStatus)</argsstring>
+        <name>OnApplicationPause</name>
+        <reimplements refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a906779434ea6891e21edfa0390e284c4">OnApplicationPause</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>pauseStatus</declname>
+        </param>
+        <briefdescription>
+<para>Handle the application pause callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="234" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="234" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker" kindref="compound">MLImageTracker</ref> manages the Image Tracker system. Image Tracker enables experiences that recognize 2D planar images (image targets) in the physical world. It provides the position and orientation of the image targets in the physical world. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="358">
+        <label>MLAPISingleton&lt; MLImageTracker &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="357">
+        <label>UnityEngine.XR.MagicLeap.MLImageTracker</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="360">
+        <label>MLAPISingleton&lt; MLImageTracker &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="359">
+        <label>UnityEngine.XR.MagicLeap.MLImageTracker</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLImageTracker.cs" bodystart="50" bodyend="431"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a8a0f22f2aecf62a6b181f6c1839cb756" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>_handle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac96613deae55c08d048fb40082a5b45e" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a14932405706a83f0b5cecd6a2854f63c" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>_targetList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae0e701509a4eef1817b652ad72ea05ae" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>_trackerSettings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a97bf4fb54e032279566834f6a70a032f" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>AddTarget</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1aab3725ad896dd17e2c226afe84c0aea4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>AddTargetInternal</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a4093991239f5fc7ff542a91459864acf" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>BaseStart</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a78af873d5119dcfa1b37253458ae0d49" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>CheckValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ad001835894e31a3ae81c88bd6bbc95e7" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>CleanupAPI</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a0f7a72354546098cd6162bfc3b5e9c4d" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>CreateInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ad2e9c81d281e2fcb9a353241fea11559" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>CreateTarget</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae76f4c643d400a360c8eddf3a5fcf547" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>DestroyNativeTracker</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a872711d00e1394fcf581c164e14d99cb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Disable</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1acd67b3653b01724ec1315f992d5426d9" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>DllNotFoundError</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ab10cb374ae7bfe2813bcfce18b9cf1b7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Enable</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1aa6f5a5578426dbdbc0b696a985b88b6e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>GetCurrentTrackerSettings</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a0a59ac8647e90bd693bc656b6280caca" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>GetTrackerStatus</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a0ef617fa9c40b3f38bc4dc7f63230559" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ac0663d655396a21f6116277f9e2a5e3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>IsStarted</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1ae18fa3bda6d33275cb10ba86eb478c2c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>IsValidInstance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ae3e59ca7d98e509e0b8af8e26136fbda" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>MLImageTracker</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ab1b27b504e7ebc057c96e68714f8d3bd" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a3faba2ee5ddcf2fcdd64fa39a83ff1fa" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>RemoveTarget</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a20193485fbb8bcd49e429b6af0e078e9" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>RemoveTargetInternal</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1abfade19f7a8f8fea2d1f9e3bcc1dd401" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>SetTrackerStatusInternal</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1ada7c814c3fcc256918f3da9efb3ed0be" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a2827be8ac67d427f47505dba532133ca" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton_1a1def30b9d546948c8b6ab39a53bd2420" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Stop</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a1325dd57563c881909c0766ab41651d4" prot="protected" virt="virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>Update</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_image_tracker_1a5a32d088d118a804d414d36f1ca98fe7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLImageTracker</scope><name>UpdateTrackerSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

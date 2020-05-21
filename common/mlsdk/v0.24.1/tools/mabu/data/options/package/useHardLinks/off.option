@@ -1,0 +1,2 @@
+# always fully copy files when creating the package data layout
+PKGFLAGS = useHardLinks=false

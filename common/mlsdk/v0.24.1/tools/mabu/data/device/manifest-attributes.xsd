@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="magicleap" attributeFormDefault="qualified">
+  <xs:attribute name="package">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1" />
+        <xs:maxLength value="128" />
+        <xs:pattern value="[a-z0-9_]+(\.[a-z0-9_]+)*(-[a-zA-Z0-9]*)?" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="version_code">
+    <xs:simpleType>
+      <xs:restriction base="xs:unsignedLong">
+        <xs:minExclusive value="0" />
+        <xs:maxInclusive value="18446744073709551615" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="application_type">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="system" />
+        <xs:enumeration value="trusted" />
+        <xs:enumeration value="untrusted" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="developer_id" type="xs:string" />
+  <xs:attribute name="version_name" type="xs:string" />
+  <xs:attribute name="manifest_version" type="xs:string" />
+  <xs:attribute name="visible_name">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="60" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="sdk_version" type="xs:string" />
+  <xs:attribute name="minimum_os" type="xs:string" />
+    <xs:attribute name="min_api_level" >
+      <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:minExclusive value="0" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="name">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"></xs:minLength>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="binary_name">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="((\.|\.[^./][^/]*|\.\.[^/]+|[^./][^/]*)/)*(\.[^./][^/]*|\.\.[^/]+|[^./][^/]*)" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="language" type="xs:string" />
+  <xs:attribute name="annotation" type="xs:string" />
+  <xs:attribute name="model_folder" type="xs:string" />
+  <xs:attribute name="portal_folder" type="xs:string" />
+  <xs:attribute name="uses-privileges" type="xs:string" />
+  <xs:attribute name="shareable" type="xs:string" />
+  <xs:attribute name="sharing" type="xs:string" />
+  <xs:attribute name="managed_persistence" type="xs:string" />
+  <xs:attribute name="hidden" type="xs:string" />
+  <xs:attribute name="type">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Universe" />
+        <xs:enumeration value="Fullscreen" />
+        <xs:enumeration value="SearchProvider" />
+        <xs:enumeration value="MusicService" />
+        <xs:enumeration value="Screens" />
+        <xs:enumeration value="ScreensImmersive" />
+        <xs:enumeration value="Console" />
+        <xs:enumeration value="SystemUI" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="subtype">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Screens" />
+        <xs:enumeration value="Concept" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

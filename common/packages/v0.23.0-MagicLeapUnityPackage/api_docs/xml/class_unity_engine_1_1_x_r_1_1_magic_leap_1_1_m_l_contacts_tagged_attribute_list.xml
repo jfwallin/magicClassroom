@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContactsTaggedAttributeList</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a0b3b27590276fff1c88af1ca12807ed1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLContactsTaggedAttributeList.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+<para>Number of tagged attributes in the list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="184" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a7ab94735315e6ee32b28dd82bc1b96b7" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute" kindref="compound">MLContactsTaggedAttribute</ref> &gt;</type>
+        <definition>List&lt;MLContactsTaggedAttribute&gt; UnityEngine.XR.MagicLeap.MLContactsTaggedAttributeList.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <briefdescription>
+<para>List of tagged attributes </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="199" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a2c64eb704704e12276d8e4e448ec0c74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLContactsTaggedAttributeList.MLContactsTaggedAttributeList</definition>
+        <argsstring>()</argsstring>
+        <name>MLContactsTaggedAttributeList</name>
+        <briefdescription>
+<para>Constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="164" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1acabe120d75e19e76c5900e5887df0153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLContactsTaggedAttributeList.MLContactsTaggedAttributeList</definition>
+        <argsstring>(MLContactsTaggedAttributeList src)</argsstring>
+        <name>MLContactsTaggedAttributeList</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list" kindref="compound">MLContactsTaggedAttributeList</ref></type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy Constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="172" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="172" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores a list of MLContactsTaggedAttributes </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="160" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="159" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a0b3b27590276fff1c88af1ca12807ed1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsTaggedAttributeList</scope><name>Count</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a7ab94735315e6ee32b28dd82bc1b96b7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsTaggedAttributeList</scope><name>Items</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1a2c64eb704704e12276d8e4e448ec0c74" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsTaggedAttributeList</scope><name>MLContactsTaggedAttributeList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_tagged_attribute_list_1acabe120d75e19e76c5900e5887df0153" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsTaggedAttributeList</scope><name>MLContactsTaggedAttributeList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

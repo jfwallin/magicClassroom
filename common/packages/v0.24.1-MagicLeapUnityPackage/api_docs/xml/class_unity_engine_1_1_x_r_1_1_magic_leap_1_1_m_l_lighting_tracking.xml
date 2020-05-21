@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLLightingTracking</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLLightingTracking &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36a" prot="public" static="no">
+        <name>Camera</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36aa945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para>Camera sensor located on left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36aa92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para>Camera sensor located on right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36aa8aece0c0b114cd55b6240a0be360ad16" prot="public">
+          <name>FarLeft</name>
+          <briefdescription>
+<para>Camera sensor located on far left. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36aae1f25d9903d88155c2372568e8bf1cb8" prot="public">
+          <name>FarRight</name>
+          <briefdescription>
+<para>Camera sensor located on far right. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Camera sensor placements on device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLLightingTracking.cs" line="102" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLLightingTracking.cs" bodystart="101" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides environment lighting information. Capturing images or video will stop the lighting information update. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="76">
+        <label>UnityEngine.XR.MagicLeap.MLLightingTracking</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>MLAPISingleton&lt; MLLightingTracking &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="78">
+        <label>UnityEngine.XR.MagicLeap.MLLightingTracking</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>MLAPISingleton&lt; MLLightingTracking &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLLightingTracking.cs" line="27" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLLightingTracking.cs" bodystart="26" bodyend="442"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking_1ace8b6fe3f7cd35d5db0ba80431cca36a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLLightingTracking</scope><name>Camera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

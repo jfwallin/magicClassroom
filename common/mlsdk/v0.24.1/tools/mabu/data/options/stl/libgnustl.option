@@ -1,0 +1,15 @@
+
+CXXFLAGS.device = -nostdinc++ -I$(MLSDK)/lumin/stl/gnu-libstdc++/include -I$(MLSDK)/lumin/stl/gnu-libstdc++/include/aarch64-linux-android -I$(MLSDK)/lumin/stl/gnu-libstdc++/include/backward
+LDFLAGS.device = -L$(MLSDK)/lumin/stl/gnu-libstdc++/lib
+
+CXXFLAGS.linux_clang = -stdlib=libstdc++
+
+SHLIBS.device = gnustl_shared
+SHLIBS.linux = stdc++
+SHLIBS.gcc_win,clang_win = stdc++
+
+# Mac has deprecated libstdc++.
+CXXFLAGS.osx = -stdlib=libc++
+SHLIBS.osx = c++ c++abi
+
+DATAS.device = $(MLSDK)/lumin/stl/gnu-libstdc++/lib/libgnustl_shared.so : bin/libgnustl_shared.so

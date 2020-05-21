@@ -1,0 +1,2 @@
+CFLAGS.gcc,clang=-std=c99
+# no flag in MSVC?

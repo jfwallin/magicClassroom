@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLInvokeFuture</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future_1a05afabe82a2794dd5a78081477cc181f" prot="package" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr UnityEngine.XR.MagicLeap.MLInvokeFuture._invokeFuturePtr</definition>
+        <argsstring></argsstring>
+        <name>_invokeFuturePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="58" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future" kindref="compound">MLInvokeFuture</ref> represents a type which is opaque (incomplete) to users of this library. A pointer to an <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future" kindref="compound">MLInvokeFuture</ref> is returned by the Async function. Users pass it to the Wait function to determine if the asynchronous method has completed and to retrieve the result if it has. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/IdentityApiNativeBindings.cs" bodystart="54" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_invoke_future_1a05afabe82a2794dd5a78081477cc181f" prot="package" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInvokeFuture</scope><name>_invokeFuturePtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

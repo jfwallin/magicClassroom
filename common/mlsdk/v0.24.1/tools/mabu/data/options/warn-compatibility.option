@@ -1,0 +1,12 @@
+
+CFLAGS.gcc=-Wpedantic
+CXXFLAGS.gcc=-Wpedantic
+
+# clang adds language standard checks, GCC extension checks in this umbrella
+CFLAGS.clang=-Wpedantic -Weverything
+CXXFLAGS.clang=-Wpedantic -Weverything
+
+# nothing known
+CFLAGS.msvc=
+CXXFLAGS.msvc=
+

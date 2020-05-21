@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MediaPlayerTracks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks_1ae754f6ed3d0fb7b77d660939090a688d" prot="public" static="no" mutable="no">
+        <type>IntPtr</type>
+        <definition>IntPtr UnityEngine.XR.MagicLeap.MediaPlayerTracks.tracks</definition>
+        <argsstring></argsstring>
+        <name>tracks</name>
+        <briefdescription>
+<para>Pointer to array of <ref refid="struct_media_player_track_data" kindref="compound">MediaPlayerTrackData</ref>.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="220" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks_1a7ea2301f96ead43696f700cac10dbfa8" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MediaPlayerTracks.length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Length of the array.</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="222" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure which contains an array of track data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" line="218" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminMediaPlayer/External/Bindings/MediaPlayerNativeBindings.cs" bodystart="217" bodyend="223"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks_1a7ea2301f96ead43696f700cac10dbfa8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MediaPlayerTracks</scope><name>length</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_media_player_tracks_1ae754f6ed3d0fb7b77d660939090a688d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MediaPlayerTracks</scope><name>tracks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

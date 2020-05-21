@@ -1,0 +1,913 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MagicLeapDevice</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TrackedPoseDriver</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4e0c3d76d6ae3a94ef665cf94a43a788" prot="private" static="no" mutable="no">
+        <type>PerceptionHandle</type>
+        <definition>PerceptionHandle UnityEngine.XR.MagicLeap.MagicLeapDevice._perceptionHandle</definition>
+        <argsstring></argsstring>
+        <name>_perceptionHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="53" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a7674a75ffeb7b74427077a66ad89a469" prot="private" static="no" mutable="no">
+        <type>MagicLeapGestures</type>
+        <definition>MagicLeapGestures UnityEngine.XR.MagicLeap.MagicLeapDevice._gestureSubsystem</definition>
+        <argsstring></argsstring>
+        <name>_gestureSubsystem</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af3760d66daa5ec4527e2b8568b2ba9ad" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MagicLeapDevice._gestureSubsystemStartCount</definition>
+        <argsstring></argsstring>
+        <name>_gestureSubsystemStartCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="56" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a1c6e6adb5a98dc3cb5ce48315a156cc4" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnityEngine.XR.MagicLeap.MagicLeapDevice.MINIMUM_NEAR_CLIP_DISTANCE</definition>
+        <argsstring></argsstring>
+        <name>MINIMUM_NEAR_CLIP_DISTANCE</name>
+        <initializer>= 0.37f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="59" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0e1b4d2f23de6550c437662d5cb10f77" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnityEngine.XR.MagicLeap.MagicLeapDevice.DEFAULT_NEAR_CLIP_DISTANCE</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_NEAR_CLIP_DISTANCE</name>
+        <initializer>= 0.37f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="60" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af84d31add7946c5d33da0294282245a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MagicLeapDevice._isReady</definition>
+        <argsstring></argsstring>
+        <name>_isReady</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="69" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4275cd0a276fe715f4ea3a07796a8f9a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MagicLeapDevice._mapEventsAPIImplemented</definition>
+        <argsstring></argsstring>
+        <name>_mapEventsAPIImplemented</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ae6a607dd1c04f659a0d730ce934368ec" prot="private" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong UnityEngine.XR.MagicLeap.MagicLeapDevice._headTrackerHandle</definition>
+        <argsstring></argsstring>
+        <name>_headTrackerHandle</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a455cd7c98b41c1421a5f273d7300e84ea2d0e462e9958ce7bb443e70023241dfe" kindref="member">MagicLeapNativeBindings.InvalidHandle</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="156" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9bb4fb61375716af3c79576baa4892f6" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref></type>
+        <definition>MLHeadTrackingState UnityEngine.XR.MagicLeap.MagicLeapDevice._headTrackingState</definition>
+        <argsstring></argsstring>
+        <name>_headTrackingState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="157" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ac46838a52a07f8a660993e940210b787" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref></type>
+        <definition>MLHeadTrackingState UnityEngine.XR.MagicLeap.MagicLeapDevice._tempHeadTrackingState</definition>
+        <argsstring></argsstring>
+        <name>_tempHeadTrackingState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="158" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a408d9c9ab03ff463a3b3d73b1f2d3523" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MagicLeapDevice._isMLHeadTrackingCreateAvailable</definition>
+        <argsstring></argsstring>
+        <name>_isMLHeadTrackingCreateAvailable</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="159" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a464963070c958b708e9c33163dde3463" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a9964531dcbb5863a2462741e7e707359" kindref="member">MLResultCode</ref></type>
+        <definition>MLResultCode UnityEngine.XR.MagicLeap.MagicLeapDevice._lastHeadTrackingGetStateResult</definition>
+        <argsstring></argsstring>
+        <name>_lastHeadTrackingGetStateResult</name>
+        <initializer>= <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1aafa4495537e4d26fef108ceb148548adaa60852f204ed8028c1c58808b746d115" kindref="member">MLResultCode.Ok</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="160" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aaa7f0ba79255f9708f14d028d83e8b7f" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MagicLeapDevice._platformLevel</definition>
+        <argsstring></argsstring>
+        <name>_platformLevel</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="161" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2e88a57b9a44a96f062ba25706493635" prot="private" static="no" mutable="no">
+        <type>List&lt; Action &gt;</type>
+        <definition>List&lt;Action&gt; UnityEngine.XR.MagicLeap.MagicLeapDevice._endOfFrameCallbacks</definition>
+        <argsstring></argsstring>
+        <name>_endOfFrameCallbacks</name>
+        <initializer>= new List&lt;Action&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="162" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9db27f3da4ed84f170e59bcb66e707e5" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine UnityEngine.XR.MagicLeap.MagicLeapDevice._endOfFrameCoroutine</definition>
+        <argsstring></argsstring>
+        <name>_endOfFrameCoroutine</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="163" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a36dc90e514f897034e79d0a0b43b6f0b" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string UnityEngine.XR.MagicLeap.MagicLeapDevice.MAGIC_LEAP_DEVICE_NAME</definition>
+        <argsstring></argsstring>
+        <name>MAGIC_LEAP_DEVICE_NAME</name>
+        <initializer>= &quot;Lumin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="63" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af32af8bd9f24c2d71def52209fc494cf" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device" kindref="compound">MagicLeapDevice</ref></type>
+        <definition>MagicLeapDevice UnityEngine.XR.MagicLeap.MagicLeapDevice._instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="64" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a7ff4bbeb956a997dc7b4486b906a1339" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MagicLeapDevice._worldScale</definition>
+        <argsstring></argsstring>
+        <name>_worldScale</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a242cfcff8be500ee49c45b9204469b2f" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MagicLeapDevice._worldScaleInitialized</definition>
+        <argsstring></argsstring>
+        <name>_worldScaleInitialized</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a6b54da7b9532e198d181bb3191f858db" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MagicLeapDevice.WorldScale</definition>
+        <argsstring></argsstring>
+        <name>WorldScale</name>
+        <briefdescription>
+<para>The last scale assigned from the main camera&apos;s parent </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aa2231f482a5240f89ae741e176650542" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref></type>
+        <definition>MLHeadTrackingState UnityEngine.XR.MagicLeap.MagicLeapDevice.HeadTrackingState</definition>
+        <argsstring></argsstring>
+        <name>HeadTrackingState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: Raise exception if Instance is not valid? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="91" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a6862d55416d4bec7b9f1caa08e552b40" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>uint</type>
+        <definition>uint UnityEngine.XR.MagicLeap.MagicLeapDevice.PlatformLevel</definition>
+        <argsstring></argsstring>
+        <name>PlatformLevel</name>
+        <briefdescription>
+<para>Platform API Level that the OS supports. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="107" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ae67c254e07a5e82403815a10fa0aa183" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MagicLeapDevice.DefaultNearClipDistance</definition>
+        <argsstring></argsstring>
+        <name>DefaultNearClipDistance</name>
+        <briefdescription>
+<para>The default value that should be used for the Camera&apos;s near clipping plane. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="122" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ac2247966313bcb47121fa5805c9e0da3" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float UnityEngine.XR.MagicLeap.MagicLeapDevice.MinimumNearClipDistance</definition>
+        <argsstring></argsstring>
+        <name>MinimumNearClipDistance</name>
+        <briefdescription>
+<para>The lowest value that can be assigned to the Camera&apos;s near clipping plane. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="133" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a8fa6fee9166c36da02e656c0e0b4e06a" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>MagicLeapGestures</type>
+        <definition>MagicLeapGestures UnityEngine.XR.MagicLeap.MagicLeapDevice.GestureSubsystem</definition>
+        <argsstring></argsstring>
+        <name>GestureSubsystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="141" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a63c86ef381c40b2aa644fd9e031a29ea" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device" kindref="compound">MagicLeapDevice</ref></type>
+        <definition>MagicLeapDevice UnityEngine.XR.MagicLeap.MagicLeapDevice.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="165" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aee61ed69939d86e4fbbe49491b63df96" prot="private" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; float &gt;</type>
+        <definition>Action&lt;float&gt; UnityEngine.XR.MagicLeap.MagicLeapDevice._apiUpdateActions</definition>
+        <argsstring></argsstring>
+        <name>_apiUpdateActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="152" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2183b65e6febc570e9da0146b0173201" prot="private" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref> &gt;</type>
+        <definition>Action&lt;MLHeadTrackingState&gt; UnityEngine.XR.MagicLeap.MagicLeapDevice._headTrackingModeChanged</definition>
+        <argsstring></argsstring>
+        <name>_headTrackingModeChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="153" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5f520ace3c5b0c51ba582a9e05a14dcd" prot="private" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ff" kindref="member">MLHeadTrackingMapEvent</ref> &gt;</type>
+        <definition>Action&lt;MLHeadTrackingMapEvent&gt; UnityEngine.XR.MagicLeap.MagicLeapDevice._onHeadTrackingMapEvent</definition>
+        <argsstring></argsstring>
+        <name>_onHeadTrackingMapEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="154" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ad631cb9aadae25d2413dee98757714af" prot="private" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; bool &gt;</type>
+        <definition>Action&lt;bool&gt; UnityEngine.XR.MagicLeap.MagicLeapDevice._onApplicationPauseAction</definition>
+        <argsstring></argsstring>
+        <name>_onApplicationPauseAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="155" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1abccdd14b11b02c6f0cc46b7916f57f37" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MagicLeapDevice.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+<para>Initializes the Magic Leap device state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="187" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="187" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aed0a25bafc85fa8b1468452ffaf4f36c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MagicLeapDevice.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+<para>Subscribes to Unity events necessary for the device&apos;s operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="224" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="224" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab45d19a4ce4e50dc0cd13bdb5dfae6c0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MagicLeapDevice.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+<para>Cleans up event subscriptions that are no longer necessary. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="233" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab025bc9a8951e6f35dd599f62c3c0490" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MagicLeapDevice.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+<para>Cleans up any resources the object has open. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="242" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="242" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aed66e7d868bfe8cbf78c635302b631a3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.XR.MagicLeap.MagicLeapDevice.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Updates the perception snapshot and emits an event to inform subscribers of the updated state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="270" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="270" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0d830821ec3e004da73f2c4b64af6dc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="195" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="195" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5d9d0ad61b73495d84713b6cf278f1c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.OnApplicationPause</definition>
+        <argsstring>(bool pauseStatus)</argsstring>
+        <name>OnApplicationPause</name>
+        <param>
+          <type>bool</type>
+          <declname>pauseStatus</declname>
+        </param>
+        <briefdescription>
+<para>Callback sent to all game objects when the player pauses. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pauseStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pause state of the application.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="259" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="259" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a04794830985489c3e197e9ba049d3499" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.UpdateHeadposeState</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateHeadposeState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="444" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="444" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1afe645002bb5cfb355aaa3d29fd27646e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.PollMapEvents</definition>
+        <argsstring>()</argsstring>
+        <name>PollMapEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="471" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="471" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a696390424b40336382a27500facc22c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.CheckMainCameraTransform</definition>
+        <argsstring>(Scene scene, LoadSceneMode mode)</argsstring>
+        <name>CheckMainCameraTransform</name>
+        <param>
+          <type>Scene</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>LoadSceneMode</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="493" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="493" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a22e7646a03633772ded368797a2dd2cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MagicLeapDevice.GetPlatformLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetPlatformLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="519" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="519" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9db6a18d725de9aca5ab5f58efd0e2ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator UnityEngine.XR.MagicLeap.MagicLeapDevice.EndOfFrameUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>EndOfFrameUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="568" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="568" bodyend="581"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a085dd6991296d77db5eef140e835bf1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MagicLeapDevice.IsReady</definition>
+        <argsstring>()</argsstring>
+        <name>IsReady</name>
+        <briefdescription>
+<para>Check if underlying Unity VR Device setup is ready </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="295" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a39596c5479904cbcba726b342ab14df5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.Register</definition>
+        <argsstring>(Action&lt; float &gt; updateCallback)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>Action&lt; float &gt;</type>
+          <declname>updateCallback</declname>
+        </param>
+        <briefdescription>
+<para>Register a <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> API Update callback to be called on Update of this MonoBehaviour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="303" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a8c8a3ab48ed26776cbf055ef2b4854f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.RegisterOnApplicationPause</definition>
+        <argsstring>(Action&lt; bool &gt; onApplicationPauseCallback)</argsstring>
+        <name>RegisterOnApplicationPause</name>
+        <param>
+          <type>Action&lt; bool &gt;</type>
+          <declname>onApplicationPauseCallback</declname>
+        </param>
+        <briefdescription>
+<para>Register a <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> API application pause callback to be called OnApplicationPause of this MonoBehaviour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="311" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1abff0e97429dbf148ba8077d5e8ca54df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.Unregister</definition>
+        <argsstring>(Action&lt; float &gt; updateCallback)</argsstring>
+        <name>Unregister</name>
+        <param>
+          <type>Action&lt; float &gt;</type>
+          <declname>updateCallback</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a previously registered <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> API Update callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="319" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="319" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab6bd34993748742031618ed71b181f92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.UnregisterOnApplicationPause</definition>
+        <argsstring>(Action&lt; bool &gt; onApplicationPauseCallback)</argsstring>
+        <name>UnregisterOnApplicationPause</name>
+        <param>
+          <type>Action&lt; bool &gt;</type>
+          <declname>onApplicationPauseCallback</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a previously registered <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> API application pause callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="332" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="332" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4b30e6e4cf3c85656969017513d35a65" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.RegisterHeadTrackingModeChanged</definition>
+        <argsstring>(Action&lt; MLHeadTrackingState &gt; callback)</argsstring>
+        <name>RegisterHeadTrackingModeChanged</name>
+        <param>
+          <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback to be called when only rotation head pose is available, or when full head pose is available again. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="344" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a1fdc74139f412cd0c60d39a58b763d82" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.UnregisterHeadTrackingModeChanged</definition>
+        <argsstring>(Action&lt; MLHeadTrackingState &gt; callback)</argsstring>
+        <name>UnregisterHeadTrackingModeChanged</name>
+        <param>
+          <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_head_tracking_state" kindref="compound">MLHeadTrackingState</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Unregisters a previously registered head tracking mode change callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="352" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="352" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aab09c703616de1d0ce1ede452a3cde3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.RegisterOnHeadTrackingMapEvent</definition>
+        <argsstring>(Action&lt; MLHeadTrackingMapEvent &gt; callback)</argsstring>
+        <name>RegisterOnHeadTrackingMapEvent</name>
+        <param>
+          <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ff" kindref="member">MLHeadTrackingMapEvent</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Registers a callback to be called when map events occur. This functionality is only supported on platform api level 2 and onwards. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="366" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5a8881bf9a4a89fea84cba57aa4627e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.UnregisterOnHeadTrackingMapEvent</definition>
+        <argsstring>(Action&lt; MLHeadTrackingMapEvent &gt; callback)</argsstring>
+        <name>UnregisterOnHeadTrackingMapEvent</name>
+        <param>
+          <type>Action&lt; <ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1a50fe5793805cc35d216cb11598e7b2ff" kindref="member">MLHeadTrackingMapEvent</ref> &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Unregisters a previously registered map event callback. This functionality is only supported on platform api level 2 and onwards. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="375" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="375" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a94af5ae572ef09b8588e73eea9ed6c7a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UnityEngine.XR.MagicLeap.MagicLeapDevice.UpdateWorldScale</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateWorldScale</name>
+        <briefdescription>
+<para>Apply the world scale set on the current main camera&apos;s parent. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the scale was set false if the main camera or main camera parent was not found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="391" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="391" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1acc3af2a74c64fea385da85e5c6aaef99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.RegisterGestureSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterGestureSubsystem</name>
+        <briefdescription>
+<para>Attempts to register the Unity GestureSubsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="407" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="407" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0d9e90315977f99e4aea3387d8200f76" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.UnregisterGestureSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterGestureSubsystem</name>
+        <briefdescription>
+<para>Attempts to unregister the GestureSubsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="426" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="426" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a48d975c4784f6bf8cb8105c19dc17c42" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.RegisterEndOfFrameUpdate</definition>
+        <argsstring>(Action endOfFrameFunction)</argsstring>
+        <name>RegisterEndOfFrameUpdate</name>
+        <param>
+          <type>Action</type>
+          <declname>endOfFrameFunction</declname>
+        </param>
+        <briefdescription>
+<para>Register a function to be executed per frame at the end of every frame, after all cameras and GUI is rendered but before displaying the frame on screen </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="549" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="549" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2810afe69df1703ce9cecf51ade504bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityEngine.XR.MagicLeap.MagicLeapDevice.UnregisterEndOfFrameUpdate</definition>
+        <argsstring>(Action endOfFrameFunction)</argsstring>
+        <name>UnregisterEndOfFrameUpdate</name>
+        <param>
+          <type>Action</type>
+          <declname>endOfFrameFunction</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a function to no longer be executed at the end of the frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="560" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="560" bodyend="566"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap" kindref="compound">MagicLeap</ref> device class responsible for updating all trackers when they register and are enabled. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="110">
+        <label>UnityEngine::SpatialTracking::TrackedPoseDriver</label>
+      </node>
+      <node id="109">
+        <label>UnityEngine.XR.MagicLeap.MagicLeapDevice</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="112">
+        <label>UnityEngine::SpatialTracking::TrackedPoseDriver</label>
+      </node>
+      <node id="111">
+        <label>UnityEngine.XR.MagicLeap.MagicLeapDevice</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" line="51" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Utils/MagicLeapDevice.cs" bodystart="50" bodyend="582"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aee61ed69939d86e4fbbe49491b63df96" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_apiUpdateActions</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2e88a57b9a44a96f062ba25706493635" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_endOfFrameCallbacks</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9db27f3da4ed84f170e59bcb66e707e5" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_endOfFrameCoroutine</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a7674a75ffeb7b74427077a66ad89a469" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_gestureSubsystem</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af3760d66daa5ec4527e2b8568b2ba9ad" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_gestureSubsystemStartCount</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ae6a607dd1c04f659a0d730ce934368ec" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_headTrackerHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2183b65e6febc570e9da0146b0173201" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_headTrackingModeChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9bb4fb61375716af3c79576baa4892f6" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_headTrackingState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af32af8bd9f24c2d71def52209fc494cf" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a408d9c9ab03ff463a3b3d73b1f2d3523" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_isMLHeadTrackingCreateAvailable</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1af84d31add7946c5d33da0294282245a4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_isReady</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a464963070c958b708e9c33163dde3463" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_lastHeadTrackingGetStateResult</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4275cd0a276fe715f4ea3a07796a8f9a" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_mapEventsAPIImplemented</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ad631cb9aadae25d2413dee98757714af" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_onApplicationPauseAction</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5f520ace3c5b0c51ba582a9e05a14dcd" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_onHeadTrackingMapEvent</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4e0c3d76d6ae3a94ef665cf94a43a788" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_perceptionHandle</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aaa7f0ba79255f9708f14d028d83e8b7f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_platformLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ac46838a52a07f8a660993e940210b787" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_tempHeadTrackingState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a7ff4bbeb956a997dc7b4486b906a1339" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_worldScale</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a242cfcff8be500ee49c45b9204469b2f" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>_worldScaleInitialized</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1abccdd14b11b02c6f0cc46b7916f57f37" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Awake</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a696390424b40336382a27500facc22c7" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>CheckMainCameraTransform</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0e1b4d2f23de6550c437662d5cb10f77" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>DEFAULT_NEAR_CLIP_DISTANCE</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ae67c254e07a5e82403815a10fa0aa183" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>DefaultNearClipDistance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a9db6a18d725de9aca5ab5f58efd0e2ae" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>EndOfFrameUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a8fa6fee9166c36da02e656c0e0b4e06a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>GestureSubsystem</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a22e7646a03633772ded368797a2dd2cb" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>GetPlatformLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aa2231f482a5240f89ae741e176650542" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>HeadTrackingState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a63c86ef381c40b2aa644fd9e031a29ea" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Instance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a085dd6991296d77db5eef140e835bf1d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>IsReady</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a36dc90e514f897034e79d0a0b43b6f0b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>MAGIC_LEAP_DEVICE_NAME</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a1c6e6adb5a98dc3cb5ce48315a156cc4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>MINIMUM_NEAR_CLIP_DISTANCE</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ac2247966313bcb47121fa5805c9e0da3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>MinimumNearClipDistance</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5d9d0ad61b73495d84713b6cf278f1c2" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>OnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab025bc9a8951e6f35dd599f62c3c0490" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>OnDestroy</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab45d19a4ce4e50dc0cd13bdb5dfae6c0" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>OnDisable</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aed0a25bafc85fa8b1468452ffaf4f36c" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>OnEnable</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a6862d55416d4bec7b9f1caa08e552b40" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>PlatformLevel</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1afe645002bb5cfb355aaa3d29fd27646e" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>PollMapEvents</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a39596c5479904cbcba726b342ab14df5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Register</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a48d975c4784f6bf8cb8105c19dc17c42" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>RegisterEndOfFrameUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1acc3af2a74c64fea385da85e5c6aaef99" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>RegisterGestureSubsystem</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a4b30e6e4cf3c85656969017513d35a65" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>RegisterHeadTrackingModeChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a8c8a3ab48ed26776cbf055ef2b4854f4" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>RegisterOnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aab09c703616de1d0ce1ede452a3cde3e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>RegisterOnHeadTrackingMapEvent</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0d830821ec3e004da73f2c4b64af6dc4" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Start</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1abff0e97429dbf148ba8077d5e8ca54df" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Unregister</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a2810afe69df1703ce9cecf51ade504bd" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UnregisterEndOfFrameUpdate</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a0d9e90315977f99e4aea3387d8200f76" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UnregisterGestureSubsystem</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a1fdc74139f412cd0c60d39a58b763d82" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UnregisterHeadTrackingModeChanged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1ab6bd34993748742031618ed71b181f92" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UnregisterOnApplicationPause</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a5a8881bf9a4a89fea84cba57aa4627e6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UnregisterOnHeadTrackingMapEvent</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1aed66e7d868bfe8cbf78c635302b631a3" prot="protected" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>Update</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a04794830985489c3e197e9ba049d3499" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UpdateHeadposeState</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a94af5ae572ef09b8588e73eea9ed6c7a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>UpdateWorldScale</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_magic_leap_device_1a6b54da7b9532e198d181bb3191f858db" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MagicLeapDevice</scope><name>WorldScale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

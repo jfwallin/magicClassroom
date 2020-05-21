@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_configuration" kind="struct" language="C#" prot="public">
+    <compoundname>MagicLeapInternal::InputNativeBindings::MLInputConfiguration</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_configuration_1aa96a09aab310211b7dd71a52e58e45b8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_x_r_1_1_magic_leap_1ad96439eff524989500bca6dff4df25dc" kindref="member">MLInputControllerDof</ref> []</type>
+        <definition>MLInputControllerDof [] MagicLeapInternal.InputNativeBindings.MLInputConfiguration.Dof</definition>
+        <argsstring></argsstring>
+        <name>Dof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="423" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" line="420" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Bindings/InputNativeBindings.cs" bodystart="419" bodyend="424"/>
+    <listofallmembers>
+      <member refid="struct_magic_leap_internal_1_1_input_native_bindings_1_1_m_l_input_configuration_1aa96a09aab310211b7dd71a52e58e45b8" prot="public" virt="non-virtual"><scope>MagicLeapInternal::InputNativeBindings::MLInputConfiguration</scope><name>Dof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLWrist</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a269ed098a13a552d8e32ab7bec2f0388" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLWrist.Center</definition>
+        <argsstring></argsstring>
+        <name>Center</name>
+        <briefdescription>
+<para>The center of the wrist. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="52" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1aae6c3fb30e24acf5287d82096f5721dd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLWrist.Ulnar</definition>
+        <argsstring></argsstring>
+        <name>Ulnar</name>
+        <briefdescription>
+<para>The Ulnar of the wrist. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="57" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1abc08e0e6560ffb0e609ad660d79e24af" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLWrist.Radial</definition>
+        <argsstring></argsstring>
+        <name>Radial</name>
+        <briefdescription>
+<para>The Radial of the wrist. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="62" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a76ddf1e281e554b4054e6d6939fdce3e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref> &gt;</type>
+        <definition>List&lt;MLKeyPoint&gt; UnityEngine.XR.MagicLeap.MLWrist.KeyPoints</definition>
+        <argsstring></argsstring>
+        <name>KeyPoints</name>
+        <briefdescription>
+<para>All valid keypoints combined into a list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="67" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1afb601849e9840347f548f0275fa80968" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLWrist.MLWrist</definition>
+        <argsstring>()</argsstring>
+        <name>MLWrist</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist" kindref="compound">MLWrist</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="72" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="72" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a12f0e85aff1b30f1bef6dba145dc6623" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLWrist.Update</definition>
+        <argsstring>(InputDevice device)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>InputDevice</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+<para>Updates the state of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist" kindref="compound">MLWrist</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="99" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="99" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist" kindref="compound">MLWrist</ref> contains joint information about the wrist instance. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" line="48" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLWrist.cs" bodystart="47" bodyend="131"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a269ed098a13a552d8e32ab7bec2f0388" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>Center</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a76ddf1e281e554b4054e6d6939fdce3e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>KeyPoints</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1afb601849e9840347f548f0275fa80968" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>MLWrist</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1abc08e0e6560ffb0e609ad660d79e24af" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>Radial</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1aae6c3fb30e24acf5287d82096f5721dd" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>Ulnar</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_wrist_1a12f0e85aff1b30f1bef6dba145dc6623" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWrist</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

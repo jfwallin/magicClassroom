@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLInput::Controller</compoundname>
+    <innerclass refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1_1_touchpad_gesture" prot="public">UnityEngine::XR::MagicLeap::MLInput::Controller::TouchpadGesture</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1adf95505dadcaad5c6800ebbb68fb4d6e" prot="public" static="no">
+        <name>Button</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1adf95505dadcaad5c6800ebbb68fb4d6ea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Button: None </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1adf95505dadcaad5c6800ebbb68fb4d6ea8500b63132a4f08ad0e93aa4802c3b13" prot="public">
+          <name>Bumper</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Button: Bumper </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1adf95505dadcaad5c6800ebbb68fb4d6eafd94f75a6394dbd5b996bd724d28b881" prot="public">
+          <name>HomeTap</name>
+          <briefdescription>
+<para>Button: Home Tap </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Buttons on device, controller, and Mobile Companion App. Links to MLInputControllerButton in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="135" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="134" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a6db9118554b227c2af74588303ed82b7" prot="public" static="no">
+        <name>ControlType</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a6db9118554b227c2af74588303ed82b7a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Type: None </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a6db9118554b227c2af74588303ed82b7aa1595abbb4c3a326636dd178757cd6c1" prot="public">
+          <name>Control</name>
+          <briefdescription>
+<para>Type: Control </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a6db9118554b227c2af74588303ed82b7a5b2d4293c67ac3c7cbbe8daf5e7a6882" prot="public">
+          <name>MobileApp</name>
+          <briefdescription>
+<para>Type: Mobile App </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Types of controllers recognized by Magic Leap platform. Links to MLInputControllerType in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="156" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="155" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a5bd3c3c6cea81a7b64e0c713c04d0d62" prot="public" static="no">
+        <name>ControlDof</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a5bd3c3c6cea81a7b64e0c713c04d0d62a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Depth Of Field: None </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a5bd3c3c6cea81a7b64e0c713c04d0d62aa9b8414d8431845657876a7e6a74172d" prot="public">
+          <name>Dof3</name>
+          <briefdescription>
+<para>Depth Of Field: 3 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a5bd3c3c6cea81a7b64e0c713c04d0d62a97f196ed7f9686a1a2b4584d5ae2bf5f" prot="public">
+          <name>Dof6</name>
+          <briefdescription>
+<para>Depth Of Field: 6 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Degrees-of-freedom mode of controller. Links to <computeroutput>MLInputControllerDof</computeroutput> in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="177" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="176" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aba485d2fe0e082c602be3e295624eb30" prot="public" static="no">
+        <name>ControlMode</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aba485d2fe0e082c602be3e295624eb30ac02aa90d3aada832fc42c4af6002204e" prot="public">
+          <name>IMU3DOF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para><computeroutput>IMU 3 degree of freedom tracking (orientation only).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aba485d2fe0e082c602be3e295624eb30a56751f471ef61334280bd2042e370517" prot="public">
+          <name>EM6DOF</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para><computeroutput>EM 6 degrees of freedom tracking (position and orientation).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aba485d2fe0e082c602be3e295624eb30ac146c21ce283bad08febf88856c5b129" prot="public">
+          <name>Fused6DOF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para><computeroutput>High quality EF Fused with IMU 6 degrees of freedom tracking (position and orientation).</computeroutput> </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The tracking mode used for the controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="198" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="197" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5" prot="public" static="no">
+        <name>ControlCalibrationAccuracy</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5a7ff3e75ce6aca348bc513ed3d5882946" prot="public">
+          <name>Bad</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The calibration accuracy is bad. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5a28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>The calibration accuracy is low. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5a87f8a6ab85c9ced3702b4ea641ad4bb5" prot="public">
+          <name>Medium</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>The calibration accuracy is medium. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5a655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>The calibration accuracy is high. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The calibration accuracy levels for controller. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="219" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="218" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6" prot="public" static="no">
+        <name>FeedbackPatternLED</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Pattern: None </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a18ee3f4b06d5138f9db41cab50f5bdb8" prot="public">
+          <name>Clock1</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 1:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6ad6a5eba0ddb5664932a1a5343d028175" prot="public">
+          <name>Clock2</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 2:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a0a32300e69f92483b5f1255325f6acc8" prot="public">
+          <name>Clock3</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 3:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a1873a9fa84bfe796b09d3c67297eab64" prot="public">
+          <name>Clock4</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 4:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a51c82afb1a7a3f58678ec5ef3bcd153e" prot="public">
+          <name>Clock5</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 5:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a4709a7e3a71ac89df5da44f90294750d" prot="public">
+          <name>Clock6</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 6:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a00f7563794d88c2465e66aa96b43518f" prot="public">
+          <name>Clock7</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 7:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6aa9632f1ffb2050d3758c8b0faa296856" prot="public">
+          <name>Clock8</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 8:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6aa91a6cd7023a3404daa39cf90f53e47b" prot="public">
+          <name>Clock9</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 9:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6ac6df208d40d3bcae05708510c585e3bc" prot="public">
+          <name>Clock10</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 10:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a89f1ea99f82e41af548af29bf2ebda81" prot="public">
+          <name>Clock11</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 11:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a00905d8306ac23b34242350e5d756cbf" prot="public">
+          <name>Clock12</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 12:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6abd189733aa073839a5a290229f8650c1" prot="public">
+          <name>Clock1And7</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 1:00 and 7:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6ac22d691db77a85d15e7eebbd70a62909" prot="public">
+          <name>Clock2And8</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 2:00 and 8:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6a5ecbf7353ea5b8f87a5a29b0db15a711" prot="public">
+          <name>Clock3And9</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 3:00 and 9:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6abf5276faca355fc19ef5eea01b247dae" prot="public">
+          <name>Clock4And10</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 4:00 and 10:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6acb69b40447856e30f44c3af91c0262df" prot="public">
+          <name>Clock5And11</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 5:00 and 11:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6ae40e04d9568f78075bc9924a0ce707a7" prot="public">
+          <name>Clock6And12</name>
+          <briefdescription>
+<para>Pattern: Clock - points to 6:00 and 12:00 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller" kindref="compound">Controller</ref> LED pattern. Links to MLInputControllerFeedbackPatternLED in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="245" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="244" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0" prot="public" static="no">
+        <name>FeedbackEffectLED</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0ad3d4a0fc0b41634013b1e2e496253969" prot="public">
+          <name>RotateCW</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Feedback Effect: Rotate Clockwise </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0a86d4603964e0590883e61ad814771836" prot="public">
+          <name>RotateCCW</name>
+          <briefdescription>
+<para>Feedback Effect: Rotate Counter Clockwise </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0aec8374db32bacb4cd9760199ec42819e" prot="public">
+          <name>Pulse</name>
+          <briefdescription>
+<para>Feedback Effect: Pulse </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0aa63c4aed1512049a676c324fc17433e3" prot="public">
+          <name>PaintCW</name>
+          <briefdescription>
+<para>Feedback Effect: Paint Clockwise </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0ad26827449019a07002083b08ac2e0609" prot="public">
+          <name>PaintCCW</name>
+          <briefdescription>
+<para>Feedback Effect: Paint Counter Clockwise </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0acfad0a7419f44ea0c64db24197abbf70" prot="public">
+          <name>Blink</name>
+          <briefdescription>
+<para>Feedback Effect: Blink </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Feedback effects for LED target. Links to MLInputControllerFeedbackEffectLED in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="346" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="345" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6" prot="public" static="no">
+        <name>FeedbackColorLED</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a68fe4ca48dde946966a44ed507d409fc" prot="public">
+          <name>BrightMissionRed</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Color: Bright Mission Red </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6ac9100c6fb93d898199413a21ad6e382a" prot="public">
+          <name>PastelMissionRed</name>
+          <briefdescription>
+<para>Color: Pastel Mission Red </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a5775da14bd24fb4f9e7d5597c4969b78" prot="public">
+          <name>BrightFloridaOrange</name>
+          <briefdescription>
+<para>Color: Bright Florida Orange </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6ab1aae5ccfd79f7962d4625fb2f8f527f" prot="public">
+          <name>PastelFloridaOrange</name>
+          <briefdescription>
+<para>Color: Pastel Florida Orange </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a81d33160bfd3bc364a7d0577b88d5037" prot="public">
+          <name>BrightLunaYellow</name>
+          <briefdescription>
+<para>Color: Bright Luna Yellow </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a47c8d26fa86a2fd269c3061bf9f08bed" prot="public">
+          <name>PastelLunaYellow</name>
+          <briefdescription>
+<para>Color: Pastel Luna Yellow </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6ad873fb08ca9b1c0e99a666e74bc694b4" prot="public">
+          <name>BrightNebulaPink</name>
+          <briefdescription>
+<para>Color: Bright Nebula Pink </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6ac8b65cd3e4a104f08c29ff2af6ac8895" prot="public">
+          <name>PastelNebulaPink</name>
+          <briefdescription>
+<para>Color: Pastel Nebula Pink </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a5458fd71109a365fb525c5131a4fe3a0" prot="public">
+          <name>BrightCosmicPurple</name>
+          <briefdescription>
+<para>Color: Bright Cosmic Purple </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a1b62b1e11f1a444bc50e323ebf108859" prot="public">
+          <name>PastelCosmicPurple</name>
+          <briefdescription>
+<para>Color: Pastel Cosmic Purple </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a84fd76d92d896004a769a2c790637e89" prot="public">
+          <name>BrightMysticBlue</name>
+          <briefdescription>
+<para>Color: Bright Mystic Blue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a987b35d559e308e3dc656fe847565039" prot="public">
+          <name>PastelMysticBlue</name>
+          <briefdescription>
+<para>Color: Pastel Mystic Blue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a569fbeabc29e6c6cb1627f955799dd5f" prot="public">
+          <name>BrightCelestialBlue</name>
+          <briefdescription>
+<para>Color: Bright Celestial Blue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6afecc0215e9b1a30f3d6a5bf83298d9ba" prot="public">
+          <name>PastelCelestialBlue</name>
+          <briefdescription>
+<para>Color: Pastel Celestial Blue </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6a69ae335e3f5569573d476590ece407b8" prot="public">
+          <name>BrightShaggleGreen</name>
+          <briefdescription>
+<para>Color: Bright <computeroutput>Shaggle</computeroutput> Green </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6acf847eec774d5c8a29a01f0c2eb95e08" prot="public">
+          <name>PastelShaggleGreen</name>
+          <briefdescription>
+<para>Color: Pastel <computeroutput>Shaggle</computeroutput> Green </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Feedback colors for LED target. Links to MLInputControllerFeedbackColorLED in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="382" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="381" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a2a093a70f5d7ece327c477020df8f508" prot="public" static="no">
+        <name>FeedbackEffectSpeedLED</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a2a093a70f5d7ece327c477020df8f508aefa5397985b8609a5dbeb430a4bcadd3" prot="public">
+          <name>Slow</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Speed: Slow </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a2a093a70f5d7ece327c477020df8f508a87f8a6ab85c9ced3702b4ea641ad4bb5" prot="public">
+          <name>Medium</name>
+          <briefdescription>
+<para>Speed: Medium </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a2a093a70f5d7ece327c477020df8f508ae16b5b7f26f54214445cbe38d72c2828" prot="public">
+          <name>Fast</name>
+          <briefdescription>
+<para>Speed: Fast </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Feedback effect speed for LED target. Links to MLInputControllerFeedbackEffectSpeedLED in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="468" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="467" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3a" prot="public" static="no">
+        <name>FeedbackPatternVibe</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Pattern: None </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aa316853cc3718335f11c048e33b9be98a" prot="public">
+          <name>Click</name>
+          <briefdescription>
+<para>Pattern: Click </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aac44447baeeae4f8eaa468d6abdacd98f" prot="public">
+          <name>Bump</name>
+          <briefdescription>
+<para>Pattern: Bump </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aa99f490e53ed16a6580a350b42e1143a9" prot="public">
+          <name>DoubleClick</name>
+          <briefdescription>
+<para>Pattern: Double Click </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aaf285bec73b34c6b77026c180aae0e5ba" prot="public">
+          <name>Buzz</name>
+          <briefdescription>
+<para>Pattern: Buzz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aa0b3516a5bbb77566f904f9d3877f4710" prot="public">
+          <name>Tick</name>
+          <briefdescription>
+<para>Pattern: Tick </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aa7c00f84da4ab5fd0f8ddf1b38e515a12" prot="public">
+          <name>ForceDown</name>
+          <briefdescription>
+<para>Pattern: Force Down </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aaa34b253a873b19b787d7d01790474be3" prot="public">
+          <name>ForceUp</name>
+          <briefdescription>
+<para>Pattern: Force Up </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aabfad637e9cdab0f52dd19ae53151cd08" prot="public">
+          <name>ForceDwell</name>
+          <briefdescription>
+<para>Pattern: Force Dwell </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3aaa4ec4f836f7bf39288680a1c22bd61c0" prot="public">
+          <name>SecondForceDown</name>
+          <briefdescription>
+<para>Pattern: Second Force Down </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller" kindref="compound">Controller</ref> vibration pattern. Links to MLInputControllerFeedbackPatternVibe in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="489" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="488" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1ad7f3f10786105c5d93d55d4de7cfedad" prot="public" static="no">
+        <name>FeedbackIntensity</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1ad7f3f10786105c5d93d55d4de7cfedada28d0edd045e05cf5af64e35ae0c4c6ef" prot="public">
+          <name>Low</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Intensity: Low </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1ad7f3f10786105c5d93d55d4de7cfedada87f8a6ab85c9ced3702b4ea641ad4bb5" prot="public">
+          <name>Medium</name>
+          <briefdescription>
+<para>Intensity: Medium </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1ad7f3f10786105c5d93d55d4de7cfedada655d20c1ca69519ca647684edbb2db35" prot="public">
+          <name>High</name>
+          <briefdescription>
+<para>Intensity: High </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller" kindref="compound">Controller</ref> vibration intensity. Links to MLInputControllerFeedbackIntensity in ml_input.h. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="545" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="544" bodyend="560"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains state information for a controller. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" line="35" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/Input/MLInputController.cs" bodystart="34" bodyend="936"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1adf95505dadcaad5c6800ebbb68fb4d6e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>Button</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1abecc8634e14d332c1e57d7802fea57b5" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>ControlCalibrationAccuracy</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a5bd3c3c6cea81a7b64e0c713c04d0d62" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>ControlDof</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aba485d2fe0e082c602be3e295624eb30" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>ControlMode</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a6db9118554b227c2af74588303ed82b7" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>ControlType</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a7a15d2061fe18eee04a2136c6cdc89f6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackColorLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a9fcb44528b0b998105a73479dda60fa0" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackEffectLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a2a093a70f5d7ece327c477020df8f508" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackEffectSpeedLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1ad7f3f10786105c5d93d55d4de7cfedad" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackIntensity</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1a81f80714818a7257a1e42498be88fbe6" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackPatternLED</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller_1aeccba165c760ca63ff0299a82dd01e3a" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLInput::Controller</scope><name>FeedbackPatternVibe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

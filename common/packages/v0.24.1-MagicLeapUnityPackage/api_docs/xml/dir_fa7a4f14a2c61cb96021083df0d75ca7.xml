@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_fa7a4f14a2c61cb96021083df0d75ca7" kind="dir">
+    <compoundname>/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Utils</compoundname>
+    <innerfile refid="_invalid_instance_exception_8cs">InvalidInstanceException.cs</innerfile>
+    <innerfile refid="_m_l_bit_mask_8cs">MLBitMask.cs</innerfile>
+    <innerfile refid="_m_l_convert_8cs">MLConvert.cs</innerfile>
+    <innerfile refid="_m_l_device_8cs">MLDevice.cs</innerfile>
+    <innerfile refid="_m_l_plugin_log_8cs">MLPluginLog.cs</innerfile>
+    <innerfile refid="_m_l_texture_utils_8cs">MLTextureUtils.cs</innerfile>
+    <innerfile refid="_m_l_thread_dispatch_8cs">MLThreadDispatch.cs</innerfile>
+    <innerfile refid="_timer_8cs">Timer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/Utils/"/>
+  </compounddef>
+</doxygen>

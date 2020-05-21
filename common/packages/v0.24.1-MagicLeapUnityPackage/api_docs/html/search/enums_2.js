@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['calibration',['Calibration',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_eyes.html#a2ebcba70d171eead1ac933954b90319a',1,'UnityEngine::XR::MagicLeap::MLEyes']]],
+  ['camera',['Camera',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_lighting_tracking.html#ace8b6fe3f7cd35d5db0ba80431cca36a',1,'UnityEngine::XR::MagicLeap::MLLightingTracking']]],
+  ['capturestatusflag',['CaptureStatusFlag',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera.html#afcd1a97e8521d11722d7c98ad181875c',1,'UnityEngine::XR::MagicLeap::MLCamera']]],
+  ['capturetype',['CaptureType',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_camera.html#a8d2efac36fccc75d9ca80a039ce9ae22',1,'UnityEngine::XR::MagicLeap::MLCamera']]],
+  ['cea608captioncolor',['Cea608CaptionColor',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a9b9d1b2500a18f61d9116bccff2fe18b',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea608captiondimension',['Cea608CaptionDimension',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a52a2f07b58ee1ec3108fad5727a1bc81',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea608captionstyle',['Cea608CaptionStyle',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a4144b62754071d0c951418b3c91c3ada',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea708captioncoloropacity',['Cea708CaptionColorOpacity',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a1e69ed231ffeb0bf44482a842857aa54',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea708captionemitcommand',['Cea708CaptionEmitCommand',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#af10d711e76d804384d31321cc93d1ab7',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea708captionemitcommandcontrol',['Cea708CaptionEmitCommandControl',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a6a44469f420daa5fa8860f18f89b4c50',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea708captionpenoffset',['Cea708CaptionPenOffset',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a8611aaecfaae7db3b2ab5e9e2f422c84',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['cea708captionpensize',['Cea708CaptionPenSize',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#a548226394993d28fdea04935e7b610a2',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['code',['Code',['../struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result.html#ac64c3459f259be6f44237ca27f7b65d8',1,'UnityEngine::XR::MagicLeap::MLResult']]],
+  ['colorspace',['ColorSpace',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_media_player.html#aa464b7333a6e481686bbbccfa39901dc',1,'UnityEngine::XR::MagicLeap::MLMediaPlayer']]],
+  ['connectiontype',['ConnectionType',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_app_connect.html#a328273ba44f629398a86562af61a41a6',1,'UnityEngine::XR::MagicLeap::MLAppConnect']]],
+  ['controlcalibrationaccuracy',['ControlCalibrationAccuracy',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller.html#abecc8634e14d332c1e57d7802fea57b5',1,'UnityEngine::XR::MagicLeap::MLInput::Controller']]],
+  ['controldof',['ControlDof',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller.html#a5bd3c3c6cea81a7b64e0c713c04d0d62',1,'UnityEngine::XR::MagicLeap::MLInput::Controller']]],
+  ['controlmode',['ControlMode',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller.html#aba485d2fe0e082c602be3e295624eb30',1,'UnityEngine::XR::MagicLeap::MLInput::Controller']]],
+  ['controltype',['ControlType',['../class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_input_1_1_controller.html#a6db9118554b227c2af74588303ed82b7',1,'UnityEngine::XR::MagicLeap::MLInput::Controller']]]
+];

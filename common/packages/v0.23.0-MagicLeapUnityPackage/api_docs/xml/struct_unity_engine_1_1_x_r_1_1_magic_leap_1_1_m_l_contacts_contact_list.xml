@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact_list" kind="struct" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLContactsContactList</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact_list_1a6dc1e8681fadda763d3efcece0a4ebb8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int UnityEngine.XR.MagicLeap.MLContactsContactList.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+<para>Number of contacts in the list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="301" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact_list_1a66e99ef5023af89988a6fdf1aaf25ee2" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact" kindref="compound">MLContactsContact</ref> &gt;</type>
+        <definition>List&lt;MLContactsContact&gt; UnityEngine.XR.MagicLeap.MLContactsContactList.Contacts</definition>
+        <argsstring></argsstring>
+        <name>Contacts</name>
+        <briefdescription>
+<para>The list of contacts </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="316" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used to store a list of contacts </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" line="297" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLContacts.cs" bodystart="296" bodyend="317"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact_list_1a66e99ef5023af89988a6fdf1aaf25ee2" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsContactList</scope><name>Contacts</name></member>
+      <member refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_contacts_contact_list_1a6dc1e8681fadda763d3efcece0a4ebb8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLContactsContactList</scope><name>Count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

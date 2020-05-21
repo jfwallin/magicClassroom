@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLFinger</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1acb24c88ffa6251d993f2e7da2b29c386" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLFinger.MCP</definition>
+        <argsstring></argsstring>
+        <name>MCP</name>
+        <briefdescription>
+<para>The Metacarpal phalangeal joint of the finger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="50" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a80eaa04dba8c30da919864127bb8ac0e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLFinger.PIP</definition>
+        <argsstring></argsstring>
+        <name>PIP</name>
+        <briefdescription>
+<para>The Proximal-interphalangeal joint of the finger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="55" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a77cd3f7ee4a289dd0d2efed59facae44" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLFinger.Tip</definition>
+        <argsstring></argsstring>
+        <name>Tip</name>
+        <briefdescription>
+<para>The Tip of the finger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="60" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1aefe59de2a43090233c897368fc26e5c1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref></type>
+        <definition>MLKeyPoint UnityEngine.XR.MagicLeap.MLFinger.DIP</definition>
+        <argsstring></argsstring>
+        <name>DIP</name>
+        <briefdescription>
+<para>The Distal-interphalangeal joint of the finger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="66" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a5ef54d4338cf85d96df0611f8e4c9ca3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_key_point" kindref="compound">MLKeyPoint</ref> &gt;</type>
+        <definition>List&lt;MLKeyPoint&gt; UnityEngine.XR.MagicLeap.MLFinger.KeyPoints</definition>
+        <argsstring></argsstring>
+        <name>KeyPoints</name>
+        <briefdescription>
+<para>All valid keypoints combined into a list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="71" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1afaf14ec0d91f09db29e40757dc2f57e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLFinger.MLFinger</definition>
+        <argsstring>(uint bones=3)</argsstring>
+        <name>MLFinger</name>
+        <param>
+          <type>uint</type>
+          <declname>bones</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger" kindref="compound">MLFinger</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="76" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="76" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a542e30118d99fec146cdac33087595a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLFinger.Update</definition>
+        <argsstring>(List&lt; UnityEngine.XR.Bone &gt; bones)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>List&lt; UnityEngine.XR.Bone &gt;</type>
+          <declname>bones</declname>
+        </param>
+        <briefdescription>
+<para>Updates the state of the finger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="104" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="104" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a383e44308beb03a8e34c5935decbc583" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 UnityEngine.XR.MagicLeap.MLFinger.GetBonePosition</definition>
+        <argsstring>(UnityEngine.XR.Bone bone)</argsstring>
+        <name>GetBonePosition</name>
+        <param>
+          <type>UnityEngine.XR.Bone</type>
+          <declname>bone</declname>
+        </param>
+        <briefdescription>
+<para>Returns the position of the bone, from the Unity <ref refid="namespace_unity_engine_1_1_x_r" kindref="compound">XR</ref> Input. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The XR.Bone to be examined.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="135" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="135" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger" kindref="compound">MLFinger</ref> contains joint information about the finger instance. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" line="46" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/HandTracking/MLFinger.cs" bodystart="45" bodyend="142"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1aefe59de2a43090233c897368fc26e5c1" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>DIP</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a383e44308beb03a8e34c5935decbc583" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>GetBonePosition</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a5ef54d4338cf85d96df0611f8e4c9ca3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>KeyPoints</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1acb24c88ffa6251d993f2e7da2b29c386" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>MCP</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1afaf14ec0d91f09db29e40757dc2f57e8" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>MLFinger</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a80eaa04dba8c30da919864127bb8ac0e" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>PIP</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a77cd3f7ee4a289dd0d2efed59facae44" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>Tip</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_finger_1a542e30118d99fec146cdac33087595a3" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLFinger</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

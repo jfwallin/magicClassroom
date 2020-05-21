@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio" kind="class" language="C#" prot="public">
+    <compoundname>UnityEngine::XR::MagicLeap::MLAudio</compoundname>
+    <basecompoundref refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton" prot="public" virt="non-virtual">UnityEngine.XR.MagicLeap.MLAPISingleton&lt; MLAudio &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a44c69087b1c2f7bcd5b782c5b9c581ec" prot="public" static="no">
+        <name>Device</name>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a44c69087b1c2f7bcd5b782c5b9c581eca1febb0430f2f3aaa046d552272e215fd" prot="public">
+          <name>Wearable</name>
+          <briefdescription>
+<para>Built-in speakers in the wearable. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a44c69087b1c2f7bcd5b782c5b9c581eca4c6cbb91ea043b8c3d489755b8eb8810" prot="public">
+          <name>AnalogJack</name>
+          <briefdescription>
+<para>3.5mm jack on the belt pack. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The currently active output device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAudio.cs" line="94" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAudio.cs" bodystart="93" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages Audio. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>MLAPISingleton&lt; MLAudio &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="16">
+        <label>UnityEngine.XR.MagicLeap.MLAudio</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>MLAPISingleton&lt; MLAudio &gt;</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_a_p_i_singleton"/>
+      </node>
+      <node id="18">
+        <label>UnityEngine.XR.MagicLeap.MLAudio</label>
+        <link refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAudio.cs" line="26" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Engines/Unity/Assets/MagicLeap/Lumin/APIs/MLAudio.cs" bodystart="25" bodyend="526"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_audio_1a44c69087b1c2f7bcd5b782c5b9c581ec" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLAudio</scope><name>Device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

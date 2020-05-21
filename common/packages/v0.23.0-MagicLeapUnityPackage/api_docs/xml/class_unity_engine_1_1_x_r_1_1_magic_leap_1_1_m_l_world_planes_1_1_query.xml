@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query" kind="class" language="C#" prot="private">
+    <compoundname>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a5ddb911127144bd6cd7a86a55123aa3c" prot="public" static="no" mutable="no">
+        <type>readonly Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane" kindref="compound">MLWorldPlane</ref>[], <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane_boundaries" kindref="compound">MLWorldPlaneBoundaries</ref>[]&gt;</type>
+        <definition>readonly Action&lt;MLResult, MLWorldPlane[], MLWorldPlaneBoundaries[]&gt; UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Callback</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+<para>Query result callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="231" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a1ae44e38d0ef66bd1786d40b8f65a94d" prot="public" static="no" mutable="no">
+        <type>readonly uint</type>
+        <definition>readonly uint UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.MaxResults</definition>
+        <argsstring></argsstring>
+        <name>MaxResults</name>
+        <briefdescription>
+<para>The max results. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="236" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a8d1cf679d071c96e9d138b9627a66746" prot="public" static="no" mutable="no">
+        <type>readonly IntPtr</type>
+        <definition>readonly IntPtr UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.PlanesResultsUnmanaged</definition>
+        <argsstring></argsstring>
+        <name>PlanesResultsUnmanaged</name>
+        <briefdescription>
+<para>The planes results unmanaged. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="241" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ad822134d90749cd5caf5ca04e71f27ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane" kindref="compound">MLWorldPlane</ref> []</type>
+        <definition>MLWorldPlane [] UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Planes</definition>
+        <argsstring></argsstring>
+        <name>Planes</name>
+        <briefdescription>
+<para>The planes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="245" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ae4ffd05a700c57f5e5c45e9b9580555c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_magic_leap_internal_1_1_planes_api_native_bindings_1_1_m_l_plane_boundaries_list" kindref="compound">PlanesApiNativeBindings.MLPlaneBoundariesList</ref></type>
+        <definition>PlanesApiNativeBindings.MLPlaneBoundariesList UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.PlaneBoundariesList</definition>
+        <argsstring></argsstring>
+        <name>PlaneBoundariesList</name>
+        <briefdescription>
+<para>The boundaries results unmanaged. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="250" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1aaf7fec36326b61fa624f387c795c3b16" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane_boundaries" kindref="compound">MLWorldPlaneBoundaries</ref> []</type>
+        <definition>MLWorldPlaneBoundaries [] UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.PlaneBoundaries</definition>
+        <argsstring></argsstring>
+        <name>PlaneBoundaries</name>
+        <briefdescription>
+<para>The boundaries </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="254" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ae02ab3b054b5969a11614031079fd11c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref></type>
+        <definition>MLResult UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+<para>The result. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="259" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a5c5fa733396d486708312a82ef19ebbb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.IsRequestingBoundaries</definition>
+        <argsstring></argsstring>
+        <name>IsRequestingBoundaries</name>
+        <briefdescription>
+<para>If polygon boundaries have been requested. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="264" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ac97651b97d22f6e2d8b413b18e8b9d60" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Query</definition>
+        <argsstring>()</argsstring>
+        <name>Query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="270" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a30553a5ac8fdb8f45fdae470d16ef8a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.~Query</definition>
+        <argsstring>()</argsstring>
+        <name>~Query</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="285" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="285" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a1c36c034cf8e6f4c1e752a1453ae7010" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="298" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="298" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a85c339ce0ae37978b8502a46cbe2681b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Query</definition>
+        <argsstring>(Action&lt; MLResult, MLWorldPlane[], MLWorldPlaneBoundaries[]&gt; callback, uint maxResults, bool requestBoundaries)</argsstring>
+        <name>Query</name>
+        <param>
+          <type>Action&lt; <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result" kindref="compound">MLResult</ref>, <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane" kindref="compound">MLWorldPlane</ref>[], <ref refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane_boundaries" kindref="compound">MLWorldPlaneBoundaries</ref>[]&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>maxResults</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requestBoundaries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="272" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="272" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1afb5b57762af10f2af392617d4beb0068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.XR.MagicLeap.MLWorldPlanes.Query.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="291" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="291" bodyend="295"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="641">
+        <label>IDisposable</label>
+      </node>
+      <node id="640">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPlanes.Query</label>
+        <childnode refid="641" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="650">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPolygon</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_polygon"/>
+      </node>
+      <node id="644">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPlane</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane"/>
+      </node>
+      <node id="643">
+        <label>IDisposable</label>
+      </node>
+      <node id="646">
+        <label>MagicLeapInternal.PlanesApiNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_planes_api_native_bindings"/>
+        <childnode refid="647" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPlaneBoundaries</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane_boundaries"/>
+        <childnode refid="649" relation="usage">
+          <edgelabel>Boundaries</edgelabel>
+        </childnode>
+      </node>
+      <node id="642">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPlanes.Query</label>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+        <childnode refid="644" relation="usage">
+          <edgelabel>Planes</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>Result</edgelabel>
+        </childnode>
+        <childnode refid="646" relation="usage">
+          <edgelabel>PlaneBoundariesList</edgelabel>
+        </childnode>
+        <childnode refid="648" relation="usage">
+          <edgelabel>PlaneBoundaries</edgelabel>
+        </childnode>
+      </node>
+      <node id="645">
+        <label>UnityEngine.XR.MagicLeap.MLResult</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_result"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>ResultOk</edgelabel>
+        </childnode>
+      </node>
+      <node id="647">
+        <label>MagicLeapNativeBindings</label>
+        <link refid="class_magic_leap_internal_1_1_magic_leap_native_bindings"/>
+      </node>
+      <node id="649">
+        <label>UnityEngine.XR.MagicLeap.MLWorldPlaneBoundary</label>
+        <link refid="struct_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_plane_boundary"/>
+        <childnode refid="650" relation="usage">
+          <edgelabel>Polygon</edgelabel>
+          <edgelabel>Holes</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" line="227" column="1" bodyfile="/Users/svccontentjenkins/jenkins2/w/sdkdir/leapcore/frameworks/unity_integration/Source/Libs/LuminUnity/External/Apis/MLWorldPlanes.cs" bodystart="226" bodyend="305"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a5ddb911127144bd6cd7a86a55123aa3c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Callback</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1afb5b57762af10f2af392617d4beb0068" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Dispose</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a1c36c034cf8e6f4c1e752a1453ae7010" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Dispose</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a5c5fa733396d486708312a82ef19ebbb" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>IsRequestingBoundaries</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a1ae44e38d0ef66bd1786d40b8f65a94d" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>MaxResults</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1aaf7fec36326b61fa624f387c795c3b16" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>PlaneBoundaries</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ae4ffd05a700c57f5e5c45e9b9580555c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>PlaneBoundariesList</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ad822134d90749cd5caf5ca04e71f27ae" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Planes</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a8d1cf679d071c96e9d138b9627a66746" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>PlanesResultsUnmanaged</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ac97651b97d22f6e2d8b413b18e8b9d60" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Query</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a85c339ce0ae37978b8502a46cbe2681b" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Query</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1ae02ab3b054b5969a11614031079fd11c" prot="public" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>Result</name></member>
+      <member refid="class_unity_engine_1_1_x_r_1_1_magic_leap_1_1_m_l_world_planes_1_1_query_1a30553a5ac8fdb8f45fdae470d16ef8a8" prot="private" virt="non-virtual"><scope>UnityEngine::XR::MagicLeap::MLWorldPlanes::Query</scope><name>~Query</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
