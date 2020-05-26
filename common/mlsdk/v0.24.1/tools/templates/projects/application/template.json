@@ -1,0 +1,7 @@
+{
+	"label": "Application Project Template",
+	"description": "This project template can be used to create a skeleton application project",
+	"projectFile": "${projectName}.package",
+	"resourceFileExtensions" : ["jpg", "axf"],
+	"initialFilesToOpen": ["src/${projectName}.cpp"]
+}

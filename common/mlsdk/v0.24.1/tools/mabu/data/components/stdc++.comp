@@ -1,0 +1,5 @@
+# This selects the appropriate C++ toolchain for the given compiler.
+# MSVC is left out since it only has one option, which is always available.
+OPTIONS.clang=stl/libc++
+OPTIONS.gcc=stl/libgnustl
+

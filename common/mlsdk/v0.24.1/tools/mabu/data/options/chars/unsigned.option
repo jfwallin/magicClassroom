@@ -1,0 +1,4 @@
+CFLAGS.gcc,clang=-funsigned-char
+CXXFLAGS.gcc,clang=-funsigned-char
+CFLAGS.msvc=-J
+CXXFLAGS.msvc=-J

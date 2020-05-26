@@ -1,0 +1,5 @@
+#
+# Set the expected character set of source/header files.
+#
+
+# nothing: clang uses UTF-8 by default, gcc and MSVC uses the system locale

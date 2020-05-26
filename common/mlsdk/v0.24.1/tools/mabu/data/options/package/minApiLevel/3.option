@@ -1,0 +1,2 @@
+# .mpk requires platform API level 3 or newer
+PKGFLAGS = minApiLevel=3

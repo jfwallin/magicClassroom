@@ -1,0 +1,4 @@
+DEFS = NDEBUG
+CFLAGS.gcc,clang=
+CFLAGS.msvc=
+LDFLAGS.msvc=-debug:none

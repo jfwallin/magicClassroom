@@ -1,0 +1,12 @@
+#
+# This defines the basic settings for an empty project.
+#
+# To override, don't edit this file directly, but copy it
+# locally and pass `--path <directory>` to reference your
+# copy when invoking --create-cmake-toolchain.
+#
+USES=stdc++
+
+
+# OPTIONS=optimize/on debug/on
+# USES=stdc++ ml_sdk

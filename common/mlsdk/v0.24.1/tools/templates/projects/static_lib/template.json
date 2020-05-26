@@ -1,0 +1,6 @@
+{
+	"label": "Static Library Project Template",
+	"description": "This project template can be used to create a skeleton static library project",
+	"projectFile": "${projectName}.mabu",
+	"initialFilesToOpen": ["src/${projectName}.cpp"]
+}

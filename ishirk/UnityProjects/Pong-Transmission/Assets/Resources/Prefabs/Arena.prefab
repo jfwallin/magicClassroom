@@ -545,7 +545,7 @@ MonoBehaviour:
   motionSource: {fileID: 0}
   smoothTime: 0.04
   sendFrameRate: 24
-  remotePrefab: {fileID: 1620173156886844765, guid: 460660db5b71f5b4eb610b10e2069139,
+  remotePrefab: {fileID: 306539971123457262, guid: 40232702cca915a459a27236871d933a,
     type: 3}
   ownershipLocked: 1
   resourceFileName: 

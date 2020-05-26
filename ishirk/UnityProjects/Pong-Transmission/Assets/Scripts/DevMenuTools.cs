@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class DevMenuTools
 {
     //[MenuItem("Tools/Initialize Scene")]
@@ -27,6 +28,7 @@ public class DevMenuTools
         {
             if(phase.name == "OpeningMenus")
             {
+                Debug.Log("Enabling Opening Menus");
                 phase.gameObject.SetActive(true);
                 foreach(Transform page in phase)
                 {
@@ -39,6 +41,20 @@ public class DevMenuTools
                         page.gameObject.SetActive(false);
                 }
             }
+            else if(phase.name == "InGameMenus")
+            {
+                foreach(Transform page in phase)
+                {
+                    if (page.name == "StartConfirmationPage")
+                    {
+                        page.gameObject.SetActive(true);
+                        Debug.Log("Set StartConfirmationPage active");
+                    }
+                    else
+                        page.gameObject.SetActive(false);
+                }
+                phase.gameObject.SetActive(false);
+            }    
             else
             {
                 phase.gameObject.SetActive(true);
@@ -59,3 +75,4 @@ public class DevMenuTools
             Debug.Log("Peer Faked");
     }
 }
+#endif

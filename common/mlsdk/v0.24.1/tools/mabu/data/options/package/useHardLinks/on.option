@@ -1,0 +1,2 @@
+# where the OS and filesystem allow it, update package data layouts using hard links
+PKGFLAGS = useHardLinks=true

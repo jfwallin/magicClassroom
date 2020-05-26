@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# This script is the top-level driver for the Magic Leap project builder.
+#
+
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   python='bin/python3.5'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   python='bin/python3.5'
+else
+   python='python'
+fi
+
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+if [ -z "$MABUPYTHON" ]; then
+   MABUPYTHON=$SCRIPT_DIR/tools/python3/$python
+fi
+
+"$MABUPYTHON" -E "$SCRIPT_DIR/tools/mabu/src/mabu.py" "$@"
+

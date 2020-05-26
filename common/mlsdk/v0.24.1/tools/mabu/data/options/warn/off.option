@@ -1,0 +1,4 @@
+CFLAGS.gcc,clang=-w
+CXXFLAGS.gcc,clang=-w
+CFLAGS.msvc=-w
+CXXFLAGS.msvc=-w

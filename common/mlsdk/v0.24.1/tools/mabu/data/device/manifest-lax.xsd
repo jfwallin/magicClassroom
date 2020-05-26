@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ml="magicleap">
+  <xs:import schemaLocation="manifest-attributes.xsd"
+             namespace="magicleap" />
+  <xs:element name="manifest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="application" maxOccurs="1" minOccurs="1">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="uses-privilege" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType mixed="true">
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="locale" maxOccurs="1" minOccurs="0">
+                      <xs:complexType mixed="true">
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name ="translation">
+                            <xs:complexType>
+                              <xs:attribute ref="ml:language" />
+                              <xs:attribute ref="ml:annotation" />
+                              <xs:anyAttribute processContents="skip"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:any processContents="lax"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:any processContents="lax"/>
+                  </xs:choice>
+                <xs:attribute ref="ml:name" use="required" />
+                <xs:anyAttribute processContents="skip"/>
+               </xs:complexType>
+              </xs:element>
+              <xs:element name="locale" maxOccurs="1" minOccurs="0">
+                <xs:complexType mixed="true">
+                   <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name ="translation">
+                        <xs:complexType>
+                            <xs:attribute ref="ml:language" />
+                            <xs:attribute ref="ml:visible_name" />
+                            <xs:anyAttribute processContents="skip"/>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:any processContents="lax"/>
+                    </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="component" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType mixed="true">
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="locale" maxOccurs="1" minOccurs="0">
+                      <xs:complexType mixed="true">
+                         <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element name ="translation">
+                            <xs:complexType>
+                              <xs:attribute ref="ml:language" />
+                              <xs:attribute ref="ml:visible_name" />
+                              <xs:anyAttribute processContents="skip"/>
+                            </xs:complexType>
+                          </xs:element>
+                         <xs:any processContents="lax"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="music-attribute" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:name" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="mime-type" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:name" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="schema" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:name" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="file-extension" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:name" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="mode" maxOccurs="1" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:shareable" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="sharing-mode" maxOccurs="1" minOccurs="0">
+                      <xs:complexType>
+                          <xs:attribute ref="ml:sharing" use="required" />
+                          <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="icon" maxOccurs="1" minOccurs="1">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                        <xs:element name="locale" maxOccurs="1" minOccurs="0">
+                        <xs:complexType>
+                            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name ="translation">
+                                    <xs:complexType>
+                                        <xs:attribute ref="ml:language" />
+                                        <xs:attribute ref="ml:model_folder" />
+                                        <xs:attribute ref="ml:portal_folder" />
+                                        <xs:anyAttribute processContents="skip"/>
+                                    </xs:complexType>
+                                </xs:element>
+                             </xs:choice>
+                            </xs:complexType>
+                        </xs:element>
+                        </xs:sequence>
+                        <xs:attribute ref="ml:model_folder" use="required" />
+                        <xs:attribute ref="ml:portal_folder" />
+                        <xs:anyAttribute processContents="skip"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:any processContents="lax"/>
+                  </xs:choice>
+                  <xs:attribute ref="ml:name" use="required" />
+                  <xs:attribute ref="ml:visible_name" use="required" />
+                  <xs:attribute ref="ml:binary_name" use="required" />
+                  <xs:attribute ref="ml:type" use="required" />
+                  <xs:attribute ref="ml:subtype" />
+                  <xs:attribute ref="ml:managed_persistence" />
+                  <xs:attribute ref="ml:hidden" />
+                  <xs:anyAttribute processContents="skip"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:any processContents="lax"/>
+            </xs:choice>
+            <xs:attribute ref="ml:visible_name" use="required" />
+            <xs:attribute ref="ml:sdk_version" />
+            <xs:attribute ref="ml:minimum_os" />
+            <xs:attribute ref="ml:application_type" />
+            <xs:attribute ref="ml:min_api_level" />
+            <xs:anyAttribute processContents="skip"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute ref="ml:package" use="required" />
+      <xs:attribute ref="ml:version_code" use="required" />
+      <xs:attribute ref="ml:version_name" use="required" />
+      <xs:attribute ref="ml:manifest_version" />
+      <xs:attribute ref="ml:developer_id"/>
+      <xs:anyAttribute processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

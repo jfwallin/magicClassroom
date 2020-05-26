@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   python='bin/python3.5'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   python='bin/python3.5'
+else
+   python='python'
+fi
+
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+if [ -z "$LABPYTHON" ]; then
+   LABPYTHON=$SCRIPT_DIR/tools/python3/$python
+fi
+
+LABDRIVER=`"$LABPYTHON" -E "$SCRIPT_DIR/tools/lab_finder/main.py" "$@"`
+EXIT=$?
+if [ ! -z "$LABDRIVER" ]; then
+	"$LABDRIVER" "$@"
+else
+	exit $EXIT
+fi
+

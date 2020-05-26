@@ -1,0 +1,2 @@
+CFLAGS.gcc,clang=-std=c89 -ansi
+CFLAGS.msvc=-Za

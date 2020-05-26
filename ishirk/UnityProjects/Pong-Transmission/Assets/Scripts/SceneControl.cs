@@ -14,6 +14,12 @@ public class SceneControl : MonoBehaviour
     [SerializeField]
     private Settings gameSettings = null;
 
+    [Header("World Mesh Materials")]
+    [SerializeField]
+    private Material occlusionMat = null;
+    [SerializeField]
+    private Material colorfulMat = null;
+
     //prefabs to instantiate or spawn
     [Header("Prefabs")]
     [SerializeField]
@@ -27,13 +33,15 @@ public class SceneControl : MonoBehaviour
     //references to scene objects
     [Header("Scene References")]
     [SerializeField]
-    private Transmission transmissionComponent = null;
+    private MeshRenderer worldMeshOriginal = null; //Reference to world mesh renderer to allow for visibility toggling
     [SerializeField]
-    private Pointer pointer = null;
+    private Pointer pointer = null;                //Used to access controller events and transform
     [SerializeField]
-    private GameObject headposeMenus = null;
+    private GameObject headposeMenus = null;       //Reference to headpose menus, allows for easy visibility toggling
     [SerializeField]
-    private GameObject pauseMenu = null;
+    private GameObject pauseMenu = null;           //Ingame pause menu, cached for its frequent calls
+    [SerializeField]
+    private GameObject gameOverMenu = null;        //Game Over page, reference to enable quickly after the game ends
 
     //references to scene objects after instantiation
     private TransmissionObject paddle = null;
@@ -55,9 +63,11 @@ public class SceneControl : MonoBehaviour
     private void Awake()
     {
         Assert.IsNotNull(gameSettings, "gameSettings not assigned on SceneControl");
+        Assert.IsNotNull(occlusionMat, "occlusionMat not assigned on SceneControl");
+        Assert.IsNotNull(colorfulMat, "colorfulMat not assigned on SceneControl");
         Assert.IsNotNull(placementArenaPrefab, "placementArena is not set on SceneControl");
         Assert.IsNotNull(ballPrefab, "ballPrefab is not assigned on SceneControl");
-        Assert.IsNotNull(transmissionComponent, "transmissionComponent is not set on SceneControl");
+        Assert.IsNotNull(worldMeshOriginal, "worldMeshOriginal is not assigned on SceneControl");
         Assert.IsNotNull(pointer, "pointer is not set on SceneControl");
         Assert.IsNotNull(headposeMenus, "headposeMenus is not set on SceneControl");
     }
@@ -65,7 +75,7 @@ public class SceneControl : MonoBehaviour
     //Scene Initializations
     void Start()
     {
-        transmissionComponent.gameObject.SetActive(false);
+        Transmission.Instance.gameObject.SetActive(false);
         pointer.gameObject.SetActive(true);
     }
 
@@ -76,6 +86,39 @@ public class SceneControl : MonoBehaviour
     #endregion //Unity Methods
 
     #region Public Functions
+    /// <summary>
+    /// Called When starting to set up a new game, shows the world mesh
+    /// </summary>
+    public void StartMeshing()
+    {
+        //Make mesh visible
+        worldMeshOriginal.material = colorfulMat;
+        //Add responses to controller input
+        ControlInput cIScript = pointer.GetComponent<ControlInput>();
+        //When trigger pulled, move on to next setup step
+        cIScript.OnTriggerDown.AddListener(() =>
+        {
+            //Switch mesh from visible to occluding
+            worldMeshOriginal.material = occlusionMat;
+            //Enable next menu
+            headposeMenus.transform.GetChild(0).Find("MeshingConfirmationPage").gameObject.SetActive(true);
+            //Unsubscribe events
+            cIScript.OnTriggerDown.RemoveAllListeners();
+            cIScript.OnHomeButtonTap.RemoveAllListeners();
+        });
+        //When home button tapped, go back
+        cIScript.OnHomeButtonTap.AddListener(() =>
+        {
+            //Switch mesh from visible to occluding
+            worldMeshOriginal.material = occlusionMat;
+            //Enable previous menu
+            headposeMenus.transform.GetChild(0).Find("MeshingInstructionsPage").gameObject.SetActive(true);
+            //Unsubscribe events
+            cIScript.OnTriggerDown.RemoveAllListeners();
+            cIScript.OnHomeButtonTap.RemoveAllListeners();
+        });
+    }
+
     /// <summary>
     /// Spawns stand-in arena to place, manages confirmation and cancellation
     /// </summary>
@@ -90,7 +133,7 @@ public class SceneControl : MonoBehaviour
         //Cache references
         Placement arenaPlc = placementArena.GetComponent<Placement>();
         ControlInput cIScript = pointer.GetComponent<ControlInput>();
-        //Start the placement session
+        //Start the placement session, OnPlacementConfirm is called when succesful placement occurs
         arenaPlc.Place(pointer.transform, new Vector3(3f, 2f, 2f), true, false, OnPlacementConfirm);
         //When the user pulls the trigger, attempt placement confirmation.
         cIScript.OnTriggerDown.AddListener(() => {
@@ -112,14 +155,16 @@ public class SceneControl : MonoBehaviour
     }
 
     /// <summary>
-    /// Called by the person setting up and simulating the game. Spawns the Arena and Ball
+    /// Called by the game owner after setting the rules. Spawns the Arena and Ball
     /// </summary>
     public void CreateGame()
     {
         //Update state
         gameOwner = true;
         //Enable Transmission
-        transmissionComponent.gameObject.SetActive(true);
+        Transmission.Instance.gameObject.SetActive(true);
+        //Prepare to handle connection event
+        Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
         //Spawn Transmission Arena
         Transform arenaTransform = placementArena.transform;
         GameObject.Destroy(placementArena);
@@ -128,12 +173,6 @@ public class SceneControl : MonoBehaviour
         //Spawn Transmission ball
         ball = Transmission.Spawn(ballPrefabPath, arenaTransform.position + new Vector3(0, 1.25f, 0), Quaternion.identity, Vector3.one);
         ball.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
-        //Prepare to handle connection event
-        if(Transmission.Peers.Length > 0)
-            OnJoinGame(Transmission.Peers[0]);
-        else //no connection has occurred yet
-            transmissionComponent.OnPeerFound.AddListener(OnJoinGame);
-
     }
 
     /// <summary>
@@ -144,12 +183,12 @@ public class SceneControl : MonoBehaviour
         //Update state
         gameOwner = false;
         //Unsubscribe from connection event
-        transmissionComponent.OnPeerFound.RemoveListener(OnJoinGame);
+        Transmission.Instance.OnPeerFound.RemoveListener(OnJoinGame);
         //Despawn transmission objects
         ball.Despawn();
         arena.Despawn();
         //Disable transmission
-        transmissionComponent.gameObject.SetActive(false);
+        Transmission.Instance.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -157,11 +196,8 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void TryJoinGame()
     {
-        transmissionComponent.gameObject.SetActive(true);
-        if (Transmission.Peers.Length > 0)
-            OnJoinGame(Transmission.Peers[0]);
-        else //no connection event has occurred yet
-            Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
+        Transmission.Instance.gameObject.SetActive(true);
+        Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
     }
 
     /// <summary>
@@ -170,7 +206,7 @@ public class SceneControl : MonoBehaviour
     public void CancelJoinGame()
     {
         Transmission.Instance.OnPeerFound.RemoveListener(OnJoinGame);
-        transmissionComponent.gameObject.SetActive(false);
+        Transmission.Instance.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -184,13 +220,13 @@ public class SceneControl : MonoBehaviour
         paddle = Transmission.Spawn(paddlePrefabPath, pointer.transform.position, pointer.transform.rotation, Vector3.one);
         paddle.ownershipLocked = true;
         paddle.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
-        //Make it move with the pointer
+        //Make it move with the controller
         ParentConstraint paddlePC = paddle.GetComponent<ParentConstraint>();
         ConstraintSource pointerSource = new ConstraintSource();
         pointerSource.sourceTransform = pointer.transform;
         pointerSource.weight = 1f;
         paddlePC.AddSource(pointerSource);
-        for (int i = 0; i < paddlePC.translationOffsets.Length; i++)
+        for (int i = 0; i < 3; i++)
         {
             paddlePC.translationOffsets[i] = Vector3.zero;
             paddlePC.rotationOffsets[i] = Vector3.zero;
@@ -238,7 +274,7 @@ public class SceneControl : MonoBehaviour
         ball.GetComponent<Ball>().ResetBall(Ball.BallResetType.Neutral);
     }
 
-    //Adjust values on prefab so all instantiated instances match
+    //Adjust values on prefab so all instantiated instances match, called after settings are edited
     public void ApplySettings()
     {
         ballPrefab.GetComponent<Collider>().material = gameSettings.BallBounciness;
@@ -266,7 +302,7 @@ public class SceneControl : MonoBehaviour
         Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckPauseGame);
         Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckScoreChange);
         Transmission.Instance.OnPeerLost.RemoveListener(HandlePeerLost);
-        transmissionComponent.gameObject.SetActive(false);
+        Transmission.Instance.gameObject.SetActive(false);
 
         //Reset menus to welcome screen, unregister hometap event
         headposeMenus.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
@@ -276,20 +312,36 @@ public class SceneControl : MonoBehaviour
         pointer.GetComponent<ControlInput>().OnHomeButtonTap.RemoveListener(TogglePauseGame);
     }
 
+    public void ResetGame()
+    {
+        if (gameOwner)
+        {
+            ResetBall();
+            Transmission.SetGlobalFloat("scoreRed", 0);
+            Transmission.SetGlobalFloat("scoreBlue", 0);
+            Transmission.SetGlobalBool("gamePaused", false);
+        }
+    }
+
 #if UNITY_EDITOR
     /// <summary>
-    /// Called but keyboard shortcut to fake connecting to a peer
+    /// Called by keyboard shortcut to fake connecting to a peer
     /// </summary>
     public void FakeConnection()
     {
         OnJoinGame("null");
     }
 #endif
-#endregion //Public Functions
+    #endregion //Public Functions
 
 
 
     #region Event Handlers
+    /// <summary>
+    /// Called by Placement when Confirm is called successfully.
+    /// </summary>
+    /// <param name="pos">final placement location</param>
+    /// <param name="rot">final placement rotation</param>
     private void OnPlacementConfirm(Vector3 pos, Quaternion rot)
     {
         headposeMenus.SetActive(true);
@@ -307,7 +359,18 @@ public class SceneControl : MonoBehaviour
     {
         //Notify other scripts of connection
         ConnectionEvent.Invoke(true);
-        //Disable start menus
+        //Reset and disable start menus
+        foreach(Transform page in headposeMenus.transform.GetChild(0))
+        {
+            if(page.name == "WelcomePage")
+            {
+                page.gameObject.SetActive(true);
+            }
+            else
+            {
+                page.gameObject.SetActive(false);
+            }
+        }
         headposeMenus.transform.GetChild(0).gameObject.SetActive(false);
         //Enable in game menus, show confirmation screen
         headposeMenus.transform.GetChild(1).gameObject.SetActive(true);
@@ -319,7 +382,8 @@ public class SceneControl : MonoBehaviour
     /// <param name="key">What bool was changed</param>
     private void CheckReadiness(string key)
     {
-        if (Transmission.GetGlobalBool("HostReady") && Transmission.GetGlobalBool("PeerReady"))
+        if (Transmission.HasGlobalBool("HostReady") && Transmission.HasGlobalBool("PeerReady") &&
+            Transmission.GetGlobalBool("HostReady") && Transmission.GetGlobalBool("PeerReady"))
             StartGame();
     }
 
@@ -329,16 +393,28 @@ public class SceneControl : MonoBehaviour
     /// <param name="key"></param>
     private void CheckScoreChange(string key)
     {
+        gameOverMenu.SetActive(true);
         if (key == "scoreRed" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
         {
-            //Red Wins
+            foreach(Transform t in gameOverMenu.transform)
+            {
+                if (t.name == "RedText")
+                    t.gameObject.SetActive(true);
+            }
         }
         else if (key == "scoreBlue" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
         {
-            //blue wins
+            foreach(Transform t in gameOverMenu.transform)
+            {
+                if (t.name == "BlueText")
+                    t.gameObject.SetActive(true);
+            }
         }
     }
 
+    /// <summary>
+    /// Sets global pause state
+    /// </summary>
     public void TogglePauseGame()
     {
         if (Transmission.HasGlobalBool("gamePaused"))
@@ -348,7 +424,7 @@ public class SceneControl : MonoBehaviour
     }
 
     /// <summary>
-    /// Called when global bool changes, updates objects if it was the gamePaused state
+    /// Called when global bool changes, updates objects if it was the gamePaused state bool
     /// </summary>
     private void CheckPauseGame(string key)
     {

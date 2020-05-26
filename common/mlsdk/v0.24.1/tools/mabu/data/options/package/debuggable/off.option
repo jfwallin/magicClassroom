@@ -1,0 +1,2 @@
+# Do not let end users debug programs in this package
+PKGFLAGS = debuggable=0

@@ -1,0 +1,4 @@
+SRCS=empty.c empty.cpp
+KIND=program
+USES=base
+

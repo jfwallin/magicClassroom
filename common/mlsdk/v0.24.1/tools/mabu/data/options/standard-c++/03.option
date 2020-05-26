@@ -1,0 +1,2 @@
+CXXFLAGS.gcc,clang=-std=c++03
+# no flag in MSVC?

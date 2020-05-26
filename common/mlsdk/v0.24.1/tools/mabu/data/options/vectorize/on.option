@@ -1,0 +1,3 @@
+CFLAGS.gcc,clang=-ftree-vectorize
+CXXFLAGS.gcc,clang=-ftree-vectorize
+CFLAGS.msvc=   # vectorization always enabled

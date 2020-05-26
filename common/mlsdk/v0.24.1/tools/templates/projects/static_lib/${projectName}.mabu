@@ -1,0 +1,8 @@
+KIND = static
+SRCS = src/${projectName}.cpp
+INCS = inc/
+USES = ml_sdk
+
+OPTIONS = \
+	standard-c++/11 \
+	stl/libgnustl

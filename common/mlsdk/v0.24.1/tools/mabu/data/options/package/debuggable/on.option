@@ -1,0 +1,2 @@
+# Let end users debug programs in this package (via "debug -p package_id")
+PKGFLAGS = debuggable=1

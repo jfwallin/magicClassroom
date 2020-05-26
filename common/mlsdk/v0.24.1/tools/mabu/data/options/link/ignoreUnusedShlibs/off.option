@@ -1,0 +1,6 @@
+# Ensure every entry in SHLIBS is really linked into the build,
+# even if none of its symbols are used
+# (mabu 0.20 and earlier behavior; may be needed when linking shared
+# libs whose only "exports" are static initializers or destructors)
+
+LINKFLAGS = ignoreUnusedShlibs=0

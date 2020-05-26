@@ -1,0 +1,17 @@
+
+CXXFLAGS.device_clang-3.8 = -nostdinc++ -I$(MLSDK)/lumin/stl/libc++/include
+CXXFLAGS.device_clang-8 = -nostdinc++ -I$(MLSDK)/lumin/stl/libc++-8/include
+LDFLAGS.device_clang-3.8 = -L$(MLSDK)/lumin/stl/libc++/lib
+LDFLAGS.device_clang-8 = -L$(MLSDK)/lumin/stl/libc++-8/lib
+
+CXXFLAGS.linux_gcc = -nostdinc++ -I/usr/include/c++/v1
+CXXFLAGS.linux_clang,osx = -stdlib=libc++
+LDFLAGS.linux_gcc = -nodefaultlibs
+
+SHLIBS.device_clang-8 = c++_shared
+SHLIBS.device_clang-3.8 = c++_shared android_support
+SHLIBS.linux = c++ gcc_s gcc
+SHLIBS.osx = c++ c++abi
+
+DATAS.device_clang-3.8 = $(MLSDK)/lumin/stl/libc++/lib/libc++_shared.so : bin/libc++_shared.so
+DATAS.device_clang-8 = $(MLSDK)/lumin/stl/libc++-8/lib/libc++_shared.so : bin/libc++_shared.so

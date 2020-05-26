@@ -1,0 +1,4 @@
+KIND=shared
+SRCS=empty.c empty.cpp
+USES=base
+

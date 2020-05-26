@@ -1,0 +1,5 @@
+CFLAGS.gcc,clang=-Werror
+CXXFLAGS.gcc,clang=-Werror
+CFLAGS.msvc=-WX
+CXXFLAGS.msvc=-WX
+

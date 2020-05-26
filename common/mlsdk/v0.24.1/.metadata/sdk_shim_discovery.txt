@@ -1,0 +1,41 @@
+# This file is used for automated discovery of runtime libraries
+# when Zero Iteration (aka ML Remote) is running. 
+#
+#################################################################################
+#
+# THIS FILE IS DEPRECATED:  please use
+# "labdriver com.magicleap.zi:get-shim-search-paths"
+# instead.
+#
+#################################################################################
+#
+# These variables should be provided by the client:
+#  MLSDK:          full path to current Lumin SDK
+#  HOST:           win64, osx, linux64
+#  MLSDK_VERSION:  the "version" attribute from sdk.manifest
+#
+# Then the client should parse this file, gather variables,
+# and substitute the values from the variables above and other
+# variables defined in this file in order to resolve them.
+#
+# (Further explicit documentation will be provided to integrators.)
+
+# This is where stub shared libraries live (link-time).  All stub implementations
+# return MLResult_NotImplemented except for ml_privileges and ml_platform.
+#
+STUB_PATH=$(MLSDK)/lib/$(HOST)
+
+# Under ZI, a subset of the shared libraries are reimplemented
+# for zero iteration.  The client should not make assumptions about which
+# ones these are.  It should load all the required Lumin SDK libraries
+# according to the path below, which favors ZI implementations over
+# the stub implementations.
+
+# A client should ensure that PATH, DYLD_LIBRARY_PATH, or LD_LIBRARY_PATH
+# are configured such that the following paths are searched left-to-right
+# for SDK shim shared libraries when running an app under zero iteration.
+# 
+ZI_SHIM_PATH_win64=$(MLSDK)/VirtualDevice/lib;$(MLSDK)/VirtualDevice/bin;$(STUB_PATH)
+ZI_SHIM_PATH_osx=$(MLSDK)/VirtualDevice/lib;$(MLSDK)/VirtualDevice/bin;$(STUB_PATH)
+ZI_SHIM_PATH_linux64=$(MLSDK)/VirtualDevice/lib;$(STUB_PATH)
+

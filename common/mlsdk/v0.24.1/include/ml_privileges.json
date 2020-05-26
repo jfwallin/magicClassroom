@@ -1,0 +1,345 @@
+[
+    {
+        "id": 1,
+        "name": "AddressBookRead",
+        "description": "Full read and search access to address book contacts",
+        "type": "sensitive",
+        "min_api_level": 2
+    },
+    {
+        "id": 2,
+        "name": "AddressBookWrite",
+        "description": "Ability to add, modify and delete address book contacts",
+        "type": "sensitive",
+        "min_api_level": 1
+    },
+    {
+        "id": 13,
+        "name": "AudioRecognizer",
+        "description": "Deprecated and scheduled for removal",
+        "type": "reality",
+        "min_api_level": 1
+    },
+    {
+        "id": 18,
+        "name": "BatteryInfo",
+        "description": "Query battery status/percentage",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 26,
+        "name": "CameraCapture",
+        "description": "Take pictures and videos using camera",
+        "type": "reality",
+        "min_api_level": 1
+    },
+    {
+        "id": 33,
+        "name": "WorldReconstruction",
+        "description": "Access world reconstruction features (meshes, planes, raycast)",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 42,
+        "name": "InAppPurchase",
+        "description": "Use the in-app purchase mechanism",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 49,
+        "name": "AudioCaptureMic",
+        "description": "Open a microphone stream of the users voice or the ambient surroundings",
+        "type": "reality",
+        "min_api_level": 1
+    },
+    {
+        "id": 51,
+        "name": "DrmCertificates",
+        "description": "Provision and use DRM certficates",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 52,
+        "name": "Occlusion",
+        "description": "Deprecated and scheduled for removal",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 59,
+        "name": "LowLatencyLightwear",
+        "description": "Access Low Latency data from the Lightwear",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 96,
+        "name": "Internet",
+        "description": "Access the internet (network nodes in other subnets as well as the gateway)",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 106,
+        "name": "BluetoothAdapterUser",
+        "description": "Limited access to bluetooth adapter service",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 108,
+        "name": "BluetoothGattWrite",
+        "description": "Write-Access bluetooth Generic Attribute Profile service",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 113,
+        "name": "IdentityRead",
+        "description": "Read user profile attributes",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 120,
+        "name": "BackgroundDownload",
+        "description": "Download in the background",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 121,
+        "name": "BackgroundUpload",
+        "description": "Upload in the background",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 129,
+        "name": "MediaDrm",
+        "description": "Access Media Drm Services",
+        "type": "trusted",
+        "min_api_level": 1
+    },
+    {
+        "id": 130,
+        "name": "Media",
+        "description": "Access Media Services",
+        "type": "trusted",
+        "min_api_level": 1
+    },
+    {
+        "id": 140,
+        "name": "MediaMetadata",
+        "description": "Access Content Management media information",
+        "type": "trusted",
+        "min_api_level": 1
+    },
+    {
+        "id": 150,
+        "name": "PowerInfo",
+        "description": "Get power information",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 171,
+        "name": "LocalAreaNetwork",
+        "description": "Access the local area network (other network nodes in the same subnet)",
+        "type": "sensitive",
+        "min_api_level": 1
+    },
+    {
+        "id": 173,
+        "name": "VoiceInput",
+        "description": "Receive voice input",
+        "type": "reality",
+        "min_api_level": 1
+    },
+    {
+        "id": 175,
+        "name": "Documents",
+        "description": "Access shared documents",
+        "type": "trusted",
+        "min_api_level": 1
+    },
+    {
+        "id": 192,
+        "name": "ConnectBackgroundMusicService",
+        "description": "Connect to Background Music Service",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 193,
+        "name": "RegisterBackgroundMusicService",
+        "description": "Register with Background Music Service",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 201,
+        "name": "PcfRead",
+        "description": "Read Persistent Coordinate Frames from Passable World",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 208,
+        "name": "NormalNotificationsUsage",
+        "description": "Post notifications for users to see, dismiss own notifications, listen for own notification events",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 218,
+        "name": "MusicService",
+        "description": "Access Music Service functionality",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 263,
+        "name": "ControllerPose",
+        "description": "Access controller pose data",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 264,
+        "name": "ScreensProvider",
+        "description": "Create channels in the screens framework'",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 268,
+        "name": "GesturesSubscribe",
+        "description": "Subscribe to gesture hand mask and config data",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 269,
+        "name": "GesturesConfig",
+        "description": "Set/Get gesture configuration",
+        "type": "autogranted",
+        "min_api_level": 1
+    },
+    {
+        "id": 305,
+        "name": "AddressBookBasicAccess",
+        "description": "Access a manually selected subset of contacts from address book",
+        "type": "autogranted",
+        "min_api_level": 3
+    },
+    {
+        "id": 312,
+        "name": "Expressions",
+        "description": "Get user expression data for avatar animation",
+        "type": "sensitive",
+        "min_api_level": 8
+    },
+    {
+        "id": 315,
+        "name": "HandMesh",
+        "description": "Access hand mesh features",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 323,
+        "name": "CoarseLocation",
+        "description": "Get coarse location of the device.",
+        "type": "sensitive",
+        "min_api_level": 4
+    },
+    {
+        "id": 329,
+        "name": "SocialConnectionsInvitesAccess",
+        "description": "Ability to initiate invites to Social connections",
+        "type": "autogranted",
+        "min_api_level": 5
+    },
+    {
+        "id": 343,
+        "name": "ComputerVision",
+        "description": "SDK access CV related info from graph_pss",
+        "type": "reality",
+        "min_api_level": 5
+    },
+    {
+        "id": 344,
+        "name": "WifiStatusRead",
+        "description": "Get Wifi status",
+        "type": "autogranted",
+        "min_api_level": 5
+    },
+    {
+        "id": 350,
+        "name": "ConnectionAccess",
+        "description": "Access ACP connection APIs",
+        "type": "autogranted",
+        "min_api_level": 8
+    },
+    {
+        "id": 351,
+        "name": "ConnectionAudioCaptureStreaming",
+        "description": "Access ACP microphone audio streaming APIs",
+        "type": "reality",
+        "min_api_level": 8
+    },
+    {
+        "id": 352,
+        "name": "ConnectionVideoCaptureStreaming",
+        "description": "Access ACP video capture streaming APIs",
+        "type": "reality",
+        "min_api_level": 8
+    },
+    {
+        "id": 357,
+        "name": "SecureBrowserWindow",
+        "description": "Request a secure browser window",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 362,
+        "name": "BluetoothAdapterExternalApp",
+        "description": "Access to Bluetooth adapter from external app",
+        "type": "autogranted",
+        "min_api_level": 6
+    },
+    {
+        "id": 367,
+        "name": "FineLocation",
+        "description": "Get fine location of the device.",
+        "type": "reality",
+        "min_api_level": 7
+    },
+    {
+        "id": 369,
+        "name": "DesktopCompanion",
+        "description": "Register with and use the Desktop Companion",
+        "type": "autogranted",
+        "min_api_level": 7
+    },
+    {
+        "id": 372,
+        "name": "SocialConnectionsSelectAccess",
+        "description": "Select access to social connections",
+        "type": "autogranted",
+        "min_api_level": 8
+    },
+    {
+        "id": 394,
+        "name": "ObjectData",
+        "description": "Access found object data from object-recognition pipeline",
+        "type": "sensitive",
+        "min_api_level": 8
+    }
+]
