@@ -1,8 +1,8 @@
 ﻿// ---------------------------------------------------------------------
 //
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
+// Copyright (c) 2018-present, Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
+// here: https://id.magicleap.com/terms/developer
 //
 // ---------------------------------------------------------------------
 
@@ -61,10 +61,10 @@ public class ControlInputExample : MonoBehaviour
         controlInput.OnTapped.AddListener(HandleTapped);
         controlInput.OnTouchBeganMoving.AddListener(HandleTouchBeganMoving);
         controlInput.OnTouchDown.AddListener(HandleTouchDown);
+        controlInput.OnTouchUp.AddListener(HandleTouchUp);
         controlInput.OnTouchHold.AddListener(HandleTouchHold);
         controlInput.OnTouchMove.AddListener(HandleTouchMove);
         controlInput.OnTouchRadialMove.AddListener(HandleTouchRadialMove);
-        controlInput.OnTouchUp.AddListener(HandleTouchUp);
     }
 
     //Loops:
@@ -181,12 +181,12 @@ public class ControlInputExample : MonoBehaviour
         AddEvent("Force Touch Up");
     }
 
-    private void HandleSwipe(MLInputControllerTouchpadGestureDirection value)
+    private void HandleSwipe(MLInput.Controller.TouchpadGesture.GestureDirection value)
     {
         AddEvent("Swipe " + value);
     }
 
-    private void HandleTapped(MLInputControllerTouchpadGestureDirection value)
+    private void HandleTapped(MLInput.Controller.TouchpadGesture.GestureDirection value)
     {
         AddEvent("Tap " + value);
     }

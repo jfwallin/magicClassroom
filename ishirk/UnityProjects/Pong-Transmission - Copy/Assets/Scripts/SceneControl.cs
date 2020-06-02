@@ -329,12 +329,10 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void FakeConnection()
     {
-        OnJoinGame("null");
+        OnJoinGame("null", 0);
     }
 #endif
     #endregion //Public Functions
-
-
 
     #region Event Handlers
     /// <summary>
@@ -355,7 +353,7 @@ public class SceneControl : MonoBehaviour
     /// Called when a peer is found
     /// </summary>
     /// <param name="peerLabel"></param>
-    private void OnJoinGame(string peerLabel)
+    private void OnJoinGame(string peerLabel, long num)
     {
         //Notify other scripts of connection
         ConnectionEvent.Invoke(true);
@@ -463,7 +461,7 @@ public class SceneControl : MonoBehaviour
 
     private void HandlePeerLost(string peerLabel)
     {
-        if (Transmission.Peers.Length == 0)
+        if (Transmission.Instance.Peers.Length == 0)
             ExitGame();
     }
     #endregion //Event Handlers

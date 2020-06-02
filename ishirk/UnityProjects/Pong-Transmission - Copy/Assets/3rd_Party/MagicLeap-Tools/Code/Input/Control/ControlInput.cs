@@ -1,8 +1,8 @@
-// ---------------------------------------------------------------------
+﻿// ---------------------------------------------------------------------
 //
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
+// Copyright (c) 2018-present, Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
+// here: https://id.magicleap.com/terms/developer
 //
 // ---------------------------------------------------------------------
 
@@ -29,107 +29,107 @@ namespace MagicLeapTools
         /// <summary>
         /// Fired when a control is connected.
         /// </summary>
-        public UnityEvent OnControlConnected;
+        public UnityEvent OnControlConnected = new UnityEvent();
         /// <summary>
         /// Fired when a control is disconnected.
         /// </summary>
-        public UnityEvent OnControlDisconnected;
+        public UnityEvent OnControlDisconnected = new UnityEvent();
         /// <summary>
         /// Fired as soon as the trigger has been depressed at all.
         /// </summary>
-        public UnityEvent OnTriggerPressBegan;
+        public UnityEvent OnTriggerPressBegan = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has passed its TriggerDownThreshold.
         /// </summary>
-        public UnityEvent OnTriggerDown;
+        public UnityEvent OnTriggerDown = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has been rapidly squeezed twice.
         /// </summary>
-        public UnityEvent OnDoubleTrigger;
+        public UnityEvent OnDoubleTrigger = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has passed its TriggerUpThreshold.
         /// </summary>
-        public UnityEvent OnTriggerUp;
+        public UnityEvent OnTriggerUp = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has been completely released.
         /// </summary>
-        public UnityEvent OnTriggerPressEnded;
+        public UnityEvent OnTriggerPressEnded = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has been held for longer than _triggerHoldDuration.
         /// </summary>
-        public UnityEvent OnTriggerHold;
+        public UnityEvent OnTriggerHold = new UnityEvent();
         /// <summary>
         /// Fired when the trigger has been released or pulled more since the last frame.
         /// </summary>
-        public FloatEvent OnTriggerMove;
+        public FloatEvent OnTriggerMove = new FloatEvent();
         /// <summary>
         /// Fired when the home button is pressed.
         /// </summary>
-        public UnityEvent OnHomeButtonTap;
+        public UnityEvent OnHomeButtonTap = new UnityEvent();
         /// <summary>
         /// Fired when the home button has been rapidly pressed twice.
         /// </summary>
-        public UnityEvent OnDoubleHome;
+        public UnityEvent OnDoubleHome = new UnityEvent();
         /// <summary>
         /// Fired when the bumper is pressed.
         /// </summary>
-        public UnityEvent OnBumperDown;
+        public UnityEvent OnBumperDown = new UnityEvent();
         /// <summary>
         /// Fired when the bumper has been rapidly pressed twice.
         /// </summary>
-        public UnityEvent OnDoubleBumper;
+        public UnityEvent OnDoubleBumper = new UnityEvent();
         /// <summary>
         /// Fired when the bumper is released.
         /// </summary>
-        public UnityEvent OnBumperUp;
+        public UnityEvent OnBumperUp = new UnityEvent();
         /// <summary>
         /// Fired when the bumper has been held for longer than _bumperHoldDuration.
         /// </summary>
-        public UnityEvent OnBumperHold;
+        public UnityEvent OnBumperHold = new UnityEvent();
         /// <summary>
         /// Fired when the touch pad is touched. X, Y, Z and W is for angle.
         /// </summary>
-        public Vector4Event OnTouchDown;
+        public Vector4Event OnTouchDown = new Vector4Event();
         /// <summary>
         /// Fired when the touch pad has been rapidly pressed twice. X, Y, Z and W is for angle.
         /// </summary>
-        public Vector4Event OnDoubleTap;
+        public Vector4Event OnDoubleTap = new Vector4Event();
         /// <summary>
         /// Fired when a touch has been lifted from the touch pad. X, Y, Z and W is for angle.
         /// </summary>
-        public Vector4Event OnTouchUp;
+        public Vector4Event OnTouchUp = new Vector4Event();
         /// <summary>
         /// Fired when a touch has moved from the last update. X, Y, Z and W is for angle.
         /// </summary>
-        public Vector4Event OnTouchMove;
+        public Vector4Event OnTouchMove = new Vector4Event();
         /// <summary>
         /// Fired when a touch moves on the touch pad and provides and angle change in degrees.
         /// </summary>
-        public FloatEvent OnTouchRadialMove;
+        public FloatEvent OnTouchRadialMove = new FloatEvent();
         /// <summary>
         /// Fired when a touch has been held for longer than _touchHoldDuration.
         /// </summary>
-        public UnityEvent OnTouchHold;
+        public UnityEvent OnTouchHold = new UnityEvent();
         /// <summary>
         /// Fired when a touch force passes _forceTouchDownThreshold.
         /// </summary>
-        public UnityEvent OnForceTouchDown;
+        public UnityEvent OnForceTouchDown = new UnityEvent();
         /// <summary>
         /// Fired when a touch force passes _forceTouchUpThreshold.
         /// </summary>
-        public UnityEvent OnForceTouchUp;
+        public UnityEvent OnForceTouchUp = new UnityEvent();
         /// <summary>
         /// Fired when a touch initially moves far enough to designated an intentional move.
         /// </summary>
-        public UnityEvent OnTouchBeganMoving;
+        public UnityEvent OnTouchBeganMoving = new UnityEvent();
         /// <summary>
         /// Fired when a swipe gesture occurs.
         /// </summary>
-        public TouchpadGestureDirectionEvent OnSwipe;
+        public TouchpadGestureDirectionEvent OnSwipe = new TouchpadGestureDirectionEvent();
         /// <summary>
         /// Fired when a tap begins and ends quickly and in a similar location.
         /// </summary>
-        public TouchpadGestureDirectionEvent OnTapped;
+        public TouchpadGestureDirectionEvent OnTapped = new TouchpadGestureDirectionEvent();
         
         //Public Properties:
         /// <summary>
@@ -144,7 +144,7 @@ namespace MagicLeapTools
         /// <summary>
         /// A reference to the control.
         /// </summary>
-        public MLInputController Control
+        public MLInput.Controller Control
         {
             get;
             private set;
@@ -331,8 +331,8 @@ namespace MagicLeapTools
         {
             for (int i = 0; i < 2; ++i)
             {
-                MLInputController control = MLInput.GetController(i);
-                if (control.Type == MLInputControllerType.Control)
+                MLInput.Controller control = MLInput.GetController(i);
+                if (control.Type == MLInput.Controller.ControlType.Control)
                 {
                     switch (handedness)
                     {
@@ -358,7 +358,7 @@ namespace MagicLeapTools
             }
         }
 
-        private void Initialize(MLInputController control)
+        private void Initialize(MLInput.Controller control)
         {
             //status:
             Control = control;
@@ -562,24 +562,24 @@ namespace MagicLeapTools
                                 }
 
                                 //determine swipe direction:
-                                MLInputControllerTouchpadGestureDirection direction = MLInputControllerTouchpadGestureDirection.Left;
+                                MLInput.Controller.TouchpadGesture.GestureDirection direction = MLInput.Controller.TouchpadGesture.GestureDirection.Left;
                                 if (swipeAngle > 315 || swipeAngle <= 45)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Up;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Up;
                                 }
                                 else if (swipeAngle > 45 && swipeAngle <= 135)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Right;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Right;
                                 }
                                 else if (swipeAngle > 135 && swipeAngle <= 225)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Down;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Down;
                                 }
 
                                 //radial swipe?
-                                if (Control.TouchpadGesture.Type == MLInputControllerTouchpadGestureType.RadialScroll)
+                                if (Control.CurrentTouchpadGesture.Type == MLInput.Controller.TouchpadGesture.GestureType.RadialScroll)
                                 {
-                                    direction = Control.TouchpadGesture.Direction;
+                                    direction = Control.CurrentTouchpadGesture.Direction;
                                 }
 
                                 OnSwipe?.Invoke(direction);
@@ -595,18 +595,18 @@ namespace MagicLeapTools
                             if (durationFromTouchStart < _maxTapDuration)
                             {
                                 //determine tap location:
-                                MLInputControllerTouchpadGestureDirection direction = MLInputControllerTouchpadGestureDirection.Left;
+                                MLInput.Controller.TouchpadGesture.GestureDirection direction = MLInput.Controller.TouchpadGesture.GestureDirection.Left;
                                 if (TouchValue.w > 315 || TouchValue.w <= 45)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Up;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Up;
                                 }
                                 else if (TouchValue.w > 45 && TouchValue.w <= 135)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Right;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Right;
                                 }
                                 else if (TouchValue.w > 135 && TouchValue.w <= 225)
                                 {
-                                    direction = MLInputControllerTouchpadGestureDirection.Down;
+                                    direction = MLInput.Controller.TouchpadGesture.GestureDirection.Down;
                                 }
 
                                 OnTapped?.Invoke(direction);
@@ -695,7 +695,7 @@ namespace MagicLeapTools
         private void HandleControlConnected(byte controlId)
         {
             //we just want to work with the control:
-            MLInputController connectedControl = MLInput.GetController(controlId);
+            MLInput.Controller connectedControl = MLInput.GetController(controlId);
 
             switch (handedness)
             {
@@ -753,7 +753,7 @@ namespace MagicLeapTools
             OnTriggerUp?.Invoke();
         }
 
-        private void HandleControlButtonDown(byte controlId, MLInputControllerButton button)
+        private void HandleControlButtonDown(byte controlId, MLInput.Controller.Button button)
         {
             //wrong or no control?
             if (Control == null || controlId != Control.Id)
@@ -763,7 +763,7 @@ namespace MagicLeapTools
 
             switch (button)
             {
-                case MLInputControllerButton.Bumper:
+                case MLInput.Controller.Button.Bumper:
                     StartCoroutine("BumperHold");
                     Bumper = true;
                     OnBumperDown?.Invoke();
@@ -777,7 +777,7 @@ namespace MagicLeapTools
                     _lastBumperTime = Time.realtimeSinceStartup;
                     break;
 
-                case MLInputControllerButton.HomeTap:
+                case MLInput.Controller.Button.HomeTap:
                     OnHomeButtonTap?.Invoke();
 
                     //double?
@@ -791,7 +791,7 @@ namespace MagicLeapTools
             }
         }
 
-        private void HandleControlButtonUp(byte controlId, MLInputControllerButton button)
+        private void HandleControlButtonUp(byte controlId, MLInput.Controller.Button button)
         {
             //wrong or no control?
             if (Control == null || controlId != Control.Id)
@@ -801,7 +801,7 @@ namespace MagicLeapTools
 
             switch (button)
             {
-                case MLInputControllerButton.Bumper:
+                case MLInput.Controller.Button.Bumper:
                     StopCoroutine("BumperHold");
                     Bumper = false;
                     OnBumperUp?.Invoke();

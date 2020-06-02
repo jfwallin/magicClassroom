@@ -339,7 +339,7 @@ PlayerSettings:
     m_Automatic: 0
   m_BuildTargetVRSettings:
   - m_BuildTarget: Lumin
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices:
     - Lumin
   - m_BuildTarget: Standalone
