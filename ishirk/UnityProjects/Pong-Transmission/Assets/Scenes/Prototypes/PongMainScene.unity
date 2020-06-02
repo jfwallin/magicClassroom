@@ -174,7 +174,7 @@ MonoBehaviour:
   pointer: {fileID: 854123517}
   headposeMenus: {fileID: 1983722579}
   pauseMenu: {fileID: 2063894311}
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 577333055}
 --- !u!1 &88191374
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &109424396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4195,7 +4195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &577333056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4370,7 +4370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594829347
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11794,7 +11794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1596787818
 RectTransform:
   m_ObjectHideFlags: 0
