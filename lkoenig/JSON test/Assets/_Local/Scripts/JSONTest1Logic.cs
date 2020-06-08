@@ -70,11 +70,11 @@ public class JSONTest1Logic : MonoBehaviour
 
         myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale); //Sets the scale based on in info given in the JSON
 
-        //myObject.AddComponent(Type.GetType(info.script)); //Add the script to the object
+        myObject.AddComponent(Type.GetType(info.script)); //Add the script to the object
         //Type.GetType(info.script) pp = myObject.GetComponent(Type.GetType(info.script)); //get the script so you can assign variables
-        //pp = myObject.GetComponent<Pulse>();
+        pp = myObject.GetComponent<Pulse>(); //assigns the script to the pulse variable so that I can edit the public pulse variables
         //pp = myObject.GetComponent(info.script) as Pulse;
-        pp = myObject.AddComponent<Pulse>();
+        //pp = myObject.AddComponent<Pulse>();
         pp.min = info.min; //assing the min
         pp.max = info.max; //assign the max
         //Note: The "Type.GetType("string")" is using a string to get find the proper script type and return it so that I can add it to the object
