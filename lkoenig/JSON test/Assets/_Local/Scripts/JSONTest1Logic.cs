@@ -18,7 +18,7 @@ using UnityEngine;
 public class JSONTest1Logic : MonoBehaviour
 {
     private JSONTest1 info = new JSONTest1(); //To be instantiated from
-    private GameObject _dynamic; //This is grabing this "folder" so I can place the objects after I make them
+    private GameObject _dynamic; //This is grabbing this "folder" so I can place the objects after I make them
     private GameObject gameObject0;
     private GameObject gameObject1;
 
