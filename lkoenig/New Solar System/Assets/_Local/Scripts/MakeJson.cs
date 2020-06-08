@@ -19,9 +19,10 @@ public class MakeJson : MonoBehaviour
         planet.yPosition = 0f;
         planet.zPosition = 0f;
         planet.numScriptsToAdd = 3;
-        //planet.scriptName[0] = "Orbit";
-        //planet.scriptName[1] = "Rotate";
-        //planet.scriptName[2] = "Transmission Object";
+        planet.scriptName = new string[planet.numScriptsToAdd];
+        planet.scriptName[0] = "Orbit";
+        planet.scriptName[1] = "Rotate";
+        planet.scriptName[2] = "Transmission Object";
 
         json = JsonUtility.ToJson(planet);
         Debug.Log("json file is: " + json);
