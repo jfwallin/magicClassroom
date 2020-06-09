@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Collections.Specialized;
-using System.Diagnostics;
+using System;
+
 
 public class JsonPlanetLogic : MonoBehaviour
 {
@@ -54,23 +55,30 @@ public class JsonPlanetLogic : MonoBehaviour
 
         myObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         myObject.transform.position = new Vector3(info.xPosition, info.yPosition, info.zPosition);
-        //myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
+        myObject.transform.parent = _dynamic.transform; //Puts the intantiated object in the proper location in the Hierarchy
         myObject.name = info.name; //renames the gameobject in the hierarchy so it should be easier to find by other scripts
         
         Renderer rend = myObject.GetComponent<Renderer>(); //This grabs the renderer to change the material
         rend.material = Resources.Load<Material>(info.material); //This assigns the material
 
         myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale); //Sets the scale based on in info given in the JSON
-        /*
-        myObject.AddComponent(Type.GetType(info.script)); //Add the script to the object
-        //Type.GetType(info.script) pp = myObject.GetComponent(Type.GetType(info.script)); //get the script so you can assign variables
-        pp = myObject.GetComponent<Pulse>(); //assigns the script to the pulse variable so that I can edit the public pulse variables
-        //pp = myObject.GetComponent(info.script) as Pulse;
-        //pp = myObject.AddComponent<Pulse>();
-        pp.min = info.min; //assing the min
-        pp.max = info.max; //assign the max
+
+        //myObject.AddComponent(GetType("Orbit"));
+        
+        for(int i = 0; i < info.numScriptsToAdd; i++)
+        {
+            myObject.AddComponent(Type.GetType(info.scriptName[i])); //Should add the scripts to the object
+        }
         //Note: The "Type.GetType("string")" is using a string to get find the proper script type and return it so that I can add it to the object
-        */
+
+        //This is hardcodedd and will NEED a better solution at some point.
+        Orbit orbit = myObject.GetComponent<Orbit>();
+        orbit.rotateDegree = info.OrbitRotateDegree;
+        orbit.center = GameObject.Find(info.OrbitCenter);
+
+        Rotate rotate = myObject.GetComponent<Rotate>();
+        rotate.rotationAngle = info.RotateRotationAngle;
+        
         return (myObject);
         
     }
