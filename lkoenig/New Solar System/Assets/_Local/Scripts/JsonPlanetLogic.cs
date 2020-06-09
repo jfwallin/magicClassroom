@@ -12,6 +12,8 @@ public class JsonPlanetLogic : MonoBehaviour
     private GameObject _dynamic; //This is grabbing this "folder" so I can place the objects after I make them
     private GameObject[] gameObject = new GameObject[3];
 
+    private const string GlobalTimeKey = "timeMultiplier";
+
 
     // Start is called before the first frame update
     void Start()
