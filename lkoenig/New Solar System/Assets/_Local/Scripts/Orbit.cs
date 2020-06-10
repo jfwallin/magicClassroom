@@ -18,16 +18,17 @@ public class Orbit : MonoBehaviour
 
     private void Awake()
     {
-        if(center == null) //allows for no center
-        {
-            center = gameObject;
-            rotateDegree = 0.0f;
-        }
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        if (center == null) //allows for no center
+        {
+            center = gameObject;
+            rotateDegree = 0.0f;
+        }
         //timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>(); //get s reference to the timeManager script
         //Debug.Log("In Start in Orbit. timeMultiplier = " + timeManager.TimeMultiplier);
         offset = transform.position - center.transform.position; //radius of orbit
