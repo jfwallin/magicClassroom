@@ -13,13 +13,7 @@ public class Orbit : MonoBehaviour
     public float rotateDegree; //Treat as const
     
     //Private Variable
-    //private TimeManager timeManager; //Will allow speeding up/slowing down time
     private Vector3 offset;
-
-    private void Awake()
-    {
-        
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -29,15 +23,12 @@ public class Orbit : MonoBehaviour
             center = gameObject;
             rotateDegree = 0.0f;
         }
-        //timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>(); //get s reference to the timeManager script
-        //Debug.Log("In Start in Orbit. timeMultiplier = " + timeManager.TimeMultiplier);
+        
         offset = transform.position - center.transform.position; //radius of orbit
     }
 
     private void FixedUpdate() //physics
     {
-        //float timeMultiplier = timeManager.TimeMultiplier;//get the current time multiplier
-
         Vector3 centerVector = center.transform.position; //get position relative to world 
         transform.position = offset + centerVector;
 
