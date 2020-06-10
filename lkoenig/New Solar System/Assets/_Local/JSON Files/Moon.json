@@ -1,0 +1,1 @@
+{"name":"Moon","xPosition":0.0,"yPosition":0.0,"zPosition":-1.75,"scale":0.06797999888658524,"material":"Moon","numScriptsToAdd":2,"scriptName":["Orbit","Rotate"],"OrbitCenter":"Earth","OrbitRotateDegree":2.666670083999634,"RotateRotationAngle":{"x":0.0,"y":2.4489800930023195,"z":0.0}}
