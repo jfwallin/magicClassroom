@@ -20,18 +20,17 @@ public class SetUp : MonoBehaviour
     private const string GlobalHoldKey = "holdMultiplier";
     public ControlInput control;
     public GameObject endPoint; //will probably change out for a get component later
+
+
     private void Awake()
     {
-
         control.OnTriggerDown.AddListener(HandleTriggerDown);
         control.OnBumperDown.AddListener(HandleBumperDown);
-
     }
 
     
     private void Start()
     {
-        
         //If the variable doesn't exist yet make it and set it to false
         if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
         {
@@ -50,12 +49,13 @@ public class SetUp : MonoBehaviour
         */
         Debug.Log("In the start. spawned is "+ Transmission.GetGlobalBool(GlobalSpawnedKey)+". timeMultiplier is " + Transmission.GetGlobalFloat(GlobalTimeKey));
     }
+
     public void Update()
     {
    
     }
 
-    private void HandleTriggerDown()
+    private void HandleTriggerDown() //places object
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey)) {
             TransmissionObject solarSystem = Transmission.Spawn("Sun Earth Moon", endPoint.transform.position , Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
@@ -69,7 +69,7 @@ public class SetUp : MonoBehaviour
         }
     }
 
-    private void HandleBumperDown()
+    private void HandleBumperDown()//Pauses and playes the time.
     {
         
         if (Transmission.GetGlobalFloat(GlobalTimeKey) == 0)
@@ -85,15 +85,3 @@ public class SetUp : MonoBehaviour
     }
         
 }
-
-
-/*Thinking longer term
- * 
- * I think the super dynamic from internet version will have to work in two phases
- * Phase one, instantiate the "celestial body" prefab at the right loccations/rotations/whatnot
- * Phase two, loop through and use a (JSON?) to set all the particulars like texture/orbit/whatnot
- * 
- * possibly hide this process with a "black curtain" by blocking this with a loading screen and that get's disabled at the end of phase two?
- * 
- * I also want to make a place phase that will be unique to each private key
- */

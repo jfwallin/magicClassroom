@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Specialized;
 
-public class MakeJson : MonoBehaviour
+public class MakeJsonPlanet : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -39,9 +39,4 @@ public class MakeJson : MonoBehaviour
         writer.Close();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
