@@ -2,15 +2,13 @@
 //
 // Copyright (c) 2018 Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
+// here: https://id.magicleap.com/terms/developer
 //
 // ---------------------------------------------------------------------
 
 using UnityEngine;
 using UnityEditor;
-#if PLATFORM_LUMIN
 using UnityEngine.XR.MagicLeap;
-#endif
 using System.Linq;
 
 namespace MagicLeapTools
@@ -33,12 +31,11 @@ namespace MagicLeapTools
         public override void OnInspectorGUI()
         {
             EditorUtilities.ComponentRequired(typeof(Transmission));
-            EditorUtilities.ComponentRequired(typeof(PrivilegeRequester));
-			
+
             if (float.Parse(MLVersion.MLSDK_VERSION_NAME.Split('.')[1]) < 23)
             {
                 int PwFoundObjRead = 201;
-                EditorUtilities.SensitivePrivilegeRequired((MLRuntimeRequestPrivilegeId)PwFoundObjRead);
+                EditorUtilities.SensitivePrivilegeRequired((MLPrivileges.RuntimeRequestId)PwFoundObjRead);
             }
 
             DrawDefaultInspector();

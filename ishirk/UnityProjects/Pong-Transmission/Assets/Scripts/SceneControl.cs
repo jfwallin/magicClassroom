@@ -6,6 +6,7 @@ using UnityEngine.Animations;
 using UnityEngine.Assertions;
 using UnityEngine.XR.MagicLeap;
 using MagicLeapTools;
+using UnityEngine.XR;
 
 public class SceneControl : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class SceneControl : MonoBehaviour
 
     //references to scene objects
     [Header("Scene References")]
+    [SerializeField]
+    private Transmission transmissionComp = null;
     [SerializeField]
     private MeshRenderer worldMeshOriginal = null; //Reference to world mesh renderer to allow for visibility toggling
     [SerializeField]
@@ -75,7 +78,7 @@ public class SceneControl : MonoBehaviour
     //Scene Initializations
     void Start()
     {
-        Transmission.Instance.gameObject.SetActive(false);
+        transmissionComp.gameObject.SetActive(false);
         pointer.gameObject.SetActive(true);
     }
 
@@ -93,6 +96,10 @@ public class SceneControl : MonoBehaviour
     {
         //Make mesh visible
         worldMeshOriginal.material = colorfulMat;
+        foreach (Transform meshObj in GameObject.Find("WorldMesh").transform)
+        {
+            meshObj.GetComponent<MeshRenderer>().material = colorfulMat;
+        }
         //Add responses to controller input
         ControlInput cIScript = pointer.GetComponent<ControlInput>();
         //When trigger pulled, move on to next setup step
@@ -100,6 +107,10 @@ public class SceneControl : MonoBehaviour
         {
             //Switch mesh from visible to occluding
             worldMeshOriginal.material = occlusionMat;
+            foreach (Transform meshObj in GameObject.Find("WorldMesh").transform)
+            {
+                meshObj.GetComponent<MeshRenderer>().material = occlusionMat;
+            }
             //Enable next menu
             headposeMenus.transform.GetChild(0).Find("MeshingConfirmationPage").gameObject.SetActive(true);
             //Unsubscribe events
@@ -111,6 +122,10 @@ public class SceneControl : MonoBehaviour
         {
             //Switch mesh from visible to occluding
             worldMeshOriginal.material = occlusionMat;
+            foreach (Transform meshObj in GameObject.Find("WorldMesh").transform)
+            {
+                meshObj.GetComponent<MeshRenderer>().material = occlusionMat;
+            }
             //Enable previous menu
             headposeMenus.transform.GetChild(0).Find("MeshingInstructionsPage").gameObject.SetActive(true);
             //Unsubscribe events
@@ -162,9 +177,9 @@ public class SceneControl : MonoBehaviour
         //Update state
         gameOwner = true;
         //Enable Transmission
-        Transmission.Instance.gameObject.SetActive(true);
+        transmissionComp.gameObject.SetActive(true);
         //Prepare to handle connection event
-        Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
+        transmissionComp.OnPeerFound.AddListener(OnJoinGame);
         //Spawn Transmission Arena
         Transform arenaTransform = placementArena.transform;
         GameObject.Destroy(placementArena);
@@ -173,6 +188,7 @@ public class SceneControl : MonoBehaviour
         //Spawn Transmission ball
         ball = Transmission.Spawn(ballPrefabPath, arenaTransform.position + new Vector3(0, 1.25f, 0), Quaternion.identity, Vector3.one);
         ball.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
+        ApplySettings();
     }
 
     /// <summary>
@@ -183,12 +199,12 @@ public class SceneControl : MonoBehaviour
         //Update state
         gameOwner = false;
         //Unsubscribe from connection event
-        Transmission.Instance.OnPeerFound.RemoveListener(OnJoinGame);
+        transmissionComp.OnPeerFound.RemoveListener(OnJoinGame);
         //Despawn transmission objects
         ball.Despawn();
         arena.Despawn();
         //Disable transmission
-        Transmission.Instance.gameObject.SetActive(false);
+        transmissionComp.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -196,8 +212,8 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void TryJoinGame()
     {
-        Transmission.Instance.gameObject.SetActive(true);
-        Transmission.Instance.OnPeerFound.AddListener(OnJoinGame);
+        transmissionComp.gameObject.SetActive(true);
+        transmissionComp.OnPeerFound.AddListener(OnJoinGame);
     }
 
     /// <summary>
@@ -205,8 +221,8 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void CancelJoinGame()
     {
-        Transmission.Instance.OnPeerFound.RemoveListener(OnJoinGame);
-        Transmission.Instance.gameObject.SetActive(false);
+        transmissionComp.OnPeerFound.RemoveListener(OnJoinGame);
+        transmissionComp.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -225,17 +241,19 @@ public class SceneControl : MonoBehaviour
         ConstraintSource pointerSource = new ConstraintSource();
         pointerSource.sourceTransform = pointer.transform;
         pointerSource.weight = 1f;
-        paddlePC.AddSource(pointerSource);
-        for (int i = 0; i < 3; i++)
-        {
-            paddlePC.translationOffsets[i] = Vector3.zero;
-            paddlePC.rotationOffsets[i] = Vector3.zero;
-        }
+        paddlePC.locked = false;
+        paddlePC.SetSource(0, pointerSource);
+        paddlePC.translationOffsets[0] = Vector3.zero;
+        paddlePC.rotationOffsets[0] = Vector3.zero;
         paddlePC.locked = true;
         paddlePC.constraintActive = true;
 
+        //Disable the pointer
+        pointer.GetComponent<LineRenderer>().enabled = false;
+        pointer.enabled = false;
+
         //Start listening for bool changes to check if both players are ready
-        Transmission.Instance.OnGlobalBoolChanged.AddListener(CheckReadiness);
+        transmissionComp.OnGlobalBoolChanged.AddListener(CheckReadiness);
 
         //Set applicable bool
         if (gameOwner)
@@ -254,16 +272,16 @@ public class SceneControl : MonoBehaviour
         headposeMenus.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
 
         //manage global variables and event subscriptions with Transmission
-        Transmission.Instance.OnGlobalBoolChanged.RemoveListener(CheckReadiness);
+        transmissionComp.OnGlobalBoolChanged.RemoveListener(CheckReadiness);
         if(gameOwner)
         {
             Transmission.SetGlobalFloat("scoreRed", 0);
             Transmission.SetGlobalFloat("scoreBlue", 0);
             Transmission.SetGlobalBool("gamePaused", false);
         }
-        Transmission.Instance.OnGlobalBoolChanged.AddListener(CheckPauseGame);
-        Transmission.Instance.OnGlobalFloatChanged.AddListener(CheckScoreChange);
-        Transmission.Instance.OnPeerLost.AddListener(HandlePeerLost);
+        transmissionComp.OnGlobalBoolChanged.AddListener(CheckPauseGame);
+        transmissionComp.OnGlobalFloatChanged.AddListener(CheckScoreChange);
+        transmissionComp.OnPeerLost.AddListener(HandlePeerLost);
 
         //Make the pause menu open on a home button press
         pointer.GetComponent<ControlInput>().OnHomeButtonTap.AddListener(TogglePauseGame);
@@ -277,6 +295,11 @@ public class SceneControl : MonoBehaviour
     //Adjust values on prefab so all instantiated instances match, called after settings are edited
     public void ApplySettings()
     {
+        if(ball != null)
+        {
+            ball.transform.localScale = gameSettings.BallSize;
+            ball.transform.GetComponent<SphereCollider>().material = gameSettings.BallBounciness;
+        }
         ballPrefab.GetComponent<Collider>().material = gameSettings.BallBounciness;
         ballPrefab.transform.localScale = gameSettings.BallSize;
     }
@@ -299,10 +322,10 @@ public class SceneControl : MonoBehaviour
         }
 
         //Remove event subscriptions and disable Transmission
-        Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckPauseGame);
-        Transmission.Instance.OnGlobalFloatChanged.RemoveListener(CheckScoreChange);
-        Transmission.Instance.OnPeerLost.RemoveListener(HandlePeerLost);
-        Transmission.Instance.gameObject.SetActive(false);
+        transmissionComp.OnGlobalFloatChanged.RemoveListener(CheckPauseGame);
+        transmissionComp.OnGlobalFloatChanged.RemoveListener(CheckScoreChange);
+        transmissionComp.OnPeerLost.RemoveListener(HandlePeerLost);
+        transmissionComp.gameObject.SetActive(false);
 
         //Reset menus to welcome screen, unregister hometap event
         headposeMenus.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
@@ -329,12 +352,10 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void FakeConnection()
     {
-        OnJoinGame("null");
+        OnJoinGame("null", 0);
     }
 #endif
     #endregion //Public Functions
-
-
 
     #region Event Handlers
     /// <summary>
@@ -345,7 +366,7 @@ public class SceneControl : MonoBehaviour
     private void OnPlacementConfirm(Vector3 pos, Quaternion rot)
     {
         headposeMenus.SetActive(true);
-        GameObject confirmPage = headposeMenus.transform.Find("PlacementConfirmationPage")?.gameObject;
+        GameObject confirmPage = headposeMenus.transform.GetChild(0).Find("PlacementConfirmationPage")?.gameObject;
         if (!confirmPage)
             Debug.LogWarning("Could not find placement confirmation page");
         confirmPage.SetActive(true);
@@ -355,7 +376,7 @@ public class SceneControl : MonoBehaviour
     /// Called when a peer is found
     /// </summary>
     /// <param name="peerLabel"></param>
-    private void OnJoinGame(string peerLabel)
+    private void OnJoinGame(string peerLabel, long num)
     {
         //Notify other scripts of connection
         ConnectionEvent.Invoke(true);
@@ -444,6 +465,9 @@ public class SceneControl : MonoBehaviour
                 }
                 //disable paddle
                 paddle.gameObject.SetActive(false);
+                //enable pointer
+                pointer.enabled = true;
+                pointer.GetComponent<LineRenderer>().enabled = true;
             }
             //If game became unpaused
             else if(!Transmission.GetGlobalBool(key))
@@ -453,6 +477,9 @@ public class SceneControl : MonoBehaviour
                 {
                     t.gameObject.SetActive(false);
                 }
+                //disable pointer
+                pointer.GetComponent<LineRenderer>().enabled = false;
+                pointer.enabled = false;
                 //enable components
                 paddle.gameObject.SetActive(true);
                 if (gameOwner)
@@ -463,7 +490,7 @@ public class SceneControl : MonoBehaviour
 
     private void HandlePeerLost(string peerLabel)
     {
-        if (Transmission.Peers.Length == 0)
+        if (transmissionComp.Peers.Length == 0)
             ExitGame();
     }
     #endregion //Event Handlers

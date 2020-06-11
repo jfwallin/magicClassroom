@@ -18,6 +18,7 @@ public class StartConfirmationUI : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("STart UI OnEnable called once");
         waitingText.SetActive(false);
         confirmButton.SetActive(true);
     }

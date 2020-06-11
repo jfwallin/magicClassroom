@@ -62,10 +62,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1097789600551916360, guid: 765b264ac3a528847ab48be63cf0c28d,
+        type: 3}
+      propertyPath: remotePrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3750927915979456840, guid: 765b264ac3a528847ab48be63cf0c28d,
         type: 3}
       propertyPath: m_Name
       value: TransmittedPaddleVariant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5024360057835135981, guid: 765b264ac3a528847ab48be63cf0c28d, type: 3}
+    - {fileID: 5304787737521794083, guid: 765b264ac3a528847ab48be63cf0c28d, type: 3}
+    - {fileID: 232366642371525080, guid: 765b264ac3a528847ab48be63cf0c28d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 765b264ac3a528847ab48be63cf0c28d, type: 3}

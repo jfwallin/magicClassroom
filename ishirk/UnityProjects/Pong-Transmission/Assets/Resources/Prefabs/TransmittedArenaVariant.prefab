@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1620173156886844765, guid: e49181457a307284e95918337c1ea38d,
+        type: 3}
+      propertyPath: remotePrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6583128525803305872, guid: e49181457a307284e95918337c1ea38d,
         type: 3}
       propertyPath: m_Name

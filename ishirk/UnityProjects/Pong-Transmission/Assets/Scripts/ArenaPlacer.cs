@@ -14,7 +14,6 @@ public class ArenaPlacer : MonoBehaviour
     private Placement placeScript = null;      //Reference to the placement script on placement arena
     [SerializeField]
     private Material highlightMaterial = null; //Material for the arena area highlight showing correct fits (green = good fit, etc.)
-    private bool stoppedRunning = false;       //Flag for the first frame after Placement stops running
 
     private void Awake()
     {
@@ -41,13 +40,7 @@ public class ArenaPlacer : MonoBehaviour
         }
         else
         {
-            stoppedRunning = true;
-        }
-            
-        if(stoppedRunning)
-        {
             highlightMaterial.color = Color.clear;
-            stoppedRunning = false;
         }
     }
 

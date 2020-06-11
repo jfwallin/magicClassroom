@@ -1,8 +1,8 @@
 ﻿// ---------------------------------------------------------------------
 //
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
+// Copyright (c) 2018-present, Magic Leap, Inc. All Rights Reserved.
 // Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
+// here: https://id.magicleap.com/terms/developer
 //
 // ---------------------------------------------------------------------
 
@@ -96,23 +96,23 @@ namespace MagicLeapTools
             RadialDrag(angleDelta);
         }
 
-        private void HandleTouchPad(MLInputControllerTouchpadGestureDirection direction)
+        private void HandleTouchPad(MLInput.Controller.TouchpadGesture.GestureDirection direction)
         {
             switch (direction)
             {
-                case MLInputControllerTouchpadGestureDirection.Left:
+                case MLInput.Controller.TouchpadGesture.GestureDirection.Left:
                     Left();
                     break;
 
-                case MLInputControllerTouchpadGestureDirection.Right:
+                case MLInput.Controller.TouchpadGesture.GestureDirection.Right:
                     Right();
                     break;
 
-                case MLInputControllerTouchpadGestureDirection.Up:
+                case MLInput.Controller.TouchpadGesture.GestureDirection.Up:
                     Up();
                     break;
 
-                case MLInputControllerTouchpadGestureDirection.Down:
+                case MLInput.Controller.TouchpadGesture.GestureDirection.Down:
                     Down();
                     break;
             }

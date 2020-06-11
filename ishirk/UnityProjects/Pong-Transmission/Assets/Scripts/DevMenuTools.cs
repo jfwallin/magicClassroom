@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using MagicLeapTools;
 
 #if UNITY_EDITOR
 public class DevMenuTools
@@ -73,6 +74,13 @@ public class DevMenuTools
         Debug.Log("Faking finding a peer");
         GameObject.Find("SceneControl").GetComponent<SceneControl>().FakeConnection();
             Debug.Log("Peer Faked");
+    }
+
+    [MenuItem("Tools/Fake Player Readiness &#p")]
+    private static void FakePlayerReadiness()
+    {
+        Transmission.SetGlobalBool("HostReady", true);
+        Transmission.SetGlobalBool("PeerReady", true);
     }
 }
 #endif

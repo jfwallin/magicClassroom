@@ -35,9 +35,9 @@ public class SettingsUIScript : MonoBehaviour
     private void Start()
     {
         //Initialization
-        scoreText.text = "10";
-        bouncinessText.text = "Normal";
-        sizeText.text = "Normal";
+        scoreText.text = settingsObj.MaxScore.ToString();
+        bouncinessText.text = settingsObj.GetBallBouncinessName();
+        sizeText.text = settingsObj.GetBallSizeName();
     }
 
     private void OnDisable()

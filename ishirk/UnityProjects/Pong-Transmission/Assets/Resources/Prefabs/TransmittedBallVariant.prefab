@@ -67,8 +67,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransmittedBallVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 8801216994665938806, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8801216994665938806, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4764977913518270652, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9, type: 3}
-    - {fileID: 8801216994665938806, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9, type: 3}
     - {fileID: 964615416897371762, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fe8e7ffe86ffc9d45a1746d40eb3ffe9, type: 3}

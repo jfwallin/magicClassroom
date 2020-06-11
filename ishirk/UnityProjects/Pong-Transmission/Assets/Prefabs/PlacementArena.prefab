@@ -54,6 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -132,6 +133,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -210,6 +212,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -243,8 +246,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9169953135576682320}
-  - component: {fileID: 5516410094543923841}
   - component: {fileID: 7198364338552252599}
+  - component: {fileID: 7757703795956838060}
   m_Layer: 0
   m_Name: PlacementArena
   m_TagString: Untagged
@@ -270,25 +273,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5516410094543923841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6583128525803305872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f22a7b6ae100054bbd7a7ef6d4e1309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _tilt: 0
-  _matchGravityOnVerticals: 1
-  _maxDistance: 3.048
-  _maxUneven: 0.0508
-  _hitLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &7198364338552252599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,8 +285,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995394dc2b866fb41b81179b01066f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeScript: {fileID: 5516410094543923841}
+  placeScript: {fileID: 7757703795956838060}
   highlightMaterial: {fileID: 2100000, guid: 2c6581ccec67d3945bafa05157b8ba6a, type: 2}
+--- !u!114 &7757703795956838060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6583128525803305872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37feb4647f05a1c4d85ce333a788d0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tilt: 0
+  _matchGravityOnVerticals: 1
+  _maxDistance: 3.048
+  _maxUneven: 0.0508
+  _hitLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &6905216170190060861
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +360,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Dynamic;
 
 public enum Size { Small, Normal, Large };
 public enum Bounciness { NotVery, Normal, Very };
@@ -33,7 +34,7 @@ public class Settings : ScriptableObject
                 case Size.Large:
                     return new Vector3(0.1f, 0.1f, 0.1f);
                 default:
-                    return new Vector3(0.75f, 0.75f, 0.75f);
+                    return new Vector3(0.075f, 0.075f, 0.075f);
             }
         }
     }
@@ -121,6 +122,16 @@ public class Settings : ScriptableObject
         if (maxScore > 5)
             maxScore--;
         OnSettingsChanged("MaxScore", maxScore.ToString());
+    }
+
+    public string GetBallSizeName()
+    {
+        return ballSize.ToString();
+    }
+
+    public string GetBallBouncinessName()
+    {
+        return ballBounciness.ToString();
     }
     #endregion //Public Functions
 }
