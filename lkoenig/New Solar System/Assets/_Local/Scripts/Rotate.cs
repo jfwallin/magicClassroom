@@ -2,10 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MagicLeapTools;
+using System.Diagnostics;
 
-public class Rotate : MonoBehaviour
+public class Rotate : JsonAssignment
 {
     public Vector3 rotationAngle; //treat as a const
+
+    //I would like this to assign it's own variables upon call.
+    public override void Construct(Planet info)
+    {
+        UnityEngine.Debug.Log("In the Construct. name is " + info.name);
+        rotationAngle = info.RotateRotationAngle;
+    }
+
+    public void test()
+    {
+        UnityEngine.Debug.Log("In the test of Rotate");
+    }
 
     //FixedUpdate is better for physics cause it's time sensitive 
     void FixedUpdate()

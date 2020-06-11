@@ -54,6 +54,7 @@ public class JsonPlanetLogic : MonoBehaviour
     {
         UnityEngine.Debug.Log("In the Make Object routine with " + typeName);
         GameObject myObject;
+        JsonAssignment jsonAssignment;
         //Pulse pp; //variable for dealing with the pulse script that will be added
         getInfo("Assets/_Local/JSON Files/" + typeName + ".json"); //serializes the json data and makes it an obect that I can access. 
 
@@ -69,23 +70,31 @@ public class JsonPlanetLogic : MonoBehaviour
 
         //myObject.AddComponent(GetType("Orbit"));
         
-        /*
+        
         for(int i = 0; i < info.numScriptsToAdd; i++)
         {
             myObject.AddComponent(Type.GetType(info.scriptName[i])); //Should add the scripts to the object
+            jsonAssignment = myObject.GetComponent(info.scriptName[i]) as JsonAssignment; //Grabs the component but as the type it's inheriting from
+            jsonAssignment.Construct(info); //Becasue Construct is a virtuual function in JsonAssignment I can override it to be person in each script. This lets me pass the entire JSON object and have each script figure out what to dowith it.
         }
         //Note: The "Type.GetType("string")" is using a string to get find the proper script type and return it so that I can add it to the object
-        */
+        
 
         //This is hardcodedd and will NEED a better solution at some point.
+        /*
         myObject.AddComponent(Type.GetType(info.scriptName[0]));
+        JsonAssignment test = myObject.GetComponent(info.scriptName[0]) as JsonAssignment;
+        test.Construct(info);
+        /*
         Orbit orbit = myObject.GetComponent<Orbit>();
         orbit.rotateDegree = info.OrbitRotateDegree;
         orbit.center = GameObject.Find(info.OrbitCenter);
-
+        
         myObject.AddComponent(Type.GetType(info.scriptName[1]));
         Rotate rotate = myObject.GetComponent<Rotate>();
         rotate.rotationAngle = info.RotateRotationAngle;
+        */
+        
         
         return (myObject);
         

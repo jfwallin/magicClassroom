@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MagicLeapTools;
 
-public class Orbit : MonoBehaviour
+public class Orbit : JsonAssignment
 {
     //This will control the orbit of a celestial body
     
@@ -14,6 +14,14 @@ public class Orbit : MonoBehaviour
     
     //Private Variable
     private Vector3 offset;
+
+    //I'm fucking brilliant
+    public override void Construct(Planet info)
+    {
+        UnityEngine.Debug.Log("In the Construct. name is " + info.name);
+        center = GameObject.Find(info.OrbitCenter);
+        rotateDegree = info.OrbitRotateDegree;
+    }
 
     // Start is called before the first frame update
     void Start()
