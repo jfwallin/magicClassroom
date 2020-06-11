@@ -32,13 +32,6 @@ public class JsonPlanetLogic : MonoBehaviour
      * but you can have more than one resources file
      */
 
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void getInfo(string path)
     {
         StreamReader reader = new StreamReader(path);//Makes a reader for the file at path
@@ -54,8 +47,8 @@ public class JsonPlanetLogic : MonoBehaviour
     {
         UnityEngine.Debug.Log("In the Make Object routine with " + typeName);
         GameObject myObject;
-        JsonAssignment jsonAssignment;
-        //Pulse pp; //variable for dealing with the pulse script that will be added
+        JsonAssignment jsonAssignment; //Variable for the inbetween which aalows us to send the info to the scripts to add themselves
+        
         getInfo("Assets/_Local/JSON Files/" + typeName + ".json"); //serializes the json data and makes it an obect that I can access. 
 
         myObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -67,9 +60,6 @@ public class JsonPlanetLogic : MonoBehaviour
         rend.material = Resources.Load<Material>(info.material); //This assigns the material
 
         myObject.transform.localScale = new Vector3(info.scale, info.scale, info.scale); //Sets the scale based on in info given in the JSON
-
-        //myObject.AddComponent(GetType("Orbit"));
-        
         
         for(int i = 0; i < info.numScriptsToAdd; i++)
         {
@@ -78,23 +68,6 @@ public class JsonPlanetLogic : MonoBehaviour
             jsonAssignment.Construct(info); //Becasue Construct is a virtuual function in JsonAssignment I can override it to be person in each script. This lets me pass the entire JSON object and have each script figure out what to dowith it.
         }
         //Note: The "Type.GetType("string")" is using a string to get find the proper script type and return it so that I can add it to the object
-        
-
-        //This is hardcodedd and will NEED a better solution at some point.
-        /*
-        myObject.AddComponent(Type.GetType(info.scriptName[0]));
-        JsonAssignment test = myObject.GetComponent(info.scriptName[0]) as JsonAssignment;
-        test.Construct(info);
-        /*
-        Orbit orbit = myObject.GetComponent<Orbit>();
-        orbit.rotateDegree = info.OrbitRotateDegree;
-        orbit.center = GameObject.Find(info.OrbitCenter);
-        
-        myObject.AddComponent(Type.GetType(info.scriptName[1]));
-        Rotate rotate = myObject.GetComponent<Rotate>();
-        rotate.rotationAngle = info.RotateRotationAngle;
-        */
-        
         
         return (myObject);
         

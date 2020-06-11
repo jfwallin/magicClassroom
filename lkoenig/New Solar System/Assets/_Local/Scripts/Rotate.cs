@@ -15,11 +15,6 @@ public class Rotate : JsonAssignment
         rotationAngle = info.RotateRotationAngle;
     }
 
-    public void test()
-    {
-        UnityEngine.Debug.Log("In the test of Rotate");
-    }
-
     //FixedUpdate is better for physics cause it's time sensitive 
     void FixedUpdate()
     {

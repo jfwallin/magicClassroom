@@ -9,7 +9,7 @@ public class Orbit : JsonAssignment
     
 
     //Public Variable
-    public GameObject center; //Assigned in inspector. This is what the orbit is centered on.
+    public GameObject center; //This is what the orbit is centered on.
     public float rotateDegree; //Treat as const
     
     //Private Variable
@@ -18,7 +18,6 @@ public class Orbit : JsonAssignment
     //I'm fucking brilliant
     public override void Construct(Planet info)
     {
-        UnityEngine.Debug.Log("In the Construct. name is " + info.name);
         center = GameObject.Find(info.OrbitCenter);
         rotateDegree = info.OrbitRotateDegree;
     }
