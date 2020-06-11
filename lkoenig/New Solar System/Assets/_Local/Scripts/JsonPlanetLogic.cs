@@ -14,18 +14,51 @@ public class JsonPlanetLogic : MonoBehaviour
     private GameObject[] gameObject = new GameObject[3];
 
     private const string GlobalTimeKey = "timeMultiplier";
+    private const string GlobalHoldKey = "holdMultiplier";
 
+    public ControlInput control;
+    public GameObject endPoint;
+
+    private void Awake()
+    {
+        control.OnTriggerDown.AddListener(HandleTriggerDown);
+        control.OnBumperDown.AddListener(HandleBumperDown);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         _dynamic = GameObject.Find("[_DYNAMIC]");
+
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);
+        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
 
         gameObject[0] = MakeObject("Sun");
         gameObject[1] = MakeObject("Earth");
         gameObject[2] = MakeObject("Moon");
     }
+
+    private void HandleBumperDown()//Pauses and playes the time.
+    {
+
+        if (Transmission.GetGlobalFloat(GlobalTimeKey) == 0)
+        {
+            Transmission.SetGlobalFloat(GlobalTimeKey, Transmission.GetGlobalFloat(GlobalHoldKey));
+            Debug.Log("The multiplier was already 0");
+        }
+        else
+        {
+            Transmission.SetGlobalFloat(GlobalHoldKey, Transmission.GetGlobalFloat(GlobalTimeKey));
+            Transmission.SetGlobalFloat(GlobalTimeKey, 0);
+        }
+    }
+
+    private void HandleTriggerDown()
+    {
+
+    }
+
+
     /*Notes:
      * Resources.Load(string) grabs things in the resources folder by name.
      * It can't be in a subfolder of resources
