@@ -39,7 +39,7 @@ public class MakeJsonPlanet : MonoBehaviour
         planet.zPosition = zPosition;
         planet.scale = scale;
         planet.material = material;
-        planet.numScriptsToAdd = 2;
+        planet.numScriptsToAdd = numScriptsToAdd;
 
         planet.scriptName = scriptName;
         
