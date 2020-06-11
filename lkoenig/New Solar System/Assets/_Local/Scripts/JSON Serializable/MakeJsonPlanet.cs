@@ -6,30 +6,47 @@ using System.Collections.Specialized;
 
 public class MakeJsonPlanet : MonoBehaviour
 {
+    public string name;
+
+    public float xPosition;
+    public float yPosition;
+    public float zPosition;
+    public float scale;
+    public string material;
+
+    public int numScriptsToAdd;
+    public string[] scriptName;
+
+    //Variable related to the Orbit Script
+    public string OrbitCenter;
+    public float OrbitRotateDegree;
+
+    //Variables related to the rotate script
+    public Vector3 RotateRotationAngle;
+
     // Start is called before the first frame update
     void Start()
     {
         Planet planet = new Planet();
         string json;
-        string path = "Assets/_Local/JSON Files/Sun.json";
+        string path = "Assets/_Local/JSON Files/" + name + ".json";
 
         StreamWriter writer = new StreamWriter(path);
 
-        planet.name = "Sun";
-        planet.xPosition = 0f;
-        planet.yPosition = 0f;
-        planet.zPosition = 0f;
-        planet.scale = 1f;
-        planet.material = "Sun";
-        planet.numScriptsToAdd = 2;
-        planet.scriptName = new string[planet.numScriptsToAdd];
+        planet.name = name;
+        planet.xPosition = xPosition;
+        planet.yPosition = yPosition;
+        planet.zPosition = zPosition;
+        planet.scale = scale;
+        planet.material = material;
+        planet.numScriptsToAdd = numScriptsToAdd;
 
-        planet.scriptName[0] = "Orbit";
-        //planet.OrbitCenter = "Earth";
-        planet.OrbitRotateDegree = 0f;
+        planet.scriptName = scriptName;
+        
+        planet.OrbitCenter = OrbitCenter;
+        planet.OrbitRotateDegree = OrbitRotateDegree;
 
-        planet.scriptName[1] = "Rotate";
-        planet.RotateRotationAngle = new Vector3(0,2.942379f,0);
+        planet.RotateRotationAngle = RotateRotationAngle;
 
 
         json = JsonUtility.ToJson(planet);

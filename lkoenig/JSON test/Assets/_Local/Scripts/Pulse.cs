@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System.CodeDom;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pulse : MonoBehaviour
+public class Pulse : InheritTest
 {
     public float min, max;
     private bool grow = true;
@@ -32,5 +33,11 @@ public class Pulse : MonoBehaviour
             transform.localScale -= scaleChange;
             if (transform.localScale.x <= min) grow = true;
         }
+    }
+
+    public override void test()
+    {
+        base.test();
+        UnityEngine.Debug.Log("Override Test.");
     }
 }

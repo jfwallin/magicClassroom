@@ -79,6 +79,9 @@ public class JSONTest1Logic : MonoBehaviour
         pp.max = info.max; //assign the max
         //Note: The "Type.GetType("string")" is using a string to get find the proper script type and return it so that I can add it to the object
 
+        InheritTest test = myObject.GetComponent("Pulse") as InheritTest;
+        test.test();
+
         return (myObject);
     }
 
