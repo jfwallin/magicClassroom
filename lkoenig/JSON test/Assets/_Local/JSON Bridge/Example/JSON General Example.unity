@@ -228,15 +228,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: Assets/_Local/JSON Bridge/Example/
-  name: Test
-  position: {x: 1, y: 3, z: 4}
-  scale: {x: 2, y: 2, z: 2}
-  material: randomtest
-  numScriptsToAdd: 3
-  scriptsToAdd:
-  - test1
-  - test2
-  - test3
+  info:
+    name: 
+    parentName: 
+    position: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
+    material: 
+    numOfChildren: 0
+    children: []
+    numScriptsToAdd: 0
+    scriptsToAdd: []
 --- !u!1 &1114127903
 GameObject:
   m_ObjectHideFlags: 0
