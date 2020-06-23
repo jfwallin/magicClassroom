@@ -13,20 +13,8 @@ using System.Runtime.Versioning;
 //I may rename this and change the way it's funtioning.
 
 
-public class JsonSceneCreation : MonoBehaviour
+public class Bridge: MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private ObjectInfo getInfo(string path)
     {
