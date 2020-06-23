@@ -12,10 +12,14 @@ using UnityEngine;
 public class ObjectInfo
 {
     public string name;
+    public string parentName;
 
     public Vector3 position;
     public Vector3 scale;
     public string material;
+
+    public int numOfChildren;
+    public ObjectInfo[] children;
 
     public int numScriptsToAdd;
     public string[] scriptsToAdd;
