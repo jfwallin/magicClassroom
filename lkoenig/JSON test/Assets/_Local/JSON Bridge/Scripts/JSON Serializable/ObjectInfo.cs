@@ -36,4 +36,11 @@ public class ObjectInfo
 
     public float PulseMin;
     public float PulseMax;
+
+    //Orbit
+    public string OrbitCenter;
+    public float OrbitRotateDegree;
+
+    //Rotate
+    public Vector3 RotateRotationAngle;
 }
