@@ -9,20 +9,6 @@ public class MakeObjectInfo : MonoBehaviour
 {
     
     public string path;
-    /*
-    public string name;
-
-    public Vector3 position;
-    public Vector3 scale;
-    public string material;
-
-    public int numScriptsToAdd;
-    public string[] scriptsToAdd;
-
-    public int numOfChildren;
-    public ObjectInfo[] children;
-    */
-
     public ObjectInfo info;
 
     // Start is called before the first frame update
@@ -33,20 +19,10 @@ public class MakeObjectInfo : MonoBehaviour
         path = path + info.name + ".json";
 
         StreamWriter writer = new StreamWriter(path);
-        /*
-        //Varriables
-        info.name = name;
-
-        info.position = position;
-        info.scale = scale;
-        info.material = material;
-
-        info.numScriptsToAdd = numScriptsToAdd;
-        info.scriptsToAdd = scriptsToAdd;
-        //end variables
-        */
+        
         json = JsonUtility.ToJson(info);
         Debug.Log("json file is: " + json);
+
         writer.WriteLine(json);
 
         writer.Close();
