@@ -37,7 +37,7 @@ public class Bridge : MonoBehaviour
         GameObject parent = GameObject.Find(info.parentName);
         JsonObject jsonObject;
 
-        myObject = GameObject.CreatePrimitive(PrimitiveType.Sphere); //fix this later
+        myObject = dealWithType(info.type); //fix this later
         myObject.name = info.name;
 
         for(int i=0; i < info.numOfChildren; i++)
@@ -58,6 +58,37 @@ public class Bridge : MonoBehaviour
 
         Renderer rend = myObject.GetComponent<Renderer>();
         rend.material = Resources.Load<Material>(info.material); //material must be in a recources folder.
+    }
+
+    private GameObject dealWithType(string type)
+    {
+        GameObject myObject;
+
+        switch (type){
+            case "empty":
+                myObject = new GameObject();
+                break;
+            case "plane":
+                myObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
+                break;
+            case "cube":
+                myObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                break;
+            case "sphere":
+                myObject=GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                break;
+            case "capsule":
+                myObject = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+                break;
+            case "cylinder":
+                myObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+                break;
+            default:
+                myObject = new GameObject();
+                break;
+        }
+
+        return myObject;
     }
 
 }

@@ -13,6 +13,7 @@ public class ObjectInfo
 {
     public string name;
     public string parentName;
+    public string type; 
 
     public Vector3 position;
     public Vector3 scale;
