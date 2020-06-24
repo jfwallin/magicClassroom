@@ -28,7 +28,7 @@ public class MakeObjectInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ObjectInfo info = new ObjectInfo();
+        //ObjectInfo info = new ObjectInfo();
         string json;
         path = path + info.name + ".json";
 

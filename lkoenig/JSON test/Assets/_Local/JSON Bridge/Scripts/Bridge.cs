@@ -8,13 +8,18 @@ using System.CodeDom;
 using System;
 using System.Collections.Specialized;
 using System.Runtime.Versioning;
-
-//In progress!!!!
-//I may rename this and change the way it's funtioning.
-
+using System.Security.Policy;
 
 public class Bridge : MonoBehaviour
 {
+    //Using the Start to test. 
+    //Eventually I think I would like to have the parse function called from a "reciever" script
+    public string path;
+    public void Start()
+    {
+        ParseJson(path);
+    }
+
     public void ParseJson(string path)
     {
         makeObject(getInfo(path));
@@ -37,7 +42,7 @@ public class Bridge : MonoBehaviour
         GameObject parent = GameObject.Find(info.parentName);
         JsonObject jsonObject;
 
-        myObject = dealWithType(info.type); //fix this later
+        myObject = dealWithType(info.type); //possibly fixed
         myObject.name = info.name;
 
         for(int i=0; i < info.numOfChildren; i++)
@@ -56,8 +61,12 @@ public class Bridge : MonoBehaviour
         myObject.transform.localScale = info.scale;
         myObject.transform.parent = parent.transform;
 
-        Renderer rend = myObject.GetComponent<Renderer>();
-        rend.material = Resources.Load<Material>(info.material); //material must be in a recources folder.
+        if (info.material != "")
+        {
+            Renderer rend = myObject.GetComponent<Renderer>();
+            rend.material = Resources.Load<Material>(info.material); //material must be in a recources folder.
+        }
+        
     }
 
     private GameObject dealWithType(string type)

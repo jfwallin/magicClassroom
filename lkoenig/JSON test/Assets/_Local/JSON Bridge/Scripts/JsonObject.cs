@@ -8,7 +8,7 @@ public class JsonObject : MonoBehaviour
     {
         /*
          * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.
-         * Use "public override void Construct(Planet info){}" to create a specific contruct function in the script.
+         * Use "public override void Construct(ObjectInfo info){}" to create a specific contruct function in the script.
          */
     }
 }

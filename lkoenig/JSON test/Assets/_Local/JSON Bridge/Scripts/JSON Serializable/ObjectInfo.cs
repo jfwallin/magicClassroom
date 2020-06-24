@@ -33,4 +33,7 @@ public class ObjectInfo
      * 
      * Note: Check to see if JSONs can hold JSONs
      */
+
+    public float PulseMin;
+    public float PulseMax;
 }

@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429730899}
   - component: {fileID: 429730900}
+  - component: {fileID: 429730901}
   m_Layer: 0
   m_Name: Logic
   m_TagString: Untagged
@@ -222,22 +223,64 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429730898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   path: Assets/_Local/JSON Bridge/Example/
   info:
-    name: 
-    parentName: 
+    name: LogicFromJson
+    parentName: '[SCENE_MANAGEMENT]'
+    type: empty
     position: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
     material: 
-    numOfChildren: 0
-    children: []
+    numOfChildren: 2
+    children:
+    - name: Sphere
+      parentName: '[_DYNAMIC]'
+      type: sphere
+      position: {x: 1, y: 1, z: 2}
+      scale: {x: 0.25, y: 0.25, z: 0.25}
+      material: Blue
+      numOfChildren: 0
+      children: []
+      numScriptsToAdd: 1
+      scriptsToAdd:
+      - Pulse
+      PulseMin: 0.1
+      PulseMax: 1.5
+    - name: Cube
+      parentName: '[_DYNAMIC]'
+      type: cube
+      position: {x: -1, y: 1, z: 2}
+      scale: {x: 0.5, y: 0.5, z: 0.5}
+      material: Red
+      numOfChildren: 0
+      children: []
+      numScriptsToAdd: 1
+      scriptsToAdd:
+      - Pulse
+      PulseMin: 0.1
+      PulseMax: 1.5
     numScriptsToAdd: 0
     scriptsToAdd: []
+    PulseMin: 0
+    PulseMax: 0
+--- !u!114 &429730901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429730898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd46118f4495294592bf244cabba673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: Assets/_Local/JSON Bridge/Example/LogicFromJson.json
 --- !u!1 &1114127903
 GameObject:
   m_ObjectHideFlags: 0
