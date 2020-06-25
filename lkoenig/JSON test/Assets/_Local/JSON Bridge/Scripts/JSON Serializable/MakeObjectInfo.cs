@@ -7,7 +7,7 @@ using System.IO;
 //Due to the nature of ObjectInfo at this moment this also has to be updated every time a new JsonObject script is added
 public class MakeObjectInfo : MonoBehaviour
 {
-    
+    private Bridge bridge = new Bridge();
     public string path;
     public ObjectInfo info;
 
@@ -26,6 +26,8 @@ public class MakeObjectInfo : MonoBehaviour
         writer.WriteLine(json);
 
         writer.Close();
+
+        bridge.ParseJson(path);
     }
 
     

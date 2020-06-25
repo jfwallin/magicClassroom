@@ -12,6 +12,7 @@ using System.Security.Policy;
 
 public class Bridge : MonoBehaviour
 {
+    /*
     //Using the Start to test. 
     //Eventually I think I would like to have the parse function called from a "reciever" script
     public string path;
@@ -19,7 +20,8 @@ public class Bridge : MonoBehaviour
     {
         ParseJson(path);
     }
-
+    */
+    
     public void ParseJson(string path)
     {
         makeObject(getInfo(path));
@@ -45,16 +47,16 @@ public class Bridge : MonoBehaviour
         myObject = dealWithType(info.type); //possibly fixed
         myObject.name = info.name;
 
-        for(int i=0; i < info.numOfChildren; i++)
-        {
-            makeObject(info.children[i]);
-        }
-
         for(int i = 0; i < info.numScriptsToAdd; i++)
         {
             myObject.AddComponent(Type.GetType(info.scriptsToAdd[i]));
             jsonObject = myObject.GetComponent(info.scriptsToAdd[i]) as JsonObject;
             jsonObject.Construct(info);
+        }
+
+        for (int i = 0; i < info.numOfChildren; i++)
+        {
+            makeObject(info.children[i]);
         }
 
         myObject.transform.position = info.position;

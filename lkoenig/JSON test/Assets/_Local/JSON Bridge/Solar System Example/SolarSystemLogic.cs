@@ -12,7 +12,13 @@ public class SolarSystemLogic : JsonObject
 
     public override void Construct(ObjectInfo info)
     {
-
+        Transmission.SetGlobalFloat(GlobalTimeKey, 1);
+        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
+        //If the variable doesn't exist yet make it and set it to false
+        if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
+        {
+            Transmission.SetGlobalBool(GlobalSpawnedKey, false);
+        }
     }
     
     /*
@@ -33,13 +39,7 @@ public class SolarSystemLogic : JsonObject
     // Start is called before the first frame update
     void Start()
     {
-        Transmission.SetGlobalFloat(GlobalTimeKey, 1);
-        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
-        //If the variable doesn't exist yet make it and set it to false
-        if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
-        {
-            Transmission.SetGlobalBool(GlobalSpawnedKey, false);
-        }
+        
     }
 
     // Update is called once per frame
