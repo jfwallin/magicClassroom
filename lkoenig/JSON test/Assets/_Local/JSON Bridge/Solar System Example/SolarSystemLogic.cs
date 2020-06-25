@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MagicLeapTools;
+using System.Collections.Specialized;
 
 public class SolarSystemLogic : JsonObject
 {
@@ -9,6 +10,9 @@ public class SolarSystemLogic : JsonObject
     private const string GlobalTimeKey = "timeMultiplier";
     private const string GlobalHoldKey = "holdMultiplier";
     private const string GlobalSpawnedKey = "spawned";
+
+    private ControlInput control;// = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
+    private GameObject endPoint;
 
     public override void Construct(ObjectInfo info)
     {
@@ -19,22 +23,25 @@ public class SolarSystemLogic : JsonObject
         {
             Transmission.SetGlobalBool(GlobalSpawnedKey, false);
         }
+
     }
     
     /*
      * Reminder to figure out the controller thing.
      * That might just have to already be a part of the scen though
      * Esspecially since this will always be deployed to the Leaps.
-     * 
-    public ControlInput control;
-    public GameObject endPoint;
+     */
+    
 
     private void Awake()
     {
+        control = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
+        endPoint = GameObject.Find("PointerCursor");
+
         control.OnTriggerDown.AddListener(HandleTriggerDown);
         control.OnBumperDown.AddListener(HandleBumperDown);
     }
-    */
+    
 
     // Start is called before the first frame update
     void Start()
@@ -48,9 +55,7 @@ public class SolarSystemLogic : JsonObject
         
     }
 
-    /*
-     * Again, this is a reminder to deal with it later
-     * 
+    
     private void HandleBumperDown()//Pauses and playes the time.
     {
 
@@ -70,7 +75,8 @@ public class SolarSystemLogic : JsonObject
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey))
         {
-            GameObject solarSystem = MakeSystem("System");
+            GameObject solarSystem = GameObject.Find("System");
+            solarSystem.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
             solarSystem.transform.position = endPoint.transform.position;
             //Transmission.Spawn("Sun Earth Moon", endPoint.transform.position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
 
@@ -82,5 +88,5 @@ public class SolarSystemLogic : JsonObject
             Debug.Log("You should already have a system. spawned = " + Transmission.GetGlobalBool(GlobalSpawnedKey));
         }
     }
-    */
+    
 }
