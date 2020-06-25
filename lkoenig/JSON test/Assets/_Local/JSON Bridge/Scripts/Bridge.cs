@@ -12,15 +12,6 @@ using System.Security.Policy;
 
 public class Bridge : MonoBehaviour
 {
-    /*
-    //Using the Start to test. 
-    //Eventually I think I would like to have the parse function called from a "reciever" script
-    public string path;
-    public void Start()
-    {
-        ParseJson(path);
-    }
-    */
     
     public void ParseJson(string path)
     {
