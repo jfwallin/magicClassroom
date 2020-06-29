@@ -142,8 +142,17 @@ public class SceneControl : MonoBehaviour
         //If the placement arena hasn't already been created, set it up
         if (!placementArena)
         {
-            placementArena = Instantiate(placementArenaPrefab);
-            placementArena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
+            //if this is called ingame with an already placed arena, delete it.
+            if (!arena)
+            {
+                placementArena = Instantiate(placementArenaPrefab);
+                placementArena.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
+            }
+            else
+            {
+                placementArena = GameObject.Instantiate(placementArenaPrefab, arena.transform.position, arena.transform.rotation, GameObject.Find("[_DYNAMIC]").transform);
+                arena.Despawn();
+            }
         }
         //Cache references
         Placement arenaPlc = placementArena.GetComponent<Placement>();
@@ -163,7 +172,7 @@ public class SceneControl : MonoBehaviour
         cIScript.OnHomeButtonTap.AddListener(() => {
             GameObject.Destroy(placementArena);
             headposeMenus.SetActive(true);
-            headposeMenus.transform.Find("PlacementInstructionsPage")?.gameObject.SetActive(true);
+            headposeMenus.transform.GetChild(0).Find("PlacementInstructionsPage")?.gameObject.SetActive(true);
             cIScript.OnTriggerDown.RemoveAllListeners();
             cIScript.OnHomeButtonTap.RemoveAllListeners();
         });
@@ -202,6 +211,7 @@ public class SceneControl : MonoBehaviour
         transmissionComp.OnPeerFound.RemoveListener(OnJoinGame);
         //Despawn transmission objects
         ball.Despawn();
+        placementArena = GameObject.Instantiate(placementArenaPrefab, arena.transform.position, arena.transform.rotation, GameObject.Find("[_DYNAMIC]").transform);
         arena.Despawn();
         //Disable transmission
         transmissionComp.gameObject.SetActive(false);
@@ -236,6 +246,7 @@ public class SceneControl : MonoBehaviour
         paddle = Transmission.Spawn(paddlePrefabPath, pointer.transform.position, pointer.transform.rotation, Vector3.one);
         paddle.ownershipLocked = true;
         paddle.transform.SetParent(GameObject.Find("[_DYNAMIC]").transform);
+        paddle.transform.localScale = new Vector3(0.02f, 0.15f, 0.25f);
         //Make it move with the controller
         ParentConstraint paddlePC = paddle.GetComponent<ParentConstraint>();
         ConstraintSource pointerSource = new ConstraintSource();
@@ -243,12 +254,13 @@ public class SceneControl : MonoBehaviour
         pointerSource.weight = 1f;
         paddlePC.locked = false;
         paddlePC.SetSource(0, pointerSource);
-        paddlePC.translationOffsets[0] = Vector3.zero;
+        paddlePC.translationOffsets[0] = pointer.transform.forward*0.25f;
         paddlePC.rotationOffsets[0] = Vector3.zero;
         paddlePC.locked = true;
         paddlePC.constraintActive = true;
 
         //Disable the pointer
+        pointer.transform.GetChild(0).gameObject.SetActive(false);
         pointer.GetComponent<LineRenderer>().enabled = false;
         pointer.enabled = false;
 
@@ -292,7 +304,7 @@ public class SceneControl : MonoBehaviour
         ball.GetComponent<Ball>().ResetBall(Ball.BallResetType.Neutral);
     }
 
-    //Adjust values on prefab so all instantiated instances match, called after settings are edited
+    //Adjust values on prefab so all instantiated instances match, called after settings are edited and confirmed
     public void ApplySettings()
     {
         if(ball != null)
@@ -302,6 +314,46 @@ public class SceneControl : MonoBehaviour
         }
         ballPrefab.GetComponent<Collider>().material = gameSettings.BallBounciness;
         ballPrefab.transform.localScale = gameSettings.BallSize;
+
+        //Update win Condition so peer can adjust its game settings
+        Transmission.SetGlobalFloat("MaxScore", gameSettings.MaxScore);
+    }
+
+    /// <summary>
+    /// Starts ingame arena replacement session
+    /// </summary>
+    /// <param name="returnMenu">menu gameobject to enable when canceling placement</param>
+    public void InGameStartPlacement(GameObject returnMenu)
+    {
+        //Cache the last set position of the arena in case the placement is canceled
+        Transform lastPosition = arena.transform;
+        placementArena = GameObject.Instantiate(placementArenaPrefab, arena.transform.position, arena.transform.rotation, GameObject.Find("[_DYNAMIC]").transform);
+        arena.Despawn();
+
+        //Cache references
+        Placement arenaPlc = placementArena.GetComponent<Placement>();
+        ControlInput cIScript = pointer.GetComponent<ControlInput>();
+        //Start the placement session, InGameOnPlacementConfirm is called when succesful placement occurs
+        arenaPlc.Place(pointer.transform, new Vector3(3f, 2f, 2f), true, false, InGameOnPlacementConfirm);
+        //When the user pulls the trigger, attempt placement confirmation.
+        cIScript.OnTriggerDown.AddListener(() => {
+            arenaPlc.Confirm();
+            if (!arenaPlc.IsRunning)
+            {
+                cIScript.OnTriggerDown.RemoveAllListeners();
+                cIScript.OnHomeButtonTap.RemoveAllListeners();
+            }
+        });
+        //If home is pressed, remove arena and return to placement instructions
+        cIScript.OnHomeButtonTap.AddListener(() => {
+            GameObject.Destroy(placementArena);
+            //place arena back in old spot
+            arena = Transmission.Spawn(arenaPrefabPath, lastPosition.position, lastPosition.rotation, lastPosition.localScale);
+            headposeMenus.SetActive(true);
+            returnMenu.SetActive(true);
+            cIScript.OnTriggerDown.RemoveAllListeners();
+            cIScript.OnHomeButtonTap.RemoveAllListeners();
+        });
     }
 
     /// <summary>
@@ -337,6 +389,12 @@ public class SceneControl : MonoBehaviour
 
     public void ResetGame()
     {
+        //disable pointer
+        pointer.transform.GetChild(0).gameObject.SetActive(false);
+        pointer.GetComponent<LineRenderer>().enabled = false;
+        pointer.enabled = false;
+        //enable components
+        paddle.gameObject.SetActive(true);
         if (gameOwner)
         {
             ResetBall();
@@ -346,7 +404,6 @@ public class SceneControl : MonoBehaviour
         }
     }
 
-#if UNITY_EDITOR
     /// <summary>
     /// Called by keyboard shortcut to fake connecting to a peer
     /// </summary>
@@ -354,7 +411,6 @@ public class SceneControl : MonoBehaviour
     {
         OnJoinGame("null", 0);
     }
-#endif
     #endregion //Public Functions
 
     #region Event Handlers
@@ -367,6 +423,15 @@ public class SceneControl : MonoBehaviour
     {
         headposeMenus.SetActive(true);
         GameObject confirmPage = headposeMenus.transform.GetChild(0).Find("PlacementConfirmationPage")?.gameObject;
+        if (!confirmPage)
+            Debug.LogWarning("Could not find placement confirmation page");
+        confirmPage.SetActive(true);
+    }
+
+    private void InGameOnPlacementConfirm(Vector3 pos, Quaternion rot)
+    {
+        headposeMenus.SetActive(true);
+        GameObject confirmPage = headposeMenus.transform.GetChild(1).Find("InGameConfrimPage")?.gameObject;
         if (!confirmPage)
             Debug.LogWarning("Could not find placement confirmation page");
         confirmPage.SetActive(true);
@@ -414,27 +479,40 @@ public class SceneControl : MonoBehaviour
     /// <param name="key"></param>
     private void CheckScoreChange(string key)
     {
-        gameOverMenu.SetActive(true);
-        if (key == "scoreRed" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
+        if((key == "scoreRed" || key == "scoreBlue") && Transmission.GetGlobalFloat(key) >= gameSettings.MaxScore)
         {
-            foreach(Transform t in gameOverMenu.transform)
+            //disable paddle
+            paddle.gameObject.SetActive(false);
+            //enable pointer
+            pointer.enabled = true;
+            pointer.GetComponent<LineRenderer>().enabled = true;
+            pointer.transform.GetChild(0).gameObject.SetActive(true);
+            gameOverMenu.SetActive(true);
+            if (key == "scoreRed" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
             {
-                if (t.name == "RedText")
-                    t.gameObject.SetActive(true);
+                foreach (Transform t in gameOverMenu.transform)
+                {
+                    if (t.name == "RedText")
+                        t.gameObject.SetActive(true);
+                    else if(t.name == "BlueText")
+                        t.gameObject.SetActive(false);
+                }
             }
-        }
-        else if (key == "scoreBlue" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
-        {
-            foreach(Transform t in gameOverMenu.transform)
+            else if (key == "scoreBlue" && Transmission.GetGlobalFloat(key) == gameSettings.MaxScore)
             {
-                if (t.name == "BlueText")
-                    t.gameObject.SetActive(true);
+                foreach (Transform t in gameOverMenu.transform)
+                {
+                    if (t.name == "BlueText")
+                        t.gameObject.SetActive(true);
+                    else if(t.name == "RedText")
+                        t.gameObject.SetActive(false);
+                }
             }
         }
     }
 
     /// <summary>
-    /// Sets global pause state
+    /// Sets global pause state, called by Home Button tap event
     /// </summary>
     public void TogglePauseGame()
     {
@@ -461,13 +539,13 @@ public class SceneControl : MonoBehaviour
                 else
                 {
                     pauseMenu.GetComponent<PauseUI>().EnableOwnerButtons();
-                    ball.GetComponent<Ball>().Freeze();
                 }
                 //disable paddle
                 paddle.gameObject.SetActive(false);
                 //enable pointer
                 pointer.enabled = true;
                 pointer.GetComponent<LineRenderer>().enabled = true;
+                pointer.transform.GetChild(0).gameObject.SetActive(true);
             }
             //If game became unpaused
             else if(!Transmission.GetGlobalBool(key))
@@ -478,12 +556,11 @@ public class SceneControl : MonoBehaviour
                     t.gameObject.SetActive(false);
                 }
                 //disable pointer
+                pointer.transform.GetChild(0).gameObject.SetActive(false);
                 pointer.GetComponent<LineRenderer>().enabled = false;
                 pointer.enabled = false;
                 //enable components
                 paddle.gameObject.SetActive(true);
-                if (gameOwner)
-                    ball.GetComponent<Ball>().Unfreeze();
             }
         }
     }

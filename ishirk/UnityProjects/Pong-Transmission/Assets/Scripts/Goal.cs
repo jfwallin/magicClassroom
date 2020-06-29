@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MagicLeapTools;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Goal : MonoBehaviour
 {
@@ -23,20 +24,20 @@ public class Goal : MonoBehaviour
         get
         {
             if (goalType == GoalType.Red)
-                return "scoreRed";
-            else //goalType == GoalType.Blue
                 return "scoreBlue";
+            else //goalType == GoalType.Blue
+                return "scoreRed";
         }
     }
 
     //Called when a collider hits the goal, if it is the ball it increments the score and resets the ball
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Ball")
+        if(other.gameObject.name == "Ball(Clone)")
         {
-            if(scoreKey == "scoreRed")
+            if(goalType == GoalType.Red)
                 other.GetComponent<Ball>().ResetBall(Ball.BallResetType.BlueSide);
-            else //scoreKey == "scoreBlue"
+            else if(goalType == GoalType.Blue)
                 other.GetComponent<Ball>().ResetBall(Ball.BallResetType.RedSide);
             Transmission.SetGlobalFloat(scoreKey, Transmission.GetGlobalFloat(scoreKey) + 1f);
         }

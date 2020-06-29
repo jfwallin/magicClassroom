@@ -554,7 +554,7 @@ MonoBehaviour:
   ownershipLocked: 1
   resourceFileName: 
   creator: 
-  guid: 
+  guid: 1a334fba-ed9f-4f38-8c38-4673c87d93e8
   localPosition: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0, w: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -583,7 +583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6679380271410000146}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 1.988}
+  m_LocalPosition: {x: 0, y: 1.5, z: 1.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2452931762789042912}

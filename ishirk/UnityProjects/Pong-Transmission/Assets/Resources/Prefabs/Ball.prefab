@@ -90,7 +90,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7493585751379889739}
-  m_Material: {fileID: 13400000, guid: a3635683bdfeaef449900b5908a400f6, type: 2}
+  m_Material: {fileID: 13400000, guid: 5ab473cb23be57242a64d2ce6b9ed49a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -132,7 +132,7 @@ MonoBehaviour:
   ownershipLocked: 0
   resourceFileName: 
   creator: 
-  guid: 0513eb1e-8494-4254-9f77-c73b89039bb6
+  guid: 70b3b4a1-46fd-416b-b51a-f593e38382d0
   localPosition: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0, w: 0}
   targetScale: {x: 0, y: 0, z: 0}

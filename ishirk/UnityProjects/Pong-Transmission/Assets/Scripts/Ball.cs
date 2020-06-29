@@ -36,33 +36,13 @@ public class Ball : MonoBehaviour
         //Reset ball values
         transform.rotation = Quaternion.identity;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         //move ball back to correct side of the arena
         if (type == BallResetType.RedSide)
-            transform.position = ((Vector3)sc.ArenaTransform?.position) + sc.ArenaTransform.TransformPoint(new Vector3(0.3f, 1.25f, 0));
+            transform.position = ((Vector3)sc.ArenaTransform?.position) + new Vector3(0.3f, 1.25f, 0);
         else if (type == BallResetType.BlueSide)
-            transform.position = ((Vector3)sc.ArenaTransform?.position) + sc.ArenaTransform.TransformPoint(new Vector3(-0.3f, 1.25f, 0));
+            transform.position = ((Vector3)sc.ArenaTransform?.position) + new Vector3(-0.3f, 1.25f, 0);
         else //reset type is neutral
             transform.position = ((Vector3)sc.ArenaTransform?.position) + new Vector3(0, 1.25f, 0);
-    }
-
-    //The following functions may be replaced by gameObject.SetActive(false) called externally
-    /// <summary>
-    /// Called when the game is paused
-    /// </summary>
-    public void Freeze()
-    {
-        storedVel = rb.velocity;
-        storedAngVel = rb.angularVelocity;
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-    }
-
-    /// <summary>
-    /// Called when the game is unpaused
-    /// </summary>
-    public void Unfreeze()
-    {
-        rb.velocity = storedVel;
-        rb.angularVelocity = storedAngVel;
     }
 }

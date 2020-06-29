@@ -26,7 +26,7 @@ public class PauseUI : MonoBehaviour
 
     public void DisableOwnerButtons()
     {
-        exitButton.interactable = false;
+        //exitButton.interactable = false;
         resetBallButton.interactable = false;
         replaceFieldButton.interactable = false;
         settingsButton.interactable = false;
@@ -34,7 +34,7 @@ public class PauseUI : MonoBehaviour
 
     public void EnableOwnerButtons()
     {
-        exitButton.interactable = true;
+        //exitButton.interactable = true;
         resetBallButton.interactable = true;
         replaceFieldButton.interactable = true;
         settingsButton.interactable = true;

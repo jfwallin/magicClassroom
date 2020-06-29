@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Dynamic;
+using MagicLeapTools;
 
 public enum Size { Small, Normal, Large };
 public enum Bounciness { NotVery, Normal, Very };
@@ -134,4 +135,19 @@ public class Settings : ScriptableObject
         return ballBounciness.ToString();
     }
     #endregion //Public Functions
+
+    #region Event Handlers
+    private void OnFloatChanged(string key)
+    {
+        if(key == "MaxScore")
+        {
+            float newScore = Mathf.Clamp(Transmission.GetGlobalFloat(key), 5f, 10f);
+            if(newScore != maxScore)
+            {
+                maxScore = (int) newScore;
+                OnSettingsChanged("MaxScore", maxScore.ToString());
+            }
+        }
+    }
+    #endregion
 }

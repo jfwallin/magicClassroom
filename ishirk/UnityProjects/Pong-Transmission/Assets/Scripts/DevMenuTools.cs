@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using MagicLeapTools;
 
-#if UNITY_EDITOR
-public class DevMenuTools
+public class DevMenuTools : MonoBehaviour
 {
     //[MenuItem("Tools/Initialize Scene")]
     //private static void InitializeScene()
@@ -14,7 +13,7 @@ public class DevMenuTools
     //    ResetHeadposeMenus();
 
     //}
-
+#if UNITY_EDITOR
     [MenuItem("Tools/Reset Headpose Menus &m")]
     private static void ResetHeadposeMenus()
     {
@@ -68,6 +67,14 @@ public class DevMenuTools
         }
     }
 
+    [MenuItem("Tools/Fake Player Readiness &#p")]
+    private static void FakePlayerReadiness()
+    {
+        Debug.Log("Faking player readiness");
+        Transmission.SetGlobalBool("HostReady", true);
+        Transmission.SetGlobalBool("PeerReady", true);
+    }
+
     [MenuItem("Tools/Call On Handle Peer Found &p")]
     private static void OnHandlePeerFound()
     {
@@ -75,12 +82,19 @@ public class DevMenuTools
         GameObject.Find("SceneControl").GetComponent<SceneControl>().FakeConnection();
             Debug.Log("Peer Faked");
     }
+#endif
 
-    [MenuItem("Tools/Fake Player Readiness &#p")]
-    private static void FakePlayerReadiness()
+    public void PublicOnHandlePeerFound()
     {
+        Debug.Log("Faking finding a peer");
+        GameObject.Find("SceneControl").GetComponent<SceneControl>().FakeConnection();
+        Debug.Log("Peer Faked");
+    }
+
+    public void PublicFakePlayerReadiness()
+    {
+        Debug.Log("Faking player readiness");
         Transmission.SetGlobalBool("HostReady", true);
         Transmission.SetGlobalBool("PeerReady", true);
     }
-}
-#endif
+}  
