@@ -4,17 +4,18 @@ using UnityEngine;
 using System.IO;
 
 
-//Due to the nature of ObjectInfo at this moment this also has to be updated every time a new JsonObject script is added
+//This script allows you to test the Bridge without a outside source.
+//You can create the JSON in the inspector and then test if it is working corrrectly in one run in the Unity Editor.
 public class MakeObjectInfo : MonoBehaviour
 {
     private Bridge bridge = new Bridge();
-    public string path;
+
+    public string path; //Where is/will your json be located?
     public ObjectInfo info;
 
     // Start is called before the first frame update
     void Start()
     {
-        //ObjectInfo info = new ObjectInfo();
         string json;
         path = path + info.name + ".json";
 

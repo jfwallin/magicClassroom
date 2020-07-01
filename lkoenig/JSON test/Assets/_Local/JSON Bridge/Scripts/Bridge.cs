@@ -12,15 +12,16 @@ using System.Security.Policy;
 
 public class Bridge : MonoBehaviour
 {
-    
+    //ParseJson can be called from outside the class to trigger the methods included here
     public void ParseJson(string path)
     {
         makeObject(getInfo(path));
     }
 
+    //getInfo serializes an ObjectInfo object from a json at a path
     private ObjectInfo getInfo(string path)
     {
-        StreamReader reader = new StreamReader(path);
+        StreamReader reader = new StreamReader(path);  
         string line;
         ObjectInfo info = new ObjectInfo();
 
@@ -29,6 +30,8 @@ public class Bridge : MonoBehaviour
         return info;
     }
 
+    //makeeObject goes through the json and creates the scene and all conected scripts from it.
+    //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
     private void makeObject(ObjectInfo info)
     {
         GameObject myObject;
@@ -62,6 +65,7 @@ public class Bridge : MonoBehaviour
         
     }
 
+    //dealWithType allows us to instantiate various objects.
     private GameObject dealWithType(string type)
     {
         GameObject myObject;
@@ -86,11 +90,14 @@ public class Bridge : MonoBehaviour
                 myObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
                 break;
             default:
-                myObject = new GameObject();
+                //myObject = new GameObject(); //This line is for if you want the default to be an empty game object
+                myObject = (GameObject)Instantiate(Resources.Load(type)); //This line is for if you want the default to be loading a prefab
+                //Note that the above line requires your prefab to be located in a resources folder.
                 break;
         }
 
         return myObject;
     }
+    //This whole meathod will likely have to change slightly when we start dealing with Transmission.
 
 }

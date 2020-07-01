@@ -11,7 +11,7 @@ using UnityEngine;
 [System.Serializable]
 public class ObjectInfo
 {
-    public string name;
+    public string name; 
     public string parentName;
     public string type; 
 
@@ -19,28 +19,31 @@ public class ObjectInfo
     public Vector3 scale;
     public string material;
 
-    public int numOfChildren;
-    public ObjectInfo[] children;
 
     public int numScriptsToAdd;
     public string[] scriptsToAdd;
+
+    public int numOfChildren;
+    public ObjectInfo[] children;
+
 
     //Script variables follow
 
     /*A note: This is hardcoded for each script rn
      * That means that every time you add new scripts you have to manually add the appropriet variables here.
-     * It aslo means you have to rewrite any respective JSONs.
+     * You then need to make sure that the "construct" method is properly overridded and that you are assigning all the variables you should.
      * 
      * Note: Check to see if JSONs can hold JSONs
      */
 
+    //Pulse: this is from the "Example"
     public float PulseMin;
     public float PulseMax;
 
-    //Orbit
+    //Orbit: this is from the "Solar System Example"
     public string OrbitCenter;
     public float OrbitRotateDegree;
 
-    //Rotate
+    //Rotate: this is from the "Solar System Example"
     public Vector3 RotateRotationAngle;
 }
