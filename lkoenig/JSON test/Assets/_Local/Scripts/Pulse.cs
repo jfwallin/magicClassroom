@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pulse : JsonObject
+public class Pulse : InheritTest
 {
     public float min, max;
     private bool grow = true;
@@ -12,12 +12,6 @@ public class Pulse : JsonObject
     void Start()
     {
         
-    }
-
-    public override void Construct(ObjectInfo info)
-    {
-        min = info.PulseMin;
-        max = info.PulseMax;
     }
 
     // Update is called once per frame
@@ -41,4 +35,9 @@ public class Pulse : JsonObject
         }
     }
 
+    public override void test()
+    {
+        base.test();
+        UnityEngine.Debug.Log("Override Test.");
+    }
 }
