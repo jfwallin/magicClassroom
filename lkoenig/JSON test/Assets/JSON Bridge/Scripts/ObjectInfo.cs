@@ -17,7 +17,7 @@ public class ObjectInfo
 
     public Vector3 position;
     public Vector3 scale;
-    public string material;
+    public string material; //Leaving material blank won't cause any problems and just won't render a material. 
 
 
     public int numScriptsToAdd;
