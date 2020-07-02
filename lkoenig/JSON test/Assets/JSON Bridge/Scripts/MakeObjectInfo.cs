@@ -21,7 +21,7 @@ public class MakeObjectInfo : MonoBehaviour
 
         StreamWriter writer = new StreamWriter(path);
         
-        json = JsonUtility.ToJson(info);
+        json = JsonUtility.ToJson(info, true);
         Debug.Log("json file is: " + json);
 
         writer.WriteLine(json);

@@ -25,7 +25,7 @@ public class Bridge : MonoBehaviour
         string line;
         ObjectInfo info = new ObjectInfo();
 
-        line = reader.ReadLine();
+        line = reader.ReadToEnd();
         info = JsonUtility.FromJson<ObjectInfo>(line);
         return info;
     }

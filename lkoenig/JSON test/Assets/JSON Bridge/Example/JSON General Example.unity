@@ -194,7 +194,6 @@ GameObject:
   m_Component:
   - component: {fileID: 429730899}
   - component: {fileID: 429730900}
-  - component: {fileID: 429730901}
   m_Layer: 0
   m_Name: Logic
   m_TagString: Untagged
@@ -223,12 +222,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429730898}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Assets/_Local/JSON Bridge/Example/
+  path: Assets/JSON Bridge/Example/
   info:
     name: LogicFromJson
     parentName: '[SCENE_MANAGEMENT]'
@@ -236,6 +235,8 @@ MonoBehaviour:
     position: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
     material: 
+    numScriptsToAdd: 0
+    scriptsToAdd: []
     numOfChildren: 2
     children:
     - name: Sphere
@@ -244,11 +245,11 @@ MonoBehaviour:
       position: {x: 1, y: 1, z: 2}
       scale: {x: 0.25, y: 0.25, z: 0.25}
       material: Blue
-      numOfChildren: 0
-      children: []
       numScriptsToAdd: 1
       scriptsToAdd:
       - Pulse
+      numOfChildren: 0
+      children: []
       PulseMin: 0.1
       PulseMax: 1.5
       OrbitCenter: 
@@ -260,35 +261,21 @@ MonoBehaviour:
       position: {x: -1, y: 1, z: 2}
       scale: {x: 0.5, y: 0.5, z: 0.5}
       material: Red
-      numOfChildren: 0
-      children: []
       numScriptsToAdd: 1
       scriptsToAdd:
       - Pulse
+      numOfChildren: 0
+      children: []
       PulseMin: 0.1
       PulseMax: 1.5
       OrbitCenter: 
       OrbitRotateDegree: 0
       RotateRotationAngle: {x: 0, y: 0, z: 0}
-    numScriptsToAdd: 0
-    scriptsToAdd: []
     PulseMin: 0
     PulseMax: 0
     OrbitCenter: 
     OrbitRotateDegree: 0
     RotateRotationAngle: {x: 0, y: 0, z: 0}
---- !u!114 &429730901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429730898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd46118f4495294592bf244cabba673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &618003120
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &618003121
 Transform:
   m_ObjectHideFlags: 0
@@ -349,7 +336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &885653654
 Transform:
   m_ObjectHideFlags: 0
@@ -724,10 +711,20 @@ PrefabInstance:
       propertyPath: appKey
       value: SpaceSON
       objectReference: {fileID: 0}
+    - target: {fileID: 4006321171478279076, guid: 73ecca7d038a8314d8f6e3d68ba973e1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7599050699442747582, guid: 73ecca7d038a8314d8f6e3d68ba973e1,
         type: 3}
       propertyPath: m_Name
       value: Transmission
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599050699442747582, guid: 73ecca7d038a8314d8f6e3d68ba973e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ecca7d038a8314d8f6e3d68ba973e1, type: 3}
