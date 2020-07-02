@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -15,6 +16,8 @@ public class Ball : MonoBehaviour
 
     private Vector3 size;                         //values controlled by the settings object
     private PhysicMaterial bounciness = null;
+
+    public event Action onBallReset;
     void Awake()
     {
         //Initialize and check references
@@ -33,6 +36,7 @@ public class Ball : MonoBehaviour
     /// <param name="type">which starting position is it moving to</param>
     public void ResetBall(BallResetType type)
     {
+        onBallReset.Invoke();
         //Reset ball values
         transform.rotation = Quaternion.identity;
         GetComponent<Rigidbody>().velocity = Vector3.zero;

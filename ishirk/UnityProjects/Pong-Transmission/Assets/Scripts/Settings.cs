@@ -14,6 +14,8 @@ public class Settings : ScriptableObject
     public event Action<string, string> OnSettingsChanged;
 
     [SerializeField]
+    private bool screenReader;
+    [SerializeField]
     private int maxScore;
     [SerializeField]
     private Size ballSize;
@@ -59,9 +61,17 @@ public class Settings : ScriptableObject
     private void Awake()
     {
         //Initializations
+        screenReader = false;
         maxScore = 10;
         ballSize = Size.Normal;
         ballBounciness = Bounciness.Normal;
+
+        Transmission.Instance.OnGlobalFloatChanged.AddListener(OnFloatChanged);
+    }
+
+    private void OnDisable()
+    {
+        Transmission.Instance.OnGlobalFloatChanged.RemoveListener(OnFloatChanged);
     }
 
     #region Public Functions
@@ -123,6 +133,12 @@ public class Settings : ScriptableObject
         if (maxScore > 5)
             maxScore--;
         OnSettingsChanged("MaxScore", maxScore.ToString());
+    }
+
+    public void ToggleScreenReader()
+    {
+        screenReader = !screenReader;
+        OnSettingsChanged("ScreenReader", screenReader.ToString());
     }
 
     public string GetBallSizeName()
