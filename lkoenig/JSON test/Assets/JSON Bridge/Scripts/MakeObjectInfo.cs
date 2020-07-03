@@ -21,7 +21,7 @@ public class MakeObjectInfo : MonoBehaviour
 
         StreamWriter writer = new StreamWriter(path);
         
-        json = JsonUtility.ToJson(info, true);
+        json = JsonUtility.ToJson(info, true); //Uses Unity's built in Json serializer
         Debug.Log("json file is: " + json);
 
         writer.WriteLine(json);
