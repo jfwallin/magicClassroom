@@ -172,14 +172,19 @@ MonoBehaviour:
     position: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
     material: 
+    numScriptsToAdd: 1
+    scriptsToAdd:
+    - SolarSystemLogic
     numOfChildren: 1
     children:
     - name: System
       parentName: '[_DYNAMIC]'
       type: empty
-      position: {x: 1, y: 1, z: 2}
+      position: {x: 1, y: 15, z: 2}
       scale: {x: 1, y: 1, z: 1}
       material: 
+      numScriptsToAdd: 0
+      scriptsToAdd: []
       numOfChildren: 3
       children:
       - name: Sun
@@ -188,12 +193,12 @@ MonoBehaviour:
         position: {x: 0, y: 0, z: 0}
         scale: {x: 1, y: 1, z: 1}
         material: Sun
-        numOfChildren: 0
-        children: []
         numScriptsToAdd: 2
         scriptsToAdd:
         - Orbit
         - Rotate
+        numOfChildren: 0
+        children: []
         PulseMin: 0
         PulseMax: 0
         OrbitCenter: 
@@ -205,12 +210,12 @@ MonoBehaviour:
         position: {x: 0, y: 0, z: -2}
         scale: {x: 0.25, y: 0.25, z: 0.25}
         material: Earth
-        numOfChildren: 0
-        children: []
         numScriptsToAdd: 2
         scriptsToAdd:
         - Orbit
         - Rotate
+        numOfChildren: 0
+        children: []
         PulseMin: 0
         PulseMax: 0
         OrbitCenter: Sun
@@ -222,27 +227,22 @@ MonoBehaviour:
         position: {x: 0, y: 0, z: -1.75}
         scale: {x: 0.06798, y: 0.06798, z: 0.06798}
         material: Moon
-        numOfChildren: 0
-        children: []
         numScriptsToAdd: 2
         scriptsToAdd:
         - Orbit
         - Rotate
+        numOfChildren: 0
+        children: []
         PulseMin: 0
         PulseMax: 0
         OrbitCenter: Earth
         OrbitRotateDegree: 2.66667
         RotateRotationAngle: {x: 0, y: 2.44898, z: 0}
-      numScriptsToAdd: 0
-      scriptsToAdd: []
       PulseMin: 0
       PulseMax: 0
       OrbitCenter: 
       OrbitRotateDegree: 0
       RotateRotationAngle: {x: 0, y: 0, z: 0}
-    numScriptsToAdd: 1
-    scriptsToAdd:
-    - SolarSystemLogic
     PulseMin: 0
     PulseMax: 0
     OrbitCenter: 
