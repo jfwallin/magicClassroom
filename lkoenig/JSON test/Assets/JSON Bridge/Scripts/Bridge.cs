@@ -12,7 +12,6 @@ using System.Security.Policy;
 
 
 public class Bridge 
-
 {
     //ParseJson can be called from outside the class to trigger the methods included here
     public void ParseJson(string path)
