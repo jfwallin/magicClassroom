@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Assets/_Local/JSON Bridge/Solar System Example/
+  path: Assets/JSON Bridge/Solar System Example/
   info:
     name: LogicFromJson
     parentName: '[SCENE_MANAGEMENT]'
@@ -199,11 +199,12 @@ MonoBehaviour:
         - Rotate
         numOfChildren: 0
         children: []
-        PulseMin: 0
-        PulseMax: 0
-        OrbitCenter: 
-        OrbitRotateDegree: 0
-        RotateRotationAngle: {x: 0, y: 2.942379, z: 0}
+        scriptVariables:
+          PulseMin: 0
+          PulseMax: 0
+          OrbitCenter: 
+          OrbitRotateDegree: 0
+          RotateRotationAngle: {x: 0, y: 2.942379, z: 0}
       - name: Earth
         parentName: System
         type: sphere
@@ -216,11 +217,12 @@ MonoBehaviour:
         - Rotate
         numOfChildren: 0
         children: []
-        PulseMin: 0
-        PulseMax: 0
-        OrbitCenter: Sun
-        OrbitRotateDegree: 0.1971199
-        RotateRotationAngle: {x: 0, y: 72, z: 0}
+        scriptVariables:
+          PulseMin: 0
+          PulseMax: 0
+          OrbitCenter: Sun
+          OrbitRotateDegree: 0.1971199
+          RotateRotationAngle: {x: 0, y: 72, z: 0}
       - name: Moon
         parentName: System
         type: sphere
@@ -233,21 +235,24 @@ MonoBehaviour:
         - Rotate
         numOfChildren: 0
         children: []
+        scriptVariables:
+          PulseMin: 0
+          PulseMax: 0
+          OrbitCenter: Earth
+          OrbitRotateDegree: 2.666667
+          RotateRotationAngle: {x: 0, y: 2.44898, z: 0}
+      scriptVariables:
         PulseMin: 0
         PulseMax: 0
-        OrbitCenter: Earth
-        OrbitRotateDegree: 2.66667
-        RotateRotationAngle: {x: 0, y: 2.44898, z: 0}
+        OrbitCenter: 
+        OrbitRotateDegree: 0
+        RotateRotationAngle: {x: 0, y: 0, z: 0}
+    scriptVariables:
       PulseMin: 0
       PulseMax: 0
       OrbitCenter: 
       OrbitRotateDegree: 0
       RotateRotationAngle: {x: 0, y: 0, z: 0}
-    PulseMin: 0
-    PulseMax: 0
-    OrbitCenter: 
-    OrbitRotateDegree: 0
-    RotateRotationAngle: {x: 0, y: 0, z: 0}
 --- !u!1001 &241266520
 PrefabInstance:
   m_ObjectHideFlags: 0
