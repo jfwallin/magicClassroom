@@ -78,6 +78,7 @@ public class SolarSystemLogic : JsonObject
             GameObject solarSystem = GameObject.Find("System");
             solarSystem.transform.position = endPoint.transform.position;
             solarSystem.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
             
             //Transmission.Spawn("Sun Earth Moon", endPoint.transform.position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
 
