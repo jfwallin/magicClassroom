@@ -10,7 +10,9 @@ using System.Collections.Specialized;
 using System.Runtime.Versioning;
 using System.Security.Policy;
 
-public class Bridge : MonoBehaviour
+
+public class Bridge 
+
 {
     //ParseJson can be called from outside the class to trigger the methods included here
     public void ParseJson(string path)
@@ -45,7 +47,8 @@ public class Bridge : MonoBehaviour
         {
             myObject.AddComponent(Type.GetType(info.scriptsToAdd[i]));
             jsonObject = myObject.GetComponent(info.scriptsToAdd[i]) as JsonObject;
-            jsonObject.Construct(info);
+            jsonObject.Construct(info.scriptVariables);
+
         }
 
         for (int i = 0; i < info.numOfChildren; i++)
@@ -91,13 +94,15 @@ public class Bridge : MonoBehaviour
                 break;
             default:
                 //myObject = new GameObject(); //This line is for if you want the default to be an empty game object
-                myObject = (GameObject)Instantiate(Resources.Load(type)); //This line is for if you want the default to be loading a prefab
+
+                myObject = GameObject.Instantiate(Resources.Load(type)) as GameObject; //This line is for if you want the default to be loading a prefab
                 //Note that the above line requires your prefab to be located in a resources folder.
                 break;
         }
 
         return myObject;
     }
-    //This whole meathod will likely have to change slightly when we start dealing with Transmission.
+    //This whole method will likely have to change slightly when we start dealing with Transmission.
+
 
 }

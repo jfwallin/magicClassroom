@@ -14,7 +14,7 @@ public class Pulse : JsonObject
         
     }
 
-    public override void Construct(ObjectInfo info)
+    public override void Construct(ScriptVariables info)
     {
         min = info.PulseMin;
         max = info.PulseMax;

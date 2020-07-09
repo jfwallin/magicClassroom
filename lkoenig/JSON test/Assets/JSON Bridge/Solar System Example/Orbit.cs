@@ -16,7 +16,7 @@ public class Orbit : JsonObject
     private Vector3 offset;
 
     //I'm fucking brilliant
-    public override void Construct(ObjectInfo info)
+    public override void Construct(ScriptVariables info)
     {
         center = GameObject.Find(info.OrbitCenter);
         rotateDegree = info.OrbitRotateDegree;
@@ -29,19 +29,20 @@ public class Orbit : JsonObject
         {
             center = gameObject;
             rotateDegree = 0.0f;
-        }
-        
-        offset = transform.position - center.transform.position; //radius of orbit
+        } 
     }
 
     private void FixedUpdate() //physics
     {
+        offset = transform.position - center.transform.position; //radius of orbit
+
         Vector3 centerVector = center.transform.position; //get position relative to world 
         transform.position = offset + centerVector;
 
         transform.RotateAround(centerVector, Vector3.up, rotateDegree * Transmission.GetGlobalFloat("timeMultiplier") * Time.deltaTime);
 
-        offset = transform.position - center.transform.position; //update offset
+        
     }
     
+
 }

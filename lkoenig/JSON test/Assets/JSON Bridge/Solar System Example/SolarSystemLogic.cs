@@ -14,7 +14,7 @@ public class SolarSystemLogic : JsonObject
     private ControlInput control;// = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
     private GameObject endPoint;
 
-    public override void Construct(ObjectInfo info)
+    public override void Construct(ScriptVariables info)
     {
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);
         Transmission.SetGlobalFloat(GlobalHoldKey, 1);
@@ -76,8 +76,10 @@ public class SolarSystemLogic : JsonObject
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey))
         {
             GameObject solarSystem = GameObject.Find("System");
-            solarSystem.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
             solarSystem.transform.position = endPoint.transform.position;
+            solarSystem.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
+            
             //Transmission.Spawn("Sun Earth Moon", endPoint.transform.position, Quaternion.Euler(0, 0, 0), new Vector3(0.25f, 0.25f, 0.25f));
 
             Transmission.SetGlobalBool(GlobalSpawnedKey, true);

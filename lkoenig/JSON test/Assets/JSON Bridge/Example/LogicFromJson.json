@@ -38,14 +38,16 @@
             ],
             "numOfChildren": 0,
             "children": [],
-            "PulseMin": 0.10000000149011612,
-            "PulseMax": 1.5,
-            "OrbitCenter": "",
-            "OrbitRotateDegree": 0.0,
-            "RotateRotationAngle": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0
+            "scriptVariables": {
+                "PulseMin": 0.10000000149011612,
+                "PulseMax": 1.5,
+                "OrbitCenter": "",
+                "OrbitRotateDegree": 0.0,
+                "RotateRotationAngle": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
             }
         },
         {
@@ -69,24 +71,28 @@
             ],
             "numOfChildren": 0,
             "children": [],
-            "PulseMin": 0.10000000149011612,
-            "PulseMax": 1.5,
-            "OrbitCenter": "",
-            "OrbitRotateDegree": 0.0,
-            "RotateRotationAngle": {
-                "x": 0.0,
-                "y": 0.0,
-                "z": 0.0
+            "scriptVariables": {
+                "PulseMin": 0.25,
+                "PulseMax": 0.75,
+                "OrbitCenter": "",
+                "OrbitRotateDegree": 0.0,
+                "RotateRotationAngle": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
             }
         }
     ],
-    "PulseMin": 0.0,
-    "PulseMax": 0.0,
-    "OrbitCenter": "",
-    "OrbitRotateDegree": 0.0,
-    "RotateRotationAngle": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+    "scriptVariables": {
+        "PulseMin": 0.0,
+        "PulseMax": 0.0,
+        "OrbitCenter": "",
+        "OrbitRotateDegree": 0.0,
+        "RotateRotationAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
     }
 }

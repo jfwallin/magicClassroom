@@ -27,23 +27,10 @@ public class ObjectInfo
     public ObjectInfo[] children;
 
 
-    //Script variables follow
+    //Script variables go into this file
+    public ScriptVariables scriptVariables;
 
-    /*A note: This is hardcoded for each script rn
-     * That means that every time you add new scripts you have to manually add the appropriet variables here.
-     * You then need to make sure that the "construct" method is properly overridded and that you are assigning all the variables you should.
-     * 
-     * Note: Check to see if JSONs can hold JSONs
-     */
+   
 
-    //Pulse: this is from the "Example"
-    public float PulseMin;
-    public float PulseMax;
-
-    //Orbit: this is from the "Solar System Example"
-    public string OrbitCenter;
-    public float OrbitRotateDegree;
-
-    //Rotate: this is from the "Solar System Example"
-    public Vector3 RotateRotationAngle;
+    
 }
