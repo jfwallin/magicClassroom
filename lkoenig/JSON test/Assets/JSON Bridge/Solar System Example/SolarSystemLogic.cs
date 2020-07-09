@@ -14,7 +14,7 @@ public class SolarSystemLogic : JsonObject
     private ControlInput control;// = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
     private GameObject endPoint;
 
-    public override void Construct(ObjectInfo info)
+    public override void Construct(ScriptVariables info)
     {
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);
         Transmission.SetGlobalFloat(GlobalHoldKey, 1);

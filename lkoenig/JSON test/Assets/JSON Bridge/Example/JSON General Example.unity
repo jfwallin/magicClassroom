@@ -250,11 +250,12 @@ MonoBehaviour:
       - Pulse
       numOfChildren: 0
       children: []
-      PulseMin: 0.1
-      PulseMax: 1.5
-      OrbitCenter: 
-      OrbitRotateDegree: 0
-      RotateRotationAngle: {x: 0, y: 0, z: 0}
+      scriptVariables:
+        PulseMin: 0.1
+        PulseMax: 1.5
+        OrbitCenter: 
+        OrbitRotateDegree: 0
+        RotateRotationAngle: {x: 0, y: 0, z: 0}
     - name: Cube
       parentName: '[_DYNAMIC]'
       type: cube
@@ -266,16 +267,18 @@ MonoBehaviour:
       - Pulse
       numOfChildren: 0
       children: []
-      PulseMin: 0.1
-      PulseMax: 1.5
+      scriptVariables:
+        PulseMin: 0.25
+        PulseMax: 0.75
+        OrbitCenter: 
+        OrbitRotateDegree: 0
+        RotateRotationAngle: {x: 0, y: 0, z: 0}
+    scriptVariables:
+      PulseMin: 0
+      PulseMax: 0
       OrbitCenter: 
       OrbitRotateDegree: 0
       RotateRotationAngle: {x: 0, y: 0, z: 0}
-    PulseMin: 0
-    PulseMax: 0
-    OrbitCenter: 
-    OrbitRotateDegree: 0
-    RotateRotationAngle: {x: 0, y: 0, z: 0}
 --- !u!1 &618003120
 GameObject:
   m_ObjectHideFlags: 0

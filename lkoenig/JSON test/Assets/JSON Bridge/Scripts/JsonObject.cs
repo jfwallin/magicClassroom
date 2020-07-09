@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JsonObject : MonoBehaviour
 {
-    public virtual void Construct(ObjectInfo info)
+    public virtual void Construct(ScriptVariables info)
     {
         /*
          * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.

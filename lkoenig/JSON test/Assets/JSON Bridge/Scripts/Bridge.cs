@@ -46,7 +46,7 @@ public class Bridge
         {
             myObject.AddComponent(Type.GetType(info.scriptsToAdd[i]));
             jsonObject = myObject.GetComponent(info.scriptsToAdd[i]) as JsonObject;
-            jsonObject.Construct(info);
+            jsonObject.Construct(info.scriptVariables);
         }
 
         for (int i = 0; i < info.numOfChildren; i++)

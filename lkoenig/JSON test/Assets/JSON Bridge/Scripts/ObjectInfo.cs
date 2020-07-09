@@ -28,6 +28,7 @@ public class ObjectInfo
 
 
     //Script variables follow
+    public ScriptVariables scriptVariables;
 
     /*A note: This is hardcoded for each script rn
      * That means that every time you add new scripts you have to manually add the appropriet variables here.
@@ -37,14 +38,5 @@ public class ObjectInfo
      * Where ScriptName is the actual name of the script, and VariableName perfectly matches the name of the corresponding variable in said script.
      */
 
-    //Pulse: this is from the "Example"
-    public float PulseMin;
-    public float PulseMax;
-
-    //Orbit: this is from the "Solar System Example"
-    public string OrbitCenter;
-    public float OrbitRotateDegree;
-
-    //Rotate: this is from the "Solar System Example"
-    public Vector3 RotateRotationAngle;
+    
 }

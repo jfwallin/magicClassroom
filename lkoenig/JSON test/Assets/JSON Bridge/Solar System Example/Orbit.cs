@@ -16,7 +16,7 @@ public class Orbit : JsonObject
     private Vector3 offset;
 
     //I'm fucking brilliant
-    public override void Construct(ObjectInfo info)
+    public override void Construct(ScriptVariables info)
     {
         center = GameObject.Find(info.OrbitCenter);
         rotateDegree = info.OrbitRotateDegree;
