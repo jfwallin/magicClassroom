@@ -27,16 +27,10 @@ public class ObjectInfo
     public ObjectInfo[] children;
 
 
-    //Script variables follow
+    //Script variables go into this file
     public ScriptVariables scriptVariables;
 
-    /*A note: This is hardcoded for each script rn
-     * That means that every time you add new scripts you have to manually add the appropriet variables here.
-     * You then need to make sure that the "construct" method is properly overridded and that you are assigning all the variables you should.
-     * 
-     * Naming convenion: when adding variables to this part of the JSON they should be named as ScriptNameVariableName. 
-     * Where ScriptName is the actual name of the script, and VariableName perfectly matches the name of the corresponding variable in said script.
-     */
+   
 
     
 }
