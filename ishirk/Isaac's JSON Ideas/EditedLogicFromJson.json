@@ -1,0 +1,94 @@
+{
+    "objects": [
+        {
+            "name": "LogicFromJson",
+            "parentName": "[SCENE_MANAGEMENT]",
+            "primitiveType": "empty",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "numComponentsToAdd": 0,
+            "componentsToAdd": []
+        },
+        {
+            "name": "Sphere",
+            "parentName": "[_DYNAMIC]",
+            "primitiveType": "sphere",
+            "position": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 2.0
+            },
+            "scale": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.25
+            },
+            "numComponentsToAdd": 3,
+            //component JSON is encased in quotes so it is only parsed as a string the first time,
+            //so that when it is parsed twice more, once for its name, again for its variables,
+            //you don't have to reparse this entire file to get it.
+            "componentsToAdd": [
+                //{
+                //    "name": "Mesh Renderer",
+                //    "material": "Blue"
+                //}
+                "{\"name\": \"MeshRenderer\", \"material\": \"Blue\"}",
+                //{
+                //    "name": "Pulse",
+                //    "PulseMin": 0.1,
+                //    "PulseMax": 1.5
+                //}
+                "{\"name\": \"Pulse\", \"PulseMin\": 0.1, \"PulseMax\": 1.5}",
+                //{
+                //    "name": "Orbit",
+                //    "OrbitCenter": "_Dynamic",
+                //    "OrbitRotateDegree": 15,
+                //    "RotateRotationAngle": {
+                //        "x": 3,
+                //        "y": 7,
+                //        "z": 13
+                //    }
+                //}
+                "{\"name\": \"Orbit\", \"OrbitCenter\": \"_Dynamic\", \"OrbitRotateDegrees\": 15, \"RotateRotationAngle\": {\"x\": 3, \"y\": 7, \"z\": 13}}"
+            ]
+        },
+        {
+            "name": "Cube",
+            "parentName": "[_DYNAMIC]",
+            "primitiveType": "cube",
+            "position": {
+                "x": -1.0,
+                "y": 1.0,
+                "z": 2.0
+            },
+            "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            },
+            "material": "Red",
+            "numComponentsToAdd": 1,
+            "componentsToAdd": [
+                //{
+                //    "name": "Mesh Renderer",
+                //    "material": "Red"
+                //}
+                "{\"name\": \"MeshRenderer\", \"material\": \"Red\"}",
+                //{
+                //    "name": "Pulse",
+                //    "PulseMin": 0.1,
+                //    "PulseMax": 1.5
+                //}
+                "{\"name\": \"Pulse\", \"PulseMin\": 0.1, \"PulseMax\": 1.5}"
+            ]
+        }
+    ]
+}
