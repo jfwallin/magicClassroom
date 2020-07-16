@@ -33,8 +33,12 @@ public class Goal : MonoBehaviour
     //Called when a collider hits the goal, if it is the ball it increments the score and resets the ball
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Ball(Clone)")
+        if(other.gameObject.tag == "Ball")
         {
+            if(!other.GetComponent<TransmissionObject>().IsMine)
+            {
+                other.GetComponent<TransmissionObject>().IsMine = true;
+            }
             if(goalType == GoalType.Red)
                 other.GetComponent<Ball>().ResetBall(Ball.BallResetType.BlueSide);
             else if(goalType == GoalType.Blue)

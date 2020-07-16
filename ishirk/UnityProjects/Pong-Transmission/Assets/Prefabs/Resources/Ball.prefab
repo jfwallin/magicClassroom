@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -2961112217820052118}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 7493585751379889739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -92,7 +92,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7493585751379889739}
-  m_Material: {fileID: 13400000, guid: 5ab473cb23be57242a64d2ce6b9ed49a, type: 2}
+  m_Material: {fileID: 13400000, guid: a3635683bdfeaef449900b5908a400f6, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -134,7 +134,7 @@ MonoBehaviour:
   ownershipLocked: 0
   resourceFileName: 
   creator: 
-  guid: 70b3b4a1-46fd-416b-b51a-f593e38382d0
+  guid: f97e8ef3-53bb-47a8-bec4-787c9424fbd9
   localPosition: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0, w: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db85b230b7a58df4895e98e484cae3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballHitClip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+  ballResetClip: {fileID: 8300000, guid: 3becec1909f194046945d85ac1077772, type: 3}
 --- !u!82 &-2961112217820052118
 AudioSource:
   m_ObjectHideFlags: 0

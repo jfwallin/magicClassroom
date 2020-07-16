@@ -8,7 +8,7 @@ public class RequestOwnership : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Ball")
+        if(other.gameObject.tag == "Ball")
         {
             other.GetComponent<TransmissionObject>().IsMine = true;
         }

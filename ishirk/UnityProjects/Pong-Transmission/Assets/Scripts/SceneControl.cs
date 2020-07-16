@@ -25,11 +25,11 @@ public class SceneControl : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField]
     private GameObject placementArenaPrefab = null;
-    private const string arenaPrefabPath = "Prefabs/Arena";
-    private const string ballPrefabPath = "Prefabs/Ball";
+    private const string arenaPrefabPath = "Arena";
+    private const string ballPrefabPath = "Ball";
     [SerializeField]
     private GameObject ballPrefab = null;
-    private const string paddlePrefabPath = "Prefabs/Paddle";
+    private const string paddlePrefabPath = "Paddle";
 
     //references to scene objects
     [Header("Scene References")]
@@ -361,15 +361,16 @@ public class SceneControl : MonoBehaviour
     /// </summary>
     public void ExitGame()
     {
-        //Remove Paddle
-        paddle.Despawn();
+        TransmissionObject[] tObjects = GameObject.FindObjectsOfType<TransmissionObject>();
+        foreach (TransmissionObject to in tObjects)
+        {
+            to.Despawn();
+        }
 
         //remove transmission objects specific to the owner
         if (gameOwner)
         {
             Transmission.SetGlobalBool("gamePaused", true);
-            ball.Despawn();
-            arena.Despawn();
             gameOwner = false;
         }
 

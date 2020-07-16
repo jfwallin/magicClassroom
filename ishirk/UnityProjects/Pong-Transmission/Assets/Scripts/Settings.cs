@@ -65,13 +65,15 @@ public class Settings : ScriptableObject
         maxScore = 10;
         ballSize = Size.Normal;
         ballBounciness = Bounciness.Normal;
-
+    }
+    private void Start()
+    {
         Transmission.Instance.OnGlobalFloatChanged.AddListener(OnFloatChanged);
     }
 
     private void OnDisable()
     {
-        Transmission.Instance.OnGlobalFloatChanged.RemoveListener(OnFloatChanged);
+        //Transmission.Instance?.OnGlobalFloatChanged.RemoveListener(OnFloatChanged);
     }
 
     #region Public Functions

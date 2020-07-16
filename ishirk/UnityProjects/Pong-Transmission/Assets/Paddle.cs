@@ -1,5 +1,4 @@
-﻿using MagicLeapTools;
-using System.Collections;
+﻿using MagicLeapTools;using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -7,11 +6,6 @@ using UnityEngine.XR.MagicLeap;
 
 public class Paddle : MonoBehaviour
 {
-    //Audio variables
-    public AudioClip ballHitClip = null;
-    public AudioClip ballResetClip = null;
-    private AudioSource ballAudioSource = null;
-
     //Physics variables
     public float strength = 10f;
     private float velocity = 0;
@@ -24,10 +18,6 @@ public class Paddle : MonoBehaviour
     {
         cInput = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
         Assert.IsNotNull(cInput, "Control input could not be found");
-        ballAudioSource = GetComponent<AudioSource>();
-        Assert.IsNotNull(ballAudioSource, "ballAudioSource could not be found on ball");
-        Assert.IsNotNull(ballHitClip, "ballHitClip not assigned");
-        Assert.IsNotNull(ballResetClip, "ballResetClip not assigned");
     }
 
     void Start()
@@ -44,7 +34,7 @@ public class Paddle : MonoBehaviour
     //Use velocity to calculate the force to apply to the ball on collision
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Ball(Clone)")
+        if (collision.gameObject.tag == "Ball")
         {
             //Ball physics
             ContactPoint contact = collision.GetContact(0);
