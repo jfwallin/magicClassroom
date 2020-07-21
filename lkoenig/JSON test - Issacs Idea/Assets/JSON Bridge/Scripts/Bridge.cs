@@ -21,19 +21,47 @@ public class Bridge
     }
 
     //getInfo serializes an ObjectInfo object from a json at a path
-    private ObjectInfo getInfo(string path)
+    private ObjectInfoCollection getInfo(string path)
     {
         StreamReader reader = new StreamReader(path);  
         string line;
-        ObjectInfo info = new ObjectInfo();
+        //ObjectInfo info = new ObjectInfo();
+        ObjectInfoCollection info = new ObjectInfoCollection();
 
         line = reader.ReadToEnd();
-        info = JsonUtility.FromJson<ObjectInfo>(line);
+        //info = JsonUtility.FromJson<ObjectInfo>(line);
+        info = JsonUtility.FromJson<ObjectInfoCollection>(line);
         return info;
     }
 
     //makeeObject goes through the json and creates the scene and all conected scripts from it.
     //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
+    private void makeObject(ObjectInfoCollection info)
+    {
+        foreach (ObjectInfo obj in info)
+        {
+            GameObject myObject;
+            GameObject parent = GameObject.Find(obj.parentName);
+            JsonObject jsonObject;
+
+            myObject = dealWithType(obj.type); //possibly fixed
+            myObject.name = obj.name;
+
+            for (int i = 0; i < obj.componentsToAdd.Length; i++)
+            {
+                //Parse once to get the name of the component
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(componentsToAdd[i]);
+                //Add the component and get its reference, then deserialize the JSON again to set the variables
+                myObject.AddComponent(Type.GetType(cName)) = JsonUtility.FromJson(componentsToAdd[i], Type.GetType(cName));
+            }
+
+            myObject.transform.position = obj.position;
+            myObject.transform.localScale = obj.scale;
+            myObject.transform.parent = parent.transform;
+        }
+    }
+    /*
+     * old version
     private void makeObject(ObjectInfo info)
     {
         GameObject myObject;
@@ -67,6 +95,7 @@ public class Bridge
         }
         
     }
+    */
 
     //dealWithType allows us to instantiate various objects.
     private GameObject dealWithType(string type)

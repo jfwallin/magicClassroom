@@ -26,3 +26,5 @@ public class ScriptVariables
     //Rotate: this is from the "Solar System Example"
     public Vector3 RotateRotationAngle;
 }
+
+//Whole script could be unnessicary

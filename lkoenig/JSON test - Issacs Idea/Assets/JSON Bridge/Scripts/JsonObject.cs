@@ -18,3 +18,6 @@ public class JsonObject : MonoBehaviour
  * This allows us to generically add functionality in a very flexible manner without knowing exactly what type of script I'm adding.
  * It also allows the scripts to handle the assignment of their variables from the scripts themselves.
  */
+
+
+//Whole script could be unneccisary
