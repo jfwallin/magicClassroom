@@ -1,0 +1,16 @@
+
+How to format the "Big JSON":
+
+The first layer of the JSON should contain the Logic scripts and object. 
+I've been parenting this to the [SCENE_MANAGEMENT] folder.
+Generally use the "empty" type for this and put 0 for both the position and scale.
+
+Add the names of the scripts that should be attached to the logic object to the scriptsToAdd array.
+These should bee added as just the name. So if it's pulse.cs then just write pulse in the array. 
+
+Following that add all independedent objects to the numOfChildren Array. 
+These objects should have the correct base folders as their parents.
+Assign the proper locations, materials, and scripts that should be attached.
+In the children arrays of the indipendent objects assign only child objects. 
+
+I'm going to make a graphic.
