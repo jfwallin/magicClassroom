@@ -164,95 +164,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: SolarSystemExample
   path: Assets/JSON Bridge/Solar System Example/
   info:
-    name: LogicFromJson
-    parentName: '[SCENE_MANAGEMENT]'
-    type: empty
-    position: {x: 0, y: 0, z: 0}
-    scale: {x: 0, y: 0, z: 0}
-    material: 
-    numScriptsToAdd: 1
-    scriptsToAdd:
-    - SolarSystemLogic
-    numOfChildren: 1
-    children:
+    objects:
+    - name: LogicFromJson
+      parentName: '[SCENE_MANAGEMENT]'
+      type: empty
+      position: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+      material: 
+      numComponentsToAdd: 1
+      componentsToAdd:
+      - '{"name":"SolarSystemLogic"}'
     - name: System
       parentName: '[_DYNAMIC]'
       type: empty
-      position: {x: 1, y: 15, z: 2}
+      position: {x: 1, y: 1, z: 2}
       scale: {x: 1, y: 1, z: 1}
       material: 
-      numScriptsToAdd: 0
-      scriptsToAdd: []
-      numOfChildren: 3
-      children:
-      - name: Sun
-        parentName: System
-        type: sphere
-        position: {x: 0, y: 0, z: 0}
-        scale: {x: 1, y: 1, z: 1}
-        material: Sun
-        numScriptsToAdd: 2
-        scriptsToAdd:
-        - Orbit
-        - Rotate
-        numOfChildren: 0
-        children: []
-        scriptVariables:
-          PulseMin: 0
-          PulseMax: 0
-          OrbitCenter: 
-          OrbitRotateDegree: 0
-          RotateRotationAngle: {x: 0, y: 2.942379, z: 0}
-      - name: Earth
-        parentName: System
-        type: sphere
-        position: {x: 0, y: 0, z: -2}
-        scale: {x: 0.25, y: 0.25, z: 0.25}
-        material: Earth
-        numScriptsToAdd: 2
-        scriptsToAdd:
-        - Orbit
-        - Rotate
-        numOfChildren: 0
-        children: []
-        scriptVariables:
-          PulseMin: 0
-          PulseMax: 0
-          OrbitCenter: Sun
-          OrbitRotateDegree: 0.1971199
-          RotateRotationAngle: {x: 0, y: 72, z: 0}
-      - name: Moon
-        parentName: System
-        type: sphere
-        position: {x: 0, y: 0, z: -1.75}
-        scale: {x: 0.06798, y: 0.06798, z: 0.06798}
-        material: Moon
-        numScriptsToAdd: 2
-        scriptsToAdd:
-        - Orbit
-        - Rotate
-        numOfChildren: 0
-        children: []
-        scriptVariables:
-          PulseMin: 0
-          PulseMax: 0
-          OrbitCenter: Earth
-          OrbitRotateDegree: 2.666667
-          RotateRotationAngle: {x: 0, y: 2.44898, z: 0}
-      scriptVariables:
-        PulseMin: 0
-        PulseMax: 0
-        OrbitCenter: 
-        OrbitRotateDegree: 0
-        RotateRotationAngle: {x: 0, y: 0, z: 0}
-    scriptVariables:
-      PulseMin: 0
-      PulseMax: 0
-      OrbitCenter: 
-      OrbitRotateDegree: 0
-      RotateRotationAngle: {x: 0, y: 0, z: 0}
+      numComponentsToAdd: 0
+      componentsToAdd: []
+    - name: Sun
+      parentName: System
+      type: sphere
+      position: {x: 0, y: 0, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+      material: Sun
+      numComponentsToAdd: 2
+      componentsToAdd:
+      - '{"name":"Orbit","center":"","rotateDegree":0.0}'
+      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.942379,"z":0.0}}'
+    - name: Earth
+      parentName: System
+      type: sphere
+      position: {x: 0, y: 0, z: -2}
+      scale: {x: 0.25, y: 0.25, z: 0.25}
+      material: Earth
+      numComponentsToAdd: 2
+      componentsToAdd:
+      - '{"name":"Orbit","center":"Sun","rotateDegree":0.1971199}'
+      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":72.0,"z":0.0}}'
+    - name: Moon
+      parentName: System
+      type: sphere
+      position: {x: 0, y: 0, z: -1.75}
+      scale: {x: 0.06798, y: 0.06798, z: 0.06798}
+      material: Moon
+      numComponentsToAdd: 2
+      componentsToAdd:
+      - '{"name":"Orbit","center":"Earth","rotateDegree":2.66667}'
+      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.44898,"z":0.0}}'
 --- !u!1001 &241266520
 PrefabInstance:
   m_ObjectHideFlags: 0
