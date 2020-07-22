@@ -9,7 +9,7 @@ using System;
 using System.Collections.Specialized;
 using System.Runtime.Versioning;
 using System.Security.Policy;
-
+using System.Runtime.InteropServices;
 
 public class Bridge 
 
@@ -38,7 +38,7 @@ public class Bridge
     //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
     private void makeObject(ObjectInfoCollection info)
     {
-        foreach (ObjectInfo obj in info)
+        foreach (ObjectInfo obj in info.objects)
         {
             GameObject myObject;
             GameObject parent = GameObject.Find(obj.parentName);
@@ -47,12 +47,13 @@ public class Bridge
             myObject = dealWithType(obj.type); //possibly fixed
             myObject.name = obj.name;
 
-            for (int i = 0; i < obj.componentsToAdd.Length; i++)
+            //for (int i = 0; i < obj.componentsToAdd.Length; i++)
+            for (int i =0;i< obj.numComponentsToAdd;i++)
             {
                 //Parse once to get the name of the component
-                ComponentName cName = JsonUtility.FromJson<ComponentName>(componentsToAdd[i]);
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
                 //Add the component and get its reference, then deserialize the JSON again to set the variables
-                myObject.AddComponent(Type.GetType(cName)) = JsonUtility.FromJson(componentsToAdd[i], Type.GetType(cName));
+                myObject.AddComponent(Type.GetType(cName)) = JsonUtility.FromJson(obj.componentsToAdd[i], Type.GetType(cName));
             }
 
             myObject.transform.position = obj.position;
