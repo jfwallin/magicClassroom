@@ -6,6 +6,5 @@ using UnityEngine;
 [System.Serializable]
 public class RotateInfo
 {
-    public string name;
     public Vector3 rotationAngle;
 }

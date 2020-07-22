@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JsonObject : MonoBehaviour
-{
-    /*
-    public virtual void Construct(ScriptVariables info)
-    {
-        /*
-         * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.
-         * Use "public override void Construct(ScriptVariables info){}" to create a specific contruct function in the script.
-         
-    }
-    */
+{ 
 
     public virtual void Construct(string info)
     {
-
+        /*
+         * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.
+         * Use "public override void Construct(string info){}" to create a specific contruct function in the script.
+         * 
+         * The inside of this function should include a getInfo thing to grab the JSON stuff you need for variables
+         */
     }
 
 
@@ -34,4 +30,3 @@ public class JsonObject : MonoBehaviour
  */
 
 
-//Whole script could be unneccisary

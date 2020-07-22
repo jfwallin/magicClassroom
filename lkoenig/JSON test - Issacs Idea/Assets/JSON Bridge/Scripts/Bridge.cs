@@ -69,42 +69,7 @@ public class Bridge
             }
         }
     }
-    /*
-     * old version
-    private void makeObject(ObjectInfo info)
-    {
-        GameObject myObject;
-        GameObject parent = GameObject.Find(info.parentName);
-        JsonObject jsonObject;
-
-        myObject = dealWithType(info.type); //possibly fixed
-        myObject.name = info.name;
-
-        for(int i = 0; i < info.numScriptsToAdd; i++)
-        {
-            myObject.AddComponent(Type.GetType(info.scriptsToAdd[i]));
-            jsonObject = myObject.GetComponent(info.scriptsToAdd[i]) as JsonObject;
-            jsonObject.Construct(info.scriptVariables);
-
-        }
-
-        for (int i = 0; i < info.numOfChildren; i++)
-        {
-            makeObject(info.children[i]);
-        }
-
-        myObject.transform.position = info.position;
-        myObject.transform.localScale = info.scale;
-        myObject.transform.parent = parent.transform;
-
-        if (info.material != "")
-        {
-            Renderer rend = myObject.GetComponent<Renderer>();
-            rend.material = Resources.Load<Material>(info.material); //material must be in a recources folder.
-        }
-        
-    }
-    */
+   
 
     //dealWithType allows us to instantiate various objects.
     private GameObject dealWithType(string type)
