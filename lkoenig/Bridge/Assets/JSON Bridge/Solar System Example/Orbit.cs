@@ -18,7 +18,7 @@ public class Orbit : JsonObject
     //I'm fucking brilliant
     public override void Construct(string info)
     {
-        OrbitInfo oInfo = getInfo<OrbitInfo>(info);
+        OrbitInfo oInfo = getInfo<OrbitInfo>(info); //Calls Typed function to parse the JSON
 
         center = GameObject.Find(oInfo.center);
         rotateDegree = oInfo.rotateDegree;
@@ -42,9 +42,6 @@ public class Orbit : JsonObject
         transform.position = offset + centerVector;
 
         transform.RotateAround(centerVector, Vector3.up, rotateDegree * Transmission.GetGlobalFloat("timeMultiplier") * Time.deltaTime);
-
-        
     }
     
-
 }

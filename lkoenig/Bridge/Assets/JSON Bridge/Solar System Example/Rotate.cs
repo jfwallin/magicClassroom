@@ -11,7 +11,8 @@ public class Rotate : JsonObject
     //I would like this to assign it's own variables upon call.
     public override void Construct(string info)
     {
-        RotateInfo rInfo = getInfo<RotateInfo>(info);
+        RotateInfo rInfo = getInfo<RotateInfo>(info); //Parses JSON with typed function in JsonObject class
+
         rotationAngle = rInfo.rotationAngle;
     }
 
