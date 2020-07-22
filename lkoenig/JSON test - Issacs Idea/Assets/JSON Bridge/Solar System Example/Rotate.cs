@@ -9,9 +9,10 @@ public class Rotate : JsonObject
     public Vector3 rotationAngle; //treat as a const
 
     //I would like this to assign it's own variables upon call.
-    public override void Construct(ScriptVariables info)
+    public override void Construct(string info)
     {
-        rotationAngle = info.RotateRotationAngle;
+        RotateInfo rInfo = getInfo<RotateInfo>(info);
+        rotationAngle = rInfo.rotationAngle;
     }
 
     //FixedUpdate is better for physics cause it's time sensitive 

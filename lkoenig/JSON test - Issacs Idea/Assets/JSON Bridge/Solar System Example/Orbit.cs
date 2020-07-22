@@ -16,10 +16,12 @@ public class Orbit : JsonObject
     private Vector3 offset;
 
     //I'm fucking brilliant
-    public override void Construct(ScriptVariables info)
+    public override void Construct(string info)
     {
-        center = GameObject.Find(info.OrbitCenter);
-        rotateDegree = info.OrbitRotateDegree;
+        OrbitInfo oInfo = getInfo<OrbitInfo>(info);
+
+        center = GameObject.Find(oInfo.center);
+        rotateDegree = oInfo.rotateDegree;
     }
 
     // Start is called before the first frame update

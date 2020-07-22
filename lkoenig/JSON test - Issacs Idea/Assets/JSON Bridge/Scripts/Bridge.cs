@@ -53,12 +53,20 @@ public class Bridge
                 //Parse once to get the name of the component
                 ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
                 //Add the component and get its reference, then deserialize the JSON again to set the variables
-                myObject.AddComponent(Type.GetType(cName)) = JsonUtility.FromJson(obj.componentsToAdd[i], Type.GetType(cName));
+                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject;
+                jsonObject.Construct(obj.componentsToAdd[i]);
+                //= JsonUtility.FromJson(obj.componentsToAdd[i], Type.GetType(cName.names)); //This line doesn't work
             }
 
             myObject.transform.position = obj.position;
             myObject.transform.localScale = obj.scale;
             myObject.transform.parent = parent.transform;
+
+            if (obj.material != "")
+            {
+                Renderer rend = myObject.GetComponent<Renderer>();
+                rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
+            }
         }
     }
     /*

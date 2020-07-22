@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class JsonObject : MonoBehaviour
 {
+    /*
     public virtual void Construct(ScriptVariables info)
     {
         /*
          * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.
          * Use "public override void Construct(ScriptVariables info){}" to create a specific contruct function in the script.
-         */
+         
+    }
+    */
+
+    public virtual void Construct(string info)
+    {
+
+    }
+
+
+    public T getInfo<T>(string toBe)
+    {
+        T info = JsonUtility.FromJson<T>(toBe);
+        return info;
     }
 }
 /*

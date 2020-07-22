@@ -227,58 +227,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Example
   path: Assets/JSON Bridge/Example/
   info:
-    name: LogicFromJson
-    parentName: '[SCENE_MANAGEMENT]'
-    type: empty
-    position: {x: 0, y: 0, z: 0}
-    scale: {x: 0, y: 0, z: 0}
-    material: 
-    numScriptsToAdd: 0
-    scriptsToAdd: []
-    numOfChildren: 2
-    children:
+    objects:
     - name: Sphere
       parentName: '[_DYNAMIC]'
       type: sphere
       position: {x: 1, y: 1, z: 2}
-      scale: {x: 0.25, y: 0.25, z: 0.25}
-      material: Blue
-      numScriptsToAdd: 1
-      scriptsToAdd:
-      - Pulse
-      numOfChildren: 0
-      children: []
-      scriptVariables:
-        PulseMin: 0.1
-        PulseMax: 1.5
-        OrbitCenter: 
-        OrbitRotateDegree: 0
-        RotateRotationAngle: {x: 0, y: 0, z: 0}
+      scale: {x: 0.3, y: 0.3, z: 0.3}
+      material: red
+      numComponentsToAdd: 1
+      componentsToAdd:
+      - '{"name":"Pulse","min":0.25,"max":1.1}'
     - name: Cube
       parentName: '[_DYNAMIC]'
       type: cube
       position: {x: -1, y: 1, z: 2}
       scale: {x: 0.5, y: 0.5, z: 0.5}
-      material: Red
-      numScriptsToAdd: 1
-      scriptsToAdd:
-      - Pulse
-      numOfChildren: 0
-      children: []
-      scriptVariables:
-        PulseMin: 0.25
-        PulseMax: 0.75
-        OrbitCenter: 
-        OrbitRotateDegree: 0
-        RotateRotationAngle: {x: 0, y: 0, z: 0}
-    scriptVariables:
-      PulseMin: 0
-      PulseMax: 0
-      OrbitCenter: 
-      OrbitRotateDegree: 0
-      RotateRotationAngle: {x: 0, y: 0, z: 0}
+      material: blue
+      numComponentsToAdd: 1
+      componentsToAdd:
+      - '{"name":"Pulse","min":0.1,"max":0.9}'
 --- !u!1 &618003120
 GameObject:
   m_ObjectHideFlags: 0

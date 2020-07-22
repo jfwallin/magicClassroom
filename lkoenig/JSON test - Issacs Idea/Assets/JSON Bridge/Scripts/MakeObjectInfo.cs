@@ -10,14 +10,16 @@ public class MakeObjectInfo : MonoBehaviour
 {
     private Bridge bridge = new Bridge();
 
+    public string name;
     public string path; //Where is/will your json be located?
-    public ObjectInfo info;
+    //public ObjectInfo info;
+    public ObjectInfoCollection info;
 
     // Start is called before the first frame update
     void Start()
     {
         string json;
-        path = path + info.name + ".json";
+        path = path + name+ ".json";
 
         StreamWriter writer = new StreamWriter(path);
         

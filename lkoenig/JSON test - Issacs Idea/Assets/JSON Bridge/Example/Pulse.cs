@@ -1,6 +1,7 @@
 ﻿using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class Pulse : JsonObject
@@ -14,10 +15,12 @@ public class Pulse : JsonObject
         
     }
 
-    public override void Construct(ScriptVariables info)
+    public override void Construct(string info)
     {
-        min = info.PulseMin;
-        max = info.PulseMax;
+        PulseInfo pInfo = getInfo<PulseInfo>(info);
+
+        min = pInfo.min;
+        max = pInfo.max;
     }
 
     // Update is called once per frame
