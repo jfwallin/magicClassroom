@@ -19,24 +19,7 @@ public class ObjectInfo
     public Vector3 scale;
     public string material; //Leaving material blank won't cause any problems and just won't render a material. 
 
-    //new
+    
     public int numComponentsToAdd;
-    public string[] componentsToAdd;
-
-    /*
-     * Redacted part of original script
-     * 
-    public int numScriptsToAdd;
-    public string[] scriptsToAdd;
-
-    public int numOfChildren;
-    public ObjectInfo[] children;
-
-
-    //Script variables go into this file
-    public ScriptVariables scriptVariables;
-
-   */
-
-
+    public string[] componentsToAdd; //This holds a string version of the component script JSONs
 }

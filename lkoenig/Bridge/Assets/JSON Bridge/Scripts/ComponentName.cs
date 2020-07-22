@@ -13,4 +13,3 @@ public class ComponentName
     public string name;
 }
 
-//New script

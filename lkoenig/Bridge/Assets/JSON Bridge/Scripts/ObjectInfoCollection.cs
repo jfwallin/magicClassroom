@@ -13,5 +13,7 @@ public class ObjectInfoCollection
     public ObjectInfo[] objects;
 }
 
-//new
-
+/*
+ * I'm not convinced this is neccisary
+ * Might be better nested inside the big JSON
+ */
