@@ -25,16 +25,14 @@ public class Bridge
     {
         StreamReader reader = new StreamReader(path);  
         string line;
-        //ObjectInfo info = new ObjectInfo();
         ObjectInfoCollection info = new ObjectInfoCollection();
 
         line = reader.ReadToEnd();
-        //info = JsonUtility.FromJson<ObjectInfo>(line);
         info = JsonUtility.FromJson<ObjectInfoCollection>(line);
         return info;
     }
 
-    //makeeObject goes through the json and creates the scene and all conected scripts from it.
+    //makeObject goes through the json and creates the scene and all conected scripts from it.
     //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
     private void makeObject(ObjectInfoCollection info)
     {
@@ -53,9 +51,8 @@ public class Bridge
                 //Parse once to get the name of the component
                 ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
                 //Add the component and get its reference, then deserialize the JSON again to set the variables
-                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject;
-                jsonObject.Construct(obj.componentsToAdd[i]);
-                //= JsonUtility.FromJson(obj.componentsToAdd[i], Type.GetType(cName.names)); //This line doesn't work
+                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject; 
+                jsonObject.Construct(obj.componentsToAdd[i]); //Calls the overridden construct function
             }
 
             myObject.transform.position = obj.position;
