@@ -48,10 +48,9 @@ public class Bridge
             for (int i =0;i< obj.numComponentsToAdd;i++)
             {
                 //Parse once to get the name of the component
-                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
-                //Add the component and get its reference, then deserialize the JSON again to set the variables
-                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject; 
-                jsonObject.Construct(obj.componentsToAdd[i]); //Calls the overridden construct function
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]); //this grabs just the string name of the component as that's all that's needed to add it
+                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject; //Adds the component as a JsonObject which allows us to call the contruct function for that object
+                jsonObject.Construct(obj.componentsToAdd[i]); //Calls the overridden construct function and passes it the string JSON. The overridden function should know what to do with that.
             }
 
             myObject.transform.position = obj.position;

@@ -13,3 +13,6 @@ public class ComponentName
     public string name;
 }
 
+/*This is a helper class we use to add a component without the Bridge knowing what it is.
+ * You should never have to do anything with this class.
+ */

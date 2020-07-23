@@ -15,7 +15,7 @@ public class JsonObject : MonoBehaviour
          */
     }
 
-    //Note that this is a typed function 
+    //Note that this is a typed function only designed to work with JSON objects
     public T getInfo<T>(string toBe)
     {
         T info = JsonUtility.FromJson<T>(toBe);
