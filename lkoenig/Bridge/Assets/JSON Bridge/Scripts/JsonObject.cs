@@ -11,7 +11,7 @@ public class JsonObject : MonoBehaviour
          * This virtual function will get overloaded in the scripts that can be attached to Objects from JSONs.
          * Use "public override void Construct(string info){}" to create a specific contruct function in the script.
          * 
-         * The inside of this function should include a getInfo thing to grab the JSON stuff you need for variables.
+         * When you override it the inside of this function should include a getInfo thing to grab the JSON stuff you need for variables.
          */
     }
 

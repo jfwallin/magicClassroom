@@ -15,7 +15,7 @@ public class Orbit : JsonObject
     //Private Variable
     private Vector3 offset;
 
-    //I'm fucking brilliant
+    //This is a good example of why we use the construct function and make the extra serializable class rather than using JsonUtility.FromJsonOverwrite( string data, reference)
     public override void Construct(string info)
     {
         OrbitInfo oInfo = getInfo<OrbitInfo>(info); //Calls Typed function to parse the JSON
