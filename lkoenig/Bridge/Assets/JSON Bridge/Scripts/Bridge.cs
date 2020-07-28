@@ -53,10 +53,31 @@ public class Bridge
                 jsonObject.Construct(obj.componentsToAdd[i]); //Calls the overridden construct function and passes it the string JSON. The overridden function should know what to do with that.
             }
 
+            /*Isaac's code replaces the loop above with the following
+             * This bipasses the need for the jsonObject class and overridden construct function
+             * but it also doesn't allow for the overridden construct function
+            for (int i = 0; i < obj.componentsToAdd.Length; i++)
+            {
+                //Parse once to get the name of the component
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(componentsToAdd[i]);
+                //Check if the component already exists (ie, the mesh renderer on aprimitive)
+                Component myComp = myObject.GetComponent(Type.GetType(cName.name));
+                if (myComp == null)
+                {
+                    JsonUtility.FromJsonOverwrite(componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+                }
+                else
+                {
+                    JsonUtility.FromJsonOverwrite(conmponentsToAdd[i], myComp);
+                }
+            }
+            */
+
             myObject.transform.position = obj.position;
             myObject.transform.localScale = obj.scale;
             myObject.transform.parent = parent.transform;
 
+            //This block is removed in Isaac's code and dealt with in the stringJson
             if (obj.material != "")
             {
                 Renderer rend = myObject.GetComponent<Renderer>();
