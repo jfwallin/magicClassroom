@@ -65,13 +65,13 @@ public class Bridge
             myObject.transform.localScale = obj.scale;
             myObject.transform.parent = parent.transform;
 
-            /*This block is removed in Isaac's code and dealt with in the stringJson
+            //This block is removed in Isaac's code and dealt with in the stringJson
             if (obj.material != "")
             {
                 Renderer rend = myObject.GetComponent<Renderer>();
                 rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
             }
-            */
+            
         }
     }
    

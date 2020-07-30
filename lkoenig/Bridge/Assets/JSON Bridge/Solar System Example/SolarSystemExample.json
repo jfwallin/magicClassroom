@@ -15,7 +15,6 @@
                 "z": 0.0
             },
             "material": "",
-            "numComponentsToAdd": 1,
             "componentsToAdd": [
                 "{\"name\":\"SolarSystemLogic\"}"
             ]
@@ -35,7 +34,6 @@
                 "z": 1.0
             },
             "material": "",
-            "numComponentsToAdd": 0,
             "componentsToAdd": []
         },
         {
@@ -53,7 +51,6 @@
                 "z": 1.0
             },
             "material": "Sun",
-            "numComponentsToAdd": 2,
             "componentsToAdd": [
                 "{\"name\":\"Orbit\",\"center\":\"\",\"rotateDegree\":0.0}",
                 "{\"name\":\"Rotate\",\"rotationAngle\":{\"x\":0.0,\"y\":2.942379,\"z\":0.0}}"
@@ -74,7 +71,6 @@
                 "z": 0.25
             },
             "material": "Earth",
-            "numComponentsToAdd": 2,
             "componentsToAdd": [
                 "{\"name\":\"Orbit\",\"center\":\"Sun\",\"rotateDegree\":0.1971199}",
                 "{\"name\":\"Rotate\",\"rotationAngle\":{\"x\":0.0,\"y\":72.0,\"z\":0.0}}"
@@ -95,7 +91,6 @@
                 "z": 0.06797999888658524
             },
             "material": "Moon",
-            "numComponentsToAdd": 2,
             "componentsToAdd": [
                 "{\"name\":\"Orbit\",\"center\":\"Earth\",\"rotateDegree\":2.66667}",
                 "{\"name\":\"Rotate\",\"rotationAngle\":{\"x\":0.0,\"y\":2.44898,\"z\":0.0}}"
