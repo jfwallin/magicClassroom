@@ -4,7 +4,7 @@ using UnityEngine;
 using MagicLeapTools;
 using System.Collections.Specialized;
 
-public class SolarSystemLogic : JsonObject
+public class SolarSystemLogic : MonoBehaviour
 {
 
     private const string GlobalTimeKey = "timeMultiplier";
@@ -13,7 +13,8 @@ public class SolarSystemLogic : JsonObject
 
     private ControlInput control;// = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
     private GameObject endPoint;
-
+    
+    /*
     public override void Construct(string info)
     {
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);
@@ -35,6 +36,14 @@ public class SolarSystemLogic : JsonObject
 
     private void Awake()
     {
+        Transmission.SetGlobalFloat(GlobalTimeKey, 1);
+        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
+        //If the variable doesn't exist yet make it and set it to false
+        if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
+        {
+            Transmission.SetGlobalBool(GlobalSpawnedKey, false);
+        }
+
         control = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
         endPoint = GameObject.Find("PointerCursor");
 

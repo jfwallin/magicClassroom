@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using MagicLeapTools;
 
-public class Orbit : JsonObject
+public class Orbit : MonoBehaviour
 {
     //This will control the orbit of a celestial body
     
 
     //Public Variable
-    public GameObject center; //This is what the orbit is centered on.
+    private string center; //This is what the orbit is centered on.
     public float rotateDegree; //Treat as const
     
     //Private Variable
     private Vector3 offset;
+    private GameObject centerObject;
 
-    //This is a good example of why we use the construct function and make the extra serializable class rather than using JsonUtility.FromJsonOverwrite( string data, reference)
+    /*This is a good example of why we use the construct function and make the extra serializable class rather than using JsonUtility.FromJsonOverwrite( string data, reference)
     public override void Construct(string info)
     {
         OrbitInfo oInfo = getInfo<OrbitInfo>(info); //Calls Typed function to parse the JSON
@@ -23,22 +24,27 @@ public class Orbit : JsonObject
         center = GameObject.Find(oInfo.center);
         rotateDegree = oInfo.rotateDegree;
     }
+    */
+    void Awake()
+    {
+        centerObject = GameObject.Find(center);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (center == null) //allows for no center
+        if (centerObject == null) //allows for no center
         {
-            center = gameObject;
+            centerObject = gameObject;
             rotateDegree = 0.0f;
         } 
     }
 
     private void FixedUpdate() //physics
     {
-        offset = transform.position - center.transform.position; //radius of orbit
+        offset = transform.position - centerObject.transform.position; //radius of orbit
 
-        Vector3 centerVector = center.transform.position; //get position relative to world 
+        Vector3 centerVector = centerObject.transform.position; //get position relative to world 
         transform.position = offset + centerVector;
 
         transform.RotateAround(centerVector, Vector3.up, rotateDegree * Transmission.GetGlobalFloat("timeMultiplier") * Time.deltaTime);
