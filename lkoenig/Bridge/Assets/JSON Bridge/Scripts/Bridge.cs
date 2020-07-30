@@ -66,6 +66,7 @@ public class Bridge
             myObject.transform.parent = parent.transform;
 
             //This block is removed in Isaac's code and dealt with in the stringJson
+            //I get wierd errors if I try to do it that way though
             if (obj.material != "")
             {
                 Renderer rend = myObject.GetComponent<Renderer>();
