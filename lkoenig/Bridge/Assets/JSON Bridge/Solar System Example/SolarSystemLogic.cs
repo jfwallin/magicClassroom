@@ -13,27 +13,7 @@ public class SolarSystemLogic : MonoBehaviour
 
     private ControlInput control;// = GameObject.Find("ControlPointer").GetComponent<ControlInput>();
     private GameObject endPoint;
-    
-    /*
-    public override void Construct(string info)
-    {
-        Transmission.SetGlobalFloat(GlobalTimeKey, 1);
-        Transmission.SetGlobalFloat(GlobalHoldKey, 1);
-        //If the variable doesn't exist yet make it and set it to false
-        if (!Transmission.HasGlobalBool(GlobalSpawnedKey))
-        {
-            Transmission.SetGlobalBool(GlobalSpawnedKey, false);
-        }
-
-    }
-    
-    /*
-     * Reminder to figure out the controller thing.
-     * That might just have to already be a part of the scen though
-     * Esspecially since this will always be deployed to the Leaps.
-     */
-    
-
+   
     private void Awake()
     {
         Transmission.SetGlobalFloat(GlobalTimeKey, 1);

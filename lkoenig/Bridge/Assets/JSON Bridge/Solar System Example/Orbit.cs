@@ -16,15 +16,6 @@ public class Orbit : MonoBehaviour
     private Vector3 offset;
     private GameObject centerObject;
 
-    /*This is a good example of why we use the construct function and make the extra serializable class rather than using JsonUtility.FromJsonOverwrite( string data, reference)
-    public override void Construct(string info)
-    {
-        OrbitInfo oInfo = getInfo<OrbitInfo>(info); //Calls Typed function to parse the JSON
-
-        center = GameObject.Find(oInfo.center);
-        rotateDegree = oInfo.rotateDegree;
-    }
-    */
     void Awake()
     {
         centerObject = GameObject.Find(center);
