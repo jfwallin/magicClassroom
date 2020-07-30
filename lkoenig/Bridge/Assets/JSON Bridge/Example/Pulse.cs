@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 
-public class Pulse : JsonObject
+public class Pulse : MonoBehaviour
 {
     public float min, max;
     private bool grow = true;
@@ -13,14 +13,6 @@ public class Pulse : JsonObject
     void Start()
     {
         
-    }
-
-    public override void Construct(string info)
-    {
-        PulseInfo pInfo = getInfo<PulseInfo>(info);
-
-        min = pInfo.min;
-        max = pInfo.max;
     }
 
     // Update is called once per frame

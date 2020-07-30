@@ -19,7 +19,5 @@ public class ObjectInfo
     public Vector3 scale;
     public string material; //Leaving material blank won't cause any problems and just won't render a material. 
 
-    
-    public int numComponentsToAdd;
     public string[] componentsToAdd; //This holds a string version of the component script JSONs
 }

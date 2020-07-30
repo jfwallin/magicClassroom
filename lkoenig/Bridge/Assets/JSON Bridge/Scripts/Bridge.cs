@@ -44,45 +44,34 @@ public class Bridge
             myObject = dealWithType(obj.type); //possibly fixed
             myObject.name = obj.name;
 
-            //for (int i = 0; i < obj.componentsToAdd.Length; i++)
-            for (int i =0;i< obj.numComponentsToAdd;i++)
-            {
-                //Parse once to get the name of the component
-                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]); //this grabs just the string name of the component as that's all that's needed to add it
-                jsonObject = myObject.AddComponent(Type.GetType(cName.name)) as JsonObject; //Adds the component as a JsonObject which allows us to call the contruct function for that object
-                jsonObject.Construct(obj.componentsToAdd[i]); //Calls the overridden construct function and passes it the string JSON. The overridden function should know what to do with that.
-            }
-
-            /*Isaac's code replaces the loop above with the following
-             * This bipasses the need for the jsonObject class and overridden construct function
-             * but it also doesn't allow for the overridden construct function
             for (int i = 0; i < obj.componentsToAdd.Length; i++)
             {
                 //Parse once to get the name of the component
-                ComponentName cName = JsonUtility.FromJson<ComponentName>(componentsToAdd[i]);
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
                 //Check if the component already exists (ie, the mesh renderer on aprimitive)
                 Component myComp = myObject.GetComponent(Type.GetType(cName.name));
                 if (myComp == null)
                 {
-                    JsonUtility.FromJsonOverwrite(componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
                 }
                 else
                 {
-                    JsonUtility.FromJsonOverwrite(conmponentsToAdd[i], myComp);
+                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
                 }
             }
-            */
+            
 
             myObject.transform.position = obj.position;
             myObject.transform.localScale = obj.scale;
             myObject.transform.parent = parent.transform;
 
-            //This block is removed in Isaac's code and dealt with in the stringJson
+            /*This block is removed in Isaac's code and dealt with in the stringJson
             if (obj.material != "")
             {
                 Renderer rend = myObject.GetComponent<Renderer>();
                 rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
             }
+            */
         }
     }
    
