@@ -30,7 +30,7 @@ public class MakeObjectInfo : MonoBehaviour
 
         writer.Close();
 
-        bridge.ParseJson(path);
+        bridge.ParseJsonFromPath(path);
     }
 
     

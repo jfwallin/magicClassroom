@@ -14,9 +14,14 @@ using System.Runtime.InteropServices;
 public class Bridge 
 {
     //ParseJson can be called from outside the class to trigger the methods included here
-    public void ParseJson(string path)
+    public void ParseJsonFromPath(string path)
     {
         makeObject(getInfo(path));
+    }
+
+    public void ParseJsonFromString(string data)
+    {
+        makeObject(JsonUtility.FromJson<ObjectInfoCollection>(data));
     }
 
     //getInfo serializes an ObjectInfo object from a json at a path
