@@ -39,7 +39,6 @@ public class Bridge
         {
             GameObject myObject;
             GameObject parent = GameObject.Find(obj.parentName);
-            JsonObject jsonObject;
 
             myObject = dealWithType(obj.type); //possibly fixed
             myObject.name = obj.name;
@@ -66,7 +65,7 @@ public class Bridge
             myObject.transform.parent = parent.transform;
 
             //This block is removed in Isaac's code and dealt with in the stringJson
-            //I get wierd errors if I try to do it that way though
+            //I can't quite get that working though
             if (obj.material != "")
             {
                 Renderer rend = myObject.GetComponent<Renderer>();
