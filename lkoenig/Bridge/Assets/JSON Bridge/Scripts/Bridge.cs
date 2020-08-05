@@ -104,6 +104,7 @@ public class Bridge
             if (myComp == null)
             {
                 JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+                //This is causing problems becuase of AddCompnent
             }
             else
             {
