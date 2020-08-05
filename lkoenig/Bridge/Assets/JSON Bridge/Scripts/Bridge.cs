@@ -11,8 +11,6 @@ using System.Runtime.Versioning;
 using System.Security.Policy;
 using System.Runtime.InteropServices;
 using System.Management.Instrumentation;
-using System.IO.Pipes;
-using MagicLeapTools;
 
 public class Bridge 
 {
@@ -45,27 +43,18 @@ public class Bridge
     {
         foreach (ObjectInfo obj in info.objects)
         {
-            if (obj.transmittable == false) makeObject<GameObject>(obj);
-            else if (obj.transmittable == true) makeObject<TransmissionObject>(obj);
+            if(obj.transmittable == false ) makeObject(obj);
+            else if(obj.transmittable == true) makeTransmissionObject(obj);
         }
     }
 
 
-    //Note that this function currently onlyy works with GameObject and TransmissionObject
-    private void makeObject<T>(ObjectInfo obj)
+    private void makeObject(ObjectInfo obj)
     {
-        T myObject;
-        T parent = GameObject.Find(obj.parentName);
+        GameObject myObject;
+        GameObject parent = GameObject.Find(obj.parentName);
 
-        if( myObject.GetType() == typeof(GameObject))
-        {
-            myObject = dealWithType(obj.type); //possibly fixed
-        }
-        else if (myObject.GetType() == typeof(TransmissionObject))
-        {
-            myObject = Transmission.spawn(obj.type);
-        }
-
+        myObject = dealWithType(obj.type); //possibly fixed
         myObject.name = obj.name;
 
         for (int i = 0; i < obj.componentsToAdd.Length; i++)
@@ -97,7 +86,44 @@ public class Bridge
             rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
         }
     }
-   
+
+    private void makeTransmissionObject(ObjectInfo obj)
+    {
+        TransmissionObject myObject;
+        GameObject parent = GameObject.Find(obj.parentName);
+
+        myObject = Transmission.Spawn(obj.type, obj.position, Quaternion.Euler(0, 0, 0), obj.scale);
+        myObject.name = obj.name;
+
+        for (int i = 0; i < obj.componentsToAdd.Length; i++)
+        {
+            //Parse once to get the name of the component
+            ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
+            //Check if the component already exists (ie, the mesh renderer on aprimitive)
+            Component myComp = myObject.GetComponent(Type.GetType(cName.name));
+            if (myComp == null)
+            {
+                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+            }
+            else
+            {
+                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+            }
+        }
+
+
+        //myObject.transform.position = obj.position;
+        //myObject.transform.localScale = obj.scale;
+        myObject.transform.parent = parent.transform;
+
+        //This block is removed in Isaac's code and dealt with in the stringJson
+        //I can't quite get that working though
+        if (obj.material != "")
+        {
+            Renderer rend = myObject.GetComponent<Renderer>();
+            rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
+        }
+    }
 
     //dealWithType allows us to instantiate various objects.
     private GameObject dealWithType(string type)
