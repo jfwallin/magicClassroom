@@ -174,7 +174,6 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
       material: 
-      numComponentsToAdd: 1
       componentsToAdd:
       - '{"name":"SolarSystemLogic"}'
     - name: System
@@ -183,7 +182,6 @@ MonoBehaviour:
       position: {x: 1, y: 1, z: 2}
       scale: {x: 1, y: 1, z: 1}
       material: 
-      numComponentsToAdd: 0
       componentsToAdd: []
     - name: Sun
       parentName: System
@@ -191,7 +189,6 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
       material: Sun
-      numComponentsToAdd: 2
       componentsToAdd:
       - '{"name":"Orbit","center":"","rotateDegree":0.0}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.942379,"z":0.0}}'
@@ -201,7 +198,6 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: -2}
       scale: {x: 0.25, y: 0.25, z: 0.25}
       material: Earth
-      numComponentsToAdd: 2
       componentsToAdd:
       - '{"name":"Orbit","center":"Sun","rotateDegree":0.1971199}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":72.0,"z":0.0}}'
@@ -211,7 +207,6 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: -1.75}
       scale: {x: 0.06798, y: 0.06798, z: 0.06798}
       material: Moon
-      numComponentsToAdd: 2
       componentsToAdd:
       - '{"name":"Orbit","center":"Earth","rotateDegree":2.66667}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.44898,"z":0.0}}'
