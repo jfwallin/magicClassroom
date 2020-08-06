@@ -89,11 +89,13 @@ public class Bridge
 
     private void makeTransmissionObject(ObjectInfo obj)
     {
-        TransmissionObject myObject;
+        TransmissionObject myTransObject;
+        GameObject myObject;
         GameObject parent = GameObject.Find(obj.parentName);
 
-        myObject = Transmission.Spawn(obj.type, obj.position, Quaternion.Euler(0, 0, 0), obj.scale);
-        myObject.name = obj.name;
+        myTransObject = Transmission.Spawn(obj.type, obj.position, Quaternion.Euler(0, 0, 0), obj.scale);
+        myTransObject.name = obj.name;
+        myObject = myTransObject.gameObject;
 
         for (int i = 0; i < obj.componentsToAdd.Length; i++)
         {
