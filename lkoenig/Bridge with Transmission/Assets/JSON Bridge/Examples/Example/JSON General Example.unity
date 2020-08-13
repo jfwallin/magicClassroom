@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Example
-  path: Assets/JSON Bridge/Examples/Example
+  path: Assets/JSON Bridge/Examples/Example/
   info:
     objects:
     - name: Sphere
