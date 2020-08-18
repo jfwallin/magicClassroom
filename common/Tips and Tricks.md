@@ -97,4 +97,8 @@ Sometimes the Leap will Inexplicably tilt the world mesh and start re-meshing ov
 </ul>
 </li>
 </ul>
+<h2 id="external-references">External References</h2>
+<p>Here some pdf scans of some notes I took on Magic Leap systems that either had little to no documentation, or documentation that was hard to find. Note some things may be out of date now that Magic Leap has updated their SDK so much.<br>
+<a href="https://drive.google.com/file/d/1SEU_owuxNq6fmC0KKGGWHmCDk4UyKBWg/view?usp=sharing">ML Spatial Mapper Notes</a><br>
+<a href="https://drive.google.com/file/d/1W_M6tLggAxl5e6rQiBiXOVgvSpqidDB-/view?usp=sharing">Persistent Coordinate Frames Notes</a></p>
 
