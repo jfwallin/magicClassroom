@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/JSON Bridge/Examples/Solar System Example/SolarSystemExample.unity
+    guid: 827be5a905f66034582d58f24a3c5b74
   m_configObjects:
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: b531aef8ec13abd4d8974d0084a6ad5b,
       type: 2}

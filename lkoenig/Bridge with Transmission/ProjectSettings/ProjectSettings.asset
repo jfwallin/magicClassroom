@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Magic Leap Unity Template
+  companyName: MTSU
+  productName: Bridge
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -169,7 +169,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Lumin: com.test.test
+    Lumin: com.mtsu.bridge
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
@@ -345,8 +345,7 @@ PlayerSettings:
   m_BuildTargetVRSettings:
   - m_BuildTarget: Lumin
     m_Enabled: 0
-    m_Devices:
-    - Lumin
+    m_Devices: []
   - m_BuildTarget: Standalone
     m_Enabled: 0
     m_Devices:
@@ -695,7 +694,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Github/magicClassroom/lkoenig/Certificate/github.cert
+    m_CertPath: D:/Github/magicClassroom/lkoenig/Certificate/github.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

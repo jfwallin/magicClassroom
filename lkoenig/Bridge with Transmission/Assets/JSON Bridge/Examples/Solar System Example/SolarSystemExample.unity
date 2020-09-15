@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -165,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: SolarSystemExample
-  path: Assets/JSON Bridge/Examples/Solar System Example/
   info:
     objects:
     - name: LogicFromJson
@@ -174,6 +175,7 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
       material: 
+      transmittable: 0
       componentsToAdd:
       - '{"name":"SolarSystemLogic"}'
     - name: System
@@ -182,6 +184,7 @@ MonoBehaviour:
       position: {x: 1, y: 1, z: 2}
       scale: {x: 1, y: 1, z: 1}
       material: 
+      transmittable: 0
       componentsToAdd: []
     - name: Sun
       parentName: System
@@ -189,6 +192,7 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       scale: {x: 1, y: 1, z: 1}
       material: Sun
+      transmittable: 1
       componentsToAdd:
       - '{"name":"Orbit","center":"","rotateDegree":0.0}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.942379,"z":0.0}}'
@@ -198,6 +202,7 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: -2}
       scale: {x: 0.25, y: 0.25, z: 0.25}
       material: Earth
+      transmittable: 1
       componentsToAdd:
       - '{"name":"Orbit","center":"Sun","rotateDegree":0.1971199}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":72.0,"z":0.0}}'
@@ -207,6 +212,7 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: -1.75}
       scale: {x: 0.06798, y: 0.06798, z: 0.06798}
       material: Moon
+      transmittable: 1
       componentsToAdd:
       - '{"name":"Orbit","center":"Earth","rotateDegree":2.66667}'
       - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.44898,"z":0.0}}'
@@ -363,6 +369,116 @@ MonoBehaviour:
   OnLocalized:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &911065951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+    type: 3}
+  m_PrefabInstance: {fileID: 967287819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &967287819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1114127904}
+    m_Modifications:
+    - target: {fileID: 5619764785158044116, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785158044116, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450835, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_Name
+      value: RuntimeConsole
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.771001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785477124592, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b83d5952ef78964a987c932f7375418, type: 3}
 --- !u!1 &1114127903
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +508,7 @@ Transform:
   m_Children:
   - {fileID: 1308874795}
   - {fileID: 1226503405}
+  - {fileID: 911065951}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -461,6 +578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ControlPointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235541112672725370, guid: 222bd9546a0294a4186782eaa063a280,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222bd9546a0294a4186782eaa063a280, type: 3}

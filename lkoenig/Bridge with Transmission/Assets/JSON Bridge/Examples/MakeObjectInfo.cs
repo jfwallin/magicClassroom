@@ -11,7 +11,7 @@ public class MakeObjectInfo : MonoBehaviour
     private Bridge bridge = new Bridge();
 
     public string name;
-    public string path; //Where is/will your json be located?
+    //public string path; //Where is/will your json be located?
     //public ObjectInfo info;
     public ObjectInfoCollection info;
 
@@ -19,18 +19,19 @@ public class MakeObjectInfo : MonoBehaviour
     void Start()
     {
         string json;
-        path = path + name+ ".json";
+        //path = path + name+ ".json";
 
-        StreamWriter writer = new StreamWriter(path);
+        //StreamWriter writer = new StreamWriter(path);
         
         json = JsonUtility.ToJson(info, true);
         Debug.Log("json file is: " + json);
 
-        writer.WriteLine(json);
+        //writer.WriteLine(json);
 
-        writer.Close();
+        //writer.Close();
 
-        bridge.ParseJsonFromPath(path);
+        //bridge.ParseJsonFromPath(path);
+        bridge.ParseJsonFromString(json);
     }
 
     
