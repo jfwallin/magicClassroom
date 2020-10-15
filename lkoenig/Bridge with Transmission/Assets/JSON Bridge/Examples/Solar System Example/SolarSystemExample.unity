@@ -184,7 +184,7 @@ MonoBehaviour:
       position: {x: 1, y: 1, z: 2}
       scale: {x: 1, y: 1, z: 1}
       material: 
-      transmittable: 0
+      transmittable: 1
       componentsToAdd: []
     - name: Sun
       parentName: System
@@ -396,6 +396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RuntimeConsole
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619764785288450835, guid: 4b83d5952ef78964a987c932f7375418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5619764785288450844, guid: 4b83d5952ef78964a987c932f7375418,
         type: 3}
