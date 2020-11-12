@@ -64,7 +64,9 @@ public class SolarSystemLogic : MonoBehaviour
     {
         if (!Transmission.GetGlobalBool(GlobalSpawnedKey))
         {
+            
             GameObject solarSystem = GameObject.Find("System");
+            Debug.Log("current positon: " + solarSystem.transform.position);
             solarSystem.transform.position = endPoint.transform.position;
             solarSystem.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
 

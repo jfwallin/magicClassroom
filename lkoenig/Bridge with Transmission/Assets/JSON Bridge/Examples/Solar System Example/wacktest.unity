@@ -123,94 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17875982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 17875983}
-  - component: {fileID: 17875984}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &17875983
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17875982}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3682482, y: -4.7762175, z: 32.623062}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1687923660}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &17875984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17875982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a04607b4d1bc348986b9f017c39d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SolarSystemExample
-  info:
-    objects:
-    - name: LogicFromJson
-      parentName: '[SCENE_MANAGEMENT]'
-      type: empty
-      position: {x: 0, y: 0, z: 0}
-      scale: {x: 0, y: 0, z: 0}
-      material: 
-      componentsToAdd:
-      - '{"name":"SolarSystemLogic"}'
-    - name: System
-      parentName: '[_DYNAMIC]'
-      type: empty
-      position: {x: 0, y: 0, z: 0}
-      scale: {x: 1, y: 1, z: 1}
-      material: 
-      componentsToAdd: []
-    - name: Sun
-      parentName: System
-      type: sphere
-      position: {x: 0, y: 0, z: 0}
-      scale: {x: 1, y: 1, z: 1}
-      material: Sun
-      componentsToAdd:
-      - '{"name":"Orbit","center":"","rotateDegree":0.0}'
-      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.942379,"z":0.0}}'
-    - name: Earth
-      parentName: System
-      type: sphere
-      position: {x: 0, y: 0, z: -2}
-      scale: {x: 0.25, y: 0.25, z: 0.25}
-      material: Earth
-      componentsToAdd:
-      - '{"name":"Orbit","center":"Sun","rotateDegree":0.1971199}'
-      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":72.0,"z":0.0}}'
-    - name: Moon
-      parentName: System
-      type: sphere
-      position: {x: 0, y: 0, z: -1.75}
-      scale: {x: 0.06798, y: 0.06798, z: 0.06798}
-      material: Moon
-      componentsToAdd:
-      - '{"name":"Orbit","center":"Earth","rotateDegree":2.66667}'
-      - '{"name":"Rotate","rotationAngle":{"x":0.0,"y":2.44898,"z":0.0}}'
 --- !u!1001 &241266520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -801,7 +713,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 17875983}
+  - {fileID: 1856271356}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -927,3 +839,46 @@ Transform:
   m_Father: {fileID: 1632478640}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1856271355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856271356}
+  - component: {fileID: 1856271357}
+  m_Layer: 0
+  m_Name: Logic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856271356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856271355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.097235, y: -1.266619, z: 1.4065326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1687923660}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856271357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856271355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8960798dff7e29a4f9f9814bccafef56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
