@@ -34,4 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+!Bridge.unitypackage
+
+#Video that was too big
 lkoenig/Captures/ML_20200110_14.41.36.mp4
