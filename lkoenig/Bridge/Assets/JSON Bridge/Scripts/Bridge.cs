@@ -16,12 +16,12 @@ public class Bridge
     //ParseJson can be called from outside the class to trigger the methods included here
     public void ParseJsonFromPath(string path)
     {
-        makeObject(getInfo(path));
+        makeScene(getInfo(path));
     }
 
     public void ParseJsonFromString(string data)
     {
-        makeObject(JsonUtility.FromJson<ObjectInfoCollection>(data));
+        makeScene(JsonUtility.FromJson<ObjectInfoCollection>(data));
     }
 
     //getInfo serializes an ObjectInfo object from a json at a path
@@ -36,50 +36,55 @@ public class Bridge
         return info;
     }
 
-    //makeObject goes through the json and creates the scene and all conected scripts from it.
-    //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
-    private void makeObject(ObjectInfoCollection info)
+    private void makeScene(ObjectInfoCollection info)
     {
         foreach (ObjectInfo obj in info.objects)
         {
-            GameObject myObject;
-            GameObject parent = GameObject.Find(obj.parentName);
-
-            myObject = dealWithType(obj.type); //possibly fixed
-            myObject.name = obj.name;
-
-            for (int i = 0; i < obj.componentsToAdd.Length; i++)
-            {
-                //Parse once to get the name of the component
-                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
-                //Check if the component already exists (ie, the mesh renderer on aprimitive)
-                Component myComp = myObject.GetComponent(Type.GetType(cName.name));
-                if (myComp == null)
-                {
-                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
-                }
-                else
-                {
-                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
-                }
-            }
-            
-
-            myObject.transform.position = obj.position;
-            myObject.transform.localScale = obj.scale;
-            myObject.transform.parent = parent.transform;
-
-            //This block is removed in Isaac's code and dealt with in the stringJson
-            //I can't quite get that working though
-            if (obj.material != "")
-            {
-                Renderer rend = myObject.GetComponent<Renderer>();
-                rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
-            }
-            
+            makeObject(obj);
         }
     }
-   
+
+    //makeObject goes through the json and creates the scene and all conected scripts from it.
+    //We are assuming that the scene is set up with the camera, default lighting, and controller already present.
+    private void makeObject(ObjectInfo obj)
+    {
+        GameObject myObject;
+        GameObject parent = GameObject.Find(obj.parentName);
+
+        myObject = dealWithType(obj.type); //possibly fixed
+        myObject.name = obj.name;
+
+        for (int i = 0; i < obj.componentsToAdd.Length; i++)
+        {
+            //Parse once to get the name of the component
+            ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
+            //Check if the component already exists (ie, the mesh renderer on aprimitive)
+            Component myComp = myObject.GetComponent(Type.GetType(cName.name));
+            if (myComp == null)
+            {
+                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+            }
+            else
+            {
+                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+            }
+        }
+
+
+        myObject.transform.position = obj.position;
+        myObject.transform.localScale = obj.scale;
+        myObject.transform.parent = parent.transform;
+
+        //This block is removed in Isaac's code and dealt with in the stringJson
+        //I can't quite get that working though
+        if (obj.material != "")
+        {
+            Renderer rend = myObject.GetComponent<Renderer>();
+            rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
+        }
+    }
+
+
 
     //dealWithType allows us to instantiate various objects.
     private GameObject dealWithType(string type)
