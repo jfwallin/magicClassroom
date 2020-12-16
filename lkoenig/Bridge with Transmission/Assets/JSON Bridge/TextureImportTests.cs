@@ -16,14 +16,14 @@ public class TextureImportTests : MonoBehaviour
     void Start()
     {
         //Create new plane object at runtime and reset position
-        plane = GameObject.CreatePrimitive(PrimitiveType.Plane);
-        plane.transform.position = new Vector3(0, 0, 0);
+        //plane = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        //plane.transform.position = new Vector3(0, 0, 0);
 
         //Create cube with rigidbody component (This was mainly just me experimenting)
         cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.transform.position = new Vector3(-2, 10.5f, 0);
-        Rigidbody rb = cube.AddComponent<Rigidbody>();
-        rb.mass = 10;
+        cube.transform.position = new Vector3(0, 1, 2);
+        //Rigidbody rb = cube.AddComponent<Rigidbody>();
+        //rb.mass = 10;
 
         //Check if file exists on hard drive
         if(File.Exists(filePath))
