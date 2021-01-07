@@ -1,1 +1,0 @@
-{"name":"Earth","xPosition":0.0,"yPosition":0.0,"zPosition":-2.0,"scale":0.25,"material":"Earth","numScriptsToAdd":2,"scriptName":["Orbit","Rotate"],"OrbitCenter":"Sun","OrbitRotateDegree":0.19711990654468537,"RotateRotationAngle":{"x":0.0,"y":72.0,"z":0.0}}
