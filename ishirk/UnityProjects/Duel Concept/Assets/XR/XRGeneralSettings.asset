@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3632336162800281694
+--- !u!114 &-6602195166426926598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,11 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
-  m_Name: 
+  m_Name: Lumin Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: 1342988455949934089}
+  m_LoaderManagerInstance: {fileID: 922777771774830503}
   m_InitManagerOnStart: 1
---- !u!114 &-425755834501913468
+--- !u!114 &-5271020574755148561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Standalone Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: -4700705436799542402}
+  m_InitManagerOnStart: 1
+--- !u!114 &-4700705436799542402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24,7 +38,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
-  m_Name: 
+  m_Name: Standalone Loaders
   m_EditorClassIdentifier: 
   m_RequiresSettingsUpdate: 1
   m_AutomaticLoading: 0
@@ -45,9 +59,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Keys: 1c00000001000000
   Values:
-  - {fileID: -3632336162800281694}
-  - {fileID: 6432838417494882963}
---- !u!114 &1342988455949934089
+  - {fileID: -6602195166426926598}
+  - {fileID: -5271020574755148561}
+--- !u!114 &922777771774830503
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,24 +71,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
-  m_Name: 
+  m_Name: Lumin Loaders
   m_EditorClassIdentifier: 
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: a3b5ed70886f05e46941d4c937e02437, type: 2}
---- !u!114 &6432838417494882963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -425755834501913468}
-  m_InitManagerOnStart: 1

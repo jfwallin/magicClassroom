@@ -4,7 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Duel Main.unity
+    guid: 102ec66d67b1d4913a8a47657c1e8982
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 08f0ff5274ad43a4e88e1e048da33329,
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 44f82defa23adf84f9002919aa4027a0,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2ba4dbd235ed941bb8fdb5a40ab00f22,
       type: 2}

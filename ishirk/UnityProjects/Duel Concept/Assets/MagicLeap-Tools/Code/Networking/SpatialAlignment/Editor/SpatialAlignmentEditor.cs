@@ -34,7 +34,6 @@ namespace MagicLeapTools
         {
             EditorUtilities.ComponentRequired(typeof(Transmission));
             EditorUtilities.ComponentRequired(typeof(PrivilegeRequester));
-            EditorUtilities.SensitivePrivilegeRequired(MLRuntimeRequestPrivilegeId.PwFoundObjRead);
 
             DrawDefaultInspector();
         }
