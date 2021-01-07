@@ -237,24 +237,14 @@ MonoBehaviour:
   name: Example
   info:
     objects:
-    - name: Sphere
-      parentName: '[_DYNAMIC]'
-      type: sphere
-      position: {x: 1, y: 1, z: 2}
-      scale: {x: 0.3, y: 0.3, z: 0.3}
-      material: red
-      transmittable: 0
-      componentsToAdd:
-      - '{"name":"Pulse","min":0.25,"max":1.1}'
-    - name: Cube
+    - name: cube
       parentName: '[_DYNAMIC]'
       type: cube
-      position: {x: -1, y: 1, z: 2}
+      position: {x: 0, y: 1, z: 2}
       scale: {x: 0.5, y: 0.5, z: 0.5}
       material: blue
       transmittable: 0
-      componentsToAdd:
-      - '{"name":"Pulse","min":0.1,"max":0.9}'
+      componentsToAdd: []
 --- !u!1 &618003120
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &618003121
 Transform:
   m_ObjectHideFlags: 0
@@ -315,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &885653654
 Transform:
   m_ObjectHideFlags: 0
@@ -345,6 +335,50 @@ MonoBehaviour:
   OnLocalized:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1110016083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110016084}
+  - component: {fileID: 1110016085}
+  m_Layer: 0
+  m_Name: TextureTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1110016084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110016083}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.09725, y: -1.2666199, z: 1.4065384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1687923660}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1110016085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110016083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3bf5b9eb5a93224094102a7a3e92458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filePath: E:\Github\magicClassroom\lkoenig\Captures\ML_20200110_14.43.21_edit.jpg
 --- !u!1 &1114127903
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1114127904
 Transform:
   m_ObjectHideFlags: 0
@@ -499,6 +533,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429730899}
+  - {fileID: 1110016084}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -588,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 7235541112672725370, guid: 222bd9546a0294a4186782eaa063a280,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222bd9546a0294a4186782eaa063a280, type: 3}
@@ -794,7 +829,7 @@ PrefabInstance:
     - target: {fileID: 7599050699442747582, guid: 73ecca7d038a8314d8f6e3d68ba973e1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ecca7d038a8314d8f6e3d68ba973e1, type: 3}

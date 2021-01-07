@@ -88,43 +88,48 @@ public class Bridge
 
     private void makeTransmissionObject(ObjectInfo obj)
     {
-        TransmissionObject myTransObject;
-        GameObject myObject;
-        GameObject parent = GameObject.Find(obj.parentName);
-
-        myTransObject = Transmission.Spawn(obj.type, obj.position, Quaternion.Euler(0, 0, 0), obj.scale);
-        myTransObject.name = obj.name;
-        myObject = myTransObject.gameObject;
-
-        for (int i = 0; i < obj.componentsToAdd.Length; i++)
+        if (!GameObject.Find(obj.name)) //to keep it from trying to spawn a seccond version. Can't remember if I actually need this. I suspect I don't.
         {
-            //Parse once to get the name of the component
-            ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
-            //Check if the component already exists (ie, the mesh renderer on aprimitive)
-            Component myComp = myObject.GetComponent(Type.GetType(cName.name));
-            if (myComp == null)
+            TransmissionObject myTransObject;
+            GameObject myObject;
+            GameObject parent = GameObject.Find(obj.parentName);
+
+            myTransObject = Transmission.Spawn(obj.type, obj.position, Quaternion.Euler(0, 0, 0), obj.scale);
+            myTransObject.name = obj.name;
+            myObject = myTransObject.gameObject;
+
+            for (int i = 0; i < obj.componentsToAdd.Length; i++)
             {
-                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
-                //This is causing problems becuase of AddCompnent
+                //Parse once to get the name of the component
+                ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
+                //Check if the component already exists (ie, the mesh renderer on aprimitive)
+                Component myComp = myObject.GetComponent(Type.GetType(cName.name));
+                if (myComp == null)
+                {
+                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+                    //This is causing problems becuase of AddCompnent
+                }
+                else
+                {
+                    JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+                }
             }
-            else
+
+
+            //myObject.transform.position = obj.position;
+            //myObject.transform.localScale = obj.scale;
+            myObject.transform.parent = parent.transform;
+
+            //This block is removed in Isaac's code and dealt with in the stringJson
+            //I can't quite get that working though
+            if (obj.material != "")
             {
-                JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+                Renderer rend = myObject.GetComponent<Renderer>();
+                rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
             }
+            //I think the issue is here or when I reposition the thing. Need to look at Issac's pong game.
         }
-
-
-        //myObject.transform.position = obj.position;
-        //myObject.transform.localScale = obj.scale;
-        myObject.transform.parent = parent.transform;
-
-        //This block is removed in Isaac's code and dealt with in the stringJson
-        //I can't quite get that working though
-        if (obj.material != "")
-        {
-            Renderer rend = myObject.GetComponent<Renderer>();
-            rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
-        }
+        
     }
 
 
