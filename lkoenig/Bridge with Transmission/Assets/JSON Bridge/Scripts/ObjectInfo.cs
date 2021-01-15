@@ -21,4 +21,6 @@ public class ObjectInfo
     public bool transmittable = false; //transmission isn't working currently so this should be left as false
 
     public string[] componentsToAdd; //This holds a string version of the component script JSONs
+    //Note: These components are things we built not things built into Unity.
+    //Things built into unity don't work for Unity reasons
 }

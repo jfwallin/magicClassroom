@@ -255,7 +255,6 @@ MonoBehaviour:
       transmittable: 0
       componentsToAdd:
       - '{"name":"Pulse","min":0.1,"max":0.9}'
-      - '{"name":"UnityEngine.Renderer, UnityEngine","material":"red"}'
 --- !u!1 &618003120
 GameObject:
   m_ObjectHideFlags: 0
