@@ -12,6 +12,7 @@ public class Rotate : MonoBehaviour
     void FixedUpdate()
     {
         transform.Rotate(Transmission.GetGlobalFloat("timeMultiplier") *rotationAngle * Time.deltaTime);
+
     }
    
 }

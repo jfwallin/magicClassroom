@@ -58,16 +58,21 @@ public class Bridge
         for (int i = 0; i < obj.componentsToAdd.Length; i++)
         {
             //Parse once to get the name of the component
+            Debug.Log("about to get name of component");
             ComponentName cName = JsonUtility.FromJson<ComponentName>(obj.componentsToAdd[i]);
             //Check if the component already exists (ie, the mesh renderer on aprimitive)
+            Debug.Log("about to check if component is there " + cName.name);
             Component myComp = myObject.GetComponent(Type.GetType(cName.name));
             if (myComp == null)
             {
                 JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myObject.AddComponent(Type.GetType(cName.name)));
+                Debug.Log("myComp = null");
             }
             else
             {
+                Debug.Log("else");
                 JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+                
             }
         }
 
@@ -76,13 +81,16 @@ public class Bridge
         myObject.transform.localScale = obj.scale;
         myObject.transform.parent = parent.transform;
 
+        
         //This block is removed in Isaac's code and dealt with in the stringJson
         //I can't quite get that working though
         if (obj.material != "")
         {
             Renderer rend = myObject.GetComponent<Renderer>();
+            //Component rend = myObject.GetComponent(Type.GetType("Renderer"));
             rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
         }
+        
     }
 
 
