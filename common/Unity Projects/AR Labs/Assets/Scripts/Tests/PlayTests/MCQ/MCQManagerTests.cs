@@ -64,10 +64,9 @@ namespace Tests
                 LogAssert.ignoreFailingMessages = false;
         }
 
-        [Test, Sequential]
+        [Test]
         public void Initialize_FindsRef_RefNotSetInInspector(
             [NUnit.Framework.Values("mediaGO", "mpManager", "questionGO", "qManager")] string fieldName,
-            [NUnit.Framework.Range(0, 3)] int caseIndex)
         {
             //Arrange
             FieldInfo refCheckFieldInfo = mcqManager.GetType().GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
@@ -75,18 +74,18 @@ namespace Tests
             //Action
             mcqManager.Initialize();
             //Assert
-            switch(caseIndex)
+            switch(fieldName)
             {
-                case 0:
+                case "mediaGO":
                     Assert.AreEqual(mediaGO, refCheckFieldInfo.GetValue(mcqManager));
                     break;
-                case 1:
+                case "mpManager":
                     Assert.AreEqual(mpManager, refCheckFieldInfo.GetValue(mcqManager));
                     break;
-                case 2:
+                case "questionGO":
                     Assert.AreEqual(questionGO, refCheckFieldInfo.GetValue(mcqManager));
                     break;
-                case 3:
+                case "qManager":
                     Assert.AreEqual(qManager, refCheckFieldInfo.GetValue(mcqManager));
                     break;
             }
