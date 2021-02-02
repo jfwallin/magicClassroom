@@ -67,7 +67,9 @@ public class Bridge
             }
             else
             {
+                Debug.Log("You shouldn't be here and everything is about to break if you are. Honestly if you even tried to get here you tried too hard to get somewhere that doesn't work");
                 JsonUtility.FromJsonOverwrite(obj.componentsToAdd[i], myComp);
+                //JsonUtility.FromJsonOverwrite doesn't work with things derived from UnityEngine. It's specifically disallowed for C++ vs C# reasons
             }
         }
 
@@ -76,13 +78,13 @@ public class Bridge
         myObject.transform.localScale = obj.scale;
         myObject.transform.parent = parent.transform;
 
-        //This block is removed in Isaac's code and dealt with in the stringJson
-        //I can't quite get that working though
+        
         if (obj.material != "")
         {
             Renderer rend = myObject.GetComponent<Renderer>();
             rend.material = Resources.Load<Material>(obj.material); //material must be in a recources folder.
         }
+        
     }
 
 
