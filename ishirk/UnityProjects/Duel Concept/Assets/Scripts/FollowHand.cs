@@ -48,9 +48,20 @@ public class FollowHand : MonoBehaviour
         {
             rend.enabled = true;
             transform.position = hand.Center;
+            transform.Rotate(new Vector3(1, 0, 0), Space.World);
+            
+                //LookRotation(-handNormal, playerScript.leftHandForward);
+            /*
             if (CalculateHandNormal(hand, ref handNormal))
             {
-                Quaternion newRotation;
+
+
+                
+               
+                
+                 Quaternion newRotation;
+
+                
                 if (handType == MLHandType.Right)
                 {
                     newRotation = Quaternion.LookRotation(handNormal, playerScript.rightHandForward);
@@ -64,7 +75,9 @@ public class FollowHand : MonoBehaviour
                     transform.Rotate(new Vector3(-90, 0, 0), Space.Self);
                 }
                 
-            }
+
+        }
+        */
 
             //if (hand.KeyPose == MLHandKeyPose.OpenHand && hand.KeyPoseConfidence > 0.9f)
             //{
@@ -85,11 +98,14 @@ public class FollowHand : MonoBehaviour
 
             //Add code to calculate hand normals every frame the hand is visible.
         }
-        else
+    
+        /*  jw commented out
+           else
         {
             rend.enabled = false;
             system.Stop();
         }
+        */
     }
 
     public void ChargeFireball()
@@ -168,14 +184,17 @@ public class FollowHand : MonoBehaviour
                 break;
             }
         }
-        if (!foundValidPoint)
+        /*if (!foundValidPoint)
         {
             Debug.LogWarningFormat("Could not complete finding the normal of the {0} hand, using globa; up vector", hand.HandType.ToString());
             return false;
-        }
+        }*/
 
         Vector3 point1FromCenter = point1 - hand.Center;
         Vector3 point2FromCenter = point2 - hand.Center;
+        normal = new Vector3(1, 0, 0);
+        return true;
+        /*  jw
         if (hand.HandType == MLHandType.Right)
         {
             normal =  Vector3.Cross(point2FromCenter, point1FromCenter).normalized;
@@ -186,5 +205,6 @@ public class FollowHand : MonoBehaviour
             normal =  Vector3.Cross(point1FromCenter, point2FromCenter).normalized;
             return true;
         }
+        */
     }
 }
