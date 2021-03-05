@@ -121,7 +121,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 778760747616665921, guid: 88d8db323af2ea249b2e8916cd129c41, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -637,7 +638,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/irs2e/Documents/Work/privatekey/testdevelop.cert
+    m_CertPath: C:/Users/irs2e/Documents/Work/keys/newkey/library_develop.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:
