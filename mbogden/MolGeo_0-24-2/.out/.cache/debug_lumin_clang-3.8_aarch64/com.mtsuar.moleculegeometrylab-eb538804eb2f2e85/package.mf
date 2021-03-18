@@ -1,0 +1,299 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "6275fb5db0591d424c0784a264199448e74a8f76",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3373400,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "9ee1dbb9ffe639fa4727c7d1f9facceeb44254c9",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 54467392,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "04b2d89100d3ae57740d054029520d38ba20f583",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\libil2cpp.so-0c17d2945389a6d8",
+   "xfrm_size": 54467481
+  },
+  {
+   "compression": 8,
+   "hash": "eb463901d6f69c739181911a175309562ca388ce",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 286544,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0396838155f38e1ccd665c678ec99f8d4fa58a0c",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\AudioPluginMSASpatializer.so-3f79c1237c7282ae",
+   "xfrm_size": 286633
+  },
+  {
+   "compression": 8,
+   "hash": "f4727292de688784ba1edefb17ed92eca12e6828",
+   "pkgpath": "bin/LuminMediaPlayer.dll",
+   "size": 68608,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/LuminMediaPlayer.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "9cc0178accee5747c19b0c08df63ab56507abfd9",
+   "pkgpath": "bin/LuminUnity.dll",
+   "size": 327680,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/LuminUnity.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "51f119b9d8bb1803df4f0e0ead2656f6fbba374b",
+   "pkgpath": "bin/MSA.Runtime.dll",
+   "size": 22528,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/MSA.Runtime.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "107bd38c2d5fcad16c555b20cdde608b67cc799b",
+   "pkgpath": "bin/TDx.TDxInput.dll",
+   "size": 15872,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/TDx.TDxInput.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "dc5c570c2c0bb880fe9e02ac81342c2a561f8bf7",
+   "pkgpath": "bin/Unity.Analytics.StandardEvents.dll",
+   "size": 32256,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/Unity.Analytics.StandardEvents.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "685ebf069bbbe87aa587e88f9b4a22e1c410aef2",
+   "pkgpath": "bin/Unity.Analytics.Tracker.dll",
+   "size": 19456,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/Unity.Analytics.Tracker.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a71acc50817a0929bccc93cbe7619d57d25d1b17",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 3077192,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "e737b699d9992a301403513523caa108d8572bc8",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\UnityMagicLeap.so-3f79c1237c7282ae",
+   "xfrm_size": 3077281
+  },
+  {
+   "compression": 8,
+   "hash": "a86c27fcbaa2b90e59a995a472f69b8736524c2e",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "d1d9d4f84805371d57ff0716a63f1c58e085c5e8",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\libml_camera_plugin.so-3f79c1237c7282ae",
+   "xfrm_size": 14273
+  },
+  {
+   "compression": 8,
+   "hash": "1d1daf0c329d1182bee0bcc2986e0368b2227511",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 72064,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "5654ebfcbe7e8ef38be2d1887e151db7f1f6beac",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\libml_mediaplayer_plugin.so-3f79c1237c7282ae",
+   "xfrm_size": 72153
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "fa10859a933989c5961257c02d9f4fcf042044f1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3689324,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "20157c4e72f5921019983a3d5541472730e748ed",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 942768,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "778891100a8030ad6096db64784c6e5d67c28378",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 417,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "f226dfc0f1097b18c77eb2198b6257be5b02a613",
+   "pkgpath": "Data/boot.config",
+   "size": 123,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "076ec94f473c95772313a5ad226092db3e1d4ec7",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 63096,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "4d094830e26ce2bf438866f381ff7b092cd87d39",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 90816,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "375b0824e43a79ed0ea9fdce401caaa033dab3f7",
+   "pkgpath": "Data/level0",
+   "size": 99332,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "d809ad599a6056b25c258777139def0eb416181b",
+   "pkgpath": "Data/level1",
+   "size": 69604,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/level1"
+  },
+  {
+   "compression": 8,
+   "hash": "ee143e07ad49efbbcba6df54019f5e9359888144",
+   "pkgpath": "Data/resources.assets",
+   "size": 110888,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1d5e5447a0f0b085b695376c9fdb7738e07e4f23",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "6cdc0e4cbe1201c4ca6f1a16e833814ac2bbc3a8",
+   "pkgpath": "Data/resources.resource",
+   "size": 5875136,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/resources.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "a07735a67a89fa7ac30d7ef65f2dd1753fdcfb79",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 4625992,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "d194d5c80fe1c81dca44d352b10bf335c512e60a",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 15441756,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "c2c9c1c094d25e7473fa4fcc9735a9fb4170ffe1",
+   "pkgpath": "Data/sharedassets1.assets",
+   "size": 553640,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/sharedassets1.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "b25da992667712fc26cd0f3b65528b1e644d72fb",
+   "pkgpath": "Data/sharedassets1.assets.resS",
+   "size": 11786876,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Data/sharedassets1.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "3043bddc4840694bb1536cb906adcc0b6f57658a",
+   "pkgpath": "bin/Player.elf",
+   "size": 20743640,
+   "src": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "4d3806821988481c52272b1814345310d3e9fe58",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\Player.elf-68ceb993aef32a12",
+   "xfrm_size": 20743729
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/ogden/MagicLeap/mlsdk/v0.23.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "7494626ebbfde4e4be2df31f52e4d27b8bf2031c",
+   "xfrm_path": "C:/Users/ogden/Documents/GitHub/magicClassroom/mbogden/MolGeo_0-23/.out/.cache/debug_lumin_clang-3.8_aarch64/com.mtsuar.moleculegeometrylab-eb538804eb2f2e85\\libc++_shared.so-005512448522f84a",
+   "xfrm_size": 976921
+  },
+  {
+   "compression": 8,
+   "hash": "8389ff65011b09a276b8a18713c68dd3f8d04bcc",
+   "pkgpath": "manifest.xml",
+   "size": 567,
+   "src": "C:\\Users\\ogden\\Documents\\GitHub\\magicClassroom\\mbogden\\MolGeo_0-23\\Temp\\StagingArea\\manifest.xml"
+  }
+ ],
+ "pkgflags": {}
+}
