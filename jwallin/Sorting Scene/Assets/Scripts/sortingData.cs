@@ -42,7 +42,7 @@ public class sortingData : MonoBehaviour
     }
 
 
-   
+
     public static int nObjects;
 
     // declare the sort info array
@@ -53,7 +53,7 @@ public class sortingData : MonoBehaviour
     public float xend, yend, zend;
     public GameObject[] gameObjects;
     public Vector3[] sortPts;
-    
+
     bool isSorted;
 
     // default values for the delay, move time, and flourish of the movements
@@ -62,30 +62,27 @@ public class sortingData : MonoBehaviour
     public int pretty = 1;
     private bool beenMoved = false;
 
-    private class orderElement
-    {
-        int orderValue;
-    }
-
+    public const int maxObjects = 10;
     public GameObject myPrefab;
-    public Texture[] myTexture = new Texture[5];
-    public String[] tnames = new String[5];
-    public GameObject[] markers = new GameObject[5];
+    public Texture[] myTexture = new Texture[maxObjects];
+    public String[] tnames = new String[maxObjects];
+    public GameObject[] markers = new GameObject[maxObjects];
     public float mscale = 0.1f;
     public GameObject markerPrefab;
 
     //public AudioClip grab;
+    public const int maxWrongAnswers = 5;
     public AudioClip audioInstructions;
-    public AudioClip[] wrongOrder = new AudioClip[3];
+    public AudioClip[] wrongOrder = new AudioClip[maxWrongAnswers];
     public AudioClip correctOrder;
     public int wrongAnswerCount = 0;
-    public int totalWrongAnswer = 3;
+    public int totalWrongAnswer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        AudioSource aud = GetComponent< AudioSource > ();
+        AudioSource aud = GetComponent<AudioSource>();
         //yield return new WaitForSeconds(audio.clip.length);
         aud.clip = audioInstructions;
         aud.Play();
@@ -96,7 +93,20 @@ public class sortingData : MonoBehaviour
         //gameObjects = GameObject.FindGameObjectsWithTag("sortable");
         //nObjects = gameObjects.Length;
 
-        nObjects = 5;
+        // find the number of objects to be sorted
+        nObjects = 0;
+        for (int i = 0; i < maxObjects; i++)
+            if (myTexture[i] != null) nObjects++;
+
+
+        // find the actual number wrong Answers
+        totalWrongAnswer = 0;
+        for (int i = 0; i < maxWrongAnswers; i++)
+            if (wrongOrder[i] != null) totalWrongAnswer++;
+
+        //nObjects = 5;
+        //totalWrongAnswers = 3;
+
 
         // this define the points where objects should be located
         setSortedLocations(distance: 2.2f, angle: 0.0f, height: 0.0f,
@@ -106,13 +116,8 @@ public class sortingData : MonoBehaviour
         {
             mscale = 0.07f;
             markers[i] = Instantiate(markerPrefab, sortPts[i] - new Vector3(0.0f, 0.2f, 0.0f), Quaternion.identity) as GameObject;
-            //gameObjects[i].transform.eulerAngles = new Vector3(90.0f, 0.0f, 0.0f);
             markers[i].transform.localScale = new Vector3(mscale, mscale, mscale);
-
             markers[i].GetComponent<Renderer>().material.color = new Color(0.3f, 0.3f, 0.3f, 1.0f);
-            //markers[i].GetComponent<Renderer>().material.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
-
-            Debug.Log(i.ToString() + "  " + tnames[i]);
         }
 
         // set the array to be unsorted
@@ -131,7 +136,6 @@ public class sortingData : MonoBehaviour
             sortData[i].theObject = gameObjects[i];
             sortData[i].sortedOrder = nObjects - i - 1;
             sortData[i].fractionalDistance = 0.0f;
-
             sortData[i].isSorted = false;
 
             // add the moveObject script to the sortable objects
@@ -175,22 +179,16 @@ public class sortingData : MonoBehaviour
             //yield return new WaitForSeconds(audio.clip.length);
             aud.clip = wrongOrder[wrongAnswerCount];
 
-            if (wrongAnswerCount+1 < totalWrongAnswer)
-            {
+            if (wrongAnswerCount + 1 < totalWrongAnswer)
                 wrongAnswerCount = wrongAnswerCount + 1;
-            }
-
         }
         aud.Play();
-
-
 
     }
 
 
     public void resort()
     {
-        Debug.Log("RELEASED!!!!!!!!!!!!!");
 
         // find where the objects are along the projected path
         setProjectedLocation();
@@ -200,7 +198,7 @@ public class sortingData : MonoBehaviour
         tmove = 1.0f;
 
         // move them to the reference line
-        resetPositions();        
+        resetPositions();
         //checkOrder();
         //setOrderLights();
 
@@ -209,17 +207,12 @@ public class sortingData : MonoBehaviour
     IEnumerator clearOrderLights()
     {
         float delaytime = 5.0f;
-        Debug.Log("starti clear");
 
         yield return new WaitForSeconds(delaytime);
 
         for (int i = 0; i < nObjects; i++)
-        {
             markers[i].GetComponent<Renderer>().material.color = new Color(0.3f, 0.3f, 0.3f, 1.0f);
-    
-        }
 
-        Debug.Log("end clear");
     }
 
     void setOrderLights()
@@ -227,13 +220,9 @@ public class sortingData : MonoBehaviour
         for (int i = 0; i < nObjects; i++)
         {
             if (sortData[i].isSorted)
-            {
                 markers[i].GetComponent<Renderer>().material.color = new Color(0.0f, 1.0f, 0.0f, 1.0f);
-            }
             else
-            {
                 markers[i].GetComponent<Renderer>().material.color = Color.red;
-            }
         }
 
     }
@@ -248,22 +237,13 @@ public class sortingData : MonoBehaviour
             gameObjects[i].transform.eulerAngles = new Vector3(90.0f, 0.0f, 0.0f);
             gameObjects[i].transform.localScale = new Vector3(2.0f * oscale, 1.0f * oscale, 1.0f * oscale);
             gameObjects[i].tag = "sortable";
-            //            Texture2D theTexture = Resources.Load(tnames[i]) as Texture2D;
-            //texname =  tnames[i] ;
-            //Texture2D theTexture = Resources.Load(texname) as Texture2D;
-            //Debug.Log("xxx " + texname);
-            //gameObjects[i].GetComponent<Renderer>().material.mainTexture = theTexture; // theTexture;
 
             gameObjects[i].GetComponent<Renderer>().material.mainTexture = myTexture[i]; // theTexture;
-
             gameObjects[i].name = tnames[i];
             gameObjects[i].GetComponent<Rigidbody>().useGravity = false;
 
             // gameObjects[i].AddComponent<InputFeedback>();
 
-
-            Debug.Log(i);
-            Debug.Log(i.ToString() + "  " + tnames[i]);
 
         }
 
@@ -336,66 +316,70 @@ public class sortingData : MonoBehaviour
 
     void scrambleProjectedPosition()
     {
-
         for (int i = 0; i < nObjects; i++)
-        {
             sortData[i].fractionalDistance = UnityEngine.Random.value;
-        }
     }
-   
-    
-    void setProjectedLocation( ) {
+
+
+    void setProjectedLocation()
+    {
         // find the project position of an object along the direction of the sorted locations line
 
         // projected distance along a line r for a vector p is given by
         // distance = r dot p / r
         // the fractional distance is r dot p / r**2
 
-        for (int i = 0; i < nObjects; i++ ) {
+        for (int i = 0; i < nObjects; i++)
+        {
             Vector3 targetPosition = sortData[i].theObject.transform.position;
-            Vector3 projectedPath = new Vector3( xend-xstart, yend-ystart, zend-zstart);
-            float fractionalDistance = Vector3.Dot( targetPosition, projectedPath)  / 
-            Vector3.Dot( projectedPath, projectedPath);
+            Vector3 projectedPath = new Vector3(xend - xstart, yend - ystart, zend - zstart);
+            float fractionalDistance = Vector3.Dot(targetPosition, projectedPath) /
+            Vector3.Dot(projectedPath, projectedPath);
             sortData[i].fractionalDistance = fractionalDistance;
         }
     }
 
-  
 
-    void resetPositions() { 
+
+    void resetPositions()
+    {
         float myTime;
         myTime = Time.time;
         float a1, a2, a3;
 
         // sort by the projected fractional order
-        Array.Sort(sortData, delegate(sortInfo s1, sortInfo s2) {
-        return s1.fractionalDistance.CompareTo(s2.fractionalDistance);
+        Array.Sort(sortData, delegate (sortInfo s1, sortInfo s2) {
+            return s1.fractionalDistance.CompareTo(s2.fractionalDistance);
         });
 
         // initialize the moveObject variables to safe default values
         initializePath();
 
         // set up the moveObject scripts to move the objects
-        for (int i = 0; i< nObjects; i++) {
+        for (int i = 0; i < nObjects; i++)
+        {
 
             // set the final positions of the particles to be the target locations
             sortData[i].theObject.GetComponent<moveObjects>().FinalPos = sortPts[i];
 
             // move them in an indirect path or a direct path
-            if (pretty == 1) {
-            
+            if (pretty == 1)
+            {
+
                 // pick a midpoint scattered around the middle of the path
-                float rrange = 0.85f; 
-                sortData[i].theObject.GetComponent<moveObjects>().MidPos =(sortData[i].theObject.transform.position + sortPts[i]) * 0.5f + 
+                float rrange = 0.85f;
+                sortData[i].theObject.GetComponent<moveObjects>().MidPos = (sortData[i].theObject.transform.position + sortPts[i]) * 0.5f +
                 new Vector3(UnityEngine.Random.Range(-rrange, rrange), UnityEngine.Random.Range(0, rrange), UnityEngine.Random.Range(-rrange, rrange));
 
                 // this adds a nice spin during the sort - a1 should be 90 or 90 + 360*n
                 a1 = 90;
                 a2 = 0;
                 a3 = 0;
-                sortData[i].theObject.GetComponent<moveObjects>().FinalAngle = new Vector3(a1, a2, a3);  
+                sortData[i].theObject.GetComponent<moveObjects>().FinalAngle = new Vector3(a1, a2, a3);
 
-            } else {
+            }
+            else
+            {
 
                 // pick a midpoint between the points
                 sortData[i].theObject.GetComponent<moveObjects>().MidPos = (sortData[i].theObject.transform.position +
@@ -404,11 +388,11 @@ public class sortingData : MonoBehaviour
                 a1 = 90;
                 a2 = 0;
                 a3 = 0;
-                sortData[i].theObject.GetComponent<moveObjects>().FinalAngle = new Vector3(a1, a2, a3);  
+                sortData[i].theObject.GetComponent<moveObjects>().FinalAngle = new Vector3(a1, a2, a3);
             }
 
             // start the move after a delay and finishing in a specified time
-            sortData[i].theObject.GetComponent<moveObjects>().TimeRange = new Vector2(myTime+tdelay, myTime+tdelay+tmove);
+            sortData[i].theObject.GetComponent<moveObjects>().TimeRange = new Vector2(myTime + tdelay, myTime + tdelay + tmove);
 
             // this is the last thing to do to make it all work
             sortData[i].theObject.GetComponent<moveObjects>().initializePath();
@@ -419,17 +403,18 @@ public class sortingData : MonoBehaviour
 
 
 
-    void initializePath( )
+    void initializePath()
     {
 
-        for (int i=0; i<nObjects;i++) {
-            sortData[i].theObject.GetComponent<moveObjects>().StartPos =  sortData[i].theObject.transform.position; 
+        for (int i = 0; i < nObjects; i++)
+        {
+            sortData[i].theObject.GetComponent<moveObjects>().StartPos = sortData[i].theObject.transform.position;
             sortData[i].theObject.GetComponent<moveObjects>().MidPos = new Vector3(0.001f, 0.001f, 0.001f);
             sortData[i].theObject.GetComponent<moveObjects>().FinalPos = new Vector3(0.001f, 0.001f, 0.001f);
 
             sortData[i].theObject.GetComponent<moveObjects>().StartSize = sortData[i].theObject.transform.localScale;
-            sortData[i].theObject.GetComponent<moveObjects>().FinalSize =sortData[i].theObject.transform.localScale; 
-            
+            sortData[i].theObject.GetComponent<moveObjects>().FinalSize = sortData[i].theObject.transform.localScale;
+
             sortData[i].theObject.GetComponent<moveObjects>().StartAngle = sortData[i].theObject.transform.eulerAngles;
             sortData[i].theObject.GetComponent<moveObjects>().FinalAngle = sortData[i].theObject.transform.eulerAngles;
 
@@ -439,8 +424,9 @@ public class sortingData : MonoBehaviour
         }
     }
 
-    void testMove() {
-        
+    void testMove()
+    {
+
         setProjectedLocation();
         //sortData[3].fractionalDistance = -10f;
         sortData[0].fractionalDistance = 100f;
@@ -448,7 +434,7 @@ public class sortingData : MonoBehaviour
         pretty = 0;
         tdelay = 3.0f;
         tmove = 3.0f;
-        resetPositions() ;             
+        resetPositions();
     }
 
 
@@ -456,8 +442,9 @@ public class sortingData : MonoBehaviour
     void Update()
     {
         float myTime;
-    
         myTime = Time.time;
 
     }
 }
+
+

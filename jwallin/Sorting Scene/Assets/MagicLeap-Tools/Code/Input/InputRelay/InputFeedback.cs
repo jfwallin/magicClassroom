@@ -205,14 +205,6 @@ namespace MagicLeapTools
             {
                 _audioSource.PlayOneShot(dragStopSound);
             };
-
-            
-
-            GameObject sorter = GameObject.Find("sortingManager");
-        
-            if (sorter != null) {
-                sorter.GetComponent<sortingData>().resort();
-            }
             
         }
 

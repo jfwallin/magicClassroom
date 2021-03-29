@@ -1,11 +1,14 @@
 ﻿
 
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 // moves a letter from an initial location, size and oriention to its final locaiton, size and orientation
-public class moveObjects : MonoBehaviour {
+public class moveObjects : MonoBehaviour
+{
 
     /*
     private float deltaT;
@@ -14,69 +17,118 @@ public class moveObjects : MonoBehaviour {
     */
 
 
-    public Vector3 startPos =new Vector3(-5.0f, -10.0f, -10.0f);
-    public Vector3 StartPos {
-        get { return startPos;}
-        set { startPos = (Vector3) value;}
+    public Vector3 startPos = new Vector3(-5.0f, -10.0f, -10.0f);
+    public Vector3 StartPos
+    {
+        get { return startPos; }
+        set { startPos = (Vector3)value; }
     }
-        
+
     public Vector3 midPos = new Vector3(1.0f, -10.0f, -10.0f);
-    public Vector3 MidPos {
-        get {return midPos;}
-        set {midPos = value;}
+    public Vector3 MidPos
+    {
+        get { return midPos; }
+        set { midPos = value; }
     }
 
     public Vector3 finalPos = new Vector3(0.0f, 0.0f, 0.0f);
-    public Vector3 FinalPos {
-        get { return finalPos;}
-        set { finalPos = value;}
+    public Vector3 FinalPos
+    {
+        get { return finalPos; }
+        set { finalPos = value; }
     }
 
 
     public Vector3 startSize = new Vector3(0.001f, 0.001f, 0.001f);
-    public Vector3 StartSize {
-        get {return startSize;}
-        set {startSize = value;}
+    public Vector3 StartSize
+    {
+        get { return startSize; }
+        set { startSize = value; }
     }
     public Vector3 finalSize = new Vector3(3.0f, 3.0f, 3.0f);
-    public Vector3 FinalSize {
-        get {return finalSize;}
-        set {finalSize = value;}
+    public Vector3 FinalSize
+    {
+        get { return finalSize; }
+        set { finalSize = value; }
     }
 
     public Vector3 startAngle = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-    public Vector3 StartAngle{
-        get {return startAngle;}
-        set { startAngle = value;}
+    public Vector3 StartAngle
+    {
+        get { return startAngle; }
+        set { startAngle = value; }
     }
 
     public Vector3 finalAngle = new Vector3(0.0f, 180.0f, 0.0f);
-    public Vector3 FinalAngle {
-       get { return finalAngle;} 
-       set { finalAngle = value;}
+    public Vector3 FinalAngle
+    {
+        get { return finalAngle; }
+        set { finalAngle = value; }
     }
 
     public Vector2 timeRange = new Vector3(-100.0f, -90.0f);
-    public Vector2 TimeRange {
-        get {return timeRange;}
-        set {timeRange = value;}
+    public Vector2 TimeRange
+    {
+        get { return timeRange; }
+        set { timeRange = value; }
     }
 
     private static int ndim = 3;
 
 
 
-    public float [,] positionCoefficients= new float[ndim, ndim];
+    public float[,] positionCoefficients = new float[ndim, ndim];
     public float[,] sizeCoefficients = new float[ndim, ndim];
     public float[,] angleCoefficients = new float[ndim, ndim];
 
+    private MagicLeapTools.InputReceiver _inputReceiver;
+    public bool enableHandleDrag = true;
+
+    private void Awake()
+    {
+        _inputReceiver = GetComponent<MagicLeapTools.InputReceiver>();
+        if (_inputReceiver == null)
+            Debug.Log("input receiver not found");
+
+    }
+
+    private void OnEnable()
+    {
+        if (enableHandleDrag)
+            _inputReceiver.OnDragEnd.AddListener(HandleOnClick);
+
+    }
+
+    private void OnDisable()
+    {
+        if (enableHandleDrag)
+            _inputReceiver.OnDragEnd.RemoveListener(HandleOnClick);
+
+    }
+
+    private void HandleOnClick(GameObject sender)
+    {
+
+        GameObject sorter = GameObject.Find("sortingManager");
+
+        if (sorter != null)
+            sorter.GetComponent<sortingData>().resort();
+
+    }
+
+
+
+
+
     // Use this for initialization
-    void Start () {
-        
+    void Start()
+    {
+
         initializePath();
     }
 
-    public void initializePath() {
+    public void initializePath()
+    {
 
         positionCoefficients = threeVectorQuadratic(startPos, midPos, finalPos, timeRange);
         sizeCoefficients = twoVectorLinear(startSize, finalSize, timeRange);
@@ -88,7 +140,7 @@ public class moveObjects : MonoBehaviour {
         Vector3 location;
         float[] xx = new float[3];
 
-        
+
         for (int k = 0; k < ndim; k++)
         {
             xx[k] = coefficients[k, 0] * myTime * myTime + coefficients[k, 1] * myTime + coefficients[k, 2];
@@ -137,7 +189,7 @@ public class moveObjects : MonoBehaviour {
     {
         // does a quadratic fit to 3 points in 3d space
         // it returns the coefficients for three parabola
-       
+
 
         float[] x = new float[ndim];
         float[] y = new float[ndim];
@@ -151,7 +203,7 @@ public class moveObjects : MonoBehaviour {
         x[0] = timeRange[0];
         x[1] = 0.5f * (timeRange[0] + timeRange[1]);
         x[2] = timeRange[1];
- 
+
 
         for (int k = 0; k < ndim; k++)
         {
@@ -204,7 +256,7 @@ public class moveObjects : MonoBehaviour {
             }
         }
 
-            
+
         return parabolaCoeffients;
 
     }
@@ -213,19 +265,21 @@ public class moveObjects : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         float myTime;
         Vector3 angles;
-        if (Time.time > timeRange[0] && Time.time < timeRange[1]) {
+        if (Time.time > timeRange[0] && Time.time < timeRange[1])
+        {
 
             myTime = Time.time;
 
-            transform.localPosition = calcLocation(positionCoefficients,  myTime);
+            transform.localPosition = calcLocation(positionCoefficients, myTime);
             angles = calcLocation(angleCoefficients, myTime);
             transform.eulerAngles = angles;
-            transform.localScale = calcLocation(sizeCoefficients,  myTime);
+            transform.localScale = calcLocation(sizeCoefficients, myTime);
         }
-       
+
     }
 }
